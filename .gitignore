@@ -1,0 +1,7 @@
+/FracPaQ_MATLAB
+/venv
+/fracpy/__pycache__/
+/fracpy/io/__pycache__/
+/fracpy/gui/__pycache__/
+/fracpy/plots/__pycache__/
+/fracpy/stats/__pycache__/
