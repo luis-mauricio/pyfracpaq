@@ -4,10 +4,22 @@ from pathlib import Path
 from typing import Optional
 
 from PySide6 import QtCore, QtGui, QtWidgets as QtW
+from matplotlib.backends.backend_qtagg import NavigationToolbar2QT as NavigationToolbar
+import math
+from matplotlib import cm, colors
+from mpl_toolkits.axes_grid1 import make_axes_locatable
+from .plot_utils import prepare_figure_layout, axis_wide_colorbar, center_title_over_axes
 
 from ..io import read_traces_txt
 from ..plots import plot_tracemap
 from .widgets import MplCanvas
+
+
+class _WheelBlocker(QtCore.QObject):
+    def eventFilter(self, obj, event):
+        if event.type() == QtCore.QEvent.Wheel:
+            return True  # block all wheel events
+        return super().eventFilter(obj, event)
 
 
 class MainWindow(QtW.QMainWindow):
@@ -18,6 +30,9 @@ class MainWindow(QtW.QMainWindow):
 
         # Data
         self._segments = []
+        # Axis flip state for computations/plots
+        self._flip_x = False
+        self._flip_y = False
 
         # Central container (body only)
         central = QtW.QWidget()
@@ -27,6 +42,8 @@ class MainWindow(QtW.QMainWindow):
         # Body: left input panel + right content (tabs + canvas + footer)
         body = QtW.QHBoxLayout()
         body.setContentsMargins(0, 0, 0, 0)
+        # Add a subtle gap between the left panel and the central canvas for symmetry
+        body.setSpacing(8)
         root.addLayout(body, 1)
 
         left = self._build_left_panel()
@@ -35,23 +52,28 @@ class MainWindow(QtW.QMainWindow):
         right = self._build_right_panel()
         body.addWidget(right, 1)
 
-        # Menu / toolbar
-        open_act = QtGui.QAction("Open...", self)
-        open_act.triggered.connect(self.action_open)
-        file_menu = self.menuBar().addMenu("File")
-        file_menu.addAction(open_act)
+        # No menu bar
 
         self.statusBar().showMessage("Ready")
-        self._plot_window = None
+        # Flip indicator on status bar
+        self._flip_label = QtW.QLabel("")
+        self.statusBar().addPermanentWidget(self._flip_label)
+        self._update_flip_indicator()
+        # Manage multiple plot windows keyed by content
+        self._plot_windows = {}
         # Initial left message
         if hasattr(self, "_set_left_message"):
             self._set_left_message("Ready!")
+        # Apply unified behavior to all QDoubleSpinBox: hide arrows and disable wheel
+        self._apply_spinbox_preferences()
 
     # ----- UI builders -----
     def _build_left_panel(self) -> QtW.QWidget:
         # Left controls panel titled "Input"
         left = QtW.QGroupBox("Input")
         v = QtW.QVBoxLayout(left)
+        # Acolchoado uniforme de 8 px em torno do conteúdo de Input
+        v.setContentsMargins(8, 8, 8, 8)
 
         # Filename row + Browse
         row = QtW.QGridLayout()
@@ -100,12 +122,13 @@ class MainWindow(QtW.QMainWindow):
         self.edit_scale = QtW.QLineEdit(); sg.addWidget(self.edit_scale, 0, 1)
         v.addWidget(scale_box)
 
-        # Flip + Preview
-        self.btn_flipx = QtW.QPushButton("Flip X-axis"); self.btn_flipx.setEnabled(False)
-        self.btn_flipy = QtW.QPushButton("Flip Y-axis"); self.btn_flipy.setEnabled(False)
+        # Flip + Preview (left panel controls)
+        btns = QtW.QHBoxLayout()
+        self.btn_flipx_left = QtW.QPushButton("Flip X-axis"); self.btn_flipx_left.setCheckable(True); self.btn_flipx_left.setChecked(self._flip_x); self.btn_flipx_left.setEnabled(False); self.btn_flipx_left.clicked.connect(self._on_flip_x)
+        self.btn_flipy_left = QtW.QPushButton("Flip Y-axis"); self.btn_flipy_left.setCheckable(True); self.btn_flipy_left.setChecked(self._flip_y); self.btn_flipy_left.setEnabled(False); self.btn_flipy_left.clicked.connect(self._on_flip_y)
         self.btn_preview = QtW.QPushButton("Preview"); self.btn_preview.setEnabled(False)
         self.btn_preview.clicked.connect(self.action_preview)
-        btns = QtW.QHBoxLayout(); btns.addWidget(self.btn_flipx); btns.addWidget(self.btn_flipy); btns.addWidget(self.btn_preview)
+        btns.addWidget(self.btn_flipx_left); btns.addWidget(self.btn_flipy_left); btns.addWidget(self.btn_preview)
         v.addLayout(btns)
 
         # Statistics placeholder
@@ -117,135 +140,6 @@ class MainWindow(QtW.QMainWindow):
 
         v.addStretch(0)
         return left
-
-        # Plots options (como no MATLAB)
-        plots_box = QtW.QGroupBox("Plots")
-        pg = QtW.QGridLayout(plots_box)
-        r = 0
-        self.chk_histolen = QtW.QCheckBox("Length histogram")
-        pg.addWidget(self.chk_histolen, r, 0)
-        pg.addWidget(QtW.QLabel("bins"), r, 1)
-        self.cmb_len_bins = QtW.QComboBox(); self.cmb_len_bins.addItems(["10","20","30","50"]); self.cmb_len_bins.setCurrentIndex(1)
-        self.cmb_len_bins.setEnabled(False)
-        pg.addWidget(self.cmb_len_bins, r, 2)
-        r += 1
-        self.chk_histoang = QtW.QCheckBox("Angle histogram")
-        pg.addWidget(self.chk_histoang, r, 0)
-        pg.addWidget(QtW.QLabel("bins"), r, 1)
-        self.cmb_ang_bins = QtW.QComboBox(); self.cmb_ang_bins.addItems(["12","18","36"]); self.cmb_ang_bins.setCurrentIndex(1)
-        self.cmb_ang_bins.setEnabled(False)
-        pg.addWidget(self.cmb_ang_bins, r, 2)
-        r += 1
-        self.chk_rose = QtW.QCheckBox("Rose diagram")
-        pg.addWidget(self.chk_rose, r, 0)
-        pg.addWidget(QtW.QLabel("bins"), r, 1)
-        self.cmb_rose_bins = QtW.QComboBox(); self.cmb_rose_bins.addItems(["12","18","36"]); self.cmb_rose_bins.setCurrentIndex(1)
-        self.cmb_rose_bins.setEnabled(False)
-        pg.addWidget(self.cmb_rose_bins, r, 2)
-        r += 1
-        self.lbl_degfromnorth = QtW.QLabel("deg from North")
-        self.edit_degfromnorth = QtW.QSpinBox(); self.edit_degfromnorth.setRange(-180, 180); self.edit_degfromnorth.setEnabled(False)
-        pg.addWidget(self.lbl_degfromnorth, r, 0)
-        pg.addWidget(self.edit_degfromnorth, r, 2)
-        r += 1
-        self.chk_roselenw = QtW.QCheckBox("Length-weighted rose"); self.chk_roselenw.setEnabled(False)
-        self.chk_showrosemean = QtW.QCheckBox("Show rose mean"); self.chk_showrosemean.setEnabled(False)
-        self.chk_rosecolour = QtW.QCheckBox("Colour rose"); self.chk_rosecolour.setEnabled(False)
-        pg.addWidget(self.chk_roselenw, r, 0); pg.addWidget(self.chk_showrosemean, r, 1); pg.addWidget(self.chk_rosecolour, r, 2)
-        r += 1
-        # Enable/disable like MATLAB
-        self.chk_histoang.toggled.connect(lambda on: self.cmb_ang_bins.setEnabled(on))
-        self.chk_histolen.toggled.connect(lambda on: self.cmb_len_bins.setEnabled(on))
-        def toggle_rose(on: bool):
-            self.cmb_rose_bins.setEnabled(on)
-            self.edit_degfromnorth.setEnabled(on); self.lbl_degfromnorth.setEnabled(on)
-            self.chk_roselenw.setEnabled(on); self.chk_showrosemean.setEnabled(on); self.chk_rosecolour.setEnabled(on)
-            self.canvas_rose_parent.setVisible(on)
-            self._replot_rose()
-        self.chk_rose.toggled.connect(toggle_rose)
-        self.cmb_rose_bins.currentIndexChanged.connect(self._replot_rose)
-        v.addWidget(plots_box)
-
-        # Maps options
-        maps_box = QtW.QGroupBox("Maps")
-        mg = QtW.QGridLayout(maps_box)
-        r = 0
-        self.chk_intensity = QtW.QCheckBox("Intensity map"); mg.addWidget(self.chk_intensity, r, 0); r += 1
-        self.chk_density = QtW.QCheckBox("Density map"); mg.addWidget(self.chk_density, r, 0); r += 1
-        self.chk_showcircles = QtW.QCheckBox("Show scan circles"); self.chk_showcircles.setEnabled(False)
-        mg.addWidget(self.chk_showcircles, r, 0)
-        mg.addWidget(QtW.QLabel("# scan circles"), r, 1)
-        self.edit_numscancircles = QtW.QSpinBox(); self.edit_numscancircles.setRange(0, 10000); self.edit_numscancircles.setEnabled(False)
-        mg.addWidget(self.edit_numscancircles, r, 2); r += 1
-        # Enable/disable like MATLAB
-        def toggle_circles(_: bool):
-            on = self.chk_intensity.isChecked() or self.chk_density.isChecked()
-            self.chk_showcircles.setEnabled(on)
-            self.edit_numscancircles.setEnabled(on)
-        self.chk_intensity.toggled.connect(toggle_circles)
-        self.chk_density.toggled.connect(toggle_circles)
-        v.addWidget(maps_box)
-
-        # Triangles / censoring
-        tri_box = QtW.QGroupBox("Sampling / censoring")
-        tg = QtW.QGridLayout(tri_box); r = 0
-        self.chk_triangle = QtW.QCheckBox("Triangle grid"); tg.addWidget(self.chk_triangle, r, 0)
-        tg.addWidget(QtW.QLabel("# blocks (map)"), r, 1)
-        self.edit_numblocksmap = QtW.QSpinBox(); self.edit_numblocksmap.setRange(0, 10000); self.edit_numblocksmap.setEnabled(False)
-        tg.addWidget(self.edit_numblocksmap, r, 2); r += 1
-        tg.addWidget(QtW.QLabel("pixels I→Y"), r, 1)
-        self.edit_numpixelsItoY = QtW.QSpinBox(); self.edit_numpixelsItoY.setRange(0, 10000); self.edit_numpixelsItoY.setEnabled(False)
-        tg.addWidget(self.edit_numpixelsItoY, r, 2); r += 1
-        self.chk_censor = QtW.QCheckBox("Censor edges"); tg.addWidget(self.chk_censor, r, 0); r += 1
-        # Toggle like MATLAB
-        def toggle_triangle(on: bool):
-            self.edit_numblocksmap.setEnabled(on); self.edit_numpixelsItoY.setEnabled(on)
-        self.chk_triangle.toggled.connect(toggle_triangle)
-        v.addWidget(tri_box)
-
-        # Fluid / permeability ellipse (placeholders)
-        fluid_box = QtW.QGroupBox("Fluid / aperture")
-        fg = QtW.QGridLayout(fluid_box); r = 0
-        self.chk_permellipse = QtW.QCheckBox("Permeability ellipse"); fg.addWidget(self.chk_permellipse, r, 0); r += 1
-        fg.addWidget(QtW.QLabel("Aperture factor"), r, 0); self.edit_aperturefactor = QtW.QDoubleSpinBox(); self.edit_aperturefactor.setEnabled(False); fg.addWidget(self.edit_aperturefactor, r, 2); r += 1
-        fg.addWidget(QtW.QLabel("Aperture exponent"), r, 0); self.edit_apertureexponent = QtW.QDoubleSpinBox(); self.edit_apertureexponent.setEnabled(False); fg.addWidget(self.edit_apertureexponent, r, 2); r += 1
-        fg.addWidget(QtW.QLabel("lambda"), r, 0); self.edit_lambda = QtW.QDoubleSpinBox(); self.edit_lambda.setEnabled(False); fg.addWidget(self.edit_lambda, r, 2); r += 1
-        fg.addWidget(QtW.QLabel("Fixed aperture"), r, 0); self.edit_fixedaperture = QtW.QDoubleSpinBox(); self.edit_fixedaperture.setEnabled(False); fg.addWidget(self.edit_fixedaperture, r, 2); r += 1
-        self.rb_fixedap = QtW.QRadioButton("Fixed"); self.rb_scaledap = QtW.QRadioButton("Scaled"); self.rb_fixedap.setEnabled(False); self.rb_scaledap.setEnabled(False)
-        fg.addWidget(self.rb_fixedap, r, 0); fg.addWidget(self.rb_scaledap, r, 1); r += 1
-        def toggle_perm(on: bool):
-            for w in [self.edit_aperturefactor, self.edit_apertureexponent, self.edit_lambda, self.edit_fixedaperture, self.rb_fixedap, self.rb_scaledap]:
-                w.setEnabled(on)
-        self.chk_permellipse.toggled.connect(toggle_perm)
-        v.addWidget(fluid_box)
-
-        # Flip axes and select graph endpoints
-        self.btn_flipx = QtW.QPushButton("Flip X"); self.btn_flipx.clicked.connect(lambda: (self.canvas_map.ax.invert_xaxis(), self.canvas_map.draw_idle()))
-        self.btn_flipy = QtW.QPushButton("Flip Y"); self.btn_flipy.clicked.connect(lambda: (self.canvas_map.ax.invert_yaxis(), self.canvas_map.draw_idle()))
-        self.btn_select_graph = QtW.QPushButton("Select graph endpoints…"); self.btn_select_graph.clicked.connect(self._not_implemented)
-        v.addWidget(self.btn_flipx)
-        v.addWidget(self.btn_flipy)
-        v.addWidget(self.btn_select_graph)
-
-        # Botão para salvar figuras (equivalente a imprimir/exportar)
-        self.btn_save = QtW.QPushButton("Save figures…")
-        self.btn_save.clicked.connect(self.action_save_figures)
-        v.addWidget(self.btn_save)
-
-        v.addStretch(1)
-
-        # Right plots area: grande área do mapa e, abaixo, rosa (ocultável)
-        right = QtW.QWidget(); right_layout = QtW.QVBoxLayout(right)
-        self.canvas_map = MplCanvas(width=7, height=6, dpi=100, polar=False)
-        right_layout.addWidget(self.canvas_map)
-        self.canvas_rose_parent = QtW.QGroupBox("Rose Diagram"); self.canvas_rose_parent.setVisible(False)
-        rose_layout = QtW.QVBoxLayout(self.canvas_rose_parent)
-        self.canvas_rose = MplCanvas(width=6, height=4, dpi=100, polar=True)
-        rose_layout.addWidget(self.canvas_rose)
-        right_layout.addWidget(self.canvas_rose_parent)
-
-        layout.addWidget(controls, 0)
-        layout.addWidget(right, 1)
 
     def _build_right_panel(self) -> QtW.QWidget:
         # Right side with tabs on top, main map canvas, and footer controls
@@ -263,16 +157,21 @@ class MainWindow(QtW.QMainWindow):
         self.tab_fluid = QtW.QWidget(); self.tabs.addTab(self.tab_fluid, "Fluid flow")
         self.tab_wavelets = QtW.QWidget(); self.tabs.addTab(self.tab_wavelets, "Wavelets")
         self.tab_graphs = QtW.QWidget(); self.tabs.addTab(self.tab_graphs, "Graphs")
-        for i in range(1, self.tabs.count()):
-            self.tabs.setTabEnabled(i, False)
+        # Tabs start disabled; enable all after Preview
         # Top row: canvas on the left, tabs+paged content on the right
         top_row = QtW.QHBoxLayout()
         top_row.setContentsMargins(0, 0, 0, 0)
+        top_row.setSpacing(8)
         self.canvas_map = MplCanvas(width=8, height=6, dpi=100, polar=False)
-        # Now that canvas exists, wire flip buttons
-        self.btn_flipx.clicked.connect(lambda: (self.canvas_map.ax.invert_xaxis(), self.canvas_map.draw_idle()))
-        self.btn_flipy.clicked.connect(lambda: (self.canvas_map.ax.invert_yaxis(), self.canvas_map.draw_idle()))
+        # Placeholder: match surrounding background and hide axes until data is plotted
+        try:
+            bg = self.palette().color(self.backgroundRole())
+            self.canvas_map.set_placeholder_background(bg)
+        except Exception:
+            pass
+        # Now that canvas exists, wire flip buttons (handlers already connected)
         top_row.addWidget(self.canvas_map, 3)
+        # Rely on layout spacing only to keep symmetric gaps left/right
         # Right column holds the tabs pages on top and the footer directly below them
         right_col_w = QtW.QWidget()
         right_col = QtW.QVBoxLayout(right_col_w)
@@ -280,35 +179,41 @@ class MainWindow(QtW.QMainWindow):
         right_col.setSpacing(6)
         self.tabs.setContentsMargins(0, 0, 0, 0)
         right_col.addWidget(self.tabs)
+        # Disable entire tabs area until Preview loads data
+        self.tabs.setEnabled(False)
         top_row.addWidget(right_col_w, 2)
         v.addLayout(top_row, 1)
 
         # Maps tab content: options only (no canvas inside tabs)
         maps_layout = QtW.QVBoxLayout(self.tab_maps)
-        maps_layout.setContentsMargins(2, 2, 2, 2)
+        # Pequeno espaço entre a barra de abas e o título do conteúdo
+        maps_layout.setContentsMargins(0, 8, 0, 0)
         maps_layout.setSpacing(4)
         opts = QtW.QWidget(); og = QtW.QGridLayout(opts); og.setColumnStretch(0, 1); og.setColumnStretch(1, 1)
-        og.setContentsMargins(2, 2, 2, 2)
+        # Tighten container margins to eliminate top gap
+        og.setContentsMargins(0, 0, 0, 0)
         og.setHorizontalSpacing(8)
         og.setVerticalSpacing(4)
 
         grp_maps = QtW.QGroupBox("Maps")
         gm = QtW.QVBoxLayout(grp_maps)
-        # Compact, uniform margins and spacing (reduce top padding)
-        gm.setContentsMargins(4, 4, 4, 4)
+        # Adicionar acolchoado nas laterais/base; topo leve para não abrir um grande vão
+        gm.setContentsMargins(8, 4, 8, 8)
         gm.setSpacing(3)
-        self.chk_traces_segments = QtW.QCheckBox("Traces, segments"); self.chk_traces_segments.setChecked(True)
+        self.chk_traces_segments = QtW.QCheckBox("Traces, segments")
         # "Show nodes" subordinado (recuado e dependente de "Traces, segments")
         self.chk_show_nodes = QtW.QCheckBox("Show nodes")
         indented = QtW.QWidget(); indented_layout = QtW.QHBoxLayout(indented)
-        indented_layout.setContentsMargins(10, 0, 0, 0)
+        # Mais recuo para "Show nodes"
+        indented_layout.setContentsMargins(12, 0, 0, 0)
         indented_layout.setSpacing(0)
         indented_layout.addWidget(self.chk_show_nodes)
         # Construir um bloco compacto para o topo esquerdo
         traces_box = QtW.QWidget(); tv = QtW.QVBoxLayout(traces_box)
-        tv.setContentsMargins(0, 0, 0, 0)
-        # Espaçamento entre linhas igual aos demais grupos
-        tv.setSpacing(4)
+        # Recuo à esquerda e 20px acima de "Traces, segments"
+        tv.setContentsMargins(4, 20, 0, 0)
+        # Espaçamento maior entre "Traces, segments" e "Show nodes"
+        tv.setSpacing(20)
         tv.addWidget(self.chk_traces_segments)
         tv.addWidget(indented)
         # Toggle enablement e replot quando pai muda
@@ -316,64 +221,129 @@ class MainWindow(QtW.QMainWindow):
         # Build nested groups to live inside "Maps"
         grp_fs = QtW.QGroupBox("Fracture stability")
         gf = QtW.QGridLayout(grp_fs); r = 0
-        gf.setContentsMargins(4, 4, 4, 4)
+        gf.setContentsMargins(4, 20, 4, 20)
         gf.setHorizontalSpacing(6)
-        gf.setVerticalSpacing(3)
+        gf.setVerticalSpacing(20)
         self.chk_slip = QtW.QCheckBox("Slip tendency"); gf.addWidget(self.chk_slip, r, 0, 1, 2); r += 1
         self.chk_dilation = QtW.QCheckBox("Dilation tendency"); gf.addWidget(self.chk_dilation, r, 0, 1, 2); r += 1
         self.chk_suscept = QtW.QCheckBox("Fracture susceptibility"); gf.addWidget(self.chk_suscept, r, 0, 1, 2); r += 1
         self.chk_crit = QtW.QCheckBox("Critically stressed fractures"); gf.addWidget(self.chk_crit, r, 0, 1, 2); r += 1
+        # Bloco de parâmetros subordinado ao "Critically stressed fractures" (recuado)
+        crit_params = QtW.QWidget(); cp = QtW.QGridLayout(crit_params); cr = 0
+        # Recuo menor para indicar relação com todos os 4 checkboxes
+        cp.setContentsMargins(4, 0, 0, 0)
+        cp.setHorizontalSpacing(6)
+        cp.setVerticalSpacing(20)
         def add_param(label: str, default: float, decimals: int = 1):
-            nonlocal r
-            gf.addWidget(QtW.QLabel(label), r, 0)
-            sp = QtW.QDoubleSpinBox(); sp.setRange(-1e6, 1e6); sp.setDecimals(decimals); sp.setValue(default); sp.setEnabled(False)
-            gf.addWidget(sp, r, 1); r += 1
-            return sp
-        self.sp_sigma1 = add_param("Sigma 1, MPa", 100.0)
-        self.sp_sigma2 = add_param("Sigma 2, MPa", 50.0)
-        self.sp_angle = add_param("Angle of Sigma 1 from Y-axis", 0.0, decimals=0)
-        self.sp_cohesion = add_param("Cohesion, MPa", 0.0)
-        self.sp_pore = add_param("Pore pressure, MPa", 0.0)
-        self.sp_fric = add_param("Friction coefficient", 0.6, decimals=2)
+            nonlocal cr
+            lab = QtW.QLabel(label)
+            cp.addWidget(lab, cr, 0)
+            sp = QtW.QDoubleSpinBox(); sp.setRange(-1e6, 1e6); sp.setDecimals(decimals); sp.setValue(default)
+            cp.addWidget(sp, cr, 1); cr += 1
+            return lab, sp
+        self.lbl_sigma1, self.sp_sigma1 = add_param("Sigma 1, MPa", 100.0)
+        self.lbl_sigma2, self.sp_sigma2 = add_param("Sigma 2, MPa", 50.0)
+        self.lbl_angle, self.sp_angle = add_param("Angle of Sigma 1 from Y-axis", 0.0, decimals=0)
+        self.lbl_cohesion, self.sp_cohesion = add_param("Cohesion, MPa", 0.0)
+        self.lbl_pore, self.sp_pore = add_param("Pore pressure, MPa", 0.0)
+        self.lbl_fric, self.sp_fric = add_param("Friction coefficient", 0.6, decimals=2)
+        # Inicialmente desabilitado até que qualquer uma das opções esteja marcada
+        crit_params.setEnabled(False)
+        gf.addWidget(crit_params, r, 0, 1, 2); r += 1
+        # Habilitar parâmetros conforme necessidade de cada cálculo (união dos selecionados)
+        def _update_stress_params_enabled(_: bool = False) -> None:
+            sel_slip = self.chk_slip.isChecked()
+            sel_dil = self.chk_dilation.isChecked()
+            sel_susc = self.chk_suscept.isChecked()
+            sel_csf = self.chk_crit.isChecked()
+            any_on = sel_slip or sel_dil or sel_susc or sel_csf
+            # Necessidades por cálculo
+            need_basic = any_on  # sigma1, sigma2, angle usados por todos os quatro
+            need_extra = sel_susc or sel_csf  # cohesion, pore, friction só em susc/CSF
+            # Habilitar/desabilitar bloco geral e campos específicos
+            crit_params.setEnabled(any_on)
+            for lab, sp in [
+                (self.lbl_sigma1, self.sp_sigma1),
+                (self.lbl_sigma2, self.sp_sigma2),
+                (self.lbl_angle, self.sp_angle),
+            ]:
+                lab.setEnabled(need_basic)
+                sp.setEnabled(need_basic)
+            for lab, sp in [
+                (self.lbl_cohesion, self.sp_cohesion),
+                (self.lbl_pore, self.sp_pore),
+                (self.lbl_fric, self.sp_fric),
+            ]:
+                lab.setEnabled(need_extra)
+                sp.setEnabled(need_extra)
+        self.chk_slip.toggled.connect(_update_stress_params_enabled)
+        self.chk_dilation.toggled.connect(_update_stress_params_enabled)
+        self.chk_suscept.toggled.connect(_update_stress_params_enabled)
+        self.chk_crit.toggled.connect(_update_stress_params_enabled)
+        # Estado inicial
+        _update_stress_params_enabled()
         # Add to Maps group later via a grid
 
         grp_cc = QtW.QGroupBox("Colour-coded maps")
         gc = QtW.QVBoxLayout(grp_cc)
-        gc.setContentsMargins(4, 4, 4, 4)
-        gc.setSpacing(3)
+        # Topo mínimo para subir; laterais iguais aos outros grupos
+        gc.setContentsMargins(4, 20, 4, 20)
+        gc.setSpacing(20)
         self.chk_traces_by_len = QtW.QCheckBox("Traces, by length")
         self.chk_segments_by_len = QtW.QCheckBox("Segments, by length")
-        self.chk_segments_by_strike = QtW.QCheckBox("Segments, by strike"); self.chk_segments_by_strike.setChecked(True)
+        self.chk_segments_by_strike = QtW.QCheckBox("Segments, by strike")
         gc.addWidget(self.chk_traces_by_len)
         gc.addWidget(self.chk_segments_by_len)
         gc.addWidget(self.chk_segments_by_strike)
         # Add to Maps group later via a grid
 
-        grp_id = QtW.QGroupBox("Intensity & Density")
+        # Use '&&' to render a literal '&' in Qt labels
+        grp_id = QtW.QGroupBox("Intensity && Density")
         gi = QtW.QGridLayout(grp_id); r = 0
-        gi.setContentsMargins(4, 4, 4, 4)
+        gi.setContentsMargins(4, 20, 4, 20)
         gi.setHorizontalSpacing(6)
-        gi.setVerticalSpacing(3)
+        gi.setVerticalSpacing(20)
         self.chk_est_intensity = QtW.QCheckBox("Estimated Intensity, P21"); gi.addWidget(self.chk_est_intensity, r, 0, 1, 2); r += 1
         self.chk_est_density = QtW.QCheckBox("Estimated Density, P20"); gi.addWidget(self.chk_est_density, r, 0, 1, 2); r += 1
-        self.chk_showcircles = QtW.QCheckBox("Show scan circles"); self.chk_showcircles.setEnabled(False); gi.addWidget(self.chk_showcircles, r, 0, 1, 2); r += 1
-        gi.addWidget(QtW.QLabel("Number of scan circles"), r, 0)
+        # Subordinados a Density (apenas habilitados quando Density está marcado) e recuados
+        self.chk_showcircles = QtW.QCheckBox("Show scan circles"); self.chk_showcircles.setEnabled(False)
+        ind_circles = QtW.QWidget(); ind_circles_l = QtW.QHBoxLayout(ind_circles)
+        ind_circles_l.setContentsMargins(12, 0, 0, 0)
+        ind_circles_l.setSpacing(6)
+        ind_circles_l.addWidget(self.chk_showcircles)
+        gi.addWidget(ind_circles, r, 0, 1, 2); r += 1
+        # Guardar e iniciar desabilitado para que o texto fique esmaecido
+        self.ind_circles = ind_circles
+        self.ind_circles.setEnabled(False)
+        ind_num = QtW.QWidget(); ind_num_l = QtW.QHBoxLayout(ind_num)
+        ind_num_l.setContentsMargins(12, 0, 0, 0)
+        ind_num_l.setSpacing(6)
+        lbl_ncircles = QtW.QLabel("Number of scan circles")
+        ind_num_l.addWidget(lbl_ncircles)
         self.spin_ncircles = QtW.QSpinBox(); self.spin_ncircles.setRange(0, 10000); self.spin_ncircles.setValue(12); self.spin_ncircles.setEnabled(False)
-        gi.addWidget(self.spin_ncircles, r, 1); r += 1
-        def toggle_circles(_: bool):
-            on = self.chk_est_intensity.isChecked() or self.chk_est_density.isChecked()
+        ind_num_l.addWidget(self.spin_ncircles)
+        gi.addWidget(ind_num, r, 0, 1, 2); r += 1
+        # Guardar e iniciar desabilitado para refletir estado visual (texto esmaecido)
+        self.ind_num = ind_num
+        self.ind_num.setEnabled(False)
+        def toggle_density(on: bool):
+            # Habilitar/Desabilitar blocos indentados para refletir no texto (cor)
+            self.ind_circles.setEnabled(on)
+            self.ind_num.setEnabled(on)
+            # Controles internos seguem o estado
             self.chk_showcircles.setEnabled(on)
-            self.spin_ncircles.setEnabled(on and self.chk_showcircles.isChecked())
-        self.chk_est_intensity.toggled.connect(toggle_circles)
-        self.chk_est_density.toggled.connect(toggle_circles)
-        self.chk_showcircles.toggled.connect(lambda on: self.spin_ncircles.setEnabled(on))
+            self.spin_ncircles.setEnabled(on)
+            if not on and self.chk_showcircles.isChecked():
+                # Ao desmarcar Density, desmarcar também Show scan circles
+                self.chk_showcircles.setChecked(False)
+        self.chk_est_density.toggled.connect(toggle_density)
         # Add to Maps group later via a grid
 
         # Grid interno em "Maps" para alinhar como no MATLAB
         maps_inner = QtW.QWidget(); ig = QtW.QGridLayout(maps_inner)
         ig.setContentsMargins(0, 0, 0, 0)
         ig.setHorizontalSpacing(8)
-        ig.setVerticalSpacing(4)
+        ig.setVerticalSpacing(20)
         ig.setColumnStretch(0, 1); ig.setColumnStretch(1, 1)
         # Control vertical sizing: todos compactos; direita empilhada (Colour-coded maps em cima,
         # Intensity & Density logo abaixo)
@@ -381,16 +351,22 @@ class MainWindow(QtW.QMainWindow):
         grp_cc.setSizePolicy(QtW.QSizePolicy.Preferred, QtW.QSizePolicy.Maximum)
         grp_id.setSizePolicy(QtW.QSizePolicy.Preferred, QtW.QSizePolicy.Maximum)
         traces_box.setSizePolicy(QtW.QSizePolicy.Preferred, QtW.QSizePolicy.Maximum)
-        # Linha superior: à esquerda o bloco Traces/Show nodes; à direita Colour-coded maps
+        # Coluna direita empilhada: Colour-coded + Intensity & Density (mais para cima)
+        right_stack = QtW.QWidget(); right_v = QtW.QVBoxLayout(right_stack)
+        right_v.setContentsMargins(0, 0, 0, 0)
+        right_v.setSpacing(20)
+        right_v.addWidget(grp_cc)
+        right_v.addWidget(grp_id)
+        # Linha superior: à esquerda o bloco Traces/Show nodes; à direita a pilha direita (ocupando 2 linhas)
         ig.addWidget(traces_box, 0, 0)
-        ig.addWidget(grp_cc, 0, 1)
-        # Linha inferior: à esquerda Fracture stability; à direita Intensity & Density
+        ig.addWidget(right_stack, 0, 1, 2, 1, QtCore.Qt.AlignTop)
+        # Linha inferior à esquerda: Fracture stability
         ig.addWidget(grp_fs, 1, 0)
-        ig.addWidget(grp_id, 1, 1)
         # Não esticar para baixo; manter espaçamentos uniformes
         ig.setRowStretch(0, 0)
         ig.setRowStretch(1, 0)
-        gm.addWidget(maps_inner)
+        # Anchor inner grid to the very top of the "Maps" group
+        gm.addWidget(maps_inner, 0, QtCore.Qt.AlignTop)
 
         og.addWidget(grp_maps, 0, 0, 2, 2)
 
@@ -403,6 +379,7 @@ class MainWindow(QtW.QMainWindow):
         footer.addWidget(QtW.QLabel("Filename tag for this run"), 0, 0)
         self.edit_run_tag = QtW.QLineEdit("Run1"); footer.addWidget(self.edit_run_tag, 0, 1)
         self.btn_run = QtW.QPushButton("Run"); self.btn_run.setEnabled(False); footer.addWidget(self.btn_run, 1, 0)
+        self.btn_run.clicked.connect(self.action_run)
         self.btn_exit = QtW.QPushButton("Exit"); self.btn_exit.clicked.connect(self.close); footer.addWidget(self.btn_exit, 1, 1)
         # Version/email
         self.lbl_ver = QtW.QLabel("Version 2.8, March 2021   E-mail: info@fracpaq.com")
@@ -420,6 +397,22 @@ class MainWindow(QtW.QMainWindow):
         # Set initial state for Run
         self._update_run_enabled()
         return right
+
+    def _apply_spinbox_preferences(self) -> None:
+        # Hide up/down arrows and disable mouse wheel for all QDoubleSpinBox in the UI
+        try:
+            self._wheel_blocker = _WheelBlocker(self)
+            # Apply to all spin boxes (integer and double)
+            en_us = QtCore.QLocale(QtCore.QLocale.English, QtCore.QLocale.UnitedStates)
+            for sp in self.findChildren(QtW.QAbstractSpinBox):
+                sp.setButtonSymbols(QtW.QAbstractSpinBox.NoButtons)
+                # Make focus explicit; prevents accidental scroll when not focused
+                sp.setFocusPolicy(QtCore.Qt.StrongFocus)
+                sp.installEventFilter(self._wheel_blocker)
+                # Force dot as decimal separator in display/parse
+                sp.setLocale(en_us)
+        except Exception:
+            pass
 
     # ----- Actions -----
     def action_open(self) -> None:
@@ -462,11 +455,47 @@ class MainWindow(QtW.QMainWindow):
         self._set_left_message("Ready. Click Run to generate maps and graphs.")
 
     def action_run(self) -> None:
-        # Generate plots in a separate window
+        # Generate plots in separate window(s)
         if not getattr(self, "_segments", []):
             QtW.QMessageBox.information(self, "No data", "Load and preview a node file first.")
             return
-        self._open_plot_window()
+        # Prepare counts/title used by traces map
+        n_traces = len(getattr(self, "_traces", []))
+        n_segments = len(self._segments)
+        n_nodes = sum((len(t.segments) + 1) for t in getattr(self, "_traces", [])) if getattr(self, "_traces", []) else 0
+        title = f"Mapped traces (n = {n_traces}), segments (n = {n_segments}) & nodes (n = {n_nodes})"
+        # Traces, segments (with optional Show nodes overlay)
+        if self.chk_traces_segments.isChecked():
+            if self.chk_show_nodes.isChecked():
+                self._show_plot_window(
+                    key="traces_nodes",
+                    window_title="FracPy - Traces + Nodes",
+                    plotter=lambda ax: self._plot_traces_with_nodes(ax, title=title),
+                )
+            else:
+                self._show_plot_window(
+                    key="traces_segments",
+                    window_title="FracPy - Traces",
+                    plotter=lambda ax: self._plot_traces_only(ax, title=title),
+                )
+        # Slip tendency related plots
+        if getattr(self, "chk_slip", None) is not None and self.chk_slip.isChecked():
+            self._show_plot_window(
+                key="slip_tendency_map",
+                window_title="FracPy - Slip Tendency",
+                plotter=lambda ax: self._plot_slip_tendency(ax),
+            )
+            self._show_plot_window(
+                key="slip_tendency_mohr",
+                window_title="FracPy - Mohr Circle (Slip)",
+                plotter=lambda ax: self._plot_mohr_circle(ax),
+            )
+            self._show_plot_window(
+                key="slip_tendency_rose",
+                window_title="FracPy - Rose (Slip Tendency)",
+                plotter=lambda ax: self._plot_rose_slip(ax),
+                polar=True,
+            )
 
     def load_file(self, path: Path) -> None:
         try:
@@ -484,11 +513,22 @@ class MainWindow(QtW.QMainWindow):
         self._segments = [s for t in traces for s in t.segments]
         self.edit_filename.setText(str(path))
         self.statusBar().showMessage("Ready. Click Run to generate maps and graphs.")
-        self.btn_flipx.setEnabled(True); self.btn_flipy.setEnabled(True)
+        # Enable flip controls (both left and right, if present)
+        for b in [getattr(self, 'btn_flipx', None), getattr(self, 'btn_flipy', None),
+                  getattr(self, 'btn_flipx_left', None), getattr(self, 'btn_flipy_left', None)]:
+            if b is not None:
+                b.setEnabled(True)
 
         self._update_stats()
         # Show preview in the embedded canvas
         self._replot_map()
+        # Enable tabs and all pages after a successful Preview
+        self.tabs.setEnabled(True)
+        try:
+            for i in range(self.tabs.count()):
+                self.tabs.setTabEnabled(i, True)
+        except Exception:
+            pass
         self._replot_rose()
         self._update_run_enabled()
 
@@ -497,9 +537,21 @@ class MainWindow(QtW.QMainWindow):
         ax = self.canvas_map.ax
         ax.clear()
         if self._segments:
+            # Switch to white plotting background and show axes
+            try:
+                self.canvas_map.set_plot_background_white()
+            except Exception:
+                pass
             # Preview always shows traces; nodes only if enabled and checked
             show_nodes = bool(self.chk_show_nodes.isEnabled() and self.chk_show_nodes.isChecked())
             plot_tracemap(self._segments, ax=ax, show_nodes=show_nodes)
+        else:
+            # No data: return to placeholder background and hide axes
+            try:
+                bg = self.palette().color(self.backgroundRole())
+                self.canvas_map.set_placeholder_background(bg)
+            except Exception:
+                pass
         self.canvas_map.draw_idle()
 
     def _clear_map_canvas(self) -> None:
@@ -608,24 +660,441 @@ class MainWindow(QtW.QMainWindow):
         # Embedded canvas no longer reflects immediate plot
         self._update_run_enabled()
 
-    def _open_plot_window(self) -> None:
-        # Create or reuse a separate window for plots
-        if self._plot_window is None:
-            self._plot_window = QtW.QMainWindow(self)
-            self._plot_window.setWindowTitle("FracPy - Maps")
+    def _show_plot_window(self, key: str, window_title: str, plotter, polar: bool = False) -> None:
+        # If already visible, just raise/activate; don't replot to avoid flicker
+        win = self._plot_windows.get(key)
+        if win is not None and win.isVisible():
+            win.raise_(); win.activateWindow(); return
+        # Create window on first use or if it was closed/hidden
+        if win is None:
+            win = QtW.QMainWindow(self)
             cw = QtW.QWidget(); lay = QtW.QVBoxLayout(cw)
-            canvas = MplCanvas(width=8, height=6, dpi=100, polar=False)
+            canvas = MplCanvas(width=8, height=6, dpi=100, polar=polar)
+            # Add Matplotlib nav toolbar (zoom, pan, save)
+            toolbar = NavigationToolbar(canvas, win)
+            lay.addWidget(toolbar)
             lay.addWidget(canvas)
-            self._plot_window.setCentralWidget(cw)
-            self._plot_window._canvas = canvas  # store
-        # Plot according to options
-        ax = self._plot_window._canvas.ax
+            win.setCentralWidget(cw)
+            win._canvas = canvas
+            win._toolbar = toolbar
+            # Prefer manual layout control for attached colorbars and tight titles
+            try:
+                win._canvas.figure.set_constrained_layout(False)
+                # For Matplotlib >=3.8
+                win._canvas.figure.set_layout_engine(None)
+            except Exception:
+                pass
+            self._plot_windows[key] = win
+        else:
+            # Ensure toolbar exists if window persisted without it
+            if not hasattr(win, "_toolbar"):
+                cw = win.centralWidget()
+                if cw is not None and hasattr(cw, 'layout'):
+                    layout = cw.layout()
+                    toolbar = NavigationToolbar(win._canvas, win)
+                    layout.insertWidget(0, toolbar)
+                    win._toolbar = toolbar
+            # Ensure canvas projection matches requested 'polar'
+            want = 'polar' if polar else 'rectilinear'
+            try:
+                has = getattr(win._canvas.ax, 'name', 'rectilinear')
+            except Exception:
+                has = 'rectilinear'
+            if has != want:
+                cw = win.centralWidget()
+                layout = cw.layout()
+                # Remove old canvas widget
+                layout.removeWidget(win._canvas)
+                win._canvas.setParent(None)
+                # Create new canvas with correct projection and insert after toolbar
+                canvas = MplCanvas(width=8, height=6, dpi=100, polar=polar)
+                layout.addWidget(canvas)
+                win._canvas = canvas
+                try:
+                    win._canvas.figure.set_constrained_layout(False)
+                    win._canvas.figure.set_layout_engine(None)
+                except Exception:
+                    pass
+        # Store base title and apply flip suffix
+        win._base_title = getattr(win, '_base_title', window_title)
+        win.setWindowTitle(win._base_title + self._flip_title_suffix())
+        # Plot content
+        ax = win._canvas.ax
         ax.clear()
-        if self.chk_traces_segments.isChecked():
-            show_nodes = self.chk_show_nodes.isChecked()
-            plot_tracemap(self._segments, ax=ax, show_nodes=show_nodes)
-        self._plot_window._canvas.draw_idle()
-        self._plot_window.show()
+        plotter(ax)
+        win._canvas.draw_idle()
+        win.show()
+
+    def _plot_traces_only(self, ax, title: str) -> None:
+        # Plot all segments as lines, equal aspect, labels and MATLAB-style title
+        plot_tracemap(self._segments, ax=ax, show_nodes=False)
+        # Fit limits to data
+        xs = [c for s in self._segments for c in (s.x1, s.x2)]
+        ys = [c for s in self._segments for c in (s.y1, s.y2)]
+        if xs and ys:
+            ax.set_xlim(min(xs), max(xs)); ax.set_ylim(min(ys), max(ys))
+        # Visual axis flips to mirror preview
+        self._apply_axis_flip_visual(ax)
+        ax.set_title(title)
+
+    def _plot_traces_with_nodes(self, ax, title: str) -> None:
+        # Draw traces first
+        plot_tracemap(self._segments, ax=ax, show_nodes=False)
+        # Nodes styling (inspired by MATLAB):
+        # - Segment endpoints: black filled circles
+        # - Segment midpoints: red filled squares
+        # - Trace midpoints: green filled triangles (computed along polyline length)
+        # Endpoints
+        ex = []; ey = []
+        mx = []; my = []  # segment midpoints
+        for s in self._segments:
+            ex.extend([s.x1, s.x2]); ey.extend([s.y1, s.y2])
+            mx.append((s.x1 + s.x2) / 2.0); my.append((s.y1 + s.y2) / 2.0)
+        if ex:
+            ax.plot(
+                ex,
+                ey,
+                linestyle='None',
+                marker='o',
+                markersize=6,
+                markerfacecolor='none',
+                markeredgecolor='k',
+            )
+        if mx:
+            ax.plot(
+                mx,
+                my,
+                linestyle='None',
+                marker='s',
+                markersize=6,
+                markerfacecolor='none',
+                markeredgecolor='r',
+            )
+        # Trace midpoints: position at half of cumulative length along the polyline
+        tx = []; ty = []
+        for t in getattr(self, "_traces", []):
+            segs = t.segments
+            if not segs:
+                continue
+            total = sum(s.length() for s in segs)
+            if total <= 0:
+                # Fallback: simple average of end points
+                x1, y1 = segs[0].x1, segs[0].y1
+                x2, y2 = segs[-1].x2, segs[-1].y2
+                tx.append((x1 + x2) / 2.0); ty.append((y1 + y2) / 2.0)
+                continue
+            half = total / 2.0
+            acc = 0.0
+            found = False
+            for s in segs:
+                L = s.length()
+                if acc + L >= half and L > 0:
+                    rem = half - acc
+                    r = rem / L
+                    x = s.x1 + r * (s.x2 - s.x1)
+                    y = s.y1 + r * (s.y2 - s.y1)
+                    tx.append(x); ty.append(y)
+                    found = True
+                    break
+                acc += L
+            if not found:
+                # Numerical edge case: place at last endpoint
+                tx.append(segs[-1].x2); ty.append(segs[-1].y2)
+        if tx:
+            ax.plot(
+                tx,
+                ty,
+                linestyle='None',
+                marker='^',
+                markersize=6,
+                markerfacecolor='none',
+                markeredgecolor='g',
+            )
+        # Limits, labels, title
+        xs = [c for s in self._segments for c in (s.x1, s.x2)]
+        ys = [c for s in self._segments for c in (s.y1, s.y2)]
+        if xs and ys:
+            ax.set_xlim(min(xs), max(xs)); ax.set_ylim(min(ys), max(ys))
+        ax.set_aspect('equal', adjustable='box')
+        ax.set_xlabel('X pixels'); ax.set_ylabel('Y pixels')
+        # Visual axis flips to mirror preview
+        self._apply_axis_flip_visual(ax)
+        ax.set_title(title)
+
+    def _flip_title_suffix(self) -> str:
+        parts = []
+        if self._flip_x:
+            parts.append("X")
+        if self._flip_y:
+            parts.append("Y")
+        return "" if not parts else " [Flip " + ",".join(parts) + "]"
+
+    def _update_flip_indicator(self) -> None:
+        parts = []
+        if self._flip_x:
+            parts.append("X")
+        if self._flip_y:
+            parts.append("Y")
+        txt = "Flip: none" if not parts else f"Flip: {','.join(parts)}"
+        self._flip_label.setText(txt)
+
+    def _update_plot_window_titles(self) -> None:
+        for win in self._plot_windows.values():
+            try:
+                base = getattr(win, '_base_title', win.windowTitle())
+                win._base_title = base
+                win.setWindowTitle(base + self._flip_title_suffix())
+            except Exception:
+                pass
+
+    def _apply_flip_to_open_plots(self) -> None:
+        # Apply visual flips to all open non-polar plots and redraw
+        for win in self._plot_windows.values():
+            try:
+                ax = win._canvas.ax
+                proj_name = getattr(ax, 'name', 'rectilinear')
+                if proj_name != 'polar':
+                    self._apply_axis_flip_visual(ax)
+                    win._canvas.draw_idle()
+            except Exception:
+                pass
+
+    def _on_flip_x(self) -> None:
+        # Toggle state and invert preview axis
+        self._flip_x = not self._flip_x
+        # Sync both flip buttons (left/right) if present
+        for b in [getattr(self, 'btn_flipx', None), getattr(self, 'btn_flipx_left', None)]:
+            if b is not None:
+                b.setChecked(self._flip_x)
+        try:
+            self.canvas_map.ax.invert_xaxis()
+            self.canvas_map.draw_idle()
+        except Exception:
+            pass
+        # Update indicators and apply to open plots
+        self._update_flip_indicator()
+        self._update_plot_window_titles()
+        self._apply_flip_to_open_plots()
+
+    def _on_flip_y(self) -> None:
+        self._flip_y = not self._flip_y
+        for b in [getattr(self, 'btn_flipy', None), getattr(self, 'btn_flipy_left', None)]:
+            if b is not None:
+                b.setChecked(self._flip_y)
+        try:
+            self.canvas_map.ax.invert_yaxis()
+            self.canvas_map.draw_idle()
+        except Exception:
+            pass
+        self._update_flip_indicator()
+        self._update_plot_window_titles()
+        self._apply_flip_to_open_plots()
+
+    def _compute_slip_arrays(self, sigma1: float, sigma2: float, theta_sigma1: float):
+        # Returns (segment_angles_deg_from_North, sigma_n array, tau array, TsNorm array)
+        # Convert segment angle from X-axis (our data) to North-based (MATLAB style): angN = (90 - angX)
+        angs = []
+        sigmans = []
+        taus = []
+        ratios_theta = []
+        for s in self._segments:
+            angX = s.angle_deg()
+            angN = (90.0 - angX) % 180.0
+            # Apply axis flips to the angle (reverseAxis behavior)
+            if self._flip_x:
+                angN = (180.0 - angN) % 180.0
+            if self._flip_y:
+                angN = (180.0 - angN) % 180.0
+            alpha = (angN + 90.0) - theta_sigma1
+            sn = 0.5 * (sigma1 + sigma2) + 0.5 * (sigma1 - sigma2) * math.cos(math.radians(2.0 * alpha))
+            tau = -0.5 * (sigma1 - sigma2) * math.sin(math.radians(2.0 * alpha))
+            angs.append(angN)
+            sigmans.append(sn)
+            taus.append(tau)
+            ratios_theta.append(abs(tau)/abs(sn) if abs(sn) > 0 else 0.0)
+        # Tsmax with alpha0 = angN + 90 (independent of theta), and without flips per MATLAB
+        ratios0 = []
+        for s in self._segments:
+            angX = s.angle_deg()
+            angN = (90.0 - angX) % 180.0
+            alpha0 = angN + 90.0
+            sn0 = 0.5 * (sigma1 + sigma2) + 0.5 * (sigma1 - sigma2) * math.cos(math.radians(2.0 * alpha0))
+            tau0 = -0.5 * (sigma1 - sigma2) * math.sin(math.radians(2.0 * alpha0))
+            ratios0.append(abs(tau0)/abs(sn0) if abs(sn0) > 0 else 0.0)
+        Tsmax = max(ratios0) if ratios0 else 1.0
+        if Tsmax <= 0:
+            Tsmax = 1.0
+        TsNorm = [max(0.0, min(1.0, r / Tsmax)) for r in ratios_theta]
+        return angs, sigmans, taus, TsNorm
+
+    def _plot_slip_tendency(self, ax) -> None:
+        sigma1 = float(self.sp_sigma1.value()) if hasattr(self, 'sp_sigma1') else 100.0
+        sigma2 = float(self.sp_sigma2.value()) if hasattr(self, 'sp_sigma2') else 50.0
+        theta_sigma1 = float(self.sp_angle.value()) if hasattr(self, 'sp_angle') else 0.0
+        if not self._segments:
+            return
+        angs, sigmans, taus, TsNorm = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
+        cmap = cm.get_cmap('jet', 100)
+        norm = colors.Normalize(vmin=0.0, vmax=1.0)
+        xs_all = []
+        ys_all = []
+        for s, tsn in zip(self._segments, TsNorm):
+            ax.plot([s.x1, s.x2], [s.y1, s.y2], color=cmap(norm(tsn)), lw=0.75)
+            xs_all.extend([s.x1, s.x2]); ys_all.extend([s.y1, s.y2])
+        if xs_all and ys_all:
+            ax.set_xlim(min(xs_all), max(xs_all))
+            ax.set_ylim(min(ys_all), max(ys_all))
+        ax.set_aspect('equal', adjustable='box')
+        ax.set_xlabel('X pixels')
+        ax.set_ylabel('Y pixels')
+        # Visual axis flips to mirror preview
+        self._apply_axis_flip_visual(ax)
+        mappable = cm.ScalarMappable(norm=norm, cmap=cmap)
+        mappable.set_array([])
+        # Place colorbar directly below axes and match x-axis width
+        fig = ax.figure
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        cbar = fig.colorbar(mappable, cax=cax, orientation='horizontal')
+        cbar.set_label('Normalised slip tendency')
+        # Show ticks from 0 to 1 every 0.1
+        try:
+            ticks = [i/10 for i in range(0, 11)]
+            cbar.set_ticks(ticks)
+        except Exception:
+            pass
+        # Put title above the axes (outside plot area) and leave a safe top margin
+        title_str = (
+            fr"Normalised slip tendency for $\sigma_1$ = {sigma1:g} MPa, "
+            fr"$\sigma_2$ = {sigma2:g} MPa, $\theta$ = {theta_sigma1:g}$^\circ$"
+        )
+        try:
+            bbox = ax.get_position()
+            x_center = (bbox.x0 + bbox.x1) / 2.0
+            fig.suptitle(title_str, y=0.98, x=x_center, ha='center')
+            fig.subplots_adjust(top=0.92)
+        except Exception:
+            ax.set_title(title_str, pad=4, y=1.02, loc='center')
+
+    def _apply_axis_flip_visual(self, ax) -> None:
+        try:
+            # Reset to normal first to ensure deterministic state
+            ax.set_xlim(sorted(ax.get_xlim()))
+            ax.set_ylim(sorted(ax.get_ylim()))
+            if self._flip_x:
+                ax.invert_xaxis()
+            if self._flip_y:
+                ax.invert_yaxis()
+        except Exception:
+            pass
+
+    def _plot_mohr_circle(self, ax) -> None:
+        sigma1 = float(self.sp_sigma1.value()) if hasattr(self, 'sp_sigma1') else 100.0
+        sigma2 = float(self.sp_sigma2.value()) if hasattr(self, 'sp_sigma2') else 50.0
+        theta_sigma1 = float(self.sp_angle.value()) if hasattr(self, 'sp_angle') else 0.0
+        C0 = float(self.sp_cohesion.value()) if hasattr(self, 'sp_cohesion') else 0.0
+        mu = float(self.sp_fric.value()) if hasattr(self, 'sp_fric') else 0.6
+        pf = float(self.sp_pore.value()) if hasattr(self, 'sp_pore') else 0.0
+        # Compute (σn, τ) for all segments (flip/θ-aware) to overlay on the circle
+        _, sigmans, taus, _ = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
+        # Circle parameters (draw only upper half; y >= 0)
+        center = 0.5 * (sigma1 + sigma2)
+        radius = 0.5 * abs(sigma1 - sigma2)
+        th = [i * math.pi / 180.0 for i in range(0, 181)]  # 0..180 deg
+        xs = [center + radius * math.cos(t) for t in th]
+        ys = [radius * math.sin(t) for t in th]
+        # Prepare manual layout
+        fig = ax.figure
+        prepare_figure_layout(fig)
+        # Draw circle, axes and envelope (upper branch only)
+        ax.plot(xs, ys, color='0.2', lw=1.2, label='Stress')
+        ax.axhline(0.0, color='0.6', lw=0.8)
+        ax.axvline(center, color='0.9', lw=0.5)
+        # Failure envelope (upper branch). Extend to the x-axis intercept (tau=0)
+        # tau = mu*(sn - pf) + C0 => sn_intercept = pf - C0/mu (if mu != 0)
+        if abs(mu) > 1e-12:
+            x_zero = pf - (C0 / mu)
+        else:
+            x_zero = None
+        # Right extent beyond sigma1 to show line clearly
+        x_right = max(sigma1, center + radius * 1.2)
+        if x_zero is not None:
+            x_env = [min(x_zero, x_right), max(x_zero, x_right)]
+        else:
+            x_env = [min(sigma2, center - radius * 1.2), x_right]
+        y_env = [max(0.0, mu * (x - pf) + C0) for x in x_env]
+        ax.plot(x_env, y_env, 'r--', lw=1.2, label='Sliding or Failure')
+        # Labels and limits
+        ax.set_xlabel('Normal stress σn (MPa)')
+        ax.set_ylabel('Shear stress τ (MPa)')
+        ax.set_aspect('equal', adjustable='box')
+        # Fit limits: x start at -5, y starts at 0 (positive only)
+        x_max = max(xs + [x_env[1]])
+        y_max = max([0.0] + ys + y_env)
+        ax.set_xlim(-5, x_max)
+        ax.set_ylim(0, 1.05 * y_max)
+        # Legend positioned outside (upper-right), leave room on the right
+        try:
+            # Reserve room on the right so the legend doesn't clip, but keep it close
+            fig = ax.figure
+            fig.subplots_adjust(right=0.88)
+        except Exception:
+            pass
+        ax.legend(
+            loc='upper left',
+            bbox_to_anchor=(1.01, 1.0),  # very close to the axes' right edge
+            borderaxespad=0.0,
+            frameon=True,
+            fontsize=9,
+            handlelength=2.0,
+        )
+        # Title matching MATLAB phrasing
+        title_str = rf"Mohr diagram $\mu$={mu:g}, $C_0$={C0:g} MPa"
+        center_title_over_axes(fig, ax, title_str, y=0.98, top=0.92)
+
+    def _plot_rose_slip(self, ax) -> None:
+        import numpy as np
+        sigma1 = float(self.sp_sigma1.value()) if hasattr(self, 'sp_sigma1') else 100.0
+        sigma2 = float(self.sp_sigma2.value()) if hasattr(self, 'sp_sigma2') else 50.0
+        theta_sigma1 = float(self.sp_angle.value()) if hasattr(self, 'sp_angle') else 0.0
+        angs, _, _, TsNorm = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
+        if not angs:
+            return
+        # Duplicate for 0..360 coverage
+        angs2 = angs + [((a + 180.0) % 360.0) for a in angs]
+        ts2 = TsNorm + TsNorm
+        bins = 10
+        theta_edges = np.linspace(0, 2*np.pi, bins+1)
+        theta = np.deg2rad(angs2)
+        # Apply axis flips to polar angles (cartesian x-right, y-up -> polar E=0, clockwise)
+        if self._flip_x:
+            theta = (np.pi - theta)
+        if self._flip_y:
+            theta = (-theta)
+        theta = (theta + 2*np.pi) % (2*np.pi)
+        inds = np.digitize(theta, theta_edges) - 1
+        means = np.zeros(bins)
+        counts = np.zeros(bins)
+        for i, val in zip(inds, ts2):
+            if 0 <= i < bins:
+                means[i] += val
+                counts[i] += 1
+        with np.errstate(invalid='ignore'):
+            means = np.divide(means, counts, out=np.zeros_like(means), where=counts>0)
+        ax.set_theta_zero_location('E')
+        ax.set_theta_direction(-1)
+        widths = 2*np.pi / bins
+        # Equal-area feel: scale radius by sqrt of fraction of counts
+        if counts.max() > 0:
+            radii = np.sqrt(counts / counts.max())
+        else:
+            radii = counts
+        cmap = cm.get_cmap('jet', 100)
+        norm = colors.Normalize(vmin=0.0, vmax=1.0)
+        for i in range(bins):
+            col = cmap(norm(means[i]))
+            ax.bar(theta_edges[i], radii[i], width=widths, bottom=0.0, align='edge', color=col, edgecolor='white', alpha=0.95)
+        ax.set_title('Segment angles (equal area), colour-coded by T_s')
 
     def _update_run_enabled(self) -> None:
         # Enable Run if any checkbox in tabs is checked and data is loaded
