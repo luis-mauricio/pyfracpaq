@@ -31,7 +31,7 @@ def plot_tracemap(
         ax.scatter(xs, ys, s=node_size, c=node_color, marker='o', alpha=0.7, linewidths=0)
     if equal_aspect:
         ax.set_aspect("equal", adjustable="box")
-    ax.set_xlabel("X pixels")
-    ax.set_ylabel("Y pixels")
+    ax.set_xlabel("X, pixels")
+    ax.set_ylabel("Y, pixels")
     ax.set_title("")
     return ax

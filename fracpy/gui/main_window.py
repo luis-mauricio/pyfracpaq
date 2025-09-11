@@ -504,6 +504,25 @@ class MainWindow(QtW.QMainWindow):
                 plotter=lambda ax: self._plot_rose_slip(ax),
                 polar=True,
             )
+        # Dilation tendency related plots (mirror Slip pattern: map + rose)
+        if getattr(self, "chk_dilation", None) is not None and self.chk_dilation.isChecked():
+            self._show_plot_window(
+                key="dilation_tendency_map",
+                window_title="FracPy - Dilation Tendency",
+                plotter=lambda ax: self._plot_dilation_tendency(ax),
+            )
+            # Mohr circle is the same stress space for dilation; reuse the same plotter
+            self._show_plot_window(
+                key="dilation_tendency_mohr",
+                window_title="FracPy - Mohr Circle (Dilation)",
+                plotter=lambda ax: self._plot_mohr_circle(ax),
+            )
+            self._show_plot_window(
+                key="dilation_tendency_rose",
+                window_title="FracPy - Rose (Dilation Tendency)",
+                plotter=lambda ax: self._plot_rose_dilation(ax),
+                polar=True,
+            )
 
     def load_file(self, path: Path) -> None:
         try:
@@ -825,7 +844,7 @@ class MainWindow(QtW.QMainWindow):
         if xs and ys:
             ax.set_xlim(min(xs), max(xs)); ax.set_ylim(min(ys), max(ys))
         ax.set_aspect('equal', adjustable='box')
-        ax.set_xlabel('X pixels'); ax.set_ylabel('Y pixels')
+        ax.set_xlabel('X, pixels'); ax.set_ylabel('Y, pixels')
         # Visual axis flips to mirror preview
         self._apply_axis_flip_visual(ax)
         ax.set_title(title)
@@ -954,8 +973,8 @@ class MainWindow(QtW.QMainWindow):
             ax.set_xlim(min(xs_all), max(xs_all))
             ax.set_ylim(min(ys_all), max(ys_all))
         ax.set_aspect('equal', adjustable='box')
-        ax.set_xlabel('X pixels')
-        ax.set_ylabel('Y pixels')
+        ax.set_xlabel('X, pixels')
+        ax.set_ylabel('Y, pixels')
         # Visual axis flips to mirror preview
         self._apply_axis_flip_visual(ax)
         mappable = cm.ScalarMappable(norm=norm, cmap=cmap)
@@ -975,6 +994,48 @@ class MainWindow(QtW.QMainWindow):
         # Put title close above the axes border (consistent spacing)
         title_str = (
             fr"Normalised slip tendency for $\sigma_1$ = {sigma1:g} MPa, "
+            fr"$\sigma_2$ = {sigma2:g} MPa, $\theta$ = {theta_sigma1:g}$^\circ$"
+        )
+        title_above_axes(ax, title_str, offset_points=2, top=0.95)
+
+    def _plot_dilation_tendency(self, ax) -> None:
+        # Map: colour-coded by dilation tendency T_d = (sigma1 - sn) / (sigma1 - sigma2)
+        sigma1 = float(self.sp_sigma1.value()) if hasattr(self, 'sp_sigma1') else 100.0
+        sigma2 = float(self.sp_sigma2.value()) if hasattr(self, 'sp_sigma2') else 50.0
+        theta_sigma1 = float(self.sp_angle.value()) if hasattr(self, 'sp_angle') else 0.0
+        if not self._segments:
+            return
+        # Reuse stress arrays (sn from slip computation)
+        _, sigmans, _, _ = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
+        cmap = cm.get_cmap('jet', 100)
+        xs_all, ys_all = [], []
+        for s, sn in zip(self._segments, sigmans):
+            denom = (sigma1 - sigma2) if abs(sigma1 - sigma2) > 1e-12 else 1.0
+            td = max(0.0, min(1.0, (sigma1 - sn) / denom))
+            ax.plot([s.x1, s.x2], [s.y1, s.y2], color=cmap(td), lw=0.75)
+            xs_all.extend([s.x1, s.x2]); ys_all.extend([s.y1, s.y2])
+        if xs_all and ys_all:
+            ax.set_xlim(min(xs_all), max(xs_all))
+            ax.set_ylim(min(ys_all), max(ys_all))
+        ax.set_aspect('equal', adjustable='box')
+        ax.set_xlabel('X, pixels')
+        ax.set_ylabel('Y, pixels')
+        self._apply_axis_flip_visual(ax)
+        # Colorbar
+        norm = colors.Normalize(vmin=0.0, vmax=1.0)
+        mappable = cm.ScalarMappable(norm=norm, cmap=cmap); mappable.set_array([])
+        fig = ax.figure
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        cbar = fig.colorbar(mappable, cax=cax, orientation='horizontal')
+        cbar.set_label('Dilation tendency')
+        try:
+            cbar.set_ticks([i/10 for i in range(0, 11)])
+        except Exception:
+            pass
+        # Title
+        title_str = (
+            fr"Dilation tendency for $\sigma_1$ = {sigma1:g} MPa, "
             fr"$\sigma_2$ = {sigma2:g} MPa, $\theta$ = {theta_sigma1:g}$^\circ$"
         )
         title_above_axes(ax, title_str, offset_points=2, top=0.95)
@@ -1027,8 +1088,8 @@ class MainWindow(QtW.QMainWindow):
         y_env = [max(0.0, mu * (x - pf) + C0) for x in x_env]
         ax.plot(x_env, y_env, 'r--', lw=1.2, label='Sliding or Failure')
         # Labels and limits
-        ax.set_xlabel('Normal stress σn (MPa)')
-        ax.set_ylabel('Shear stress τ (MPa)')
+        ax.set_xlabel('Normal stress, MPa')
+        ax.set_ylabel('Shear stress, MPa')
         ax.set_aspect('equal', adjustable='box')
         # Fit limits: x start at -5, y starts at 0 (positive only)
         x_max = max(xs + [x_env[1]])
@@ -1201,6 +1262,94 @@ class MainWindow(QtW.QMainWindow):
             pass
         # Title above axes without adjusting layout (reserved margins handle space)
         title_above_axes(ax, r'Segment angles (equal area), colour-coded by $T_s$', offset_points=30, top=0.96, adjust_layout=False)
+
+    def _plot_rose_dilation(self, ax) -> None:
+        import numpy as np
+        sigma1 = float(self.sp_sigma1.value()) if hasattr(self, 'sp_sigma1') else 100.0
+        sigma2 = float(self.sp_sigma2.value()) if hasattr(self, 'sp_sigma2') else 50.0
+        theta_sigma1 = float(self.sp_angle.value()) if hasattr(self, 'sp_angle') else 0.0
+        # Compute sn with flip-aware angles
+        angs, sigmans, _, _ = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
+        if not angs:
+            return
+        # Dilation tendency per segment
+        denom = (sigma1 - sigma2) if abs(sigma1 - sigma2) > 1e-12 else 1.0
+        Td = [max(0.0, min(1.0, (sigma1 - sn) / denom)) for sn in sigmans]
+        # Duplicate for 0..360 coverage
+        angs2 = angs + [((a + 180.0) % 360.0) for a in angs]
+        td2 = Td + Td
+        # Angular bins and statistics
+        dir_bins = 36
+        theta_edges = np.linspace(0, 2*np.pi, dir_bins + 1)
+        theta = np.deg2rad(angs2)
+        if self._flip_x:
+            theta = (np.pi - theta)
+        if self._flip_y:
+            theta = (-theta)
+        theta = (theta + 2*np.pi) % (2*np.pi)
+        inds = np.digitize(theta, theta_edges) - 1
+        means = np.zeros(dir_bins); counts = np.zeros(dir_bins)
+        for i, val in zip(inds, td2):
+            if 0 <= i < dir_bins:
+                means[i] += val; counts[i] += 1
+        with np.errstate(invalid='ignore'):
+            means = np.divide(means, counts, out=np.zeros_like(means), where=counts>0)
+        # Polar setup
+        ax.set_theta_zero_location('N'); ax.set_theta_direction(-1)
+        try:
+            ax.set_xticklabels([]); ax.set_yticks([]); ax.set_rticks([]); ax.set_rgrids([]); ax.grid(False); ax.set_frame_on(False)
+            sp = ax.spines.get('polar');
+            if sp is not None: sp.set_visible(False)
+        except Exception:
+            pass
+        widths = 2*np.pi / dir_bins
+        total = counts.sum()
+        if total > 0:
+            frac = counts / total; radii = np.sqrt(frac); max_frac = float(frac.max())
+        else:
+            radii = counts; max_frac = 0.0
+        # Reference levels
+        perc_levels = [1, 5, 10, 20, 30, 50]
+        max_perc = max_frac * 100.0
+        show_to_perc = next((pl for pl in perc_levels if max_perc <= pl), perc_levels[-1])
+        show_to = show_to_perc / 100.0
+        # Colors
+        color_levels = int(dir_bins // 2 + 1)
+        bounds = np.linspace(0.0, 1.0, color_levels + 1)
+        cmap = cm.get_cmap('jet', 256)
+        norm = colors.BoundaryNorm(boundaries=bounds, ncolors=cmap.N, clip=True)
+        for i in range(dir_bins):
+            col = cmap(norm(means[i]))
+            ax.bar(theta_edges[i], radii[i], width=widths, bottom=0.0, align='edge', color=col, edgecolor='white', alpha=0.95)
+        # Margins and colorbar
+        reserve_axes_margins(ax, top=0.05, bottom=0.13)
+        # Create a bit more headroom for title/colorbar consistency with slip rose
+        shrink_axes_vertical(ax, factor=0.90)
+        mappable = cm.ScalarMappable(norm=norm, cmap=cmap); mappable.set_array([])
+        ticks = np.linspace(0.0, 1.0, 11)
+        axis_wide_colorbar(ax, mappable, location='bottom', size='5%', pad=0.00, ticks=ticks, label=r'Dilation tendency, $T_d$', gid='rose_td_cbar')
+        # Rim and overlays
+        try:
+            r_edge = float(np.sqrt(show_to))
+        except Exception:
+            r_edge = 1.0
+        ax.set_ylim(0, r_edge)
+        thetas_full = np.linspace(0, 2*np.pi, 361)
+        for pperc in perc_levels:
+            if pperc <= show_to_perc:
+                r = np.sqrt(pperc/100.0)
+                ax.plot(thetas_full, np.full_like(thetas_full, r), color='k', lw=0.6)
+                ax.text(np.pi, r, f"{pperc}%", ha='right', va='center', fontsize=8, bbox=dict(facecolor='white', edgecolor='none', pad=0.2))
+        for ang in (0.0, np.pi/2, np.pi, 3*np.pi/2):
+            ax.plot([ang, ang], [0, r_edge], color='k', lw=0.5)
+        theta_sig = np.deg2rad(theta_sigma1)
+        ax.plot([theta_sig, theta_sig], [0, r_edge], color='r', lw=1.2)
+        ax.plot([theta_sig + np.pi, theta_sig + np.pi], [0, r_edge], color='r', lw=1.2)
+        try:
+            ax.text(theta_sig, r_edge*1.005, r"Azimuth $\sigma_1$", ha='center', va='bottom', fontsize=9, clip_on=False, bbox=dict(facecolor='white', edgecolor='none', pad=0.2))
+        except Exception:
+            pass
+        title_above_axes(ax, r'Segment angles (equal area), colour-coded by $T_d$', offset_points=30, top=0.96, adjust_layout=False)
 
     def _update_run_enabled(self) -> None:
         # Enable Run if any checkbox in tabs is checked and data is loaded

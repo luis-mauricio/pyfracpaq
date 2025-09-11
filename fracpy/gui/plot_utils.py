@@ -178,6 +178,7 @@ def title_above_axes(
         ha="center",
         va="bottom",
         fontsize=fontsize,
+        clip_on=False,
     )
 
 
