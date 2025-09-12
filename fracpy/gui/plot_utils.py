@@ -36,6 +36,7 @@ def axis_wide_colorbar(
     ticks: Optional[Iterable[float]] = None,
     label: Optional[str] = None,
     gid: Optional[str] = None,
+    boundaries: Optional[Iterable[float]] = None,
 ):
     """Attach a colorbar aligned to the given axes width.
 
@@ -105,7 +106,22 @@ def axis_wide_colorbar(
                     ax2.remove()
             except Exception:
                 pass
-    cbar = fig.colorbar(mappable, cax=cax, orientation=orientation)
+    # When boundaries are provided, use them to create a discrete colorbar and draw edges
+    if boundaries is not None:
+        try:
+            cbar = fig.colorbar(
+                mappable,
+                cax=cax,
+                orientation=orientation,
+                boundaries=list(boundaries),
+                spacing="proportional",
+                drawedges=True,
+            )
+        except Exception:
+            # Fallback without boundaries
+            cbar = fig.colorbar(mappable, cax=cax, orientation=orientation)
+    else:
+        cbar = fig.colorbar(mappable, cax=cax, orientation=orientation)
     if label:
         cbar.set_label(label)
     if ticks is not None:
