@@ -11,7 +11,7 @@ from .plots import plot_tracemap, plot_rose
 
 
 def main(argv: list[str] | None = None) -> int:
-    p = argparse.ArgumentParser(description="FracPy: quick fracture analysis CLI")
+    p = argparse.ArgumentParser(description="PyFracPaQ: quick fracture analysis CLI")
     p.add_argument("input", type=Path, help="Path to input TXT file (x1 y1 x2 y2 per line)")
     p.add_argument("--bins", type=int, default=18, help="Number of bins for rose diagram")
     p.add_argument("--show", action="store_true", help="Show plots interactively")
@@ -47,4 +47,3 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

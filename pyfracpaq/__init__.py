@@ -1,4 +1,4 @@
-"""FracPy: Fracture trace analysis in Python.
+"""PyFracPaQ: Fracture trace analysis in Python.
 
 This package provides minimal building blocks to load fracture traces
 from plain text files, compute basic statistics (lengths, orientations),
@@ -14,4 +14,3 @@ __all__ = [
     "Trace",
     "TraceMap",
 ]
-

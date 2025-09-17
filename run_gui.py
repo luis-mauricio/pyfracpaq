@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Start the FracPy GUI without needing to tweak PYTHONPATH.
+Start the PyFracPaQ GUI without needing to tweak PYTHONPATH.
 
 Usage:
   python run_gui.py
@@ -16,9 +16,9 @@ def main() -> int:
         sys.path.insert(0, project_root)
 
     try:
-        from fracpy.gui.app import main as gui_main
+        from pyfracpaq.gui.app import main as gui_main
     except ModuleNotFoundError as e:
-        print("Could not import 'fracpy'. Make sure you're running this script from the project root.")
+        print("Could not import 'pyfracpaq'. Make sure you're running this script from the project root.")
         print(f"Details: {e}")
         return 1
 
@@ -27,4 +27,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

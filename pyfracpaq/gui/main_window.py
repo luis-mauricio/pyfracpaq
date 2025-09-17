@@ -33,7 +33,7 @@ class _WheelBlocker(QtCore.QObject):
 class MainWindow(QtW.QMainWindow):
     def __init__(self, parent: Optional[QtW.QWidget] = None) -> None:
         super().__init__(parent)
-        self.setWindowTitle("FracPy")
+        self.setWindowTitle("PyFracPaQ")
         self.resize(1200, 800)
 
         # Data
@@ -484,30 +484,30 @@ class MainWindow(QtW.QMainWindow):
             if self.chk_show_nodes.isChecked():
                 self._show_plot_window(
                     key="traces_nodes",
-                    window_title="FracPy - Traces + Nodes",
+                    window_title="PyFracPaQ - Traces + Nodes",
                     plotter=lambda ax: self._plot_traces_with_nodes(ax, title=title),
                 )
             else:
                 self._show_plot_window(
                     key="traces_segments",
-                    window_title="FracPy - Traces",
+                    window_title="PyFracPaQ - Traces",
                     plotter=lambda ax: self._plot_traces_only(ax, title=title),
                 )
         # Slip tendency related plots
         if getattr(self, "chk_slip", None) is not None and self.chk_slip.isChecked():
             self._show_plot_window(
                 key="slip_tendency_map",
-                window_title="FracPy - Slip Tendency",
+                window_title="PyFracPaQ - Slip Tendency",
                 plotter=lambda ax: self._plot_slip_tendency(ax),
             )
             self._show_plot_window(
                 key="slip_tendency_mohr",
-                window_title="FracPy - Mohr Circle (Slip)",
+                window_title="PyFracPaQ - Mohr Circle (Slip)",
                 plotter=lambda ax: self._plot_mohr_circle(ax),
             )
             self._show_plot_window(
                 key="slip_tendency_rose",
-                window_title="FracPy - Rose (Slip Tendency)",
+                window_title="PyFracPaQ - Rose (Slip Tendency)",
                 plotter=lambda ax: self._plot_rose_slip(ax),
                 polar=True,
             )
@@ -515,18 +515,18 @@ class MainWindow(QtW.QMainWindow):
         if getattr(self, "chk_dilation", None) is not None and self.chk_dilation.isChecked():
             self._show_plot_window(
                 key="dilation_tendency_map",
-                window_title="FracPy - Dilation Tendency",
+                window_title="PyFracPaQ - Dilation Tendency",
                 plotter=lambda ax: self._plot_dilation_tendency(ax),
             )
             # Mohr circle is the same stress space for dilation; reuse the same plotter
             self._show_plot_window(
                 key="dilation_tendency_mohr",
-                window_title="FracPy - Mohr Circle (Dilation)",
+                window_title="PyFracPaQ - Mohr Circle (Dilation)",
                 plotter=lambda ax: self._plot_mohr_circle(ax),
             )
             self._show_plot_window(
                 key="dilation_tendency_rose",
-                window_title="FracPy - Rose (Dilation Tendency)",
+                window_title="PyFracPaQ - Rose (Dilation Tendency)",
                 plotter=lambda ax: self._plot_rose_dilation(ax),
                 polar=True,
             )
@@ -534,17 +534,17 @@ class MainWindow(QtW.QMainWindow):
         if getattr(self, "chk_suscept", None) is not None and self.chk_suscept.isChecked():
             self._show_plot_window(
                 key="susceptibility_map",
-                window_title="FracPy - Fracture Susceptibility",
+                window_title="PyFracPaQ - Fracture Susceptibility",
                 plotter=lambda ax: self._plot_susceptibility_map(ax),
             )
             self._show_plot_window(
                 key="susceptibility_mohr",
-                window_title="FracPy - Mohr Circle (Susceptibility)",
+                window_title="PyFracPaQ - Mohr Circle (Susceptibility)",
                 plotter=lambda ax: self._plot_mohr_circle(ax),
             )
             self._show_plot_window(
                 key="susceptibility_rose",
-                window_title="FracPy - Rose (Fracture Susceptibility)",
+                window_title="PyFracPaQ - Rose (Fracture Susceptibility)",
                 plotter=lambda ax: self._plot_rose_susceptibility(ax),
                 polar=True,
             )
@@ -553,18 +553,18 @@ class MainWindow(QtW.QMainWindow):
         if getattr(self, "chk_crit", None) is not None and self.chk_crit.isChecked():
             self._show_plot_window(
                 key="csf_map",
-                window_title="FracPy - Critically Stressed Fractures",
+                window_title="PyFracPaQ - Critically Stressed Fractures",
                 plotter=lambda ax: self._plot_csf_map(ax),
             )
             # Mohr circle (same stress space and envelope)
             self._show_plot_window(
                 key="csf_mohr",
-                window_title="FracPy - Mohr Circle (CSF)",
+                window_title="PyFracPaQ - Mohr Circle (CSF)",
                 plotter=lambda ax: self._plot_mohr_circle(ax),
             )
             self._show_plot_window(
                 key="csf_rose",
-                window_title="FracPy - Rose (CSF)",
+                window_title="PyFracPaQ - Rose (CSF)",
                 plotter=lambda ax: self._plot_rose_csf(ax),
                 polar=True,
             )
@@ -721,7 +721,7 @@ class MainWindow(QtW.QMainWindow):
             w.setEnabled(on)
 
     def _not_implemented(self) -> None:
-        QtW.QMessageBox.information(self, "Not implemented", "This action is not implemented yet in FracPy.")
+        QtW.QMessageBox.information(self, "Not implemented", "This action is not implemented yet in PyFracPaQ.")
 
     def _toggle_traces_options(self, on: bool) -> None:
         # Habilita/desabilita "Show nodes" subordinado a "Traces, segments"
