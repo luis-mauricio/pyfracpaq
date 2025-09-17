@@ -11,7 +11,7 @@ def plot_tracemap(
     segments: Iterable[Segment],
     ax: Optional[plt.Axes] = None,
     color: str = "b",
-    linewidth: float = 1.0,
+    linewidth: float = 0.75,
     equal_aspect: bool = True,
     show_nodes: bool = False,
     node_color: str = "k",

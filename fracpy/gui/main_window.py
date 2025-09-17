@@ -817,10 +817,18 @@ class MainWindow(QtW.QMainWindow):
         # Visual axis flips to mirror preview
         self._apply_axis_flip_visual(ax)
         # Reserve fixed margins to create a slightly larger gap between title and axes box
-        reserve_axes_margins(ax, top=0.035, bottom=0.02)
-        shrink_axes_vertical(ax, factor=1.00)
+        prepare_figure_layout(ax.figure)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
+        #shrink_axes_vertical(ax, factor=1.00)
         # Title anchored to the figure (does not move with axes) and slightly raised
-        center_title_over_axes(ax.figure, ax, title, y=0.99, top=0.92)
+        #center_title_over_axes(ax.figure, ax, title, y=0.99, top=0.92)
+        #fig = ax.figure
+        #divider = make_axes_locatable(ax)
+        #cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        #cax.set_axis_off()
+        #cax.set_facecolor('none')
+        #cax.set_in_layout(True) 
+        title_above_axes(ax, title, offset_points=16.5, top=0.95, adjust_layout=False)
 
     def _plot_traces_with_nodes(self, ax, title: str) -> None:
         # Draw traces first
@@ -841,7 +849,7 @@ class MainWindow(QtW.QMainWindow):
                 ey,
                 linestyle='None',
                 marker='o',
-                markersize=6,
+                markersize=5,
                 markerfacecolor='none',
                 markeredgecolor='k',
             )
@@ -851,7 +859,7 @@ class MainWindow(QtW.QMainWindow):
                 my,
                 linestyle='None',
                 marker='s',
-                markersize=6,
+                markersize=5,
                 markerfacecolor='none',
                 markeredgecolor='r',
             )
@@ -891,7 +899,7 @@ class MainWindow(QtW.QMainWindow):
                 ty,
                 linestyle='None',
                 marker='^',
-                markersize=6,
+                markersize=5,
                 markerfacecolor='none',
                 markeredgecolor='g',
             )
@@ -905,10 +913,18 @@ class MainWindow(QtW.QMainWindow):
         # Visual axis flips to mirror preview
         self._apply_axis_flip_visual(ax)
         # Reserve fixed margins to create a slightly larger gap between title and axes box
-        reserve_axes_margins(ax, top=0.035, bottom=0.02)
-        shrink_axes_vertical(ax, factor=1.00)
+        prepare_figure_layout(ax.figure)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
+        #shrink_axes_vertical(ax, factor=1.00)
         # Title anchored to the figure (does not move with axes) and slightly raised
-        center_title_over_axes(ax.figure, ax, title, y=0.99, top=0.92)
+        #center_title_over_axes(ax.figure, ax, title, y=0.99, top=0.92)
+        fig = ax.figure
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        cax.set_axis_off()
+        cax.set_facecolor('none')
+        cax.set_in_layout(True) 
+        title_above_axes(ax, title, offset_points=16.5, top=0.95, adjust_layout=False)
 
     def _flip_title_suffix(self) -> str:
         parts = []
