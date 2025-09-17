@@ -152,6 +152,16 @@ def center_title_over_axes(
 ):
     """Place a suptitle visually centered over the axes and reserve top space."""
     prepare_figure_layout(fig)
+    # Remove any existing suptitle explicitly to avoid duplicates on redraw/reuse
+    try:
+        prev = getattr(fig, "_suptitle", None)
+        if prev is not None:
+            try:
+                prev.remove()
+            except Exception:
+                pass
+    except Exception:
+        pass
     bbox = ax.get_position()
     x_center = (bbox.x0 + bbox.x1) / 2.0
     fig.suptitle(text, y=y, x=x_center, ha="center")
@@ -209,11 +219,11 @@ def reserve_axes_margins(ax: Axes, *, top: float = 0.06, bottom: float = 0.10) -
     fig = ax.figure
     prepare_figure_layout(fig)
     bbox = ax.get_position()
-    # Clamp margins to sane limits
+    # Clamp margins to sane limits (allow zero if requested)
     bottom = max(0.0, min(bottom, 0.9))
     top = max(0.0, min(top, 0.9))
-    new_y0 = max(bottom, 0.02)
-    new_top = min(1.0 - top, 0.98)
+    new_y0 = max(bottom, 0.0)
+    new_top = min(1.0 - top, 1.0)
     # Keep at least 10% of original height
     min_h = max(0.1 * bbox.height, 0.05)
     new_h = max(new_top - new_y0, min_h)

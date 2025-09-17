@@ -549,6 +549,26 @@ class MainWindow(QtW.QMainWindow):
                 polar=True,
             )
 
+        # Critically stressed fractures related plots (map + Mohr + rose)
+        if getattr(self, "chk_crit", None) is not None and self.chk_crit.isChecked():
+            self._show_plot_window(
+                key="csf_map",
+                window_title="FracPy - Critically Stressed Fractures",
+                plotter=lambda ax: self._plot_csf_map(ax),
+            )
+            # Mohr circle (same stress space and envelope)
+            self._show_plot_window(
+                key="csf_mohr",
+                window_title="FracPy - Mohr Circle (CSF)",
+                plotter=lambda ax: self._plot_mohr_circle(ax),
+            )
+            self._show_plot_window(
+                key="csf_rose",
+                window_title="FracPy - Rose (CSF)",
+                plotter=lambda ax: self._plot_rose_csf(ax),
+                polar=True,
+            )
+
     def load_file(self, path: Path) -> None:
         try:
             traces = read_traces_txt(path)
@@ -774,6 +794,14 @@ class MainWindow(QtW.QMainWindow):
         # Plot content
         ax = win._canvas.ax
         ax.clear()
+        # Remove any auxiliary axes (e.g., colorbars) from previous plots in this window
+        try:
+            fig = win._canvas.figure
+            for ax2 in list(fig.axes):
+                if ax2 is not ax:
+                    ax2.remove()
+        except Exception:
+            pass
         plotter(ax)
         win._canvas.draw_idle()
         win.show()
@@ -788,7 +816,11 @@ class MainWindow(QtW.QMainWindow):
             ax.set_xlim(min(xs), max(xs)); ax.set_ylim(min(ys), max(ys))
         # Visual axis flips to mirror preview
         self._apply_axis_flip_visual(ax)
-        ax.set_title(title)
+        # Reserve fixed margins to create a slightly larger gap between title and axes box
+        reserve_axes_margins(ax, top=0.035, bottom=0.02)
+        shrink_axes_vertical(ax, factor=1.00)
+        # Title anchored to the figure (does not move with axes) and slightly raised
+        center_title_over_axes(ax.figure, ax, title, y=0.99, top=0.92)
 
     def _plot_traces_with_nodes(self, ax, title: str) -> None:
         # Draw traces first
@@ -872,7 +904,11 @@ class MainWindow(QtW.QMainWindow):
         ax.set_xlabel('X, pixels'); ax.set_ylabel('Y, pixels')
         # Visual axis flips to mirror preview
         self._apply_axis_flip_visual(ax)
-        ax.set_title(title)
+        # Reserve fixed margins to create a slightly larger gap between title and axes box
+        reserve_axes_margins(ax, top=0.035, bottom=0.02)
+        shrink_axes_vertical(ax, factor=1.00)
+        # Title anchored to the figure (does not move with axes) and slightly raised
+        center_title_over_axes(ax.figure, ax, title, y=0.99, top=0.92)
 
     def _flip_title_suffix(self) -> str:
         parts = []
@@ -1002,26 +1038,30 @@ class MainWindow(QtW.QMainWindow):
         ax.set_ylabel('Y, pixels')
         # Visual axis flips to mirror preview
         self._apply_axis_flip_visual(ax)
+        # Disable auto layout to respect manual margins and colorbar placement
+        prepare_figure_layout(ax.figure)
+        # Reserve margins to create gap between title and axes (stable manual layout)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
         mappable = cm.ScalarMappable(norm=norm, cmap=cmap)
         mappable.set_array([])
-        # Place colorbar directly below axes and match x-axis width
+        # Place colorbar directly below axes and match x-axis width (original behavior)
         fig = ax.figure
         divider = make_axes_locatable(ax)
         cax = divider.append_axes("bottom", size="6%", pad=0.70)
         cbar = fig.colorbar(mappable, cax=cax, orientation='horizontal')
-        cbar.set_label('Normalised slip tendency')
+        cbar.set_label('Normalised slip tendency', labelpad=6)
         # Show ticks from 0 to 1 every 0.1
         try:
             ticks = [i/10 for i in range(0, 11)]
             cbar.set_ticks(ticks)
         except Exception:
             pass
-        # Put title close above the axes border (consistent spacing)
+        # Title above axes with reserved top margin (keep adjust_layout off for stability)
         title_str = (
             fr"Normalised slip tendency for $\sigma_1$ = {sigma1:g} MPa, "
             fr"$\sigma_2$ = {sigma2:g} MPa, $\theta$ = {theta_sigma1:g}$^\circ$"
         )
-        title_above_axes(ax, title_str, offset_points=2, top=0.95)
+        title_above_axes(ax, title_str, offset_points=15, top=0.95, adjust_layout=False)
 
     def _plot_dilation_tendency(self, ax) -> None:
         # Map: colour-coded by dilation tendency T_d = (sigma1 - sn) / (sigma1 - sigma2)
@@ -1046,24 +1086,27 @@ class MainWindow(QtW.QMainWindow):
         ax.set_xlabel('X, pixels')
         ax.set_ylabel('Y, pixels')
         self._apply_axis_flip_visual(ax)
-        # Colorbar
+        # Disable auto layout and reserve margins before creating colorbar
+        prepare_figure_layout(ax.figure)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
+        # Colorbar (stable divider-based layout)
         norm = colors.Normalize(vmin=0.0, vmax=1.0)
         mappable = cm.ScalarMappable(norm=norm, cmap=cmap); mappable.set_array([])
         fig = ax.figure
         divider = make_axes_locatable(ax)
         cax = divider.append_axes("bottom", size="6%", pad=0.70)
         cbar = fig.colorbar(mappable, cax=cax, orientation='horizontal')
-        cbar.set_label('Dilation tendency')
+        cbar.set_label('Dilation tendency', labelpad=6)
         try:
             cbar.set_ticks([i/10 for i in range(0, 11)])
         except Exception:
             pass
-        # Title
+        # Title above axes (keep adjust_layout off for stability)
         title_str = (
             fr"Dilation tendency for $\sigma_1$ = {sigma1:g} MPa, "
             fr"$\sigma_2$ = {sigma2:g} MPa, $\theta$ = {theta_sigma1:g}$^\circ$"
         )
-        title_above_axes(ax, title_str, offset_points=2, top=0.95)
+        title_above_axes(ax, title_str, offset_points=15, top=0.95, adjust_layout=False)
 
     def _plot_susceptibility_map(self, ax) -> None:
         import numpy as np
@@ -1107,17 +1150,16 @@ class MainWindow(QtW.QMainWindow):
         ax.set_xlabel('X, pixels')
         ax.set_ylabel('Y, pixels')
         self._apply_axis_flip_visual(ax)
-        # Colorbar (continuous)
+        # Disable auto layout and reserve margins before creating colorbar
+        prepare_figure_layout(ax.figure)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
+        # Colorbar (stable divider-based layout)
         mappable = cm.ScalarMappable(norm=norm, cmap=cmap); mappable.set_array([])
-        cbar = axis_wide_colorbar(
-            ax,
-            mappable,
-            location='bottom',
-            size='6%',
-            pad=0.70,
-            label=r'Fracture susceptibility ($\Delta P_f$), MPa',
-            gid='susc_map_cbar',
-        )
+        fig = ax.figure
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        cbar = fig.colorbar(mappable, cax=cax, orientation='horizontal')
+        cbar.set_label(r'Fracture susceptibility ($\Delta P_f$), MPa', labelpad=4)
         # Persist chosen ticks/range to reuse in rose without changing map's ticks
         try:
             self._susc_ticks = [float(t) for t in getattr(cbar, 'get_ticks', lambda: [])()]
@@ -1128,12 +1170,12 @@ class MainWindow(QtW.QMainWindow):
                 self._susc_ticks = None
         self._susc_vmin = vmin
         self._susc_vmax = vmax
-        # Title truncated to end at theta = 0° (per request)
+        # Title above axes (keep adjust_layout off for stability)
         title_str = (
             fr"Fracture susceptibility for $\sigma_1$ = {sigma1:g} MPa, "
-            fr"$\sigma_2$ = {sigma2:g} MPa, $\theta$ = 0$^\circ$"
+            fr"$\sigma_2$ = {sigma2:g} MPa, $\theta$ = {theta_sigma1:g}$^\circ$"
         )
-        title_above_axes(ax, title_str, offset_points=2, top=0.95)
+        title_above_axes(ax, title_str, offset_points=15, top=0.95, adjust_layout=False)
 
     def _apply_axis_flip_visual(self, ax) -> None:
         try:
@@ -1221,7 +1263,160 @@ class MainWindow(QtW.QMainWindow):
         )
         # Title close above the axes border (consistent spacing with Slip Tendency)
         title_str = rf"Mohr diagram $\mu$={mu:g}, $C_0$={C0:g} MPa"
-        title_above_axes(ax, title_str, offset_points=2, top=0.95)
+        # Lift the title a bit more to separate from the axes box
+        title_above_axes(ax, title_str, offset_points=15, top=0.95)
+
+    def _plot_csf_map(self, ax) -> None:
+        import numpy as np
+        sigma1 = float(self.sp_sigma1.value()) if hasattr(self, 'sp_sigma1') else 100.0
+        sigma2 = float(self.sp_sigma2.value()) if hasattr(self, 'sp_sigma2') else 50.0
+        theta_sigma1 = float(self.sp_angle.value()) if hasattr(self, 'sp_angle') else 0.0
+        C0 = float(self.sp_cohesion.value()) if hasattr(self, 'sp_cohesion') else 0.0
+        mu = float(self.sp_fric.value()) if hasattr(self, 'sp_fric') else 0.6
+        pf = float(self.sp_pore.value()) if hasattr(self, 'sp_pore') else 0.0
+        if not self._segments:
+            return
+        _, sigmans, taus, _ = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
+        # Classification per MATLAB: CSF if |tau| >= mu*(|sn| - pf) + C0
+        csf_vals = []
+        for sn, t in zip(sigmans, taus):
+            sn_a = abs(sn)
+            t_a = abs(t)
+            csf = 1 if (t_a >= (mu * (sn_a - pf) + C0)) else 0
+            csf_vals.append(csf)
+        # Two-color discrete map
+        cmap = colors.ListedColormap([cm.get_cmap('jet')(0.10), cm.get_cmap('jet')(0.90)])
+        norm = colors.BoundaryNorm(boundaries=[-0.5, 0.5, 1.5], ncolors=cmap.N)
+        xs_all = []
+        ys_all = []
+        for s, csf in zip(self._segments, csf_vals):
+            ax.plot([s.x1, s.x2], [s.y1, s.y2], color=cmap(norm(csf)), lw=0.75)
+            xs_all.extend([s.x1, s.x2]); ys_all.extend([s.y1, s.y2])
+        if xs_all and ys_all:
+            ax.set_xlim(min(xs_all), max(xs_all))
+            ax.set_ylim(min(ys_all), max(ys_all))
+        ax.set_aspect('equal', adjustable='box')
+        ax.set_xlabel('X, pixels')
+        ax.set_ylabel('Y, pixels')
+        self._apply_axis_flip_visual(ax)
+        # Disable auto layout and reserve margins before creating colorbar
+        prepare_figure_layout(ax.figure)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
+        # Colorbar with categorical ticks/labels (stable divider-based layout)
+        mappable = cm.ScalarMappable(norm=norm, cmap=cmap); mappable.set_array([])
+        fig = ax.figure
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        cbar = fig.colorbar(mappable, cax=cax, orientation='horizontal')
+        cbar.set_label(fr'Critically Stressed Fractures, $P_f$={pf:g} MPa', labelpad=4)
+        try:
+            cbar.set_ticks([0, 1])
+            cbar.set_ticklabels(['Non-CSF', 'CSF'])
+        except Exception:
+            pass
+        # Title above axes (keep adjust_layout off for stability)
+        title_str = (
+            fr"Critically stressed fractures $\sigma_1$' = {sigma1 - pf:g} MPa, "
+            fr"$\sigma_2$' = {sigma2 - pf:g} MPa, $\theta$ = {theta_sigma1:g}$^\circ$"
+        )
+        title_above_axes(ax, title_str, offset_points=15, top=0.95, adjust_layout=False)
+
+    def _plot_rose_csf(self, ax) -> None:
+        import numpy as np
+        sigma1 = float(self.sp_sigma1.value()) if hasattr(self, 'sp_sigma1') else 100.0
+        sigma2 = float(self.sp_sigma2.value()) if hasattr(self, 'sp_sigma2') else 50.0
+        theta_sigma1 = float(self.sp_angle.value()) if hasattr(self, 'sp_angle') else 0.0
+        C0 = float(self.sp_cohesion.value()) if hasattr(self, 'sp_cohesion') else 0.0
+        mu = float(self.sp_fric.value()) if hasattr(self, 'sp_fric') else 0.6
+        pf = float(self.sp_pore.value()) if hasattr(self, 'sp_pore') else 0.0
+        angs, sigmans, taus, _ = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
+        if not angs:
+            return
+        # Duplicate angles for 0..360 coverage, and compute CSF flag per segment
+        csf = [1 if (abs(t) >= (mu * (abs(sn) - pf) + C0)) else 0 for sn, t in zip(sigmans, taus)]
+        angs2 = angs + [((a + 180.0) % 360.0) for a in angs]
+        csf2 = csf + csf
+        dir_bins = 36
+        theta_edges = np.linspace(0, 2*np.pi, dir_bins + 1)
+        theta = np.deg2rad(angs2)
+        if self._flip_x:
+            theta = (np.pi - theta)
+        if self._flip_y:
+            theta = (-theta)
+        theta = (theta + 2*np.pi) % (2*np.pi)
+        inds = np.digitize(theta, theta_edges) - 1
+        means = np.zeros(dir_bins); counts = np.zeros(dir_bins)
+        for i, val in zip(inds, csf2):
+            if 0 <= i < dir_bins:
+                means[i] += val; counts[i] += 1
+        with np.errstate(invalid='ignore'):
+            means = np.divide(means, counts, out=np.zeros_like(means), where=counts>0)
+        # Polar setup
+        ax.set_theta_zero_location('N'); ax.set_theta_direction(-1)
+        try:
+            ax.set_xticklabels([]); ax.set_yticks([]); ax.set_rticks([]); ax.set_rgrids([]); ax.grid(False); ax.set_frame_on(False)
+            sp = ax.spines.get('polar');
+            if sp is not None: sp.set_visible(False)
+        except Exception:
+            pass
+        widths = 2*np.pi / dir_bins
+        total = counts.sum()
+        if total > 0:
+            frac = counts / total; radii = np.sqrt(frac); max_frac = float(frac.max())
+        else:
+            radii = counts; max_frac = 0.0
+        # Reference levels (equal-area): select outer rim based on max percentage present
+        perc_levels = [1, 5, 10, 20, 30, 50]
+        max_perc = max_frac * 100.0
+        show_to_perc = next((pl for pl in perc_levels if max_perc <= pl), perc_levels[-1])
+        show_to = show_to_perc / 100.0
+        # Two-level color mapping (Non-CSF, CSF)
+        cmap = colors.ListedColormap([cm.get_cmap('jet')(0.10), cm.get_cmap('jet')(0.90)])
+        # Convert mean to discrete class: >=0.5 -> CSF
+        classes = (means >= 0.5).astype(int)
+        for i in range(dir_bins):
+            col = cmap(classes[i])
+            ax.bar(theta_edges[i], radii[i], width=widths, bottom=0.0, align='edge', color=col, edgecolor='white', alpha=0.95)
+        # Margins and colorbar
+        reserve_axes_margins(ax, top=0.05, bottom=0.13)
+        shrink_axes_vertical(ax, factor=0.90)
+        # Custom colorbar with two categories
+        norm = colors.BoundaryNorm(boundaries=[-0.5, 0.5, 1.5], ncolors=cmap.N)
+        mappable = cm.ScalarMappable(norm=norm, cmap=cmap); mappable.set_array([])
+        cbar = axis_wide_colorbar(
+            ax,
+            mappable,
+            location='bottom',
+            size='5%',
+            pad=0.00,
+            label=r'Critically Stressed Fractures',
+            gid='rose_csf_cbar',
+        )
+        try:
+            cbar.set_ticks([0, 1]); cbar.set_ticklabels(['Non-CSF', 'CSF'])
+        except Exception:
+            pass
+        # Rim and overlays: draw equal-area reference circles and labels (%, up to show_to_perc)
+        r_edge = float(np.sqrt(show_to)) if show_to > 0 else 1.0
+        ax.set_ylim(0, r_edge)
+        thetas_full = np.linspace(0, 2*np.pi, 361)
+        for pperc in perc_levels:
+            if pperc <= show_to_perc:
+                r = np.sqrt(pperc/100.0)
+                ax.plot(thetas_full, np.full_like(thetas_full, r), color='k', lw=0.6)
+                ax.text(np.pi, r, f"{pperc}%", ha='right', va='center', fontsize=8,
+                        bbox=dict(facecolor='white', edgecolor='none', pad=0.2))
+        for ang in (0.0, np.pi/2, np.pi, 3*np.pi/2):
+            ax.plot([ang, ang], [0, r_edge], color='k', lw=0.5)
+        theta_sig = np.deg2rad(theta_sigma1)
+        ax.plot([theta_sig, theta_sig], [0, r_edge], color='r', lw=1.2)
+        ax.plot([theta_sig + np.pi, theta_sig + np.pi], [0, r_edge], color='r', lw=1.2)
+        try:
+            ax.text(theta_sig, r_edge*1.005, r"Azimuth $\sigma_1$", ha='center', va='bottom', fontsize=9, clip_on=False, bbox=dict(facecolor='white', edgecolor='none', pad=0.2))
+        except Exception:
+            pass
+        # Slightly higher nudge to visually match other roses on some backends
+        title_above_axes(ax, r'Segment angles (equal area), colour-coded by CSF', offset_points=32, top=0.96, adjust_layout=False)
 
     def _plot_rose_slip(self, ax) -> None:
         import numpy as np
