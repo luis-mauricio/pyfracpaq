@@ -206,7 +206,7 @@ class MainWindow(QtW.QMainWindow):
         grp_maps = QtW.QGroupBox("Maps")
         gm = QtW.QVBoxLayout(grp_maps)
         # Adicionar acolchoado nas laterais/base; topo leve para não abrir um grande vão
-        gm.setContentsMargins(8, 4, 8, 8)
+        gm.setContentsMargins(8, 4, 8, 4)
         gm.setSpacing(3)
         self.chk_traces_segments = QtW.QCheckBox("Traces, segments")
         # "Show nodes" subordinado (recuado e dependente de "Traces, segments")
@@ -393,16 +393,32 @@ class MainWindow(QtW.QMainWindow):
         footer = QtW.QGridLayout()
         footer.addWidget(QtW.QLabel("Filename tag for this run"), 0, 0)
         self.edit_run_tag = QtW.QLineEdit("Run1"); footer.addWidget(self.edit_run_tag, 0, 1)
-        self.btn_run = QtW.QPushButton("Run"); self.btn_run.setEnabled(False); footer.addWidget(self.btn_run, 1, 0)
+        self.btn_run = QtW.QPushButton("Run"); self.btn_run.setEnabled(False)
         self.btn_run.clicked.connect(self.action_run)
-        self.btn_exit = QtW.QPushButton("Exit"); self.btn_exit.clicked.connect(self.close); footer.addWidget(self.btn_exit, 1, 1)
+        self.btn_exit = QtW.QPushButton("Exit"); self.btn_exit.clicked.connect(self.close)
+        btns_row = QtW.QWidget()
+        btns_layout = QtW.QHBoxLayout(btns_row)
+        btns_layout.setContentsMargins(0, 0, 0, 0)
+        btns_layout.setSpacing(16)
+        btns_layout.setAlignment(QtCore.Qt.AlignCenter)
+        btns_layout.addWidget(self.btn_run)
+        btns_layout.addWidget(self.btn_exit)
+        footer.addWidget(btns_row, 1, 0, 1, 2, QtCore.Qt.AlignCenter)
+        # Equalize button widths so Run/Exit stay visualmente balanceados e mais longos
+        btn_width = max(self.btn_run.sizeHint().width(), self.btn_exit.sizeHint().width()) + 40
+        self.btn_run.setFixedWidth(btn_width)
+        self.btn_exit.setFixedWidth(btn_width)
         # Version/email
-        self.lbl_ver = QtW.QLabel("Version 2.8, March 2021   E-mail: info@fracpaq.com")
-        footer.addWidget(self.lbl_ver, 2, 0, 1, 2)
+        self.lbl_version = QtW.QLabel("Version 0.11, September 2025")
+        self.lbl_version.setAlignment(QtCore.Qt.AlignCenter)
+        self.lbl_email = QtW.QLabel("E-mail: lmgeologiaufrj@gmail.com")
+        self.lbl_email.setAlignment(QtCore.Qt.AlignCenter)
+        footer.addWidget(self.lbl_version, 2, 0, 1, 2, QtCore.Qt.AlignCenter)
+        footer.addWidget(self.lbl_email, 3, 0, 1, 2, QtCore.Qt.AlignCenter)
         # Large logo at bottom-right
         self.lbl_biglogo = QtW.QLabel()
         self._set_big_logo()
-        footer.addWidget(self.lbl_biglogo, 0, 2, 3, 1)
+        footer.addWidget(self.lbl_biglogo, 0, 2, 4, 1)
         footer.setColumnStretch(2, 1)
         # Place footer under the right tabs column only
         right_col.addLayout(footer)
@@ -484,13 +500,13 @@ class MainWindow(QtW.QMainWindow):
             if self.chk_show_nodes.isChecked():
                 self._show_plot_window(
                     key="traces_nodes",
-                    window_title="PyFracPaQ - Traces + Nodes",
+                    window_title="PyFracPaQ - Show Nodes",
                     plotter=lambda ax: self._plot_traces_with_nodes(ax, title=title),
                 )
             else:
                 self._show_plot_window(
                     key="traces_segments",
-                    window_title="PyFracPaQ - Traces",
+                    window_title="PyFracPaQ - Traces, segments",
                     plotter=lambda ax: self._plot_traces_only(ax, title=title),
                 )
         # Slip tendency related plots
@@ -502,7 +518,7 @@ class MainWindow(QtW.QMainWindow):
             )
             self._show_plot_window(
                 key="slip_tendency_mohr",
-                window_title="PyFracPaQ - Mohr Circle (Slip)",
+                window_title="PyFracPaQ - Mohr Circle (Slip Tendency)",
                 plotter=lambda ax: self._plot_mohr_circle(ax),
             )
             self._show_plot_window(
@@ -521,7 +537,7 @@ class MainWindow(QtW.QMainWindow):
             # Mohr circle is the same stress space for dilation; reuse the same plotter
             self._show_plot_window(
                 key="dilation_tendency_mohr",
-                window_title="PyFracPaQ - Mohr Circle (Dilation)",
+                window_title="PyFracPaQ - Mohr Circle (Dilation Tendency)",
                 plotter=lambda ax: self._plot_mohr_circle(ax),
             )
             self._show_plot_window(
@@ -539,7 +555,7 @@ class MainWindow(QtW.QMainWindow):
             )
             self._show_plot_window(
                 key="susceptibility_mohr",
-                window_title="PyFracPaQ - Mohr Circle (Susceptibility)",
+                window_title="PyFracPaQ - Mohr Circle (Fracture Susceptibility)",
                 plotter=lambda ax: self._plot_mohr_circle(ax),
             )
             self._show_plot_window(
@@ -707,9 +723,9 @@ class MainWindow(QtW.QMainWindow):
 
     def _set_big_logo(self) -> None:
         for p in [
-            Path("FracPaQ_MATLAB/FracPaQlogo.jpeg"),
-            Path("FracPaQ_MATLAB/FracPaQlogo.jpg"),
-            Path("FracPaQ_MATLAB/FracPaQlogo.png"),
+            Path("pyfracpaq/gui/PyFracPaQ_logo.jpeg"),
+            Path("pyfracpaq/gui/PyFracPaQ_logo.jpg"),
+            Path("pyfracpaq/gui/PyFracPaQ_logo.png"),
         ]:
             if p.exists():
                 pix = QtGui.QPixmap(str(p))
@@ -849,9 +865,10 @@ class MainWindow(QtW.QMainWindow):
                 ey,
                 linestyle='None',
                 marker='o',
-                markersize=5,
+                markersize=3,
                 markerfacecolor='none',
                 markeredgecolor='k',
+                markeredgewidth=0.6,
             )
         if mx:
             ax.plot(
@@ -862,6 +879,7 @@ class MainWindow(QtW.QMainWindow):
                 markersize=5,
                 markerfacecolor='none',
                 markeredgecolor='r',
+                markeredgewidth=0.6,
             )
         # Trace midpoints: position at half of cumulative length along the polyline
         tx = []; ty = []
@@ -899,9 +917,10 @@ class MainWindow(QtW.QMainWindow):
                 ty,
                 linestyle='None',
                 marker='^',
-                markersize=5,
+                markersize=6,
                 markerfacecolor='none',
                 markeredgecolor='g',
+                markeredgewidth=0.6,
             )
         # Limits, labels, title
         xs = [c for s in self._segments for c in (s.x1, s.x2)]
@@ -918,12 +937,12 @@ class MainWindow(QtW.QMainWindow):
         #shrink_axes_vertical(ax, factor=1.00)
         # Title anchored to the figure (does not move with axes) and slightly raised
         #center_title_over_axes(ax.figure, ax, title, y=0.99, top=0.92)
-        fig = ax.figure
-        divider = make_axes_locatable(ax)
-        cax = divider.append_axes("bottom", size="6%", pad=0.70)
-        cax.set_axis_off()
-        cax.set_facecolor('none')
-        cax.set_in_layout(True) 
+        #fig = ax.figure
+        #divider = make_axes_locatable(ax)
+        #cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        #cax.set_axis_off()
+        #cax.set_facecolor('none')
+        #cax.set_in_layout(True) 
         title_above_axes(ax, title, offset_points=16.5, top=0.95, adjust_layout=False)
 
     def _flip_title_suffix(self) -> str:
