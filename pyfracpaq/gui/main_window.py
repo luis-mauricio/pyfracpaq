@@ -7,6 +7,11 @@ from PySide6 import QtCore, QtGui, QtWidgets as QtW
 from matplotlib.backends.backend_qtagg import NavigationToolbar2QT as NavigationToolbar
 import math
 from matplotlib import cm, colors
+
+try:
+    from cmocean import cm as cmo_cm  # type: ignore
+except Exception:  # pragma: no cover - optional dependency
+    cmo_cm = None
 from matplotlib.ticker import MultipleLocator
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 from .plot_utils import (
@@ -528,6 +533,24 @@ class MainWindow(QtW.QMainWindow):
                     window_title="PyFracPaQ - Traces, segments",
                     plotter=lambda ax: self._plot_traces_only(ax, title=title),
                 )
+        if getattr(self, "chk_traces_by_len", None) is not None and self.chk_traces_by_len.isChecked():
+            self._show_plot_window(
+                key="traces_by_length",
+                window_title="PyFracPaQ - Traces by Length",
+                plotter=lambda ax: self._plot_traces_by_length(ax),
+            )
+        if getattr(self, "chk_segments_by_len", None) is not None and self.chk_segments_by_len.isChecked():
+            self._show_plot_window(
+                key="segments_by_length",
+                window_title="PyFracPaQ - Segments by Length",
+                plotter=lambda ax: self._plot_segments_by_length(ax),
+            )
+        if getattr(self, "chk_segments_by_strike", None) is not None and self.chk_segments_by_strike.isChecked():
+            self._show_plot_window(
+                key="segments_by_strike",
+                window_title="PyFracPaQ - Segments by Strike",
+                plotter=lambda ax: self._plot_segments_by_strike(ax),
+            )
         # Slip tendency related plots
         if getattr(self, "chk_slip", None) is not None and self.chk_slip.isChecked():
             self._show_plot_window(
@@ -987,6 +1010,249 @@ class MainWindow(QtW.QMainWindow):
         #cax.set_in_layout(True) 
         title_above_axes(ax, title, offset_points=16.5, top=0.95, adjust_layout=False)
 
+    def _plot_traces_by_length(self, ax) -> None:
+        traces = [t for t in getattr(self, "_traces", []) if t.segments]
+        if not traces:
+            return
+
+        lengths = [max(t.total_length(), 0.0) for t in traces]
+        positive = [l for l in lengths if l > 0.0]
+        if not positive:
+            positive = [1.0]
+        max_len = max(positive)
+        min_len = min(positive)
+
+        use_log = max_len > 0.0 and max_len / max(min_len, 1e-12) >= 5.0
+        if use_log:
+            vmin = max(min_len, max_len / 1e3)
+            if vmin <= 0.0 or vmin >= max_len:
+                vmin = min_len
+            if vmin <= 0.0 or vmin >= max_len:
+                use_log = False
+        if use_log:
+            norm = colors.LogNorm(vmin=vmin, vmax=max_len)
+        else:
+            if math.isclose(max_len, min_len):
+                max_len = min_len * 1.001 if min_len > 0 else 1.0
+            norm = colors.Normalize(vmin=min_len, vmax=max_len)
+
+        if cmo_cm is not None:
+            cmap = cmo_cm.haline
+        else:
+            cmap = cm.get_cmap('viridis', 256)
+        mappable = cm.ScalarMappable(norm=norm, cmap=cmap)
+        mappable.set_array([])
+        xs_all = []
+        ys_all = []
+        for trace, length in zip(traces, lengths):
+            segs = trace.segments
+            if not segs:
+                continue
+            xs = [segs[0].x1]
+            ys = [segs[0].y1]
+            for seg in segs:
+                xs.append(seg.x2)
+                ys.append(seg.y2)
+                xs_all.extend([seg.x1, seg.x2])
+                ys_all.extend([seg.y1, seg.y2])
+            if max_len > 0:
+                frac = min(max(length / max_len, 0.0), 1.0)
+            else:
+                frac = 0.0
+            color = cmap(frac)
+            ax.plot(xs, ys, color=color, linewidth=0.75)
+
+        if xs_all and ys_all:
+            ax.set_xlim(min(xs_all), max(xs_all))
+            ax.set_ylim(min(ys_all), max(ys_all))
+        ax.set_aspect('equal', adjustable='box')
+        ax.set_xlabel('X, pixels')
+        ax.set_ylabel('Y, pixels')
+        self._apply_axis_flip_visual(ax)
+
+        fig = ax.figure
+        prepare_figure_layout(fig)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
+
+        if use_log:
+            tick_candidates = [max_len / 1e3, max_len / 12.0, max_len / 3.0, max_len]
+            ticks = [t for t in tick_candidates if t > 0 and t >= norm.vmin * 1.0001 and t <= max_len * 1.0001]
+            if not ticks:
+                ticks = [max_len]
+        else:
+            ticks = self._linear_ticks(norm.vmin, norm.vmax, 4)
+        if not ticks:
+            ticks = [norm.vmin, norm.vmax]
+        ticks = sorted({t for t in ticks if math.isfinite(t)})
+        if not ticks:
+            ticks = [norm.vmax]
+        fig = ax.figure
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        cbar = fig.colorbar(mappable, cax=cax, orientation='horizontal')
+        cbar.set_label('Trace length, pixels', labelpad=6)
+        try:
+            cbar.set_ticks(ticks)
+            cbar.set_ticklabels([self._format_length_tick(t) for t in ticks])
+        except Exception:
+            pass
+
+        title_above_axes(
+            ax,
+            f'Trace length map, n = {len(traces)}',
+            offset_points=15,
+            top=0.95,
+            adjust_layout=False,
+        )
+
+    def _plot_segments_by_length(self, ax) -> None:
+        segments = list(getattr(self, "_segments", []))
+        if not segments:
+            return
+
+        lengths = [max(s.length(), 0.0) for s in segments]
+        positive = [l for l in lengths if l > 0.0]
+        if not positive:
+            positive = [1.0]
+        max_len = max(positive)
+        min_len = min(positive)
+
+        use_log = max_len > 0.0 and max_len / max(min_len, 1e-12) >= 5.0
+        if use_log:
+            vmin = max(min_len, max_len / 1e3)
+            if vmin <= 0.0 or vmin >= max_len:
+                vmin = min_len
+            if vmin <= 0.0 or vmin >= max_len:
+                use_log = False
+        if use_log:
+            norm = colors.LogNorm(vmin=vmin, vmax=max_len)
+        else:
+            if math.isclose(max_len, min_len):
+                max_len = min_len * 1.001 if min_len > 0 else 1.0
+            norm = colors.Normalize(vmin=min_len, vmax=max_len)
+
+        if cmo_cm is not None:
+            cmap = cmo_cm.haline
+        else:
+            cmap = cm.get_cmap('viridis', 256)
+        mappable = cm.ScalarMappable(norm=norm, cmap=cmap)
+        mappable.set_array([])
+
+        xs_all = []
+        ys_all = []
+        for seg, length in zip(segments, lengths):
+            xs_all.extend([seg.x1, seg.x2])
+            ys_all.extend([seg.y1, seg.y2])
+            if max_len > 0:
+                frac = min(max(length / max_len, 0.0), 1.0)
+            else:
+                frac = 0.0
+            color = cmap(frac)
+            ax.plot([seg.x1, seg.x2], [seg.y1, seg.y2], color=color, linewidth=0.75)
+
+        if xs_all and ys_all:
+            ax.set_xlim(min(xs_all), max(xs_all))
+            ax.set_ylim(min(ys_all), max(ys_all))
+        ax.set_aspect('equal', adjustable='box')
+        ax.set_xlabel('X, pixels')
+        ax.set_ylabel('Y, pixels')
+        self._apply_axis_flip_visual(ax)
+
+        fig = ax.figure
+        prepare_figure_layout(fig)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
+
+        if use_log:
+            tick_candidates = [max_len / 1e3, max_len / 12.0, max_len / 3.0, max_len]
+            ticks = [t for t in tick_candidates if t > 0 and t >= norm.vmin * 1.0001 and t <= max_len * 1.0001]
+            if not ticks:
+                ticks = [max_len]
+        else:
+            ticks = self._linear_ticks(norm.vmin, norm.vmax, 4)
+        if not ticks:
+            ticks = [norm.vmin, norm.vmax]
+        ticks = sorted({t for t in ticks if math.isfinite(t)})
+        if not ticks:
+            ticks = [norm.vmax]
+
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        cbar = fig.colorbar(mappable, cax=cax, orientation='horizontal')
+        cbar.set_label('Segment length, pixels', labelpad=6)
+        try:
+            cbar.set_ticks(ticks)
+            cbar.set_ticklabels([self._format_length_tick(t) for t in ticks])
+        except Exception:
+            pass
+
+        title_above_axes(
+            ax,
+            f'Segment length map, n = {len(segments)}',
+            offset_points=15,
+            top=0.95,
+            adjust_layout=False,
+        )
+
+    def _plot_segments_by_strike(self, ax) -> None:
+        segments = list(getattr(self, "_segments", []))
+        if not segments:
+            return
+
+        norm = colors.Normalize(vmin=0.0, vmax=180.0)
+        if cmo_cm is not None and hasattr(cmo_cm, 'phase'):
+            cmap = cmo_cm.phase
+        else:
+            cmap = cm.get_cmap('hsv', 181)
+        mappable = cm.ScalarMappable(norm=norm, cmap=cmap)
+        mappable.set_array([])
+
+        xs_all = []
+        ys_all = []
+        for seg in segments:
+            ang_x = seg.angle_deg()
+            ang = (90.0 - ang_x) % 180.0
+            if self._flip_x:
+                ang = (180.0 - ang) % 180.0
+            if self._flip_y:
+                ang = (180.0 - ang) % 180.0
+            if math.isclose(ang, 0.0, abs_tol=1e-9):
+                ang = 180.0
+            xs_all.extend([seg.x1, seg.x2])
+            ys_all.extend([seg.y1, seg.y2])
+            color = mappable.to_rgba(ang)
+            ax.plot([seg.x1, seg.x2], [seg.y1, seg.y2], color=color, linewidth=0.75)
+
+        if xs_all and ys_all:
+            ax.set_xlim(min(xs_all), max(xs_all))
+            ax.set_ylim(min(ys_all), max(ys_all))
+        ax.set_aspect('equal', adjustable='box')
+        ax.set_xlabel('X, pixels')
+        ax.set_ylabel('Y, pixels')
+        self._apply_axis_flip_visual(ax)
+
+        fig = ax.figure
+        prepare_figure_layout(fig)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
+
+        ticks = [0, 30, 60, 90, 120, 150, 180]
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        cbar = fig.colorbar(mappable, cax=cax, orientation='horizontal')
+        cbar.set_label('Segment strike, degrees', labelpad=6)
+        try:
+            cbar.set_ticks(ticks)
+            cbar.set_ticklabels([f"{t:g}°" for t in ticks])
+        except Exception:
+            pass
+
+        title_above_axes(
+            ax,
+            f'Segment strike map, n = {len(segments)}',
+            offset_points=15,
+            top=0.95,
+            adjust_layout=False,
+        )
+
     def _flip_title_suffix(self) -> str:
         parts = []
         if self._flip_x:
@@ -1003,6 +1269,30 @@ class MainWindow(QtW.QMainWindow):
             parts.append("Y")
         txt = "Flip: none" if not parts else f"Flip: {','.join(parts)}"
         self._flip_label.setText(txt)
+
+    @staticmethod
+    def _linear_ticks(vmin: float, vmax: float, count: int) -> list[float]:
+        if count <= 1:
+            return [vmax]
+        if not math.isfinite(vmin) or not math.isfinite(vmax):
+            return []
+        if math.isclose(vmax, vmin):
+            return [vmin]
+        step = (vmax - vmin) / (count - 1)
+        return [vmin + i * step for i in range(count)]
+
+    @staticmethod
+    def _format_length_tick(value: float) -> str:
+        if not math.isfinite(value):
+            return ""
+        abs_val = abs(value)
+        if abs_val >= 1000:
+            return f"{value:,.0f}".replace(",", " ")
+        if abs_val >= 10:
+            return f"{value:.0f}"
+        if abs_val >= 1:
+            return f"{value:.1f}"
+        return f"{value:.3f}"
 
     def _update_plot_window_titles(self) -> None:
         for win in self._plot_windows.values():
