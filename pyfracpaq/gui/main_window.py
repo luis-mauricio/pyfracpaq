@@ -170,6 +170,24 @@ class MainWindow(QtW.QMainWindow):
         top_row = QtW.QHBoxLayout()
         top_row.setContentsMargins(0, 0, 0, 0)
         top_row.setSpacing(8)
+        canvas_box = QtW.QWidget()
+        canvas_box_layout = QtW.QVBoxLayout(canvas_box)
+        canvas_box_layout.setContentsMargins(0, 0, 0, 0)
+        canvas_box_layout.setSpacing(6)
+        self.lbl_preview_title = QtW.QLabel("Fracture Pattern Quantification")
+        self.lbl_preview_title.setAlignment(QtCore.Qt.AlignCenter)
+        try:
+            title_font = self.lbl_preview_title.font()
+            title_font.setBold(True)
+            size = title_font.pointSize()
+            if size <= 0:
+                title_font.setPointSize(14)
+            else:
+                title_font.setPointSize(size * 3)
+            self.lbl_preview_title.setFont(title_font)
+        except Exception:
+            pass
+        canvas_box_layout.addWidget(self.lbl_preview_title)
         self.canvas_map = MplCanvas(width=8, height=6, dpi=100, polar=False)
         # Placeholder: match surrounding background and hide axes until data is plotted
         try:
@@ -177,8 +195,9 @@ class MainWindow(QtW.QMainWindow):
             self.canvas_map.set_placeholder_background(bg)
         except Exception:
             pass
+        canvas_box_layout.addWidget(self.canvas_map, 1)
         # Now that canvas exists, wire flip buttons (handlers already connected)
-        top_row.addWidget(self.canvas_map, 3)
+        top_row.addWidget(canvas_box, 3)
         # Rely on layout spacing only to keep symmetric gaps left/right
         # Right column holds the tabs pages on top and the footer directly below them
         right_col_w = QtW.QWidget()
@@ -772,6 +791,10 @@ class MainWindow(QtW.QMainWindow):
                 win._canvas.figure.set_layout_engine(None)
             except Exception:
                 pass
+            try:
+                win._canvas.ax._default_position = tuple(win._canvas.ax.get_position().bounds)
+            except Exception:
+                win._canvas.ax._default_position = None
             # Default window sizing (no special case); allow user to resize as needed
             self._plot_windows[key] = win
         else:
@@ -804,6 +827,10 @@ class MainWindow(QtW.QMainWindow):
                     win._canvas.figure.set_layout_engine(None)
                 except Exception:
                     pass
+                try:
+                    win._canvas.ax._default_position = tuple(win._canvas.ax.get_position().bounds)
+                except Exception:
+                    win._canvas.ax._default_position = None
         # Store base title and apply flip suffix
         win._base_title = getattr(win, '_base_title', window_title)
         win.setWindowTitle(win._base_title + self._flip_title_suffix())
@@ -818,6 +845,21 @@ class MainWindow(QtW.QMainWindow):
                     ax2.remove()
         except Exception:
             pass
+        base_bbox = getattr(ax, '_default_position', None)
+        if base_bbox is None:
+            try:
+                base_bbox = tuple(ax.get_position().bounds)
+                ax._default_position = base_bbox
+            except Exception:
+                base_bbox = None
+        if base_bbox is not None:
+            try:
+                ax.set_position(list(base_bbox))
+            except Exception:
+                pass
+        # Reset shrink baseline so helper functions start from the captured layout
+        if base_bbox is not None:
+            ax._shrink_base_bounds = base_bbox
         plotter(ax)
         win._canvas.draw_idle()
         win.show()
@@ -1451,7 +1493,7 @@ class MainWindow(QtW.QMainWindow):
         except Exception:
             pass
         # Slightly higher nudge to visually match other roses on some backends
-        title_above_axes(ax, r'Segment angles (equal area), colour-coded by CSF', offset_points=32, top=0.96, adjust_layout=False)
+        title_above_axes(ax, r'Segment angles (equal area), colour-coded by CSF', offset_points=25, top=0.96, adjust_layout=False)
 
     def _plot_rose_slip(self, ax) -> None:
         import numpy as np
@@ -1587,7 +1629,7 @@ class MainWindow(QtW.QMainWindow):
         except Exception:
             pass
         # Title above axes without adjusting layout (reserved margins handle space)
-        title_above_axes(ax, r'Segment angles (equal area), colour-coded by $T_s$', offset_points=30, top=0.96, adjust_layout=False)
+        title_above_axes(ax, r'Segment angles (equal area), colour-coded by $T_s$', offset_points=24, top=0.96, adjust_layout=False)
 
     def _plot_rose_dilation(self, ax) -> None:
         import numpy as np
@@ -1675,7 +1717,7 @@ class MainWindow(QtW.QMainWindow):
             ax.text(theta_sig, r_edge*1.005, r"Azimuth $\sigma_1$", ha='center', va='bottom', fontsize=9, clip_on=False, bbox=dict(facecolor='white', edgecolor='none', pad=0.2))
         except Exception:
             pass
-        title_above_axes(ax, r'Segment angles (equal area), colour-coded by $T_d$', offset_points=30, top=0.96, adjust_layout=False)
+        title_above_axes(ax, r'Segment angles (equal area), colour-coded by $T_d$', offset_points=24, top=0.96, adjust_layout=False)
 
     def _plot_rose_susceptibility(self, ax) -> None:
         import numpy as np
@@ -1802,7 +1844,7 @@ class MainWindow(QtW.QMainWindow):
             ax.text(theta_sig, r_edge*1.005, r"Azimuth $\sigma_1$", ha='center', va='bottom', fontsize=9, clip_on=False, bbox=dict(facecolor='white', edgecolor='none', pad=0.2))
         except Exception:
             pass
-        title_above_axes(ax, r'Segment angles (equal area), colour-coded by $S_f$', offset_points=30, top=0.96, adjust_layout=False)
+        title_above_axes(ax, r'Segment angles (equal area), colour-coded by $S_f$', offset_points=24, top=0.96, adjust_layout=False)
 
     def _update_run_enabled(self) -> None:
         # Enable Run if any checkbox in tabs is checked and data is loaded
