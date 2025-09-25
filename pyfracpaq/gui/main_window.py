@@ -6,7 +6,9 @@ from typing import Optional
 from PySide6 import QtCore, QtGui, QtWidgets as QtW
 from matplotlib.backends.backend_qtagg import NavigationToolbar2QT as NavigationToolbar
 import math
+import numpy as np
 from matplotlib import cm, colors
+from matplotlib.patches import Circle
 
 try:
     from cmocean import cm as cmo_cm  # type: ignore
@@ -46,6 +48,9 @@ class MainWindow(QtW.QMainWindow):
         # Axis flip state for computations/plots
         self._flip_x = False
         self._flip_y = False
+        # Cache for scan circle computations (P20/P21)
+        self._scan_cache = None
+        self._scan_state_token = object()
 
         # Central container (body only)
         central = QtW.QWidget()
@@ -346,6 +351,7 @@ class MainWindow(QtW.QMainWindow):
         self.chk_est_density = QtW.QCheckBox("Estimated Density, P20"); gi.addWidget(self.chk_est_density, r, 0, 1, 2); r += 1
         # Subordinados a Density (apenas habilitados quando Density está marcado) e recuados
         self.chk_showcircles = QtW.QCheckBox("Show scan circles"); self.chk_showcircles.setEnabled(False)
+        self.chk_showcircles.toggled.connect(lambda _: self._invalidate_scan_cache())
         ind_circles = QtW.QWidget(); ind_circles_l = QtW.QHBoxLayout(ind_circles)
         ind_circles_l.setContentsMargins(12, 0, 0, 0)
         ind_circles_l.setSpacing(6)
@@ -365,7 +371,10 @@ class MainWindow(QtW.QMainWindow):
         # Guardar e iniciar desabilitado para refletir estado visual (texto esmaecido)
         self.ind_num = ind_num
         self.ind_num.setEnabled(False)
-        def toggle_density(on: bool):
+        self.spin_ncircles.valueChanged.connect(lambda _: self._invalidate_scan_cache())
+        def toggle_scan_circles(_: bool):
+            on = (self.chk_est_density.isChecked() or
+                  self.chk_est_intensity.isChecked())
             # Habilitar/Desabilitar blocos indentados para refletir no texto (cor)
             self.ind_circles.setEnabled(on)
             self.ind_num.setEnabled(on)
@@ -375,7 +384,11 @@ class MainWindow(QtW.QMainWindow):
             if not on and self.chk_showcircles.isChecked():
                 # Ao desmarcar Density, desmarcar também Show scan circles
                 self.chk_showcircles.setChecked(False)
-        self.chk_est_density.toggled.connect(toggle_density)
+            self._invalidate_scan_cache()
+            self._invalidate_scan_cache()
+            self._invalidate_scan_cache()
+        self.chk_est_density.toggled.connect(toggle_scan_circles)
+        self.chk_est_intensity.toggled.connect(toggle_scan_circles)
         # Add to Maps group later via a grid
 
         # Grid interno em "Maps" para alinhar como no MATLAB
@@ -551,6 +564,31 @@ class MainWindow(QtW.QMainWindow):
                 window_title="PyFracPaQ - Segments by Strike",
                 plotter=lambda ax: self._plot_segments_by_strike(ax),
             )
+        if getattr(self, "chk_est_intensity", None) is not None and self.chk_est_intensity.isChecked():
+            self._show_plot_window(
+                key="intensity_map",
+                window_title="PyFracPaQ - Intensity (P21)",
+                plotter=lambda ax: self._plot_intensity_map(ax),
+                refresh_token=self._scan_state_token,
+            )
+        if getattr(self, "chk_est_density", None) is not None and self.chk_est_density.isChecked():
+            self._show_plot_window(
+                key="density_map",
+                window_title="PyFracPaQ - Density (P20)",
+                plotter=lambda ax: self._plot_density_map(ax),
+                refresh_token=self._scan_state_token,
+            )
+        if (
+            getattr(self, "chk_showcircles", None) is not None
+            and self.chk_showcircles.isEnabled()
+            and self.chk_showcircles.isChecked()
+        ):
+            self._show_plot_window(
+                key="scan_circles",
+                window_title="PyFracPaQ - Scan Circles",
+                plotter=lambda ax: self._plot_scan_circles(ax),
+                refresh_token=self._scan_state_token,
+            )
         # Slip tendency related plots
         if getattr(self, "chk_slip", None) is not None and self.chk_slip.isChecked():
             self._show_plot_window(
@@ -641,6 +679,7 @@ class MainWindow(QtW.QMainWindow):
         # Flatten segments for plotting; keep traces for stats
         self._traces = traces
         self._segments = [s for t in traces for s in t.segments]
+        self._invalidate_scan_cache()
         self.edit_filename.setText(str(path))
         self.statusBar().showMessage("Ready. Click Run to generate maps and graphs.")
         # Enable flip controls (both left and right, if present)
@@ -790,11 +829,11 @@ class MainWindow(QtW.QMainWindow):
         # Embedded canvas no longer reflects immediate plot
         self._update_run_enabled()
 
-    def _show_plot_window(self, key: str, window_title: str, plotter, polar: bool = False) -> None:
-        # If already visible, just raise/activate; don't replot to avoid flicker
+    def _show_plot_window(self, key: str, window_title: str, plotter, polar: bool = False, refresh_token=None) -> None:
         win = self._plot_windows.get(key)
         if win is not None and win.isVisible():
-            win.raise_(); win.activateWindow(); return
+            if refresh_token is None or getattr(win, '_render_token', None) == refresh_token:
+                win.raise_(); win.activateWindow(); return
         # Create window on first use or if it was closed/hidden
         if win is None:
             win = QtW.QMainWindow(self)
@@ -820,6 +859,7 @@ class MainWindow(QtW.QMainWindow):
                 win._canvas.ax._default_position = None
             # Default window sizing (no special case); allow user to resize as needed
             self._plot_windows[key] = win
+            win._render_token = None
         else:
             # Ensure toolbar exists if window persisted without it
             if not hasattr(win, "_toolbar"):
@@ -884,8 +924,11 @@ class MainWindow(QtW.QMainWindow):
         if base_bbox is not None:
             ax._shrink_base_bounds = base_bbox
         plotter(ax)
+        win._render_token = refresh_token
         win._canvas.draw_idle()
         win.show()
+        if refresh_token is not None:
+            win.raise_(); win.activateWindow()
 
     def _plot_traces_only(self, ax, title: str) -> None:
         # Plot all segments as lines, equal aspect, labels and MATLAB-style title
@@ -1252,6 +1295,267 @@ class MainWindow(QtW.QMainWindow):
             top=0.95,
             adjust_layout=False,
         )
+
+    def _invalidate_scan_cache(self) -> None:
+        self._scan_cache = None
+        self._scan_state_token = object()
+
+    def _plot_intensity_map(self, ax) -> None:
+        try:
+            grid, intensity, _ = self._compute_intensity_density_arrays()
+        except ValueError as exc:
+            QtW.QMessageBox.information(self, "Cannot compute P21", str(exc))
+            return
+        if intensity.size == 0:
+            return
+
+        cmap = cm.get_cmap('hot', 256).reversed()
+        extent = grid['extent']
+        im = ax.imshow(intensity, origin='lower', extent=extent, cmap=cmap, aspect='equal')
+        max_intensity = float(np.nanmax(intensity)) if intensity.size else 0.0
+        if max_intensity > 0.0:
+            im.set_clim(0.0, max_intensity)
+        ax.set_xlim(grid['x_min'], grid['x_max'])
+        ax.set_ylim(grid['y_min'], grid['y_max'])
+        ax.set_xlabel('X, pixels')
+        ax.set_ylabel('Y, pixels')
+        self._apply_axis_flip_visual(ax)
+
+        prepare_figure_layout(ax.figure)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
+
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        cbar = ax.figure.colorbar(im, cax=cax, orientation='horizontal')
+        cbar.set_label('Intensity of segments (P21), pixels$^{-1}$', labelpad=6)
+
+        title_above_axes(
+            ax,
+            'Estimated intensity of segments (P21)',
+            offset_points=15,
+            top=0.95,
+            adjust_layout=False,
+        )
+
+    def _plot_density_map(self, ax) -> None:
+        try:
+            grid, _, density = self._compute_intensity_density_arrays()
+        except ValueError as exc:
+            QtW.QMessageBox.information(self, "Cannot compute P20", str(exc))
+            return
+        if density.size == 0:
+            return
+
+        cmap = cm.get_cmap('hot', 256).reversed()
+        extent = grid['extent']
+        im = ax.imshow(density, origin='lower', extent=extent, cmap=cmap, aspect='equal')
+        max_density = float(np.nanmax(density)) if density.size else 0.0
+        if max_density > 0.0:
+            im.set_clim(0.0, max_density)
+        ax.set_xlim(grid['x_min'], grid['x_max'])
+        ax.set_ylim(grid['y_min'], grid['y_max'])
+        ax.set_xlabel('X, pixels')
+        ax.set_ylabel('Y, pixels')
+        self._apply_axis_flip_visual(ax)
+
+        prepare_figure_layout(ax.figure)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
+
+        divider = make_axes_locatable(ax)
+        cax = divider.append_axes("bottom", size="6%", pad=0.70)
+        cbar = ax.figure.colorbar(im, cax=cax, orientation='horizontal')
+        cbar.set_label('Density of segments (P20), pixels$^{-2}$', labelpad=6)
+
+        title_above_axes(
+            ax,
+            'Estimated density of segments (P20)',
+            offset_points=15,
+            top=0.95,
+            adjust_layout=False,
+        )
+
+    def _plot_scan_circles(self, ax) -> None:
+        try:
+            grid, _, _ = self._compute_intensity_density_arrays()
+        except ValueError as exc:
+            QtW.QMessageBox.information(self, "Cannot draw scan circles", str(exc))
+            return
+
+        segments = getattr(self, "_segments", [])
+        if not segments:
+            return
+
+        plot_tracemap(segments, ax=ax, show_nodes=False)
+        xs = [c for seg in segments for c in (seg.x1, seg.x2)]
+        ys = [c for seg in segments for c in (seg.y1, seg.y2)]
+        if xs and ys:
+            ax.set_xlim(min(xs), max(xs))
+            ax.set_ylim(min(ys), max(ys))
+        ax.set_aspect('equal', adjustable='box')
+        ax.set_xlabel('X, pixels')
+        ax.set_ylabel('Y, pixels')
+        self._apply_axis_flip_visual(ax)
+        prepare_figure_layout(ax.figure)
+        reserve_axes_margins(ax, top=0.10, bottom=0.10)
+        radius = grid['radius']
+        for cx in grid['x_centers']:
+            for cy in grid['y_centers']:
+                circ = Circle((cx, cy), radius, edgecolor='r', facecolor='none', linewidth=0.4)
+                ax.add_patch(circ)
+
+        title_above_axes(ax, f'Mapped trace segments, n = {len(segments)}', offset_points=16.5, top=0.95, adjust_layout=False)
+
+    def _compute_intensity_density_arrays(self):
+        segments = getattr(self, "_segments", [])
+        if not segments:
+            raise ValueError('Load and preview a dataset first.')
+        if not hasattr(self, 'spin_ncircles'):
+            raise ValueError('Scan circle controls unavailable.')
+        n_circles = int(self.spin_ncircles.value())
+        if n_circles <= 0:
+            raise ValueError('Number of scan circles must be greater than zero.')
+
+        cache = getattr(self, '_scan_cache', None)
+        if cache is not None:
+            if (
+                cache['segments_id'] == id(segments)
+                and cache['n_circles'] == n_circles
+                and cache.get('token') is self._scan_state_token
+            ):
+                return cache['grid'], cache['intensity'], cache['density']
+
+        grid = self._build_scan_circle_grid(segments, n_circles)
+        x_centers = grid['x_centers']
+        y_centers = grid['y_centers']
+        r = grid['radius']
+        if r <= 0.0:
+            raise ValueError('Computed scan circle radius is zero.')
+
+        intensity = np.zeros((len(y_centers), len(x_centers)), dtype=float)
+        density = np.zeros_like(intensity)
+        r_sq = r * r
+
+        for ix, cx in enumerate(x_centers):
+            for iy, cy in enumerate(y_centers):
+                n_intersections = 0
+                n_endpoints = 0
+                for seg in segments:
+                    m_inc, n_inc = self._segment_circle_stats(seg, cx, cy, r, r_sq)
+                    n_endpoints += m_inc
+                    n_intersections += n_inc
+                intensity[iy, ix] = n_intersections / (4.0 * r) if r > 0 else 0.0
+                density[iy, ix] = n_endpoints / (2.0 * math.pi * r_sq) if r_sq > 0 else 0.0
+
+        self._scan_cache = {
+            'segments_id': id(segments),
+            'n_circles': n_circles,
+            'grid': grid,
+            'intensity': intensity,
+            'density': density,
+            'token': self._scan_state_token,
+        }
+        return grid, intensity, density
+
+    def _build_scan_circle_grid(self, segments, n_circles: int):
+        xs = [c for seg in segments for c in (seg.x1, seg.x2)]
+        ys = [c for seg in segments for c in (seg.y1, seg.y2)]
+        if not xs or not ys:
+            raise ValueError('Could not determine map limits for scan circles.')
+        x_min, x_max = min(xs), max(xs)
+        y_min, y_max = min(ys), max(ys)
+        width = x_max - x_min
+        height = y_max - y_min
+        if width <= 0 or height <= 0:
+            raise ValueError('Invalid map dimensions for scan circles.')
+
+        if width > height:
+            y_num = max(n_circles, 1)
+            y_delta = height / (y_num + 1)
+            radius = 0.99 * y_delta / 2.0
+            x_delta = (radius * 2.0) / 0.99 if radius > 0 else width
+            x_num = max(int(math.floor((width / x_delta) - 1.0)), 1) if x_delta > 0 else 1
+        elif width < height:
+            x_num = max(n_circles, 1)
+            x_delta = width / (x_num + 1)
+            radius = 0.99 * x_delta / 2.0
+            y_delta = (radius * 2.0) / 0.99 if radius > 0 else height
+            y_num = max(int(math.floor((height / y_delta) - 1.0)), 1) if y_delta > 0 else 1
+        else:
+            x_num = max(n_circles, 1)
+            y_num = max(n_circles, 1)
+            x_delta = width / (x_num + 1)
+            y_delta = height / (y_num + 1)
+            radius = 0.99 * min(x_delta, y_delta) / 2.0
+
+        if x_delta <= 0 or y_delta <= 0 or radius <= 0:
+            raise ValueError('Number of scan circles is too small for the current map.')
+
+        x_centers = [x_min + x_delta * (i + 1) for i in range(x_num)]
+        y_centers = [y_min + y_delta * (j + 1) for j in range(y_num)]
+        if not x_centers or not y_centers:
+            raise ValueError('Unable to position scan circles with the current settings.')
+
+        cell_w = x_delta
+        cell_h = y_delta
+        extent = [
+            x_centers[0] - cell_w / 2.0,
+            x_centers[-1] + cell_w / 2.0,
+            y_centers[0] - cell_h / 2.0,
+            y_centers[-1] + cell_h / 2.0,
+        ]
+
+        return {
+            'x_centers': x_centers,
+            'y_centers': y_centers,
+            'radius': radius,
+            'x_delta': x_delta,
+            'y_delta': y_delta,
+            'x_min': x_min,
+            'x_max': x_max,
+            'y_min': y_min,
+            'y_max': y_max,
+            'extent': extent,
+        }
+
+    @staticmethod
+    def _segment_circle_stats(seg, cx: float, cy: float, radius: float, radius_sq: float):
+        tol = 1e-9
+        x1 = seg.x1 - cx
+        y1 = seg.y1 - cy
+        x2 = seg.x2 - cx
+        y2 = seg.y2 - cy
+        dist1_sq = x1 * x1 + y1 * y1
+        dist2_sq = x2 * x2 + y2 * y2
+        inside1 = dist1_sq <= radius_sq
+        inside2 = dist2_sq <= radius_sq
+        m = int(inside1) + int(inside2)
+        if inside1 and inside2:
+            return m, 0
+
+        dx = x2 - x1
+        dy = y2 - y1
+        a = dx * dx + dy * dy
+        if a <= tol:
+            return m, 0
+        b = 2.0 * (x1 * dx + y1 * dy)
+        c = dist1_sq - radius_sq
+        disc = b * b - 4.0 * a * c
+        if disc < -tol:
+            return m, 0
+        if disc < 0:
+            disc = 0.0
+        sqrt_disc = math.sqrt(disc)
+        denom = 2.0 * a
+        ts = []
+        for t in ((-b + sqrt_disc) / denom, (-b - sqrt_disc) / denom):
+            if -tol <= t <= 1.0 + tol:
+                ts.append(min(max(t, 0.0), 1.0))
+        unique_ts = []
+        for t in ts:
+            if all(abs(t - u) > tol for u in unique_ts):
+                unique_ts.append(t)
+        n = sum(0.0 <= t <= 1.0 for t in unique_ts)
+        return m, n
 
     def _flip_title_suffix(self) -> str:
         parts = []
