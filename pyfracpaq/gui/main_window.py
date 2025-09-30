@@ -527,6 +527,10 @@ class MainWindow(QtW.QMainWindow):
         if not getattr(self, "_segments", []):
             QtW.QMessageBox.information(self, "No data", "Load and preview a node file first.")
             return
+        errors = self._collect_run_validation_errors()
+        if errors:
+            QtW.QMessageBox.warning(self, "Invalid parameters", "\n\n".join(errors))
+            return
         # Prepare counts/title used by traces map
         n_traces = len(getattr(self, "_traces", []))
         n_segments = len(self._segments)
@@ -564,19 +568,21 @@ class MainWindow(QtW.QMainWindow):
                 window_title="PyFracPaQ - Segments by Strike",
                 plotter=lambda ax: self._plot_segments_by_strike(ax),
             )
+        scan_sig = self._scan_signature()
+        scan_key_suffix = f"{scan_sig[0]}_{scan_sig[1]}"
+        stress_sig = self._stress_parameters_signature()
+        stress_key_suffix = '_'.join(f"{val:.6g}" for val in stress_sig)
         if getattr(self, "chk_est_intensity", None) is not None and self.chk_est_intensity.isChecked():
             self._show_plot_window(
-                key="intensity_map",
+                key=f"intensity_map::{scan_key_suffix}",
                 window_title="PyFracPaQ - Intensity (P21)",
                 plotter=lambda ax: self._plot_intensity_map(ax),
-                refresh_token=self._scan_state_token,
             )
         if getattr(self, "chk_est_density", None) is not None and self.chk_est_density.isChecked():
             self._show_plot_window(
-                key="density_map",
+                key=f"density_map::{scan_key_suffix}",
                 window_title="PyFracPaQ - Density (P20)",
                 plotter=lambda ax: self._plot_density_map(ax),
-                refresh_token=self._scan_state_token,
             )
         if (
             getattr(self, "chk_showcircles", None) is not None
@@ -584,25 +590,24 @@ class MainWindow(QtW.QMainWindow):
             and self.chk_showcircles.isChecked()
         ):
             self._show_plot_window(
-                key="scan_circles",
+                key=f"scan_circles::{scan_key_suffix}",
                 window_title="PyFracPaQ - Scan Circles",
                 plotter=lambda ax: self._plot_scan_circles(ax),
-                refresh_token=self._scan_state_token,
             )
         # Slip tendency related plots
         if getattr(self, "chk_slip", None) is not None and self.chk_slip.isChecked():
             self._show_plot_window(
-                key="slip_tendency_map",
+                key=f"slip_tendency_map::{stress_key_suffix}",
                 window_title="PyFracPaQ - Slip Tendency",
                 plotter=lambda ax: self._plot_slip_tendency(ax),
             )
             self._show_plot_window(
-                key="slip_tendency_mohr",
+                key=f"slip_tendency_mohr::{stress_key_suffix}",
                 window_title="PyFracPaQ - Mohr Circle (Slip Tendency)",
                 plotter=lambda ax: self._plot_mohr_circle(ax),
             )
             self._show_plot_window(
-                key="slip_tendency_rose",
+                key=f"slip_tendency_rose::{stress_key_suffix}",
                 window_title="PyFracPaQ - Rose (Slip Tendency)",
                 plotter=lambda ax: self._plot_rose_slip(ax),
                 polar=True,
@@ -610,18 +615,18 @@ class MainWindow(QtW.QMainWindow):
         # Dilation tendency related plots (mirror Slip pattern: map + rose)
         if getattr(self, "chk_dilation", None) is not None and self.chk_dilation.isChecked():
             self._show_plot_window(
-                key="dilation_tendency_map",
+                key=f"dilation_tendency_map::{stress_key_suffix}",
                 window_title="PyFracPaQ - Dilation Tendency",
                 plotter=lambda ax: self._plot_dilation_tendency(ax),
             )
             # Mohr circle is the same stress space for dilation; reuse the same plotter
             self._show_plot_window(
-                key="dilation_tendency_mohr",
+                key=f"dilation_tendency_mohr::{stress_key_suffix}",
                 window_title="PyFracPaQ - Mohr Circle (Dilation Tendency)",
                 plotter=lambda ax: self._plot_mohr_circle(ax),
             )
             self._show_plot_window(
-                key="dilation_tendency_rose",
+                key=f"dilation_tendency_rose::{stress_key_suffix}",
                 window_title="PyFracPaQ - Rose (Dilation Tendency)",
                 plotter=lambda ax: self._plot_rose_dilation(ax),
                 polar=True,
@@ -629,17 +634,17 @@ class MainWindow(QtW.QMainWindow):
         # Fracture susceptibility related plots (map + Mohr + rose)
         if getattr(self, "chk_suscept", None) is not None and self.chk_suscept.isChecked():
             self._show_plot_window(
-                key="susceptibility_map",
+                key=f"susceptibility_map::{stress_key_suffix}",
                 window_title="PyFracPaQ - Fracture Susceptibility",
                 plotter=lambda ax: self._plot_susceptibility_map(ax),
             )
             self._show_plot_window(
-                key="susceptibility_mohr",
+                key=f"susceptibility_mohr::{stress_key_suffix}",
                 window_title="PyFracPaQ - Mohr Circle (Fracture Susceptibility)",
                 plotter=lambda ax: self._plot_mohr_circle(ax),
             )
             self._show_plot_window(
-                key="susceptibility_rose",
+                key=f"susceptibility_rose::{stress_key_suffix}",
                 window_title="PyFracPaQ - Rose (Fracture Susceptibility)",
                 plotter=lambda ax: self._plot_rose_susceptibility(ax),
                 polar=True,
@@ -648,18 +653,18 @@ class MainWindow(QtW.QMainWindow):
         # Critically stressed fractures related plots (map + Mohr + rose)
         if getattr(self, "chk_crit", None) is not None and self.chk_crit.isChecked():
             self._show_plot_window(
-                key="csf_map",
+                key=f"csf_map::{stress_key_suffix}",
                 window_title="PyFracPaQ - Critically Stressed Fractures",
                 plotter=lambda ax: self._plot_csf_map(ax),
             )
             # Mohr circle (same stress space and envelope)
             self._show_plot_window(
-                key="csf_mohr",
+                key=f"csf_mohr::{stress_key_suffix}",
                 window_title="PyFracPaQ - Mohr Circle (CSF)",
                 plotter=lambda ax: self._plot_mohr_circle(ax),
             )
             self._show_plot_window(
-                key="csf_rose",
+                key=f"csf_rose::{stress_key_suffix}",
                 window_title="PyFracPaQ - Rose (CSF)",
                 plotter=lambda ax: self._plot_rose_csf(ax),
                 polar=True,
@@ -1300,6 +1305,72 @@ class MainWindow(QtW.QMainWindow):
         self._scan_cache = None
         self._scan_state_token = object()
 
+    def _scan_signature(self) -> tuple:
+        segments = getattr(self, "_segments", None)
+        seg_id = id(segments) if segments is not None else 0
+        try:
+            n_circles = int(self.spin_ncircles.value()) if hasattr(self, 'spin_ncircles') else 0
+        except Exception:
+            n_circles = 0
+        return (seg_id, n_circles)
+
+    def _stress_parameters_signature(self) -> tuple:
+        def _spin_value(name: str, default: float) -> float:
+            spin = getattr(self, name, None)
+            try:
+                return float(spin.value()) if spin is not None else default
+            except Exception:
+                return default
+
+        sigma1 = _spin_value('sp_sigma1', 100.0)
+        sigma2 = _spin_value('sp_sigma2', 50.0)
+        angle = _spin_value('sp_angle', 0.0)
+        cohesion = _spin_value('sp_cohesion', 0.0)
+        pore = _spin_value('sp_pore', 0.0)
+        friction = _spin_value('sp_fric', 0.6)
+        return (sigma1, sigma2, angle, cohesion, pore, friction)
+
+    def _collect_run_validation_errors(self) -> list[str]:
+        errors: list[str] = []
+
+        angle_needed = any(
+            getattr(self, attr, None) is not None and getattr(self, attr).isChecked()
+            for attr in ("chk_slip", "chk_dilation", "chk_suscept", "chk_crit")
+        )
+        if angle_needed:
+            try:
+                theta = float(self.sp_angle.value()) if hasattr(self, 'sp_angle') else 0.0
+            except Exception:
+                theta = 0.0
+            if not (0.0 <= theta <= 180.0):
+                errors.append("Angle of Sigma 1 from Y-axis must be between 0° and 180°.")
+
+        scan_needed = any(
+            getattr(self, attr, None) is not None and getattr(self, attr).isChecked()
+            for attr in ("chk_est_intensity", "chk_est_density", "chk_showcircles")
+        )
+        if scan_needed:
+            try:
+                n_circles = int(self.spin_ncircles.value()) if hasattr(self, 'spin_ncircles') else 0
+            except Exception:
+                n_circles = 0
+            if n_circles < 2:
+                errors.append("Number of scan circles must be an integer greater than 1.")
+
+        return errors
+
+    @staticmethod
+    def _azimuth_label_va(theta_deg: float) -> str:
+        try:
+            angle = float(theta_deg)
+        except Exception:
+            angle = 0.0
+        if angle < 65.0:
+            return 'bottom'
+        if angle <= 115.0:
+            return 'center'
+        return 'top'
+
     def _plot_intensity_map(self, ax) -> None:
         try:
             grid, intensity, _ = self._compute_intensity_density_arrays()
@@ -1331,7 +1402,7 @@ class MainWindow(QtW.QMainWindow):
 
         title_above_axes(
             ax,
-            'Estimated intensity of segments (P21)',
+            f"Estimated intensity of segments (P21), scan circles = {self._scan_signature()[1]}",
             offset_points=15,
             top=0.95,
             adjust_layout=False,
@@ -1368,7 +1439,7 @@ class MainWindow(QtW.QMainWindow):
 
         title_above_axes(
             ax,
-            'Estimated density of segments (P20)',
+            f"Estimated density of segments (P20), scan circles = {self._scan_signature()[1]}",
             offset_points=15,
             top=0.95,
             adjust_layout=False,
@@ -1403,7 +1474,13 @@ class MainWindow(QtW.QMainWindow):
                 circ = Circle((cx, cy), radius, edgecolor='r', facecolor='none', linewidth=0.4)
                 ax.add_patch(circ)
 
-        title_above_axes(ax, f'Mapped trace segments, n = {len(segments)}', offset_points=16.5, top=0.95, adjust_layout=False)
+        title_above_axes(
+            ax,
+            f"Mapped trace segments, n = {len(segments)}, scan circles = {self._scan_signature()[1]}",
+            offset_points=16.5,
+            top=0.95,
+            adjust_layout=False,
+        )
 
     def _compute_intensity_density_arrays(self):
         segments = getattr(self, "_segments", [])
@@ -1793,7 +1870,7 @@ class MainWindow(QtW.QMainWindow):
         _, sigmans, taus, _ = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
         # Continuous inverted palette (no discretization). Match MATLAB definition:
         # Sf = |sn| - pf - (|tau| - C0)/mu  [MPa]
-        cmap = cm.get_cmap('jet_r', 256)
+        cmap = cm.get_cmap('jet_r', 100)
         # Compute susceptibility values first to set dynamic color range
         mu_eff = mu if abs(mu) > 1e-12 else 1e-12
         Svals = []
@@ -2003,10 +2080,8 @@ class MainWindow(QtW.QMainWindow):
         angs, sigmans, taus, _ = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
         if not angs:
             return
-        # Duplicate angles for 0..360 coverage, and compute CSF flag per segment
-        csf = [1 if (abs(t) >= (mu * (abs(sn) - pf) + C0)) else 0 for sn, t in zip(sigmans, taus)]
+        mu_eff = mu if abs(mu) > 1e-12 else 1e-12
         angs2 = angs + [((a + 180.0) % 360.0) for a in angs]
-        csf2 = csf + csf
         dir_bins = 36
         theta_edges = np.linspace(0, 2*np.pi, dir_bins + 1)
         theta = np.deg2rad(angs2)
@@ -2015,13 +2090,11 @@ class MainWindow(QtW.QMainWindow):
         if self._flip_y:
             theta = (-theta)
         theta = (theta + 2*np.pi) % (2*np.pi)
-        inds = np.digitize(theta, theta_edges) - 1
-        means = np.zeros(dir_bins); counts = np.zeros(dir_bins)
-        for i, val in zip(inds, csf2):
+        inds = np.digitize(theta, theta_edges, right=False) - 1
+        counts = np.zeros(dir_bins)
+        for i in inds:
             if 0 <= i < dir_bins:
-                means[i] += val; counts[i] += 1
-        with np.errstate(invalid='ignore'):
-            means = np.divide(means, counts, out=np.zeros_like(means), where=counts>0)
+                counts[i] += 1
         # Polar setup
         ax.set_theta_zero_location('N'); ax.set_theta_direction(-1)
         try:
@@ -2041,18 +2114,35 @@ class MainWindow(QtW.QMainWindow):
         max_perc = max_frac * 100.0
         show_to_perc = next((pl for pl in perc_levels if max_perc <= pl), perc_levels[-1])
         show_to = show_to_perc / 100.0
-        # Two-level color mapping (Non-CSF, CSF)
+        # Match CSF map palette: two discrete colours (Non-CSF, CSF)
         cmap = colors.ListedColormap([cm.get_cmap('jet')(0.10), cm.get_cmap('jet')(0.90)])
-        # Convert mean to discrete class: >=0.5 -> CSF
-        classes = (means >= 0.5).astype(int)
+        norm = colors.BoundaryNorm(boundaries=[-0.5, 0.5, 1.5], ncolors=cmap.N)
+
+        def _csf_flag_for_bin(bin_index: int) -> int:
+            theta_center = theta_edges[bin_index] + (widths / 2.0)
+            if self._flip_x:
+                theta_center = (math.pi - theta_center)
+            if self._flip_y:
+                theta_center = (-theta_center)
+            theta_center = (theta_center + 2.0 * math.pi) % (2.0 * math.pi)
+            n_phi = math.degrees(theta_center) % 360.0
+            alpha = (n_phi + 90.0) - theta_sigma1
+            sn = 0.5 * (sigma1 + sigma2) + 0.5 * (sigma1 - sigma2) * math.cos(math.radians(2.0 * alpha))
+            tau = abs(-0.5 * (sigma1 - sigma2) * math.sin(math.radians(2.0 * alpha)))
+            threshold = mu_eff * (sn - pf) + C0
+            return 1 if tau >= threshold else 0
+
         for i in range(dir_bins):
-            col = cmap(classes[i])
-            ax.bar(theta_edges[i], radii[i], width=widths, bottom=0.0, align='edge', color=col, edgecolor='white', alpha=0.95)
+            csf_flag = _csf_flag_for_bin(i)
+            colour = cmap(norm(csf_flag))
+            ax.bar(
+                theta_edges[i], radii[i], width=widths, bottom=0.0, align='edge',
+                color=colour, edgecolor='white'
+            )
         # Margins and colorbar
         reserve_axes_margins(ax, top=0.05, bottom=0.13)
         shrink_axes_vertical(ax, factor=0.90)
-        # Custom colorbar with two categories
-        norm = colors.BoundaryNorm(boundaries=[-0.5, 0.5, 1.5], ncolors=cmap.N)
+        # Custom colorbar with two categories (Non-CSF, CSF) matching the map view
         mappable = cm.ScalarMappable(norm=norm, cmap=cmap); mappable.set_array([])
         cbar = axis_wide_colorbar(
             ax,
@@ -2060,11 +2150,12 @@ class MainWindow(QtW.QMainWindow):
             location='bottom',
             size='5%',
             pad=0.00,
+            ticks=[0, 1],
             label=r'Critically Stressed Fractures',
             gid='rose_csf_cbar',
         )
         try:
-            cbar.set_ticks([0, 1]); cbar.set_ticklabels(['Non-CSF', 'CSF'])
+            cbar.set_ticklabels(['Non-CSF', 'CSF'])
         except Exception:
             pass
         # Rim and overlays: draw equal-area reference circles and labels (%, up to show_to_perc)
@@ -2082,8 +2173,18 @@ class MainWindow(QtW.QMainWindow):
         theta_sig = np.deg2rad(theta_sigma1)
         ax.plot([theta_sig, theta_sig], [0, r_edge], color='r', lw=1.2)
         ax.plot([theta_sig + np.pi, theta_sig + np.pi], [0, r_edge], color='r', lw=1.2)
+        label_va = self._azimuth_label_va(theta_sigma1)
         try:
-            ax.text(theta_sig, r_edge*1.005, r"Azimuth $\sigma_1$", ha='center', va='bottom', fontsize=9, clip_on=False, bbox=dict(facecolor='white', edgecolor='none', pad=0.2))
+            ax.text(
+                theta_sig,
+                r_edge*1.005,
+                r" Azimuth $\sigma_1$",
+                ha='left',
+                va=label_va,
+                fontsize=9,
+                clip_on=False,
+                #bbox=dict(facecolor='white', edgecolor='none', pad=0.2),
+            )
         except Exception:
             pass
         # Slightly higher nudge to visually match other roses on some backends
@@ -2094,12 +2195,11 @@ class MainWindow(QtW.QMainWindow):
         sigma1 = float(self.sp_sigma1.value()) if hasattr(self, 'sp_sigma1') else 100.0
         sigma2 = float(self.sp_sigma2.value()) if hasattr(self, 'sp_sigma2') else 50.0
         theta_sigma1 = float(self.sp_angle.value()) if hasattr(self, 'sp_angle') else 0.0
-        angs, _, _, TsNorm = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
+        angs, _, _, _ = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
         if not angs:
             return
         # Duplicate for 0..360 coverage
         angs2 = angs + [((a + 180.0) % 360.0) for a in angs]
-        ts2 = TsNorm + TsNorm
         # Decouple angular resolution from colour resolution to better match MATLAB
         dir_bins = 36  # finer angular division (e.g., 10° sectors)
         theta_edges = np.linspace(0, 2*np.pi, dir_bins + 1)
@@ -2110,15 +2210,11 @@ class MainWindow(QtW.QMainWindow):
         if self._flip_y:
             theta = (-theta)
         theta = (theta + 2*np.pi) % (2*np.pi)
-        inds = np.digitize(theta, theta_edges) - 1
-        means = np.zeros(dir_bins)
+        inds = np.digitize(theta, theta_edges, right=False) - 1
         counts = np.zeros(dir_bins)
-        for i, val in zip(inds, ts2):
+        for i in inds:
             if 0 <= i < dir_bins:
-                means[i] += val
                 counts[i] += 1
-        with np.errstate(invalid='ignore'):
-            means = np.divide(means, counts, out=np.zeros_like(means), where=counts>0)
         # Align orientation with MATLAB: rotate 90° left (North at top)
         ax.set_theta_zero_location('N')
         ax.set_theta_direction(-1)
@@ -2159,15 +2255,56 @@ class MainWindow(QtW.QMainWindow):
         # Discrete colours for Ts using independent levels following MATLAB rule:
         # levels = (360/delta)/2 + 1 ≈ dir_bins/2 + 1
         color_levels = int(dir_bins // 2 + 1)
-        bounds = np.linspace(0.0, 1.0, color_levels + 1)
-        # Slip rose uses standard 'jet' palette
-        cmap = cm.get_cmap('jet', 256)
+        bounds = np.concatenate((
+            [0.0],
+            (np.arange(1, color_levels) + 0.5) / color_levels,
+            [1.0],
+        ))
+        cmap = cm.get_cmap('jet', color_levels)
         norm = colors.BoundaryNorm(boundaries=bounds, ncolors=cmap.N, clip=True)
+        discrete_cols = cmap(np.arange(cmap.N))
+
+        # Maximum slip tendency (Ts_max) using the same definition as MATLAB
+        if angs:
+            rose_angles = np.asarray(angs, dtype=float)
+            n_alpha = rose_angles + 90.0 - theta_sigma1
+            sn_vals = 0.5 * (sigma1 + sigma2) + 0.5 * (sigma1 - sigma2) * np.cos(np.radians(2.0 * n_alpha))
+            tau_vals = np.abs(-0.5 * (sigma1 - sigma2) * np.sin(np.radians(2.0 * n_alpha)))
+            with np.errstate(divide='ignore', invalid='ignore'):
+                ratios0 = np.divide(tau_vals, np.abs(sn_vals), out=np.zeros_like(tau_vals), where=np.abs(sn_vals) > 0)
+            Ts_max = float(np.max(ratios0)) if ratios0.size else 1.0
+        else:
+            Ts_max = 1.0
+        if Ts_max <= 0:
+            Ts_max = 1.0
+
+        # Reproduce MATLAB's per-bin slip tendency using bin mid-line orientation
+        def _ts_norm_for_bin(bin_index: int) -> float:
+            theta_center = theta_edges[bin_index] + (widths / 2.0)
+            if self._flip_x:
+                theta_center = (math.pi - theta_center)
+            if self._flip_y:
+                theta_center = (-theta_center)
+            theta_center = (theta_center + 2.0 * math.pi) % (2.0 * math.pi)
+            n_phi = math.degrees(theta_center) % 360.0
+            alpha = (n_phi + 90.0) - theta_sigma1
+            sn = 0.5 * (sigma1 + sigma2) + 0.5 * (sigma1 - sigma2) * math.cos(math.radians(2.0 * alpha))
+            tau = abs(-0.5 * (sigma1 - sigma2) * math.sin(math.radians(2.0 * alpha)))
+            denom = abs(sn) if abs(sn) > 0 else 1.0
+            ratio = tau / denom
+            return max(0.0, min(1.0, ratio / Ts_max))
+
         for i in range(dir_bins):
-            col = cmap(norm(means[i]))
+            # Use the same discrete colour indices as the accompanying colorbar
+            ts_norm = _ts_norm_for_bin(i)
+            idx = int(np.clip(norm(ts_norm), 0, cmap.N - 1))
+            try:
+                colour = discrete_cols[idx]
+            except Exception:
+                colour = discrete_cols[0]
             ax.bar(
                 theta_edges[i], radii[i], width=widths, bottom=0.0, align='edge',
-                color=col, edgecolor='white', alpha=0.95
+                color=colour, edgecolor='white'
             )
         # Reserve margins so title/colorbar fit; lower the plot slightly (keeps spacing to title/Azimuth)
         reserve_axes_margins(ax, top=0.05, bottom=0.13)
@@ -2214,11 +2351,17 @@ class MainWindow(QtW.QMainWindow):
         ax.plot([theta_sig, theta_sig], [0, r_edge], color='r', lw=1.2)
         ax.plot([theta_sig + np.pi, theta_sig + np.pi], [0, r_edge], color='r', lw=1.2)
         # Label the σ1 azimuth just outside the rim on the positive direction
+        label_va = self._azimuth_label_va(theta_sigma1)
         try:
             ax.text(
-                theta_sig, r_edge*1.005, r"Azimuth $\sigma_1$",
-                ha='center', va='bottom', fontsize=9, clip_on=False,
-                bbox=dict(facecolor='white', edgecolor='none', pad=0.2)
+                theta_sig,
+                r_edge*1.005,
+                r" Azimuth $\sigma_1$",
+                ha='left',
+                va=label_va,
+                fontsize=9,
+                clip_on=False,
+                #bbox=dict(facecolor='white', edgecolor='none', pad=0.2),
             )
         except Exception:
             pass
@@ -2230,16 +2373,12 @@ class MainWindow(QtW.QMainWindow):
         sigma1 = float(self.sp_sigma1.value()) if hasattr(self, 'sp_sigma1') else 100.0
         sigma2 = float(self.sp_sigma2.value()) if hasattr(self, 'sp_sigma2') else 50.0
         theta_sigma1 = float(self.sp_angle.value()) if hasattr(self, 'sp_angle') else 0.0
-        # Compute sn with flip-aware angles
-        angs, sigmans, _, _ = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
+        # Compute flip-aware segment orientations (for equal-area weighting)
+        angs, _, _, _ = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
         if not angs:
             return
-        # Dilation tendency per segment
-        denom = (sigma1 - sigma2) if abs(sigma1 - sigma2) > 1e-12 else 1.0
-        Td = [max(0.0, min(1.0, (sigma1 - sn) / denom)) for sn in sigmans]
         # Duplicate for 0..360 coverage
         angs2 = angs + [((a + 180.0) % 360.0) for a in angs]
-        td2 = Td + Td
         # Angular bins and statistics
         dir_bins = 36
         theta_edges = np.linspace(0, 2*np.pi, dir_bins + 1)
@@ -2249,13 +2388,11 @@ class MainWindow(QtW.QMainWindow):
         if self._flip_y:
             theta = (-theta)
         theta = (theta + 2*np.pi) % (2*np.pi)
-        inds = np.digitize(theta, theta_edges) - 1
-        means = np.zeros(dir_bins); counts = np.zeros(dir_bins)
-        for i, val in zip(inds, td2):
+        inds = np.digitize(theta, theta_edges, right=False) - 1
+        counts = np.zeros(dir_bins)
+        for i in inds:
             if 0 <= i < dir_bins:
-                means[i] += val; counts[i] += 1
-        with np.errstate(invalid='ignore'):
-            means = np.divide(means, counts, out=np.zeros_like(means), where=counts>0)
+                counts[i] += 1
         # Polar setup
         ax.set_theta_zero_location('N'); ax.set_theta_direction(-1)
         try:
@@ -2277,12 +2414,39 @@ class MainWindow(QtW.QMainWindow):
         show_to = show_to_perc / 100.0
         # Colors
         color_levels = int(dir_bins // 2 + 1)
-        bounds = np.linspace(0.0, 1.0, color_levels + 1)
-        cmap = cm.get_cmap('jet', 256)
+        bounds = np.concatenate((
+            [0.0],
+            (np.arange(1, color_levels) + 0.5) / color_levels,
+            [1.0],
+        ))
+        cmap = cm.get_cmap('jet', color_levels)
         norm = colors.BoundaryNorm(boundaries=bounds, ncolors=cmap.N, clip=True)
+        discrete_cols = cmap(np.arange(cmap.N))
+        denom = (sigma1 - sigma2)
+        if abs(denom) < 1e-12:
+            denom = 1.0
+
+        def _td_for_bin(bin_index: int) -> float:
+            theta_center = theta_edges[bin_index] + (widths / 2.0)
+            if self._flip_x:
+                theta_center = (math.pi - theta_center)
+            if self._flip_y:
+                theta_center = (-theta_center)
+            theta_center = (theta_center + 2.0 * math.pi) % (2.0 * math.pi)
+            n_phi = math.degrees(theta_center) % 360.0
+            alpha = (n_phi + 90.0) - theta_sigma1
+            sn = 0.5 * (sigma1 + sigma2) + 0.5 * (sigma1 - sigma2) * math.cos(math.radians(2.0 * alpha))
+            td = (sigma1 - sn) / denom
+            return max(0.0, min(1.0, td))
+
         for i in range(dir_bins):
-            col = cmap(norm(means[i]))
-            ax.bar(theta_edges[i], radii[i], width=widths, bottom=0.0, align='edge', color=col, edgecolor='white', alpha=0.95)
+            td_norm = _td_for_bin(i)
+            idx = int(np.clip(norm(td_norm), 0, cmap.N - 1))
+            try:
+                colour = discrete_cols[idx]
+            except Exception:
+                colour = discrete_cols[0]
+            ax.bar(theta_edges[i], radii[i], width=widths, bottom=0.0, align='edge', color=colour, edgecolor='white')
         # Margins and colorbar
         reserve_axes_margins(ax, top=0.05, bottom=0.13)
         # Create a bit more headroom for title/colorbar consistency with slip rose
@@ -2307,8 +2471,18 @@ class MainWindow(QtW.QMainWindow):
         theta_sig = np.deg2rad(theta_sigma1)
         ax.plot([theta_sig, theta_sig], [0, r_edge], color='r', lw=1.2)
         ax.plot([theta_sig + np.pi, theta_sig + np.pi], [0, r_edge], color='r', lw=1.2)
+        label_va = self._azimuth_label_va(theta_sigma1)
         try:
-            ax.text(theta_sig, r_edge*1.005, r"Azimuth $\sigma_1$", ha='center', va='bottom', fontsize=9, clip_on=False, bbox=dict(facecolor='white', edgecolor='none', pad=0.2))
+            ax.text(
+                theta_sig,
+                r_edge*1.005,
+                r" Azimuth $\sigma_1$",
+                ha='left',
+                va=label_va,
+                fontsize=9,
+                clip_on=False,
+                #bbox=dict(facecolor='white', edgecolor='none', pad=0.2),
+            )
         except Exception:
             pass
         title_above_axes(ax, r'Segment angles (equal area), colour-coded by $T_d$', offset_points=24, top=0.96, adjust_layout=False)
@@ -2325,12 +2499,17 @@ class MainWindow(QtW.QMainWindow):
         angs, sigmans, taus, _ = self._compute_slip_arrays(sigma1, sigma2, theta_sigma1)
         if not angs:
             return
-        # Susceptibility per segment (ΔPf in MPa), consistent with map
         mu_eff = mu if abs(mu) > 1e-12 else 1e-12
-        Sfs = [abs(sn) - pf - (abs(t) - C0) / mu_eff for sn, t in zip(sigmans, taus)]
+        sn_arr = np.asarray(sigmans, dtype=float)
+        tau_arr = np.abs(np.asarray(taus, dtype=float))
+        sf_vals = sn_arr - pf - (tau_arr - C0) / mu_eff
+        sf_min = float(np.min(sf_vals)) if sf_vals.size else 0.0
+        sf_max = float(np.max(sf_vals)) if sf_vals.size else 1.0
+        if abs(sf_max - sf_min) < 1e-12:
+            sf_max = sf_min + 1.0
+        span = sf_max - sf_min
         # Duplicate for 0..360 coverage
         angs2 = angs + [((a + 180.0) % 360.0) for a in angs]
-        s2 = Sfs + Sfs
         # Angular bins and statistics
         dir_bins = 36
         theta_edges = np.linspace(0, 2*np.pi, dir_bins + 1)
@@ -2340,13 +2519,11 @@ class MainWindow(QtW.QMainWindow):
         if self._flip_y:
             theta = (-theta)
         theta = (theta + 2*np.pi) % (2*np.pi)
-        inds = np.digitize(theta, theta_edges) - 1
-        means = np.zeros(dir_bins); counts = np.zeros(dir_bins)
-        for i, val in zip(inds, s2):
+        inds = np.digitize(theta, theta_edges, right=False) - 1
+        counts = np.zeros(dir_bins)
+        for i in inds:
             if 0 <= i < dir_bins:
-                means[i] += val; counts[i] += 1
-        with np.errstate(invalid='ignore'):
-            means = np.divide(means, counts, out=np.zeros_like(means), where=counts>0)
+                counts[i] += 1
         # Polar setup
         ax.set_theta_zero_location('N'); ax.set_theta_direction(-1)
         try:
@@ -2366,55 +2543,65 @@ class MainWindow(QtW.QMainWindow):
         max_perc = max_frac * 100.0
         show_to_perc = next((pl for pl in perc_levels if max_perc <= pl), perc_levels[-1])
         show_to = show_to_perc / 100.0
-        # Colors: discrete variation like Slip/Dilation roses, but using Sf range [vmin, vmax]
-        cmap = cm.get_cmap('jet_r', 256)
-        if Sfs:
-            vmin = float(np.min(Sfs)); vmax = float(np.max(Sfs))
-            if abs(vmax - vmin) < 1e-12:
-                vmax = vmin + 1.0
-        else:
-            vmin, vmax = 0.0, 1.0
+        # Colors: discrete variation like Slip/Dilation roses, using Sf range normalised to [0,1]
         color_levels = int(dir_bins // 2 + 1)
-        bounds = np.linspace(vmin, vmax, color_levels + 1)
-        norm = colors.BoundaryNorm(boundaries=bounds, ncolors=cmap.N, clip=True)
+        bounds_norm = np.concatenate((
+            [0.0],
+            (np.arange(1, color_levels) + 0.5) / color_levels,
+            [1.0],
+        ))
+        cmap = cm.get_cmap('jet_r', color_levels)  # reversed 'jet' (blue=low, red=high)
+        norm = colors.BoundaryNorm(boundaries=bounds_norm, ncolors=cmap.N, clip=True)
+        discrete_cols = cmap(np.arange(cmap.N))
+
+        def _sf_norm_for_bin(bin_index: int) -> float:
+            theta_center = theta_edges[bin_index] + (widths / 2.0)
+            if self._flip_x:
+                theta_center = (math.pi - theta_center)
+            if self._flip_y:
+                theta_center = (-theta_center)
+            theta_center = (theta_center + 2.0 * math.pi) % (2.0 * math.pi)
+            n_phi = math.degrees(theta_center) % 360.0
+            alpha = (n_phi + 90.0) - theta_sigma1
+            sn = 0.5 * (sigma1 + sigma2) + 0.5 * (sigma1 - sigma2) * math.cos(math.radians(2.0 * alpha))
+            tau = abs(-0.5 * (sigma1 - sigma2) * math.sin(math.radians(2.0 * alpha)))
+            sf = sn - pf - (tau - C0) / mu_eff
+            sf_norm = (sf - sf_min) / span if span > 0 else 0.0
+            return max(0.0, min(1.0, sf_norm))
+
         for i in range(dir_bins):
-            col = cmap(norm(means[i]))
-            ax.bar(theta_edges[i], radii[i], width=widths, bottom=0.0, align='edge', color=col, edgecolor='white', alpha=0.95)
+            sf_norm = _sf_norm_for_bin(i)
+            idx = int(np.clip(norm(sf_norm), 0, cmap.N - 1))
+            try:
+                colour = discrete_cols[idx]
+            except Exception:
+                colour = discrete_cols[0]
+            ax.bar(theta_edges[i], radii[i], width=widths, bottom=0.0, align='edge', color=colour, edgecolor='white')
         # Margins and colorbar (match Slip/Dilation roses)
         reserve_axes_margins(ax, top=0.05, bottom=0.13)
         shrink_axes_vertical(ax, factor=0.90)
         mappable = cm.ScalarMappable(norm=norm, cmap=cmap); mappable.set_array([])
-        # Colorbar with later tick locator adjustment to match MATLAB "nice" ticks
+        if abs(sf_max - sf_min) < 1e-12:
+            ticks_val = np.array([sf_min])
+        else:
+            ticks_val = np.linspace(sf_min, sf_max, 6)
+        if abs(sf_max - sf_min) < 1e-12:
+            ticks_norm = np.zeros_like(ticks_val)
+        else:
+            ticks_norm = np.clip((ticks_val - sf_min) / (sf_max - sf_min), 0.0, 1.0)
         cbar = axis_wide_colorbar(
             ax,
             mappable,
             location='bottom',
             size='5%',
             pad=0.00,
+            ticks=ticks_norm,
             label=r'Fracture susceptibility ($\Delta P_f$), MPa',
             gid='rose_susc_cbar',
         )
         try:
-            import numpy as _np
-            from math import floor, log10, ceil
-            span = max(1e-12, float(vmax - vmin))
-            target = 8
-            base_pow = 10.0 ** floor(log10(span / target))
-            best = None
-            for m in (1, 2, 5, 10):
-                step = m * base_pow
-                n = int(_np.floor(vmax / step) - _np.ceil(vmin / step) + 1)
-                score = abs(n - target)
-                if best is None or score < best[0]:
-                    best = (score, step, n)
-            step = best[1]
-            # Do not extend below vmin to avoid empty band; extend only top to a nice value
-            start = _np.ceil(vmin / step) * step
-            end = _np.ceil(vmax / step) * step
-            ticks = _np.arange(start, end + 0.5 * step, step)
-            ticks = _np.round(ticks, 10)
-            if ticks.size >= 2:
-                cbar.set_ticks(ticks)
+            tick_labels = [f"{val:g}" for val in ticks_val]
+            cbar.set_ticklabels(tick_labels)
         except Exception:
             pass
         # Rim and overlays
@@ -2434,8 +2621,18 @@ class MainWindow(QtW.QMainWindow):
         theta_sig = np.deg2rad(theta_sigma1)
         ax.plot([theta_sig, theta_sig], [0, r_edge], color='r', lw=1.2)
         ax.plot([theta_sig + np.pi, theta_sig + np.pi], [0, r_edge], color='r', lw=1.2)
+        label_va = self._azimuth_label_va(theta_sigma1)
         try:
-            ax.text(theta_sig, r_edge*1.005, r"Azimuth $\sigma_1$", ha='center', va='bottom', fontsize=9, clip_on=False, bbox=dict(facecolor='white', edgecolor='none', pad=0.2))
+            ax.text(
+                theta_sig,
+                r_edge*1.005,
+                r" Azimuth $\sigma_1$",
+                ha='left',
+                va=label_va,
+                fontsize=9,
+                clip_on=False,
+                #bbox=dict(facecolor='white', edgecolor='none', pad=0.2),
+            )
         except Exception:
             pass
         title_above_axes(ax, r'Segment angles (equal area), colour-coded by $S_f$', offset_points=24, top=0.96, adjust_layout=False)
