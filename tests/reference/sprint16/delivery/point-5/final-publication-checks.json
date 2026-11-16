@@ -1,0 +1,81 @@
+{
+  "version": "0.9.0rc1",
+  "repository": "https://github.com/luis-mauricio/pyfracpaq",
+  "branch": "main",
+  "verified_commit": "df9f512bb3c0e3e3404344997f5d6b1941d25b49",
+  "user_publication_verified": true,
+  "archive_url": "https://github.com/luis-mauricio/pyfracpaq/archive/df9f512bb3c0e3e3404344997f5d6b1941d25b49.zip",
+  "archive_bytes": 48972674,
+  "archive_MiB": 46.7,
+  "archive_sha256": "1395d838b0d8b9682761a5b2c5e22a3366fce998207874587cc2d43aef3d9a54",
+  "runtime_files": 262,
+  "zip_crc_check_pass": true,
+  "every_runtime_blob_matches_published_commit": true,
+  "runtime_exclusions_pass": true,
+  "required_runtime_manual_example_licence_files_present": true,
+  "local_markdown_links_checked": 46,
+  "broken_local_links": [],
+  "technical_github_link_targets_present_in_verified_commit": [
+    {
+      "url": "https://github.com/luis-mauricio/pyfracpaq/blob/main/docs/decisions/0004-maps-and-angles.md",
+      "blob_sha": "2aaa923b901e7868fa5568968f8357373d2e9877"
+    },
+    {
+      "url": "https://github.com/luis-mauricio/pyfracpaq/blob/main/docs/decisions/0005-lengths-and-censoring.md",
+      "blob_sha": "83e949ba5751436786ca68284aeb0d886f874939"
+    },
+    {
+      "url": "https://github.com/luis-mauricio/pyfracpaq/blob/main/docs/decisions/0008-circular-sampling.md",
+      "blob_sha": "7db471c53305f4472499cbe0f811e77db5cc4e0b"
+    },
+    {
+      "url": "https://github.com/luis-mauricio/pyfracpaq/blob/main/docs/decisions/0010-mle-and-statistical-assessment.md",
+      "blob_sha": "971c004eef9cef053dce6ba9f2bd744b12347a9b"
+    },
+    {
+      "url": "https://github.com/luis-mauricio/pyfracpaq/blob/main/docs/decisions/0011-connectivity-iyx.md",
+      "blob_sha": "3c8bcb92674b1de6c28f7d81be98b9cd62af1cee"
+    },
+    {
+      "url": "https://github.com/luis-mauricio/pyfracpaq/blob/main/docs/decisions/0012-crack-tensors-and-permeability.md",
+      "blob_sha": "f128fba0f7e15dad58fa39a9d83c6291bde22cad"
+    },
+    {
+      "url": "https://github.com/luis-mauricio/pyfracpaq/blob/main/docs/decisions/0013-fracture-stability-and-mohr.md",
+      "blob_sha": "48ada192fe3898ad7d36a637ad00e9199a5a49eb"
+    },
+    {
+      "url": "https://github.com/luis-mauricio/pyfracpaq/blob/main/tests/reference/dependency_licenses.json",
+      "blob_sha": "10b451764061711e9522c0edadcb2ff0c2143401"
+    }
+  ],
+  "remote_followup_files_checked": [
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "ok": true,
+      "sha": "4f3d78eac7418c1f304c04e9e260274062fb746b"
+    },
+    {
+      "path": "scripts/capture_native_ks_hist.m",
+      "ok": true,
+      "sha": "98729736bbb281fdaf653dd6f8dd69ac1d679ed7"
+    },
+    {
+      "path": "scripts/capture_native_s89.m",
+      "ok": true,
+      "sha": "076a0c236e2a48a52bd15bd640f2ff55de13cdda"
+    }
+  ],
+  "portable_scripts_published_and_match_validated_versions": true,
+  "previous_matlab_verification": "tests/reference/sprint16/delivery/point-5/post-publication-checks.json",
+  "approved_readme_pdfs_latex_unchanged": true,
+  "runtime_files_changed_from_initial_publication": [
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "shared_vscode_configuration_preserved_as_accepted": true,
+  "scope": "Final remote publication and archive checks only. Points 1-4 retain their recorded validation; no new full-suite, scientific recalculation or Windows/Linux certification is claimed.",
+  "agent_commit_push": false,
+  "S16-09_complete": true,
+  "closure_records_consistent": true,
+  "closure_record_edits_leave_all_262_distributed_files_unchanged": true
+}

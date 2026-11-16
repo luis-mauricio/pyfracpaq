@@ -1,12 +1,12 @@
 # S16-09 — Entrega em cinco pontos
 
-Data: 16/11/2026. Versão dos fontes: **0.9.0rc1**. O usuário determinou concluir **um ponto por vez e parar**, aguardando autorização para o próximo. **Os pontos 1–4 estão concluídos. O usuário publicou o código; S16-09 continua aberta no ponto 5 até o envio/conferência dos ajustes locais posteriores.** [Estado verificável](../../tests/reference/sprint16/delivery/status.json).
+Data: 16/11/2026. Versão dos fontes: **0.9.0rc1**. O usuário determinou concluir **um ponto por vez e parar**, aguardando autorização para o próximo. **Os cinco pontos estão concluídos. S16-09 encerrada após a conferência do commit df9f512 e do ZIP real publicado pelo usuário.** [Estado verificável](../../tests/reference/sprint16/delivery/status.json).
 
 - [X] 1. Revisão final da interface no macOS.
 - [X] 2. Conferência das exportações da versão final.
 - [X] 3. Consolidação de versão e documentação da entrega.
 - [X] 4. Preparação e validação do código para clone/download.
-- [ ] 5. Disponibilização do código no GitHub — primeiro envio e ZIP remoto conferidos; ajustes locais de links/portabilidade aguardam o novo push do usuário e conferência final.
+- [X] 5. Disponibilização do código no GitHub — publicação e ajustes finais enviados pelo usuário; commit df9f512 e ZIP remoto conferidos.
 
 ## Ponto 1 — concluído
 
@@ -113,3 +113,13 @@ capture_native_ks_hist.m e capture_native_s89.m agora usam fileparts/mfilename p
 As verificações locais e hashes estão em [post-publication-checks.json](../../tests/reference/sprint16/delivery/point-5/post-publication-checks.json). O README e os manuais aprovados permanecem intactos. Não houve commit/push do agente. O envio desta correção pertence ao usuário; a S16-09 permanece sem X até a conferência remota final da versão ajustada. Windows/Linux continuam reservados aos testes posteriores do usuário.
 
 **Resultado dos ajustes locais:** verificação real dos dois trechos de localização no MATLAB R2024b, em cópia temporária com espaços/acentos e diretório de trabalho diferente; nenhum cálculo científico executado. Candidato ZIP atualizado com 262 arquivos: somente THIRD_PARTY_NOTICES.md difere entre seus arquivos de uso e os do ZIP publicado. Foram conferidos 46 links locais sem destinos ausentes e oito links técnicos no GitHub. README, manuais, configurações VS Code, 53 figuras aceitas, implementação científica, 164 originais e oito saídas conhecidas da referência permanecem íntegros. Pronto para o commit/push do usuário.
+
+## Encerramento da S16-09 — 16/11/2026
+
+O usuário informou o segundo push. A branch main do GitHub foi conferida antes e depois da validação e aponta para **df9f512bb3c0e3e3404344997f5d6b1941d25b49**, com a correção dos créditos e a portabilidade dos dois scripts MATLAB. A comparação dos três arquivos pela API confirma os blobs do commit. Nenhum commit/push foi feito pelo agente.
+
+O ZIP real desse commit foi baixado e validado: **262 arquivos**, todos com conteúdo correspondente ao commit publicado, CRC íntegro e exclusões corretas. Foram conferidos **46 links locais sem destinos ausentes**, oito destinos técnicos no mesmo commit e os dois scripts idênticos aos validados no MATLAB. README aprovado, PDFs, fontes LaTeX e configurações VS Code preservados. Entre os arquivos de uso, somente THIRD_PARTY_NOTICES.md difere da publicação inicial; os ajustes nos scripts e registros de manutenção acompanham o clone completo.
+
+[Evidências finais](../../tests/reference/sprint16/delivery/point-5/final-publication-checks.json) e [estado de entrega](../../tests/reference/sprint16/delivery/status.json) registram a conclusão dos pontos 1–5. **S16-09 e S16-09.5 marcadas com X no PRD.** Os registros anteriores desta página e os relatórios anteriores conservam os estados e hashes históricos. Windows/Linux permanecem reservados ao usuário, conforme a definição de escopo; nenhuma nova execução da suíte completa ou comparação científica é atribuída a esta verificação de publicação.
+
+O código validado está em [luis-mauricio/pyfracpaq](https://github.com/luis-mauricio/pyfracpaq); [ZIP do commit verificado](https://github.com/luis-mauricio/pyfracpaq/archive/df9f512bb3c0e3e3404344997f5d6b1941d25b49.zip). O registro local de encerramento altera somente documentação/evidências excluídas do ZIP, sem modificar o programa entregue.

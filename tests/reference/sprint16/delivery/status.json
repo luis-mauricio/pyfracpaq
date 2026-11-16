@@ -1,14 +1,15 @@
 {
-  "S16-09_complete": false,
+  "S16-09_complete": true,
   "execution_policy": "One point at a time. Stop after each completed point and wait for explicit user authorization.",
   "completed_points": [
     1,
     2,
     3,
-    4
+    4,
+    5
   ],
-  "next_point": 5,
-  "next_point_authorized": true,
+  "next_point": null,
+  "next_point_authorized": false,
   "points": [
     {
       "number": 1,
@@ -33,7 +34,7 @@
     {
       "number": 5,
       "title": "Disponibilização do código no GitHub",
-      "complete": false
+      "complete": true
     }
   ],
   "point_1_evidence": "tests/reference/sprint16/delivery/point-1/summary.json",
@@ -51,7 +52,7 @@
   },
   "point_4_evidence": "tests/reference/sprint16/delivery/point-4/summary.json",
   "point_5_preparation": {
-    "status": "user_published_initial_archive_verified_local_followup_pending_user_push",
+    "status": "completed_user_publication_verified",
     "readme": "README.md",
     "manual_pdf": "docs/manual/pyfracpaq-user-manual.pdf",
     "manual_latex": "docs/manual/pyfracpaq-user-manual.tex",
@@ -59,7 +60,7 @@
     "upload_owner": "user",
     "agent_commit_allowed": false,
     "agent_push_allowed": false,
-    "remote_verification": "Initial user-published commit 2bb3355 verified; local credits/portability follow-up awaits user push and final remote archive verification.",
+    "remote_verification": "Published commit df9f512bb3c0e3e3404344997f5d6b1941d25b49 and actual GitHub ZIP verified; credits links and portable scripts confirmed.",
     "readme_language": "en",
     "manuals": {
       "pt-BR": {
@@ -83,13 +84,26 @@
   "point_5_publication": {
     "repository": "https://github.com/luis-mauricio/pyfracpaq",
     "branch": "main",
-    "verified_commit": "2bb3355dada72c916d599888a29db395d3ad0982",
+    "verified_commit": "df9f512bb3c0e3e3404344997f5d6b1941d25b49",
     "initial_publication_complete": true,
     "initial_remote_zip_verified": true,
-    "remote_zip_evidence": "tests/reference/sprint16/delivery/point-5/published-zip-checks.json",
+    "remote_zip_evidence": "tests/reference/sprint16/delivery/point-5/final-publication-checks.json",
     "vscode_shared_configuration_accepted_by_user": true,
-    "local_followup_pending_user_push": true,
+    "local_followup_pending_user_push": false,
     "local_followup_evidence": "tests/reference/sprint16/delivery/point-5/post-publication-checks.json",
-    "agent_commit_push": false
+    "agent_commit_push": false,
+    "initial_verified_commit": "2bb3355dada72c916d599888a29db395d3ad0982",
+    "initial_remote_zip_evidence": "tests/reference/sprint16/delivery/point-5/published-zip-checks.json",
+    "followup_publication_complete": true,
+    "final_remote_zip_verified": true
+  },
+  "point_5_evidence": "tests/reference/sprint16/delivery/point-5/final-publication-checks.json",
+  "closure": {
+    "date": "2026-11-16",
+    "verified_published_commit": "df9f512bb3c0e3e3404344997f5d6b1941d25b49",
+    "evidence": "tests/reference/sprint16/delivery/point-5/final-publication-checks.json",
+    "all_five_points_complete": true,
+    "windows_linux": "Deferred to the user, as explicitly agreed; not certified.",
+    "record_scope": "Closure recorded locally after verifying the user-published version; bookkeeping changes do not alter the distributed runtime."
   }
 }
