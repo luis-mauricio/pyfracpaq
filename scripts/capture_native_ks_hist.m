@@ -1,4 +1,6 @@
-out = '/Users/lm/developer/pyfracpaq/tests/reference/sprint8';
+% Resolve the project from this script, independently of the working directory.
+root = fileparts(fileparts(mfilename('fullpath')));
+out = fullfile(root,'tests','reference','sprint8');
 a = [1 1 2 3 5 8]; b = [0 1 2 2 4 9];
 [h05,p,d] = kstest2(a,b,'alpha',0.05,'tail','unequal');
 [h10,p10,d10] = kstest2(a,b,'alpha',0.1,'tail','unequal');

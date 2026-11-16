@@ -1,0 +1,64 @@
+{
+  "commit": "2bb3355dada72c916d599888a29db395d3ad0982",
+  "bytes": 48972573,
+  "MiB": 46.7,
+  "files": 262,
+  "all_zip_blobs_match_commit": true,
+  "vscode_files": [
+    ".vscode/launch.json",
+    ".vscode/settings.json"
+  ],
+  "exclusions_pass": true,
+  "local_markdown_links_checked": 55,
+  "missing_targets_in_usage_zip": [
+    {
+      "document": "THIRD_PARTY_NOTICES.md",
+      "target": "fracpaq-matlab/LICENSE",
+      "resolved": "fracpaq-matlab/LICENSE"
+    },
+    {
+      "document": "THIRD_PARTY_NOTICES.md",
+      "target": "docs/decisions/0004-maps-and-angles.md",
+      "resolved": "docs/decisions/0004-maps-and-angles.md"
+    },
+    {
+      "document": "THIRD_PARTY_NOTICES.md",
+      "target": "docs/decisions/0005-lengths-and-censoring.md",
+      "resolved": "docs/decisions/0005-lengths-and-censoring.md"
+    },
+    {
+      "document": "THIRD_PARTY_NOTICES.md",
+      "target": "docs/decisions/0008-circular-sampling.md",
+      "resolved": "docs/decisions/0008-circular-sampling.md"
+    },
+    {
+      "document": "THIRD_PARTY_NOTICES.md",
+      "target": "docs/decisions/0010-mle-and-statistical-assessment.md",
+      "resolved": "docs/decisions/0010-mle-and-statistical-assessment.md"
+    },
+    {
+      "document": "THIRD_PARTY_NOTICES.md",
+      "target": "docs/decisions/0011-connectivity-iyx.md",
+      "resolved": "docs/decisions/0011-connectivity-iyx.md"
+    },
+    {
+      "document": "THIRD_PARTY_NOTICES.md",
+      "target": "docs/decisions/0012-crack-tensors-and-permeability.md",
+      "resolved": "docs/decisions/0012-crack-tensors-and-permeability.md"
+    },
+    {
+      "document": "THIRD_PARTY_NOTICES.md",
+      "target": "docs/decisions/0013-fracture-stability-and-mohr.md",
+      "resolved": "docs/decisions/0013-fracture-stability-and-mohr.md"
+    },
+    {
+      "document": "THIRD_PARTY_NOTICES.md",
+      "target": "tests/reference/dependency_licenses.json",
+      "resolved": "tests/reference/dependency_licenses.json"
+    }
+  ],
+  "archive_url": "https://github.com/luis-mauricio/pyfracpaq/archive/2bb3355dada72c916d599888a29db395d3ad0982.zip",
+  "archive_sha256": "848955af1a0366be8f4b960950898915fe8cb890f976c1abfaed16377c4e6697",
+  "scope": "Actual GitHub archive of the user-published commit, checked before local post-publication corrections. Nine missing local link targets in THIRD_PARTY_NOTICES were recorded in this audit and are corrected locally in the follow-up.",
+  "vscode_configuration_accepted_by_user": true
+}

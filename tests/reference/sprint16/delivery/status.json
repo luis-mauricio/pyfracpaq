@@ -8,7 +8,7 @@
     4
   ],
   "next_point": 5,
-  "next_point_authorized": false,
+  "next_point_authorized": true,
   "points": [
     {
       "number": 1,
@@ -51,7 +51,7 @@
   },
   "point_4_evidence": "tests/reference/sprint16/delivery/point-4/summary.json",
   "point_5_preparation": {
-    "status": "documents_approved_pending_user_upload",
+    "status": "user_published_initial_archive_verified_local_followup_pending_user_push",
     "readme": "README.md",
     "manual_pdf": "docs/manual/pyfracpaq-user-manual.pdf",
     "manual_latex": "docs/manual/pyfracpaq-user-manual.tex",
@@ -59,7 +59,7 @@
     "upload_owner": "user",
     "agent_commit_allowed": false,
     "agent_push_allowed": false,
-    "remote_verification": "Pending user upload and repository link; S16-09 remains open.",
+    "remote_verification": "Initial user-published commit 2bb3355 verified; local credits/portability follow-up awaits user push and final remote archive verification.",
     "readme_language": "en",
     "manuals": {
       "pt-BR": {
@@ -79,5 +79,17 @@
     "documents_approved_by_user": true,
     "planning_document": "docs/planning/PRD.md",
     "organisation_evidence": "tests/reference/sprint16/delivery/point-5/repository-organisation.json"
+  },
+  "point_5_publication": {
+    "repository": "https://github.com/luis-mauricio/pyfracpaq",
+    "branch": "main",
+    "verified_commit": "2bb3355dada72c916d599888a29db395d3ad0982",
+    "initial_publication_complete": true,
+    "initial_remote_zip_verified": true,
+    "remote_zip_evidence": "tests/reference/sprint16/delivery/point-5/published-zip-checks.json",
+    "vscode_shared_configuration_accepted_by_user": true,
+    "local_followup_pending_user_push": true,
+    "local_followup_evidence": "tests/reference/sprint16/delivery/point-5/post-publication-checks.json",
+    "agent_commit_push": false
   }
 }

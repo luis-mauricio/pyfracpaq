@@ -1,12 +1,12 @@
 # S16-09 — Entrega em cinco pontos
 
-Data: 16/11/2026. Versão dos fontes: **0.9.0rc1**. O usuário determinou concluir **um ponto por vez e parar**, aguardando autorização para o próximo. **Os pontos 1–4 estão concluídos. S16-09 continua aberta no ponto 5.** [Estado verificável](../../tests/reference/sprint16/delivery/status.json).
+Data: 16/11/2026. Versão dos fontes: **0.9.0rc1**. O usuário determinou concluir **um ponto por vez e parar**, aguardando autorização para o próximo. **Os pontos 1–4 estão concluídos. O usuário publicou o código; S16-09 continua aberta no ponto 5 até o envio/conferência dos ajustes locais posteriores.** [Estado verificável](../../tests/reference/sprint16/delivery/status.json).
 
 - [X] 1. Revisão final da interface no macOS.
 - [X] 2. Conferência das exportações da versão final.
 - [X] 3. Consolidação de versão e documentação da entrega.
 - [X] 4. Preparação e validação do código para clone/download.
-- [ ] 5. Disponibilização do código no GitHub — preparação local e documentos concluídos; envio pelo usuário e conferência remota pendentes.
+- [ ] 5. Disponibilização do código no GitHub — primeiro envio e ZIP remoto conferidos; ajustes locais de links/portabilidade aguardam o novo push do usuário e conferência final.
 
 ## Ponto 1 — concluído
 
@@ -99,3 +99,17 @@ O envio ao GitHub continua a cargo do usuário. Não houve commit/push/publicaç
 ## Documentos aprovados e organização local — 16/11/2026
 
 O usuário aprovou o README e os dois manuais. A pendência de revisão desses documentos foi concluída no PRD; envio ao GitHub e conferência remota continuam pendentes. Também foram aprovados e executados os movimentos de PRD/inventário para docs/planning e de 14 saídas locais para outputs/previous-runs. Links e ferramentas afetadas foram ajustados, sem modificar os documentos aprovados, código produtivo ou referências científicas. [Organização e revisão das pastas](repository-organisation.md).
+
+## Ajustes após a publicação — 16/11/2026
+
+O usuário publicou o commit **2bb3355dada72c916d599888a29db395d3ad0982** em [luis-mauricio/pyfracpaq](https://github.com/luis-mauricio/pyfracpaq). O ZIP real do GitHub foi baixado e conferido: 262 arquivos, 48.972.573 bytes (46,7 MiB), todos os blobs idênticos ao commit. Aplicação, dependências declaradas, exemplos, duas versões do manual e licenças presentes; testes, scripts, planejamento, relatórios, ambientes e saídas locais ausentes. [Auditoria da publicação inicial](../../tests/reference/sprint16/delivery/point-5/published-zip-checks.json).
+
+O usuário aceitou manter .vscode com suas três configurações compartilhadas. launch.json/settings.json acompanham o ZIP; tasks.json permanece no clone para testes. Não houve alteração dessas configurações ou das regras de exclusão.
+
+As correções locais autorizadas substituem o link indisponível da licença original pelo LICENSE distribuído e os oito links de manutenção por URLs do GitHub. Créditos, atribuições e licenças locais continuam disponíveis offline; a consulta dos relatórios externos requer rede. Os oito destinos técnicos foram verificados no GitHub.
+
+capture_native_ks_hist.m e capture_native_s89.m agora usam fileparts/mfilename para localizar o projeto, sem caminho fixo do computador. Os corpos numéricos continuam byte a byte iguais aos da captura histórica. Os manifestos/arquivos das Sprints 8/9 permanecem históricos e intactos: seus hashes identificam os scripts daquela execução, recuperáveis pelo commit 2bb3355. O novo registro separa esses hashes dos scripts atuais; nenhuma captura científica foi refeita ou substituída.
+
+As verificações locais e hashes estão em [post-publication-checks.json](../../tests/reference/sprint16/delivery/point-5/post-publication-checks.json). O README e os manuais aprovados permanecem intactos. Não houve commit/push do agente. O envio desta correção pertence ao usuário; a S16-09 permanece sem X até a conferência remota final da versão ajustada. Windows/Linux continuam reservados aos testes posteriores do usuário.
+
+**Resultado dos ajustes locais:** verificação real dos dois trechos de localização no MATLAB R2024b, em cópia temporária com espaços/acentos e diretório de trabalho diferente; nenhum cálculo científico executado. Candidato ZIP atualizado com 262 arquivos: somente THIRD_PARTY_NOTICES.md difere entre seus arquivos de uso e os do ZIP publicado. Foram conferidos 46 links locais sem destinos ausentes e oito links técnicos no GitHub. README, manuais, configurações VS Code, 53 figuras aceitas, implementação científica, 164 originais e oito saídas conhecidas da referência permanecem íntegros. Pronto para o commit/push do usuário.

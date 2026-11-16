@@ -1,0 +1,111 @@
+{
+  "version": "0.9.0rc1",
+  "scope": "Authorised post-publication credits and script-portability corrections. No commit/push by the agent.",
+  "published_commit_verified": "2bb3355dada72c916d599888a29db395d3ad0982",
+  "initial_remote_archive_audit": "tests/reference/sprint16/delivery/point-5/published-zip-checks.json",
+  "local_checks_pass": true,
+  "credits": {
+    "local_runtime_markdown_links_checked": 46,
+    "missing_targets_in_usage_zip": [],
+    "technical_links_checked_on_github": [
+      {
+        "path": "docs/decisions/0004-maps-and-angles.md",
+        "ok": true,
+        "sha": "2aaa923b901e7868fa5568968f8357373d2e9877"
+      },
+      {
+        "path": "docs/decisions/0005-lengths-and-censoring.md",
+        "ok": true,
+        "sha": "83e949ba5751436786ca68284aeb0d886f874939"
+      },
+      {
+        "path": "docs/decisions/0008-circular-sampling.md",
+        "ok": true,
+        "sha": "7db471c53305f4472499cbe0f811e77db5cc4e0b"
+      },
+      {
+        "path": "docs/decisions/0010-mle-and-statistical-assessment.md",
+        "ok": true,
+        "sha": "971c004eef9cef053dce6ba9f2bd744b12347a9b"
+      },
+      {
+        "path": "docs/decisions/0011-connectivity-iyx.md",
+        "ok": true,
+        "sha": "3c8bcb92674b1de6c28f7d81be98b9cd62af1cee"
+      },
+      {
+        "path": "docs/decisions/0012-crack-tensors-and-permeability.md",
+        "ok": true,
+        "sha": "f128fba0f7e15dad58fa39a9d83c6291bde22cad"
+      },
+      {
+        "path": "docs/decisions/0013-fracture-stability-and-mohr.md",
+        "ok": true,
+        "sha": "48ada192fe3898ad7d36a637ad00e9199a5a49eb"
+      },
+      {
+        "path": "tests/reference/dependency_licenses.json",
+        "ok": true,
+        "sha": "10b451764061711e9522c0edadcb2ff0c2143401"
+      }
+    ],
+    "original_and_project_licence_preserved": true,
+    "sha256": "59032015137b79e8e5e348732edfa9de16a3266023aa38a0b1550fb8da6857b7"
+  },
+  "matlab_portability": {
+    "matlab_version": "24.2.0.3212159 (R2024b) Update 9",
+    "scripts_checked": 2,
+    "paths_with_spaces_and_accents": true,
+    "independent_of_working_directory": true,
+    "scientific_analysis_executed": false,
+    "approved_reference_outputs_overwritten": false
+  },
+  "scripts": [
+    {
+      "script": "scripts/capture_native_ks_hist.m",
+      "before_sha256": "38f763a73307c51ce814876c13030014353f5024cb1bb1c215e7d978e1a0f57d",
+      "after_sha256": "610e394ead4d4ff8bbd84bb2f5c053edc54a3ff39d9b0703113e0d5936bed024",
+      "numerical_body_byte_identical": true,
+      "historical_source_url": "https://github.com/luis-mauricio/pyfracpaq/blob/2bb3355dada72c916d599888a29db395d3ad0982/scripts/capture_native_ks_hist.m"
+    },
+    {
+      "script": "scripts/capture_native_s89.m",
+      "before_sha256": "9b98b06b641017a7512c70dd416f68d89d5eb6d086e72fabf74368b4f2961231",
+      "after_sha256": "bd7e52a6d81196bb0e2ebf9d3c0668a63f387729a87655e2e1b048d93f1ee0c4",
+      "numerical_body_byte_identical": true,
+      "historical_source_url": "https://github.com/luis-mauricio/pyfracpaq/blob/2bb3355dada72c916d599888a29db395d3ad0982/scripts/capture_native_s89.m"
+    }
+  ],
+  "historical_provenance_preserved": {
+    "native_sprint8_sprint9_manifests_unchanged": true,
+    "original_script_hashes_match_historical_manifests": true,
+    "original_script_sources_available_in_published_commit": true,
+    "initial_harness_note": "The first isolated assertion compared /tmp with canonical /private/tmp. Canonicalising the test fixture fixed the harness; the production path changes were unchanged."
+  },
+  "preservation": {
+    "approved_readme_manuals_and_vscode_unchanged": true,
+    "scientific_implementation_matches_point2": true,
+    "approved_reference_figures_checked": 53,
+    "original_files_checked": 164,
+    "known_original_folder_outputs_checked": 8
+  },
+  "source_candidate": {
+    "archive": "dist/0.9.0rc1/post-publication-source/pyfracpaq-0.9.0rc1-code.zip",
+    "archive_sha256": "ce57d0d6c179516c951bcfc71d3cb7b60fd5e94f3de13ad8878518bd24111114",
+    "archive_bytes": 48948250,
+    "runtime_files": 262,
+    "published": false,
+    "actual_index_changed": false,
+    "tests_and_reports_absent_from_zip": true
+  },
+  "runtime_files_changed_from_initial_publication": [
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "publication": {
+    "local_followup_published": false,
+    "user_commit_push_required": true,
+    "remote_followup_verified": false,
+    "S16-09_complete": false
+  },
+  "tests_scope": "Real MATLAB evaluation of only path-bootstrap prefixes in a relocated temporary tree; no MLE/topology rerun or reference rewrite. Archive/link/hash checks performed on actual candidate contents."
+}

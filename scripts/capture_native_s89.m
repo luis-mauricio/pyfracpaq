@@ -1,5 +1,5 @@
 % Native FracPaQ/MathWorks comparison only. Does not modify supplied sources.
-root='/Users/lm/developer/pyfracpaq';
+root=fileparts(fileparts(mfilename('fullpath')));
 addpath(fullfile(root,'fracpaq-matlab'));
 set(groot,'DefaultFigureVisible','off');
 set(groot,'DefaultAxesFontName','Arial');
