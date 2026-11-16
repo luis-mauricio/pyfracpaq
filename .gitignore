@@ -88,3 +88,14 @@ Desktop.ini
 
 # tests/fixtures, tests/reference e pyfracpaq/resources sao versionaveis.
 # Nao ignorar globalmente PNG, TXT, MAT ou NPZ: fazem parte da validacao.
+
+# Intermediarios LaTeX do manual; fontes, figuras e PDF final sao versionaveis.
+/docs/manual/build/
+/docs/manual/*.aux
+/docs/manual/*.log
+/docs/manual/*.toc
+/docs/manual/*.out
+/docs/manual/*.fls
+/docs/manual/*.fdb_latexmk
+/docs/manual/*.xdv
+/docs/manual/*.synctex.gz

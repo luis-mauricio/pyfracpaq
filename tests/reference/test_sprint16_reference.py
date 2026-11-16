@@ -1,9 +1,10 @@
 """Audit provenance and delivery evidence; capture presence is not visual acceptance."""
 
 import json
+from pathlib import Path
+from packaging.utils import parse_wheel_filename
 
 from build_parity_index import inventory_rows
-from pyfracpaq import __version__
 from pyfracpaq.analysis import AnalysisRegistry
 from reference_common import REFERENCE, ROOT, sha256
 
@@ -45,9 +46,12 @@ def test_all_capture_templates_have_separate_authentic_evidence():
 
 def test_local_install_uses_installed_wheel_with_network_denied():
     result=read('clean-install.json')
+    # This is frozen evidence for the delivered wheel, not a claim that the
+    # historical package contains later source/identity changes.
+    delivered_version=str(parse_wheel_filename(Path(result['wheel']).name)[1])
     assert {r['mode'] for r in result['entrypoints']}=={'script','module'}
     for record in result['entrypoints']:
-        assert record['exit_code']==0 and record['version']==__version__
+        assert record['exit_code']==0 and record['version']==delivered_version
         assert 'site-packages' in record['module']
         assert record['network']=='socket connect/DNS denied'
         assert record['readers']==['TXT','SVG','Hough']

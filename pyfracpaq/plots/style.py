@@ -18,7 +18,6 @@ from pyfracpaq.domain import Dataset
 from pyfracpaq.domain.execution import AnalysisConfig
 from pyfracpaq.plots.colourbars import colourbar
 from pyfracpaq.plots.ticks import MatlabLocator
-from pyfracpaq.plots.markers import native_marker_renderer
 from pyfracpaq.plots.grids import native_grids
 from pyfracpaq.plots.tex import native_mathtext
 from pyfracpaq.plots.legends import OutsideLegend
@@ -55,7 +54,7 @@ class MatlabFigure(Figure):
                 if any(family in generic for family in text.get_fontfamily()):
                     path=font_manager.findfont(text.get_fontproperties())
                     text.set_fontfamily(font_manager.FontProperties(fname=path).get_name())
-            with native_mathtext(renderer),native_marker_renderer(renderer,self.dpi),native_dashes(self,renderer):
+            with native_mathtext(renderer),native_dashes(self,renderer):
                 return super().draw(renderer)
 
 
@@ -154,14 +153,11 @@ def legend(axes: Axes, *, outside_bottom=False, **kwargs):
         text.set_transform(text.get_transform()+ScaledTranslation(-1.32/72,-.96/72,root.dpi_scale_trans))
     for line in result.get_lines():
         line.set_transform(line.get_transform()+ScaledTranslation(.84/72,-.96/72,root.dpi_scale_trans))
-        if line.get_marker() not in ('None','none','',None):
-            line.set_markeredgewidth(max(1,line.get_markeredgewidth()))
     return result
 
 
 def square_marker():
-    # Native PNG probes: the square occupies 80% of the nominal marker extent.
-    # Matplotlib uses the full extent. Keep the nominal size/API unchanged.
+    # Preserve the established visible size with an ordinary square path.
     return MarkerStyle('s', transform=Affine2D().scale(.8))
 
 

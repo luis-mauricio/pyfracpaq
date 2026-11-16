@@ -1,0 +1,192 @@
+{
+  "version": "0.9.0rc1",
+  "platform": "cocoa",
+  "scope": "S16-09 point 1 only: real Cocoa widgets and native file chooser driven through Qt APIs; no scientific Run, product export or release build.",
+  "checks": [
+    {
+      "check": "startup width includes native frame",
+      "passed": true,
+      "available": [
+        0,
+        38,
+        1710,
+        1015
+      ],
+      "frame": [
+        0,
+        160,
+        1710,
+        771
+      ]
+    },
+    {
+      "check": "native file chooser cancel/select; accented path and uppercase TXT",
+      "passed": true,
+      "actions": [
+        {
+          "action": "cancel",
+          "method": "Computer Use interaction with native macOS open-panel"
+        },
+        {
+          "action": "select",
+          "method": "Computer Use interaction with native macOS open-panel"
+        }
+      ],
+      "input_sha256": "96bafa56537444279a748c3f4b7a4300f7e73341a04d2ba4ff8cf1299ad74688"
+    },
+    {
+      "check": "input error visible, plain text and field focus restored",
+      "passed": true,
+      "focus_target": "edit_filename"
+    },
+    {
+      "check": "valid Preview recovers after error; Run re-enabled",
+      "passed": true,
+      "counts": [
+        445,
+        1076,
+        1521
+      ]
+    },
+    {
+      "check": "editing input invalidates Preview and disables Run",
+      "passed": true
+    },
+    {
+      "check": "Wavelet dialog default/enlarged/compact layout, input error and Cancel",
+      "passed": true,
+      "layouts": [
+        {
+          "requested_size": [
+            520,
+            320
+          ],
+          "actual_size": [
+            520,
+            320
+          ],
+          "text_fit_violations": []
+        },
+        {
+          "requested_size": [
+            400,
+            260
+          ],
+          "actual_size": [
+            400,
+            260
+          ],
+          "text_fit_violations": []
+        },
+        {
+          "requested_size": [
+            650,
+            400
+          ],
+          "actual_size": [
+            650,
+            400
+          ],
+          "text_fit_violations": []
+        }
+      ]
+    },
+    {
+      "check": "Exit closes the main window",
+      "passed": true
+    }
+  ],
+  "captures": [
+    {
+      "name": "startup-full-width",
+      "path": "startup-full-width.png",
+      "sha256": "21d8095416827fe1b9dbfe4fa1cc02bed031b3f5cd1047677b89e4af7c7bb425",
+      "logical_size": [
+        1710,
+        739
+      ]
+    },
+    {
+      "name": "native-file-selected",
+      "path": "native-file-selected.png",
+      "sha256": "1cfaa1e3b0db8e2c043e2b02ebd3dd576c6b6556b10c4c99ffae6883f1866f0e",
+      "logical_size": [
+        1710,
+        739
+      ]
+    },
+    {
+      "name": "main-input-error",
+      "path": "main-input-error.png",
+      "sha256": "7f50980576e6eff3c77877920176a012573f0b01ae250c261b66c100084278e2",
+      "logical_size": [
+        420,
+        117
+      ]
+    },
+    {
+      "name": "valid-input-recovered",
+      "path": "valid-input-recovered.png",
+      "sha256": "07f4717db44328b1cdb2182d452705d4d87b8d75da56b0f09c05e59836a71455",
+      "logical_size": [
+        1710,
+        739
+      ]
+    },
+    {
+      "name": "preview-invalidated",
+      "path": "preview-invalidated.png",
+      "sha256": "fa4eefc528bf027166ae78c6b79a6db2a216bd35f94819322ad02ad159303bd1",
+      "logical_size": [
+        1710,
+        739
+      ]
+    },
+    {
+      "name": "wavelet-520",
+      "path": "wavelet-520.png",
+      "sha256": "3a7a8ccff706e2f12837d00745bad2139b065c3211ba198c9c048568d80d23d4",
+      "logical_size": [
+        520,
+        320
+      ]
+    },
+    {
+      "name": "wavelet-400",
+      "path": "wavelet-400.png",
+      "sha256": "b3679c90e9a6076dd14ca65fca0c2c546aa715d36fd556374efbde0ec06cf0ba",
+      "logical_size": [
+        400,
+        260
+      ]
+    },
+    {
+      "name": "wavelet-650",
+      "path": "wavelet-650.png",
+      "sha256": "c5989181bc93f6cbd597ebec12a3b0cc7ff1733d111ca864a62ed0a5af26df2b",
+      "logical_size": [
+        650,
+        400
+      ]
+    },
+    {
+      "name": "wavelet-input-error",
+      "path": "wavelet-input-error.png",
+      "sha256": "4489d8ee66205bfac4a0b37b12554f31294c4a6f1e9da615f582ab68279d3505",
+      "logical_size": [
+        420,
+        109
+      ]
+    },
+    {
+      "name": "ready-for-exit",
+      "path": "ready-for-exit.png",
+      "sha256": "fa4eefc528bf027166ae78c6b79a6db2a216bd35f94819322ad02ad159303bd1",
+      "logical_size": [
+        1710,
+        739
+      ]
+    }
+  ],
+  "passed": true
+}

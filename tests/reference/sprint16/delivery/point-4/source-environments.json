@@ -1,0 +1,16 @@
+{
+  "native": {
+    "prefix": "/tmp/pyfracpaq-source-validation-cah_c5sm/native-source-env",
+    "requirements_only": true,
+    "pip_check_passed": true,
+    "project_installed": false,
+    "seconds": 22.150233624968678
+  },
+  "miniforge": {
+    "prefix": "/tmp/pyfracpaq-source-validation-cah_c5sm/miniforge-validated-approved",
+    "requirements_only": true,
+    "pip_check_passed": true,
+    "project_installed": false,
+    "seconds": 26.44880629196996
+  }
+}

@@ -1,0 +1,29 @@
+Looking in links: /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64
+Processing /Users/lm/developer/pyfracpaq/dist/0.9.0rc1/pyfracpaq-0.9.0rc1-py3-none-any.whl
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/contourpy-1.4.0-cp313-cp313-macosx_11_0_arm64.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/cycler-0.12.1-py3-none-any.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/defusedxml-0.7.1-py2.py3-none-any.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/fonttools-4.68.0-cp313-cp313-macosx_10_13_universal2.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/imageio-2.38.1-py3-none-any.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/kiwisolver-1.5.1-cp313-cp313-macosx_11_0_arm64.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/lazy_loader-0.6-py3-none-any.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/matplotlib-3.11.2-cp313-cp313-macosx_11_0_arm64.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/networkx-3.7-py3-none-any.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/numpy-2.5.4-cp313-cp313-macosx_14_0_arm64.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/packaging-26.3-py3-none-any.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/pillow-13.0.0-cp313-cp313-macosx_11_0_arm64.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/pyparsing-3.3.3-py3-none-any.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/pyside6-6.12.0-cp310-abi3-macosx_14_0_universal2.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/pyside6_addons-6.12.0-cp310-abi3-macosx_14_0_universal2.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/pyside6_essentials-6.12.0-cp310-abi3-macosx_14_0_universal2.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/pyside6_pdf-6.12.0.140-cp310-abi3-macosx_14_0_universal2.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/pyside6_webengine-6.12.0.140-cp310-abi3-macosx_14_0_universal2.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/python_dateutil-4.0.0-py3-none-any.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/scikit_image-0.26.0-cp313-cp313-macosx_11_0_arm64.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/scipy-1.18.1-cp313-cp313-macosx_14_0_arm64.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/shiboken6-6.12.0-cp310-abi3-macosx_14_0_universal2.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/tifffile-2026.11.12-py3-none-any.whl (from pyfracpaq==0.9.0rc1)
+Processing /Users/lm/developer/pyfracpaq/dist/wheelhouse-macos-arm64/tzdata-2026.6-py2.py3-none-any.whl (from pyfracpaq==0.9.0rc1)
+Installing collected packages: tzdata, shiboken6, pyparsing, pillow, packaging, numpy, networkx, kiwisolver, fonttools, defusedxml, cycler, tifffile, scipy, python-dateutil, pyside6-essentials, lazy-loader, imageio, contourpy, scikit-image, pyside6-pdf, pyside6-addons, matplotlib, pyside6-webengine, pyside6, pyfracpaq
+
+Successfully installed contourpy-1.4.0 cycler-0.12.1 defusedxml-0.7.1 fonttools-4.68.0 imageio-2.38.1 kiwisolver-1.5.1 lazy-loader-0.6 matplotlib-3.11.2 networkx-3.7 numpy-2.5.4 packaging-26.3 pillow-13.0.0 pyfracpaq-0.9.0rc1 pyparsing-3.3.3 pyside6-6.12.0 pyside6-addons-6.12.0 pyside6-essentials-6.12.0 pyside6-pdf-6.12.0.140 pyside6-webengine-6.12.0.140 python-dateutil-4.0.0 scikit-image-0.26.0 scipy-1.18.1 shiboken6-6.12.0 tifffile-2026.11.12 tzdata-2026.6

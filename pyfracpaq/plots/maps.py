@@ -2,6 +2,7 @@
 
 import numpy as np
 from matplotlib.colors import ListedColormap, LogNorm
+from matplotlib.collections import PathCollection
 from matplotlib.markers import MarkerStyle
 from matplotlib.transforms import IdentityTransform
 
@@ -11,7 +12,6 @@ from pyfracpaq.analysis.palettes import cmocean
 from pyfracpaq.domain.execution import AnalysisConfig
 from pyfracpaq.plots.colourbars import colourbar
 from pyfracpaq.plots.results import FigureOutput
-from pyfracpaq.plots.markers import MatlabMarkers
 from pyfracpaq.plots.raster import MultisampleLines
 from pyfracpaq.plots.style import (
     COLOUR_MAP_RECTANGLE, figure_axes, map_axes, matlab_style, square_marker, strike_colourbar, title,
@@ -46,10 +46,9 @@ def render_map(result: MapResult, config: AnalysisConfig) -> tuple[FigureOutput,
                         paths.extend((circle_path,circle_path,square_path))
                         sizes.extend((16,16,36));colours.extend(('black','black','red'))
                     points.append(trace.midpoint);paths.append(circle_path);sizes.append(36);colours.append('red')
-                markers=MatlabMarkers(paths,sizes=sizes,offsets=points,offset_transform=axes.transData,
+                markers=PathCollection(paths,sizes=sizes,offsets=points,offset_transform=axes.transData,
                     facecolors='none',edgecolors=colours,linewidths=.5,zorder=4,clip_on=False)
                 markers.set_transform(IdentityTransform());axes.add_collection(markers)
-                lines.native_markers=markers;markers.native_lines=lines
             heading = (f'Mapped traces (n={dataset.n_traces}), segments '
                        f'(n={dataset.n_segments}) & nodes (n={dataset.n_nodes})')
             basename = 'FracPaQ2D_tracemap'

@@ -1,0 +1,360 @@
+{
+  "scope": "Manual-only image copies; approved scientific originals preserved. UI: Qt offscreen actual widgets, illustration viewport1250x739.",
+  "input_sha256": "96bafa56537444279a748c3f4b7a4300f7e73341a04d2ba4ff8cf1299ad74688",
+  "figures": [
+    {
+      "asset": "tracemap.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_tracemap_SD11A.png",
+      "source_sha256": "e8fda7aa76ae9281a52dc7ac7df46796ae6c61d4a4b2570397b0aeaf2cec0be0",
+      "sha256": "a7647ae860f3b93c34429a7dd8f2feedc4b688d6547bfc3c1e1f85a57b4f4995",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "tracelengthmap.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_tracelengthmap_SD11A.png",
+      "source_sha256": "ce1f540de7d0d2ecbeb8ed191f44fd4e496604e098ade3f40c6989247db70ab4",
+      "sha256": "9706ebfbd0666277ff434ed676f28093a93e1f8ff01090b7259fbfc17b2d2b89",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "segmentlengthmap.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_segmentlengthmap_SD11A.png",
+      "source_sha256": "d6dc4d7573d6b9268ab21cc8a64bc555b2645a32b00a66c85717b2289905280d",
+      "sha256": "4e474d40553ebb563590583c08ce172042340ef9e2962e77c082ef3173b0c6a7",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "segmentstrikemap.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_segmentstrikemap_SD11A.png",
+      "source_sha256": "f94940d0cfd658b58754d9960acce4751dbcc7ee689545b3cb268ffc5ad3dbc0",
+      "sha256": "0bb21ade001df630eb0d38621e0295aa05e6d233dbdca549c6a3971e18c6de4d",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "scancircle.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_scancircle_SD11A.png",
+      "source_sha256": "82c0b574c9d3d3679303d509cd53657502137fb007b365e56541dcf4de3bb31a",
+      "sha256": "4e3c5962a1462dc4eaa8ede834c932fb4307ddebef871aa6603a9091c023fa9f",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "intensityP21.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_intensityP21_SD11A.png",
+      "source_sha256": "17d1c42b41e339b16e2617fd5841a6006ad318d2da12df098ca982f1d0b49ab7",
+      "sha256": "e356f37089e787c2ddd6d13b684f19cb26b1e6896c0fb20078bd64b06d6012ce",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "densityP20.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_densityP20_SD11A.png",
+      "source_sha256": "b0730824d7a27c7a0366e639f7ac8ae86448f4ec9a9e615ee4a756c370048a67",
+      "sha256": "c396c1abb68856d016ebbfa55ecba78c6f5960406fa1706993279f20e3f5fea9",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "Mohrplot.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_Mohrplot_SD11A.png",
+      "source_sha256": "b1210da584e4da55aa9e5a9b2880f877583446ff3609f0bccece9309d60a75cd",
+      "sha256": "008b2d43fde3e150fde2d2a2f5dccdd7f60e8b5ec091fa4c1cd6149040836355",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "sliptendencymap.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_sliptendencymap_SD11A.png",
+      "source_sha256": "f55174527f4e44b7f9a825c950bfb39bb25ce20466d269c219d0ad6f42896688",
+      "sha256": "e44823afe35117b7fb3bb438d483b7b0806739c3618d6ac5203176deae9b72d4",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "sliptendencyrose.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_sliptendencyrose_SD11A.png",
+      "source_sha256": "32b0dbfd827774b77cb4d09f7705b1cb3f0ac044694119ea3c4b6b7409afae30",
+      "sha256": "9089810719d6699a19e18e6a7a1d50b33569ff3a931aceb42f4731a69497caea",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "dilationtendencymap.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_dilationtendencymap_SD11A.png",
+      "source_sha256": "c33a9e97406ae6b91a6120bf832c159f03c99ac1b1c532cf3af15192443b1a46",
+      "sha256": "5ae6b6fa58ef78d38532b729aff4e1a6fa881aa9710208c6e2091c8dcf07279b",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "fracsuscepmap.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_fracsuscepmap_SD11A.png",
+      "source_sha256": "addbd775981bb43ac50a7e217875130de6a1e782d3955f3acafb8e77330a41ca",
+      "sha256": "4982c5ffef9ea7303ae600ec0643918bf2de8aec444518abe65a7edc5349662b",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "CSFmap.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_CSFmap_SD11A.png",
+      "source_sha256": "4ddd070587ddff4229773bc0f5cfb771506250c0e05c662b61418be32e4d42d7",
+      "sha256": "715904a4ab5ba1984b7caead02b8af11788ee0e84ff83e9273c8a0e3d47928c1",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "histotracelength.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_histotracelength_SD11A.png",
+      "source_sha256": "c533e990210b8c41f7b2f0cf1a6165f4056323d77c657a663a1383ed18870d3d",
+      "sha256": "bdfe54a137e9944bb2578dc3b142ecb30acf339eacd6acaad2bbd3a1cfd3a3bd",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "histosegmentlength.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_histosegmentlength_SD11A.png",
+      "source_sha256": "7fd20247a00de021fbbc20201839d90d47038007c6bf3cf8318d35bbe083f1ef",
+      "sha256": "4e71d3f9efd7f8b9c7954c3cd73e0f54e776e964bee7e51a0ff1a24bfc1fcae8",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "loglogplottracelength.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_loglogplottracelength_SD11A.png",
+      "source_sha256": "ab9d0e0c242448236374d62b8c3c94ae82bbe164ba9d432d81ae1280000438ae",
+      "sha256": "3598cec7a00c3fd443a34af5b3a30c6931cf4d53b9a75056a1cd35bd7426b411",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "loglogplotsegmentlengthdensity.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png",
+      "source_sha256": "939306b79ed83037c6bf2888303cb6d397c67955d0e7af38b0ac5b58fbaca85a",
+      "sha256": "48e0fe77b47992e231833113ba1ed93e5984dab2b77db3b1fa2c9515af07a7df",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "tracelengthsFittingPowerLaw.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "source_sha256": "ebe81910fa9df8dc4908b91447ba37f8c2f57c56aad0925daec80b34280b6810",
+      "sha256": "64dcd23b30374710ed33e6190f47a4528191b581144ecec0ecf1b06f753b76f9",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "tracelengthsFittingExponential.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "source_sha256": "a0fafa70cb09f253054bbb70ac88b8a53f8b298a4ae98c80816a2ad2240e6083",
+      "sha256": "17827a05efe466a711c813ceb1dbb414451e387e930fa07c2c6fd22275c1bf8a",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "tracelengthsFittingLogNormal.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "source_sha256": "09fc337f13f8631d67dc8353e7db565f1af4892691ef9c17af2df0284f8309af",
+      "sha256": "8639f12b3db9628dcfe1925c1f30e6ae420009262eb0a35d1c9ddc78aeb20a08",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "crossplotsegmentlengthangle.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_crossplotsegmentlengthangle_SD11A.png",
+      "source_sha256": "91ab822197cc5eb2740d92be1f323a2294057a88c2a164b478745a11f9861e0c",
+      "sha256": "473ec06bda93b6cdb919f3a0b135337cf02dfc4098c142536a439a5cc8e86d75",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "blocksizecentroidmap.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_blocksizecentroidmap_SD11A.png",
+      "source_sha256": "c35379ab3044395baacd268d33cbe3003ca778703f65325697e4a71bdafdcb26",
+      "sha256": "02955ae894d47cdf3ed4c7250437c4017076ca19f93bea1222b270001273e19b",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "blocksizehisto.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_blocksizehisto_SD11A.png",
+      "source_sha256": "81d7845208911dc916e1081b9c3dd772dfcba9a0604836c2fdcdb0b7fc55e71d",
+      "sha256": "bbd12b74f99a7fed35019c88d97340c28701674a08f144110989530942a85d9a",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "segmentlength_variogram.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_segmentlength_variogram_SD11A.png",
+      "source_sha256": "33b98b1700e7c286656ab5a78458177d8fec1b66a6a6b2d95298e1c265df0cf4",
+      "sha256": "f332b7d8a8dc319435d4738bb003fdc53737d852e1795f672f9d4fb57d919cf5",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "histoangle.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_histoangle_SD11A.png",
+      "source_sha256": "b40e7cc3642b012dd93b8f2527aa27d5f28eee03b023174a3609effc20887f1c",
+      "sha256": "9bedbb9c7a8ea3fb49862add4c73a5a8a2beae9639b260c22fea24866847c1a5",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "roseangleEqArea.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_roseangleEqArea_SD11A.png",
+      "source_sha256": "dc643ca29747f6de8a202e8bc47a7b302c2d228faf366307322200b96459caed",
+      "sha256": "a78587fd74e620fa641cef557dfd569c38d74208060cb895872862ed64dd323c",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "IYXnodes_traces.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_IYXnodes_traces_SD11A.png",
+      "source_sha256": "8ae5f9d3847f0e7bdf57b051773f1d8264ea48375d1c89252d4717d8c5e4fc7e",
+      "sha256": "555d423ddf49ffdbafd39658bca3c2f64a0862586e4248c4d98b759ef5c9a73d",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "XYnodes_traces_heat.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_XYnodes_traces_heat_SD11A.png",
+      "source_sha256": "4baf2168a4a3d1d836f002802d81b92d97bb142e5911b304c937c3886e2e0aa3",
+      "sha256": "af88b935af4a613f6f298a925c17f25f6c784eab3065bd95e04effd633682a03",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "IYXtriangle.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_IYXtriangle_SD11A.png",
+      "source_sha256": "99525efda07b44f627c9ba332ae78a0fd3363b39163001b19aaa17858cd2f696",
+      "sha256": "a66a7e5d3db029c9d4f4f00cc699b2abf079c1475d19d8551bd26a3cdadd2321",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "cracktensor.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_cracktensor_SD11A.png",
+      "source_sha256": "d4fd10c0b033cb09c1d960df42fdd08d70644964410eaa2d4c8cc3ad174b6d5d",
+      "sha256": "97036b190a5dbf2366f6d3cbcf7ecf29fa34515fd4d201d2caa9a33e5984dab5",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "permeability_polar.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2D_permeability_polar_SD11A.png",
+      "source_sha256": "afaf31c191547575db9c2f7021665e950b50e08f98fdc6b677e4471ecef26840",
+      "sha256": "e513930849954ce5a09524d0af2fe1d280861466bbfe7365e75fa7f1b32731a5",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "wavelet_a32.png",
+      "source": "tests/reference/sprint16/final/python/FracPaQ2Dwavelet_a32_SD11A.png",
+      "source_sha256": "a0fc41801cbd60df5130de9069aa9407fb990cdc13eb6c560113ce494b96ff1d",
+      "sha256": "b334d088bf6790fd870eab8a1e15e81c88e2947d379197f5d22b86bf6dd33ca0",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "tracelengthalonggraph.png",
+      "source": "tests/reference/sprint16/final/python/guiFracPaQ2D_tracelengthalonggraph_SD11A.png",
+      "source_sha256": "4c46a91400c9403aff22e7d17d7a11cb6b73568c478e59169145ae48ba07eebf",
+      "sha256": "c9434f50ef8a1b78d24b5e8d005cbffb649115fd6a933bd43a34dd0cd0c46d3e",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "segmentlengthalonggraph.png",
+      "source": "tests/reference/sprint16/final/python/guiFracPaQ2D_segmentlengthalonggraph_SD11A.png",
+      "source_sha256": "d33be0382beacc27f5f00e9950bd3b2aca80e9f6a3feb341d6a6152d037e7ae9",
+      "sha256": "10f2cd1283e3b90da5e4848f3d1ab67c7f86bda55dfd8e21d09bd6f5fbabda13",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "segmentanglealonggraph.png",
+      "source": "tests/reference/sprint16/final/python/guiFracPaQ2D_segmentanglealonggraph_SD11A.png",
+      "source_sha256": "2b0c10b90b842a6d2116164cdf93e828f08236068dc80707f6894e36b106d678",
+      "sha256": "22b6d623055e42fdb7bf661193f7c9e3248de75ddbad8d456f61829bcee38262",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "graphtracemap.png",
+      "source": "tests/reference/sprint16/final/python/guiFracPaQ2D_graphtracemap_SD11A.png",
+      "source_sha256": "011ba292de237b6958d93b7fb7a5a915dc7b79806f4cf4b3a15f0d5ce34ac58b",
+      "sha256": "7277bc4a8e6b4c328036ba20ad3e5dfe2b7a2e420ad29e3c5ceb062e85c2827f",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "intensityalonggraph.png",
+      "source": "tests/reference/sprint16/final/python/guiFracPaQ2D_intensityalonggraph_SD11A.png",
+      "source_sha256": "b3cfc45c45c5592aa8cfef0b43f9217f16c3fed287e0d422e0d995beaa74150c",
+      "sha256": "b9d097c8d3f655f31f39606b3415105ede1e7cc5b46d812f020c4c1b70435d81",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "densityalonggraph.png",
+      "source": "tests/reference/sprint16/final/python/guiFracPaQ2D_densityalonggraph_SD11A.png",
+      "source_sha256": "b945c0579e78cd01c834b046dfceccd101cad6695ad8f0c6f1101c08ceb2bf20",
+      "sha256": "f32880c3ef7fb2bad830ab3ee7d6238b2dee9e21cfae8840160b8830b8ae6996",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "tracelengthfromgraph.png",
+      "source": "tests/reference/sprint16/final/python/guiFracPaQ2D_tracelengthfromgraph_SD11A.png",
+      "source_sha256": "cfad163e9666e4474e9de75cf1f71e398acf2458a1ed6cdb1389c240dd859226",
+      "sha256": "e1351ad419fd11a19736ecd6691a85a78e582cf1e9ca96aafeadaf8e49fb74db",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "segmentlengthfromgraph.png",
+      "source": "tests/reference/sprint16/final/python/guiFracPaQ2D_segmentlengthfromgraph_SD11A.png",
+      "source_sha256": "5ffe16d6d775ba6d574f94614b2e74ad68931a903560035b2a80de2bc23a5567",
+      "sha256": "4713da231d3cfe87d7de5e9fc7096b37674fad110ea2b233edf740b54a95a800",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "segmentanglefromgraph.png",
+      "source": "tests/reference/sprint16/final/python/guiFracPaQ2D_segmentanglefromgraph_SD11A.png",
+      "source_sha256": "13d79f1ab31508c4dc60d5dc762ff7f2b7f532accd8a4bd1fe79dde6effb2b76",
+      "sha256": "728ddad241ca62d79176da1b5d34f746a0b02f5344a94d8efe2e9b21c7315697",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "tracemap_multicolour.png",
+      "source": "tests/reference/sprint16/final/python-extra/FracPaQ2D_tracemap_multicolour_extra.png",
+      "source_sha256": "d59a43b1e6a8674fbea988e8746e7ba30de1cc3bfcfa190e3fb005782a7c68e4",
+      "sha256": "aa9577a4e4be352dbb3c4453724d006649e8c4cf24dda11be7639f94a5d5cf62",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "Houghstuff.png",
+      "source": "tests/reference/sprint16/final/python-extra/FracPaQ2D_Houghstuff_extra.png",
+      "source_sha256": "8ea7c5478347427e80b3ce26eab9fa31bd2da1bf99122e87bbfed67c47d9bde3",
+      "sha256": "c987eb15fd769fd47e9c9cf4ff78c827cb3ffeed0ca6d1f7bb6cd426efc46c34",
+      "operation": "1700px maximum, RGB; full uncropped scientific canvas"
+    },
+    {
+      "asset": "ui-preview.png",
+      "source": "capture_sprint2.py --input examples/SD11A.txt --width 1250 --height 739",
+      "source_sha256": "4715a50d679e4a72258b3031bf389341488c7bc2511f60800ac7c265c735a558",
+      "sha256": "ec3106ccb8f28d585719a809f404fa598b3d9a4e4818ef2c0f17386f1ac67e3f",
+      "operation": "Full window"
+    },
+    {
+      "asset": "ui-maps.png",
+      "source": "capture_sprint2.py --input examples/SD11A.txt --width 1250 --height 739",
+      "source_sha256": "4715a50d679e4a72258b3031bf389341488c7bc2511f60800ac7c265c735a558",
+      "sha256": "6e069d907a9b2e973be0a1b1df0417b25c54df68d4fe9fc1a10c23c3b6945512",
+      "operation": "Analysis panel crop; original controls unchanged"
+    },
+    {
+      "asset": "ui-lengths.png",
+      "source": "capture_sprint2.py --input examples/SD11A.txt --width 1250 --height 739",
+      "source_sha256": "402ad292863661634c233be877031b9e1144ca2eb3dcbaafcc70b46b4de48b5b",
+      "sha256": "ef320ac52b413710e69b19bddb7fd256137c5112c4747be4f4396b8a533eece2",
+      "operation": "Analysis panel crop; original controls unchanged"
+    },
+    {
+      "asset": "ui-angles.png",
+      "source": "capture_sprint2.py --input examples/SD11A.txt --width 1250 --height 739",
+      "source_sha256": "be169bec7c29cec6b0157185cc3fc5effafa397357743a7a92451566a741413c",
+      "sha256": "a1b75f65677ff8dca9b3af899976767e1d7e597715e07a7308eb71df32fe945d",
+      "operation": "Analysis panel crop; original controls unchanged"
+    },
+    {
+      "asset": "ui-fluid.png",
+      "source": "capture_sprint2.py --input examples/SD11A.txt --width 1250 --height 739",
+      "source_sha256": "988e6d6888eca69b55e4d31eb0bc2224f84e21939d1ed80f6a7619deb4e1b306",
+      "sha256": "d0bb3b2395a70516de6369f6e1c8ad2959b0050f04090ddb19be02bf0097799a",
+      "operation": "Analysis panel crop; original controls unchanged"
+    },
+    {
+      "asset": "ui-wavelets.png",
+      "source": "capture_sprint2.py --input examples/SD11A.txt --width 1250 --height 739",
+      "source_sha256": "0f27705812ec377831be5f636413937e61cb00829b61665ca3ee8e66e54b6efb",
+      "sha256": "24877679d04f0386b54ab3e66952a5ea2318a04f12bbecece674fc0265e5415c",
+      "operation": "Analysis panel crop; original controls unchanged"
+    },
+    {
+      "asset": "ui-graphs.png",
+      "source": "capture_sprint2.py --input examples/SD11A.txt --width 1250 --height 739",
+      "source_sha256": "cdfe7a1d99b77bdff5244f4f417eed6d1bcd800479f22f7111711c2e224a798c",
+      "sha256": "19f614f7339cd644c1d066602c4b2da0897c4894acc334d14fe90178d8721794",
+      "operation": "Analysis panel crop; original controls unchanged"
+    }
+  ],
+  "extra_assets": [
+    "logo.png (resource copy)",
+    "preprocess.png (approved auxiliary preprocessing panel)"
+  ]
+}

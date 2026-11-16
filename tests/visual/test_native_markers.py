@@ -1,43 +1,45 @@
-"""Native marker assets validated against a separate, held-out MATLAB scene."""
-
-import json
+"""Ordinary marker geometry in the GUI and high-resolution exports."""
 
 import numpy as np
-from PIL import Image
 import pytest
+from matplotlib.backends.backend_agg import FigureCanvasAgg
+from matplotlib.figure import Figure
+from matplotlib.lines import Line2D
+from matplotlib.markers import MarkerStyle
+from matplotlib.transforms import Affine2D
 
-from pyfracpaq.plots.markers import glyph
-from reference_common import REFERENCE, ROOT, sha256
-
-
-@pytest.mark.parametrize('shape,centre', [('o',1346),('s',2078)])
-def test_native_glyph_matches_independent_scene_at_print_dpi(shape, centre):
-    source=REFERENCE/'sprint16/final/native-contexts/markers_context.png'
-    rgba,pad=glyph(shape,50 if shape=='o' else 40,600/72*.5,(1,0,0,1),None,600)
-    alpha=rgba[:,:,3:4]/255
-    actual=np.rint(rgba[:,:,:3]*alpha+255*(1-alpha)).astype(np.uint8)
-    with Image.open(source) as im:
-        expected=np.asarray(im.convert('RGB'))[2279-pad:2279+pad+1,centre-pad:centre+pad+1]
-    np.testing.assert_array_equal(actual,expected)
+from pyfracpaq.plots.style import MatlabFigure,figure_axes,legend,matlab_style,square_marker
 
 
-def test_atlas_provenance_and_transparent_materials_are_valid():
-    record=json.loads((REFERENCE/'sprint16/final/native-marker-atlas/provenance.json').read_text())
-    assert sha256(ROOT/record['resource'])==record['resource_sha256']
-    with np.load(ROOT/record['resource']) as data:
-        assert len(data.files)==48
-        for key in data.files:
-            material=data[key]
-            assert material.shape[0]==material.shape[1]
-            assert material.shape[0]%2==1 and material.shape[2]==2
-            assert np.all(material.astype(int).sum(axis=2)<=255)
-            assert not material[[0,-1]].any() and not material[:,[0,-1]].any()
+@pytest.mark.parametrize('dpi',[100,200,600])
+@pytest.mark.parametrize('shape',['s','o'])
+@pytest.mark.parametrize('filled',[False,True])
+def test_markers_match_standard_geometric_paths(dpi,shape,filled):
+    """The theme must not replace paths with atlas pixels or polygons."""
+    buffers=[]
+    for cls in (MatlabFigure,Figure):
+        with matlab_style():
+            figure=cls(figsize=(1,1),dpi=dpi,facecolor='white')
+            marker=(square_marker() if cls is MatlabFigure else
+                    MarkerStyle('s',transform=Affine2D().scale(.8))) if shape=='s' else 'o'
+            line=Line2D([.3,.7],[.4,.6],transform=figure.transFigure,linestyle='none',
+                        marker=marker,markersize=12,markeredgewidth=.5,
+                        markeredgecolor='blue',markerfacecolor='blue' if filled else 'none')
+            figure.add_artist(line)
+            canvas=FigureCanvasAgg(figure);canvas.draw()
+            buffers.append(np.asarray(canvas.buffer_rgba()).copy())
+            np.testing.assert_array_equal(line.get_xdata(),[.3,.7])
+            np.testing.assert_array_equal(line.get_ydata(),[.4,.6])
+    np.testing.assert_array_equal(*buffers)
 
 
-def test_raster_asset_resizes_with_dpi_and_api_fallback_remains_available():
-    large,pad=glyph('o',50,600/72*.5,(0,0,0,1),None,600)
-    small,small_pad=glyph('o',50/6,100/72*.5,(0,0,0,1),None,100)
-    assert small.shape[0]<large.shape[0] and small_pad<pad
-    custom,custom_pad=glyph('o',37.2,2.3,(.2,.4,.7,1),(.9,.1,.3,1),137)
-    assert custom.shape==(2*custom_pad+1,2*custom_pad+1,4)
-    assert custom[:,:,3].any()
+def test_legend_preserves_marker_outline_size_and_colour():
+    with matlab_style():
+        figure,axes=figure_axes()
+        line,=axes.plot([0],[0],marker='o',markersize=3,markeredgewidth=.5,
+                        color='lime',markerfacecolor='lime',label='Y',linestyle='none')
+        proxy=legend(axes).get_lines()[0]
+        assert proxy.get_markersize()==line.get_markersize()
+        assert proxy.get_markeredgewidth()==line.get_markeredgewidth()
+        assert proxy.get_markerfacecolor()==line.get_markerfacecolor()
+        figure.clear()

@@ -63,19 +63,24 @@ def test_navigation_has_no_outer_box_and_matches_six_equal_reference_rectangles(
     assert min(heights) >= 49  # Regression: the former layout collapsed these to 30px.
 
 
-@pytest.mark.parametrize('screen', [QSize(1366, 768), QSize(1440, 900), QSize(1920, 1080)])
-def test_startup_keeps_reference_aspect_and_space_around_normal_window(screen):
+@pytest.mark.parametrize('screen', [QSize(1366, 768), QSize(1440, 900), QSize(1920, 1080),QSize(2560,1440)])
+def test_startup_uses_full_available_width_and_bounded_height(screen):
     size = initial_window_size(screen)
-    assert size.width() <= screen.width() * .9
+    assert size.width() == screen.width()
     assert size.height() + 32 <= screen.height() * .95
-    assert size.width() <= 1250 and size.height() <= 739
-    assert abs(size.width() / size.height() - 1250 / 739) < .003
+    assert 0 < size.height() <= 739
 
 
-def test_main_window_uses_available_screen_instead_of_fixed_full_width(qapp):
+def test_main_window_opens_across_available_screen_without_maximizing_height(qapp,qtbot):
     configure_application(qapp)
     window = MainWindow()
     assert window.size() == initial_window_size(window.screen().availableGeometry().size())
+    window.show()
+    qtbot.waitExposed(window)
+    available=window.screen().availableGeometry()
+    assert window.frameGeometry().width()==available.width()
+    assert window.frameGeometry().left()==available.left()
+    assert available.contains(window.frameGeometry())
     assert not window.isMaximized() and not window.isFullScreen()
     window.close()
 

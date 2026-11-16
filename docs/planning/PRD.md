@@ -4,13 +4,13 @@ Vou desenvolver o **PyFracPaQ**, um programa científico local em Python para qu
 
 A aplicação será iniciada pelo Python, pelo terminal ou pelo VS Code e abrirá janelas desktop. A entrega será código Python executável em ambiente virtual local, com instalação documentada e funcionamento offline após a instalação das dependências.
 
-**Versão deste PRD:** 1.0 — 13/11/2026. **Estado:** Sprints 0 a 15 implementadas; referências, geometria, TXT/SVG/cores, imagens/Hough, janela desktop, mapas/P21/P20, Angles, Lengths/MLE, conectividade, crack tensors, permeabilidade e estabilidade/Mohr. Q-11/Q-15/Q-17 aprovadas explicitamente pelo usuário e integradas ao Run padrão. Sprints 12/13: blocos, variograma e todos os perfis ALONG/FROM integrados ao Run; Q-14 e extensão P20 de Q-20 aprovadas explicitamente pelo usuário. Sprints14/15: Wavelets2D com Q-12 aprovada, ferramentas locais/APIs complementares e destinação dos19AUX/164arquivos concluídas. Homologação integral permanece pendente na Sprint16, inclusive votos/picos/endpoints Hough. Evidências em [Sprint 0](docs/parity/sprint-0.md), [Sprint 1](docs/parity/sprint-1.md), [Sprint 2](docs/parity/sprint-2.md), [Sprint 3](docs/parity/sprint-3.md) e [Sprint 4](docs/parity/sprint-4.md). **Referência funcional:** FracPaQ 2.8 / 2.8.0, março de 2021.
+**Versão deste PRD:** 1.0 — 13/11/2026. **Estado:** Sprints 0 a 15 implementadas; referências, geometria, TXT/SVG/cores, imagens/Hough, janela desktop, mapas/P21/P20, Angles, Lengths/MLE, conectividade, crack tensors, permeabilidade e estabilidade/Mohr. Q-11/Q-15/Q-17 aprovadas explicitamente pelo usuário e integradas ao Run padrão. Sprints 12/13: blocos, variograma e todos os perfis ALONG/FROM integrados ao Run; Q-14 e extensão P20 de Q-20 aprovadas explicitamente pelo usuário. Sprints14/15: Wavelets2D com Q-12 aprovada, ferramentas locais/APIs complementares e destinação dos19AUX/164arquivos concluídas. Homologação integral permanece pendente na Sprint16, inclusive votos/picos/endpoints Hough. Evidências em [Sprint 0](../parity/sprint-0.md), [Sprint 1](../parity/sprint-1.md), [Sprint 2](../parity/sprint-2.md), [Sprint 3](../parity/sprint-3.md) e [Sprint 4](../parity/sprint-4.md). **Referência funcional:** FracPaQ 2.8 / 2.8.0, março de 2021.
 
-Este documento segue a estrutura do [prd-bruto.md](prd-bruto.md): especificações técnicas, requisitos funcionais, requisitos não funcionais, guia de execução e sprints detalhadas em checklist. As tecnologias e os requisitos de corretora/SaaS daquele exemplo não fazem parte deste produto.
+Este documento segue a estrutura do [prd-bruto.md](../../prd-bruto.md): especificações técnicas, requisitos funcionais, requisitos não funcionais, guia de execução e sprints detalhadas em checklist. As tecnologias e os requisitos de corretora/SaaS daquele exemplo não fazem parte deste produto.
 
 **Guia de leitura:** as especificações definem a stack e a arquitetura; RF-01 a RF-10 incorporam o inventário; RF-11 a RF-14 detalham fidelidade visual, algoritmos e arquivos; as seções seguintes definem qualidade, instalação local, sprints e conclusão do produto.
 
-O [FUNCIONALIDADES_FRACPAQ.md](FUNCIONALIDADES_FRACPAQ.md) é a base de rastreabilidade deste PRD e inventaria os 164 arquivos da distribuição. Seus IDs `UI`, `IN`, `MAP`, `LEN`, `ANG`, `FLO`, `WAV`, `GRA`, `EXP`, `AUX` e `Q` são preservados neste documento. Os códigos e o layout em [fracpaq-matlab](fracpaq-matlab/) permanecem como referência de implementação.
+O [FUNCIONALIDADES_FRACPAQ.md](FUNCIONALIDADES_FRACPAQ.md) é a base de rastreabilidade deste PRD e inventaria os 164 arquivos da distribuição. Seus IDs `UI`, `IN`, `MAP`, `LEN`, `ANG`, `FLO`, `WAV`, `GRA`, `EXP`, `AUX` e `Q` são preservados neste documento. Os códigos e o layout em [fracpaq-matlab](../../fracpaq-matlab) permanecem como referência de implementação.
 
 ## Objetivo, usuários e resultado esperado
 
@@ -216,7 +216,7 @@ Fontes: `guiFracPaQ2D.fig`; `guiFracPaQ2D.m:71–353`, `567–777`, `780–1422`
 | IN-17 | Diagnóstico Hough | Figura com imagem original e três vistas do acumulador, incluindo o plano de limiar; exportação automática | Permitir avaliar picos e limiar antes da análise final |
 | IN-18 | Validação e informação da imagem | Erro de formato mostra aviso e imprime metadados de `imfinfo` no console | Usuário conseguir identificar profundidade e tipo de cor incompatíveis |
 
-Fontes: [leitor de nós](fracpaq-matlab/guiFracPaQ2Dlist.m), [leitor de imagem/Hough](fracpaq-matlab/guiFracPaQ2Dimage.m), [conversor SVG atual](fracpaq-matlab/convertSVG2txt_colour2.m), `guiFracPaQ2D.m:780–1035`. A geração de midpoint de segmentos e cores tem diferenças entre os leitores; ver Q-06.
+Fontes: [leitor de nós](../../fracpaq-matlab/guiFracPaQ2Dlist.m), [leitor de imagem/Hough](../../fracpaq-matlab/guiFracPaQ2Dimage.m), [conversor SVG atual](../../fracpaq-matlab/convertSVG2txt_colour2.m), `guiFracPaQ2D.m:780–1035`. A geração de midpoint de segmentos e cores tem diferenças entre os leitores; ver Q-06.
 
 ### RF-02.1 — Valores iniciais e regras de referência
 
@@ -283,7 +283,7 @@ Os valores iniciais vêm do `.fig` e dos ajustes em `OpeningFcn`. “Validação
 | MAP-17 | Rosas de estabilidade | Largura fixa de 10°, cores da grandeza e linha de azimute de σ1; independentes do bin escolhido na aba Angles | Identificar grandeza e azimute e documentar o bin próprio |
 | MAP-18 | Exportação dos campos locais | TXT com X, Y e valor de intensidade/densidade por centro de círculo; ao selecionar uma delas, a rotina grava ambas | Relacionar valores exportados às posições corretas da grade |
 
-Fontes: [mapas geométricos e estabilidade](fracpaq-matlab/guiFracPaQ2Dtracemap.m), [amostragem circular](fracpaq-matlab/guiFracPaQ2Dpattern.m), [rosa de estabilidade](fracpaq-matlab/roseEqualAreaColourTendency.m), [Mohr](fracpaq-matlab/plotMohr2D.m).
+Fontes: [mapas geométricos e estabilidade](../../fracpaq-matlab/guiFracPaQ2Dtracemap.m), [amostragem circular](../../fracpaq-matlab/guiFracPaQ2Dpattern.m), [rosa de estabilidade](../../fracpaq-matlab/roseEqualAreaColourTendency.m), [Mohr](../../fracpaq-matlab/plotMohr2D.m).
 
 
 ## RF-04 — Lengths
@@ -311,7 +311,7 @@ Fontes: [mapas geométricos e estabilidade](fracpaq-matlab/guiFracPaQ2Dtracemap.
 
 Detalhe estatístico: `KStestPower` usa `alpha=0.1` no `kstest2`, mas conta também `p>0.05`; exponencial e lognormal usam `alpha=0.05`. As rotinas não fixam semente aleatória. Os nomes `Hpercent`/`Ppercent` e as mensagens originais devem ser interpretados com cuidado. As assinaturas de retorno e a lógica de cortes/ajuste precisam da revisão Q-15.
 
-Fontes: [análises de comprimentos](fracpaq-matlab/guiFracPaQ2Dlength.m), `fittingPL.m`, `fittingExponential.m`, `fittingLognormal.m`, `KStestPower.m`, `KStestexp.m`, `KStestLogNorm.m`, `PlotPowerLaw.m`, `PlotExp.m`, `PlotLogNorm.m`, `variogram.m`.
+Fontes: [análises de comprimentos](../../fracpaq-matlab/guiFracPaQ2Dlength.m), `fittingPL.m`, `fittingExponential.m`, `fittingLognormal.m`, `KStestPower.m`, `KStestexp.m`, `KStestLogNorm.m`, `PlotPowerLaw.m`, `PlotExp.m`, `PlotLogNorm.m`, `variogram.m`.
 
 
 ## RF-05 — Angles
@@ -332,7 +332,7 @@ Fontes: [análises de comprimentos](fracpaq-matlab/guiFracPaQ2Dlength.m), `fitti
 
 **Posição do crack tensor:** o controle está em **Fluid Flow**. Ele faz parte da seleção que aciona `guiFracPaQ2Dangle`, mas seu inventário funcional está em FLO-08, abaixo. Não há seletor de rosa linear na interface principal: `flag_equalarea` está fixo em 1; rotinas alternativas constam em AUX.
 
-Fontes: [análises angulares](fracpaq-matlab/guiFracPaQ2Dangle.m), `roseEqualArea.m`, `roseEqualAreaColour.m`, `circStat.m`, `doubleAngles.m`, `reverseAxis.m`.
+Fontes: [análises angulares](../../fracpaq-matlab/guiFracPaQ2Dangle.m), `roseEqualArea.m`, `roseEqualAreaColour.m`, `circStat.m`, `doubleAngles.m`, `reverseAxis.m`.
 
 
 ## RF-06 — Fluid Flow
@@ -357,7 +357,7 @@ Fontes: [análises angulares](fracpaq-matlab/guiFracPaQ2Dangle.m), `roseEqualAre
 
 O programa **estima permeabilidade e caracteriza conectividade**. Não foi encontrado um solucionador de fluxo com condições de contorno, campo de pressão, vazão ou transporte. Não atribuir essas funcionalidades ao nome da aba.
 
-Fontes: [conectividade](fracpaq-matlab/getConnectivity.m), `guiFracPaQ2Dpattern.m:272–334`, [permeabilidade](fracpaq-matlab/guiFracPaQ2Dtensor.m), [crack tensors](fracpaq-matlab/guiFracPaQ2Dcracktensor.m), `getF2tensor.m`, `getF4tensor.m`, `getF8tensor.m`.
+Fontes: [conectividade](../../fracpaq-matlab/getConnectivity.m), `guiFracPaQ2Dpattern.m:272–334`, [permeabilidade](../../fracpaq-matlab/guiFracPaQ2Dtensor.m), [crack tensors](../../fracpaq-matlab/guiFracPaQ2Dcracktensor.m), `getF2tensor.m`, `getF4tensor.m`, `getF8tensor.m`.
 
 
 ## RF-07 — Wavelets
@@ -381,7 +381,7 @@ Fontes: [conectividade](fracpaq-matlab/getConnectivity.m), `guiFracPaQ2Dpattern.
 
 O resultado usa coordenadas da imagem rasterizada, em pixels. A função principal de wavelet não recebe a correção de norte nem o fator de escala como parâmetros: não presumir correção geográfica ou escala física idênticas às demais abas. Não há botão de cancelamento de processamento na aba principal; o `Cancel` existente pertence ao diálogo auxiliar legado.
 
-Fontes: [wavelet integrada](fracpaq-matlab/guiFracPaQ2Dwavelet.m), `guiFracPaQ2D.m:1367–1422`, `morlet.m`, `mexicanhat.m`, `morletCWT.m`, `mexicanhatCWT.m`, `morletCWTself.m`, `mexicanhatCWTself.m`.
+Fontes: [wavelet integrada](../../fracpaq-matlab/guiFracPaQ2Dwavelet.m), `guiFracPaQ2D.m:1367–1422`, `morlet.m`, `mexicanhat.m`, `morletCWT.m`, `mexicanhatCWT.m`, `morletCWTself.m`, `mexicanhatCWTself.m`.
 
 
 ## RF-08 — Graphs
@@ -406,7 +406,7 @@ Fontes: [wavelet integrada](fracpaq-matlab/guiFracPaQ2Dwavelet.m), `guiFracPaQ2D
 
 **Particularidades atuais:** marcar apenas intensidade **ou** densidade acaba gerando os dois gráficos, pois compartilham um único bloco de execução. ALONG pode representar o mesmo traço mais de uma vez se a linha cruzar mais de um de seus segmentos. FROM usa a distância à reta definida pelos pontos, sem limitar a projeção ao trecho finito. A rotina não recebe correção de norte; flips são aplicados no mapa auxiliar, não como transformação geral dos dados dos perfis. Não foi encontrada exportação TXT dos perfis nesta rotina.
 
-Fontes: `guiFracPaQ2D.m:666–699`, `1160–1191`, [gráficos ao longo e a partir de linha](fracpaq-matlab/guiFracPaQ2Dgraphs.m).
+Fontes: `guiFracPaQ2D.m:666–699`, `1160–1191`, [gráficos ao longo e a partir de linha](../../fracpaq-matlab/guiFracPaQ2Dgraphs.m).
 
 
 ## RF-09 — Arquivos de saída e impressão
@@ -506,7 +506,7 @@ Não foram encontrados controles próprios de edição de traços, desfazer/refa
 - Inicialmente, nenhuma aba de saída deve ser acionável e Run deve estar desabilitado; Preview válido libera as opções e mostra Maps. As seleções padrão permanecem as da tabela RF-02.1.
 - A troca de arquivo, tipo, escala ou parâmetros de extração deve invalidar o resultado da prévia e exigir sua reconstrução antes de Run, evitando usar dados antigos com rótulos novos.
 - A escala visual do sistema operacional deve ser considerada em pixels lógicos; botões, campos e textos não podem se sobrepor em 100%, 125%, 150% ou 200% de escala de tela.
-- A janela principal deve funcionar em um desktop de 1366×768 pixels lógicos e resoluções maiores. Abrir como janela normal centralizada, limitada à área útil do monitor, sem largura fixa igual à tela. A calibração atual usa proporção cliente 1250×739 do manual e formulário mínimo 1000×591; abaixo disso, manter rolagem restrita à área necessária, preservando o mapa e a organização. Navegação sem borda externa, conforme BorderType=none do FIG. [Revisão visual de 14/11/2026](docs/parity/ui-calibration.md).
+- A janela principal deve funcionar em um desktop de 1366×768 pixels lógicos e resoluções maiores. Por solicitação atualizada do usuário em 16/11/2026, abrir como janela normal com toda a largura disponível da tela, incluindo as bordas, e centralizada verticalmente. Manter a altura limitada à área útil, sem obrigar maximização ou tela cheia; permitir redimensionamento posterior. A calibração atual usa proporção cliente 1250×739 do manual e formulário mínimo 1000×591; abaixo disso, manter rolagem restrita à área necessária, preservando o mapa e a organização. Navegação sem borda externa, conforme BorderType=none do FIG. [Revisão visual de 14/11/2026](../parity/ui-calibration.md).
 - Nas figuras independentes, permitir as ações usuais de zoom, pan, restauração e salvamento, com toolbar discreta. O conteúdo exportado não inclui a moldura nem a toolbar Qt.
 - Preservar logos e atribuições do pacote conforme os recursos de origem; distinguir nos metadados/documentação a versão do port Python da versão FracPaQ de referência. Não inventar recursos de contato ou versões futuras do original.
 
@@ -525,7 +525,7 @@ Não foram encontrados controles próprios de edição de traços, desfazer/refa
 - Nas rosas de estabilidade, manter cores, linha vermelha da direção de σ1, bin próprio de 10° e legenda da grandeza. No ternário, manter posições I/Y/X, malha de 10% e linhas CL.
 - Nos tensores/permeabilidade, manter norte no topo e sentido horário quando a rotina original o define. Não trocar polos de fraturas por strikes.
 - Nos heatmaps, preservar orientação da matriz, extensão espacial, ticks e posição inferior das barras de cor. Nos comprimentos, revisar o acoplamento entre índice de cor e barra logarítmica conforme Q-17 antes de alterar o resultado.
-- Em **todas as figuras atuais e futuras**, a barra de cores horizontal deve coincidir com os extremos horizontais da área real do plot; a vertical, com seus extremos verticais. A igualdade de comprimento/altura deve permanecer ao ampliar, reduzir e exportar a figura, após o ajuste do aspecto dos eixos. Manter também folga fixa em pontos entre a barra e os rótulos do eixo, sem variar com o tamanho da janela; em figuras pequenas, reservar espaço no layout sem sobrepor a barra ao label ou ao plot. Usar a fábrica compartilhada `pyfracpaq.plots.colourbars.colourbar`; não fixar retângulos independentes para a barra. [Contrato de barras responsivas](docs/decisions/0009-responsive-colourbars.md).
+- Em **todas as figuras atuais e futuras**, a barra de cores horizontal deve coincidir com os extremos horizontais da área real do plot; a vertical, com seus extremos verticais. A igualdade de comprimento/altura deve permanecer ao ampliar, reduzir e exportar a figura, após o ajuste do aspecto dos eixos. Manter também folga fixa em pontos entre a barra e os rótulos do eixo, sem variar com o tamanho da janela; em figuras pequenas, reservar espaço no layout sem sobrepor a barra ao label ou ao plot. Usar a fábrica compartilhada `pyfracpaq.plots.colourbars.colourbar`; não fixar retângulos independentes para a barra. [Contrato de barras responsivas](../decisions/0009-responsive-colourbars.md).
 - Nos gráficos de Graphs, manter os marcadores e os limites dos eixos da referência, o sinal da distância FROM e a identificação dos pontos da linha.
 - Em Hough, manter os quatro painéis: imagem e vistas do acumulador/plano de limiar; não entregar apenas uma sobreposição de linhas na foto.
 - Em wavelets, preservar a figura 2×2 por escala: raster de entrada, mapa WC, rosa de orientações ótimas e histograma com frequência log10.
@@ -791,7 +791,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S00-07 — Resolver versões compatíveis com Python 3.13, testar importação de Qt/Matplotlib/SciPy/scikit-image e congelar requirements de execução/desenvolvimento.
 - [X] S00-08 — Definir tolerâncias dimensionais, critérios visuais e procedimento de decisão para Q-01 a Q-21; registrar licenças e créditos iniciais (AUX-18).
 
-**Evidências da Sprint 0:** [relatório de execução](docs/parity/sprint-0.md), [matriz](docs/parity/matrix.md) e [protocolo de captura](docs/parity/capture-protocol.md). As imagens obtidas do manual são apoio documental; capturas controladas e arrays MATLAB continuam registrados como pendentes, sem declaração de paridade concluída.
+**Evidências da Sprint 0:** [relatório de execução](../parity/sprint-0.md), [matriz](../parity/matrix.md) e [protocolo de captura](../parity/capture-protocol.md). As imagens obtidas do manual são apoio documental; capturas controladas e arrays MATLAB continuam registrados como pendentes, sem declaração de paridade concluída.
 
 ## Sprint 1 — Núcleo geométrico e entrada TXT
 
@@ -806,7 +806,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S01-07 — Implementar interseções, coincidência, paralelismo e distâncias ponto–ponto/ponto–segmento; AUX-04.
 - [X] S01-08 — Validar linhas e polilinhas conhecidas, dados inválidos, repetidos e aplicação de escala; registrar evidências numéricas.
 
-**Evidências da Sprint 1:** [relatório](docs/parity/sprint-1.md), [contrato da API](docs/decisions/0002-geometry-and-txt.md) e [validação numérica](tests/reference/sprint1/numerical.json). Originais map1/map7 com traços degenerados são rejeitados com diagnóstico; testes também usam cópias temporárias preparadas explicitamente. Comparação com execução MATLAB permanece pendente.
+**Evidências da Sprint 1:** [relatório](../parity/sprint-1.md), [contrato da API](../decisions/0002-geometry-and-txt.md) e [validação numérica](../../tests/reference/sprint1/numerical.json). Originais map1/map7 com traços degenerados são rejeitados com diagnóstico; testes também usam cópias temporárias preparadas explicitamente. Comparação com execução MATLAB permanece pendente.
 
 ## Sprint 2 — Janela principal, estados e exportação base
 
@@ -823,7 +823,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S02-09 — Implementar tag, janela de figuras, exportador PNG comum e fechamento das janelas da aplicação; UI-13/16/17, EXP-01/02.
 - [X] S02-10 — Comparar janela inicial, estados, prévia e navegação com referências; verificar texto/foco sem cortes em DPI diferentes.
 
-**Evidências da Sprint 2:** [relatório](docs/parity/sprint-2.md), [contrato desktop/execução](docs/decisions/0003-desktop-and-execution.md), [validação](tests/reference/sprint2/validation.json) e [capturas em quatro escalas](tests/reference/sprint2/). Os controles estão construídos; Run informa explicitamente as análises ainda indisponíveis. As capturas Qt offscreen não são referências MATLAB nem aprovação de paridade visual final.
+**Evidências da Sprint 2:** [relatório](../parity/sprint-2.md), [contrato desktop/execução](../decisions/0003-desktop-and-execution.md), [validação](../../tests/reference/sprint2/validation.json) e [capturas em quatro escalas](../../tests/reference/sprint2). Os controles estão construídos; Run informa explicitamente as análises ainda indisponíveis. As capturas Qt offscreen não são referências MATLAB nem aprovação de paridade visual final.
 
 ## Sprint 3 — Tema MATLAB, mapas básicos e Angles
 
@@ -839,7 +839,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S03-08 — Implementar TXT EZROSE e sua ordenação/precisão; ANG-09.
 - [X] S03-09 — Conferir figuras, paletas, unidades, flips e norte com casos direcionais e referências exportadas.
 
-**Evidências da Sprint 3:** [relatório](docs/parity/sprint-3.md), [contrato e tabela visual](docs/decisions/0004-maps-and-angles.md), [validação e exportações](tests/reference/sprint3/validation.json). Mapas básicos e Angles estão conectados ao Run; Na entrega S3, Q-10/Q-17 preservavam o fonte. Q-10 continua pendente; Q-17 foi resolvida na Sprint 11 com aprovação explícita, mantendo a convenção legada de cores por comprimento. A conferência usa casos analíticos/fontes/manual; não declara paridade contra execução MATLAB indisponível.
+**Evidências da Sprint 3:** [relatório](../parity/sprint-3.md), [contrato e tabela visual](../decisions/0004-maps-and-angles.md), [validação e exportações](../../tests/reference/sprint3/validation.json). Mapas básicos e Angles estão conectados ao Run; Na entrega S3, Q-10/Q-17 preservavam o fonte. Q-10 continua pendente; Q-17 foi resolvida na Sprint 11 com aprovação explícita, mantendo a convenção legada de cores por comprimento. A conferência usa casos analíticos/fontes/manual; não declara paridade contra execução MATLAB indisponível.
 
 ## Sprint 4 — Lengths: estatísticas, histogramas, log-log e censura
 
@@ -854,7 +854,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S04-07 — Conferir bins, dados repetidos, dados censurados e amostras vazias; evitar limites inválidos em escalas logarítmicas.
 - [X] S04-08 — Validar todos os nomes de arquivo e o estilo das sete figuras básicas de Lengths.
 
-**Evidências da Sprint 4:** [relatório](docs/parity/sprint-4.md), [contrato de Lengths/censura](docs/decisions/0005-lengths-and-censoring.md), [validação e exportações](tests/reference/sprint4/validation.json). Sete figuras e três TXT integrados ao Run; Q-03/05/08 têm correções de integridade medidas e Q-10 preserva a distinção angular do fonte. Comparação MATLAB e homologação visual permanecem pendentes.
+**Evidências da Sprint 4:** [relatório](../parity/sprint-4.md), [contrato de Lengths/censura](../decisions/0005-lengths-and-censoring.md), [validação e exportações](../../tests/reference/sprint4/validation.json). Sete figuras e três TXT integrados ao Run; Q-03/05/08 têm correções de integridade medidas e Q-10 preserva a distinção angular do fonte. Comparação MATLAB e homologação visual permanecem pendentes.
 
 ## Sprint 5 — SVG e múltiplos conjuntos por cor
 
@@ -869,7 +869,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S05-07 — Corrigir alcance da limpeza, caminhos, maiúsculas e arquivos inválidos; Q-04/09/19.
 - [X] S05-08 — Conferir exemplos de uma/várias cores e documentar quais dados de exemplo em vírgulas ou malformados precisam preparação.
 
-**Evidências da Sprint 5:** [relatório](docs/parity/sprint-5.md), [contrato SVG/cores](docs/decisions/0006-svg-and-colours.md), [validação](tests/reference/sprint5/validation.json). Subconjunto linear, arquivos por cor e mapa agregado implementados; restrições dos exemplos auditadas. Comparação MATLAB e aceite visual nativo permanecem pendentes.
+**Evidências da Sprint 5:** [relatório](../parity/sprint-5.md), [contrato SVG/cores](../decisions/0006-svg-and-colours.md), [validação](../../tests/reference/sprint5/validation.json). Subconjunto linear, arquivos por cor e mapa agregado implementados; restrições dos exemplos auditadas. Comparação MATLAB e aceite visual nativo permanecem pendentes.
 
 ## Sprint 6 — Imagens e transformada de Hough
 
@@ -885,7 +885,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S06-08 — Comparar acumulador, picos, endpoints e estatísticas em imagens sintéticas e Macduff/Orkney compatíveis.
 - [X] S06-09 — Executar os recursos das sprints anteriores com origem em imagem para detectar dependências indevidas do leitor TXT.
 
-**Evidências da Sprint 6:** [relatório](docs/parity/sprint-6.md), [contrato imagens/Hough](docs/decisions/0007-images-and-hough.md), [validação](tests/reference/sprint6/validation.json). Imagens compatíveis geram Dataset completo e diagnóstico; casos sintéticos/Macduff/Orkney e famílias anteriores exercitados. Arrays/picos/endpoints e rasters ainda exigem homologação contra MATLAB indisponível nesta sessão.
+**Evidências da Sprint 6:** [relatório](../parity/sprint-6.md), [contrato imagens/Hough](../decisions/0007-images-and-hough.md), [validação](../../tests/reference/sprint6/validation.json). Imagens compatíveis geram Dataset completo e diagnóstico; casos sintéticos/Macduff/Orkney e famílias anteriores exercitados. Arrays/picos/endpoints e rasters ainda exigem homologação contra MATLAB indisponível nesta sessão.
 
 ## Sprint 7 — Maps: intensidade, densidade e amostragem circular
 
@@ -900,7 +900,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S07-07 — Conferir geometria transladada, linhas horizontais/verticais, tangência e limites vazios.
 - [X] S07-08 — Validar cores, figuras, arrays e arquivos para TXT, SVG e origem Hough.
 
-**Evidências da Sprint 7:** [relatório](docs/parity/sprint-7.md), [contrato circular/Q-20](docs/decisions/0008-circular-sampling.md), [validação](tests/reference/sprint7/validation.json). Contagem geométrica corrigida com autorização explícita do usuário; P21/P20, círculos, globais e ambos os TXT integrados ao Run. Casos analíticos e TXT/SVG/Hough verificados; homologação MATLAB/SSIM continua pendente.
+**Evidências da Sprint 7:** [relatório](../parity/sprint-7.md), [contrato circular/Q-20](../decisions/0008-circular-sampling.md), [validação](../../tests/reference/sprint7/validation.json). Contagem geométrica corrigida com autorização explícita do usuário; P21/P20, círculos, globais e ambos os TXT integrados ao Run. Casos analíticos e TXT/SVG/Hough verificados; homologação MATLAB/SSIM continua pendente.
 
 ## Sprint 8 — MLE e avaliação estatística
 
@@ -915,7 +915,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S08-07 — Alinhar retorno dos parâmetros e mensagens; evitar chamar percentuais de testes de probabilidade posterior de modelo.
 - [X] S08-08 — Validar modelos sintéticos, zeros/repetidos, resultados determinísticos e variação Monte Carlo; registrar decisão científica de Q-15.
 
-**Evidências da Sprint 8:** [relatório](docs/parity/sprint-8.md), [contrato MLE/Q-15](docs/decisions/0010-mle-and-statistical-assessment.md), [figuras/arrays verificados](tests/reference/sprint8/candidate/validation.json) e [comparações K-S nativas](tests/reference/sprint8/native_ks_comparison.json). O usuário aprovou explicitamente Q-15/Q-11 em 14/11/2026: “Aprovo as Q-15 e a Q-11.” Oito tarefas concluídas; MLE integrado ao Run padrão com cortes coerentes/busca lognormal por cauda. Testes de produção, modelos sintéticos e vetores K-S nativos verificados; homologação visual integral permanece pendente.
+**Evidências da Sprint 8:** [relatório](../parity/sprint-8.md), [contrato MLE/Q-15](../decisions/0010-mle-and-statistical-assessment.md), [figuras/arrays verificados](../../tests/reference/sprint8/candidate/validation.json) e [comparações K-S nativas](../../tests/reference/sprint8/native_ks_comparison.json). O usuário aprovou explicitamente Q-15/Q-11 em 14/11/2026: “Aprovo as Q-15 e a Q-11.” Oito tarefas concluídas; MLE integrado ao Run padrão com cortes coerentes/busca lognormal por cauda. Testes de produção, modelos sintéticos e vetores K-S nativos verificados; homologação visual integral permanece pendente.
 
 ## Sprint 9 — Conectividade I-Y-X
 
@@ -930,7 +930,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S09-07 — Implementar console e TXT de conectividade; FLO-07.
 - [X] S09-08 — Validar redes sem cruzamentos, uma única classe, junções próximas, dados duplicados e total zero.
 
-**Evidências da Sprint 9:** [relatório](docs/parity/sprint-9.md), [contrato IYX/Q-11](docs/decisions/0011-connectivity-iyx.md), [figuras/arrays verificados](tests/reference/sprint9/candidate/validation.json) e [execução nativa](tests/reference/sprint9/native/native_topology.json). Q-11 aprovada explicitamente pelo usuário em 14/11/2026 junto de Q-15; oito tarefas concluídas e conectividade integrada ao Run padrão com proximidade finita/pontas reais. Nós, ternário, heatmaps e TXT verificados; homologação visual integral permanece pendente.
+**Evidências da Sprint 9:** [relatório](../parity/sprint-9.md), [contrato IYX/Q-11](../decisions/0011-connectivity-iyx.md), [figuras/arrays verificados](../../tests/reference/sprint9/candidate/validation.json) e [execução nativa](../../tests/reference/sprint9/native/native_topology.json). Q-11 aprovada explicitamente pelo usuário em 14/11/2026 junto de Q-15; oito tarefas concluídas e conectividade integrada ao Run padrão com proximidade finita/pontas reais. Nós, ternário, heatmaps e TXT verificados; homologação visual integral permanece pendente.
 
 ## Sprint 10 — Crack tensors e permeabilidade
 
@@ -944,7 +944,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S10-06 — Validar padrões direcionais/isotrópicos, simetria, unidades e escala cúbica da abertura.
 - [X] S10-07 — Comparar paletas, orientações, legendas, PNG e valores impressos com as referências.
 
-**Evidências da Sprint 10:** [relatório](docs/parity/sprint-10.md), [contrato tensoral](docs/decisions/0012-crack-tensors-and-permeability.md), [comparação nativa](tests/reference/sprint10/native_comparison.json) e [figuras/arrays/TXT](tests/reference/sprint10/validation.json). Sete tarefas concluídas e integradas ao Run padrão, com cache angular/EZROSE, abertura fixa/escalada, λ independente e casos zero. Referências MATLAB executadas; homologação visual integral continua na auditoria final.
+**Evidências da Sprint 10:** [relatório](../parity/sprint-10.md), [contrato tensoral](../decisions/0012-crack-tensors-and-permeability.md), [comparação nativa](../../tests/reference/sprint10/native_comparison.json) e [figuras/arrays/TXT](../../tests/reference/sprint10/validation.json). Sete tarefas concluídas e integradas ao Run padrão, com cache angular/EZROSE, abertura fixa/escalada, λ independente e casos zero. Referências MATLAB executadas; homologação visual integral continua na auditoria final.
 
 ## Sprint 11 — Estabilidade de fraturas e Mohr
 
@@ -960,13 +960,13 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 - [X] S11-08 — Reproduzir e registrar questões de normalização, mu=0, σ1=σ2 e mapeamento de cor; concluir decisão Q-17 antes da aceitação científica.
 - [X] S11-09 — Conferir orientações conhecidas, correção de norte/flips, parâmetros e todos os nomes de saída.
 
-**Evidências da Sprint 11:** [relatório](docs/parity/sprint-11.md), [contrato estabilidade/Q-17](docs/decisions/0013-fracture-stability-and-mohr.md), [reprodução/decisão](tests/reference/sprint11/q17_comparison.json) e [figuras/arrays/TXT](tests/reference/sprint11/validation.json). Nove tarefas concluídas. Usuário aprovou explicitamente “Aprovo a correção Q-17.” em 14/11/2026; normalização/cores/igualdade corrigidas, convenção legada de comprimento preservada. Quatro análises e Mohr integrados ao Run padrão; homologação visual integral permanece pendente.
+**Evidências da Sprint 11:** [relatório](../parity/sprint-11.md), [contrato estabilidade/Q-17](../decisions/0013-fracture-stability-and-mohr.md), [reprodução/decisão](../../tests/reference/sprint11/q17_comparison.json) e [figuras/arrays/TXT](../../tests/reference/sprint11/validation.json). Nove tarefas concluídas. Usuário aprovou explicitamente “Aprovo a correção Q-17.” em 14/11/2026; normalização/cores/igualdade corrigidas, convenção legada de comprimento preservada. Quatro análises e Mohr integrados ao Run padrão; homologação visual integral permanece pendente.
 
 ## Sprint 12 — Blocos e variograma
 
 **Dependências:** Sprints 4 e 7. **Entrega:** três saídas de blocos e semivariograma.
 
-**14/11/2026:** sprint concluída, com variograma e Block size graphs no Run padrão. O usuário aprovou Q-14: “Aprovo ambos Q-14 e Extensão Q-20.” Raster fixo sem escala, exclusão de exterior e áreas/centroides calibrados ativados e verificados. [Relatório e evidências](docs/parity/sprint-12.md).
+**14/11/2026:** sprint concluída, com variograma e Block size graphs no Run padrão. O usuário aprovou Q-14: “Aprovo ambos Q-14 e Extensão Q-20.” Raster fixo sem escala, exclusão de exterior e áreas/centroides calibrados ativados e verificados. [Relatório e evidências](../parity/sprint-12.md).
 
 - [X] S12-01 — Implementar raster de blocos, binarização e conectividade com resolução de referência; LEN-13.
 - [X] S12-02 — Definir política de domínio/região exterior e conversão de área, registrando Q-14.
@@ -981,7 +981,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 
 **Dependências:** Sprints 6, 7 e 12. **Entrega:** seleção por dois pontos e todos os gráficos de perfil.
 
-**14/11/2026:** sprint concluída, com seleção, todos os perfis ALONG/FROM e nove figuras no Run padrão. O usuário aprovou a extensão P20 de Q-20: “Aprovo ambos Q-14 e Extensão Q-20.” P20=m/(2πr²) ativo, mantendo a contagem finita e a saída acoplada mapa/P21/P20. [Relatório e evidências](docs/parity/sprint-13.md).
+**14/11/2026:** sprint concluída, com seleção, todos os perfis ALONG/FROM e nove figuras no Run padrão. O usuário aprovou a extensão P20 de Q-20: “Aprovo ambos Q-14 e Extensão Q-20.” P20=m/(2πr²) ativo, mantendo a contagem finita e a saída acoplada mapa/P21/P20. [Relatório e evidências](../parity/sprint-13.md).
 
 - [X] S13-01 — Implementar captura de dois cliques no canvas, linha/markers e armazenamento da seleção; GRA-01.
 - [X] S13-02 — Validar pontos distintos e tratar ausência de seleção/interseções sem variáveis indefinidas; GRA-02, Q-13.
@@ -996,7 +996,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 
 **Dependências:** Sprints 6, 10 e 12. **Entrega:** Morlet/Mexican Hat com dados, raster e figuras por escala.
 
-**14/11/2026:** nove tarefas concluídas; Q-12 aprovada explicitamente: “Aprovo a Q-12.” Wavelets integradas ao Run padrão, com raster1944×1944/72dpi, amostragem axial, coeficientes/self/eta, PNG/TXT e barras responsivas. [Relatório](docs/parity/sprint-14.md).
+**14/11/2026:** nove tarefas concluídas; Q-12 aprovada explicitamente: “Aprovo a Q-12.” Wavelets integradas ao Run padrão, com raster1944×1944/72dpi, amostragem axial, coeficientes/self/eta, PNG/TXT e barras responsivas. [Relatório](../parity/sprint-14.md).
 
 - [X] S14-01 — Implementar ativação e habilitação dos controles, tipo, listas a/L e incremento angular; WAV-01/02/03/04/05.
 - [X] S14-02 — Implementar parser de listas sem execução de expressões e validar valores/incrementos com decisão Q-12.
@@ -1012,7 +1012,7 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 
 **Dependências:** Sprints 0–14 conforme o recurso. **Entrega:** recursos complementares documentados e nenhuma funcionalidade AUX esquecida.
 
-**14/11/2026:** nove tarefas concluídas; utilitários preprocess/Move, diálogo wavelet, APIs e exemplos/manual entregues. Todos19AUX e164arquivos com destinação; legado/experimentos preservados sem campos novos na GUI2.8. [Relatório](docs/parity/sprint-15.md).
+**14/11/2026:** nove tarefas concluídas; utilitários preprocess/Move, diálogo wavelet, APIs e exemplos/manual entregues. Todos19AUX e164arquivos com destinação; legado/experimentos preservados sem campos novos na GUI2.8. [Relatório](../parity/sprint-15.md).
 
 - [X] S15-01 — Portar pré-processamento de imagem como ferramenta local com entrada/saída explícitas e painel das seis etapas; AUX-01.
 - [X] S15-02 — Portar Move para nós com colunas escolhidas, política de cabeçalho, separação de objetos e último objeto verificados; AUX-02.
@@ -1028,22 +1028,54 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 
 **Dependências:** todas as sprints da entrega principal. **Entrega:** clone verificável, instalável e documentado.
 
+**Estado atual — 16/11/2026:** **S16-04 concluída.** O usuário aprovou todos os casos 1 a 16 após a substituição dos marcadores. Os 11 critérios verificáveis foram satisfeitos; dados, revisão semântica, diferenças autorizadas e aceites visuais permanecem separados. **S16-09: pontos 1–4 concluídos** (interface macOS, exportações, documentação e validação do código para clone/download); falta disponibilizá-lo no GitHub (ponto 5), aguardando autorização. A distribuição é pelo código, conforme definição de 16/11/2026. [Estado final das análises](../../tests/reference/sprint16/final/status.json), [aceite](../../tests/reference/sprint16/final/user-visual-acceptance.json) e [estado da entrega](../../tests/reference/sprint16/delivery/status.json).
+
 - [X] S16-01 — Executar matriz completa de 118 recursos GUI, seis itens EXP e destinação de todos os AUX; nenhum controle obrigatório pode ficar sem ação.
 - [X] S16-02 — Revisar Q-01 a Q-21: registrar resoluções, decisões científicas e qualquer divergência ainda impeditiva; não esconder pendências.
 - [X] S16-03 — Conferir todos os nomes/gatilhos de PNG/TXT/intermediários, precisão, ordenação, tags e substituição segura; EXP-03/04, Q-16/18.
-- [ ] S16-04 — Realizar comparação de dados e figuras com o MATLAB em cada família analítica e corrigir diferenças sem regressões.
+- [X] S16-04 — Realizar comparação de dados e figuras com o MATLAB em cada família analítica e corrigir diferenças sem regressões.
 - [X] S16-05 — Conferir GUI/figuras no macOS, incluindo fontes, DPI, seleção de arquivo e paths com espaços/acentos. Escopo ajustado explicitamente pelo usuário em 14/11/2026: Windows/Linux ficam para seus testes posteriores, sem certificação nesta entrega.
 - [X] S16-06 — Verificar instalação limpa em `.venv`, abertura pelos dois entrypoints, execução pelo VS Code e funcionamento offline.
 - [X] S16-07 — Medir tempos/picos de memória com conjuntos reais e conferir responsividade, mensagens e encerramento durante processamento.
 - [X] S16-08 — Atualizar README, guia de instalação, manual, decisões, matriz de paridade e avisos de terceiros.
 - [ ] S16-09 — Fazer revisão final de todas as telas e exportações; publicar a versão do port com descrição clara da referência FracPaQ 2.8 e das diferenças aceitas.
 
+**Execução controlada da S16-09 — 16/11/2026:** por solicitação do usuário, concluir somente um ponto por vez e parar até receber autorização explícita para o próximo. S16-09 permanece sem X enquanto os cinco pontos não forem concluídos.
 
-**Evidências da Sprint16:** [auditoria e critérios ainda abertos](docs/parity/sprint-16.md), [matriz executada](tests/reference/sprint16/functional-matrix.json), [catálogo com hashes](tests/reference/capture_catalog.json), [instalação/entrega offline](docs/install.md) e [ADR0018](docs/decisions/0018-local-audit-and-delivery.md). **684 testes passaram.** O port tem candidato local0.1.0rc1; S16-04/S16-09 continuam abertas: há regiões abaixo de SSIM0,98 e contextos sem homologação visual final. Não foi flexibilizado o limite nem declarada paridade geral. Q05 aprovada explicitamente nesta auditoria; Q10 preserva o fonte sem unificação. Originais e resultados preexistentes preservados.
+- [X] S16-09.1 — Revisar a interface no macOS: janela inicial, seis abas, diálogos, mensagens, estados e redimensionamento. **Concluído:** 48 capturas das telas (Cocoa nativo, 100/125/150/200% e mínimo 1000×591), dez capturas nativas adicionais dos fluxos/diálogos, sete verificações nativas e 81 testes GUI aprovados. Nenhum defeito da interface permaneceu nas condições revisadas; o roteiro de captura foi corrigido para aplicar o tamanho solicitado depois da abertura com largura total. [Relatório](../parity/sprint-16-delivery.md), [galeria](../../tests/reference/sprint16/delivery/point-1/index.html) e [evidências](../../tests/reference/sprint16/delivery/point-1/summary.json).
+- [X] S16-09.2 — Conferir as exportações da versão final: nomes, tags, unidades, conteúdo e substituição dos arquivos. **Concluído:** 53 PNGs atuais com RGB idêntico às referências aprovadas, 4724×4724/600 dpi e metadados 0.9.0rc1; 11 arquivos principais idênticos byte a byte, 14 modelos de dados cobertos com SVG/auxiliares, tags vazias/acentuadas, unidades pixels/metres e substituição conferidas; 282 testes aprovados. Nenhum defeito produtivo encontrado. [Evidências](../../tests/reference/sprint16/delivery/point-2/summary.json). Registro da etapa anterior: o trabalho parou após o ponto 2 até a autorização para o ponto 3.
+- [X] S16-09.3 — Consolidar versão e documentação da entrega: identificação, changelog, instalação e diferenças aceitas. **Concluído:** mantida 0.9.0rc1/November 2026/luismauricio@me.com; notas da versão com diferenças científicas/visuais e evidências, README/changelog/manual/instalação e estados alinhados. Pacotes 0.1.0rc1 identificados como históricos; instruções do novo pacote condicionadas ao ponto 4. [Notas](../releases/0.9.0rc1.md), [relatório](../parity/sprint-16-delivery.md) e [verificações](../../tests/reference/sprint16/delivery/point-3/summary.json).
+- [X] S16-09.4 — Preparar e validar a distribuição pelo código: conteúdo do repositório/ZIP do GitHub, exclusões, dependências e execução em ambiente limpo pelos dois entrypoints, sem instalar o pacote PyFracPaQ. **Concluído:** requirements.txt com pins; ZIP de uso enxuto sem testes/relatórios, gerado com git archive/export-ignore em repositório temporário; fontes/recursos e exclusões conferidos. Ambientes CPython 3.13.18 e Miniforge Python 3.13.13/macOS arm64, somente dependências, dois entrypoints por ambiente com Preview/Run e 32 saídas; abertura/Preview nativos pelo VS Code confirmados. Clone completo preserva evidências opcionais. Sem publicação, sem alterar o índice/commits do usuário. [ADR 0019](../decisions/0019-source-distribution.md), [relatório](../parity/sprint-16-delivery.md) e [evidências](../../tests/reference/sprint16/delivery/point-4/summary.json).
+- [ ] S16-09.5 — Disponibilizar o código no GitHub para clone/download ZIP e registrar o encerramento. **Responsável pelo envio: usuário**, conforme sua definição explícita; o agente não fará commit/push/publicação. Preparação local do README e do manual concluída; conferência remota e encerramento aguardam o envio e o link do repositório.
+  - [X] Preparar README em inglês de apresentação, instruções e links para a documentação.
+  - [X] Entregar manuais em pt-BR e inglês britânico, em LaTeX e PDF (73/71 páginas), com as seis abas/30 recursos, 51 figuras numeradas em cada versão, teoria/fórmulas e roteiro SD11A; copiar SD11A para examples com procedência e créditos. A versão inglesa acompanha os rótulos e a terminologia da aplicação, incluindo colour.
+  - [X] Usuário revisar e aprovar o README e os dois manuais. **Aprovados explicitamente em 16/11/2026.**
+  - [ ] Usuário enviar os arquivos ao GitHub.
+  - [ ] Conferir repositório/ZIP remoto após o envio e registrar o encerramento.
 
-**Complemento de15/11/2026 — SD11A:** por indicação do usuário, o TXT original foi executado diretamente nos dois programas:445 traços/1076 segmentos/1521 nós,30 rotas Python e15 chamadas nativas concluídas,51 figuras pareadas. Dos81 confrontos de arrays/curvas,74 coincidem e sete registram diferenças explicadas; os quatro TXT comparáveis são idênticos byte a byte após corrigir a ordenação estável dos zeros assinados no EZROSE. A função principal Wavelets foi executada integralmente e seu núcleo também conferido sobre os mesmos pixels nativos. **686 testes passaram.** [Relatório e pendências](docs/parity/sd11a.md), [galeria pareada](tests/reference/sprint16/sd11a/gallery.md) e [suíte](tests/reference/sprint16/sd11a/checks.json). S16-04/S16-09 permanecem sem X, pois a homologação visual ainda não terminou.
+**Ponto 5 — preparação local concluída:** README em inglês e manuais LaTeX/PDF em pt-BR e inglês preparados para revisão. [Documentos e compilação](../manual/README.md). Envio ao GitHub será feito pelo usuário; conferência remota e encerramento aguardam seu envio/link. A distribuição não prevê instalação do pacote PyFracPaQ nem entrega de instaladores/wheels. [Estado da execução](../../tests/reference/sprint16/delivery/status.json). Windows/Linux permanecem reservados aos testes posteriores do usuário.
 
-**Continuação da S16-04:** correções de renderização e do histograma automático de Wavelets, quatro contextos adicionais Morlet/Mexican Hat, controles multicoloridos SVG e inspeção gráfica Hough estão documentados no [relatório da continuação](docs/parity/sprint-16-rendering.md). [Métricas e pendências atuais](tests/reference/sprint16/final/status.json) distinguem regiões aprovadas, diferenças autorizadas e falhas; não se reduziu o SSIM0,98. A tarefa permanece sem X enquanto os critérios completos não forem satisfeitos.
+
+
+**Histórico da auditoria em 14/11/2026:** [auditoria e critérios então abertos](../parity/sprint-16.md), [matriz executada](../../tests/reference/sprint16/functional-matrix.json), [catálogo com hashes](../../tests/reference/capture_catalog.json), [instalação/entrega offline](../install.md) e [ADR0018](../decisions/0018-local-audit-and-delivery.md). **684 testes passaram.** O port tem candidato local0.1.0rc1; S16-04/S16-09 continuam abertas: há regiões abaixo de SSIM0,98 e contextos sem homologação visual final. Não foi flexibilizado o limite nem declarada paridade geral. Q05 aprovada explicitamente nesta auditoria; Q10 preserva o fonte sem unificação. Originais e resultados preexistentes preservados.
+
+**Complemento de15/11/2026 — SD11A:** por indicação do usuário, o TXT original foi executado diretamente nos dois programas:445 traços/1076 segmentos/1521 nós,30 rotas Python e15 chamadas nativas concluídas,51 figuras pareadas. Dos81 confrontos de arrays/curvas,74 coincidem e sete registram diferenças explicadas; os quatro TXT comparáveis são idênticos byte a byte após corrigir a ordenação estável dos zeros assinados no EZROSE. A função principal Wavelets foi executada integralmente e seu núcleo também conferido sobre os mesmos pixels nativos. **686 testes passaram.** [Relatório e pendências](../parity/sd11a.md), [galeria pareada](../../tests/reference/sprint16/sd11a/gallery.md) e [suíte](../../tests/reference/sprint16/sd11a/checks.json). S16-04/S16-09 permanecem sem X, pois a homologação visual ainda não terminou.
+
+**Continuação da S16-04:** correções de renderização e do histograma automático de Wavelets, quatro contextos adicionais Morlet/Mexican Hat, controles multicoloridos SVG e inspeção gráfica Hough estão documentados no [relatório da continuação](../parity/sprint-16-rendering.md). [Métricas e pendências atuais](../../tests/reference/sprint16/final/status.json) distinguem regiões aprovadas, diferenças autorizadas e falhas; não se reduziu o SSIM0,98. A tarefa permanece sem X enquanto os critérios completos não forem satisfeitos.
+
+**Aceite visual de 16/11/2026:** o usuário aprovou a aparência atual dos cinco títulos revisados (dilatação, suscetibilidade, CSF e Graphs P21/P20) e, posteriormente, as diferenças de renderização das duas vistas laterais Hough, após avaliar os detalhes e seu impacto. O [aceite com histórico e hashes](../../tests/reference/sprint16/final/user-visual-acceptance.json) preserva as notas SSIM originais; as sete diferenças visuais revisadas estão aceitas, sem autorizar divergência numérica. S16-04 e S16-09 permanecem sem X até concluir a revisão semântica e a auditoria restantes.
+
+**Revisão final de 16/11/2026:** concluídas a revisão semântica das 51 figuras SD11A (403 verificações; 368 coincidentes/35 diferenças explicadas; nenhum erro semântico pendente), a inspeção dos controles CWT/Hough/SVG e a medição independente de dez legendas/seis caixas MLE. Relatórios, matriz e auditoria por família foram consolidados. Os [11 critérios de encerramento](../../tests/reference/sprint16/final/status.json) têm somente um pendente: decisão do usuário sobre a aparência dos [16 detalhes apresentados](../../tests/reference/sprint16/final/detail-review/index.html), conforme solicitado para evitar calibração prolongada. SSIM 0,98 e notas brutas foram preservados. Cinco testes novos do auditor passaram separadamente; a suíte completa anterior tem 709 testes aprovados e há outros cinco contratos do renderizador aprovados em execução separada. Nenhum módulo produtivo ou PNG mudou nesta revisão. **S16-04 permanece sem X até esse aceite/correção; S16-09 não está incluída neste encerramento.**
+
+**Aceite parcial dos detalhes — 16/11/2026:** o usuário aprovou os casos **2, 4, 6, 8, 10, 12, 13 e 15**. O [registro de aceite](../../tests/reference/sprint16/final/user-visual-acceptance.json) identifica as oito regiões e seus hashes; há agora 15 regiões aceitas ao incluir os sete títulos/painéis Hough anteriores. Permanecem em discussão **1, 3, 5, 7, 9, 11, 14 e 16**, devido à aparência dos quadrados/círculos. As cores correspondentes de linhas/marcadores Graphs foram consideradas coerentes pelo usuário, sem aceite da forma ainda. Nenhum marcador ou PNG foi alterado nesta discussão. S16-04 continua sem X; S16-09 permanece aberta.
+
+**Marcadores geométricos — 16/11/2026:** implementada a substituição global autorizada por quadrados/círculos padrão, incluindo legendas e nós dos mapas. Tamanhos nominais, cores, dados e barras responsivas preservados. As 51 figuras foram atualizadas (26 PNGs alterados/25 idênticos); revisão semântica repetida sem erros e **726 testes aprovados na suíte completa atual**. [Antes/depois](../../tests/reference/sprint16/final/marker-review/index.html), [registro](../../tests/reference/sprint16/final/marker-change.json) e [testes](../../tests/reference/sprint16/final/geometric-markers-checks.json). Os oito detalhes aprovados mantêm seus pixels e aceites; as notas RGB originais de cada versão continuam explícitas. O estado atual mantém 11 regiões para revisão: oito legendas, o mapa de nós e dois retângulos de títulos Graphs que também contêm marcadores alterados. Não houve mudança dos textos dos títulos. S16-04/S16-09 continuam sem X até o aceite final pertinente.
+
+
+**Encerramento da S16-04 — 16/11/2026:** aprovação explícita: “Aprovo todos de 1 a 16.” Os 16 detalhes atuais foram vinculados aos hashes das referências e dos candidatos; os cinco títulos e duas vistas Hough anteriormente aceitos permanecem no histórico. As três consequências da substituição global dos marcadores (mapa de nós e dois recortes amplos de títulos Graphs) foram verificadas: **nenhum pixel mudou fora dos limites dos marcadores**, comparados às imagens anteriores com hashes conferidos. Trata-se da propagação técnica da alteração já autorizada, sem inventar três aceites adicionais. As regiões/SSIM originais continuam intactas. Há 21 regiões com aceite direto válido e três resolvidas pela propagação comprovada; nenhuma região pendente na S16-04. Todos os 11 critérios passaram, com 726 testes na última suíte completa e sete contratos do auditor aprovados separadamente. [Prova de propagação](../../tests/reference/sprint16/final/marker-propagation-proof.json). **S16-04 marcada com X; S16-09 permanece aberta.** Os parágrafos anteriores documentam os estados históricos.
+
+
+**Personalização da interface antes da S16-09 — 16/11/2026:** por solicitação do usuário, o logo fornecido foi movido da raiz para pyfracpaq/resources/pyfracpaq-logo.png e substitui a imagem ao lado de Exit. Versão dos fontes/runtime/pacote atualizada para **0.9.0rc1**, data **November 2026** e e-mail **luismauricio@me.com**. Após o ajuste solicitado pelo usuário, versão, data e e-mail ficam em uma única linha; o logo está aproximadamente 12% maior, preservando sua proporção e sem sobrepor Exit ou o rodapé. A referência FracPaQ 2.8 e suas extrações originais permanecem históricas; os aceites e imagens da S16-04 não foram reescritos. A personalização autorizada integra a futura revisão final da S16-09, que continua aberta.
 
 # DEFINIÇÃO DE CONCLUÍDO DO PRODUTO
 
@@ -1059,10 +1091,12 @@ As sprints abaixo são pacotes de trabalho em ordem lógica, sem duração prome
 
 # REFERÊNCIAS DO PRODUTO
 
-- [Modelo de estrutura do PRD](prd-bruto.md).
+- [Modelo de estrutura do PRD](../../prd-bruto.md).
 - [Inventário funcional completo e apêndice dos 164 arquivos](FUNCIONALIDADES_FRACPAQ.md).
-- [Interface principal e callbacks 2.8](fracpaq-matlab/guiFracPaQ2D.m) e [layout original](fracpaq-matlab/guiFracPaQ2D.fig).
-- [README da distribuição](fracpaq-matlab/README.md), [manual 2.8](<fracpaq-matlab/FracPaQ User Guide v2.8.pdf>) e [licença original](fracpaq-matlab/LICENSE).
-- [Exportação gráfica de referência](fracpaq-matlab/guiPrint.m).
+- [Interface principal e callbacks 2.8](../../fracpaq-matlab/guiFracPaQ2D.m) e [layout original](../../fracpaq-matlab/guiFracPaQ2D.fig).
+- [README da distribuição](../../fracpaq-matlab/README.md), [manual 2.8](<../../fracpaq-matlab/FracPaQ User Guide v2.8.pdf>) e [licença original](../../fracpaq-matlab/LICENSE).
+- [Exportação gráfica de referência](../../fracpaq-matlab/guiPrint.m).
 
 Os links técnicos das especificações foram consultados para selecionar as bibliotecas; a equivalência científica e visual deverá ser demonstrada pelas evidências previstas neste PRD. Este arquivo é uma especificação de produto e implementação, e não uma declaração de que o clone já foi desenvolvido.
+
+**Organização aprovada — 16/11/2026:** PRD e inventário funcional movidos para docs/planning; 14 saídas locais preservadas em outputs/previous-runs, fora do Git. Caminhos relativos, ferramentas de manutenção e exclusão do planejamento no ZIP atualizados. README e manuais aprovados pelo usuário permanecem intactos. [Registro da organização](../parity/repository-organisation.md). A S16-09.5 aguarda o envio pelo usuário e a conferência remota.

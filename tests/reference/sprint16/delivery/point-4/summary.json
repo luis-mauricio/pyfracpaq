@@ -1,0 +1,85 @@
+{
+  "point": 4,
+  "complete": true,
+  "distribution": "GitHub source clone/runtime ZIP; no project installation",
+  "published": false,
+  "version": "0.9.0rc1",
+  "runtime_archive": {
+    "version": "0.9.0rc1",
+    "published": false,
+    "actual_index_changed": false,
+    "snapshot_files": 2504,
+    "snapshot_bytes": 799870412,
+    "temporary_repository": "/tmp/pyfracpaq-git-source-7gjyxzz0/repository",
+    "temporary_tree": "991fe7aec61a8a8efc0dbfb380f18931a3cdd54b",
+    "archive": "dist/0.9.0rc1/pyfracpaq-0.9.0rc1-code.zip",
+    "archive_sha256": "ace69e5f3c6e772af300e8d1b892388fc3b4b4657d5b92ccd8339475926d299e",
+    "archive_bytes": 585798,
+    "runtime_files": 190,
+    "runtime_folder": "/tmp/pyfracpaq-git-source-7gjyxzz0/download/pyfracpaq-0.9.0rc1",
+    "tests_and_reports_absent_from_zip": true,
+    "all_runtime_modules_and_resources_match": true,
+    "scope": "Candidate working-tree snapshot in a temporary Git repository; real git archive/export-ignore. GitHub publication and actual remote Download ZIP belong to point 5."
+  },
+  "requirements": {
+    "path": "requirements.txt",
+    "sha256": "c6859190504d59dc23e57caa263f80d3976aac24e957a465bd63a736d41786cc",
+    "versions_unchanged": true,
+    "development_dependencies_required": false
+  },
+  "environments": {
+    "native": {
+      "python": "3.13.18",
+      "entrypoints": 2,
+      "exports": 16,
+      "report": "tests/reference/sprint16/delivery/point-4/native-source.json",
+      "sha256": "86cbb3c24e5944a52c7c2ae41341bfa0af47d6a2f687c1d118eec7f54452adac"
+    },
+    "miniforge": {
+      "python": "3.13.13",
+      "entrypoints": 2,
+      "exports": 16,
+      "report": "tests/reference/sprint16/delivery/point-4/miniforge-source.json",
+      "sha256": "1d808f4fb77ef699eedcb148b18922b24c7e9e7fe96fbc9cd22cb2f670bb8681"
+    }
+  },
+  "gui_entrypoint_flows": 4,
+  "exports_verified": 32,
+  "vscode": {
+    "report": "tests/reference/sprint16/delivery/point-4/vscode-native.json",
+    "sha256": "2d781ea032fdb403a83faa8025ee9f6844fbe4b6f4b135be7d352ce34aa6570b",
+    "native_launch_preview_exit": true,
+    "original_interpreter_restored": true,
+    "launch_configurations_valid": true,
+    "automatic_test_discovery": false
+  },
+  "runtime_documentation": {
+    "local_links_checked": 19,
+    "broken_links": [],
+    "historical_technical_links_in_notices": "Optional reports in the complete clone, explicitly labelled in THIRD_PARTY_NOTICES.md."
+  },
+  "preservation": {
+    "scientific_implementation_unchanged": true,
+    "53_accepted_pngs_preserved": true,
+    "11_reference_data_files_preserved": true,
+    "originals_integrity_passed": true,
+    "tests_and_reports_kept_in_full_repository": true
+  },
+  "evidence_files": {
+    "tests/reference/sprint16/delivery/point-4/source-environments.json": "82d292b21bfff6c22de77f44d58a5df99b5036f0d54a9b731a757b8aaecede06",
+    "tests/reference/sprint16/delivery/point-4/native-requirements.json": "d2b4d98de3955a051d87d06ef27ce97eb395b37f32e91bf5aec20dadf78e0969",
+    "tests/reference/sprint16/delivery/point-4/miniforge-requirements.json": "4212c25441de0dfe3ebbce1d5406db36a5e580e4e3c7034fabf7d812fe3ac2ef",
+    "tests/reference/sprint16/delivery/point-4/native-pip-check.log": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+    "tests/reference/sprint16/delivery/point-4/miniforge-pip-check.log": "9261363b733079a641c2e4cc9bc46ffa1d8336945a87f807b6cf68847dbc9b09",
+    "tests/reference/sprint16/delivery/point-4/miniforge-create-approved.log": "61ad7858e51d8597f4a5f088dd4e82b4ba65b4cac7aa14c79806bd039bd032b3"
+  },
+  "limits": [
+    "macOS arm64 only; Windows/Linux reserved to user",
+    "Conda environment created offline from locally cached explicit package specifications; online solver/download not tested",
+    "Actual GitHub remote/Download ZIP verification belongs to authorized point 5; this is a local Git candidate",
+    "GUI integration used Qt offscreen; native VS Code launch/Preview/Exit additionally verified in the trusted original workspace"
+  ],
+  "next_point": 5,
+  "next_point_authorized": false,
+  "S16-09_complete": false
+}

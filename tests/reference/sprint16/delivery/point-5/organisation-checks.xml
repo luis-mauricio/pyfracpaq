@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="15" time="0.796" timestamp="2026-11-16T15:18:14.371443-03:00" hostname="macbook-lm.local"><testcase classname="tests.reference.test_contract" name="test_original_distribution_unchanged" time="0.095"><failure message="SystemExit: Distribuição divergiu da referência: ['FracPaQ2D_histosegmentlength_Run1.png', 'FracPaQ2D_histotracelength_Run1.png', 'FracPaQ2D_segmentstrikemap_Run1.png', 'FracPaQ2D_tracelengthmap_Run1.png', 'FracPaQ2D_tracemap_Run1.png', 'FracPaQ2Dsegmentangleslengths_Run1.txt', 'FracPaQ2Dsegmentlengths_Run1.txt', 'FracPaQ2Dtracelengths_Run1.txt']">def test_original_distribution_unchanged():
+&gt;       source_manifest.verify()
+
+tests/reference/test_contract.py:21: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def verify() -&gt; None:
+        expected = json.loads(MANIFEST.read_text(encoding='utf-8'))
+        actual = snapshot()
+        if expected != actual:
+            old = {p['path']: p for p in expected['files']}
+            new = {p['path']: p for p in actual['files']}
+            changes = [p for p in sorted(old.keys() | new.keys())
+                       if old.get(p) != new.get(p)]
+&gt;           raise SystemExit(f'Distribuição divergiu da referência: {changes}')
+E           SystemExit: Distribuição divergiu da referência: ['FracPaQ2D_histosegmentlength_Run1.png', 'FracPaQ2D_histotracelength_Run1.png', 'FracPaQ2D_segmentstrikemap_Run1.png', 'FracPaQ2D_tracelengthmap_Run1.png', 'FracPaQ2D_tracemap_Run1.png', 'FracPaQ2Dsegmentangleslengths_Run1.txt', 'FracPaQ2Dsegmentlengths_Run1.txt', 'FracPaQ2Dtracelengths_Run1.txt']
+
+scripts/source_manifest.py:33: SystemExit</failure></testcase><testcase classname="tests.reference.test_contract" name="test_manifest_detects_source_changes[modify]" time="0.011" /><testcase classname="tests.reference.test_contract" name="test_manifest_detects_source_changes[add]" time="0.001" /><testcase classname="tests.reference.test_contract" name="test_manifest_detects_source_changes[remove]" time="0.001" /><testcase classname="tests.reference.test_contract" name="test_matrix_covers_every_inventory_id_once" time="0.002" /><testcase classname="tests.reference.test_contract" name="test_fig_extraction_reproduces_all_saved_properties[guiFracPaQ2D-154]" time="0.022" /><testcase classname="tests.reference.test_contract" name="test_fig_extraction_reproduces_all_saved_properties[guiWaveletDialog-14]" time="0.002" /><testcase classname="tests.reference.test_contract" name="test_opening_layout_and_raw_defaults_are_distinct" time="0.002" /><testcase classname="tests.reference.test_contract" name="test_control_mapping_names_existing_objects_and_ids" time="0.006" /><testcase classname="tests.reference.test_contract" name="test_questions_are_registered_without_fake_results" time="0.001" /><testcase classname="tests.reference.test_contract" name="test_source_catalog_covers_all_matlab_files" time="0.003" /><testcase classname="tests.reference.test_contract" name="test_capture_catalog_keeps_missing_goldens_explicit" time="0.034" /><testcase classname="tests.reference.test_contract" name="test_manual_images_preserve_provenance_and_hashes" time="0.050" /><testcase classname="tests.reference.test_contract" name="test_dependency_notices_are_preserved" time="0.008" /><testcase classname="tests.reference.test_sprint16_reference" name="test_sprint16_matrix_covers_all_ids_and_production_routes" time="0.231" /></testsuite></testsuites>

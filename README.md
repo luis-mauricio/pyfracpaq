@@ -1,100 +1,96 @@
+<p align="center">
+  <img src="pyfracpaq/resources/pyfracpaq-logo.png" alt="PyFracPaQ" width="360">
+</p>
+
 # PyFracPaQ
 
-Port desktop científico do FracPaQ MATLAB2.8 para CPython3.13. **Candidato local0.1.0rc1; Sprints0–15 integradas e auditoria S16 registrada.** As30 rotas analíticas estão disponíveis, com os53 tipos de PNG e14 tipos de dados/intermediários conferidos. Hough passou a coincidir exatamente com o MATLAB nos cinco casos capturados, incluindo imagens reais. Q05 recebeu aprovação explícita do usuário.
+**Analyse and visualise two-dimensional fracture networks directly in Python.**
 
-**A homologação visual integral continua aberta:** há regiões abaixo do SSIM0,98 e contextos que ainda exigem comparação final. O wheel é candidato local, sem declaração de paridade geral. Windows/Linux foram adiados por instrução do usuário. [Relatório da auditoria](docs/parity/sprint-16.md), [instalação/VS Code/offline](docs/install.md), [decisões atuais](docs/decisions/0018-local-audit-and-delivery.md) e [alterações da versão](CHANGELOG.md).
+PyFracPaQ brings together length and orientation measurements, circular sampling, connectivity, crack tensors, permeability estimates, fracture stability and multiscale analysis. It ports the interface and methods of **FracPaQ MATLAB 2.8**, with the approved scientific corrections described in the documentation. MATLAB is not required to run the application.
 
-**Sprints 8/9 implementadas e integradas ao Run**, com seis ajustes MLE, 2500 testes K-S por modelo e conectividade I/Y/X com quatro figuras/TXT. Resultados originais foram executados no MATLAB R2024b para reproduzir Q-15/Q-11. O usuário aprovou explicitamente as correções em 14/11/2026: cortes coerentes/busca lognormal por cauda e tolerância por proximidade de pontas reais. Os [relatórios da Sprint 8](docs/parity/sprint-8.md) e [Sprint 9](docs/parity/sprint-9.md) incluem as comparações e evidências.
+**Version:** 0.9.0rc1 (prerelease) · **Python:** 3.13 · **Contact:** [luismauricio@me.com](mailto:luismauricio@me.com)
 
-**Sprints 10/11 integradas ao Run:** Crack tensor plot gera ordens 0/2/4/8 e aciona EZROSE; Permeability plot usa abertura fixa/escalada e λ independente. As quatro análises de estabilidade geram mapas/rosas de 10° e um Mohr compartilhado. Slip tendency também grava segmentdata com coordenadas e ângulos brutos. O usuário aprovou Q-17 em 14/11/2026: normalização por tensões corrigidas, cores Sf e igualdade CSF coerentes. A convenção legada das cores por comprimento foi preservada. [Tensores/permeabilidade](docs/decisions/0012-crack-tensors-and-permeability.md) e [estabilidade/Q-17](docs/decisions/0013-fracture-stability-and-mohr.md) detalham unidades, limites e referências nativas.
+[User manual — English](docs/manual/pyfracpaq-user-manual-en.pdf) · [User manual — Portuguese (Brazil)](docs/manual/pyfracpaq-user-manual.pdf) · [LaTeX sources and build instructions](docs/manual/README.md)
 
-## Preparação local
+![SD11A preview in the PyFracPaQ interface](docs/manual/assets/ui-preview.png)
 
-Baseline verificada: CPython 3.13.18, macOS arm64. Windows/Linux e outros patches ainda não foram validados. Na raiz, com Python 3.13 instalado:
+## What you can analyse
+
+| Tab | Features |
+| --- | --- |
+| **Maps** | Traces and nodes; length- and strike-coloured maps; estimated intensity P21 and density P20; slip/dilation tendency, fracture susceptibility, critically stressed fractures and Mohr diagrams. |
+| **Lengths** | Histograms, log-log distributions, MLE fits, length–angle cross-plots, map-edge censoring, block areas and a segment-length variogram. |
+| **Angles** | An angle histogram and an equal-area rose diagram, with length weighting and a mean-vector reference. |
+| **Fluid flow** | I/Y/X topology, crack tensors and a permeability projection with fixed or scaled apertures. |
+| **Wavelets** | Two-dimensional Morlet or Mexican Hat analysis with configurable scales and anisotropy. |
+| **Graphs** | Length, angle, P21 and P20 profiles along a line, and attribute profiles against signed distance from that line. |
+
+**Inputs:** tab-delimited TXT files containing X/Y pairs; linear SVG geometry grouped by colour; eight-bit grayscale JPEG/TIFF images. Complementary tools provide image preprocessing, Move conversion and Wavelet analysis of an existing raster.
+
+## Get started
+
+Clone the repository, or select **Code → Download ZIP** and extract the folder. Open the folder containing `run_gui.py` and `requirements.txt`.
+
+With Python 3.13 on macOS:
 
 ```bash
 python3.13 -m venv .venv
-.venv/bin/python -m pip install -r requirements-dev.txt
-.venv/bin/python -m pip install -e . --no-deps --no-build-isolation
-.venv/bin/python -m pip check
-.venv/bin/python scripts/run_isolated_tests.py --report /tmp/pyfracpaq-tests.json
-```
-
-No PowerShell, usar `.\.venv\Scripts\python.exe` e definir `$env:QT_QPA_PLATFORM='offscreen'` para os checks; esses comandos ainda precisam de validação naquela plataforma. O modo offscreen verifica integração Qt, sem certificar aparência de desktop. A instalação de execução usa requirements.txt; requirements-dev.txt também instala preparação de referências e testes. Setuptools fica nas dependências de desenvolvimento para instalação editável sem resolução implícita do backend.
-
-Após instalar, abrir pelo terminal ou pelo VS Code, selecionando o executável `.venv/bin/python`:
-
-```bash
+.venv/bin/python -m pip install -r requirements.txt
 .venv/bin/python run_gui.py
-.venv/bin/python -m pyfracpaq
 ```
 
-A forma por módulo funciona também fora da raiz após instalação. A janela carrega seus recursos do pacote. A versão do port é0.1.0rc1;2.8 identifica o original de referência. Os dois entrypoints também foram executados pelo VS Code no desktop macOS.
+Alternatively, run `.venv/bin/python -m pyfracpaq` from the same folder.
 
-Selecionar TXT, SVG compatível ou JPEG/TIFF grayscale de oito bits, clicar Preview e conferir os sete valores estatísticos. SVG converte nós junto à origem; imagens abrem/exportam o diagnóstico Hough antes do Run. Flips e navegação preservam os dados e escolhas. Alterar entrada, escala ou parâmetros Hough exige nova prévia. Run padrão salva cinco PNGs de 20×20 cm/600 dpi e quatro TXT no diretório corrente; mapas de múltiplas cores acrescentam a figura multicolorida. Lengths oferece histogramas, log-log, cross-plot isolado e censura nas extremidades. Para MLE, selecionar Log-log lengths e MLE analysis; os cortes Lower/Upper removem os menores/maiores valores, respectivamente. Para conectividade, selecionar I-Y-X connectivity em Fluid Flow e ajustar blocos/tolerância. Variogram of segment lengths já está integrado e usa 30 classes sem ajuste de modelo; Block size graphs gera três figuras e o BMP visível, com exclusão do exterior e calibração de área aprovadas em Q-14.
+Only the libraries need to be installed. **You do not need to install the PyFracPaQ package**, run tests or obtain the MATLAB distribution. Once the environment is ready, analyses run locally without an internet connection.
 
-A janela abre centralizada e ajustada à área útil da tela, até 1250×739 pixels lógicos. Navegação sem moldura e controles posicionados conforme o FIG, com rolagem apenas quando a área cliente não comporta a superfície mínima. [Revisão visual e capturas atuais](docs/parity/ui-calibration.md) documenta os ajustes e as verificações nas quatro escalas de tela.
-
-As barras de cores acompanham a área do plot ao redimensionar e exportar: horizontais com a mesma largura, verticais com a mesma altura. A distância aos rótulos do eixo é fixa; janelas pequenas reservam espaço para evitar sobreposição e recuperam a área ao ampliar. A regra é compartilhada por todas as figuras atuais e obrigatória para as próximas implementações. [Contrato e exemplos](docs/decisions/0009-responsive-colourbars.md).
-
-O subconjunto SVG aceita line, polyline e paths M/L absolutos, com stroke hexadecimal por atributo/style inline/grupo. Curvas, transformações, polygon e CSS/classes exigem preparação explícita; o documento inteiro é recusado antes de substituir os TXT. Os grupos `colourHHHHHH` podem ser recarregados para análise individual. Os exemplos SVG originais e suas restrições estão na [auditoria](tests/reference/sprint5/original_svg_audit.json). MacduffBinary/Orkney1aBinary são imagens compatíveis; as versões RGBA não são convertidas automaticamente.
-
-Em Maps, selecionar Estimated Intensity, P21 e/ou Estimated Density, P20, definir pelo menos dois círculos no lado menor e, opcionalmente, Show circles. Cada mapa selecionado gera um PNG; Show circles acrescenta uma única figura. Qualquer seleção grava os dois TXT de centros/valores. As estimativas locais usam interseções finitas/extremidades por segmento; os globais do console usam comprimento/área e segmentos/área, separadamente. Domínio de área zero é recusado. [Contrato circular e Q-20](docs/decisions/0008-circular-sampling.md) detalha tangência, bordas, unidades e formatação histórica dos arquivos.
-
-## Importação TXT pela API
-
-Após a instalação editável, executar em Python:
-
-```python
-from pyfracpaq.io import read_txt
-
-dataset = read_txt('tests/fixtures/nodes/mixed.txt')
-print(dataset.n_traces, dataset.n_segments, dataset.n_nodes)  # 2 3 5
-print(dataset.area, dataset.length_unit)  # 24.0 pixels
-print(dataset.traces[1].midpoint)  # (4.0, 2.5)
-
-scaled = dataset.with_scale(2)  # pixels/metre, sempre a partir da origem
-print(scaled.area, scaled.length_unit)  # 6.0 metres
-arrays = scaled.as_arrays()  # float64 e IDs int64 na ordem original
-```
-
-O arquivo deve ter um traço por linha e pares X/Y separados por TAB. Erros retornam NodeFileError com caminho, linha/coluna e issues estruturadas; não há importação parcial. Duplicatas consecutivas são removidas com diagnóstico. [Contrato da API](docs/decisions/0002-geometry-and-txt.md) detalha identidade, escala, unidades e primitivas geométricas.
-
-Os mapas originais map1_edit_converted.txt e map7_edit_converted.txt contêm três e dois traços degenerados, respectivamente, e são rejeitados com as linhas indicadas. Os testes usam também cópias temporárias preparadas explicitamente; nenhum original foi alterado.
-
-## Verificação e referências
+### Miniforge
 
 ```bash
-# Verificação estrita: acusa arquivos extras na pasta original.
-.venv/bin/python scripts/source_manifest.py
-.venv/bin/python scripts/validate_sprint1.py --output /tmp/pyfracpaq-sprint1.json
-QT_QPA_PLATFORM=offscreen .venv/bin/python scripts/check_environment.py --output /tmp/pyfracpaq-environment.json
-.venv/bin/python scripts/extract_fig_reference.py --output-dir /tmp/pyfracpaq-fig
+conda create -n pyfracpaq python=3.13 pip
+conda activate pyfracpaq
+python -m pip install -r requirements.txt
+python run_gui.py
 ```
 
-Os testes precisam da pasta original fracpaq-matlab, já excluída pelo .gitignore fornecido. Preservá-la e transportá-la separadamente quando necessário; não gravar resultados nela. Os comandos de verificação e extração não exigem internet após instalar as dependências.
+### VS Code
 
-- [Matriz dos 164 IDs](docs/parity/matrix.md), com estados e destinação AUX/legado.
-- [Fonte e padrões encontrados](docs/parity/source-review.md) e [contrato do FIG](docs/parity/gui-reference.md).
-- [Ambiente congelado](docs/decisions/0001-environment.md) e [tolerâncias/aceite](docs/parity/acceptance.md).
-- [Fixtures e procedência](docs/parity/fixtures.md), [questões Q](docs/parity/divergences.md) e [protocolo de captura](docs/parity/capture-protocol.md).
-- [Relatório da Sprint 0](docs/parity/sprint-0.md), [PRD](PRD.md) e [créditos/licenças](THIRD_PARTY_NOTICES.md).
-- [Relatório da Sprint 1](docs/parity/sprint-1.md) e [evidências numéricas](tests/reference/sprint1/numerical.json).
-- [Relatório da Sprint 2](docs/parity/sprint-2.md), [contrato desktop/execução](docs/decisions/0003-desktop-and-execution.md) e [captura da prévia](tests/reference/sprint2/dpi-100/preview.png).
-- [Relatório da Sprint 3](docs/parity/sprint-3.md), [contrato de mapas/Angles](docs/decisions/0004-maps-and-angles.md) e [exportações verificadas](tests/reference/sprint3/validation.json).
-- [Relatório da Sprint 4](docs/parity/sprint-4.md), [contrato de Lengths/censura](docs/decisions/0005-lengths-and-censoring.md) e [exportações verificadas](tests/reference/sprint4/validation.json).
-- [Relatório da Sprint 5](docs/parity/sprint-5.md), [contrato SVG/cores](docs/decisions/0006-svg-and-colours.md) e [evidências](tests/reference/sprint5/validation.json).
-- [Relatório da Sprint 6](docs/parity/sprint-6.md), [contrato de imagens/Hough](docs/decisions/0007-images-and-hough.md) e [evidências](tests/reference/sprint6/validation.json).
-- [Relatório da Sprint 7](docs/parity/sprint-7.md), [contrato circular/Q-20](docs/decisions/0008-circular-sampling.md) e [evidências](tests/reference/sprint7/validation.json).
-- [Relatório da Sprint 8](docs/parity/sprint-8.md), [contrato MLE/Q-15](docs/decisions/0010-mle-and-statistical-assessment.md) e [seis figuras MLE](tests/reference/sprint8/candidate/validation.json).
-- [Relatório da Sprint 9](docs/parity/sprint-9.md), [contrato IYX/Q-11](docs/decisions/0011-connectivity-iyx.md) e [figuras/arrays/TXT de conectividade](tests/reference/sprint9/candidate/validation.json).
-- [Relatório da Sprint 10](docs/parity/sprint-10.md), [tensores/permeabilidade](docs/decisions/0012-crack-tensors-and-permeability.md) e [evidências](tests/reference/sprint10/validation.json).
-- [Relatório da Sprint 11](docs/parity/sprint-11.md), [estabilidade/Mohr/Q-17](docs/decisions/0013-fracture-stability-and-mohr.md) e [evidências](tests/reference/sprint11/validation.json).
+Open the project folder and use **Python: Select Interpreter** to select the Python executable in `.venv` or your Miniforge environment. Run `run_gui.py`, or use one of the supplied Run and Debug configurations. The Python extension supports execution; Python Debugger is required for the debugging configurations.
 
-Há referências documentais do manual e extrações estáticas dos FIG. Na avaliação das Sprints 8/9, MATLAB R2024b executou os ajustes originais, sete casos topológicos, hist3 e 7500 comparações K-S com vetores compartilhados; scripts, resultados e procedência estão preservados. As Sprints 10/11 acrescentam tensores/permeabilidade, estabilidade, jet RGB, layouts e PNGs nativos; Q-17 foi reproduzida e corrigida com aprovação. A S16 acrescenta estados reais da GUI por print/propriedades e capturas dos53 nomes de figuras. A homologação visual geral continua pendente: disponibilidade de captura, casos analíticos e smoke tests não substituem o aceite por região.
+CPython 3.13.18 and Miniforge/Python 3.13.13 have been checked on macOS arm64. Windows and Linux remain subject to future testing by the maintainer. Detailed preparation instructions are included in the [English manual](docs/manual/pyfracpaq-user-manual-en.pdf).
 
-Sprints 12/13: selecionar Variogram of segment lengths em Lengths gera o semivariograma e os três TXT da família. Em Graphs, Select end points captura dois cliques na prévia; Escape cancela, entrada/escala nova limpa a linha e flips/norte a preservam. Os seis perfis de comprimento/ângulo ALONG/FROM já funcionam com TXT/SVG/imagem. Blocos e P21/P20 ALONG estão ativos no Run após a aprovação explícita de Q-14 e da extensão P20 de Q-20: blocos excluem a região exterior, mantêm a resolução original e calibram as áreas/centroides; Graphs usa P20=m/(2πr²). Selecionar qualquer opção circular produz mapa e ambos os perfis uma única vez. [Sprint 12](docs/parity/sprint-12.md) e [Sprint 13](docs/parity/sprint-13.md).
+## First example: SD11A
 
-API auxiliar do variograma: `from pyfracpaq.analysis.variogram import experimental_variogram`; aceita posições N×D, valores escalares e `nrbins`, `maxdist`, `kind`, `anisotropy`, `thetastep`, `subsample`, `seed` e `subsample_indices`. Retorna valores, centros, contagens e proveniência da amostra. `from pyfracpaq.plots.variogram import variogram` acrescenta `plotit=True` e retorna resultado/figura sem abrir janelas nem salvar automaticamente. [Convenções e limites](docs/decisions/0014-blocks-and-variogram.md).
+1. Open `examples/SD11A.txt` as a **Node file** and leave the scaling field blank.
+2. Click **Preview**: the statistics should show **445 traces, 1076 segments and 1521 nodes**.
+3. Select the analyses in the tabs, set a filename tag and click **Run**.
+4. Inspect the figures, tables and messages. Parameters and interpretation are explained in the [user manual](docs/manual/pyfracpaq-user-manual-en.pdf).
 
-**Sprints14/15 concluídas:** Wavelets2D Morlet/Mexican Hat integradas ao Run, com Q-12 aprovada explicitamente. Listas a/L positivas inteiras e incremento divisor de180; raster72dpi, painéis por escala e theta TXT preservados. Ferramentas locais preprocess/Move, diálogo wavelet Run/Cancel e APIs complementares disponíveis por `python -m pyfracpaq.tools --help`. [Manual local](docs/user-guide.md), [exemplos válidos](examples/README.md), [destinação dos19AUX](docs/parity/legacy.md), [Sprint14](docs/parity/sprint-14.md) e [Sprint15](docs/parity/sprint-15.md). A auditoria S16 está documentada, com aceite visual/release final ainda abertos; ver relatório e métricas vinculadas acima.
+SD11A is supplied unchanged, with its original attribution and provenance preserved. Without physical calibration, its results are in pixels. Figures and tables are written to the working directory; reusing a tag replaces the same filenames. SVG conversions are written beside the SVG input. Keep separate working folders and preserve the original inputs.
+
+## Manuals and methods
+
+The illustrated manuals cover all 30 analytical features, controls, theory, formulae, outputs, interpretation limits and complementary tools, using SD11A as the main worked example:
+
+- [English PDF](docs/manual/pyfracpaq-user-manual-en.pdf) and [LaTeX source](docs/manual/pyfracpaq-user-manual-en.tex).
+- [Brazilian Portuguese PDF](docs/manual/pyfracpaq-user-manual.pdf) and [LaTeX source](docs/manual/pyfracpaq-user-manual.tex).
+- [Build instructions for XeLaTeX/TeXStudio](docs/manual/README.md).
+
+The English edition follows the application's wording, including **colour**, **centre** and **normalisation**. Interface labels and filenames are retained as used by the application. A [quick Markdown guide](docs/user-guide.md) and [example descriptions](examples/README.md) are also available in Brazilian Portuguese.
+
+## Interpretation and accepted differences
+
+The mapped network is two-dimensional. Permeability and stability estimates depend on the physical parameters supplied; they do not replace a complete flow simulation or a three-dimensional reconstruction. A rose diagram describes orientation, not flow direction. MLE fits and their Monte Carlo rates do not establish that a distribution is true.
+
+The port incorporates approved corrections to censoring, connectivity, Wavelets, blocks, MLE, stability and circular sampling. Some legacy conventions are deliberately preserved. The manuals distinguish those decisions from the original results. Version 0.9.0rc1 identifies this Python port; 2.8 identifies the MATLAB reference. [Release notes (Portuguese)](docs/release-notes.md).
+
+## Using and developing the code
+
+The usage ZIP excludes tests, audit reports and internal tools, while retaining the application, resources, requirements, examples and both manuals. The full clone preserves the development material for maintenance and traceability. It is not run automatically or required to use the application.
+
+For development, see `docs/development.md` and `requirements-dev.txt` in the full repository. Automatic test discovery in VS Code is disabled by default.
+
+## Credits and licence
+
+Based on FracPaQ by David Healy and collaborators. Reference: [Healy et al. (2017), *FracPaQ: A MATLAB toolbox for the quantification of fracture patterns*](https://doi.org/10.1016/j.jsg.2016.12.003).
+
+[MIT licence](LICENSE) · [Third-party attributions and notices](THIRD_PARTY_NOTICES.md).

@@ -1,0 +1,142 @@
+% !TeX root = ../pyfracpaq-user-manual.tex
+\major{Fluid flow: topologia, crack tensors e permeabilidade}\label{sec:flow}
+Os três recursos descrevem aspectos diferentes da rede. Um diagrama I/Y/X não é uma solução hidráulica, e o parâmetro \(\lambda\) da permeabilidade não é calculado automaticamente a partir dele.
+\uifig{ui-fluid.png}{Controles Fluid flow: classificação topológica, tensores e abertura para a estimativa de permeabilidade.}{fig:ui-fluid}
+
+\feature{FLO-01}{I-Y-X connectivity}
+Marque \control{I-Y-X connectivity}. Informe \control{Number of blocks in maps} (inteiro \(\geq2\)) e a distância máxima de I para Y (\(\geq0\), na unidade corrente). No SD11A ilustrado, use 12 e 2.0 pixels.
+
+A classificação segue encontros entre traços, não uma simples contagem de vértices do TXT:
+\begin{itemize}
+\item \textbf{I}: ponta isolada, com um ramo.
+\item \textbf{Y}: junção de três ramos, incluindo T exato e proximidade de ponta real a outro segmento conforme a tolerância.
+\item \textbf{X}: cruzamento de quatro ramos no modelo adotado.
+\end{itemize}
+A proximidade é euclidiana e inclusiva sobre segmento finito de outro traço; um undershoot pode gerar Y inferido. Um vértice interno não é tratado como ponta. T exato é Y mesmo com tolerância zero. A geometria original não é reescrita para realizar essa classificação. Sobreposições collineares e auto-interseções não equivalem automaticamente a junções entre traços.
+
+As frações do triângulo são
+\begin{equation}f_I=\frac{N_I}{N_I+N_Y+N_X},\quad f_Y=\frac{N_Y}{N_I+N_Y+N_X},\quad f_X=\frac{N_X}{N_I+N_Y+N_X}.
+\end{equation}
+O diagrama resume proporções, mas redes espacialmente diferentes podem ter as mesmas frações. A fundamentação topológica é discutida por Sanderson e Nixon~\cite{sanderson}; as regras concretas de proximidade do port são as descritas acima.
+
+Run produz quatro figuras: mapa I/Y/X, calor dos nós X+Y, calor dos nós I e triângulo, além de um TXT. Para SD11A nas condições ilustradas: \(N_I=606\), \(N_Y=224\), \(N_X=90\). O TXT preserva a ordem de linhas I, X, Y; não troque as duas últimas classes ao ler o arquivo.
+\plotfig{IYXnodes_traces.png}{Classificação de nós SD11A. As contagens dependem da tolerância e da digitalização.}{fig:iyxnodes}
+\plotfig{IYXtriangle.png}{Triângulo topológico SD11A. Os quadrados/círculos usam formas geométricas normais.}{fig:triangle}
+
+Os mapas de calor mostram \emph{contagens} por bloco, não densidades normalizadas por área. O número no lado maior é ajustado à razão de aspecto. A construção histórica dos bins usa o intervalo de coordenadas de cada classe não vazia, por isso os dois mapas não representam necessariamente células espaciais idênticas. Classes ausentes são tratadas sem fabricar nós.
+\plotfig{XYnodes_traces_heat.png}{Contagem espacial de nós X+Y, útil para localizar concentração de junções.}{fig:xyheat}
+
+\feature{FLO-08}{Crack tensor plot}
+Marque \control{Crack tensor plot}. Para segmento \(i\), comprimento \(\ell_i\), normal unitária \(\mathbf n_i\) e área \(A\) do envelope dos nós, defina
+\begin{equation}
+F^{(0)}=\sum_i\frac{\ell_i^2}{A},\qquad
+\mathbf F^{(m)}=\sum_i\frac{\ell_i^2}{A}\,\mathbf n_i^{\otimes m},
+\quad m=2,4,8.
+\end{equation}
+A projeção desenhada na direção \(\mathbf v\) é
+\(F_m(\mathbf v)=\sum_i(\ell_i^2/A)(\mathbf n_i\cdot\mathbf v)^m\).
+São descritores angulares ponderados por comprimento ao quadrado; ordens maiores evidenciam variações direcionais de modo diferente. Não correspondem a novas dimensões espaciais do afloramento.
+
+Run gera uma figura com ordens 0/2/4/8 e também aciona EZROSE, pois usa a família angular. O envelope precisa ter área positiva, inclusive para redes extraídas de imagem; uma linha única não permite esse cálculo. Polos usam a convenção de norte, arredondamento e flips própria da referência.
+\plotfig{cracktensor.png}{Projeções dos crack tensors SD11A. A curva de ordem zero fornece a referência isotrópica do peso.}{fig:crack}
+
+\feature{FLO-09}{Permeability plot (polar)}
+Marque \control{Permeability plot (polar)}. Escolha abertura fixa \(t\geq0\) ou escalada \(t_i=a\ell_i^b\), com fator \(0\leq a\leq0.1\), expoente \(0.5\leq b\leq1\), e \(0\leq\lambda\leq1\). Apenas os parâmetros do modo ativo são usados.
+
+O modelo de placas paralelas adotado calcula
+\begin{align}
+\mathbf P&=\sum_i\frac{t_i^3\ell_i}{A}\,\mathbf n_i\otimes\mathbf n_i,\\
+\mathbf K&=\frac{\lambda}{12}\left[\operatorname{tr}(\mathbf P)\mathbf I-\mathbf P\right],\qquad
+k(\mathbf v)=\mathbf v^{\!T}\mathbf K\mathbf v.
+\end{align}
+A área é o envelope dos nós, não automaticamente a área inteira da imagem. A curva polar mostra a projeção direcional; os autovalores fornecem máximos/mínimos principais. \(\mathbf K\) tem unidade de área. Sem calibração física, o resultado é pixel\(^{2}\) e não uma permeabilidade física em m\(^{2}\).
+
+Dobrar a abertura multiplica \(\mathbf K\) por oito; \(\lambda\) atua linearmente. Abertura zero ou \(\lambda=0\) gera tensor zero. \(\lambda\) é uma escolha do usuário, independente da contagem I/Y/X. A abertura é digitada na unidade corrente; mudar escala não converte automaticamente esse número. Para abertura escalada, a unidade de \(a\) depende de \(b\).
+
+No exemplo sem escala, com abertura fixa 0.001 pixel e \(\lambda=1\), os autovalores são aproximadamente \(2.8756\times10^{-13}\) e \(1.00643\times10^{-12}\) pixel\(^{2}\). São ilustração numérica, não estimativa física do material. Essa opção gera PNG e mensagens no console, sem um novo TXT próprio.
+\plotfig{permeability_polar.png}{Projeção polar de permeabilidade do SD11A sob abertura/\(\lambda\) ilustrativos.}{fig:permeability}
+
+\major{Wavelets 2D: escala, orientação e anisotropia}\label{sec:wavelets}
+\feature{WAV-01}{Run wavelet analysis}
+A análise busca estruturas orientadas em diferentes escalas de um raster da rede. Marque \control{Run wavelet analysis}, escolha Morlet ou Mexican Hat e informe listas de a, L e um incremento angular.
+\uifig{ui-wavelets.png}{Painel Wavelets. As listas são números separados por espaços, não expressões MATLAB.}{fig:ui-wavelets}
+
+\subsubsection{Parâmetros e roteiro inicial}
+Use \(a=32\), \(L=2\) e incremento \(90^\circ\) para acompanhar a figura deste manual. É uma demonstração curta, não uma recomendação de resolução para pesquisa. Uma grade mais fina pode usar a=16 32, L=2 4 e incremento 30, com custo maior.
+
+As listas a/L exigem inteiros positivos, separados por espaços; escreva \code{8 16 32}, não \code{8:8:32}. O incremento deve ser inteiro positivo divisor de \(180^\circ\), por exemplo 10, 20, 30, 45, 60 ou 90. O cálculo usa a razão anisotrópica \(r=1/L\); L=1 é isotrópico, podendo produzir orientação fisicamente indeterminada em empates.
+
+\subsubsection{Raster e núcleos}
+O raster mantém o contrato de 27 polegadas a 72 dpi: 1944\(\times\)1944 pixels, com margens e espessuras definidas. Traços de comprimento \(\geq45\%\) do maior usam 4 pontos; os demais, 1. Branco vira fundo zero na normalização. Escala física e norte não são introduzidos nas coordenadas desse raster.
+
+Para coordenadas centradas, rotacionadas e divididas por a, \((\xi,\eta)\), e \(q=(r\xi)^2+\eta^2\), os núcleos implementados têm as formas
+\begin{align}
+\psi_M&=\frac{\sqrt r}{a}\exp(-2\pi\mathrm i\eta)\exp(-q/2),\\
+\psi_H&=\frac{2-q}{a}\exp(-q/2).
+\end{align}
+A resposta é a convolução discreta da imagem sem sua média com a parte real do núcleo, calculada por FFT e recortada às dimensões originais. A resposta própria do núcleo conserva o termo complexo no caso Morlet; não é substituída por módulo ao quadrado.
+
+A normalização usada para a seleção é
+\begin{equation}
+WC(a,\theta,L)=\frac{2.5\,|W|}{a\,\max|W_{\mathrm{self}}|}.
+\end{equation}
+Para cada posição e a, guarda-se o maior WC entre as orientações e fatores. Empates numéricos de orientação usam a primeira escolha estável, conforme Q-12. A energia registrada é a soma dos quadrados da resposta. Isso descreve a implementação do port, não uma promessa de equivalência entre todas as definições de CWT da literatura.
+
+\subsubsection{Ler os quatro painéis e arquivos}
+Cada a gera um painel 2\(\times\)2: raster de entrada, mapa WC, rosa das orientações selecionadas e histograma de \(\log_{10}\) da frequência. A máscara é fixa e estrita:
+\begin{equation}WC>0.5\,\max(WC).
+\end{equation}
+Não há controle deslizante para esse limiar. A orientação ótima do raster é convertida para a representação axial da rosa; norte não entra, e flips seguem o contrato da família.
+
+Cada a grava também o TXT de theta. O raster intermediário tem nome fixo sem tag. O custo cresce aproximadamente com o produto entre quantidades de a, L e orientações, além do tamanho da FFT. O programa estima memória e limita essa família a 2 GiB de trabalho; diminuir a grade pode ser necessário. Não interprete o tamanho do arquivo de entrada TXT como previsão do custo da Wavelet.
+\plotfig{wavelet_a32.png}{SD11A, Morlet, a=32, L=2 e passo angular de 90 graus. A amostragem curta é ilustrativa; a barra WC não é probabilidade.}{fig:wavelet}
+
+\major{Graphs: perfis ALONG e FROM}\label{sec:graphs}
+Selecione primeiro uma linha na prévia. Clique \control{Select end points} e depois dois pontos distintos dentro do mapa, na ordem desejada. Escape ou botão direito cancelam a tentativa, preservando a última linha completa. Um segundo ponto igual ao primeiro precisa ser escolhido novamente. Cliques fora dos eixos são ignorados; Run fica desabilitado durante uma seleção incompleta.
+\uifig{ui-graphs.png}{Graphs combina seleção de linha e perfis. P21/P20 compartilham os círculos dessa linha.}{fig:ui-graphs}
+
+Entrada, escala, tipo, parâmetros Hough ou nova prévia limpam a linha; flips e norte a preservam. A linha das figuras deste capítulo vai de \((0,995.15)\) a \((1997.7,995.15)\); na GUI, a escolha é por cliques, de modo que pequenas diferenças são esperadas.
+
+\subsection{Definições geométricas}
+Para extremos \(\mathbf p_1\), \(\mathbf p_2\), vetor \(\mathbf d=(d_x,d_y)=\mathbf p_2-\mathbf p_1\) e \(D=\|\mathbf d\|\), ALONG usa o segmento finito e a distância da interseção ao ponto 1. FROM usa a reta infinita e a distância assinada de um ponto \((x,y)\):
+\begin{equation}
+d_\perp=\frac{d_y(x-x_1)-d_x(y-y_1)}{D}.
+\end{equation}
+Para linha horizontal da esquerda para a direita, pontos acima têm sinal negativo. Inverter a linha troca o sinal de FROM e a origem de ALONG. Norte e flips não corrigem os ângulos brutos desses perfis; os flips afetam seu mapa auxiliar.
+
+ALONG conserva um registro por segmento que intersecta a linha. Um traço sinuoso pode aparecer várias vezes; um vértice compartilhado pode gerar duas observações. Contatos collineares são excluídos. Não há ordenação/deduplicação automática. Sem encontros, os perfis ALONG informam ausência de dados, sem bloquear os demais.
+
+\feature{GRA-03}{ALONG: Trace length}
+Marque a opção após escolher a linha. Cada encontro recebe, no eixo Y, o comprimento total do traço correspondente; o eixo X mede distância ao ponto 1. Um mesmo valor pode se repetir por múltiplas interseções do mesmo traço. Isso não significa duplicação do TXT de entrada.
+\plotfig{tracelengthalonggraph.png}{Comprimento dos traços que intersectam a linha SD11A, ao longo do perfil.}{fig:tracealong}
+
+\feature{GRA-04}{ALONG: Segment length}
+Usa as mesmas interseções, mas desenha o comprimento do segmento encontrado, não do traço inteiro. Compare com o perfil anterior para perceber onde traços extensos foram subdivididos.
+\plotfig{segmentlengthalonggraph.png}{Comprimento dos segmentos intersectados pela linha de perfil.}{fig:segmentalong}
+
+\feature{GRA-05}{ALONG: Segment angle}
+Desenha o ângulo bruto do segmento em cada interseção. Agrupamentos podem apontar mudanças de família ao longo da linha; não são uma rosa local nem ângulos médios por janela.
+\plotfig{segmentanglealonggraph.png}{Ângulos brutos ao longo da linha SD11A.}{fig:anglealong}
+
+\feature{GRA-06}{ALONG: Estimated intensity, P21}
+Escolha \control{Number of scan circles} inteiro \(\geq2\). Nesta família, \(r=D/(2N)\), centros estão nas frações \((k+0.5)/N\) da linha e as abscissas vão de r a \(D-r\). Essa grade difere da grade retangular de Maps. O estimador é \(n/(4r)\) com a contagem finita já descrita.
+
+Selecionar P21 ou P20 produz, em conjunto, mapa de círculos e ambos os perfis, uma vez por Run. Use o mapa para conferir alcance e cobertura. O mapa identifica ponto 1/ponto 2 e conserva seus marcadores de cor correspondentes.
+\plotfig{graphtracemap.png}{Linha e círculos do perfil SD11A; o raio depende do comprimento da linha e de N.}{fig:graphmap}
+\plotfig{intensityalonggraph.png}{Intensidade estimada ao longo do perfil, 12 círculos.}{fig:graphintensity}
+
+\feature{GRA-07}{ALONG: Estimated density, P20}
+Usa os mesmos círculos e \(m/(2\pi r^2)\). O quadrado do raio é uma correção aprovada em Q-20; não se preservou o denominador linear em r da rotina Graphs legada. A unidade é inversa de área, consistente com Maps. P21 e P20 não são a mesma informação com escala diferente: contam eventos distintos.
+\plotfig{densityalonggraph.png}{Densidade estimada no mesmo perfil, com a normalização de área aprovada.}{fig:graphdensity}
+
+\feature{GRA-10}{FROM: Trace length}
+Cada traço contribui com seu centro a metade do percurso e comprimento total. A abscissa é a distância assinada desse centro à reta infinita; não exige interseção com o segmento de perfil. Não é distância da ponta mais próxima nem média de distâncias dos nós.
+\plotfig{tracelengthfromgraph.png}{Comprimentos de traços em função da distância assinada de seus centros.}{fig:tracefrom}
+
+\feature{GRA-11}{FROM: Segment length}
+Cada segmento contribui com seu centro geométrico e seu comprimento. O mesmo traço pode aparecer em diversas posições por ter vários segmentos. A reta infinita permite estudar uma faixa lateral, mas não impõe uma janela de largura finita.
+\plotfig{segmentlengthfromgraph.png}{Comprimentos dos segmentos em função de sua distância à reta de referência.}{fig:segmentfrom}
+
+\feature{GRA-12}{FROM: Segment angle}
+Usa os centros dos segmentos e seus ângulos brutos. Observe o sinal de distância ao comparar os dois lados da linha; inverter a linha inverte esse sinal. Graphs gera PNG, sem TXT próprio para os perfis.
+\plotfig{segmentanglefromgraph.png}{Orientações de segmentos nos dois lados da linha SD11A.}{fig:anglefrom}

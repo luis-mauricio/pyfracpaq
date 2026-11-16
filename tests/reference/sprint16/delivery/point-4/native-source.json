@@ -1,0 +1,116 @@
+{
+  "version": "0.9.0rc1",
+  "project_installed": false,
+  "source": "/tmp/pyfracpaq-git-source-pvzw62om/download/pyfracpaq-0.9.0rc1",
+  "entrypoints": [
+    {
+      "mode": "script",
+      "version": "0.9.0rc1",
+      "module": "/private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/script/pyfracpaq",
+      "prefix": "/private/tmp/pyfracpaq-source-validation-cah_c5sm/native-source-env",
+      "python": "3.13.18",
+      "source_execution": true,
+      "network": "Python socket connect/connect_ex/create_connection and DNS denied",
+      "network_guard_selftest": true,
+      "network_attempts": [],
+      "verified_package_files": 110,
+      "readers": [
+        "TXT",
+        "SVG",
+        "Hough"
+      ],
+      "gui_preview_and_run": true,
+      "exports": [
+        {
+          "name": "FracPaQ2D_histoangle_Offline ação.png",
+          "sha256": "ffde6c427fe6d61b8bf7e7c088eeb28b4b1d79e3e3b9509721d8c2eabf067866"
+        },
+        {
+          "name": "FracPaQ2D_histosegmentlength_Offline ação.png",
+          "sha256": "3cacf688114a3f7695d5925bd2eb0dace71ce974afd2a2fb98ecd52a99b86df3"
+        },
+        {
+          "name": "FracPaQ2D_histotracelength_Offline ação.png",
+          "sha256": "59bbd8515361ebcae4fdad3f37a162e4e30972cd4f7f1c13ff614c6aab1eec8e"
+        },
+        {
+          "name": "FracPaQ2D_tracemap_Offline ação.png",
+          "sha256": "b8ec43c288bdbaf055c80f23db010e6cfd7ad32b8b224101cba1ee1412bc99eb"
+        },
+        {
+          "name": "FracPaQ2DEZROSE_Offline ação.txt",
+          "sha256": "423ad576d129f0de3694718e2d2458d4c4b86c6955e0b3d8758bca66025f0140"
+        },
+        {
+          "name": "FracPaQ2Dsegmentangleslengths_Offline ação.txt",
+          "sha256": "ac9ff164df4eb9ba171f060a573cf6dde4d888644a27f539ee84050081d104af"
+        },
+        {
+          "name": "FracPaQ2Dsegmentlengths_Offline ação.txt",
+          "sha256": "f447e1f74253d0203776bea9eb20ee1393ae4645f6ea1ccc1ef372d17dc270f7"
+        },
+        {
+          "name": "FracPaQ2Dtracelengths_Offline ação.txt",
+          "sha256": "95c39eed8d52ed727c8bc15d27443510ec82cf42edda107332e265d6e8a1f590"
+        }
+      ],
+      "stdout": "PyFracPaQ 0.9.0rc1 — FracPaQ version 2.8 reference\nInput changed. Click Preview.\nInput changed. Click Preview.\nReading node file...\nReading node file...\nCollecting fracture trace data...\nTraces: 2; segments: 3; nodes: 5; units: pixels\nReady. Click Run to generate maps and graphs.\nRunning...\nLength stats...\nTotal number of traces found: 2\nTotal number of segments found: 3\nNumber of traces excluded (censored): 0\nNumber of segments excluded (censored): 0\nNumber of traces retained: 2; segments retained: 3\nMinimum trace length:     4.00 pixels\nMaximum trace length:     7.00 pixels\nAverage trace length:     5.50 pixels\nMinimum segment length:     3.00 pixels\nMaximum segment length:     4.00 pixels\nAverage segment length:     3.67 pixels\nSaved Lengths TXT: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/script/FracPaQ2Dsegmentlengths_Offline ação.txt\nSaved Lengths TXT: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/script/FracPaQ2Dtracelengths_Offline ação.txt\nSaved Lengths TXT: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/script/FracPaQ2Dsegmentangleslengths_Offline ação.txt\nSaved EZROSE TXT: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/script/FracPaQ2DEZROSE_Offline ação.txt\nRunning Traces, segments...\nRunning Histogram of lengths...\nRunning Histogram of angles...\nCalculations completed.\nSaving PNG: FracPaQ2D_tracemap...\nSaved PNG: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/script/FracPaQ2D_tracemap_Offline ação.png\nSaving PNG: FracPaQ2D_histotracelength...\nSaved PNG: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/script/FracPaQ2D_histotracelength_Offline ação.png\nSaving PNG: FracPaQ2D_histosegmentlength...\nSaved PNG: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/script/FracPaQ2D_histosegmentlength_Offline ação.png\nSaving PNG: FracPaQ2D_histoangle...\nSaved PNG: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/script/FracPaQ2D_histoangle_Offline ação.png\nCompleted. Selected outputs have been generated.\nDELIVERY:{\"version\": \"0.9.0rc1\", \"module\": \"/private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-a\\u00e7\\u00e3o-we1bafq2/script/pyfracpaq\", \"prefix\": \"/private/tmp/pyfracpaq-source-validation-cah_c5sm/native-source-env\", \"python\": \"3.13.18\", \"source_execution\": true, \"network\": \"Python socket connect/connect_ex/create_connection and DNS denied\", \"network_guard_selftest\": true, \"network_attempts\": [], \"verified_package_files\": 110, \"readers\": [\"TXT\", \"SVG\", \"Hough\"], \"gui_preview_and_run\": true, \"exports\": [{\"name\": \"FracPaQ2D_histoangle_Offline a\\u00e7\\u00e3o.png\", \"sha256\": \"ffde6c427fe6d61b8bf7e7c088eeb28b4b1d79e3e3b9509721d8c2eabf067866\"}, {\"name\": \"FracPaQ2D_histosegmentlength_Offline a\\u00e7\\u00e3o.png\", \"sha256\": \"3cacf688114a3f7695d5925bd2eb0dace71ce974afd2a2fb98ecd52a99b86df3\"}, {\"name\": \"FracPaQ2D_histotracelength_Offline a\\u00e7\\u00e3o.png\", \"sha256\": \"59bbd8515361ebcae4fdad3f37a162e4e30972cd4f7f1c13ff614c6aab1eec8e\"}, {\"name\": \"FracPaQ2D_tracemap_Offline a\\u00e7\\u00e3o.png\", \"sha256\": \"b8ec43c288bdbaf055c80f23db010e6cfd7ad32b8b224101cba1ee1412bc99eb\"}, {\"name\": \"FracPaQ2DEZROSE_Offline a\\u00e7\\u00e3o.txt\", \"sha256\": \"423ad576d129f0de3694718e2d2458d4c4b86c6955e0b3d8758bca66025f0140\"}, {\"name\": \"FracPaQ2Dsegmentangleslengths_Offline a\\u00e7\\u00e3o.txt\", \"sha256\": \"ac9ff164df4eb9ba171f060a573cf6dde4d888644a27f539ee84050081d104af\"}, {\"name\": \"FracPaQ2Dsegmentlengths_Offline a\\u00e7\\u00e3o.txt\", \"sha256\": \"f447e1f74253d0203776bea9eb20ee1393ae4645f6ea1ccc1ef372d17dc270f7\"}, {\"name\": \"FracPaQ2Dtracelengths_Offline a\\u00e7\\u00e3o.txt\", \"sha256\": \"95c39eed8d52ed727c8bc15d27443510ec82cf42edda107332e265d6e8a1f590\"}]}\n",
+      "stderr": "This plugin does not support propagateSizeHints()\nThis plugin does not support raise()\nThis plugin does not support propagateSizeHints()\nThis plugin does not support propagateSizeHints()\nThis plugin does not support propagateSizeHints()\nThis plugin does not support propagateSizeHints()\n"
+    },
+    {
+      "mode": "module",
+      "version": "0.9.0rc1",
+      "module": "/private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/module/pyfracpaq",
+      "prefix": "/private/tmp/pyfracpaq-source-validation-cah_c5sm/native-source-env",
+      "python": "3.13.18",
+      "source_execution": true,
+      "network": "Python socket connect/connect_ex/create_connection and DNS denied",
+      "network_guard_selftest": true,
+      "network_attempts": [],
+      "verified_package_files": 110,
+      "readers": [
+        "TXT",
+        "SVG",
+        "Hough"
+      ],
+      "gui_preview_and_run": true,
+      "exports": [
+        {
+          "name": "FracPaQ2D_histoangle_Offline ação.png",
+          "sha256": "ffde6c427fe6d61b8bf7e7c088eeb28b4b1d79e3e3b9509721d8c2eabf067866"
+        },
+        {
+          "name": "FracPaQ2D_histosegmentlength_Offline ação.png",
+          "sha256": "3cacf688114a3f7695d5925bd2eb0dace71ce974afd2a2fb98ecd52a99b86df3"
+        },
+        {
+          "name": "FracPaQ2D_histotracelength_Offline ação.png",
+          "sha256": "59bbd8515361ebcae4fdad3f37a162e4e30972cd4f7f1c13ff614c6aab1eec8e"
+        },
+        {
+          "name": "FracPaQ2D_tracemap_Offline ação.png",
+          "sha256": "b8ec43c288bdbaf055c80f23db010e6cfd7ad32b8b224101cba1ee1412bc99eb"
+        },
+        {
+          "name": "FracPaQ2DEZROSE_Offline ação.txt",
+          "sha256": "423ad576d129f0de3694718e2d2458d4c4b86c6955e0b3d8758bca66025f0140"
+        },
+        {
+          "name": "FracPaQ2Dsegmentangleslengths_Offline ação.txt",
+          "sha256": "ac9ff164df4eb9ba171f060a573cf6dde4d888644a27f539ee84050081d104af"
+        },
+        {
+          "name": "FracPaQ2Dsegmentlengths_Offline ação.txt",
+          "sha256": "f447e1f74253d0203776bea9eb20ee1393ae4645f6ea1ccc1ef372d17dc270f7"
+        },
+        {
+          "name": "FracPaQ2Dtracelengths_Offline ação.txt",
+          "sha256": "95c39eed8d52ed727c8bc15d27443510ec82cf42edda107332e265d6e8a1f590"
+        }
+      ],
+      "stdout": "PyFracPaQ 0.9.0rc1 — FracPaQ version 2.8 reference\nInput changed. Click Preview.\nInput changed. Click Preview.\nReading node file...\nReading node file...\nCollecting fracture trace data...\nTraces: 2; segments: 3; nodes: 5; units: pixels\nReady. Click Run to generate maps and graphs.\nRunning...\nLength stats...\nTotal number of traces found: 2\nTotal number of segments found: 3\nNumber of traces excluded (censored): 0\nNumber of segments excluded (censored): 0\nNumber of traces retained: 2; segments retained: 3\nMinimum trace length:     4.00 pixels\nMaximum trace length:     7.00 pixels\nAverage trace length:     5.50 pixels\nMinimum segment length:     3.00 pixels\nMaximum segment length:     4.00 pixels\nAverage segment length:     3.67 pixels\nSaved Lengths TXT: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/module/FracPaQ2Dsegmentlengths_Offline ação.txt\nSaved Lengths TXT: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/module/FracPaQ2Dtracelengths_Offline ação.txt\nSaved Lengths TXT: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/module/FracPaQ2Dsegmentangleslengths_Offline ação.txt\nSaved EZROSE TXT: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/module/FracPaQ2DEZROSE_Offline ação.txt\nRunning Traces, segments...\nRunning Histogram of lengths...\nRunning Histogram of angles...\nCalculations completed.\nSaving PNG: FracPaQ2D_tracemap...\nSaved PNG: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/module/FracPaQ2D_tracemap_Offline ação.png\nSaving PNG: FracPaQ2D_histotracelength...\nSaved PNG: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/module/FracPaQ2D_histotracelength_Offline ação.png\nSaving PNG: FracPaQ2D_histosegmentlength...\nSaved PNG: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/module/FracPaQ2D_histosegmentlength_Offline ação.png\nSaving PNG: FracPaQ2D_histoangle...\nSaved PNG: /private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-ação-we1bafq2/module/FracPaQ2D_histoangle_Offline ação.png\nCompleted. Selected outputs have been generated.\nDELIVERY:{\"version\": \"0.9.0rc1\", \"module\": \"/private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-codigo-a\\u00e7\\u00e3o-we1bafq2/module/pyfracpaq\", \"prefix\": \"/private/tmp/pyfracpaq-source-validation-cah_c5sm/native-source-env\", \"python\": \"3.13.18\", \"source_execution\": true, \"network\": \"Python socket connect/connect_ex/create_connection and DNS denied\", \"network_guard_selftest\": true, \"network_attempts\": [], \"verified_package_files\": 110, \"readers\": [\"TXT\", \"SVG\", \"Hough\"], \"gui_preview_and_run\": true, \"exports\": [{\"name\": \"FracPaQ2D_histoangle_Offline a\\u00e7\\u00e3o.png\", \"sha256\": \"ffde6c427fe6d61b8bf7e7c088eeb28b4b1d79e3e3b9509721d8c2eabf067866\"}, {\"name\": \"FracPaQ2D_histosegmentlength_Offline a\\u00e7\\u00e3o.png\", \"sha256\": \"3cacf688114a3f7695d5925bd2eb0dace71ce974afd2a2fb98ecd52a99b86df3\"}, {\"name\": \"FracPaQ2D_histotracelength_Offline a\\u00e7\\u00e3o.png\", \"sha256\": \"59bbd8515361ebcae4fdad3f37a162e4e30972cd4f7f1c13ff614c6aab1eec8e\"}, {\"name\": \"FracPaQ2D_tracemap_Offline a\\u00e7\\u00e3o.png\", \"sha256\": \"b8ec43c288bdbaf055c80f23db010e6cfd7ad32b8b224101cba1ee1412bc99eb\"}, {\"name\": \"FracPaQ2DEZROSE_Offline a\\u00e7\\u00e3o.txt\", \"sha256\": \"423ad576d129f0de3694718e2d2458d4c4b86c6955e0b3d8758bca66025f0140\"}, {\"name\": \"FracPaQ2Dsegmentangleslengths_Offline a\\u00e7\\u00e3o.txt\", \"sha256\": \"ac9ff164df4eb9ba171f060a573cf6dde4d888644a27f539ee84050081d104af\"}, {\"name\": \"FracPaQ2Dsegmentlengths_Offline a\\u00e7\\u00e3o.txt\", \"sha256\": \"f447e1f74253d0203776bea9eb20ee1393ae4645f6ea1ccc1ef372d17dc270f7\"}, {\"name\": \"FracPaQ2Dtracelengths_Offline a\\u00e7\\u00e3o.txt\", \"sha256\": \"95c39eed8d52ed727c8bc15d27443510ec82cf42edda107332e265d6e8a1f590\"}]}\n",
+      "stderr": "This plugin does not support propagateSizeHints()\nThis plugin does not support raise()\nThis plugin does not support propagateSizeHints()\nThis plugin does not support propagateSizeHints()\nThis plugin does not support propagateSizeHints()\nThis plugin does not support propagateSizeHints()\n"
+    }
+  ],
+  "scope": "Runtime ZIP copy without tests/scripts/reference MATLAB; source imports only, no project metadata installed, Preview/Run and exports, Python network guards. Qt offscreen; separate native VS Code check records the real launch."
+}

@@ -1,0 +1,142 @@
+% !TeX root = ../pyfracpaq-user-manual-en.tex
+\major{Fluid flow: topology, crack tensors and permeability}\label{sec:flow}
+These three features describe different aspects of the network. An I/Y/X diagram is not a hydraulic solution, and the permeability factor \(\lambda\) is not automatically calculated from it.
+\uifig{ui-fluid.png}{Fluid flow controls: topological classification, tensors and aperture settings for permeability estimation.}{fig:ui-fluid}
+
+\feature{FLO-01}{I-Y-X connectivity}
+Select \control{I-Y-X connectivity}. Enter \control{Number of blocks in maps} (integer \(\geq2\)) and \control{Distance to count I as Y} (\(\geq0\), in the current length unit). Use 12 and 2.0 pixels for the illustrated SD11A example.
+
+Classification follows encounters between traces, rather than simply counting TXT vertices:
+\begin{itemize}
+\item \textbf{I}: an isolated endpoint with one branch.
+\item \textbf{Y}: a three-branch junction, including an exact T and a real endpoint close to another segment within the tolerance.
+\item \textbf{X}: a four-branch crossing in the adopted model.
+\end{itemize}
+Proximity is Euclidean and inclusive, measured to a finite segment of another trace. An undershoot may produce an inferred Y. An internal vertex is not an endpoint. An exact T is Y even at zero tolerance. Original geometry is not rewritten to perform classification. Collinear overlaps and self-intersections do not automatically constitute inter-trace junctions.
+
+Triangle fractions are
+\begin{equation}f_I=\frac{N_I}{N_I+N_Y+N_X},\quad f_Y=\frac{N_Y}{N_I+N_Y+N_X},\quad f_X=\frac{N_X}{N_I+N_Y+N_X}.
+\end{equation}
+The triangle summarises proportions, but spatially different networks may share those fractions. Sanderson and Nixon~\cite{sanderson} discuss the topological framework; the port's specific proximity rules are those stated above.
+
+Run produces four figures: an I/Y/X node map, an X+Y heatmap, an I heatmap and the triangle, plus one TXT. Under the illustrated settings, SD11A has \(N_I=606\), \(N_Y=224\), \(N_X=90\). TXT rows retain the order I, X, Y; do not swap the last two classes when reading it.
+\plotfig{IYXnodes_traces.png}{SD11A node classification. Counts depend on tolerance and digitisation.}{fig:iyxnodes}
+\plotfig{IYXtriangle.png}{The SD11A topology triangle. Square/circular markers use ordinary geometric shapes.}{fig:triangle}
+
+Heatmaps show \emph{counts} per block, rather than area-normalised densities. The block count along the longer side follows the aspect ratio. The historical bin construction uses the coordinate range of each non-empty class, so the maps do not necessarily represent identical spatial cells. Absent classes are handled without fabricating nodes.
+\plotfig{XYnodes_traces_heat.png}{Spatial X+Y node counts, useful for locating concentrations of junctions.}{fig:xyheat}
+
+\feature{FLO-08}{Crack tensor plot}
+Select \control{Crack tensor plot}. For segment \(i\), length \(\ell_i\), unit normal \(\mathbf n_i\) and node-envelope area \(A\), define
+\begin{equation}
+F^{(0)}=\sum_i\frac{\ell_i^2}{A},\qquad
+\mathbf F^{(m)}=\sum_i\frac{\ell_i^2}{A}\,\mathbf n_i^{\otimes m},
+\quad m=2,4,8.
+\end{equation}
+The projection plotted in direction \(\mathbf v\) is
+\(F_m(\mathbf v)=\sum_i(\ell_i^2/A)(\mathbf n_i\cdot\mathbf v)^m\).
+These are angular descriptors weighted by squared length. Higher orders emphasise directional variation differently; they do not represent additional spatial dimensions of the outcrop.
+
+Run produces one figure containing orders 0/2/4/8 and also triggers EZROSE because it uses the angular family. The envelope requires positive area, including for networks extracted from images; a single line cannot support this calculation. Poles use the reference's own north, rounding and flip convention.
+\plotfig{cracktensor.png}{SD11A crack tensor projections. The order-zero curve provides an isotropic reference for the weight.}{fig:crack}
+
+\feature{FLO-09}{Permeability plot (polar)}
+Select \control{Permeability plot (polar)}. Choose a fixed aperture \(t\geq0\), or scaled apertures \(t_i=a\ell_i^b\), with factor \(0\leq a\leq0.1\), exponent \(0.5\leq b\leq1\) and \(0\leq\lambda\leq1\). Only parameters belonging to the active mode are used.
+
+The adopted parallel-plate model calculates
+\begin{align}
+\mathbf P&=\sum_i\frac{t_i^3\ell_i}{A}\,\mathbf n_i\otimes\mathbf n_i,\\
+\mathbf K&=\frac{\lambda}{12}\left[\operatorname{tr}(\mathbf P)\mathbf I-\mathbf P\right],\qquad
+k(\mathbf v)=\mathbf v^{\!T}\mathbf K\mathbf v.
+\end{align}
+Area refers to the node envelope, not automatically the whole image. The polar curve is a directional projection; eigenvalues give principal maxima/minima. \(\mathbf K\) has area units. Without physical calibration, results are in pixel\(^{2}\), not physical permeability in m\(^{2}\).
+
+Doubling aperture multiplies \(\mathbf K\) by eight; \(\lambda\) acts linearly. Zero aperture or \(\lambda=0\) gives the zero tensor. \control{Lambda factor} is a user choice independent of I/Y/X counts. Enter aperture in the current length unit: scaling does not automatically convert its numerical input. For scaled apertures, the unit of \(a\) depends on \(b\).
+
+In the unscaled example with fixed aperture 0.001 pixel and \(\lambda=1\), eigenvalues are approximately \(2.8756\times10^{-13}\) and \(1.00643\times10^{-12}\) pixel\(^{2}\). These illustrate the calculation, rather than estimating physical material properties. This option produces a PNG and console messages, without its own new TXT.
+\plotfig{permeability_polar.png}{SD11A polar permeability projection under illustrative aperture and \(\lambda\) settings.}{fig:permeability}
+
+\major{Wavelets 2D: scale, orientation and anisotropy}\label{sec:wavelets}
+\feature{WAV-01}{Run wavelet analysis}
+The analysis searches for oriented structures at different scales in a network raster. Select \control{Run wavelet analysis}, choose Morlet or Mexican Hat and enter lists of a, L and an angular increment.
+\uifig{ui-wavelets.png}{The Wavelets panel. Lists contain space-separated numbers, not MATLAB expressions.}{fig:ui-wavelets}
+
+\subsubsection{Parameters and a first run}
+Use \(a=32\), \(L=2\) and a \(90^\circ\) increment to follow this manual's figure. This is a short demonstration, not a research-resolution recommendation. A finer grid might use a=16 32, L=2 4 and an increment of 30, at greater cost.
+
+The a/L lists require positive, space-separated integers: enter \code{8 16 32}, not \code{8:8:32}. The increment must be a positive integer divisor of \(180^\circ\), such as 10, 20, 30, 45, 60 or 90. The calculation uses anisotropy ratio \(r=1/L\). L=1 is isotropic and may give a physically indeterminate orientation in a tie.
+
+\subsubsection{Raster and kernels}
+The raster retains the 27-inch, 72-dpi contract: 1944\(\times\)1944 pixels with defined margins and line widths. Traces at least 45\% as long as the longest use 4 points; other traces use 1. White becomes zero background through normalisation. Physical scaling and north are not inserted into raster coordinates.
+
+For centred coordinates rotated and divided by a, \((\xi,\eta)\), and \(q=(r\xi)^2+\eta^2\), the implemented kernels have the forms
+\begin{align}
+\psi_M&=\frac{\sqrt r}{a}\exp(-2\pi\mathrm i\eta)\exp(-q/2),\\
+\psi_H&=\frac{2-q}{a}\exp(-q/2).
+\end{align}
+The response is the discrete convolution of the demeaned image with the real kernel, calculated by FFT and cropped to the original dimensions. For Morlet, the kernel's self-response retains the complex term; it is not replaced by magnitude squared.
+
+The normalisation used in selection is
+\begin{equation}
+WC(a,\theta,L)=\frac{2.5\,|W|}{a\,\max|W_{\mathrm{self}}|}.
+\end{equation}
+At each position and a, the maximum WC over orientations and factors is retained. Numerical orientation ties use the first stable choice, as approved in Q-12. Recorded energy is the sum of squared response values. This describes the port's implementation, rather than claiming equivalence between all CWT definitions in the literature.
+
+\subsubsection{Reading the panels and files}
+Each a produces a 2\(\times\)2 panel: input raster, WC map, a rose of selected orientations and a histogram of \(\log_{10}\) frequency. The mask is fixed and strict:
+\begin{equation}WC>0.5\,\max(WC).
+\end{equation}
+There is no threshold slider. The optimum raster orientation is converted to the rose's axial representation. North is not used, and flips follow this family's convention.
+
+Each a also writes a theta TXT. The intermediate raster has a fixed, untagged name. Work grows approximately with the product of the numbers of a, L and orientations, as well as FFT size. The application estimates memory and limits this family to a 2-GiB working budget; reducing the grid may be necessary. Input TXT size is not a useful predictor of Wavelet cost.
+\plotfig{wavelet_a32.png}{SD11A with Morlet, a=32, L=2 and a 90-degree angular step. The coarse sampling is illustrative; the WC colourbar is not a probability scale.}{fig:wavelet}
+
+\major{Graphs: ALONG and FROM profiles}\label{sec:graphs}
+First select a line in the preview. Click \control{Select end points}, then two distinct points inside the map in the desired order. Escape or right-click cancels the attempt while preserving the last complete line. A coincident second point must be chosen again. Clicks outside the axes are ignored; Run is disabled during an incomplete selection.
+\uifig{ui-graphs.png}{Graphs combines line selection and profiles. P21/P20 share the circles along that line.}{fig:ui-graphs}
+
+Changing input, scaling, type or Hough parameters, or making a new preview, clears the line; flips and north preserve it. The illustrated line runs from \((0,995.15)\) to \((1997.7,995.15)\). Points are selected by clicks in the GUI, so small differences are expected.
+
+\subsection{Geometric definitions}
+For endpoints \(\mathbf p_1\), \(\mathbf p_2\), vector \(\mathbf d=(d_x,d_y)=\mathbf p_2-\mathbf p_1\) and \(D=\|\mathbf d\|\), ALONG uses the finite line and distance from the intersection to point 1. FROM uses the infinite line and signed distance from a point \((x,y)\):
+\begin{equation}
+d_\perp=\frac{d_y(x-x_1)-d_x(y-y_1)}{D}.
+\end{equation}
+For a horizontal line running left to right, points above it have negative distance. Reversing the line reverses the FROM sign and changes the ALONG origin. North and flips do not correct the raw angles in these profiles; flips affect their auxiliary map.
+
+ALONG retains one record per intersecting segment. A curved trace may appear several times and a shared vertex can yield two observations. Collinear contacts are excluded. Results are not automatically sorted or deduplicated. If no intersections exist, ALONG profiles state that without blocking the other analyses.
+
+\feature{GRA-03}{ALONG: Trace length}
+Select the option after choosing a line. At each encounter, Y is the total length of the corresponding trace and X is distance from point 1. Repeated intersections with a single trace may repeat the same length; this is not duplication of the input TXT.
+\plotfig{tracelengthalonggraph.png}{Total lengths of traces intersecting the SD11A profile line.}{fig:tracealong}
+
+\feature{GRA-04}{ALONG: Segment length}
+The same intersections are used, but Y is the encountered segment's length, rather than whole-trace length. Compare this profile with the previous one to see where long traces have been subdivided.
+\plotfig{segmentlengthalonggraph.png}{Lengths of segments intersected by the profile line.}{fig:segmentalong}
+
+\feature{GRA-05}{ALONG: Segment angle}
+This plots raw segment angle at each intersection. Clusters can suggest changing orientation sets along the line; the profile is not a local rose or a window-averaged angle.
+\plotfig{segmentanglealonggraph.png}{Raw segment angles along the SD11A profile.}{fig:anglealong}
+
+\feature{GRA-06}{ALONG: Estimated intensity, P21}
+Choose an integer \control{Number of scan circles} \(\geq2\). Here, \(r=D/(2N)\), centres occur at fractions \((k+0.5)/N\) along the line and abscissae run from r to \(D-r\). This differs from the rectangular Maps grid. The estimator is \(n/(4r)\), using the finite counting rules already described.
+
+Selecting either P21 or P20 produces the circle map and both profiles once per Run. Inspect the map for coverage. The map identifies Point 1/Point 2 with the corresponding marker colours.
+\plotfig{graphtracemap.png}{The SD11A profile line and circles. Radius depends on line length and N.}{fig:graphmap}
+\plotfig{intensityalonggraph.png}{Estimated intensity along the profile with 12 circles.}{fig:graphintensity}
+
+\feature{GRA-07}{ALONG: Estimated density, P20}
+This uses the same circles and \(m/(2\pi r^2)\). Squaring the radius is the approved Q-20 correction; the legacy Graphs denominator linear in r was not retained. Units are inverse area, consistent with Maps. P21 and P20 count different events, rather than expressing the same quantity at different scales.
+\plotfig{densityalonggraph.png}{Estimated density along the same profile, with the approved area normalisation.}{fig:graphdensity}
+
+\feature{GRA-10}{FROM: Trace length}
+Each trace contributes its halfway-along-path centre and total length. X is the signed centre-to-infinite-line distance; intersection with the finite profile is unnecessary. This is not the nearest-endpoint distance or the mean distance of its vertices.
+\plotfig{tracelengthfromgraph.png}{Trace lengths against signed distance from their centres to the reference line.}{fig:tracefrom}
+
+\feature{GRA-11}{FROM: Segment length}
+Each segment contributes its geometric centre and length. A trace may appear at several distances because it contains several segments. The infinite line supports comparing its two sides but does not define a finite-width sampling strip.
+\plotfig{segmentlengthfromgraph.png}{Segment lengths against signed distance to the reference line.}{fig:segmentfrom}
+
+\feature{GRA-12}{FROM: Segment angle}
+This uses segment centres and their raw angles. Observe the sign convention when comparing sides: reversing the line reverses the sign. Graphs produces PNGs without a dedicated profile TXT.
+\plotfig{segmentanglefromgraph.png}{Segment orientations on both sides of the SD11A reference line.}{fig:anglefrom}

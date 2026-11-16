@@ -1,42 +1,16 @@
 """Eight-sample opaque primitives for native-style scientific raster plots.
 
-Samples are composited before resolving the image. This matters for repeated
-endpoints and overlapping markers: repeatedly blending already resolved alpha
-sprites darkens edges. All coordinates come from live Matplotlib transforms;
+Line and surface samples are composited before resolving the image. Markers
+use ordinary Matplotlib paths separately. All coordinates use live transforms;
 no scientific reference image or MATLAB runtime is read here.
 """
 
-from functools import lru_cache
 from math import ceil, floor
 
 import numpy as np
 from matplotlib.collections import LineCollection
 
-from pyfracpaq.plots.markers import SAMPLES, materials
-
-
-@lru_cache(maxsize=64)
-def primitive_samples(key):
-    """Preserve measured coverage, ordering subsamples by primitive geometry."""
-    material=materials()[key]
-    pad=(material.shape[0]-1)//2
-    yy,xx=np.mgrid[-pad:pad+1,-pad:pad+1]
-    x=xx[...,None]+SAMPLES[:,0];y=yy[...,None]+SAMPLES[:,1]
-    shape,size,_,_=key.split('_')
-    extent=float(size)*600/72*(.8 if shape=='s' else 1)
-    radius=(extent-1)/2 if shape=='s' else extent/2
-    distance=np.maximum(abs(x),abs(y)) if shape=='s' else np.hypot(x,y)
-    edge_count=np.rint(material[:,:,0].astype(float)*8/255).astype(int)
-    face_count=np.rint(material[:,:,1].astype(float)*8/255).astype(int)
-    # Assign face samples first, followed by the measured number of edge
-    # samples nearest the hollow primitive's stroke. Exact coverage is retained
-    # for every pixel; sample ownership at intersections is geometric.
-    rank=np.argsort(np.argsort(distance,axis=2),axis=2)
-    face=rank<face_count[...,None]
-    score=np.where(face,np.inf,abs(distance-radius))
-    rank=np.argsort(np.argsort(score,axis=2),axis=2)
-    edge=rank<edge_count[...,None]
-    return edge,face,pad
+from pyfracpaq.plots.markers import SAMPLES
 
 
 class SampleScene:
@@ -95,17 +69,6 @@ class SampleScene:
             self.depths[pixels[rows],samples]=values
         self.samples[pixels[rows],samples]=self.colour_id(colour)
 
-    def marker(self,point,key,edge_colour,face_colour=None):
-        edge,face,pad=primitive_samples(key)
-        cx=int(np.floor(point[0]+.5));cy=self.canvas_height-int(np.ceil(point[1]-.5))
-        x0=max(self.left,cx-pad);x1=min(self.right,cx+pad+1)
-        y0=max(self.top,cy-pad);y1=min(self.bottom,cy+pad+1)
-        if x0>=x1 or y0>=y1:return
-        tile=self.samples.reshape(self.height,self.width,8)[y0-self.top:y1-self.top,x0-self.left:x1-self.left]
-        selection=(slice(y0-cy+pad,y1-cy+pad),slice(x0-cx+pad,x1-cx+pad))
-        if face_colour is not None:tile[face[selection]]=self.colour_id(face_colour)
-        tile[edge[selection]]=self.colour_id(edge_colour)
-
     def triangle(self,vertices,colour,*,depth=None,bias_pixels=0,bias_depth=1e-5):
         """Rasterize a projected opaque face before its wire edges."""
         points=np.asarray(vertices,dtype=float).copy()
@@ -150,46 +113,21 @@ class SampleScene:
                                  np.ascontiguousarray(image[::-1]))
 
 
-def draw_markers(renderer,gc,points,shape,extent,width,edge,face):
-    """Resolve a whole marker series once, including overlapping observations."""
-    if abs(renderer.dpi-600)>1e-8:return False
-    size=extent*72/renderer.dpi/(.8 if shape=='s' else 1)
-    weight=width*72/renderer.dpi
-    key=f'{shape}_{size:g}_{weight:g}_{int(face is not None)}'
-    if key not in materials() or edge[3]!=1 or (face is not None and face[3]!=1):
-        return False
-    if not len(points):return True
-    pad=primitive_samples(key)[2]+2
-    left,bottom=points.min(axis=0)-pad;right,top=points.max(axis=0)+pad
-    colours=[edge] if face is None else [edge,face]
-    scene=SampleScene(renderer,(left,bottom,right,top),colours)
-    for point in points:scene.marker(point,key,edge,face)
-    scene.draw(gc)
-    return True
-
-
 class MultisampleLines(LineCollection):
     """Live vector collections with multisampled Agg export and Qt repainting."""
 
-    native_markers=None
-
     def draw(self,renderer):
-        if self.native_markers is not None and type(renderer).__name__=='RendererAgg' and abs(renderer.dpi-600)<1e-8:
-            return
         if type(renderer).__name__!='RendererAgg' or abs(renderer.dpi-600)>1e-8:
             return super().draw(renderer)
         self.draw_samples(renderer)
 
-    def draw_samples(self,renderer,markers=None):
+    def draw_samples(self,renderer):
         colours=list(self.get_colors())
-        if markers is not None:colours.extend(markers.get_edgecolors())
         if not colours or any(c[3]!=1 for c in colours):
             return super().draw(renderer)
         extra=0
         if getattr(self,'_raster_extend_strokes',False):
             extra=float(self.get_linewidths().max())*renderer.dpi/144+2
-        if markers is not None:
-            extra=float(np.sqrt(markers.get_sizes()).max())*renderer.dpi/72+4
         bounds=self.axes.bbox.extents+[-extra,-extra,extra,extra]
         scene=SampleScene(renderer,bounds,colours)
         transform=self.get_transform();widths=self.get_linewidths();inks=self.get_colors()
@@ -197,15 +135,6 @@ class MultisampleLines(LineCollection):
             points=transform.transform(path)
             for start,end in zip(points[:-1],points[1:]):
                 scene.line(start,end,widths[i%len(widths)]*renderer.dpi/72,inks[i%len(inks)])
-        if markers is not None:
-            points=markers.get_offset_transform().transform(markers.get_offsets())
-            paths=markers.get_paths();sizes=np.sqrt(markers.get_sizes());edges=markers.get_edgecolors()
-            weights=markers.get_linewidths()
-            for i,point in enumerate(points):
-                if not np.isfinite(point).all():continue
-                shape='s' if len(paths[i%len(paths)].vertices)==5 else 'o'
-                key=f'{shape}_{sizes[i%len(sizes)]:g}_{weights[i%len(weights)]:g}_0'
-                scene.marker(point,key,edges[i%len(edges)])
         gc=renderer.new_gc()
         try:scene.draw(gc)
         finally:gc.restore()

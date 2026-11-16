@@ -13,6 +13,7 @@ def main() -> None:
     parser.add_argument('--output-dir', type=Path, required=True)
     parser.add_argument('--width', type=int, default=1250)
     parser.add_argument('--height', type=int, default=739)
+    parser.add_argument('--input', type=Path, default=ROOT/'tests/fixtures/nodes/mixed.txt')
     args = parser.parse_args()
     os.environ.setdefault('QT_QPA_PLATFORM', 'offscreen')
     os.environ.setdefault('MPLCONFIGDIR', str(Path('/private/tmp/pyfracpaq-matplotlib')))
@@ -32,8 +33,12 @@ def main() -> None:
                'available_size': [window.screen().availableGeometry().width(),
                                   window.screen().availableGeometry().height()],
                'maximized': window.isMaximized()}
-    window.resize(args.width, args.height)
     window.show()
+    app.processEvents()
+    # The first show applies the requested full-screen-width startup policy.
+    # Review captures deliberately exercise the explicit --width/--height.
+    window.resize(args.width, args.height)
+    app.processEvents()
     entries = []
     violations = []
 
@@ -98,13 +103,13 @@ def main() -> None:
             actual = (widget.x(), widget.y(), widget.width(), widget.height())
             macro_deviations[name] = max(abs(a - b) for a, b in zip(actual, expected))
         write_json(output / 'manifest.json', {
-            'scope': 'Qt offscreen captures; not MATLAB reference or visual parity approval.',
+            'scope': f'Qt {app.platformName()} captures; not MATLAB reference or visual parity approval.',
             'platform': app.platformName(), 'qt_scale_factor': os.environ.get('QT_SCALE_FACTOR', '1'),
             'device_pixel_ratio': window.devicePixelRatioF(), 'logical_size': logical,
             'startup': startup, 'navigation_geometry': navigation,
             'navigation_border': window.controls['uibgTabButtons'].property('referenceBorder'),
-            'font': app.font().family(), 'input': 'tests/fixtures/nodes/mixed.txt',
-            'input_sha256': sha256(ROOT / 'tests/fixtures/nodes/mixed.txt'),
+            'font': app.font().family(), 'input': str(args.input.resolve()),
+            'input_sha256': sha256(args.input.resolve()),
             'captures': entries, 'text_fit_violations': violations,
             'focus_check': {'control': 'edit_FilenameTag', 'has_focus': tag_has_focus},
             'macro_geometry': {
@@ -124,7 +129,7 @@ def main() -> None:
 
     def start() -> None:
         capture('initial')
-        window.controls['edit_filename'].setText(str(ROOT / 'tests/fixtures/nodes/mixed.txt'))
+        window.controls['edit_filename'].setText(str(args.input.resolve()))
         window.job_completed.connect(lambda kind: QTimer.singleShot(0, lambda: ready(kind)))
         window.preview()
 

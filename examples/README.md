@@ -1,9 +1,10 @@
 # Exemplos locais válidos
 
-Todos estes arquivos foram construídos pelo projeto, sob MIT. [Procedência/hashes](provenance.json). Não são resultados atribuídos ao MATLAB nem cópias de fotografias sem licença individual.
+Os exemplos sintéticos abaixo foram construídos pelo projeto, sob MIT. SD11A.txt é uma cópia sem alterações do exemplo da distribuição FracPaQ MATLAB 2.8, com os créditos MIT preservados. [Procedência/hashes](provenance.json). Não são resultados atribuídos ao MATLAB nem cópias de fotografias sem licença individual.
 
 | Arquivo | Uso |
 | --- | --- |
+| SD11A.txt | Exemplo principal do manual: 445 traços, 1076 segmentos e 1521 nós; sem escala física fornecida |
 | rectangles.txt | Duas fraturas fechadas de 40×40; blocos, variograma, Maps e perfis. O bloco rasterizado branco mede 1444 pixels² após a espessura da linha, não 1600 pixels² vetoriais |
 | profiles.txt | Traço dobrado e segmento vertical; linha sugerida (-5.5,0)→(5.5,0) para ALONG/FROM/círculos |
 | colours.svg | Polyline/line sem transformação, dois strokes hexadecimais; conversão ao lado do SVG e TXT por cor |

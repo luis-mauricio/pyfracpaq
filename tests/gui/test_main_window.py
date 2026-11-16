@@ -10,6 +10,7 @@ from PySide6.QtCore import QPoint, Qt
 from PySide6.QtWidgets import QCheckBox, QGroupBox, QLineEdit, QWidget
 from shiboken6 import isValid
 
+from pyfracpaq import CONTACT_EMAIL,RELEASE_DATE,__version__
 from pyfracpaq.analysis import AnalysisRegistry, AnalysisSpec
 from pyfracpaq.app import configure_application
 from pyfracpaq.gui import MainWindow
@@ -62,7 +63,9 @@ def test_all_reference_objects_types_defaults_and_opening_state(window):
             assert [widget.itemText(i) for i in range(widget.count())] == spec['String']
             assert widget.currentIndex() == 1
         elif style in ('text', 'pushbutton'):
-            assert widget.text().strip() == reference_text(spec['String']).strip(), name
+            expected=(f'Version {__version__}, {RELEASE_DATE}   E-mail: {CONTACT_EMAIL}'
+                      if name=='text4' else reference_text(spec['String']).strip())
+            assert widget.text().strip() == expected, name
         elif isinstance(widget, QGroupBox):
             assert widget.title().replace('&&', '&') == reference_text(spec.get('Title', ''))
     assert c['edit_filename'].isEnabled()

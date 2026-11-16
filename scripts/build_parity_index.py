@@ -185,7 +185,7 @@ def outputs_for(key: str, groups: dict[str, list[str]]) -> str:
 
 def inventory_rows() -> dict[str, list[str]]:
     rows = {}
-    for line in (ROOT / 'FUNCIONALIDADES_FRACPAQ.md').read_text().splitlines():
+    for line in (ROOT / 'docs/planning/FUNCIONALIDADES_FRACPAQ.md').read_text().splitlines():
         match = re.match(r'^\| ((?:UI|IN|MAP|LEN|ANG|FLO|WAV|GRA|EXP|AUX|Q)-\d{2}) \|', line)
         if match:
             key = match[1]
@@ -204,7 +204,7 @@ def main() -> None:
     implementation_path = directory / 'implementation.json'
     implementations = (json.loads(implementation_path.read_text())['items']
                        if implementation_path.exists() else {})
-    prd = (ROOT / 'PRD.md').read_text()
+    prd = (ROOT / 'docs/planning/PRD.md').read_text()
     figure_section = prd.split('### RF-09.1')[1].split('### RF-09.2')[0]
     figures = []
     groups = {}

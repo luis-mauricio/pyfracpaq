@@ -1,0 +1,47 @@
+% !TeX program = xelatex
+% Compile in this directory: latexmk -xelatex pyfracpaq-user-manual.tex
+\documentclass[11pt,a4paper,oneside,parskip=half]{scrartcl}
+\newcommand{\ManualTitle}{Manual do usuário}
+\newcommand{\ManualDate}{Novembro de 2026}
+\newcommand{\ManualAuthor}{Documentação do PyFracPaQ}
+\newcommand{\ManualSubject}{Uso, teoria e exemplos SD11A}
+\usepackage[brazilian]{babel}
+\input{manual-style.tex}
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{13mm}
+\includegraphics[width=.54\linewidth]{logo.png}\par
+\vspace{18mm}
+{\Huge\sffamily\bfseries\color{ink} Manual do usuário\par}
+\vspace{5mm}
+{\Large Uso, fundamentos e exemplos com SD11A\par}
+\vspace{10mm}
+{\large PyFracPaQ 0.9.0rc1\par}
+{\large Novembro de 2026\par}
+\vspace{12mm}
+\includegraphics[width=.60\linewidth]{tracemap.png}
+\vfill
+{\small Implementação Python baseada no FracPaQ MATLAB 2.8.\par
+Código executado localmente; não requer MATLAB.\par
+Contato: \href{mailto:luismauricio@me.com}{luismauricio@me.com}.}
+\end{titlepage}
+\section*{Como usar este manual}
+\addcontentsline{toc}{section}{Como usar este manual}
+Comece pelas Seções~\ref{sec:inicio}--\ref{sec:roteiro} para preparar o ambiente, entender os dados e executar o primeiro exemplo. Depois, consulte a seção correspondente à aba desejada. Cada recurso apresenta os controles, uma interpretação do cálculo e as saídas. Os nomes dos controles permanecem em inglês para coincidir com a interface.
+
+O exemplo principal é \code{examples/SD11A.txt}, copiado sem alterações da distribuição FracPaQ fornecida pelo mantenedor. Os resultados ilustrados usam pixels, sem calibração física. Não interprete esses pixels como metros nem os parâmetros ilustrativos de tensões e abertura como medições dessa amostra.
+
+As figuras analíticas são resultados Python revisados; as capturas da interface mostram os widgets reais em uma janela de ilustração de 1250\,\(\times\)\,739 pixels. A janela real abre com a largura útil da tela, e aparência/tamanho podem variar com o monitor. Nas páginas seguintes, os painéis das abas foram recortados apenas para facilitar a leitura.
+
+\begin{note}{Escopo científico}
+O programa descreve traços bidimensionais. Intensidade, conectividade, tensores e permeabilidade são estimativas sob as hipóteses apresentadas; não constituem simulação completa de fluxo ou reconstrução de fraturas 3D. As correções aprovadas em relação ao legado estão resumidas na Seção~\ref{sec:limites}. A referência MATLAB é a versão 2.8; 0.9.0rc1 é a versão deste port Python.
+\end{note}
+\clearpage
+\tableofcontents
+\input{chapters/01-inicio}
+\input{chapters/02-maps}
+\input{chapters/03-lengths-angles}
+\input{chapters/04-flow-wavelets-graphs}
+\input{chapters/05-saidas-referencia}
+\end{document}

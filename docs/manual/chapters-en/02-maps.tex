@@ -1,0 +1,105 @@
+% !TeX root = ../pyfracpaq-user-manual-en.tex
+\major{Maps: geometry, sampling and stability}\label{sec:maps}
+This tab combines trace/segment maps, attributes, circular sampling and stability. Select only the required options. Show nodes and Show scan circles modify related outputs; they are not independent analyses.
+\uifig{ui-maps.png}{The Maps panel. Stability parameters become active when an option in that family is selected.}{fig:ui-maps}
+
+\feature{MAP-01}{Traces, segments and Show nodes}
+\textbf{How to use it.} Select \control{Traces, segments}. Enable \control{Show nodes} to draw the input vertices over the traces, then click Run. A polyline represents a mapped fracture; its straight portions are segments, rather than necessarily distinct fractures.
+
+\textbf{Interpretation.} Use this map to identify import problems, isolated traces, excessive segmentation and boundaries. Displaying nodes reveals where a trace has been subdivided. Coincident geometric nodes do not by themselves establish hydraulic connection or a topological class.
+
+\textbf{Output.} One trace map. For SVG inputs containing several colour groups, applicable map selections also add the multicolour map once per Run.
+\plotfig{tracemap.png}{SD11A traces with geometric nodes, using the illustrated configuration. The domain remains in pixels.}{fig:traces}
+
+\feature{MAP-04}{Traces, by length}
+All segments belonging to a trace receive the colour associated with its total length \(L\). If a fracture was split across several TXT lines, each line has its own length; interpretation therefore depends on digitisation.
+
+Select \control{Traces, by length} and Run. The Lengths histogram need not be selected. Length follows the path, including curved traces. Physical scaling transforms the values before analysis.
+\plotfig{tracelengthmap.png}{SD11A coloured by total trace length.}{fig:tracelength}
+
+\feature{MAP-05}{Segments, by length}
+Select \control{Segments, by length} to colour each straight portion by its own \(\ell_i\). Compare it with the trace-length map: a long fracture can contain short segments because of its shape or digitisation resolution.
+
+\begin{note}{Colour convention in length maps}
+The port retains the approved legacy convention: the colour index is linear in \(L/L_{\max}\), whereas the colourbar is logarithmic. A line's colour must therefore not be interpreted as an exact logarithmic transformation of length. Use the Lengths TXT files for quantitative values.
+\end{note}
+\plotfig{segmentlengthmap.png}{SD11A coloured by segment length; note the difference from whole-trace length.}{fig:segmentlength}
+
+\feature{MAP-06}{Segments, by strike}
+Select \control{Segments, by strike} to map segment orientation. Set \control{Rotate Y-axis from N (°)} in the relevant tab and apply flips to match the data reference. Colour represents corrected axial orientation, not flow direction.
+
+Parallel segments digitised in opposite directions belong to the same axial orientation. Rounding and the representation of zero as \(180^\circ\) in some routines follow the reference convention. Use the histogram/rose to summarise orientation sets, rather than relying solely on the map's visual appearance.
+\plotfig{segmentstrikemap.png}{SD11A strike map with north zero and no flips.}{fig:strike}
+
+\subsection{Circular sampling principles}\label{sec:circular}
+Sampling uses circular windows within the domain. \control{Number of scan circles} specifies the number along the shorter side, not the total number. The minimum is 2. For shorter extent \(D\) and value \(N\), spacing is \(D/(N+1)\) and \(r=0.99D/[2(N+1)]\); the number along the longer side follows the aspect ratio.
+
+Within each circle, \(n\) counts contacts between finite segments and the circumference, whereas \(m\) counts segment endpoints strictly inside. Tangency contributes once. Events belonging to different segments are counted per segment, so a shared internal vertex can contribute twice to \(m\). A segment wholly inside contributes \(n=0\), while its endpoints contribute to \(m\).
+\begin{equation}
+\widehat P_{21}=\frac{n}{4r},\qquad
+\widehat P_{20}=\frac{m}{2\pi r^2}.
+\label{eq:circle}
+\end{equation}
+Units are length\(^{-1}\) and length\(^{-2}\). These are local estimators affected by sampling, rather than exact measurements of the entire network inside the window. Smaller circles increase spatial resolution and variability; larger circles smooth the comparison.
+
+The console separately reports global measures:
+\begin{equation}
+P_{21}^{\mathrm{global}}=\frac{\sum_i\ell_i}{A},\qquad
+P_{20}^{\mathrm{global}}=\frac{N_{\mathrm{segments}}}{A}.
+\end{equation}
+They are not averages of the windows. Global density uses \emph{segments}, rather than traces. For unscaled SD11A, the values are approximately 0.01552785 pixel\(^{-1}\) and 0.000271113 pixel\(^{-2}\).
+
+\feature{MAP-07}{Estimated Intensity, P21}
+Select the option, enter \(N\) and, to inspect coverage, enable \control{Show scan circles}. Run produces the P21 map; Show scan circles adds a window map shared with P20. Use 12 for the example, giving \(r\simeq75.6474\) pixels.
+
+Hotter colours indicate larger estimator values, not fracture probabilities. Scaling or circle-count changes affect units/resolution; compare maps using consistent parameters. Both intensity and density TXT files are written even if only one map is requested.
+\plotfig{intensityP21.png}{Local P21 for SD11A with 12 circles along the shorter side.}{fig:intensity}
+
+\feature{MAP-08}{Estimated Density, P20 and Show scan circles}
+Operation follows P21 but uses the second expression in~\eqref{eq:circle}. Inspect the circle map to check observation locations and whether the grid suits the geological scale of interest. All-zero matrices remain zero. A representable display range is assigned to the colourbar without fabricating estimates.
+
+The port uses the approved finite geometric counting in Q-20. A segment is not counted merely because its infinite supporting line intersects the circle outside that segment. This can change legacy results.
+\plotfig{densityP20.png}{Local P20 for SD11A. Its inverse-area units and endpoint population differ from P21.}{fig:density}
+\plotfig{scancircle.png}{The windows used by the estimators; one circle map is shared by P21/P20.}{fig:scan}
+
+\subsection{Stability map principles}\label{sec:stress}
+The four stability selections share parameters. Enter \(\sigma_1\geq\sigma_2>0\) in MPa, the azimuth of \(\sigma_1\), cohesion \(C_0\geq0\), pore pressure \(P_f\geq0\) and friction coefficient \(\mu\geq0\). Compression is positive. Aperture/permeability parameters are not used in this family.
+
+For corrected orientation \(\beta\), stress azimuth \(\psi\) and relative pole \(\alpha=\beta+90^\circ-\psi\),
+\begin{align}
+\sigma_n&=\left|\frac{\sigma_1+\sigma_2}{2}
++\frac{\sigma_1-\sigma_2}{2}\cos(2\alpha)\right|,\\
+|\tau|&=\left|-\frac{\sigma_1-\sigma_2}{2}\sin(2\alpha)\right|.
+\label{eq:stress}
+\end{align}
+Maps use segment orientations. Stability roses evaluate the centres of fixed \(10^\circ\) bins, independently of the bin width in Angles. Each selection generates a map and rose; the family produces one shared Mohr diagram per Run.
+
+\feature{MAP-11}{Slip tendency}
+\begin{equation}T_s=\frac{|\tau|}{\sigma_n}.\end{equation}
+This is the dimensionless ratio of shear stress to total normal stress. Map/rose colours are normalised by the largest \(T_s\) among corrected segments; the normalised colour is not the physical value of \(T_s\). If the maximum is zero, normalisation remains zero. Comparing colours between samples with different maxima can be misleading.
+
+Select \control{Slip tendency}, enter the stress parameters and Run. This selection also writes segmentdata with raw coordinates/angles; that TXT does not contain \(\sigma_n\), \(\tau\) or \(T_s\).
+\plotfig{sliptendencymap.png}{SD11A slip tendency under illustrative stresses, rather than stresses inferred from this sample.}{fig:slip}
+
+\feature{MAP-12}{Dilation tendency}
+\begin{equation}T_d=\frac{\sigma_1-\sigma_n}{\sigma_1-\sigma_2}.\end{equation}
+Select \control{Dilation tendency}. This describes favourable orientation for dilation under the supplied stress state; it does not calculate actual fracture aperture. It requires \(\sigma_1>\sigma_2\). Equal stresses make the denominator undefined and are rejected for this selection.
+\plotfig{dilationtendencymap.png}{Dilation tendency and the spatial distribution of orientations in SD11A.}{fig:dilation}
+
+\feature{MAP-13}{Fracture susceptibility}
+\begin{equation}S_f=\sigma_n-P_f-\frac{|\tau|-C_0}{\mu}.\end{equation}
+Select \control{Fracture susceptibility}; \(\mu>0\) is required. \(S_f\) has MPa units and expresses the pore-pressure margin in the adopted criterion. Smaller values indicate a smaller margin under the supplied assumptions. The colour scale uses the minimum/maximum of corrected segments. A constant field receives one colour/tick without changing physical values.
+\plotfig{fracsuscepmap.png}{SD11A fracture susceptibility with zero cohesion/pore pressure and friction 0.6.}{fig:suscept}
+
+\feature{MAP-14}{Critically stressed fractures}
+The classification criterion is
+\begin{equation}|\tau|\geq\mu(\sigma_n-P_f)+C_0.\label{eq:csf}\end{equation}
+Select \control{Critically stressed fractures}. Equality is included in both map and rose, as approved in Q-17. This is a classification under the chosen stress state, not an observation of active fractures. The illustrative parameters do not justify geomechanical conclusions about the sampling site without independent evidence.
+\plotfig{CSFmap.png}{SD11A CSF classification. The count of critically stressed fractures depends on the parameters, not geometry alone.}{fig:csf}
+
+\subsection{Stability roses and the Mohr diagram}
+Roses combine orientation frequency with stability evaluated at the bin centre. The \(\sigma_1\) line provides a visual reference. Petal size expresses frequency and colour encodes the indicator; these two quantities must not be confused.
+\plotfig{sliptendencyrose.png}{Slip tendency rose: frequency by bin and colour normalised using the observed range.}{fig:stressrose}
+
+The total-stress circle is centred at \((\sigma_1+\sigma_2)/2\) with radius \((\sigma_1-\sigma_2)/2\). For \(P_f>0\), the effective-stress circle shifts the centre by \(-P_f\). The failure envelope is \(\tau=\mu\sigma_n'+C_0\). The port retains the reference framing and does not add individual segment points \((\sigma_n,\tau)\). Their absence does not indicate an import failure.
+\plotfig{Mohrplot.png}{The Mohr diagram shared by the stability family. With zero pore pressure, no separate effective-stress circle is drawn.}{fig:mohr}

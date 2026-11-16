@@ -1,6 +1,8 @@
 # ADR0018 — Auditoria de paridade e candidato local
 
-Data:14/11/2026. Estado: adotada para a auditoria S16; **homologação visual integral aberta**. Versão do port:0.1.0rc1; referência científica/interface: FracPaQ2.8. Este documento atualiza os estados históricos das ADR0001/0003/0004/0005/0007 sem transformar medições antigas em capturas nativas.
+**Substituição do requisito de entrega em 16/11/2026:** a [ADR 0019](0019-source-distribution.md) registra a distribuição pelo código no GitHub, com clone/download e execução pela pasta, sem instalação do pacote. As seções de empacotamento desta ADR permanecem históricas.
+
+Data original: 14/11/2026; atualização de estado: 16/11/2026. **S16-04 concluída nos contextos documentados**, após aceites visuais e verificação dos marcadores. Fontes atuais: **0.9.0rc1**; pacote local anterior: **0.1.0rc1**; referência científica/interface: **FracPaQ 2.8**. Interface, exportações e documentação estão concluídas nos pontos 1–3 da S16-09; geração/validação dos novos pacotes e disponibilização aguardam os pontos 4–5. [Notas consolidadas e diferenças aceitas](../releases/0.9.0rc1.md), [estado da entrega](../parity/sprint-16-delivery.md). Os resultados abaixo descrevem a auditoria de 14/11 e não são medições da nova distribuição. Esta ADR atualiza os estados históricos das ADR0001/0003/0004/0005/0007 sem transformar medições antigas em capturas nativas.
 
 ## Referência efetivamente executada
 
@@ -14,7 +16,7 @@ Hough passa a quantizar a coordenada positiva do bin, depois de somar o offset d
 
 Q05 recebeu aprovação explícita do usuário nesta auditoria: “Aprovo a Q-05.” O MATLAB real confirmou a mudança de população descrita na pergunta: traços[4,4,4] no legado versus[7,5] no port; segmentos[3,4,5] e ângulos alinhados. Preservar o critério de extremidades e máscara única já implementado; nenhum seletor científico novo. Q10 preserva exatamente as convenções do fonte, incluindo wrap único e TXT bruto distinto do EZROSE corrigido; uma futura unificação continua exigindo decisão científica.
 
-A GUI usa Helvetica, identificada nos controles da captura nativa; fallback explícito Arial/DejaVu Sans se ausente. Os plots continuam usando Arial, também aplicada nas chamadas MATLAB comparáveis. A janela mantém a proporção1250×739 e abertura limitada ao monitor pedidas pelo usuário/PRD. O batch MATLAB abre1702×739 neste Mac por conversão das unidades characters; esse tamanho não substitui o requisito de abertura do port nem serve para declarar uma comparação de screenshots com tolerância de2px.
+A GUI usa Helvetica, identificada nos controles da captura nativa; fallback explícito Arial/DejaVu Sans se ausente. Os plots continuam usando Arial, também aplicada nas chamadas MATLAB comparáveis. Na auditoria original, a janela usava a superfície1250×739 e abertura limitada ao monitor. **A abertura foi posteriormente alterada por solicitação do usuário:** largura útil total incluindo bordas, altura limitada a739 pixels lógicos/área disponível e redimensionamento livre, verificados no ponto1 da S16-09. O batch MATLAB abre1702×739 neste Mac por conversão das unidades characters; esse tamanho não serve para declarar uma comparação de screenshots com tolerância de2px.
 
 Histogramas/Lengths e mapas básicos recebem os retângulos nativos, os histogramas recebem ticks/formatação/grade mais próximos da referência, os títulos básicos descem2,5pt e barras de strike usam ticks de20°; rosas de estabilidade reservam8pt para separar o título da anotação de azimute vertical. A geometria e a distância fixa das barras exigidas pelo usuário/AGENTS permanecem sob o helper compartilhado. Essas alterações não mudam dados, bins, paletas ou normalizações.
 
@@ -26,6 +28,8 @@ Mesma tag substitui o mesmo nome; tags diferentes coexistem; intermediários fix
 
 O wheel0.1.0rc1 é candidato **local**, acompanhado dos pins, avisos, hashes e wheelhouse macOS arm64. A instalação limpa usa CPython3.13, sem acesso ao índice; os dois entrypoints foram executados fora da árvore fonte com conexões/DNS impedidos. O VS Code foi usado de fato, além das configurações entregues. Windows/Linux foram retirados desta execução por instrução explícita do usuário; não são plataformas certificadas.
 
-## Critérios que continuam impedindo homologação
+## Critérios históricos e resolução posterior
 
-O SSIM continua ≥0,98 por região comparável, com semântica/arrays corretos. A comparação exploratória preserva RGB, dimensões4724×4724, data_range255, diferenças e regiões fixas, sem máscaras, redimensionamento ou aumento de tolerância. Há falhas reais em títulos, ticks, margens, rosas e áreas com barras. A disponibilidade dos53 arquivos e a passagem da suíte não fecham esse critério. A revisão por contexto de todas as famílias, regiões independentes de textos/legendas/barras e os ajustes restantes continuam necessários para uma release homologada.
+Em14/11, o critério SSIM≥0,98 por região comparável ainda tinha falhas em títulos, ticks, margens, rosas e áreas com barras. A disponibilidade dos53 arquivos e a passagem da suíte não fechavam esse critério. A comparação preservava RGB, dimensões4724×4724, data_range255, diferenças e regiões fixas, sem máscaras, redimensionamento ou aumento de tolerância.
+
+Em16/11, a revisão numérica/semântica por família foi concluída e o usuário aprovou os cinco títulos, as duas vistas Hough e os16 detalhes atuais após a troca dos marcadores. As métricas originais abaixo de0,98 permanecem como aceites visuais explícitos ou alterações autorizadas verificadas, sem reclassificação como igualdade. Os11 critérios da [S16-04](../../tests/reference/sprint16/final/status.json) estão satisfeitos. Essa conclusão não certifica a instalação dos futuros pacotes0.9.0rc1; a validação da nova distribuição pertence ao ponto4.

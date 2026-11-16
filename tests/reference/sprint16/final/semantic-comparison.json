@@ -1,0 +1,6082 @@
+{
+  "method": "Native metadata comparison with explicit prior scientific decisions. Production artists constructed from the verified computation cache; no exports changed. Palette samples use 64 interior native PNG samples, nearest exact production LUT entry and monotonic direction (RGB distance <=2).",
+  "implementation": {
+    "pyfracpaq/__init__.py": "544535f4952c1ef24798b752d68697c1efdd44503f1e13b688ff73e04517f735",
+    "pyfracpaq/__main__.py": "8676a429c316292a45dfb6573fcba189cd13aeec716bf028b391505812dadc84",
+    "pyfracpaq/analysis/__init__.py": "55734bf037fefd36cd4253fc2d02b0c626c76442c50659d454ba08ee4a3dae3d",
+    "pyfracpaq/analysis/angles.py": "856f29206f3aea92bd879cab6284c0e682d411f611e99db18827513e738975a5",
+    "pyfracpaq/analysis/auxiliary.py": "3fb2e02e89d844d6229fa63e24c60fe289c876e03e5a978170935cad39bbc819",
+    "pyfracpaq/analysis/blocks.py": "0e4e86361afae58091c2b90c5f79a9ad2f95423f2dac77c5974f8ba48c5271ce",
+    "pyfracpaq/analysis/circular.py": "a55209fc8aa5317c33de9dafa363f1acc36657aa5f21ec9165f0deadfa22f8df",
+    "pyfracpaq/analysis/compatibility.py": "f4cb8e0dea707513189266e913b269e233298dfba0852d543379567dd85c6b51",
+    "pyfracpaq/analysis/connectivity.py": "ba39bf53398d24145f998631b09aa8f5653d6141c78ba02ecc72285dd6da721b",
+    "pyfracpaq/analysis/hough.py": "b7365dbe55f41032255fe1538f81536d79b163d90ed45be836b047bf5a9c3dda",
+    "pyfracpaq/analysis/ks.py": "a89702de55653cf1258a7dcf3db4d0731b411a95a578ad8c9aea3eabbdd02c5f",
+    "pyfracpaq/analysis/lengths.py": "b927c3216ae1192b682674cd6dc6e0294c54f2e720a6fe6957dcfb3df176747e",
+    "pyfracpaq/analysis/maps.py": "54414f6efbc788d5d6e085e0c3018ce58d7c17e0aa8abf40be6d7928f4bc4140",
+    "pyfracpaq/analysis/mle.py": "aa60f3f1b0409d9c4c4efd722f0ea72f2330fbb56656b762a5bd41f2f3593d59",
+    "pyfracpaq/analysis/palettes.py": "e3b03fe9f0a4f20af0bdec80afee33db902dc7647c8be889d71f594837308fba",
+    "pyfracpaq/analysis/preprocess.py": "abc603313a5e5b2ff7158536e936d2779625c9ba152f7ed8d1d7fc6558c9d0d1",
+    "pyfracpaq/analysis/profiles.py": "2e65174358d59ae79061688b4647fbeeac7e085e86ed830f77e3ed9c6915ebc3",
+    "pyfracpaq/analysis/registry.py": "f9cfc173129b692df5dded0f8203c3ad2176b2e48c80d9be9d9450376d19608e",
+    "pyfracpaq/analysis/roses.py": "a9054a0b334667c8fda516873f7f328e4664ffc4a93c1f6436f18817c8f42e20",
+    "pyfracpaq/analysis/stability.py": "b5d7a973a38eb2e797df53e3cb3e3cbffa7571c5d33e9d4524d96c93b9fcaf33",
+    "pyfracpaq/analysis/tensors.py": "4b4fcc59c86f64dd281b7f73d2a7205de57aabd34bf3ab1a5e0ed46c91c0ce83",
+    "pyfracpaq/analysis/variogram.py": "c13c42ebf9c097735b79e1d9a9169d139bcf4b54fd82fc94907ca3e527fbb7e5",
+    "pyfracpaq/analysis/wavelets.py": "fb2702f0b90c2622958a31220d5baa9bb6458f99b5f70aa946fe9998238b9e13",
+    "pyfracpaq/app.py": "42084bf54bc25e53c9010790fdf28468139e37168093a3de2718c453f48e627a",
+    "pyfracpaq/domain/__init__.py": "994040f608488a3ac5d5252c9e9d76884a434096420117af196685bb6f0bef07",
+    "pyfracpaq/domain/construction.py": "95b8eb40852845c7fd8ee45257721ffc58af39c78cd09fcbc0ca51cc45229000",
+    "pyfracpaq/domain/execution.py": "4a1c65f5bc740b1fb3b7326c1abe547b24815b887c1d3a1b8169a49ecccb8053",
+    "pyfracpaq/domain/models.py": "c1f05c5680e795e5d615c9e086b01a07a281b993a91d84d268be44b4997e93f0",
+    "pyfracpaq/geometry/__init__.py": "8075b128c5f7edccf01a11dfaf779b58ca1652ed7f101cb8186cb53ded9fdbb7",
+    "pyfracpaq/geometry/circles.py": "712fcdd9d3a18c57a97d799cbf7eed2b85b3a4881524e008f74a7333779caed1",
+    "pyfracpaq/geometry/intersections.py": "0de7e3f38af61225c01bcea4ff9b8306f60858191592f198782175e72a204dcb",
+    "pyfracpaq/geometry/primitives.py": "7dd3732ad9e0199d5480f3278cfd4e38a06d0f37739359e12838f5a86f56664f",
+    "pyfracpaq/geometry/profiles.py": "36a14b8008fb36f064af862421cd427356c3ede3195aef67e5c514d9a90550a5",
+    "pyfracpaq/gui/__init__.py": "56cbb40e51b5a4468d919bbed3f78c71c14960f1d21d94de03159b659be3a06e",
+    "pyfracpaq/gui/controls.py": "3bf956417c508027ad981d340694e5dc6365b7125fb463bbf3069b6e5b434578",
+    "pyfracpaq/gui/figures.py": "780d226f8485340b22bde18c9683ef2dfba14bae6523b1848766e8781f94dad3",
+    "pyfracpaq/gui/layout.py": "fc21bf2bf9dfa3446a767b04214184bacd65da837b149074f217d65fc044e754",
+    "pyfracpaq/gui/main_window.py": "d8b2258e3e631f8e81e66cc21ca9bd508be23e1c93ba75f2570eda547c284465",
+    "pyfracpaq/gui/profile_selection.py": "58b8df0f89f2407bf0057aaa20eb8968e642ee78cdb0f57bc3af3e54f8826748",
+    "pyfracpaq/gui/style.py": "7eb26371c4832c6847550e89eadfc0bf3905706e56b6d288f9e143dfc02b16ba",
+    "pyfracpaq/gui/wavelet_dialog.py": "9526f3e4469373e57fb4e159b07c498ddd1e399f0ee65f2c8d3beb1f644f9879",
+    "pyfracpaq/io/__init__.py": "834f3abe34a659ff646749ddc5c7c0e177f1063e2e9daf00315609505b065c5e",
+    "pyfracpaq/io/angles.py": "2c1c88fd66118cf3c9ac3061fd3c12f898651fe3ce864baf947575717aefed90",
+    "pyfracpaq/io/block_raster.py": "57522ba6d3964b0fa7a07cf53c619f1b64152e90837a3d9235ef7b1395f8bf43",
+    "pyfracpaq/io/circular.py": "fc97df44232fada87b7adb6bc76a38921f0fcb251161530bc4bc94783d4ec824",
+    "pyfracpaq/io/colours.py": "414f9d3bd289c909c3feaf4469fb8d29735b5e923d40e59424c67fb3a50b9ff6",
+    "pyfracpaq/io/connectivity.py": "22d361d1716e9a86f9b721131f66d75910d9ab058299f8cc72e3eff8a3d681e2",
+    "pyfracpaq/io/figures.py": "7892794e3eb9995c868a5c998f47319c33653d900a6b39238fb04b3e09f3306b",
+    "pyfracpaq/io/images.py": "80b13b2013ca09c9822fe84f467d931ebb0341cd7c189216ba9122efe6a90432",
+    "pyfracpaq/io/lengths.py": "0abc5a94a7a3dcdb1cb22e8615159bc2c0c2e67216e3d13e8edd9aa0097734b6",
+    "pyfracpaq/io/move.py": "1982f47ebe13c9c250af27487e77513b5252aa1ead0e31dffde3c9f9263f8d11",
+    "pyfracpaq/io/nodes.py": "c8b0d925ed71eee44068ad11b959671238d2779b4bfb50478c481804b8c2483b",
+    "pyfracpaq/io/stability.py": "7403248551d623c532cbcc9a5714a79024d00d016c5ed7ee39de548f0a0f7726",
+    "pyfracpaq/io/svg.py": "0b5d9d7a26f6c6f070fdbb2fb4ebaa6e13319e648f608fc908f014321329579f",
+    "pyfracpaq/io/text.py": "b0a50c886dbc55bc60ed99b2bf7f914207474065131977d3e1c8f777aded0a04",
+    "pyfracpaq/io/wavelets.py": "bdebc44169fa0bbb7fe40948b6629fe9cb55a3ff49ffd7665e1febdf946f116c",
+    "pyfracpaq/plots/__init__.py": "bae0847b94c213816a7502948a562ac9b2d8de0ec1d0603c7ae51db7d32744aa",
+    "pyfracpaq/plots/angles.py": "4e204e555c03d24bb38c8a5c540f1b3fe561be956e7385f551f46e6ba040da39",
+    "pyfracpaq/plots/annotations.py": "ba8f3f74df809d2149f81369106520c2e829b24c439165ccbeec787ddef03799",
+    "pyfracpaq/plots/auxiliary.py": "bbd66d1229876e4c57472747fe48977b3d92c41a9bf06b40f4ed878193f2e00d",
+    "pyfracpaq/plots/blocks.py": "a9d887187d7fda1b1eb979c21ef21524c5b8d186203e59855e7045abd90d0d0d",
+    "pyfracpaq/plots/circular.py": "c74d75c96ee809263e09c0e3cd3d35421032b182a9e96e427cd87ddfdfd15cba",
+    "pyfracpaq/plots/colourbars.py": "f9f15b01c0058238b3aa209378321031f2187c719996367afcbcbfef4fcc04f0",
+    "pyfracpaq/plots/connectivity.py": "2ac466bab8c482ebbe9dd3f6e985b1cef6c07018b105ced071439852761dc3fb",
+    "pyfracpaq/plots/dashes.py": "ed2e8b3afa1e793c9261c7ba7eb80d8df965bd6cae749b292f989388fec294c6",
+    "pyfracpaq/plots/grids.py": "cbb13c27b8892d4e82172fb123669b66c92a2e68dc84254f2d068c57442aabed",
+    "pyfracpaq/plots/hough.py": "febc101405bbe312d2aa144d1f3ad0ebf5775a22724415a9d8a40166fdfe813d",
+    "pyfracpaq/plots/legends.py": "7bb7628ead9ab2f46b934240d9942d65151566d20f9c8031f7a6d23172083493",
+    "pyfracpaq/plots/lengths.py": "b6845965bac68f3af73dd7fb3c973c26389ff9ca7d27dfb9beffbd3a89529d91",
+    "pyfracpaq/plots/maps.py": "a33efc5d491de87fc345cf40ea96d4589d62635619158a0f052afbffeace39df",
+    "pyfracpaq/plots/markers.py": "34e18d089a7aafe3dfe14733467cdb3828da5b0b3c7e2f3c3456e3bf0b70abb8",
+    "pyfracpaq/plots/mle.py": "c87db799e14bdc3a1f0bebcde2cf3d96182cccd41d808702f149a82a5be95b53",
+    "pyfracpaq/plots/preprocess.py": "9394e74908d0fd74cc42948cb3823084349dc0c2520ca00229e1244b3aba396f",
+    "pyfracpaq/plots/preview.py": "fd41293ce7de9e2571de9daea19745de0fb82d4e46ee7a4a3f4ea745bb4420f7",
+    "pyfracpaq/plots/profiles.py": "36ad36e09c152d2a12d044914f6800411d9ab0c2adb1ad63300988cb9b142a8d",
+    "pyfracpaq/plots/raster.py": "3bb14c3ce0ac03287cf6c3bfaef699aadd8bf99bb29a1a5745856e5f37282640",
+    "pyfracpaq/plots/results.py": "ca7bec00ffe01de430024dd10c06c7dd336bf912927a406a639ce5f47daa4346",
+    "pyfracpaq/plots/roses.py": "a4fef8ace1b350a80f7431551e836a22b0a88a502fc7f800ce299c0117c261e6",
+    "pyfracpaq/plots/stability.py": "3261b5d0c64e4de86c7d9cfa5d14dbd876a5865aee536902dda7ea22f7421423",
+    "pyfracpaq/plots/style.py": "7baf035b7cba4f659e72edae7dc1827fa44280d6597ca5ad35a11cb7b5c10eb2",
+    "pyfracpaq/plots/tensors.py": "40f34835c85be328cce3ccc83bc24a2e830d042fa14d23b2804eecd307126c9a",
+    "pyfracpaq/plots/tex.py": "cb22d592bbacf261f7ab0da08691b31f496259181da6e89690ee1d4b0e0daf15",
+    "pyfracpaq/plots/ticks.py": "9dd7956afa811ac9cfc6e42f7b927eda9cabf6a14bc4b1ca53304ddf13362412",
+    "pyfracpaq/plots/variogram.py": "3f84c09c52e9979f9a53b802dc52eeb82b37921075945425ce475ac380665de3",
+    "pyfracpaq/plots/wavelets.py": "4a47bf7b3acb76b7aa26dd5552553c813131f0ebea07b5aae7824e48509e34a2",
+    "pyfracpaq/resources/__init__.py": "8fb6bc0d227db7199f2854177e50f92d9734c1c465be0865c84f7007533c221d",
+    "pyfracpaq/tools/__init__.py": "b21e71eea2b3bd7b6e587004e0a3f1779732cbe31a40108fce62af71a4a0097d",
+    "pyfracpaq/tools/__main__.py": "86961f911350736d6a73b38fc56ad0c3f7b20313af1c7805b63cee592004c0e2",
+    "pyfracpaq/workers/__init__.py": "01e15e9232e8dcb336b4d28f0914ee215ec529fe7d12a2b4be63013e21c983bc",
+    "pyfracpaq/workers/jobs.py": "60673791483c8ae2617d4dcfcc7de88b5d32daf06c83dc6aae7a7887346db14e"
+  },
+  "annotation_reference": "Six MLE value boxes transcribed from native PNGs, independently reviewed in detail-review; rose/ternary labels checked against native source and paired previews.",
+  "records": [
+    {
+      "figure": "FracPaQ2D_tracemap_SD11A.png",
+      "id": "MAP-01",
+      "candidate_sha256": "e8fda7aa76ae9281a52dc7ac7df46796ae6c61d4a4b2570397b0aeaf2cec0be0",
+      "native_sha256": "29c8658f80a8ce8ac103b7a40f1513aae0c0bc0361c9bab4b488633ff155bc52",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/maps_figures.mat",
+      "native_metadata_sha256": "86dee92dae40b3856d3bc1276e613afe29e9ff61afd0b824cc5cad081d989421",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Mapped traces (n=445), segments (n=1076) & nodes (n=1521) ",
+          "candidate": "Mapped traces (n=445), segments (n=1076) & nodes (n=1521)\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthmap_SD11A.png",
+      "id": "MAP-04",
+      "candidate_sha256": "ce1f540de7d0d2ecbeb8ed191f44fd4e496604e098ade3f40c6989247db70ab4",
+      "native_sha256": "37d3026be21e93778be894bc24ec04229eacc0e59e5f4770d4df2f6b7855c874",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/maps_figures.mat",
+      "native_metadata_sha256": "86dee92dae40b3856d3bc1276e613afe29e9ff61afd0b824cc5cad081d989421",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Trace length map, n=445 ",
+          "candidate": "Trace length map, n=445\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Trace length, pixels",
+          "candidate": "Trace length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            2.0571207719859936,
+            2057.1207719859935
+          ],
+          "candidate": [
+            2.0571207719859936,
+            2057.1207719859935
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              2,
+              6,
+              10,
+              14,
+              18,
+              22,
+              26,
+              30,
+              34,
+              38,
+              42,
+              46,
+              50,
+              54,
+              57,
+              61,
+              67,
+              70,
+              74,
+              77,
+              82,
+              86,
+              89,
+              94,
+              98,
+              101,
+              105,
+              109,
+              115,
+              117,
+              122,
+              125,
+              129,
+              134,
+              136,
+              143,
+              147,
+              150,
+              154,
+              157,
+              161,
+              165,
+              168,
+              173,
+              177,
+              182,
+              185,
+              189,
+              193,
+              197,
+              201,
+              205,
+              209,
+              213,
+              217,
+              221,
+              225,
+              229,
+              233,
+              237,
+              241,
+              245,
+              249,
+              253
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthmap_SD11A.png",
+      "id": "MAP-05",
+      "candidate_sha256": "d6dc4d7573d6b9268ab21cc8a64bc555b2645a32b00a66c85717b2289905280d",
+      "native_sha256": "ba1c9e1c6475d4c962a0260cb08cfd34efa1047d07d44563e8c7981f04c43acc",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/maps_figures.mat",
+      "native_metadata_sha256": "86dee92dae40b3856d3bc1276e613afe29e9ff61afd0b824cc5cad081d989421",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment length map, n=1076 ",
+          "candidate": "Segment length map, n=1076\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Segment length, pixels",
+          "candidate": "Segment length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0.31836998916355175,
+            318.36998916355174
+          ],
+          "candidate": [
+            0.31836998916355175,
+            318.36998916355174
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              2,
+              6,
+              10,
+              14,
+              18,
+              22,
+              26,
+              30,
+              34,
+              38,
+              42,
+              46,
+              50,
+              54,
+              57,
+              61,
+              67,
+              70,
+              74,
+              77,
+              82,
+              86,
+              89,
+              94,
+              98,
+              101,
+              105,
+              109,
+              115,
+              117,
+              122,
+              125,
+              129,
+              134,
+              136,
+              143,
+              147,
+              150,
+              154,
+              157,
+              161,
+              165,
+              168,
+              173,
+              177,
+              182,
+              185,
+              189,
+              193,
+              197,
+              201,
+              205,
+              209,
+              213,
+              217,
+              221,
+              225,
+              229,
+              233,
+              237,
+              241,
+              245,
+              249,
+              253
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_segmentstrikemap_SD11A.png",
+      "id": "MAP-06",
+      "candidate_sha256": "f94940d0cfd658b58754d9960acce4751dbcc7ee689545b3cb268ffc5ad3dbc0",
+      "native_sha256": "9d7232672ee704886a952ab9d26c800eef7b93b81802220944afa5ae1bcc87a6",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/maps_figures.mat",
+      "native_metadata_sha256": "86dee92dae40b3856d3bc1276e613afe29e9ff61afd0b824cc5cad081d989421",
+      "native_figure_index": 3,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment strike map, n=1076 ",
+          "candidate": "Segment strike map, n=1076\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Segment strike, degrees",
+          "candidate": "Segment strike, degrees",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            180
+          ],
+          "candidate": [
+            0.0,
+            180.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              1,
+              4,
+              7,
+              9,
+              12,
+              15,
+              18,
+              21,
+              24,
+              26,
+              29,
+              32,
+              35,
+              38,
+              40,
+              43,
+              46,
+              49,
+              52,
+              54,
+              57,
+              60,
+              63,
+              66,
+              68,
+              71,
+              74,
+              77,
+              80,
+              83,
+              85,
+              88,
+              91,
+              94,
+              97,
+              99,
+              102,
+              105,
+              108,
+              111,
+              113,
+              116,
+              119,
+              122,
+              125,
+              127,
+              130,
+              133,
+              136,
+              139,
+              141,
+              144,
+              147,
+              150,
+              153,
+              156,
+              158,
+              161,
+              164,
+              167,
+              170,
+              172,
+              175,
+              178
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_scancircle_SD11A.png",
+      "id": "MAP-07",
+      "candidate_sha256": "82c0b574c9d3d3679303d509cd53657502137fb007b365e56541dcf4de3bb31a",
+      "native_sha256": "18178a819be1cd196c2bca29ea43d24dbca57e6908199944fa2f191be765b01e",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/circular_figures.mat",
+      "native_metadata_sha256": "fc78ecc74abbbf162cd70609d3357224cf19c4fe7048358957cce286dad12762",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Mapped trace segments, n=1076 ",
+          "candidate": "Mapped trace segments, n=1076\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_intensityP21_SD11A.png",
+      "id": "MAP-07",
+      "candidate_sha256": "17d1c42b41e339b16e2617fd5841a6006ad318d2da12df098ca982f1d0b49ab7",
+      "native_sha256": "6e84e4a02f71c095dcca3455251bd5d1d557073c179a7effebdab20faf55a6da",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/circular_figures.mat",
+      "native_metadata_sha256": "fc78ecc74abbbf162cd70609d3357224cf19c4fe7048358957cce286dad12762",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Estimated Intensity of segments (P21) ",
+          "candidate": "Estimated Intensity of segments (P21)\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Intensity of segments (P21), pixel^{-1}",
+          "candidate": "Intensity of segments (P21), pixel$^{-1}$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0.0,
+            0.04957207856488069
+          ],
+          "candidate": [
+            0.0,
+            0.04957207856488069
+          ],
+          "status": "passed",
+          "reason": "Q20 finite circle/segment intersections"
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              2,
+              6,
+              10,
+              14,
+              18,
+              22,
+              26,
+              30,
+              34,
+              38,
+              42,
+              46,
+              50,
+              54,
+              58,
+              62,
+              66,
+              70,
+              74,
+              78,
+              82,
+              86,
+              90,
+              94,
+              98,
+              102,
+              106,
+              110,
+              114,
+              118,
+              122,
+              126,
+              130,
+              134,
+              137,
+              142,
+              146,
+              150,
+              154,
+              157,
+              162,
+              165,
+              169,
+              173,
+              177,
+              182,
+              185,
+              189,
+              193,
+              197,
+              201,
+              205,
+              209,
+              213,
+              217,
+              221,
+              225,
+              229,
+              233,
+              237,
+              241,
+              245,
+              249,
+              253
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_densityP20_SD11A.png",
+      "id": "MAP-08",
+      "candidate_sha256": "b0730824d7a27c7a0366e639f7ac8ae86448f4ec9a9e615ee4a756c370048a67",
+      "native_sha256": "7f14cc8abe7bc7f43b57ef1b6750dd08754c55220449e9a2947161dc8f508005",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/circular_figures.mat",
+      "native_metadata_sha256": "fc78ecc74abbbf162cd70609d3357224cf19c4fe7048358957cce286dad12762",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Estimated Density of segments (P20) ",
+          "candidate": "Estimated Density of segments (P20)\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Density of segments (P20), pixel^{-2}",
+          "candidate": "Density of segments (P20), pixel$^{-2}$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0.0,
+            0.0013627868518789697
+          ],
+          "candidate": [
+            0.0,
+            0.0013627868518789697
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              2,
+              6,
+              10,
+              14,
+              18,
+              22,
+              26,
+              30,
+              34,
+              38,
+              42,
+              46,
+              50,
+              54,
+              58,
+              62,
+              66,
+              70,
+              74,
+              78,
+              82,
+              86,
+              90,
+              94,
+              98,
+              102,
+              106,
+              110,
+              114,
+              118,
+              122,
+              126,
+              130,
+              134,
+              137,
+              142,
+              146,
+              150,
+              154,
+              157,
+              162,
+              165,
+              169,
+              173,
+              177,
+              182,
+              185,
+              189,
+              193,
+              197,
+              201,
+              205,
+              209,
+              213,
+              217,
+              221,
+              225,
+              229,
+              233,
+              237,
+              241,
+              245,
+              249,
+              253
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_Mohrplot_SD11A.png",
+      "id": "MAP-11",
+      "candidate_sha256": "b1210da584e4da55aa9e5a9b2880f877583446ff3609f0bccece9309d60a75cd",
+      "native_sha256": "5d5b3300953db9a33855186cf267903b54649238a08a340789883ccb77198223",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/slip_figures.mat",
+      "native_metadata_sha256": "1ac18a3223aae8081a63f2e087c74d9b65c0a73a78c6e29130e88f957b1a3b8f",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Mohr diagram \\mu=0.6, C_0=0 MPa ",
+          "candidate": "Mohr diagram $\\mu$=0.6, $C_0$=0 MPa\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Normal stress, MPa",
+          "candidate": "Normal stress, MPa",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Shear stress, MPa",
+          "candidate": "Shear stress, MPa",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            110.00000000000001
+          ],
+          "candidate": [
+            0.0,
+            110.00000000000001
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            50.0
+          ],
+          "candidate": [
+            0.0,
+            50.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_labels",
+          "native": [
+            "Stress",
+            "Sliding or Failure"
+          ],
+          "candidate": [
+            "Stress",
+            "Sliding or Failure"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_data_roles",
+          "native": null,
+          "candidate": [
+            {
+              "label": "Stress",
+              "passed": true
+            },
+            {
+              "label": "Sliding or Failure",
+              "passed": true
+            }
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_sliptendencymap_SD11A.png",
+      "id": "MAP-11",
+      "candidate_sha256": "f55174527f4e44b7f9a825c950bfb39bb25ce20466d269c219d0ad6f42896688",
+      "native_sha256": "85c668d3d3379b413f3834dce2f57e19ecc3d939f3d7f66fec5c959abdaea4cb",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/slip_figures.mat",
+      "native_metadata_sha256": "1ac18a3223aae8081a63f2e087c74d9b65c0a73a78c6e29130e88f957b1a3b8f",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Normalised slip tendency for \\sigma_1=100 MPa, \\sigma_2=50 MPa, \\theta=0\\circ ",
+          "candidate": "Normalised slip tendency for $\\sigma_1$=100 MPa, $\\sigma_2$=50 MPa, $\\theta$=0°\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Normalised slip tendency",
+          "candidate": "Normalised slip tendency",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            1
+          ],
+          "candidate": [
+            0.0,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              0,
+              2,
+              3,
+              5,
+              7,
+              8,
+              10,
+              11,
+              13,
+              14,
+              16,
+              18,
+              19,
+              21,
+              22,
+              24,
+              25,
+              27,
+              28,
+              30,
+              32,
+              33,
+              35,
+              36,
+              38,
+              39,
+              41,
+              42,
+              44,
+              46,
+              47,
+              49,
+              50,
+              52,
+              53,
+              55,
+              57,
+              58,
+              60,
+              61,
+              63,
+              64,
+              66,
+              67,
+              69,
+              71,
+              72,
+              74,
+              75,
+              77,
+              78,
+              80,
+              82,
+              83,
+              85,
+              86,
+              88,
+              89,
+              91,
+              92,
+              94,
+              96,
+              97,
+              99
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_sliptendencyrose_SD11A.png",
+      "id": "MAP-11",
+      "candidate_sha256": "32b0dbfd827774b77cb4d09f7705b1cb3f0ac044694119ea3c4b6b7409afae30",
+      "native_sha256": "d75c9ac390d34fae67ab4983a0d9e499f2fa1093158b3120a328e9a2705614a6",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/slip_figures.mat",
+      "native_metadata_sha256": "1ac18a3223aae8081a63f2e087c74d9b65c0a73a78c6e29130e88f957b1a3b8f",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment angles (equal area), colour-coded by T_s ",
+          "candidate": "Segment angles (equal area), colour-coded by $T_s$\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -158.11361699158104,
+            158.11361699158104
+          ],
+          "candidate": [
+            -158.11388300841898,
+            158.11388300841898
+          ],
+          "status": "documented_difference",
+          "reason": "Display-only circle extent: native -r:0.0005:r ends before r; Python uses exact r=50*sqrt(10). Frequencies, angles and units unchanged."
+        },
+        {
+          "field": "ylim",
+          "native": [
+            -158.11361699158104,
+            158.11361699158104
+          ],
+          "candidate": [
+            -158.11388300841898,
+            158.11388300841898
+          ],
+          "status": "documented_difference",
+          "reason": "Display-only circle extent: native -r:0.0005:r ends before r; Python uses exact r=50*sqrt(10). Frequencies, angles and units unchanged."
+        },
+        {
+          "field": "annotation_meanings",
+          "native": [
+            "1%",
+            "5%",
+            "10%",
+            "Azimuth $\\sigma_1$"
+          ],
+          "candidate": [
+            "1%",
+            "5%",
+            "10%",
+            "Azimuth $\\sigma_1$"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Normalised slip tendency, T_s",
+          "candidate": "Normalised slip tendency, $T_s$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            1
+          ],
+          "candidate": [
+            0.0,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 0,
+            "palette_indices": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              6,
+              6,
+              6,
+              6,
+              7,
+              7,
+              7,
+              8,
+              8,
+              8,
+              9,
+              9,
+              9,
+              9,
+              10,
+              10,
+              10,
+              11,
+              11,
+              11,
+              12,
+              12,
+              12,
+              12,
+              13,
+              13,
+              13,
+              14,
+              14,
+              14,
+              14,
+              15,
+              15,
+              15,
+              16,
+              16,
+              16,
+              17,
+              17,
+              17,
+              17,
+              18,
+              18,
+              18
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [
+          "1%",
+          "5%",
+          "10%",
+          "Azimuth $\\sigma_1$"
+        ]
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_dilationtendencymap_SD11A.png",
+      "id": "MAP-12",
+      "candidate_sha256": "c33a9e97406ae6b91a6120bf832c159f03c99ac1b1c532cf3af15192443b1a46",
+      "native_sha256": "15b31cee88955a9b8838732ddadeb6144ce1aab9b18903a710ca21f828c06557",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/dilation_figures.mat",
+      "native_metadata_sha256": "1caac77ed2afc3331a5e18e425485796cf17f045290984ae5f599027a4c7afe5",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Dilation tendency for \\sigma_1=100 MPa, \\sigma_2=50 MPa, \\theta=0\\circ ",
+          "candidate": "Dilation tendency for $\\sigma_1$=100 MPa, $\\sigma_2$=50 MPa, $\\theta$=0°\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Dilation tendency",
+          "candidate": "Dilation tendency",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            1
+          ],
+          "candidate": [
+            0.0,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              0,
+              2,
+              3,
+              5,
+              7,
+              8,
+              10,
+              11,
+              13,
+              14,
+              16,
+              18,
+              19,
+              21,
+              22,
+              24,
+              25,
+              27,
+              28,
+              30,
+              32,
+              33,
+              35,
+              36,
+              38,
+              39,
+              41,
+              42,
+              44,
+              46,
+              47,
+              49,
+              50,
+              52,
+              53,
+              55,
+              57,
+              58,
+              60,
+              61,
+              63,
+              64,
+              66,
+              67,
+              69,
+              71,
+              72,
+              74,
+              75,
+              77,
+              78,
+              80,
+              82,
+              83,
+              85,
+              86,
+              88,
+              89,
+              91,
+              92,
+              94,
+              96,
+              97,
+              99
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_dilationtendencyrose_SD11A.png",
+      "id": "MAP-12",
+      "candidate_sha256": "c4708c7f582f238d8add9d35f4e9022378ef63042aeff81f840c247568ff397c",
+      "native_sha256": "31e88a490611a0b255044c219ecdbacc340034e75f6d2014e9775074a66dca16",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/dilation_figures.mat",
+      "native_metadata_sha256": "1caac77ed2afc3331a5e18e425485796cf17f045290984ae5f599027a4c7afe5",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment angles (equal area), colour-coded by T_d ",
+          "candidate": "Segment angles (equal area), colour-coded by $T_d$\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -158.11361699158104,
+            158.11361699158104
+          ],
+          "candidate": [
+            -158.11388300841898,
+            158.11388300841898
+          ],
+          "status": "documented_difference",
+          "reason": "Display-only circle extent: native -r:0.0005:r ends before r; Python uses exact r=50*sqrt(10). Frequencies, angles and units unchanged."
+        },
+        {
+          "field": "ylim",
+          "native": [
+            -158.11361699158104,
+            158.11361699158104
+          ],
+          "candidate": [
+            -158.11388300841898,
+            158.11388300841898
+          ],
+          "status": "documented_difference",
+          "reason": "Display-only circle extent: native -r:0.0005:r ends before r; Python uses exact r=50*sqrt(10). Frequencies, angles and units unchanged."
+        },
+        {
+          "field": "annotation_meanings",
+          "native": [
+            "1%",
+            "5%",
+            "10%",
+            "Azimuth $\\sigma_1$"
+          ],
+          "candidate": [
+            "1%",
+            "5%",
+            "10%",
+            "Azimuth $\\sigma_1$"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Dilation tendency, T_d",
+          "candidate": "Dilation tendency, $T_d$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            1
+          ],
+          "candidate": [
+            0.0,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 0,
+            "palette_indices": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              6,
+              6,
+              6,
+              6,
+              7,
+              7,
+              7,
+              8,
+              8,
+              8,
+              9,
+              9,
+              9,
+              9,
+              10,
+              10,
+              10,
+              11,
+              11,
+              11,
+              12,
+              12,
+              12,
+              12,
+              13,
+              13,
+              13,
+              14,
+              14,
+              14,
+              14,
+              15,
+              15,
+              15,
+              16,
+              16,
+              16,
+              17,
+              17,
+              17,
+              17,
+              18,
+              18,
+              18
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [
+          "1%",
+          "5%",
+          "10%",
+          "Azimuth $\\sigma_1$"
+        ]
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_fracsuscepmap_SD11A.png",
+      "id": "MAP-13",
+      "candidate_sha256": "addbd775981bb43ac50a7e217875130de6a1e782d3955f3acafb8e77330a41ca",
+      "native_sha256": "965aef9720e9c97691ced27c456c1feec53c6c55ee94d34df12c2055ed954fe2",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/susceptibility_figures.mat",
+      "native_metadata_sha256": "ba9798397d97b600922d2f32e0984ee27450efce26e4678636f81b07c18e208b",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Fracture susceptibility \\sigma_1=100 MPa, \\sigma_2=50 MPa, \\theta=0\\circ ",
+          "candidate": "Fracture susceptibility $\\sigma_1$=100 MPa, $\\sigma_2$=50 MPa, $\\theta$=0°\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Fracture susceptibility (\\DeltaP_f), MPa",
+          "candidate": "Fracture susceptibility ($\\Delta P_f$), MPa",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            26.408734314521823,
+            100.0
+          ],
+          "candidate": [
+            26.415608175648387,
+            100.0
+          ],
+          "status": "documented_difference",
+          "reason": "Q17: observed corrected-strike susceptibility bounds, instead of preliminary raw-angle bounds"
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              0,
+              2,
+              3,
+              5,
+              7,
+              8,
+              10,
+              11,
+              13,
+              14,
+              16,
+              18,
+              19,
+              21,
+              22,
+              24,
+              25,
+              27,
+              28,
+              30,
+              32,
+              33,
+              35,
+              36,
+              38,
+              39,
+              41,
+              42,
+              44,
+              46,
+              47,
+              49,
+              50,
+              52,
+              53,
+              55,
+              57,
+              58,
+              60,
+              61,
+              63,
+              64,
+              66,
+              67,
+              69,
+              71,
+              72,
+              74,
+              75,
+              77,
+              78,
+              80,
+              82,
+              83,
+              85,
+              86,
+              88,
+              89,
+              91,
+              92,
+              94,
+              96,
+              97,
+              99
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_fracsusceprose_SD11A.png",
+      "id": "MAP-13",
+      "candidate_sha256": "4b3c1ade9f01b3caa9d603f23904ef540bfee229fc609f39e49944a27ef48c5e",
+      "native_sha256": "7a97f0d7d0878e55943e50a4226a42e6722582d6082bf9a47f76795c6fec052d",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/susceptibility_figures.mat",
+      "native_metadata_sha256": "ba9798397d97b600922d2f32e0984ee27450efce26e4678636f81b07c18e208b",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment angles (equal area), colour-coded by S_f ",
+          "candidate": "Segment angles (equal area), colour-coded by $S_f$\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -158.11361699158104,
+            158.11361699158104
+          ],
+          "candidate": [
+            -158.11388300841898,
+            158.11388300841898
+          ],
+          "status": "documented_difference",
+          "reason": "Display-only circle extent: native -r:0.0005:r ends before r; Python uses exact r=50*sqrt(10). Frequencies, angles and units unchanged."
+        },
+        {
+          "field": "ylim",
+          "native": [
+            -158.11361699158104,
+            158.11361699158104
+          ],
+          "candidate": [
+            -158.11388300841898,
+            158.11388300841898
+          ],
+          "status": "documented_difference",
+          "reason": "Display-only circle extent: native -r:0.0005:r ends before r; Python uses exact r=50*sqrt(10). Frequencies, angles and units unchanged."
+        },
+        {
+          "field": "annotation_meanings",
+          "native": [
+            "1%",
+            "5%",
+            "10%",
+            "Azimuth $\\sigma_1$"
+          ],
+          "candidate": [
+            "1%",
+            "5%",
+            "10%",
+            "Azimuth $\\sigma_1$"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Fracture susceptibility (\\DeltaP_f), MPa",
+          "candidate": "Fracture susceptibility ($\\Delta P_f$), MPa",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            26.408734314521823,
+            100.0
+          ],
+          "candidate": [
+            26.415608175648387,
+            100.0
+          ],
+          "status": "documented_difference",
+          "reason": "Q17: observed corrected-strike susceptibility bounds, instead of preliminary raw-angle bounds"
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 0,
+            "palette_indices": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              6,
+              6,
+              6,
+              6,
+              7,
+              7,
+              7,
+              8,
+              8,
+              8,
+              9,
+              9,
+              9,
+              9,
+              10,
+              10,
+              10,
+              11,
+              11,
+              11,
+              12,
+              12,
+              12,
+              12,
+              13,
+              13,
+              13,
+              14,
+              14,
+              14,
+              14,
+              15,
+              15,
+              15,
+              16,
+              16,
+              16,
+              17,
+              17,
+              17,
+              17,
+              18,
+              18,
+              18
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [
+          "1%",
+          "5%",
+          "10%",
+          "Azimuth $\\sigma_1$"
+        ]
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_CSFmap_SD11A.png",
+      "id": "MAP-14",
+      "candidate_sha256": "4ddd070587ddff4229773bc0f5cfb771506250c0e05c662b61418be32e4d42d7",
+      "native_sha256": "7c244a88f04f56b63210ae73457ae7b26cc290358b2520b8b9d5e80a0b52dfd2",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/csf_figures.mat",
+      "native_metadata_sha256": "983dc1647b18ab7f2a496b932c94cba28cf0f902e709e1d8e07278f5eb5af83b",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Critically stressed fractures \\sigma_1'=100 MPa, \\sigma_2'=50 MPa, \\theta=0\\circ ",
+          "candidate": "Critically stressed fractures $\\sigma_1'$=100 MPa, $\\sigma_2'$=50 MPa, $\\theta$=0°\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Critically Stressed Fractures, \\itP\\rm_f=0 MPa",
+          "candidate": "Critically Stressed Fractures, $P_f$=0 MPa",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            1
+          ],
+          "candidate": [
+            0.0,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              0,
+              2,
+              3,
+              5,
+              7,
+              8,
+              10,
+              11,
+              13,
+              14,
+              16,
+              18,
+              19,
+              21,
+              22,
+              24,
+              25,
+              27,
+              28,
+              30,
+              32,
+              33,
+              35,
+              36,
+              38,
+              39,
+              41,
+              42,
+              44,
+              46,
+              47,
+              49,
+              50,
+              52,
+              53,
+              55,
+              57,
+              58,
+              60,
+              61,
+              63,
+              64,
+              66,
+              67,
+              69,
+              71,
+              72,
+              74,
+              75,
+              77,
+              78,
+              80,
+              82,
+              83,
+              85,
+              86,
+              88,
+              89,
+              91,
+              92,
+              94,
+              96,
+              97,
+              99
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_CSFrose_SD11A.png",
+      "id": "MAP-14",
+      "candidate_sha256": "2c1a8a50c5bc4dc230075f2220058ba718fbbb94aa62ba32dedc994e96f29386",
+      "native_sha256": "555b1827ba1c2fd4e67ac9b3a7487f67e1bd015ffdff4fe692f75a41b90bd3b8",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/csf_figures.mat",
+      "native_metadata_sha256": "983dc1647b18ab7f2a496b932c94cba28cf0f902e709e1d8e07278f5eb5af83b",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment angles (equal area), colour-coded by CSF ",
+          "candidate": "Segment angles (equal area), colour-coded by CSF\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -158.11361699158104,
+            158.11361699158104
+          ],
+          "candidate": [
+            -158.11388300841898,
+            158.11388300841898
+          ],
+          "status": "documented_difference",
+          "reason": "Display-only circle extent: native -r:0.0005:r ends before r; Python uses exact r=50*sqrt(10). Frequencies, angles and units unchanged."
+        },
+        {
+          "field": "ylim",
+          "native": [
+            -158.11361699158104,
+            158.11361699158104
+          ],
+          "candidate": [
+            -158.11388300841898,
+            158.11388300841898
+          ],
+          "status": "documented_difference",
+          "reason": "Display-only circle extent: native -r:0.0005:r ends before r; Python uses exact r=50*sqrt(10). Frequencies, angles and units unchanged."
+        },
+        {
+          "field": "annotation_meanings",
+          "native": [
+            "1%",
+            "5%",
+            "10%",
+            "Azimuth $\\sigma_1$"
+          ],
+          "candidate": [
+            "1%",
+            "5%",
+            "10%",
+            "Azimuth $\\sigma_1$"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Critically Stressed Fractures, \\itP\\rm_f=0 MPa",
+          "candidate": "Critically Stressed Fractures, $P_f$=0 MPa",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            1
+          ],
+          "candidate": [
+            0.0,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 0,
+            "palette_indices": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              6,
+              6,
+              6,
+              6,
+              7,
+              7,
+              7,
+              8,
+              8,
+              8,
+              9,
+              9,
+              9,
+              9,
+              10,
+              10,
+              10,
+              11,
+              11,
+              11,
+              12,
+              12,
+              12,
+              12,
+              13,
+              13,
+              13,
+              14,
+              14,
+              14,
+              14,
+              15,
+              15,
+              15,
+              16,
+              16,
+              16,
+              17,
+              17,
+              17,
+              17,
+              18,
+              18,
+              18
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [
+          "1%",
+          "5%",
+          "10%",
+          "Azimuth $\\sigma_1$"
+        ]
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_histotracelength_SD11A.png",
+      "id": "LEN-02",
+      "candidate_sha256": "c533e990210b8c41f7b2f0cf1a6165f4056323d77c657a663a1383ed18870d3d",
+      "native_sha256": "0a456b60c4d19c82bb08962c1cc812f6ad6455362f4f2ac32f229f2afbe261fe",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/lengths_figures.mat",
+      "native_metadata_sha256": "4821b6af378a35fabc25f6235439765cd41deb5403a97927a5b9e2708535b7be",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Trace lengths, n=445 ",
+          "candidate": "Trace lengths, n=445\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Trace length, pixels",
+          "candidate": "Trace length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Frequency, %",
+          "candidate": "Frequency",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            2262.832849184593
+          ],
+          "candidate": [
+            0.0,
+            2262.832849184593
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            57.707865168539314
+          ],
+          "candidate": [
+            0.0,
+            57.70786516853933
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "dual_frequency_units",
+          "native": [
+            "Frequency",
+            "Frequency, %"
+          ],
+          "candidate": [
+            "Frequency",
+            "Frequency, %"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [],
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_histosegmentlength_SD11A.png",
+      "id": "LEN-02",
+      "candidate_sha256": "7fd20247a00de021fbbc20201839d90d47038007c6bf3cf8318d35bbe083f1ef",
+      "native_sha256": "73974c474270d9deedf7873fd2441c503ba2134783687e4813331aaf737ad14d",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/lengths_figures.mat",
+      "native_metadata_sha256": "4821b6af378a35fabc25f6235439765cd41deb5403a97927a5b9e2708535b7be",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment lengths, n=1076 ",
+          "candidate": "Segment lengths, n=1076\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Segment length, pixels",
+          "candidate": "Segment length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Frequency, %",
+          "candidate": "Frequency",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            350.2069880799069
+          ],
+          "candidate": [
+            0.0,
+            350.2069880799069
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            31.338289962825275
+          ],
+          "candidate": [
+            0.0,
+            31.33828996282528
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "dual_frequency_units",
+          "native": [
+            "Frequency",
+            "Frequency, %"
+          ],
+          "candidate": [
+            "Frequency",
+            "Frequency, %"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [],
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_loglogplottracelengthdensity_SD11A.png",
+      "id": "LEN-03",
+      "candidate_sha256": "da2ac00d9e1e2972dcf8a1ae63e3094ca37178942821d9c190ed1595e85126fe",
+      "native_sha256": "88a230a0c2fb0d695107945877b90a24a1d983ad4f02189d8decb2695a2f4ac0",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/lengths_figures.mat",
+      "native_metadata_sha256": "4821b6af378a35fabc25f6235439765cd41deb5403a97927a5b9e2708535b7be",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Density distribution of trace lengths, n=445 ",
+          "candidate": "Density distribution of trace lengths, n=445\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Trace length, pixels",
+          "candidate": "Trace length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Frequency, n(L)",
+          "candidate": "Frequency, n(L)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            6.682462121104729,
+            2262.832849184593
+          ],
+          "candidate": [
+            6.68246212110473,
+            2262.832849184593
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.1,
+            256.8
+          ],
+          "candidate": [
+            0.1,
+            256.8
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_loglogplottracelength_SD11A.png",
+      "id": "LEN-03",
+      "candidate_sha256": "ab9d0e0c242448236374d62b8c3c94ae82bbe164ba9d432d81ae1280000438ae",
+      "native_sha256": "477cf0012e26f4ccc84b3b5e4cb09092dc1576cb3708984b7f4544531077740d",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/lengths_figures.mat",
+      "native_metadata_sha256": "4821b6af378a35fabc25f6235439765cd41deb5403a97927a5b9e2708535b7be",
+      "native_figure_index": 3,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Cumulative distribution of trace lengths, n=445 ",
+          "candidate": "Cumulative distribution of trace lengths, n=445\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Trace length, pixels",
+          "candidate": "Trace length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Cumulative frequency, C(L)",
+          "candidate": "Cumulative frequency, C(L)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            6.682462121104729,
+            3100.9
+          ],
+          "candidate": [
+            6.68246212110473,
+            3099.8
+          ],
+          "status": "documented_difference",
+          "reason": "Q08/S01-04: ceil of translation-invariant envelope diagonal (2818), rather than absolute-coordinate diagonal (2819)"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.1,
+            534.0
+          ],
+          "candidate": [
+            0.1,
+            534.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png",
+      "id": "LEN-03",
+      "candidate_sha256": "939306b79ed83037c6bf2888303cb6d397c67955d0e7af38b0ac5b58fbaca85a",
+      "native_sha256": "6ecbbdba836753d2e954e8c2d649d5bc81fab01f9e92c884616d4818c51d81c3",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/lengths_figures.mat",
+      "native_metadata_sha256": "4821b6af378a35fabc25f6235439765cd41deb5403a97927a5b9e2708535b7be",
+      "native_figure_index": 4,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Density distribution of segment lengths, n=1076 ",
+          "candidate": "Density distribution of segment lengths, n=1076\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Segment length, pixels",
+          "candidate": "Segment length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Frequency, n(L)",
+          "candidate": "Frequency, n(L)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            5.695656239626787,
+            350.2069880799069
+          ],
+          "candidate": [
+            5.695656239626787,
+            350.2069880799069
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.1,
+            337.2
+          ],
+          "candidate": [
+            0.1,
+            337.2
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_loglogplotsegmentlength_SD11A.png",
+      "id": "LEN-03",
+      "candidate_sha256": "b5642f4ca5712b57407cb1c283bf0a226ac4d03dba86e660144cee344a55b7be",
+      "native_sha256": "d91dbd1fb68fa9ccf0100c17d9dfc71ddf12fdeb3712a77cd344cc12526d7f9e",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/lengths_figures.mat",
+      "native_metadata_sha256": "4821b6af378a35fabc25f6235439765cd41deb5403a97927a5b9e2708535b7be",
+      "native_figure_index": 5,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Cumulative distribution of segment lengths, n=1076 ",
+          "candidate": "Cumulative distribution of segment lengths, n=1076\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Segment length, pixels",
+          "candidate": "Segment length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Cumulative frequency, C(L)",
+          "candidate": "Cumulative frequency, C(L)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            5.695656239626787,
+            3100.9
+          ],
+          "candidate": [
+            5.695656239626787,
+            3099.8
+          ],
+          "status": "documented_difference",
+          "reason": "Q08/S01-04: ceil of translation-invariant envelope diagonal (2818), rather than absolute-coordinate diagonal (2819)"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.1,
+            1291.2
+          ],
+          "candidate": [
+            0.1,
+            1291.2
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "id": "LEN-07",
+      "candidate_sha256": "ebe81910fa9df8dc4908b91447ba37f8c2f57c56aad0925daec80b34280b6810",
+      "native_sha256": "17894f3250fefb193bc558474b0550aea3d2cb481d75d3e9e373f6006fea553b",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/mle_figures.mat",
+      "native_metadata_sha256": "61bacba8189792fde042dbfa921ca9de4b650bbc9383211e4d1f8748d57ef4c0",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Power Law Distribution MLE, trace lengths ",
+          "candidate": "Power Law Distribution MLE, trace lengths\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Length, pixels",
+          "candidate": "Length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Pr(l \\geq l)",
+          "candidate": "Pr(l $\\geq$ l)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            7.424957912338588,
+            2057.1207719859935
+          ],
+          "candidate": [
+            7.424957912338589,
+            2057.1207719859935
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.001,
+            1.0
+          ],
+          "candidate": [
+            0.001,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_labels",
+          "native": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "candidate": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_data_roles",
+          "native": null,
+          "candidate": [
+            {
+              "label": "Observed Data",
+              "passed": true
+            },
+            {
+              "label": "Estimated Data",
+              "passed": true
+            },
+            {
+              "label": "Upper cut-off",
+              "passed": true
+            },
+            {
+              "label": "Lower cut-off",
+              "passed": true
+            }
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "parameter_annotation_values",
+          "native": [
+            2.5373,
+            93.0562
+          ],
+          "candidate": [
+            2.5373,
+            93.0562
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": [
+        "$\\alpha = 2.5373,\\ \\mathit{x_{min}} = 93.0562$"
+      ]
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "id": "LEN-07",
+      "candidate_sha256": "a0fafa70cb09f253054bbb70ac88b8a53f8b298a4ae98c80816a2ad2240e6083",
+      "native_sha256": "b3457ca63c2da98e32459e8d309f739d8009a39b76b6fd231fe392047d74a8ee",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/mle_figures.mat",
+      "native_metadata_sha256": "61bacba8189792fde042dbfa921ca9de4b650bbc9383211e4d1f8748d57ef4c0",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Exponential Distribution MLE, trace lengths ",
+          "candidate": "Exponential Distribution MLE, trace lengths\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Length, pixels",
+          "candidate": "Length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Pr(l \\geq l)",
+          "candidate": "Pr(l $\\geq$ l)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            2500.0
+          ],
+          "candidate": [
+            0.0,
+            2500.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0001,
+            1.0
+          ],
+          "candidate": [
+            0.0001,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_labels",
+          "native": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "candidate": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_data_roles",
+          "native": null,
+          "candidate": [
+            {
+              "label": "Observed Data",
+              "passed": true
+            },
+            {
+              "label": "Estimated Data",
+              "passed": true
+            },
+            {
+              "label": "Upper cut-off",
+              "passed": true
+            },
+            {
+              "label": "Lower cut-off",
+              "passed": true
+            }
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "parameter_annotation_values",
+          "native": [
+            0.0028398
+          ],
+          "candidate": [
+            0.0028398
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": [
+        "$\\lambda = 0.0028398$"
+      ]
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "id": "LEN-07",
+      "candidate_sha256": "09fc337f13f8631d67dc8353e7db565f1af4892691ef9c17af2df0284f8309af",
+      "native_sha256": "92488e951358bfe2a639cb130821ef145a4b3e3d68eaeaf52e385c299ea898ad",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/mle_figures.mat",
+      "native_metadata_sha256": "61bacba8189792fde042dbfa921ca9de4b650bbc9383211e4d1f8748d57ef4c0",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Lognormal Distribution MLE, trace lengths ",
+          "candidate": "Lognormal Distribution MLE, trace lengths\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Length, pixels",
+          "candidate": "Length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Pr(l \\geq l)",
+          "candidate": "Pr(l $\\geq$ l)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            7.424957912338588,
+            2057.1207719859935
+          ],
+          "candidate": [
+            7.424957912338589,
+            2057.1207719859935
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            1.0
+          ],
+          "candidate": [
+            0.0,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_labels",
+          "native": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "candidate": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_data_roles",
+          "native": null,
+          "candidate": [
+            {
+              "label": "Observed Data",
+              "passed": true
+            },
+            {
+              "label": "Estimated Data",
+              "passed": true
+            },
+            {
+              "label": "Upper cut-off",
+              "passed": true
+            },
+            {
+              "label": "Lower cut-off",
+              "passed": true
+            }
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "parameter_annotation_values",
+          "native": [
+            4.5301,
+            0.81414
+          ],
+          "candidate": [
+            4.5301,
+            0.81414
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": [
+        "$\\mu = 4.5301,\\ \\sigma = 0.81414$"
+      ]
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "id": "LEN-07",
+      "candidate_sha256": "3f27e6ae14cce7edb40342a7ee22611d7952ce7731248a685346bf43631f8903",
+      "native_sha256": "858621c28221d29ad0dfa608120bbd5274462b8cc22704bf2d5ae9e66f458b8b",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/mle_figures.mat",
+      "native_metadata_sha256": "61bacba8189792fde042dbfa921ca9de4b650bbc9383211e4d1f8748d57ef4c0",
+      "native_figure_index": 3,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Power Law Distribution MLE, segment lengths ",
+          "candidate": "Power Law Distribution MLE, segment lengths\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Length, pixels",
+          "candidate": "Length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Pr(l \\geq l)",
+          "candidate": "Pr(l $\\geq$ l)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            6.3285069329186525,
+            318.36998916355174
+          ],
+          "candidate": [
+            6.3285069329186525,
+            318.36998916355174
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0009302325581395349,
+            1.0
+          ],
+          "candidate": [
+            0.0009302325581395349,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_labels",
+          "native": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "candidate": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_data_roles",
+          "native": null,
+          "candidate": [
+            {
+              "label": "Observed Data",
+              "passed": true
+            },
+            {
+              "label": "Estimated Data",
+              "passed": true
+            },
+            {
+              "label": "Upper cut-off",
+              "passed": true
+            },
+            {
+              "label": "Lower cut-off",
+              "passed": true
+            }
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "parameter_annotation_values",
+          "native": [
+            4.3613,
+            83.6212
+          ],
+          "candidate": [
+            4.3613,
+            83.6212
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": [
+        "$\\alpha = 4.3613,\\ \\mathit{x_{min}} = 83.6212$"
+      ]
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "id": "LEN-07",
+      "candidate_sha256": "ac4df2a7cc2ef14015b0ec9ae68b5f1c9052553fe23a1147b7107a5655ffa519",
+      "native_sha256": "129f832a5e262ecbded898ef62ffc80b98fa8b1cb40c5ea8c7a8d290ee7bfbc7",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/mle_figures.mat",
+      "native_metadata_sha256": "61bacba8189792fde042dbfa921ca9de4b650bbc9383211e4d1f8748d57ef4c0",
+      "native_figure_index": 4,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Exponential Distribution MLE, segment lengths ",
+          "candidate": "Exponential Distribution MLE, segment lengths\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Length, pixels",
+          "candidate": "Length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Pr(l \\geq l)",
+          "candidate": "Pr(l $\\geq$ l)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            350.0
+          ],
+          "candidate": [
+            0.0,
+            350.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0001,
+            1.0
+          ],
+          "candidate": [
+            0.0001,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_labels",
+          "native": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "candidate": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_data_roles",
+          "native": null,
+          "candidate": [
+            {
+              "label": "Observed Data",
+              "passed": true
+            },
+            {
+              "label": "Estimated Data",
+              "passed": true
+            },
+            {
+              "label": "Upper cut-off",
+              "passed": true
+            },
+            {
+              "label": "Lower cut-off",
+              "passed": true
+            }
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "parameter_annotation_values",
+          "native": [
+            0.030679
+          ],
+          "candidate": [
+            0.030679
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": [
+        "$\\lambda = 0.030679$"
+      ]
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "id": "LEN-07",
+      "candidate_sha256": "5a6b74083e40db77d4b3b72a83f3c81b6ee02342f326ed02b9ffe3ed43415c94",
+      "native_sha256": "e901f51ee125f2efed1d5ccbe3e88a1ba9d1e2a5b0e72c2b9a419bdf2b677c8e",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/mle_figures.mat",
+      "native_metadata_sha256": "61bacba8189792fde042dbfa921ca9de4b650bbc9383211e4d1f8748d57ef4c0",
+      "native_figure_index": 5,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Lognormal Distribution MLE, segment lengths ",
+          "candidate": "Lognormal Distribution MLE, segment lengths\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Length, pixels",
+          "candidate": "Length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Pr(l \\geq l)",
+          "candidate": "Pr(l $\\geq$ l)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            6.3285069329186525,
+            318.36998916355174
+          ],
+          "candidate": [
+            6.3285069329186525,
+            318.36998916355174
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            1.0
+          ],
+          "candidate": [
+            0.0,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_labels",
+          "native": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "candidate": [
+            "Observed Data",
+            "Estimated Data",
+            "Upper cut-off",
+            "Lower cut-off"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_data_roles",
+          "native": null,
+          "candidate": [
+            {
+              "label": "Observed Data",
+              "passed": true
+            },
+            {
+              "label": "Estimated Data",
+              "passed": true
+            },
+            {
+              "label": "Upper cut-off",
+              "passed": true
+            },
+            {
+              "label": "Lower cut-off",
+              "passed": true
+            }
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "parameter_annotation_values",
+          "native": [
+            3.8925,
+            0.55553
+          ],
+          "candidate": [
+            3.9241,
+            0.51722
+          ],
+          "status": "documented_difference",
+          "reason": "Q15: lognormal segment tail selection; native mu/sigma 3.8925/0.55553, corrected 3.9241/0.51722"
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": [
+        "$\\mu = 3.9241,\\ \\sigma = 0.51722$"
+      ]
+    },
+    {
+      "figure": "FracPaQ2D_crossplotsegmentlengthangle_SD11A.png",
+      "id": "LEN-06",
+      "candidate_sha256": "91ab822197cc5eb2740d92be1f323a2294057a88c2a164b478745a11f9861e0c",
+      "native_sha256": "23f6649061fba1d83117ffbe66ee83750b8495519e170a66abda3dca91bd461e",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/lengths_figures.mat",
+      "native_metadata_sha256": "4821b6af378a35fabc25f6235439765cd41deb5403a97927a5b9e2708535b7be",
+      "native_figure_index": 6,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Trace segment lengths versus angles, n=1076 ",
+          "candidate": "Trace segment lengths versus angles, n=1076\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Trace segment angle, degrees",
+          "candidate": "Trace segment angle, degrees",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Trace segment length, pixels",
+          "candidate": "Trace segment length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -10.0,
+            370.0
+          ],
+          "candidate": [
+            -10.0,
+            370.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            350.2069880799069
+          ],
+          "candidate": [
+            0.0,
+            350.2069880799069
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_blocksizecentroidmap_SD11A.png",
+      "id": "LEN-13",
+      "candidate_sha256": "c35379ab3044395baacd268d33cbe3003ca778703f65325697e4a71bdafdcb26",
+      "native_sha256": "5337269d2055c70fdff0875b1d8c23229390ea4e9cf3018288b4b51d72e0ddf6",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/blocks_figures.mat",
+      "native_metadata_sha256": "4a018c2b396b6aa97dd9ba11881764cd2abd8c8776e99917941c1ade8ae29d21",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Block centroids, n=65 ",
+          "candidate": "Block centroids, n=67\n",
+          "status": "documented_difference",
+          "reason": "Q14 corrected block population"
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": "Q14 corrected block population"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": "Q14 corrected block population"
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_blocksizeloglog_SD11A.png",
+      "id": "LEN-13",
+      "candidate_sha256": "a37a5557a0dc6c35b72ddf57944c736e64947bf3b304126fba2c3794350c4058",
+      "native_sha256": "427fa419fa02bf392e33be2bd5d8bce95dc3d9264798036411a515552ffc0195",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/blocks_figures.mat",
+      "native_metadata_sha256": "4a018c2b396b6aa97dd9ba11881764cd2abd8c8776e99917941c1ade8ae29d21",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Block sizes (areas), n=65 ",
+          "candidate": "Block sizes (areas), n=67\n",
+          "status": "documented_difference",
+          "reason": "Q14 corrected block population"
+        },
+        {
+          "field": "xlabel",
+          "native": "Block size (area), pixels^2",
+          "candidate": "Block size (area), pixels$^2$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Cumulative frequency",
+          "candidate": "Cumulative frequency",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            1.0,
+            2508035.456
+          ],
+          "candidate": [
+            0.8997290020266872,
+            238135.4737017461
+          ],
+          "status": "documented_difference",
+          "reason": "Q14 corrected block population"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.0,
+            100.0
+          ],
+          "candidate": [
+            0.1,
+            80.39999999999999
+          ],
+          "status": "documented_difference",
+          "reason": "Q14 corrected block population"
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_blocksizehisto_SD11A.png",
+      "id": "LEN-13",
+      "candidate_sha256": "81d7845208911dc916e1081b9c3dd772dfcba9a0604836c2fdcdb0b7fc55e71d",
+      "native_sha256": "c25974098cd41a2cb0e9e54516bb82d8b9486e78504d0f0a642d0687c2d228ee",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/blocks_figures.mat",
+      "native_metadata_sha256": "4a018c2b396b6aa97dd9ba11881764cd2abd8c8776e99917941c1ade8ae29d21",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Block sizes (areas), n=65 ",
+          "candidate": "Block sizes (areas), n=67\n",
+          "status": "documented_difference",
+          "reason": "Q14 corrected block population"
+        },
+        {
+          "field": "xlabel",
+          "native": "Block size (area), pixels^2",
+          "candidate": "Block size (area), pixels$^2$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Frequency, %",
+          "candidate": "Frequency, %",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            2761600.6
+          ],
+          "candidate": [
+            0.0,
+            238135.4737017461
+          ],
+          "status": "documented_difference",
+          "reason": "Q14 corrected block population"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            90.0
+          ],
+          "candidate": [
+            0.0,
+            51.71641791044776
+          ],
+          "status": "documented_difference",
+          "reason": "Q14 corrected block population"
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_segmentlength_variogram_SD11A.png",
+      "id": "LEN-15",
+      "candidate_sha256": "33b98b1700e7c286656ab5a78458177d8fec1b66a6a6b2d95298e1c265df0cf4",
+      "native_sha256": "74d98d77f4f06836ab4b2209fe418d7017a232123a92825624333cacf9f9eb64",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/variogram_figures.mat",
+      "native_metadata_sha256": "7bf8ae6f28133df22f3ccfc6a44765fca1c3f85d1c2c3da50aeb01ef742f5076",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Semivariogram, n=1076 ",
+          "candidate": "Semivariogram, n=1076\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "h, pixels",
+          "candidate": "h, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "\\gamma (h)",
+          "candidate": "$\\gamma$ (h)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1400.0
+          ],
+          "candidate": [
+            0.0,
+            1400.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            400.0,
+            1800.0
+          ],
+          "candidate": [
+            400.0,
+            1800.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_histoangle_SD11A.png",
+      "id": "ANG-01",
+      "candidate_sha256": "b40e7cc3642b012dd93b8f2527aa27d5f28eee03b023174a3609effc20887f1c",
+      "native_sha256": "d1fe13d6d8486b7db89b5428364242a5b7b59f745cfa542c41c6917e40869c1d",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/angles_figures.mat",
+      "native_metadata_sha256": "7d5965430f98f988af0365dac6a763288f49e74267a4bd6de3956890196b238d",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Trace segment angles, n=1076 ",
+          "candidate": "Trace segment angles, n=1076\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Trace segment angle, degrees",
+          "candidate": "Trace segment angle, degrees",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Frequency, %",
+          "candidate": "Frequency",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -10.0,
+            370.0
+          ],
+          "candidate": [
+            -10.0,
+            370.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            21.315055762081787
+          ],
+          "candidate": [
+            0.0,
+            21.315055762081787
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "dual_frequency_units",
+          "native": [
+            "Frequency",
+            "Frequency, %"
+          ],
+          "candidate": [
+            "Frequency",
+            "Frequency, %"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [],
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_roseangleEqArea_SD11A.png",
+      "id": "ANG-02",
+      "candidate_sha256": "dc643ca29747f6de8a202e8bc47a7b302c2d228faf366307322200b96459caed",
+      "native_sha256": "29be85f10b32d014b56e83a92c1e1ad11dba50cc39089881409039722209d964",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/angles_figures.mat",
+      "native_metadata_sha256": "7d5965430f98f988af0365dac6a763288f49e74267a4bd6de3956890196b238d",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment angles (equal area), n=1076 ",
+          "candidate": "Segment angles (equal area), n=1076\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -158.11361699158104,
+            158.11361699158104
+          ],
+          "candidate": [
+            -158.11388300841898,
+            158.11388300841898
+          ],
+          "status": "documented_difference",
+          "reason": "Display-only circle extent: native -r:0.0005:r ends before r; Python uses exact r=50*sqrt(10). Frequencies, angles and units unchanged."
+        },
+        {
+          "field": "ylim",
+          "native": [
+            -158.11361699158104,
+            158.11361699158104
+          ],
+          "candidate": [
+            -158.11388300841898,
+            158.11388300841898
+          ],
+          "status": "documented_difference",
+          "reason": "Display-only circle extent: native -r:0.0005:r ends before r; Python uses exact r=50*sqrt(10). Frequencies, angles and units unchanged."
+        },
+        {
+          "field": "annotation_meanings",
+          "native": [
+            "1%",
+            "5%",
+            "10%"
+          ],
+          "candidate": [
+            "1%",
+            "5%",
+            "10%"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Segment strike, degrees",
+          "candidate": "Segment strike, degrees",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            180
+          ],
+          "candidate": [
+            0.0,
+            180.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3,
+              4,
+              4,
+              4,
+              4,
+              5,
+              5,
+              5,
+              6,
+              6,
+              6,
+              6,
+              7,
+              7,
+              7,
+              8,
+              8,
+              8,
+              9,
+              9,
+              9,
+              9,
+              10,
+              10,
+              10,
+              11,
+              11,
+              11,
+              12,
+              12,
+              12,
+              12,
+              13,
+              13,
+              13,
+              14,
+              14,
+              14,
+              14,
+              15,
+              15,
+              15,
+              16,
+              16,
+              16,
+              17,
+              17,
+              17,
+              17,
+              18,
+              18,
+              18
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [
+          "1%",
+          "5%",
+          "10%"
+        ]
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_IYXnodes_traces_SD11A.png",
+      "id": "FLO-01",
+      "candidate_sha256": "8ae5f9d3847f0e7bdf57b051773f1d8264ea48375d1c89252d4717d8c5e4fc7e",
+      "native_sha256": "fc898bbe4741fc27ce806aaf13bccd1c292b05cdd87cce373ca3d561ee20618a",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/connectivity_figures.mat",
+      "native_metadata_sha256": "61b695155d6c2f0e18771015008c40938a67f9d0006b36b2e932bcb99d4df79d",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Connectivity node types n_I=685, n_Y=155, n_X=82",
+          "candidate": "Connectivity node types\n$n_I=606,\\ n_Y=224,\\ n_X=90$",
+          "status": "documented_difference",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "legend_labels",
+          "native": [
+            "I",
+            "X",
+            "Y"
+          ],
+          "candidate": [
+            "I",
+            "X",
+            "Y"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_data_roles",
+          "native": null,
+          "candidate": [
+            {
+              "label": "I",
+              "passed": true
+            },
+            {
+              "label": "X",
+              "passed": true
+            },
+            {
+              "label": "Y",
+              "passed": true
+            }
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_XYnodes_traces_heat_SD11A.png",
+      "id": "FLO-01",
+      "candidate_sha256": "4baf2168a4a3d1d836f002802d81b92d97bb142e5911b304c937c3886e2e0aa3",
+      "native_sha256": "8e94dfd66247ec6d6f555dd9863a94c93406bb66994350da8d35e582b32a5c59",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/connectivity_figures.mat",
+      "native_metadata_sha256": "61b695155d6c2f0e18771015008c40938a67f9d0006b36b2e932bcb99d4df79d",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "(X+Y)-nodes, n_X+n_Y=237 ",
+          "candidate": "(X+Y)-nodes, n_X+n_Y=314\n",
+          "status": "documented_difference",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Number of (X+Y)-nodes",
+          "candidate": "Number of (X+Y)-nodes",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            30
+          ],
+          "candidate": [
+            0.0,
+            26.0
+          ],
+          "status": "documented_difference",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              2,
+              6,
+              10,
+              14,
+              18,
+              22,
+              26,
+              30,
+              34,
+              38,
+              42,
+              46,
+              50,
+              54,
+              58,
+              62,
+              66,
+              70,
+              74,
+              78,
+              82,
+              86,
+              90,
+              94,
+              98,
+              102,
+              106,
+              110,
+              114,
+              118,
+              122,
+              126,
+              130,
+              134,
+              137,
+              142,
+              146,
+              150,
+              154,
+              157,
+              162,
+              165,
+              169,
+              173,
+              177,
+              182,
+              185,
+              189,
+              193,
+              197,
+              201,
+              205,
+              209,
+              213,
+              217,
+              221,
+              225,
+              229,
+              233,
+              237,
+              241,
+              245,
+              249,
+              253
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_Inodes_traces_heat_SD11A.png",
+      "id": "FLO-01",
+      "candidate_sha256": "fea92d2f499b5ac76bfde03ec351276283e6c368496f6c7d975d2294285a35f8",
+      "native_sha256": "d9b91c92bbfe1a046e3c1ff00542d7984ec0f4000dbe150bea359eb8245bea84",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/connectivity_figures.mat",
+      "native_metadata_sha256": "61b695155d6c2f0e18771015008c40938a67f9d0006b36b2e932bcb99d4df79d",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "I-nodes, n_I=685 ",
+          "candidate": "I-nodes, n_I=606\n",
+          "status": "documented_difference",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "colourbar_count",
+          "native": 1,
+          "candidate": 1,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "Number of I-nodes",
+          "candidate": "Number of I-nodes",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            30
+          ],
+          "candidate": [
+            0.0,
+            26.0
+          ],
+          "status": "documented_difference",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              2,
+              6,
+              10,
+              14,
+              18,
+              22,
+              26,
+              30,
+              34,
+              38,
+              42,
+              46,
+              50,
+              54,
+              58,
+              62,
+              66,
+              70,
+              74,
+              78,
+              82,
+              86,
+              90,
+              94,
+              98,
+              102,
+              106,
+              110,
+              114,
+              118,
+              122,
+              126,
+              130,
+              134,
+              137,
+              142,
+              146,
+              150,
+              154,
+              157,
+              162,
+              165,
+              169,
+              173,
+              177,
+              182,
+              185,
+              189,
+              193,
+              197,
+              201,
+              205,
+              209,
+              213,
+              217,
+              221,
+              225,
+              229,
+              233,
+              237,
+              241,
+              245,
+              249,
+              253
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_IYXtriangle_SD11A.png",
+      "id": "FLO-01",
+      "candidate_sha256": "99525efda07b44f627c9ba332ae78a0fd3363b39163001b19aaa17858cd2f696",
+      "native_sha256": "cf5e5f4292606be4dd95fc367ff86cb2c410135ed88f4d3734f8a5ce34722f68",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/connectivity_figures.mat",
+      "native_metadata_sha256": "61b695155d6c2f0e18771015008c40938a67f9d0006b36b2e932bcb99d4df79d",
+      "native_figure_index": 3,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Connectivity of traces Y:X:I = 0.17:0.09:0.74 ",
+          "candidate": "Connectivity of traces\nY:X:I = 0.24:0.10:0.66\n",
+          "status": "documented_difference",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "xlabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -0.056596561076222685,
+            1.2112970994554746
+          ],
+          "candidate": [
+            -0.056596561076222685,
+            1.2112970994554746
+          ],
+          "status": "passed",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            -1.0,
+            0.0
+          ],
+          "candidate": [
+            -1.0,
+            0.0
+          ],
+          "status": "passed",
+          "reason": "Q11 corrected node populations"
+        },
+        {
+          "field": "annotation_meanings",
+          "native": [
+            "Y",
+            "X",
+            "I",
+            "$C_L = 2$",
+            "$C_L = 3.57$"
+          ],
+          "candidate": [
+            "Y",
+            "X",
+            "I",
+            "$C_L = 2$",
+            "$C_L = 3.57$"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [
+          "Y",
+          "X",
+          "I",
+          "$C_L = 2$",
+          "$C_L = 3.57$"
+        ]
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_cracktensor_SD11A.png",
+      "id": "FLO-08",
+      "candidate_sha256": "d4fd10c0b033cb09c1d960df42fdd08d70644964410eaa2d4c8cc3ad174b6d5d",
+      "native_sha256": "2f364a7a93c917851cc5fc26b6dcc95c7565b74d0680c837f3bf73864183fd92",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/angles_figures.mat",
+      "native_metadata_sha256": "7d5965430f98f988af0365dac6a763288f49e74267a4bd6de3956890196b238d",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Crack tensors, n=1076 ",
+          "candidate": "Crack tensors, n=1076",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_labels",
+          "native": [
+            "$0^{th}$",
+            "$2^{nd}$",
+            "$4^{th}$",
+            "$8^{th}$"
+          ],
+          "candidate": [
+            "$0^{th}$",
+            "$2^{nd}$",
+            "$4^{th}$",
+            "$8^{th}$"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_data_roles",
+          "native": null,
+          "candidate": [
+            {
+              "label": "$0^{th}$",
+              "passed": true
+            },
+            {
+              "label": "$2^{nd}$",
+              "passed": true
+            },
+            {
+              "label": "$4^{th}$",
+              "passed": true
+            },
+            {
+              "label": "$8^{th}$",
+              "passed": true
+            }
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [
+          "0"
+        ]
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2D_permeability_polar_SD11A.png",
+      "id": "FLO-09",
+      "candidate_sha256": "afaf31c191547575db9c2f7021665e950b50e08f98fdc6b677e4471ecef26840",
+      "native_sha256": "2acb1fcdb14d2f800cfd272bf15915c3573524fe65483a03d45eeb385833d52f",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/permeability_figures.mat",
+      "native_metadata_sha256": "4c210a5cfcce797892eb5f7898ebdd680e58484129b6532272269fefc23a8288",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Permeability tensor, pixels^2",
+          "candidate": "Permeability tensor, pixels$^2$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [
+          "0"
+        ]
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "FracPaQ2Dwavelet_a32_SD11A.png",
+      "id": "WAV-01",
+      "candidate_sha256": "a0fc41801cbd60df5130de9069aa9407fb990cdc13eb6c560113ce494b96ff1d",
+      "native_sha256": "ea1d3074a3a502fbef33cbf5da5fd505ebe5b386d52bea1d8f22e2a9485e2622",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/wavelets_figures.mat",
+      "native_metadata_sha256": "b440cced7cb1f6eb284ed31bd6af13563997571538470f80fe7122d2dd678ecb",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Binary image ",
+          "candidate": "Binary image\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.5,
+            1944.5
+          ],
+          "candidate": [
+            0.5,
+            1944.5
+          ],
+          "status": "passed",
+          "reason": "Q12 production raster changes WC/angle populations and auto limits"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.5,
+            1944.5
+          ],
+          "candidate": [
+            1944.5,
+            0.5
+          ],
+          "status": "documented_difference",
+          "reason": "Q12 production raster changes WC/angle populations and auto limits"
+        },
+        {
+          "field": "title",
+          "native": "WC map, a=32 ",
+          "candidate": "WC map, a=32\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.5,
+            1944.5
+          ],
+          "candidate": [
+            0.5,
+            1944.5
+          ],
+          "status": "passed",
+          "reason": "Q12 production raster changes WC/angle populations and auto limits"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.5,
+            1944.5
+          ],
+          "candidate": [
+            1944.5,
+            0.5
+          ],
+          "status": "documented_difference",
+          "reason": "Q12 production raster changes WC/angle populations and auto limits"
+        },
+        {
+          "field": "title",
+          "native": "Distribution of \\theta_{opt}, WC threshold=0.06 ",
+          "candidate": "Distribution of $\\theta_{opt}$, WC threshold=0.06\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -273.8612212474169,
+            273.8612212474169
+          ],
+          "candidate": [
+            -353.5533905932738,
+            353.5533905932738
+          ],
+          "status": "documented_difference",
+          "reason": "Q12 production raster changes WC/angle populations and auto limits"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            -273.8612212474169,
+            273.8612212474169
+          ],
+          "candidate": [
+            -353.5533905932738,
+            353.5533905932738
+          ],
+          "status": "documented_difference",
+          "reason": "Q12 production raster changes WC/angle populations and auto limits"
+        },
+        {
+          "field": "title",
+          "native": "WC histogram, a=32 ",
+          "candidate": "WC histogram, a=32\n",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "WC_{opt}",
+          "candidate": "$WC_{opt}$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "log_{10}(frequency)",
+          "candidate": "$\\log_{10}$(frequency)",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            0.11820362130796444
+          ],
+          "candidate": [
+            0.0,
+            0.14
+          ],
+          "status": "documented_difference",
+          "reason": "Q12 production raster changes WC/angle populations and auto limits"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            6.49705659841303
+          ],
+          "candidate": [
+            0.0,
+            6.459198067307667
+          ],
+          "status": "documented_difference",
+          "reason": "Q12 production raster changes WC/angle populations and auto limits"
+        },
+        {
+          "field": "annotation_meanings",
+          "native": [
+            "1%",
+            "5%",
+            "10%",
+            "20%",
+            "30%",
+            "50%"
+          ],
+          "candidate": [
+            "1%",
+            "5%",
+            "10%",
+            "20%",
+            "30%",
+            "50%"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 2,
+          "candidate": 2,
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            1
+          ],
+          "candidate": [
+            0.0,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              3,
+              6,
+              10,
+              14,
+              18,
+              22,
+              27,
+              30,
+              34,
+              38,
+              42,
+              46,
+              51,
+              54,
+              58,
+              62,
+              66,
+              70,
+              75,
+              78,
+              82,
+              86,
+              90,
+              93,
+              99,
+              102,
+              106,
+              110,
+              113,
+              117,
+              122,
+              125,
+              130,
+              133,
+              137,
+              141,
+              145,
+              149,
+              153,
+              157,
+              162,
+              165,
+              169,
+              173,
+              177,
+              181,
+              186,
+              189,
+              193,
+              197,
+              201,
+              205,
+              209,
+              213,
+              217,
+              221,
+              225,
+              229,
+              233,
+              237,
+              241,
+              245,
+              249,
+              253
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_label",
+          "native": "",
+          "candidate": "",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_limits",
+          "native": [
+            0,
+            1
+          ],
+          "candidate": [
+            0.0,
+            1.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_palette_and_direction",
+          "native": null,
+          "candidate": {
+            "maximum_rgb_distance": 1,
+            "palette_indices": [
+              2,
+              6,
+              10,
+              14,
+              18,
+              22,
+              26,
+              30,
+              34,
+              38,
+              42,
+              46,
+              50,
+              54,
+              58,
+              62,
+              66,
+              70,
+              74,
+              78,
+              82,
+              86,
+              89,
+              92,
+              98,
+              102,
+              106,
+              110,
+              113,
+              117,
+              121,
+              125,
+              130,
+              133,
+              137,
+              141,
+              145,
+              149,
+              153,
+              157,
+              161,
+              165,
+              169,
+              173,
+              177,
+              181,
+              185,
+              189,
+              193,
+              197,
+              201,
+              205,
+              209,
+              213,
+              217,
+              221,
+              225,
+              229,
+              233,
+              237,
+              241,
+              245,
+              249,
+              253
+            ],
+            "passed": true
+          },
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        [],
+        [],
+        [
+          "1%",
+          "5%",
+          "10%",
+          "20%",
+          "30%",
+          "50%"
+        ],
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "guiFracPaQ2D_tracelengthalonggraph_SD11A.png",
+      "id": "GRA-03",
+      "candidate_sha256": "4c46a91400c9403aff22e7d17d7a11cb6b73568c478e59169145ae48ba07eebf",
+      "native_sha256": "65067bd47b4cb914ea2f44987249e747c8eb881e8496c384077450ed41bc16d3",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/graphs_figures.mat",
+      "native_metadata_sha256": "b0066b417d5a4d40c1359c58e016d1a6b7aab658a0f59a5f38fd9779cf1e8178",
+      "native_figure_index": 0,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Trace lengths",
+          "candidate": "Trace lengths",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Distance along line from point 1, pixels",
+          "candidate": "Distance along line from point 1, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Trace length, pixels",
+          "candidate": "Trace length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1949.7148888888892
+          ],
+          "candidate": [
+            0.0,
+            1949.714888888889
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            2057.1207719859935
+          ],
+          "candidate": [
+            0.0,
+            2057.1207719859935
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "guiFracPaQ2D_segmentlengthalonggraph_SD11A.png",
+      "id": "GRA-04",
+      "candidate_sha256": "d33be0382beacc27f5f00e9950bd3b2aca80e9f6a3feb341d6a6152d037e7ae9",
+      "native_sha256": "5f69c3deba312f46d6820428be70c60835404ff66ea12e1ba16785567e358e05",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/graphs_figures.mat",
+      "native_metadata_sha256": "b0066b417d5a4d40c1359c58e016d1a6b7aab658a0f59a5f38fd9779cf1e8178",
+      "native_figure_index": 1,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment lengths",
+          "candidate": "Segment lengths",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Distance along line from point 1, pixels",
+          "candidate": "Distance along line from point 1, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Segment length, pixels",
+          "candidate": "Segment length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1949.7148888888892
+          ],
+          "candidate": [
+            0.0,
+            1949.714888888889
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            204.98919483719132
+          ],
+          "candidate": [
+            0.0,
+            204.98919483719132
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "guiFracPaQ2D_segmentanglealonggraph_SD11A.png",
+      "id": "GRA-05",
+      "candidate_sha256": "2b0c10b90b842a6d2116164cdf93e828f08236068dc80707f6894e36b106d678",
+      "native_sha256": "be2ddd7dd0b5c379247d2323e06135182ba8ad02668d58cc548f598f0e98a188",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/graphs_figures.mat",
+      "native_metadata_sha256": "b0066b417d5a4d40c1359c58e016d1a6b7aab658a0f59a5f38fd9779cf1e8178",
+      "native_figure_index": 2,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment angles",
+          "candidate": "Segment angles",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Distance along line from point 1, pixels",
+          "candidate": "Distance along line from point 1, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Segment angle, degrees",
+          "candidate": "Segment angle, degrees",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1949.7148888888892
+          ],
+          "candidate": [
+            0.0,
+            1949.714888888889
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            180.0
+          ],
+          "candidate": [
+            0.0,
+            180.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "guiFracPaQ2D_graphtracemap_SD11A.png",
+      "id": "GRA-06",
+      "candidate_sha256": "011ba292de237b6958d93b7fb7a5a915dc7b79806f4cf4b3a15f0d5ce34ac58b",
+      "native_sha256": "0eea7752381c199ea5c74242ac6c9c4e26cb96da487abbdb1d5118613d13df8c",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/graphs_figures.mat",
+      "native_metadata_sha256": "b0066b417d5a4d40c1359c58e016d1a6b7aab658a0f59a5f38fd9779cf1e8178",
+      "native_figure_index": 3,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Mapped trace segments, n=1076",
+          "candidate": "Mapped trace segments, n=1076",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "X, pixels",
+          "candidate": "X, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Y, pixels",
+          "candidate": "Y, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1997.7
+          ],
+          "candidate": [
+            0.0,
+            1997.7
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            1.8,
+            1988.5
+          ],
+          "candidate": [
+            1.8,
+            1988.5
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_labels",
+          "native": [
+            "Point 1",
+            "Point 2"
+          ],
+          "candidate": [
+            "Point 1",
+            "Point 2"
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "legend_data_roles",
+          "native": null,
+          "candidate": [
+            {
+              "label": "Point 1",
+              "passed": true
+            },
+            {
+              "label": "Point 2",
+              "passed": true
+            }
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "guiFracPaQ2D_intensityalonggraph_SD11A.png",
+      "id": "GRA-06",
+      "candidate_sha256": "b3cfc45c45c5592aa8cfef0b43f9217f16c3fed287e0d422e0d995beaa74150c",
+      "native_sha256": "cf50c95d06f444491f12adbb0bbe6455b4d3b3db5eb96b403bfdc9cc9ebcfe32",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/graphs_figures.mat",
+      "native_metadata_sha256": "b0066b417d5a4d40c1359c58e016d1a6b7aab658a0f59a5f38fd9779cf1e8178",
+      "native_figure_index": 4,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Estimated intensity (P21), pixel^{-1}",
+          "candidate": "Estimated intensity (P21), pixel$^{-1}$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Distance along line from point 1, pixels",
+          "candidate": "Distance along line from point 1, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Intensity, pixels^{-1}",
+          "candidate": "Intensity, pixels$^{-1}$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1914.4625
+          ],
+          "candidate": [
+            0.0,
+            1914.4625
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            0.03604144766481454
+          ],
+          "candidate": [
+            0.0,
+            0.03604144766481454
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "guiFracPaQ2D_densityalonggraph_SD11A.png",
+      "id": "GRA-06",
+      "candidate_sha256": "b945c0579e78cd01c834b046dfceccd101cad6695ad8f0c6f1101c08ceb2bf20",
+      "native_sha256": "1ccc1774b5d52ec999569a862b729ff97fff79bec93d42827cad951b6c5e4f47",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/graphs_figures.mat",
+      "native_metadata_sha256": "b0066b417d5a4d40c1359c58e016d1a6b7aab658a0f59a5f38fd9779cf1e8178",
+      "native_figure_index": 5,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Estimated density (P20), pixel^{-2}",
+          "candidate": "Estimated density (P20), pixel$^{-2}$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Distance along line from point 1, pixels",
+          "candidate": "Distance along line from point 1, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Density, pixels^{-2}",
+          "candidate": "Density, pixels$^{-2}$",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            0.0,
+            1914.4625
+          ],
+          "candidate": [
+            0.0,
+            1914.4625
+          ],
+          "status": "passed",
+          "reason": "Q20 corrected P20 normalisation"
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            0.08030644372860316
+          ],
+          "candidate": [
+            0.0,
+            0.0009647868295972746
+          ],
+          "status": "documented_difference",
+          "reason": "Q20 corrected P20 normalisation"
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "guiFracPaQ2D_tracelengthfromgraph_SD11A.png",
+      "id": "GRA-10",
+      "candidate_sha256": "cfad163e9666e4474e9de75cf1f71e398acf2458a1ed6cdb1389c240dd859226",
+      "native_sha256": "03b25d44fadb0cc879b2871d0e7cb40a125377017444bbe3b16d55a0d233a59a",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/graphs_figures.mat",
+      "native_metadata_sha256": "b0066b417d5a4d40c1359c58e016d1a6b7aab658a0f59a5f38fd9779cf1e8178",
+      "native_figure_index": 6,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Trace lengths",
+          "candidate": "Trace lengths",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Perpendicular distance from line, pixels",
+          "candidate": "Perpendicular distance from line, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Trace length, pixels",
+          "candidate": "Trace length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -1000.0,
+            1000.0
+          ],
+          "candidate": [
+            -1000.0,
+            1000.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            2500.0
+          ],
+          "candidate": [
+            0.0,
+            2500.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "guiFracPaQ2D_segmentlengthfromgraph_SD11A.png",
+      "id": "GRA-11",
+      "candidate_sha256": "5ffe16d6d775ba6d574f94614b2e74ad68931a903560035b2a80de2bc23a5567",
+      "native_sha256": "f5160023c40b4478806e5661fe138035a1a6a4d3bd7eb721d4eb3125132d5e09",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/graphs_figures.mat",
+      "native_metadata_sha256": "b0066b417d5a4d40c1359c58e016d1a6b7aab658a0f59a5f38fd9779cf1e8178",
+      "native_figure_index": 7,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment lengths",
+          "candidate": "Segment lengths",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Perpendicular distance from line, pixels",
+          "candidate": "Perpendicular distance from line, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Segment length, pixels",
+          "candidate": "Segment length, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -1000.0,
+            1000.0
+          ],
+          "candidate": [
+            -1000.0,
+            1000.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            350.0
+          ],
+          "candidate": [
+            0.0,
+            350.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    },
+    {
+      "figure": "guiFracPaQ2D_segmentanglefromgraph_SD11A.png",
+      "id": "GRA-12",
+      "candidate_sha256": "13d79f1ab31508c4dc60d5dc762ff7f2b7f532accd8a4bd1fe79dde6effb2b76",
+      "native_sha256": "6d4359d32104597eaf623ff20b58a1cf2710b8220222a5bb7179f7c418843a11",
+      "native_metadata": "tests/reference/sprint16/sd11a/native/graphs_figures.mat",
+      "native_metadata_sha256": "b0066b417d5a4d40c1359c58e016d1a6b7aab658a0f59a5f38fd9779cf1e8178",
+      "native_figure_index": 8,
+      "checks": [
+        {
+          "field": "title",
+          "native": "Segment angles",
+          "candidate": "Segment angles",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlabel",
+          "native": "Perpendicular distance from line, pixels",
+          "candidate": "Perpendicular distance from line, pixels",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylabel",
+          "native": "Segment angle, degrees",
+          "candidate": "Segment angle, degrees",
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "xlim",
+          "native": [
+            -1000.0,
+            1000.0
+          ],
+          "candidate": [
+            -1000.0,
+            1000.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "ylim",
+          "native": [
+            0.0,
+            180.0
+          ],
+          "candidate": [
+            0.0,
+            180.0
+          ],
+          "status": "passed",
+          "reason": null
+        },
+        {
+          "field": "colourbar_count",
+          "native": 0,
+          "candidate": 0,
+          "status": "passed",
+          "reason": null
+        }
+      ],
+      "axis_annotations": [
+        []
+      ],
+      "figure_annotations": []
+    }
+  ],
+  "issues": []
+}

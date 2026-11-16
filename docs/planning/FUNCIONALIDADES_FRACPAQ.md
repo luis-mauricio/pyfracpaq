@@ -26,7 +26,7 @@ A análise combinou leitura do código e de suas chamadas, extração das propri
 
 **Estados usados:** **I** = conectado à interface principal 2.8; **A** = auxiliar utilizável por código/linha de comando; **E** = legado, demonstração ou experimento fora do fluxo principal; **P** = melhoria proposta a partir de uma lacuna. Um recurso I pode ter limitações registradas em `Q-*`.
 
-Fontes principais: [interface e execução](fracpaq-matlab/guiFracPaQ2D.m), [layout da interface](fracpaq-matlab/guiFracPaQ2D.fig), [README](fracpaq-matlab/README.md), [manual 2.8](<fracpaq-matlab/FracPaQ User Guide v2.8.pdf>). Quando manual e código divergem, o comportamento encontrado no código é explicitado.
+Fontes principais: [interface e execução](../../fracpaq-matlab/guiFracPaQ2D.m), [layout da interface](../../fracpaq-matlab/guiFracPaQ2D.fig), [README](../../fracpaq-matlab/README.md), [manual 2.8](<../../fracpaq-matlab/FracPaQ User Guide v2.8.pdf>). Quando manual e código divergem, o comportamento encontrado no código é explicitado.
 
 ## 2. Modelo de dados e fluxo de uso
 
@@ -101,7 +101,7 @@ Fontes: `guiFracPaQ2D.fig`; `guiFracPaQ2D.m:71–353`, `567–777`, `780–1422`
 | IN-17 | Diagnóstico Hough | Figura com imagem original e três vistas do acumulador, incluindo o plano de limiar; exportação automática | Permitir avaliar picos e limiar antes da análise final |
 | IN-18 | Validação e informação da imagem | Erro de formato mostra aviso e imprime metadados de `imfinfo` no console | Usuário conseguir identificar profundidade e tipo de cor incompatíveis |
 
-Fontes: [leitor de nós](fracpaq-matlab/guiFracPaQ2Dlist.m), [leitor de imagem/Hough](fracpaq-matlab/guiFracPaQ2Dimage.m), [conversor SVG atual](fracpaq-matlab/convertSVG2txt_colour2.m), `guiFracPaQ2D.m:780–1035`. A geração de midpoint de segmentos e cores tem diferenças entre os leitores; ver Q-06.
+Fontes: [leitor de nós](../../fracpaq-matlab/guiFracPaQ2Dlist.m), [leitor de imagem/Hough](../../fracpaq-matlab/guiFracPaQ2Dimage.m), [conversor SVG atual](../../fracpaq-matlab/convertSVG2txt_colour2.m), `guiFracPaQ2D.m:780–1035`. A geração de midpoint de segmentos e cores tem diferenças entre os leitores; ver Q-06.
 
 ### 4.1 Valores iniciais e validação encontrados
 
@@ -167,7 +167,7 @@ Os valores iniciais vêm do `.fig` e dos ajustes em `OpeningFcn`. “Validação
 | MAP-17 | Rosas de estabilidade | Largura fixa de 10°, cores da grandeza e linha de azimute de σ1; independentes do bin escolhido na aba Angles | Identificar grandeza e azimute e documentar o bin próprio |
 | MAP-18 | Exportação dos campos locais | TXT com X, Y e valor de intensidade/densidade por centro de círculo; ao selecionar uma delas, a rotina grava ambas | Relacionar valores exportados às posições corretas da grade |
 
-Fontes: [mapas geométricos e estabilidade](fracpaq-matlab/guiFracPaQ2Dtracemap.m), [amostragem circular](fracpaq-matlab/guiFracPaQ2Dpattern.m), [rosa de estabilidade](fracpaq-matlab/roseEqualAreaColourTendency.m), [Mohr](fracpaq-matlab/plotMohr2D.m).
+Fontes: [mapas geométricos e estabilidade](../../fracpaq-matlab/guiFracPaQ2Dtracemap.m), [amostragem circular](../../fracpaq-matlab/guiFracPaQ2Dpattern.m), [rosa de estabilidade](../../fracpaq-matlab/roseEqualAreaColourTendency.m), [Mohr](../../fracpaq-matlab/plotMohr2D.m).
 
 ## 6. Épico LEN — aba Lengths
 
@@ -194,7 +194,7 @@ Fontes: [mapas geométricos e estabilidade](fracpaq-matlab/guiFracPaQ2Dtracemap.
 
 Detalhe estatístico: `KStestPower` usa `alpha=0.1` no `kstest2`, mas conta também `p>0.05`; exponencial e lognormal usam `alpha=0.05`. As rotinas não fixam semente aleatória. Os nomes `Hpercent`/`Ppercent` e as mensagens originais devem ser interpretados com cuidado. As assinaturas de retorno e a lógica de cortes/ajuste precisam da revisão Q-15.
 
-Fontes: [análises de comprimentos](fracpaq-matlab/guiFracPaQ2Dlength.m), `fittingPL.m`, `fittingExponential.m`, `fittingLognormal.m`, `KStestPower.m`, `KStestexp.m`, `KStestLogNorm.m`, `PlotPowerLaw.m`, `PlotExp.m`, `PlotLogNorm.m`, `variogram.m`.
+Fontes: [análises de comprimentos](../../fracpaq-matlab/guiFracPaQ2Dlength.m), `fittingPL.m`, `fittingExponential.m`, `fittingLognormal.m`, `KStestPower.m`, `KStestexp.m`, `KStestLogNorm.m`, `PlotPowerLaw.m`, `PlotExp.m`, `PlotLogNorm.m`, `variogram.m`.
 
 ## 7. Épico ANG — aba Angles
 
@@ -214,7 +214,7 @@ Fontes: [análises de comprimentos](fracpaq-matlab/guiFracPaQ2Dlength.m), `fitti
 
 **Posição do crack tensor:** o controle está em **Fluid Flow**. Ele faz parte da seleção que aciona `guiFracPaQ2Dangle`, mas seu inventário funcional está em FLO-08, abaixo. Não há seletor de rosa linear na interface principal: `flag_equalarea` está fixo em 1; rotinas alternativas constam em AUX.
 
-Fontes: [análises angulares](fracpaq-matlab/guiFracPaQ2Dangle.m), `roseEqualArea.m`, `roseEqualAreaColour.m`, `circStat.m`, `doubleAngles.m`, `reverseAxis.m`.
+Fontes: [análises angulares](../../fracpaq-matlab/guiFracPaQ2Dangle.m), `roseEqualArea.m`, `roseEqualAreaColour.m`, `circStat.m`, `doubleAngles.m`, `reverseAxis.m`.
 
 ## 8. Épico FLO — aba Fluid Flow
 
@@ -238,7 +238,7 @@ Fontes: [análises angulares](fracpaq-matlab/guiFracPaQ2Dangle.m), `roseEqualAre
 
 O programa **estima permeabilidade e caracteriza conectividade**. Não foi encontrado um solucionador de fluxo com condições de contorno, campo de pressão, vazão ou transporte. Não atribuir essas funcionalidades ao nome da aba.
 
-Fontes: [conectividade](fracpaq-matlab/getConnectivity.m), `guiFracPaQ2Dpattern.m:272–334`, [permeabilidade](fracpaq-matlab/guiFracPaQ2Dtensor.m), [crack tensors](fracpaq-matlab/guiFracPaQ2Dcracktensor.m), `getF2tensor.m`, `getF4tensor.m`, `getF8tensor.m`.
+Fontes: [conectividade](../../fracpaq-matlab/getConnectivity.m), `guiFracPaQ2Dpattern.m:272–334`, [permeabilidade](../../fracpaq-matlab/guiFracPaQ2Dtensor.m), [crack tensors](../../fracpaq-matlab/guiFracPaQ2Dcracktensor.m), `getF2tensor.m`, `getF4tensor.m`, `getF8tensor.m`.
 
 ## 9. Épico WAV — aba Wavelets
 
@@ -261,7 +261,7 @@ Fontes: [conectividade](fracpaq-matlab/getConnectivity.m), `guiFracPaQ2Dpattern.
 
 O resultado usa coordenadas da imagem rasterizada, em pixels. A função principal de wavelet não recebe a correção de norte nem o fator de escala como parâmetros: não presumir correção geográfica ou escala física idênticas às demais abas. Não há botão de cancelamento de processamento na aba principal; o `Cancel` existente pertence ao diálogo auxiliar legado.
 
-Fontes: [wavelet integrada](fracpaq-matlab/guiFracPaQ2Dwavelet.m), `guiFracPaQ2D.m:1367–1422`, `morlet.m`, `mexicanhat.m`, `morletCWT.m`, `mexicanhatCWT.m`, `morletCWTself.m`, `mexicanhatCWTself.m`.
+Fontes: [wavelet integrada](../../fracpaq-matlab/guiFracPaQ2Dwavelet.m), `guiFracPaQ2D.m:1367–1422`, `morlet.m`, `mexicanhat.m`, `morletCWT.m`, `mexicanhatCWT.m`, `morletCWTself.m`, `mexicanhatCWTself.m`.
 
 ## 10. Épico GRA — aba Graphs
 
@@ -285,7 +285,7 @@ Fontes: [wavelet integrada](fracpaq-matlab/guiFracPaQ2Dwavelet.m), `guiFracPaQ2D
 
 **Particularidades atuais:** marcar apenas intensidade **ou** densidade acaba gerando os dois gráficos, pois compartilham um único bloco de execução. ALONG pode representar o mesmo traço mais de uma vez se a linha cruzar mais de um de seus segmentos. FROM usa a distância à reta definida pelos pontos, sem limitar a projeção ao trecho finito. A rotina não recebe correção de norte; flips são aplicados no mapa auxiliar, não como transformação geral dos dados dos perfis. Não foi encontrada exportação TXT dos perfis nesta rotina.
 
-Fontes: `guiFracPaQ2D.m:666–699`, `1160–1191`, [gráficos ao longo e a partir de linha](fracpaq-matlab/guiFracPaQ2Dgraphs.m).
+Fontes: `guiFracPaQ2D.m:666–699`, `1160–1191`, [gráficos ao longo e a partir de linha](../../fracpaq-matlab/guiFracPaQ2Dgraphs.m).
 
 ## 11. Épico Q — limitações, divergências e correções para planejamento
 
@@ -455,105 +455,105 @@ Os estados abaixo indicam uso no pacote original, não progresso de implementaç
 
 | Arquivo | Estado | Papel / ligação funcional |
 | --- | --- | --- |
-| [arc.m](fracpaq-matlab/arc.m) | A/E | Desenha arco em azul, passo de 5°; AUX-10. |
-| [arc2.m](fracpaq-matlab/arc2.m) | A/E | Desenha arco pontilhado em preto, usado em rosa histórica; AUX-10. |
-| [blocksize.m](fracpaq-matlab/blocksize.m) | E | Experimento de centroides/áreas a partir do BMP intermediário; AUX-15. |
-| [centax2.m](fracpaq-matlab/centax2.m) | A/E | Redesenha eixos centralizados em origem escolhida; AUX-10. |
-| [circStat.m](fracpaq-matlab/circStat.m) | I | Média axial, dispersão e resultante circular; ANG-05. |
-| [cmocean.m](fracpaq-matlab/cmocean.m) | I/A | Biblioteca de 18 paletas, níveis, inversão e pivô; AUX-08. |
-| [convertSVG2txt.m](fracpaq-matlab/convertSVG2txt.m) | E | Conversor antigo monocromático; ignora paths e gera nome sem _ antes de converted. |
-| [convertSVG2txt_colour.m](fracpaq-matlab/convertSVG2txt_colour.m) | E | Conversor antigo por cores, anterior ao suporte de paths atual; AUX-14. |
-| [convertSVG2txt_colour2.m](fracpaq-matlab/convertSVG2txt_colour2.m) | I | Conversor atual por cores, linhas, polilinhas e paths simples; IN-05 a IN-09. |
-| [distancePointEdge.m](fracpaq-matlab/distancePointEdge.m) | I/A | Distância/projeção limitada de pontos sobre segmentos; AUX-04. |
-| [distancePoints.m](fracpaq-matlab/distancePoints.m) | I/A | Distâncias entre pontos com norma configurável e modo diagonal; AUX-04. |
-| [doubleAngles.m](fracpaq-matlab/doubleAngles.m) | I | Correção de norte, arredondamento e duplicação axial; ANG-07. |
-| [fittingExponential.m](fracpaq-matlab/fittingExponential.m) | I | Estima λ/xmin, aplica cortes e chama K-S/plot; LEN-08. |
-| [fittingLognormal.m](fracpaq-matlab/fittingLognormal.m) | I | Estima μ/σ/xmin, aplica cortes e chama K-S/plot; LEN-09, Q-15. |
-| [fittingPL.m](fracpaq-matlab/fittingPL.m) | I/A | Estima α/xmin, cortes e correção opcional de amostra finita por argumento; LEN-07. |
-| [FracPaQ2D_imagePreprocess.m](fracpaq-matlab/FracPaQ2D_imagePreprocess.m) | A | Pré-processamento demonstrativo de imagem e TIFF; AUX-01. |
-| [FracPaQ2Dwave_2_Morlet.m](fracpaq-matlab/FracPaQ2Dwave_2_Morlet.m) | E | Análise Morlet em imagem fixa, painel e JPEG; AUX-13. |
-| [getConnectivity.m](fracpaq-matlab/getConnectivity.m) | I | Classificação I/Y/X, limpeza e mapas de nós/heatmaps; FLO-01 a FLO-06. |
-| [getF16tensor.m](fracpaq-matlab/getF16tensor.m) | A/E | Tensor de ordem 16 e projeção polar; fora da GUI; AUX-06. |
-| [getF2tensor.m](fracpaq-matlab/getF2tensor.m) | I | Tensor de ordem 2 e projeção polar; FLO-08/09. |
-| [getF4tensor.m](fracpaq-matlab/getF4tensor.m) | I | Tensor de ordem 4 e projeção polar; FLO-08. |
-| [getF8tensor.m](fracpaq-matlab/getF8tensor.m) | I | Tensor de ordem 8 e projeção polar; FLO-08. |
-| [getMapLimits.m](fracpaq-matlab/getMapLimits.m) | I | Limites X/Y a partir dos nós; Q-08. |
-| [guiFracPaQ2D.m](fracpaq-matlab/guiFracPaQ2D.m) | I | Inicialização 2.8, validações, callbacks, navegação e despacho Run; UI/IN. |
-| [guiFracPaQ2Dangle.m](fracpaq-matlab/guiFracPaQ2Dangle.m) | I | Histograma, rosa, exportação EZROSE e chamada de crack tensor; ANG/FLO-08. |
-| [guiFracPaQ2Dcracktensor.m](fracpaq-matlab/guiFracPaQ2Dcracktensor.m) | I | Gráfico polar dos tensores 0/2/4/8; FLO-08. |
-| [guiFracPaQ2Dgraphs.m](fracpaq-matlab/guiFracPaQ2Dgraphs.m) | I | Perfis ALONG/FROM e círculos ao longo da linha; GRA. |
-| [guiFracPaQ2Dimage.m](fracpaq-matlab/guiFracPaQ2Dimage.m) | I | Leitura de imagem, Hough e construção dos traços; IN-12 a IN-18. |
-| [guiFracPaQ2Dlength.m](fracpaq-matlab/guiFracPaQ2Dlength.m) | I | Comprimentos, histogramas, log-log, MLE, blocos e variograma; LEN. |
-| [guiFracPaQ2Dlist.m](fracpaq-matlab/guiFracPaQ2Dlist.m) | I | Leitura TXT tabulado, segmentos e prévia; IN-01 a IN-04. |
-| [guiFracPaQ2Dpattern.m](fracpaq-matlab/guiFracPaQ2Dpattern.m) | I | Círculos P21/P20, exportação e coordenação IYX; MAP/FLO. |
-| [guiFracPaQ2Dtabbed.m](fracpaq-matlab/guiFracPaQ2Dtabbed.m) | E | Interface antiga 2.2; falta .fig homônimo e usa assinaturas antigas; AUX-14. |
-| [guiFracPaQ2Dtensor.m](fracpaq-matlab/guiFracPaQ2Dtensor.m) | I | Aberturas, tensor hidráulico e permeabilidade polar; FLO-09 a FLO-13. |
-| [guiFracPaQ2Dtracemap.m](fracpaq-matlab/guiFracPaQ2Dtracemap.m) | I | Mapas geométricos, por atributo e estabilidade/Mohr/rosas; MAP. |
-| [guiFracPaQ2Dwavelet.m](fracpaq-matlab/guiFracPaQ2Dwavelet.m) | I | Rasterização, CWT por escala, painel e TXT de orientação; WAV. |
-| [guiFracPaQ2Dwavelet2.m](fracpaq-matlab/guiFracPaQ2Dwavelet2.m) | E | Variante que reutiliza raster de nome fixo; chamada pelo diálogo auxiliar. |
-| [guiFracPaQ2Dwavelet3.m](fracpaq-matlab/guiFracPaQ2Dwavelet3.m) | E | Variante com imagem fixa e figuras separadas; AUX-13. |
-| [guiPrint.m](fracpaq-matlab/guiPrint.m) | I | Exportação comum PNG 600 dpi e tag; EXP-01/02. |
-| [guiWaveletDialog.m](fracpaq-matlab/guiWaveletDialog.m) | E | Callbacks do diálogo separado de wavelet, Run/Cancel; AUX-12. |
-| [guiWaveletTest.m](fracpaq-matlab/guiWaveletTest.m) | E | Chamada de ensaio com assinatura/variáveis históricas de wavelet; AUX-15. |
-| [hexRGB.m](fracpaq-matlab/hexRGB.m) | I | Hexadecimal para string RGB normalizada; IN-08. |
-| [KStestexp.m](fracpaq-matlab/KStestexp.m) | I | 2500 comparações K-S com amostras exponenciais; LEN-11. |
-| [KStestLogNorm.m](fracpaq-matlab/KStestLogNorm.m) | I | 2500 comparações K-S com amostras lognormais; LEN-11. |
-| [KStestPower.m](fracpaq-matlab/KStestPower.m) | I | 2500 comparações K-S com amostras de lei de potência; LEN-11. |
-| [lineSegmentIntersect.m](fracpaq-matlab/lineSegmentIntersect.m) | I/A | Interseções vetorizadas, coordenadas, paralelismo e coincidência; AUX-04. |
-| [logplots.m](fracpaq-matlab/logplots.m) | E | Demonstra histogramas/log-log lendo exportação de nome antigo sem tag; AUX-15. |
-| [mexicanhat.m](fracpaq-matlab/mexicanhat.m) | I | Núcleo Mexican Hat anisotrópico/rotacionado; WAV-02/07. |
-| [mexicanhatCWT.m](fracpaq-matlab/mexicanhatCWT.m) | I | Convolução CWT 2D via FFT e energia eta; WAV-07. |
-| [mexicanhatCWTself.m](fracpaq-matlab/mexicanhatCWTself.m) | I | Resposta do núcleo a si mesmo para normalização; WAV-08. |
-| [morlet.m](fracpaq-matlab/morlet.m) | I | Núcleo Morlet complexo anisotrópico/rotacionado; WAV-02/07. |
-| [morletCWT.m](fracpaq-matlab/morletCWT.m) | I | CWT 2D via FFT, retorno real e energia eta; WAV-07. |
-| [morletCWTself.m](fracpaq-matlab/morletCWTself.m) | I | Resposta Morlet a si mesma para normalização; WAV-08. |
-| [Move2FracPaq.m](fracpaq-matlab/Move2FracPaq.m) | A | Conversor ASCII Move para arquivo de nós; AUX-02. |
-| [newCM.m](fracpaq-matlab/newCM.m) | A/E | Reamostragem não linear de paleta haline por limites; AUX-09. |
-| [plotCrackTensor.m](fracpaq-matlab/plotCrackTensor.m) | E | Demonstração de tensores com comprimentos/direções sintéticos; AUX-15. |
-| [plotEllipse.m](fracpaq-matlab/plotEllipse.m) | A/E | Elipse preenchida com eixos e rotação relativa ao norte; AUX-10. |
-| [PlotExp.m](fracpaq-matlab/PlotExp.m) | I | Curva observada/ajustada exponencial, cortes e parâmetro; LEN-08/12. |
-| [PlotLogNorm.m](fracpaq-matlab/PlotLogNorm.m) | I | Curva observada/ajustada lognormal, cortes e parâmetros; LEN-09/12. |
-| [plotMohr.m](fracpaq-matlab/plotMohr.m) | E | Variante curta de Mohr; declara função plotMohr2D, diferente do arquivo; Q-19. |
-| [plotMohr2D.m](fracpaq-matlab/plotMohr2D.m) | I | Mohr total/efetivo e reta de resistência; MAP-16. |
-| [PlotPowerLaw.m](fracpaq-matlab/PlotPowerLaw.m) | I | Curva observada/ajustada de potência, cortes e parâmetros; LEN-07/12. |
-| [plotSouterMap.m](fracpaq-matlab/plotSouterMap.m) | E | Composição de conjuntos Souter; chama guiFracPaQ2Dtracemap2, ausente. |
-| [probePlane.m](fracpaq-matlab/probePlane.m) | A/E | Varredura por scanlines direcionais e medidas de interseção; AUX-11. |
-| [readtext.m](fracpaq-matlab/readtext.m) | I/A | Leitor genérico de texto, delimitadores, máscaras e estatísticas; AUX-03. |
-| [readTraces.m](fracpaq-matlab/readTraces.m) | A/E | Leitor alternativo com figura própria e tentativa de remover traços degenerados; Q-07. |
-| [reverseAxis.m](fracpaq-matlab/reverseAxis.m) | I | Transformação angular 180° − ângulo, com ajuste de negativos; ANG-08. |
-| [roseEqualArea.m](fracpaq-matlab/roseEqualArea.m) | I | Rosa de área igual, ponderação opcional e média circular; ANG-02/04/05. |
-| [roseEqualArea2.m](fracpaq-matlab/roseEqualArea2.m) | E | Variante experimental de rosa colorida com mensagens de depuração; AUX-07. |
-| [roseEqualAreaColour.m](fracpaq-matlab/roseEqualAreaColour.m) | I | Rosa de área igual colorida por strike; ANG-06. |
-| [roseEqualAreaColourTendency.m](fracpaq-matlab/roseEqualAreaColourTendency.m) | I | Rosas de Ts/Td/Sf/CSF com azimute de σ1; MAP-17. |
-| [roseLinear.m](fracpaq-matlab/roseLinear.m) | E | Rosa linear por contagem/comprimento; ramo desativado na GUI; AUX-07. |
-| [rosePlot.m](fracpaq-matlab/rosePlot.m) | A/E | Rosa histórica, dados direcionais/axiais e escala de área/linear; AUX-07. |
-| [testCM.m](fracpaq-matlab/testCM.m) | E | Experimento de paleta com dado cape; declara função newCM, diferente do arquivo. |
-| [testImage.m](fracpaq-matlab/testImage.m) | E | Imagem sintética diagonal, complemento, limpeza e exportação BMP; AUX-15. |
-| [testmaps.m](fracpaq-matlab/testmaps.m) | E | Mapas experimentais por comprimento/strike, com paletas parula/hsv; AUX-15. |
-| [testWavelet.m](fracpaq-matlab/testWavelet.m) | E | Ensaio de wavelet com chamada antiga e referência a test.jpg ausente; AUX-15. |
-| [trilines.m](fracpaq-matlab/trilines.m) | A/E | Desenha linhas auxiliares para gráfico ternário; AUX-10. |
-| [triplot.m](fracpaq-matlab/triplot.m) | I | Moldura ternária I/Y/X com malha de 10%; FLO-04. |
-| [tripts.m](fracpaq-matlab/tripts.m) | I | Converte proporções ternárias e desenha pontos/linhas/rótulos; FLO-04. |
-| [tritest.m](fracpaq-matlab/tritest.m) | E | Demonstração do ternário com chamada antiga de tripts; AUX-15. |
-| [variogram.m](fracpaq-matlab/variogram.m) | I/A | Semivariograma isotrópico/direcional, nuvens e subamostragem; LEN-15/AUX-05. |
-| [waveletDialog.m](fracpaq-matlab/waveletDialog.m) | E | Protótipo de diálogo que apenas escolhe Red/Green/Blue e Close; não processa wavelet. |
+| [arc.m](../../fracpaq-matlab/arc.m) | A/E | Desenha arco em azul, passo de 5°; AUX-10. |
+| [arc2.m](../../fracpaq-matlab/arc2.m) | A/E | Desenha arco pontilhado em preto, usado em rosa histórica; AUX-10. |
+| [blocksize.m](../../fracpaq-matlab/blocksize.m) | E | Experimento de centroides/áreas a partir do BMP intermediário; AUX-15. |
+| [centax2.m](../../fracpaq-matlab/centax2.m) | A/E | Redesenha eixos centralizados em origem escolhida; AUX-10. |
+| [circStat.m](../../fracpaq-matlab/circStat.m) | I | Média axial, dispersão e resultante circular; ANG-05. |
+| [cmocean.m](../../fracpaq-matlab/cmocean.m) | I/A | Biblioteca de 18 paletas, níveis, inversão e pivô; AUX-08. |
+| [convertSVG2txt.m](../../fracpaq-matlab/convertSVG2txt.m) | E | Conversor antigo monocromático; ignora paths e gera nome sem _ antes de converted. |
+| [convertSVG2txt_colour.m](../../fracpaq-matlab/convertSVG2txt_colour.m) | E | Conversor antigo por cores, anterior ao suporte de paths atual; AUX-14. |
+| [convertSVG2txt_colour2.m](../../fracpaq-matlab/convertSVG2txt_colour2.m) | I | Conversor atual por cores, linhas, polilinhas e paths simples; IN-05 a IN-09. |
+| [distancePointEdge.m](../../fracpaq-matlab/distancePointEdge.m) | I/A | Distância/projeção limitada de pontos sobre segmentos; AUX-04. |
+| [distancePoints.m](../../fracpaq-matlab/distancePoints.m) | I/A | Distâncias entre pontos com norma configurável e modo diagonal; AUX-04. |
+| [doubleAngles.m](../../fracpaq-matlab/doubleAngles.m) | I | Correção de norte, arredondamento e duplicação axial; ANG-07. |
+| [fittingExponential.m](../../fracpaq-matlab/fittingExponential.m) | I | Estima λ/xmin, aplica cortes e chama K-S/plot; LEN-08. |
+| [fittingLognormal.m](../../fracpaq-matlab/fittingLognormal.m) | I | Estima μ/σ/xmin, aplica cortes e chama K-S/plot; LEN-09, Q-15. |
+| [fittingPL.m](../../fracpaq-matlab/fittingPL.m) | I/A | Estima α/xmin, cortes e correção opcional de amostra finita por argumento; LEN-07. |
+| [FracPaQ2D_imagePreprocess.m](../../fracpaq-matlab/FracPaQ2D_imagePreprocess.m) | A | Pré-processamento demonstrativo de imagem e TIFF; AUX-01. |
+| [FracPaQ2Dwave_2_Morlet.m](../../fracpaq-matlab/FracPaQ2Dwave_2_Morlet.m) | E | Análise Morlet em imagem fixa, painel e JPEG; AUX-13. |
+| [getConnectivity.m](../../fracpaq-matlab/getConnectivity.m) | I | Classificação I/Y/X, limpeza e mapas de nós/heatmaps; FLO-01 a FLO-06. |
+| [getF16tensor.m](../../fracpaq-matlab/getF16tensor.m) | A/E | Tensor de ordem 16 e projeção polar; fora da GUI; AUX-06. |
+| [getF2tensor.m](../../fracpaq-matlab/getF2tensor.m) | I | Tensor de ordem 2 e projeção polar; FLO-08/09. |
+| [getF4tensor.m](../../fracpaq-matlab/getF4tensor.m) | I | Tensor de ordem 4 e projeção polar; FLO-08. |
+| [getF8tensor.m](../../fracpaq-matlab/getF8tensor.m) | I | Tensor de ordem 8 e projeção polar; FLO-08. |
+| [getMapLimits.m](../../fracpaq-matlab/getMapLimits.m) | I | Limites X/Y a partir dos nós; Q-08. |
+| [guiFracPaQ2D.m](../../fracpaq-matlab/guiFracPaQ2D.m) | I | Inicialização 2.8, validações, callbacks, navegação e despacho Run; UI/IN. |
+| [guiFracPaQ2Dangle.m](../../fracpaq-matlab/guiFracPaQ2Dangle.m) | I | Histograma, rosa, exportação EZROSE e chamada de crack tensor; ANG/FLO-08. |
+| [guiFracPaQ2Dcracktensor.m](../../fracpaq-matlab/guiFracPaQ2Dcracktensor.m) | I | Gráfico polar dos tensores 0/2/4/8; FLO-08. |
+| [guiFracPaQ2Dgraphs.m](../../fracpaq-matlab/guiFracPaQ2Dgraphs.m) | I | Perfis ALONG/FROM e círculos ao longo da linha; GRA. |
+| [guiFracPaQ2Dimage.m](../../fracpaq-matlab/guiFracPaQ2Dimage.m) | I | Leitura de imagem, Hough e construção dos traços; IN-12 a IN-18. |
+| [guiFracPaQ2Dlength.m](../../fracpaq-matlab/guiFracPaQ2Dlength.m) | I | Comprimentos, histogramas, log-log, MLE, blocos e variograma; LEN. |
+| [guiFracPaQ2Dlist.m](../../fracpaq-matlab/guiFracPaQ2Dlist.m) | I | Leitura TXT tabulado, segmentos e prévia; IN-01 a IN-04. |
+| [guiFracPaQ2Dpattern.m](../../fracpaq-matlab/guiFracPaQ2Dpattern.m) | I | Círculos P21/P20, exportação e coordenação IYX; MAP/FLO. |
+| [guiFracPaQ2Dtabbed.m](../../fracpaq-matlab/guiFracPaQ2Dtabbed.m) | E | Interface antiga 2.2; falta .fig homônimo e usa assinaturas antigas; AUX-14. |
+| [guiFracPaQ2Dtensor.m](../../fracpaq-matlab/guiFracPaQ2Dtensor.m) | I | Aberturas, tensor hidráulico e permeabilidade polar; FLO-09 a FLO-13. |
+| [guiFracPaQ2Dtracemap.m](../../fracpaq-matlab/guiFracPaQ2Dtracemap.m) | I | Mapas geométricos, por atributo e estabilidade/Mohr/rosas; MAP. |
+| [guiFracPaQ2Dwavelet.m](../../fracpaq-matlab/guiFracPaQ2Dwavelet.m) | I | Rasterização, CWT por escala, painel e TXT de orientação; WAV. |
+| [guiFracPaQ2Dwavelet2.m](../../fracpaq-matlab/guiFracPaQ2Dwavelet2.m) | E | Variante que reutiliza raster de nome fixo; chamada pelo diálogo auxiliar. |
+| [guiFracPaQ2Dwavelet3.m](../../fracpaq-matlab/guiFracPaQ2Dwavelet3.m) | E | Variante com imagem fixa e figuras separadas; AUX-13. |
+| [guiPrint.m](../../fracpaq-matlab/guiPrint.m) | I | Exportação comum PNG 600 dpi e tag; EXP-01/02. |
+| [guiWaveletDialog.m](../../fracpaq-matlab/guiWaveletDialog.m) | E | Callbacks do diálogo separado de wavelet, Run/Cancel; AUX-12. |
+| [guiWaveletTest.m](../../fracpaq-matlab/guiWaveletTest.m) | E | Chamada de ensaio com assinatura/variáveis históricas de wavelet; AUX-15. |
+| [hexRGB.m](../../fracpaq-matlab/hexRGB.m) | I | Hexadecimal para string RGB normalizada; IN-08. |
+| [KStestexp.m](../../fracpaq-matlab/KStestexp.m) | I | 2500 comparações K-S com amostras exponenciais; LEN-11. |
+| [KStestLogNorm.m](../../fracpaq-matlab/KStestLogNorm.m) | I | 2500 comparações K-S com amostras lognormais; LEN-11. |
+| [KStestPower.m](../../fracpaq-matlab/KStestPower.m) | I | 2500 comparações K-S com amostras de lei de potência; LEN-11. |
+| [lineSegmentIntersect.m](../../fracpaq-matlab/lineSegmentIntersect.m) | I/A | Interseções vetorizadas, coordenadas, paralelismo e coincidência; AUX-04. |
+| [logplots.m](../../fracpaq-matlab/logplots.m) | E | Demonstra histogramas/log-log lendo exportação de nome antigo sem tag; AUX-15. |
+| [mexicanhat.m](../../fracpaq-matlab/mexicanhat.m) | I | Núcleo Mexican Hat anisotrópico/rotacionado; WAV-02/07. |
+| [mexicanhatCWT.m](../../fracpaq-matlab/mexicanhatCWT.m) | I | Convolução CWT 2D via FFT e energia eta; WAV-07. |
+| [mexicanhatCWTself.m](../../fracpaq-matlab/mexicanhatCWTself.m) | I | Resposta do núcleo a si mesmo para normalização; WAV-08. |
+| [morlet.m](../../fracpaq-matlab/morlet.m) | I | Núcleo Morlet complexo anisotrópico/rotacionado; WAV-02/07. |
+| [morletCWT.m](../../fracpaq-matlab/morletCWT.m) | I | CWT 2D via FFT, retorno real e energia eta; WAV-07. |
+| [morletCWTself.m](../../fracpaq-matlab/morletCWTself.m) | I | Resposta Morlet a si mesma para normalização; WAV-08. |
+| [Move2FracPaq.m](../../fracpaq-matlab/Move2FracPaq.m) | A | Conversor ASCII Move para arquivo de nós; AUX-02. |
+| [newCM.m](../../fracpaq-matlab/newCM.m) | A/E | Reamostragem não linear de paleta haline por limites; AUX-09. |
+| [plotCrackTensor.m](../../fracpaq-matlab/plotCrackTensor.m) | E | Demonstração de tensores com comprimentos/direções sintéticos; AUX-15. |
+| [plotEllipse.m](../../fracpaq-matlab/plotEllipse.m) | A/E | Elipse preenchida com eixos e rotação relativa ao norte; AUX-10. |
+| [PlotExp.m](../../fracpaq-matlab/PlotExp.m) | I | Curva observada/ajustada exponencial, cortes e parâmetro; LEN-08/12. |
+| [PlotLogNorm.m](../../fracpaq-matlab/PlotLogNorm.m) | I | Curva observada/ajustada lognormal, cortes e parâmetros; LEN-09/12. |
+| [plotMohr.m](../../fracpaq-matlab/plotMohr.m) | E | Variante curta de Mohr; declara função plotMohr2D, diferente do arquivo; Q-19. |
+| [plotMohr2D.m](../../fracpaq-matlab/plotMohr2D.m) | I | Mohr total/efetivo e reta de resistência; MAP-16. |
+| [PlotPowerLaw.m](../../fracpaq-matlab/PlotPowerLaw.m) | I | Curva observada/ajustada de potência, cortes e parâmetros; LEN-07/12. |
+| [plotSouterMap.m](../../fracpaq-matlab/plotSouterMap.m) | E | Composição de conjuntos Souter; chama guiFracPaQ2Dtracemap2, ausente. |
+| [probePlane.m](../../fracpaq-matlab/probePlane.m) | A/E | Varredura por scanlines direcionais e medidas de interseção; AUX-11. |
+| [readtext.m](../../fracpaq-matlab/readtext.m) | I/A | Leitor genérico de texto, delimitadores, máscaras e estatísticas; AUX-03. |
+| [readTraces.m](../../fracpaq-matlab/readTraces.m) | A/E | Leitor alternativo com figura própria e tentativa de remover traços degenerados; Q-07. |
+| [reverseAxis.m](../../fracpaq-matlab/reverseAxis.m) | I | Transformação angular 180° − ângulo, com ajuste de negativos; ANG-08. |
+| [roseEqualArea.m](../../fracpaq-matlab/roseEqualArea.m) | I | Rosa de área igual, ponderação opcional e média circular; ANG-02/04/05. |
+| [roseEqualArea2.m](../../fracpaq-matlab/roseEqualArea2.m) | E | Variante experimental de rosa colorida com mensagens de depuração; AUX-07. |
+| [roseEqualAreaColour.m](../../fracpaq-matlab/roseEqualAreaColour.m) | I | Rosa de área igual colorida por strike; ANG-06. |
+| [roseEqualAreaColourTendency.m](../../fracpaq-matlab/roseEqualAreaColourTendency.m) | I | Rosas de Ts/Td/Sf/CSF com azimute de σ1; MAP-17. |
+| [roseLinear.m](../../fracpaq-matlab/roseLinear.m) | E | Rosa linear por contagem/comprimento; ramo desativado na GUI; AUX-07. |
+| [rosePlot.m](../../fracpaq-matlab/rosePlot.m) | A/E | Rosa histórica, dados direcionais/axiais e escala de área/linear; AUX-07. |
+| [testCM.m](../../fracpaq-matlab/testCM.m) | E | Experimento de paleta com dado cape; declara função newCM, diferente do arquivo. |
+| [testImage.m](../../fracpaq-matlab/testImage.m) | E | Imagem sintética diagonal, complemento, limpeza e exportação BMP; AUX-15. |
+| [testmaps.m](../../fracpaq-matlab/testmaps.m) | E | Mapas experimentais por comprimento/strike, com paletas parula/hsv; AUX-15. |
+| [testWavelet.m](../../fracpaq-matlab/testWavelet.m) | E | Ensaio de wavelet com chamada antiga e referência a test.jpg ausente; AUX-15. |
+| [trilines.m](../../fracpaq-matlab/trilines.m) | A/E | Desenha linhas auxiliares para gráfico ternário; AUX-10. |
+| [triplot.m](../../fracpaq-matlab/triplot.m) | I | Moldura ternária I/Y/X com malha de 10%; FLO-04. |
+| [tripts.m](../../fracpaq-matlab/tripts.m) | I | Converte proporções ternárias e desenha pontos/linhas/rótulos; FLO-04. |
+| [tritest.m](../../fracpaq-matlab/tritest.m) | E | Demonstração do ternário com chamada antiga de tripts; AUX-15. |
+| [variogram.m](../../fracpaq-matlab/variogram.m) | I/A | Semivariograma isotrópico/direcional, nuvens e subamostragem; LEN-15/AUX-05. |
+| [waveletDialog.m](../../fracpaq-matlab/waveletDialog.m) | E | Protótipo de diálogo que apenas escolhe Red/Green/Blue e Close; não processa wavelet. |
 
 ### 15.2 Interfaces, manual, documentação e site — 12 arquivos
 
 | Arquivo | Papel identificado |
 | --- | --- |
-| [guiFracPaQ2D.fig](fracpaq-matlab/guiFracPaQ2D.fig) | Layout e valores iniciais de todos os controles da interface 2.8; inclui as seis abas, estatísticas, Run e Exit. |
-| [guiWaveletDialog.fig](fracpaq-matlab/guiWaveletDialog.fig) | Layout auxiliar com a/L, incremento, tipos wavelet, Run, Cancel e mensagem Ready. |
-| [FracPaQ User Guide v2.8.pdf](fracpaq-matlab/FracPaQ%20User%20Guide%20v2.8.pdf) | Manual de 39 páginas, preparação de dados, métodos, exemplos de saída e bibliografia. |
-| [README.md](fracpaq-matlab/README.md) | Identifica versão 2.8.0 e alterações em SVG, MLE, conectividade e novos mapas. |
-| [LICENSE](fracpaq-matlab/LICENSE) | Licença MIT e autoria dos contribuidores; preservar atribuições aplicáveis. |
-| [index.html](fracpaq-matlab/index.html) | Página institucional estática, GitHub, downloads ZIP/TAR.GZ e créditos; texto histórico menciona 1.6. |
-| [params.json](fracpaq-matlab/params.json) | Metadados de regeneração da página; texto histórico menciona 2.0; não é configuração da GUI. |
-| [javascripts/main.js](fracpaq-matlab/javascripts/main.js) | Somente console.log; nenhuma análise ou interação funcional da aplicação. |
-| [stylesheets/normalize.css](fracpaq-matlab/stylesheets/normalize.css) | Normalização de estilos HTML entre navegadores. |
-| [stylesheets/stylesheet.css](fracpaq-matlab/stylesheets/stylesheet.css) | Tema do site, botões, tipografia, tabelas e ajustes responsivos. |
-| [stylesheets/github-light.css](fracpaq-matlab/stylesheets/github-light.css) | Realce de sintaxe no site e licença própria do GitHub. |
-| [stylesheets/print.css](fracpaq-matlab/stylesheets/print.css) | Tema de impressão, formatação e ocultação de downloads; arquivo existe, mas index.html não o referencia. |
+| [guiFracPaQ2D.fig](../../fracpaq-matlab/guiFracPaQ2D.fig) | Layout e valores iniciais de todos os controles da interface 2.8; inclui as seis abas, estatísticas, Run e Exit. |
+| [guiWaveletDialog.fig](../../fracpaq-matlab/guiWaveletDialog.fig) | Layout auxiliar com a/L, incremento, tipos wavelet, Run, Cancel e mensagem Ready. |
+| [FracPaQ User Guide v2.8.pdf](../../fracpaq-matlab/FracPaQ%20User%20Guide%20v2.8.pdf) | Manual de 39 páginas, preparação de dados, métodos, exemplos de saída e bibliografia. |
+| [README.md](../../fracpaq-matlab/README.md) | Identifica versão 2.8.0 e alterações em SVG, MLE, conectividade e novos mapas. |
+| [LICENSE](../../fracpaq-matlab/LICENSE) | Licença MIT e autoria dos contribuidores; preservar atribuições aplicáveis. |
+| [index.html](../../fracpaq-matlab/index.html) | Página institucional estática, GitHub, downloads ZIP/TAR.GZ e créditos; texto histórico menciona 1.6. |
+| [params.json](../../fracpaq-matlab/params.json) | Metadados de regeneração da página; texto histórico menciona 2.0; não é configuração da GUI. |
+| [javascripts/main.js](../../fracpaq-matlab/javascripts/main.js) | Somente console.log; nenhuma análise ou interação funcional da aplicação. |
+| [stylesheets/normalize.css](../../fracpaq-matlab/stylesheets/normalize.css) | Normalização de estilos HTML entre navegadores. |
+| [stylesheets/stylesheet.css](../../fracpaq-matlab/stylesheets/stylesheet.css) | Tema do site, botões, tipografia, tabelas e ajustes responsivos. |
+| [stylesheets/github-light.css](../../fracpaq-matlab/stylesheets/github-light.css) | Realce de sintaxe no site e licença própria do GitHub. |
+| [stylesheets/print.css](../../fracpaq-matlab/stylesheets/print.css) | Tema de impressão, formatação e ocultação de downloads; arquivo existe, mas index.html não o referencia. |
 
 ### 15.3 Exemplos TXT — 41 arquivos
 
@@ -561,47 +561,47 @@ Os estados abaixo indicam uso no pacote original, não progresso de implementaç
 
 | Arquivo | Linhas | Colunas mín.–máx. | Estrutura / finalidade |
 | --- | ---: | --- | --- |
-| [102.txt](fracpaq-matlab/102.txt) | 471 | 4–4 | Coordenadas de exemplo; tabulações |
-| [103.txt](fracpaq-matlab/103.txt) | 610 | 4–4 | Coordenadas de exemplo; tabulações |
-| [166.txt](fracpaq-matlab/166.txt) | 224 | 4–28 | Coordenadas de exemplo; tabulações |
-| [69.txt](fracpaq-matlab/69.txt) | 698 | 4–46 | Coordenadas de exemplo; tabulações |
-| [83.txt](fracpaq-matlab/83.txt) | 426 | 4–58 | Coordenadas de exemplo; tabulações |
-| [Fractures_H12Z.txt](fracpaq-matlab/Fractures_H12Z.txt) | 2161 | 4–58 | Lâmina/fraturas H12Z; tabulações |
-| [IYXtest1_converted.txt](fracpaq-matlab/IYXtest1_converted.txt) | 13 | 4–6 | Caso pequeno de conectividade; tabulações |
-| [IYXtest2_converted.txt](fracpaq-matlab/IYXtest2_converted.txt) | 13 | 4–6 | Caso pequeno de conectividade; tabulações |
-| [SD11A.txt](fracpaq-matlab/SD11A.txt) | 445 | 4–38 | Coordenadas de exemplo; tabulações |
-| [SD11B.txt](fracpaq-matlab/SD11B.txt) | 660 | 4–44 | Coordenadas de exemplo; tabulações |
-| [Souter_All.txt](fracpaq-matlab/Souter_All.txt) | 2792 | 4–52 | Conjunto Souter, agregado ou separado por cor; tabulações |
-| [Souter_Blue.txt](fracpaq-matlab/Souter_Blue.txt) | 2561 | 4–36 | Conjunto Souter, agregado ou separado por cor; tabulações |
-| [Souter_Green.txt](fracpaq-matlab/Souter_Green.txt) | 177 | 4–46 | Conjunto Souter, agregado ou separado por cor; tabulações |
-| [Souter_Green_colour008000.txt](fracpaq-matlab/Souter_Green_colour008000.txt) | 177 | 4–46 | Conjunto Souter, agregado ou separado por cor; tabulações |
-| [Souter_Red.txt](fracpaq-matlab/Souter_Red.txt) | 54 | 4–52 | Conjunto Souter, agregado ou separado por cor; tabulações |
-| [ThinSection_H12Z.txt](fracpaq-matlab/ThinSection_H12Z.txt) | 1687 | 2–50 | Lâmina/fraturas H12Z; contém 30 registros curtos/ímpares e 21 tokens não numéricos; vírgulas |
-| [ThinSection_H12Zconverted.txt](fracpaq-matlab/ThinSection_H12Zconverted.txt) | 1664 | 4–50 | Lâmina/fraturas H12Z; tabulações |
-| [Tile 1 No BG.txt](fracpaq-matlab/Tile%201%20No%20BG.txt) | 3028 | 4–34 | Mapa de tile e variante sem fundo; tabulações |
-| [Tile 1.txt](fracpaq-matlab/Tile%201.txt) | 3028 | 4–34 | Mapa de tile e variante sem fundo; tabulações |
-| [Tile 4 No BG.txt](fracpaq-matlab/Tile%204%20No%20BG.txt) | 2225 | 4–66 | Mapa de tile e variante sem fundo; tabulações |
-| [Tile 4.txt](fracpaq-matlab/Tile%204.txt) | 2225 | 4–66 | Mapa de tile e variante sem fundo; tabulações |
-| [leftsideFaults.txt](fracpaq-matlab/leftsideFaults.txt) | 544 | 4–16 | Traços de falhas/juntas e variantes convertidas; tabulações |
-| [leftsideFaults2.txt](fracpaq-matlab/leftsideFaults2.txt) | 540 | 4–16 | Traços de falhas/juntas e variantes convertidas; tabulações |
-| [leftsideFaults_converted.txt](fracpaq-matlab/leftsideFaults_converted.txt) | 544 | 4–34 | Traços de falhas/juntas e variantes convertidas; tabulações |
-| [leftsideFaultsconverted.txt](fracpaq-matlab/leftsideFaultsconverted.txt) | 544 | 4–34 | Traços de falhas/juntas e variantes convertidas; tabulações |
-| [leftsideJoints.txt](fracpaq-matlab/leftsideJoints.txt) | 450 | 4–20 | Traços de falhas/juntas e variantes convertidas; tabulações |
-| [leftsideJointsconverted.txt](fracpaq-matlab/leftsideJointsconverted.txt) | 450 | 4–24 | Traços de falhas/juntas e variantes convertidas; tabulações |
-| [map1_edit_converted.txt](fracpaq-matlab/map1_edit_converted.txt) | 2123 | 4–62 | Mapa convertido ou subconjunto de teste; tabulações |
-| [map1_edit_converted2.txt](fracpaq-matlab/map1_edit_converted2.txt) | 10 | 4–4 | Mapa convertido ou subconjunto de teste; tabulações |
-| [map7_converted.txt](fracpaq-matlab/map7_converted.txt) | 4093 | 4–76 | Mapa convertido ou subconjunto de teste; tabulações |
-| [map7_edit_converted.txt](fracpaq-matlab/map7_edit_converted.txt) | 4092 | 4–76 | Mapa convertido ou subconjunto de teste; tabulações |
-| [method b1.txt](fracpaq-matlab/method%20b1.txt) | 79 | 4–10 | Conjunto comparativo de exemplo; tabulações |
-| [method b2.txt](fracpaq-matlab/method%20b2.txt) | 148 | 4–14 | Conjunto comparativo de exemplo; tabulações |
-| [rightsideFaults.txt](fracpaq-matlab/rightsideFaults.txt) | 370 | 4–16 | Traços de falhas/juntas e variantes convertidas; tabulações |
-| [rightsideFaultsconverted.txt](fracpaq-matlab/rightsideFaultsconverted.txt) | 370 | 4–34 | Traços de falhas/juntas e variantes convertidas; tabulações |
-| [rightsideJoints.txt](fracpaq-matlab/rightsideJoints.txt) | 389 | 4–18 | Traços de falhas/juntas e variantes convertidas; tabulações |
-| [rightsideJointsconverted.txt](fracpaq-matlab/rightsideJointsconverted.txt) | 389 | 4–28 | Traços de falhas/juntas e variantes convertidas; tabulações |
-| [souter_all_colour24378D.txt](fracpaq-matlab/souter_all_colour24378D.txt) | 2561 | 4–36 | Conjunto Souter, agregado ou separado por cor; vírgulas |
-| [souter_all_colour5BB030.txt](fracpaq-matlab/souter_all_colour5BB030.txt) | 177 | 4–46 | Conjunto Souter, agregado ou separado por cor; vírgulas |
-| [souter_all_colourE42A12.txt](fracpaq-matlab/souter_all_colourE42A12.txt) | 54 | 4–52 | Conjunto Souter, agregado ou separado por cor; vírgulas |
-| [souter_all_mytest.txt](fracpaq-matlab/souter_all_mytest.txt) | 177 | 4–46 | Conjunto Souter, agregado ou separado por cor; vírgulas |
+| [102.txt](../../fracpaq-matlab/102.txt) | 471 | 4–4 | Coordenadas de exemplo; tabulações |
+| [103.txt](../../fracpaq-matlab/103.txt) | 610 | 4–4 | Coordenadas de exemplo; tabulações |
+| [166.txt](../../fracpaq-matlab/166.txt) | 224 | 4–28 | Coordenadas de exemplo; tabulações |
+| [69.txt](../../fracpaq-matlab/69.txt) | 698 | 4–46 | Coordenadas de exemplo; tabulações |
+| [83.txt](../../fracpaq-matlab/83.txt) | 426 | 4–58 | Coordenadas de exemplo; tabulações |
+| [Fractures_H12Z.txt](../../fracpaq-matlab/Fractures_H12Z.txt) | 2161 | 4–58 | Lâmina/fraturas H12Z; tabulações |
+| [IYXtest1_converted.txt](../../fracpaq-matlab/IYXtest1_converted.txt) | 13 | 4–6 | Caso pequeno de conectividade; tabulações |
+| [IYXtest2_converted.txt](../../fracpaq-matlab/IYXtest2_converted.txt) | 13 | 4–6 | Caso pequeno de conectividade; tabulações |
+| [SD11A.txt](../../fracpaq-matlab/SD11A.txt) | 445 | 4–38 | Coordenadas de exemplo; tabulações |
+| [SD11B.txt](../../fracpaq-matlab/SD11B.txt) | 660 | 4–44 | Coordenadas de exemplo; tabulações |
+| [Souter_All.txt](../../fracpaq-matlab/Souter_All.txt) | 2792 | 4–52 | Conjunto Souter, agregado ou separado por cor; tabulações |
+| [Souter_Blue.txt](../../fracpaq-matlab/Souter_Blue.txt) | 2561 | 4–36 | Conjunto Souter, agregado ou separado por cor; tabulações |
+| [Souter_Green.txt](../../fracpaq-matlab/Souter_Green.txt) | 177 | 4–46 | Conjunto Souter, agregado ou separado por cor; tabulações |
+| [Souter_Green_colour008000.txt](../../fracpaq-matlab/Souter_Green_colour008000.txt) | 177 | 4–46 | Conjunto Souter, agregado ou separado por cor; tabulações |
+| [Souter_Red.txt](../../fracpaq-matlab/Souter_Red.txt) | 54 | 4–52 | Conjunto Souter, agregado ou separado por cor; tabulações |
+| [ThinSection_H12Z.txt](../../fracpaq-matlab/ThinSection_H12Z.txt) | 1687 | 2–50 | Lâmina/fraturas H12Z; contém 30 registros curtos/ímpares e 21 tokens não numéricos; vírgulas |
+| [ThinSection_H12Zconverted.txt](../../fracpaq-matlab/ThinSection_H12Zconverted.txt) | 1664 | 4–50 | Lâmina/fraturas H12Z; tabulações |
+| [Tile 1 No BG.txt](../../fracpaq-matlab/Tile%201%20No%20BG.txt) | 3028 | 4–34 | Mapa de tile e variante sem fundo; tabulações |
+| [Tile 1.txt](../../fracpaq-matlab/Tile%201.txt) | 3028 | 4–34 | Mapa de tile e variante sem fundo; tabulações |
+| [Tile 4 No BG.txt](../../fracpaq-matlab/Tile%204%20No%20BG.txt) | 2225 | 4–66 | Mapa de tile e variante sem fundo; tabulações |
+| [Tile 4.txt](../../fracpaq-matlab/Tile%204.txt) | 2225 | 4–66 | Mapa de tile e variante sem fundo; tabulações |
+| [leftsideFaults.txt](../../fracpaq-matlab/leftsideFaults.txt) | 544 | 4–16 | Traços de falhas/juntas e variantes convertidas; tabulações |
+| [leftsideFaults2.txt](../../fracpaq-matlab/leftsideFaults2.txt) | 540 | 4–16 | Traços de falhas/juntas e variantes convertidas; tabulações |
+| [leftsideFaults_converted.txt](../../fracpaq-matlab/leftsideFaults_converted.txt) | 544 | 4–34 | Traços de falhas/juntas e variantes convertidas; tabulações |
+| [leftsideFaultsconverted.txt](../../fracpaq-matlab/leftsideFaultsconverted.txt) | 544 | 4–34 | Traços de falhas/juntas e variantes convertidas; tabulações |
+| [leftsideJoints.txt](../../fracpaq-matlab/leftsideJoints.txt) | 450 | 4–20 | Traços de falhas/juntas e variantes convertidas; tabulações |
+| [leftsideJointsconverted.txt](../../fracpaq-matlab/leftsideJointsconverted.txt) | 450 | 4–24 | Traços de falhas/juntas e variantes convertidas; tabulações |
+| [map1_edit_converted.txt](../../fracpaq-matlab/map1_edit_converted.txt) | 2123 | 4–62 | Mapa convertido ou subconjunto de teste; tabulações |
+| [map1_edit_converted2.txt](../../fracpaq-matlab/map1_edit_converted2.txt) | 10 | 4–4 | Mapa convertido ou subconjunto de teste; tabulações |
+| [map7_converted.txt](../../fracpaq-matlab/map7_converted.txt) | 4093 | 4–76 | Mapa convertido ou subconjunto de teste; tabulações |
+| [map7_edit_converted.txt](../../fracpaq-matlab/map7_edit_converted.txt) | 4092 | 4–76 | Mapa convertido ou subconjunto de teste; tabulações |
+| [method b1.txt](../../fracpaq-matlab/method%20b1.txt) | 79 | 4–10 | Conjunto comparativo de exemplo; tabulações |
+| [method b2.txt](../../fracpaq-matlab/method%20b2.txt) | 148 | 4–14 | Conjunto comparativo de exemplo; tabulações |
+| [rightsideFaults.txt](../../fracpaq-matlab/rightsideFaults.txt) | 370 | 4–16 | Traços de falhas/juntas e variantes convertidas; tabulações |
+| [rightsideFaultsconverted.txt](../../fracpaq-matlab/rightsideFaultsconverted.txt) | 370 | 4–34 | Traços de falhas/juntas e variantes convertidas; tabulações |
+| [rightsideJoints.txt](../../fracpaq-matlab/rightsideJoints.txt) | 389 | 4–18 | Traços de falhas/juntas e variantes convertidas; tabulações |
+| [rightsideJointsconverted.txt](../../fracpaq-matlab/rightsideJointsconverted.txt) | 389 | 4–28 | Traços de falhas/juntas e variantes convertidas; tabulações |
+| [souter_all_colour24378D.txt](../../fracpaq-matlab/souter_all_colour24378D.txt) | 2561 | 4–36 | Conjunto Souter, agregado ou separado por cor; vírgulas |
+| [souter_all_colour5BB030.txt](../../fracpaq-matlab/souter_all_colour5BB030.txt) | 177 | 4–46 | Conjunto Souter, agregado ou separado por cor; vírgulas |
+| [souter_all_colourE42A12.txt](../../fracpaq-matlab/souter_all_colourE42A12.txt) | 54 | 4–52 | Conjunto Souter, agregado ou separado por cor; vírgulas |
+| [souter_all_mytest.txt](../../fracpaq-matlab/souter_all_mytest.txt) | 177 | 4–46 | Conjunto Souter, agregado ou separado por cor; vírgulas |
 
 ### 15.4 Exemplos SVG — 14 arquivos
 
@@ -609,40 +609,40 @@ Contagens abaixo descrevem os elementos no XML, não garantem que todos sejam im
 
 | Arquivo | Elementos relevantes encontrados | Observação |
 | --- | --- | --- |
-| [ThinSection_H12Z.svg](fracpaq-matlab/ThinSection_H12Z.svg) | line: 732, polyline: 934, path: 121 | Exemplo de entrada vetorial |
-| [ThinSection_H12Z_new.svg](fracpaq-matlab/ThinSection_H12Z_new.svg) | line: 732, polyline: 934, path: 121 | Exemplo de entrada vetorial |
-| [Tile 1 No BG copy.svg](fracpaq-matlab/Tile%201%20No%20BG%20copy.svg) | line: 1787, polyline: 1466, path: 25, g: 2 | Exemplo de entrada vetorial |
-| [Tile 1 No BG.svg](fracpaq-matlab/Tile%201%20No%20BG.svg) | line: 1787, polyline: 1466, path: 25, g: 2 | Exemplo de entrada vetorial |
-| [Tile 4 No BG.svg](fracpaq-matlab/Tile%204%20No%20BG.svg) | line: 1183, polyline: 1045, path: 29, polygon: 1, g: 2 | Exemplo de entrada vetorial |
-| [blocksizetest.svg](fracpaq-matlab/blocksizetest.svg) | line: 7, polyline: 2, path: 2 | Exemplo pequeno para blocos |
-| [leftsideFaults.svg](fracpaq-matlab/leftsideFaults.svg) | line: 268, polyline: 276, path: 113, g: 2, image: 1 | Contém imagem incorporada além dos traços |
-| [leftsideJoints.svg](fracpaq-matlab/leftsideJoints.svg) | line: 278, polyline: 172, path: 1, g: 2, image: 1 | Contém imagem incorporada além dos traços |
-| [map1.svg](fracpaq-matlab/map1.svg) | line: 1293, polyline: 830, polygon: 1, g: 1 | Exemplo de entrada vetorial |
-| [map1_edit.svg](fracpaq-matlab/map1_edit.svg) | line: 1293, polyline: 830, g: 1 | Variante editada de mapa |
-| [map7.svg](fracpaq-matlab/map7.svg) | line: 1616, polyline: 2476, polygon: 1, g: 1 | Exemplo de entrada vetorial |
-| [map7_edit.svg](fracpaq-matlab/map7_edit.svg) | line: 1616, polyline: 2476, g: 1 | Variante editada de mapa |
-| [rightsideFaults.svg](fracpaq-matlab/rightsideFaults.svg) | line: 182, polyline: 188, path: 3, g: 2, image: 1 | Contém imagem incorporada além dos traços |
-| [rightsideJoints.svg](fracpaq-matlab/rightsideJoints.svg) | line: 243, polyline: 146, path: 4, g: 2, image: 1 | Contém imagem incorporada além dos traços |
+| [ThinSection_H12Z.svg](../../fracpaq-matlab/ThinSection_H12Z.svg) | line: 732, polyline: 934, path: 121 | Exemplo de entrada vetorial |
+| [ThinSection_H12Z_new.svg](../../fracpaq-matlab/ThinSection_H12Z_new.svg) | line: 732, polyline: 934, path: 121 | Exemplo de entrada vetorial |
+| [Tile 1 No BG copy.svg](../../fracpaq-matlab/Tile%201%20No%20BG%20copy.svg) | line: 1787, polyline: 1466, path: 25, g: 2 | Exemplo de entrada vetorial |
+| [Tile 1 No BG.svg](../../fracpaq-matlab/Tile%201%20No%20BG.svg) | line: 1787, polyline: 1466, path: 25, g: 2 | Exemplo de entrada vetorial |
+| [Tile 4 No BG.svg](../../fracpaq-matlab/Tile%204%20No%20BG.svg) | line: 1183, polyline: 1045, path: 29, polygon: 1, g: 2 | Exemplo de entrada vetorial |
+| [blocksizetest.svg](../../fracpaq-matlab/blocksizetest.svg) | line: 7, polyline: 2, path: 2 | Exemplo pequeno para blocos |
+| [leftsideFaults.svg](../../fracpaq-matlab/leftsideFaults.svg) | line: 268, polyline: 276, path: 113, g: 2, image: 1 | Contém imagem incorporada além dos traços |
+| [leftsideJoints.svg](../../fracpaq-matlab/leftsideJoints.svg) | line: 278, polyline: 172, path: 1, g: 2, image: 1 | Contém imagem incorporada além dos traços |
+| [map1.svg](../../fracpaq-matlab/map1.svg) | line: 1293, polyline: 830, polygon: 1, g: 1 | Exemplo de entrada vetorial |
+| [map1_edit.svg](../../fracpaq-matlab/map1_edit.svg) | line: 1293, polyline: 830, g: 1 | Variante editada de mapa |
+| [map7.svg](../../fracpaq-matlab/map7.svg) | line: 1616, polyline: 2476, polygon: 1, g: 1 | Exemplo de entrada vetorial |
+| [map7_edit.svg](../../fracpaq-matlab/map7_edit.svg) | line: 1616, polyline: 2476, g: 1 | Variante editada de mapa |
+| [rightsideFaults.svg](../../fracpaq-matlab/rightsideFaults.svg) | line: 182, polyline: 188, path: 3, g: 2, image: 1 | Contém imagem incorporada além dos traços |
+| [rightsideJoints.svg](../../fracpaq-matlab/rightsideJoints.svg) | line: 243, polyline: 146, path: 4, g: 2, image: 1 | Contém imagem incorporada além dos traços |
 
 ### 15.5 Imagens — 15 arquivos
 
 | Arquivo | Dimensões | Papel identificado |
 | --- | --- | --- |
-| [FracPaQicon.jpeg](fracpaq-matlab/FracPaQicon.jpeg) | 119×120 | Ícone da janela principal |
-| [FracPaQlogo.jpeg](fracpaq-matlab/FracPaQlogo.jpeg) | 367×84 | Logotipo da janela principal |
-| [Macduff.tiff](fracpaq-matlab/Macduff.tiff) | 256×256 | Imagem de exemplo Macduff/Orkney em cores; requer preparação para Hough |
-| [MacduffBinary.tif](fracpaq-matlab/MacduffBinary.tif) | 256×256 | Exemplo em cinza de 8 bits para entrada Hough |
-| [MacduffColour.tif](fracpaq-matlab/MacduffColour.tif) | 263×258 | Imagem de exemplo Macduff/Orkney em cores; requer preparação para Hough |
-| [MacduffColourCropped.jpg](fracpaq-matlab/MacduffColourCropped.jpg) | 263×258 | Foto usada pelo script de pré-processamento |
-| [Orkney1a.jpg](fracpaq-matlab/Orkney1a.jpg) | 512×512 | Imagem de exemplo Macduff/Orkney em cores; requer preparação para Hough |
-| [Orkney1a.tiff](fracpaq-matlab/Orkney1a.tiff) | 512×512 | Imagem de exemplo Macduff/Orkney em cores; requer preparação para Hough |
-| [Orkney1aBinary.tif](fracpaq-matlab/Orkney1aBinary.tif) | 512×512 | Exemplo em cinza de 8 bits para entrada Hough |
-| [images/body-bg.jpg](fracpaq-matlab/images/body-bg.jpg) | 175×175 | Textura de fundo do site |
-| [images/download-button.png](fracpaq-matlab/images/download-button.png) | 202×78 | Arte de botão de download do site |
-| [images/github-button.png](fracpaq-matlab/images/github-button.png) | 202×80 | Arte de botão GitHub do site |
-| [images/header-bg.jpg](fracpaq-matlab/images/header-bg.jpg) | 80×800 | Fundo de cabeçalho do site |
-| [images/highlight-bg.jpg](fracpaq-matlab/images/highlight-bg.jpg) | 960×573 | Fundo de destaque do site |
-| [images/sidebar-bg.jpg](fracpaq-matlab/images/sidebar-bg.jpg) | 102×504 | Fundo de barra lateral do site |
+| [FracPaQicon.jpeg](../../fracpaq-matlab/FracPaQicon.jpeg) | 119×120 | Ícone da janela principal |
+| [FracPaQlogo.jpeg](../../fracpaq-matlab/FracPaQlogo.jpeg) | 367×84 | Logotipo da janela principal |
+| [Macduff.tiff](../../fracpaq-matlab/Macduff.tiff) | 256×256 | Imagem de exemplo Macduff/Orkney em cores; requer preparação para Hough |
+| [MacduffBinary.tif](../../fracpaq-matlab/MacduffBinary.tif) | 256×256 | Exemplo em cinza de 8 bits para entrada Hough |
+| [MacduffColour.tif](../../fracpaq-matlab/MacduffColour.tif) | 263×258 | Imagem de exemplo Macduff/Orkney em cores; requer preparação para Hough |
+| [MacduffColourCropped.jpg](../../fracpaq-matlab/MacduffColourCropped.jpg) | 263×258 | Foto usada pelo script de pré-processamento |
+| [Orkney1a.jpg](../../fracpaq-matlab/Orkney1a.jpg) | 512×512 | Imagem de exemplo Macduff/Orkney em cores; requer preparação para Hough |
+| [Orkney1a.tiff](../../fracpaq-matlab/Orkney1a.tiff) | 512×512 | Imagem de exemplo Macduff/Orkney em cores; requer preparação para Hough |
+| [Orkney1aBinary.tif](../../fracpaq-matlab/Orkney1aBinary.tif) | 512×512 | Exemplo em cinza de 8 bits para entrada Hough |
+| [images/body-bg.jpg](../../fracpaq-matlab/images/body-bg.jpg) | 175×175 | Textura de fundo do site |
+| [images/download-button.png](../../fracpaq-matlab/images/download-button.png) | 202×78 | Arte de botão de download do site |
+| [images/github-button.png](../../fracpaq-matlab/images/github-button.png) | 202×80 | Arte de botão GitHub do site |
+| [images/header-bg.jpg](../../fracpaq-matlab/images/header-bg.jpg) | 80×800 | Fundo de cabeçalho do site |
+| [images/highlight-bg.jpg](../../fracpaq-matlab/images/highlight-bg.jpg) | 960×573 | Fundo de destaque do site |
+| [images/sidebar-bg.jpg](../../fracpaq-matlab/images/sidebar-bg.jpg) | 102×504 | Fundo de barra lateral do site |
 
 ### 15.6 Observações de completude e arquivos referenciados ausentes
 

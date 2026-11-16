@@ -1,0 +1,90 @@
+{
+  "version": "0.9.0rc1",
+  "scope": "One-line footer fit and 12% larger logo, checked with actual Qt geometry; offscreen previews, not S16-09 certification.",
+  "logo_sha256": "cf42388c3d3727cb5ab5631b0c4d62845b5556f8393f8377f4b74c8ad5fed7ac",
+  "captures": [
+    {
+      "path": "tests/reference/interface-identity/main-1250.png",
+      "sha256": "c1b19da57b934562ee3cf74c728fd4f5ac8c2f32f764a93e6b28bf2195a7b5e3",
+      "window": [
+        1250,
+        739
+      ],
+      "footer_text": "Version 0.9.0rc1, November 2026   E-mail: luismauricio@me.com",
+      "footer_geometry": [
+        847,
+        602,
+        371,
+        23
+      ],
+      "footer_text_width": 347,
+      "logo_geometry": [
+        988,
+        631,
+        244,
+        65
+      ],
+      "scaled_logo": [
+        239,
+        65
+      ]
+    },
+    {
+      "path": "tests/reference/interface-identity/main-1000.png",
+      "sha256": "86b814fc4ebeacebb1dbf006dcdf9ea2280e93ad155688d3bbff370ad9fe4adb",
+      "window": [
+        1000,
+        591
+      ],
+      "footer_text": "Version 0.9.0rc1, November 2026   E-mail: luismauricio@me.com",
+      "footer_geometry": [
+        674,
+        482,
+        301,
+        18
+      ],
+      "footer_text_width": 289,
+      "logo_geometry": [
+        791,
+        505,
+        196,
+        53
+      ],
+      "scaled_logo": [
+        195,
+        53
+      ]
+    },
+    {
+      "path": "tests/reference/interface-identity/main-1600.png",
+      "sha256": "c676d3930ca8627ac1e053a6fade804ec100f42540c3b13cb1bbcb52f696411b",
+      "window": [
+        1600,
+        950
+      ],
+      "footer_text": "Version 0.9.0rc1, November 2026   E-mail: luismauricio@me.com",
+      "footer_geometry": [
+        1085,
+        774,
+        475,
+        29
+      ],
+      "footer_text_width": 347,
+      "logo_geometry": [
+        1264,
+        811,
+        314,
+        84
+      ],
+      "scaled_logo": [
+        309,
+        84
+      ]
+    }
+  ],
+  "targeted_tests": {
+    "passed": 11,
+    "junit": "tests/reference/interface-identity/single-line-checks.xml",
+    "junit_sha256": "3a263064162aa7875e9c388e1ec9fe5fa9375c90ffb2109ad3da5403b0c60aea"
+  }
+}

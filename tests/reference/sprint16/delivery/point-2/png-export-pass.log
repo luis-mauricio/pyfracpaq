@@ -1,0 +1,61 @@
+PNG 1: FracPaQ2D_tracemap_SD11A.png exact RGB
+PNG 2: FracPaQ2D_tracelengthmap_SD11A.png exact RGB
+PNG 3: FracPaQ2D_segmentlengthmap_SD11A.png exact RGB
+PNG 4: FracPaQ2D_segmentstrikemap_SD11A.png exact RGB
+PNG 5: FracPaQ2D_scancircle_SD11A.png exact RGB
+PNG 6: FracPaQ2D_intensityP21_SD11A.png exact RGB
+PNG 7: FracPaQ2D_densityP20_SD11A.png exact RGB
+PNG 8: FracPaQ2D_Mohrplot_SD11A.png exact RGB
+PNG 9: FracPaQ2D_sliptendencymap_SD11A.png exact RGB
+PNG 10: FracPaQ2D_sliptendencyrose_SD11A.png exact RGB
+PNG 11: FracPaQ2D_dilationtendencymap_SD11A.png exact RGB
+PNG 12: FracPaQ2D_dilationtendencyrose_SD11A.png exact RGB
+PNG 13: FracPaQ2D_fracsuscepmap_SD11A.png exact RGB
+PNG 14: FracPaQ2D_fracsusceprose_SD11A.png exact RGB
+PNG 15: FracPaQ2D_CSFmap_SD11A.png exact RGB
+PNG 16: FracPaQ2D_CSFrose_SD11A.png exact RGB
+PNG 17: FracPaQ2D_histotracelength_SD11A.png exact RGB
+PNG 18: FracPaQ2D_histosegmentlength_SD11A.png exact RGB
+PNG 19: FracPaQ2D_loglogplottracelengthdensity_SD11A.png exact RGB
+PNG 20: FracPaQ2D_loglogplottracelength_SD11A.png exact RGB
+PNG 21: FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png exact RGB
+PNG 22: FracPaQ2D_loglogplotsegmentlength_SD11A.png exact RGB
+PNG 23: FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png exact RGB
+PNG 24: FracPaQ2D_tracelengthsFittingExponential_SD11A.png exact RGB
+PNG 25: FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png exact RGB
+PNG 26: FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png exact RGB
+PNG 27: FracPaQ2D_segmentlengthsFittingExponential_SD11A.png exact RGB
+PNG 28: FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png exact RGB
+PNG 29: FracPaQ2D_crossplotsegmentlengthangle_SD11A.png exact RGB
+PNG 30: FracPaQ2D_blocksizecentroidmap_SD11A.png exact RGB
+PNG 31: FracPaQ2D_blocksizeloglog_SD11A.png exact RGB
+PNG 32: FracPaQ2D_blocksizehisto_SD11A.png exact RGB
+PNG 33: FracPaQ2D_segmentlength_variogram_SD11A.png exact RGB
+PNG 34: FracPaQ2D_histoangle_SD11A.png exact RGB
+PNG 35: FracPaQ2D_roseangleEqArea_SD11A.png exact RGB
+PNG 36: FracPaQ2D_IYXnodes_traces_SD11A.png exact RGB
+PNG 37: FracPaQ2D_XYnodes_traces_heat_SD11A.png exact RGB
+PNG 38: FracPaQ2D_Inodes_traces_heat_SD11A.png exact RGB
+PNG 39: FracPaQ2D_IYXtriangle_SD11A.png exact RGB
+PNG 40: FracPaQ2D_cracktensor_SD11A.png exact RGB
+PNG 41: FracPaQ2D_permeability_polar_SD11A.png exact RGB
+PNG 42: FracPaQ2Dwavelet_a32_SD11A.png exact RGB
+PNG 43: guiFracPaQ2D_tracelengthalonggraph_SD11A.png exact RGB
+PNG 44: guiFracPaQ2D_segmentlengthalonggraph_SD11A.png exact RGB
+PNG 45: guiFracPaQ2D_segmentanglealonggraph_SD11A.png exact RGB
+PNG 46: guiFracPaQ2D_graphtracemap_SD11A.png exact RGB
+PNG 47: guiFracPaQ2D_intensityalonggraph_SD11A.png exact RGB
+PNG 48: guiFracPaQ2D_densityalonggraph_SD11A.png exact RGB
+PNG 49: guiFracPaQ2D_tracelengthfromgraph_SD11A.png exact RGB
+PNG 50: guiFracPaQ2D_segmentlengthfromgraph_SD11A.png exact RGB
+PNG 51: guiFracPaQ2D_segmentanglefromgraph_SD11A.png exact RGB
+PNG 52: FracPaQ2D_tracemap_multicolour_extra.png exact RGB
+PNG 53: FracPaQ2D_Houghstuff_extra.png exact RGB
+Traceback (most recent call last):
+  File "/Users/lm/developer/pyfracpaq/scripts/review_s1609_exports.py", line 227, in <module>
+    assert any(result.data.unit in label for label in labels)
+    ^
+  File "/Users/lm/developer/pyfracpaq/scripts/review_s1609_exports.py", line 113, in run
+    figure(output, 'extra', ACCEPTED / 'python-extra' / f'{output.basename}_extra.png')
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

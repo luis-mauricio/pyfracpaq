@@ -1,0 +1,105 @@
+% !TeX root = ../pyfracpaq-user-manual.tex
+\major{Maps: geometria, amostragem e estabilidade}\label{sec:maps}
+A aba reúne mapas de traços/segmentos, atributos, amostragem circular e estabilidade. Escolha somente as opções necessárias. Show nodes e Show scan circles modificam as saídas relacionadas; não são análises independentes.
+\uifig{ui-maps.png}{Painel Maps. Os parâmetros de estabilidade ficam ativos quando uma opção dessa família é selecionada.}{fig:ui-maps}
+
+\feature{MAP-01}{Traces, segments e Show nodes}
+\textbf{Como usar.} Marque \control{Traces, segments}. Ative \control{Show nodes} para desenhar os vértices de entrada sobre os traços e clique Run. Uma polilinha é uma fratura mapeada; suas partes retas são segmentos, não necessariamente fraturas distintas.
+
+\textbf{Interpretação.} Use esse mapa para identificar falhas de leitura, traços isolados, segmentação excessiva e fronteiras. A opção de nós ajuda a perceber onde um traço foi subdividido. Nós geométricos coincidentes não garantem conexão hidráulica nem classificação topológica.
+
+\textbf{Saída.} Um mapa de traços. Para SVG com vários grupos de cor, as seleções de mapas pertinentes também acrescentam o mapa multicolorido, uma vez por Run.
+\plotfig{tracemap.png}{Traços SD11A com nós geométricos, na configuração ilustrada. O domínio continua em pixels.}{fig:traces}
+
+\feature{MAP-04}{Traces, by length}
+Atribui a todos os segmentos de cada traço a cor associada ao seu comprimento total \(L\). Se uma fratura foi dividida em várias linhas no TXT, cada linha terá seu próprio comprimento; a interpretação depende da digitalização.
+
+Marque \control{Traces, by length} e Run. Não é necessário marcar o histograma de Lengths. O comprimento usado é o percurso, inclusive em traços curvos. A escala física transforma os valores antes da análise.
+\plotfig{tracelengthmap.png}{SD11A colorido pelo comprimento total do traço.}{fig:tracelength}
+
+\feature{MAP-05}{Segments, by length}
+Marque \control{Segments, by length} para colorir cada parte reta pelo seu próprio \(\ell_i\). Compare com o mapa anterior: uma fratura longa pode conter segmentos curtos devido à forma ou à resolução da digitalização.
+
+\begin{note}{Convenção de cor dos mapas de comprimento}
+O port conserva a convenção aprovada do legado: o índice da cor é linear em relação a \(L/L_{\max}\), enquanto a barra usa escala logarítmica. Portanto, a cor de uma linha não deve ser lida como uma transformação logarítmica exata do comprimento. Para valores quantitativos, use os TXT da família Lengths.
+\end{note}
+\plotfig{segmentlengthmap.png}{SD11A colorido por comprimento dos segmentos; note a diferença em relação ao traço inteiro.}{fig:segmentlength}
+
+\feature{MAP-06}{Segments, by strike}
+Marque \control{Segments, by strike} para mapear a orientação dos segmentos. Ajuste \control{Rotate Y-axis from N (°)} na aba pertinente e os flips conforme o referencial dos dados. A cor corresponde à orientação axial corrigida, não ao sentido de fluxo.
+
+Segmentos paralelos com sentidos de digitalização opostos pertencem à mesma orientação axial. Arredondamento e a representação de zero como \(180^\circ\) em certas rotinas seguem a convenção da referência. Use o histograma/rosa para resumir as famílias, não apenas a impressão visual do mapa.
+\plotfig{segmentstrikemap.png}{Mapa de strike do SD11A, norte zero e sem flips.}{fig:strike}
+
+\subsection{Fundamento da amostragem circular}\label{sec:circular}
+A amostragem usa janelas circulares internas ao domínio. \control{Number of scan circles} é a quantidade de círculos ao longo do lado menor, não o número total. O mínimo é 2. Para amplitude menor \(D\) e valor \(N\), o passo é \(D/(N+1)\) e \(r=0.99D/[2(N+1)]\); a quantidade no lado maior depende da razão de aspecto.
+
+Em cada círculo, \(n\) conta encontros entre segmentos finitos e a circunferência; \(m\) conta extremidades de segmentos estritamente internas. Tangência contribui uma vez. Pontos de segmentos diferentes são contados por segmento; um vértice interno compartilhado pode contribuir duas vezes para \(m\). Uma linha totalmente interna tem \(n=0\), mas suas pontas contribuem para \(m\).
+\begin{equation}
+\widehat P_{21}=\frac{n}{4r},\qquad
+\widehat P_{20}=\frac{m}{2\pi r^2}.
+\label{eq:circle}
+\end{equation}
+As unidades são comprimento\(^{-1}\) e comprimento\(^{-2}\). São estimadores locais sujeitos à amostragem, não medições exatas de toda a rede dentro da janela. Círculos menores aumentam resolução espacial e variabilidade; círculos maiores suavizam a comparação.
+
+Separadamente, o console apresenta medidas globais:
+\begin{equation}
+P_{21}^{\mathrm{global}}=\frac{\sum_i\ell_i}{A},\qquad
+P_{20}^{\mathrm{global}}=\frac{N_{\mathrm{segmentos}}}{A}.
+\end{equation}
+Elas não são a média das janelas e a densidade global usa \emph{segmentos}, não traços. Para SD11A sem escala, são aproximadamente 0.01552785 pixel\(^{-1}\) e 0.000271113 pixel\(^{-2}\).
+
+\feature{MAP-07}{Estimated Intensity, P21}
+Marque a opção, informe \(N\) e, se desejar conferir a cobertura, ative \control{Show scan circles}. O Run gera o mapa de P21; Show circles acrescenta um mapa de janelas compartilhado com P20. Para o exemplo, use 12: \(r\simeq75.6474\) pixels.
+
+Regiões quentes representam maior valor do estimador, não probabilidade de fratura. Alterar a escala ou o número de círculos muda unidades/resolução; compare mapas com parâmetros consistentes. A exportação escreve ambos os TXT de intensidade e densidade mesmo quando apenas um mapa é solicitado.
+\plotfig{intensityP21.png}{P21 local do SD11A com 12 círculos no lado menor.}{fig:intensity}
+
+\feature{MAP-08}{Estimated Density, P20 e Show scan circles}
+A operação é análoga à de P21, usando a segunda expressão de~\eqref{eq:circle}. Use o mapa de círculos para verificar onde há observações e se a grade atende à escala geológica de interesse. Matrizes todas zero continuam zero; a barra recebe um intervalo gráfico representável, sem fabricar estimativas.
+
+O port usa a contagem geométrica finita aprovada em Q-20. Uma secante cujo encontro esteja fora do segmento não é contabilizada apenas porque sua reta suporte cruza o círculo. Isso pode alterar os resultados do legado.
+\plotfig{densityP20.png}{P20 local do SD11A. Unidades inversas de área e população de extremidades diferem do P21.}{fig:density}
+\plotfig{scancircle.png}{Janelas efetivamente usadas nas estimativas; uma única figura é compartilhada por P21/P20.}{fig:scan}
+
+\subsection{Fundamento dos mapas de estabilidade}\label{sec:stress}
+As quatro seleções de estabilidade usam parâmetros compartilhados. Informe \(\sigma_1\geq\sigma_2>0\) em MPa, azimute de \(\sigma_1\), coesão \(C_0\geq0\), pressão de poros \(P_f\geq0\) e coeficiente de atrito \(\mu\geq0\). As tensões são compressivas positivas. Valores de abertura/permeabilidade não entram nessa família.
+
+Para orientação corrigida \(\beta\), azimute \(\psi\) e polo relativo \(\alpha=\beta+90^\circ-\psi\),
+\begin{align}
+\sigma_n&=\left|\frac{\sigma_1+\sigma_2}{2}
++\frac{\sigma_1-\sigma_2}{2}\cos(2\alpha)\right|,\\
+|\tau|&=\left|-\frac{\sigma_1-\sigma_2}{2}\sin(2\alpha)\right|.
+\label{eq:stress}
+\end{align}
+Os mapas usam as orientações dos segmentos; as rosas de estabilidade avaliam os centros de classes fixas de \(10^\circ\), independentemente da largura escolhida na aba Angles. Cada opção gera mapa e rosa, e a família produz um único Mohr por Run.
+
+\feature{MAP-11}{Slip tendency}
+\begin{equation}T_s=\frac{|\tau|}{\sigma_n}.\end{equation}
+É uma razão adimensional de cisalhamento/normal total. O mapa/rosa usa a normalização pelo maior \(T_s\) dos segmentos corrigidos; a cor normalizada não é o valor físico de \(T_s\). Com máximo zero, a normalização permanece zero. Comparar cores entre amostras com máximos distintos pode ser enganoso.
+
+Marque \control{Slip tendency}, preencha as tensões e Run. Essa seleção também grava segmentdata com coordenadas e ângulos brutos; não grava \(\sigma_n\), \(\tau\) e \(T_s\) nesse TXT.
+\plotfig{sliptendencymap.png}{Tendência de deslizamento SD11A sob as tensões ilustrativas, não inferidas da amostra.}{fig:slip}
+
+\feature{MAP-12}{Dilation tendency}
+\begin{equation}T_d=\frac{\sigma_1-\sigma_n}{\sigma_1-\sigma_2}.\end{equation}
+Marque \control{Dilation tendency}. É um indicador de orientação favorável à dilatação dentro do estado de tensões definido. Não calcula abertura real da fratura. Exige \(\sigma_1>\sigma_2\); tensões iguais tornam o denominador indefinido e são recusadas para essa seleção.
+\plotfig{dilationtendencymap.png}{Tendência de dilatação e distribuição espacial de orientações no SD11A.}{fig:dilation}
+
+\feature{MAP-13}{Fracture susceptibility}
+\begin{equation}S_f=\sigma_n-P_f-\frac{|\tau|-C_0}{\mu}.\end{equation}
+Marque \control{Fracture susceptibility}; exige \(\mu>0\). \(S_f\) tem unidade MPa e representa a margem de pressão de poros no critério adotado. Valores menores indicam menor margem sob as hipóteses informadas. A escala de cor é construída com mínimo/máximo dos segmentos já corrigidos. Um campo constante recebe uma única cor/tick, sem alterar os valores físicos.
+\plotfig{fracsuscepmap.png}{Suscetibilidade do SD11A, com coesão/pressão de poros zero e atrito 0.6.}{fig:suscept}
+
+\feature{MAP-14}{Critically stressed fractures}
+O critério de classificação é
+\begin{equation}|\tau|\geq\mu(\sigma_n-P_f)+C_0.\label{eq:csf}\end{equation}
+Marque \control{Critically stressed fractures}. A igualdade é incluída no mapa e na rosa, conforme Q-17. É uma classificação para o estado de tensões escolhido, não uma observação de fraturas ativas. Os parâmetros ilustrativos não permitem conclusão geomecânica sobre o local de coleta sem justificativa independente.
+\plotfig{CSFmap.png}{Classificação CSF no SD11A. O número de fraturas críticas depende dos parâmetros, não apenas da geometria.}{fig:csf}
+
+\subsection{Rosas de estabilidade e diagrama de Mohr}
+As rosas combinam frequência de orientação e a grandeza de estabilidade avaliada no centro da classe. A linha de \(\sigma_1\) fornece referência visual. O tamanho da pétala reflete frequência, enquanto a cor codifica o indicador; não se devem confundir as duas informações.
+\plotfig{sliptendencyrose.png}{Rosa de slip tendency: frequência por classe e cor normalizada pela faixa observada.}{fig:stressrose}
+
+O círculo total tem centro \((\sigma_1+\sigma_2)/2\) e raio \((\sigma_1-\sigma_2)/2\). Com \(P_f>0\), o círculo efetivo desloca o centro por \(-P_f\). A reta de resistência é \(\tau=\mu\sigma_n'+C_0\). O port mantém o enquadramento da referência e não acrescenta pontos individuais \((\sigma_n,\tau)\) dos segmentos; sua ausência não é falha de leitura.
+\plotfig{Mohrplot.png}{Mohr compartilhado pela família. Com pressão de poros zero, não há segundo círculo efetivo separado.}{fig:mohr}

@@ -1,0 +1,117 @@
+{
+  "point": 1,
+  "title": "Final macOS interface review",
+  "version": "0.9.0rc1",
+  "date": "2026-11-16",
+  "complete": true,
+  "stop_after_this_point": true,
+  "next_point_authorized": false,
+  "scope": "Only interface review; no final product export audit, release preparation, delivery build or publication. Existing GUI integration tests use disposable temporary outputs for UI flows, not point-2 export acceptance.",
+  "screen_contexts": [
+    {
+      "context": "dpi-100",
+      "platform": "offscreen",
+      "device_pixel_ratio": 1.0,
+      "logical_size": [
+        1250,
+        739
+      ],
+      "captures": 8,
+      "text_fit_violations": 0,
+      "manifest": "tests/reference/sprint16/delivery/point-1/dpi-100/manifest.json",
+      "sha256": "b4aec7e0e69626f21b120d8dec0ea0986efcb160146411b5fe1097b03a07d879"
+    },
+    {
+      "context": "dpi-125",
+      "platform": "offscreen",
+      "device_pixel_ratio": 1.25,
+      "logical_size": [
+        1250,
+        739
+      ],
+      "captures": 8,
+      "text_fit_violations": 0,
+      "manifest": "tests/reference/sprint16/delivery/point-1/dpi-125/manifest.json",
+      "sha256": "b260f399777a7dc22b4c5d112746c0c979d86db46196eb660e84be0b350da74d"
+    },
+    {
+      "context": "dpi-150",
+      "platform": "offscreen",
+      "device_pixel_ratio": 1.5,
+      "logical_size": [
+        1250,
+        739
+      ],
+      "captures": 8,
+      "text_fit_violations": 0,
+      "manifest": "tests/reference/sprint16/delivery/point-1/dpi-150/manifest.json",
+      "sha256": "f43c311b795c9a94dabf342c47f0c170e1b2c20c4ed8fbdd1f4cd9c3820a3b22"
+    },
+    {
+      "context": "dpi-200",
+      "platform": "offscreen",
+      "device_pixel_ratio": 2.0,
+      "logical_size": [
+        1250,
+        739
+      ],
+      "captures": 8,
+      "text_fit_violations": 0,
+      "manifest": "tests/reference/sprint16/delivery/point-1/dpi-200/manifest.json",
+      "sha256": "ae94a719acc99473dc2067a5499cde930a29390444fd2c441dae7db0e31e3e07"
+    },
+    {
+      "context": "minimum",
+      "platform": "offscreen",
+      "device_pixel_ratio": 1.0,
+      "logical_size": [
+        1000,
+        591
+      ],
+      "captures": 8,
+      "text_fit_violations": 0,
+      "manifest": "tests/reference/sprint16/delivery/point-1/minimum/manifest.json",
+      "sha256": "37739bb6bd2a01e151b36af6d3fa4902a1ca8006217beb9f3abb6b55167953de"
+    },
+    {
+      "context": "native",
+      "platform": "cocoa",
+      "device_pixel_ratio": 2.0,
+      "logical_size": [
+        1250,
+        739
+      ],
+      "captures": 8,
+      "text_fit_violations": 0,
+      "manifest": "tests/reference/sprint16/delivery/point-1/native/manifest.json",
+      "sha256": "e78dd1cb3689de1db788ad88bdc0f84fe66202162a0ce92cae428465383d19d3"
+    }
+  ],
+  "main_screen_capture_count": 48,
+  "native_dialog_capture_count": 10,
+  "native_dialog_manifest": {
+    "path": "tests/reference/sprint16/delivery/point-1/dialogs/manifest.json",
+    "sha256": "b27becd65fe4a2701a88951ca78aaa4d7c19ac928ebd5af44931e49d2ae0ec5a"
+  },
+  "native_dialog_checks_passed": 7,
+  "gui_tests": {
+    "passed": 81,
+    "seconds": 185.51,
+    "junit": "tests/reference/sprint16/delivery/point-1/gui-checks.xml",
+    "sha256": "2474944bd07cae434bb5bb176c4a4e37f0ff5f0a39a37634fbcb29e93eb548cd"
+  },
+  "original_files_preserved": 164,
+  "preexisting_outputs_preserved": 8,
+  "findings": "No unresolved product-interface defects found in the reviewed states. Capture tooling fixed to apply explicit review dimensions after the full-width first show. Native picker cancellation/selection and Exit were driven through Computer Use, using org.python.python. Error dialogs are deliberately induced validation cases, not unexpected application failures.",
+  "reviewed_ui_modules": {
+    "pyfracpaq/gui/__init__.py": "56cbb40e51b5a4468d919bbed3f78c71c14960f1d21d94de03159b659be3a06e",
+    "pyfracpaq/gui/controls.py": "3bf956417c508027ad981d340694e5dc6365b7125fb463bbf3069b6e5b434578",
+    "pyfracpaq/gui/figures.py": "780d226f8485340b22bde18c9683ef2dfba14bae6523b1848766e8781f94dad3",
+    "pyfracpaq/gui/layout.py": "d97c35a9a7ce052955cc826c4f8b8ebfd0fcf87fa3194730dcc2e4a9617c35ba",
+    "pyfracpaq/gui/main_window.py": "f7a8d20a9b46d40e92dec183adf0d5f20bdb7c0bad0f137e8905a1d926b6ae01",
+    "pyfracpaq/gui/profile_selection.py": "58b8df0f89f2407bf0057aaa20eb8968e642ee78cdb0f57bc3af3e54f8826748",
+    "pyfracpaq/gui/style.py": "7eb26371c4832c6847550e89eadfc0bf3905706e56b6d288f9e143dfc02b16ba",
+    "pyfracpaq/gui/wavelet_dialog.py": "9526f3e4469373e57fb4e159b07c498ddd1e399f0ee65f2c8d3beb1f644f9879"
+  },
+  "captures_reviewed": "review-native.png; native initial/preview/six tabs and dialog captures, including compact/large Wavelets and input warnings."
+}

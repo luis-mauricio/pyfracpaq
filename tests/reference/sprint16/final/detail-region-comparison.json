@@ -1,0 +1,631 @@
+{
+  "method": "Native-only rectangular-frame detection, 16-pixel margin; unchanged RGB SSIM. Supplementary regions retain the complete primary partition and intentionally overlap its panels.",
+  "records": [
+    {
+      "name": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "native_sha256": "17894f3250fefb193bc558474b0550aea3d2cb481d75d3e9e373f6006fea553b",
+      "candidate_sha256": "ebe81910fa9df8dc4908b91447ba37f8c2f57c56aad0925daec80b34280b6810",
+      "regions": [
+        {
+          "name": "legend",
+          "xyxy": [
+            3332,
+            403,
+            4225,
+            834
+          ],
+          "ssim_rgb": 0.8831561178272538,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 38
+        },
+        {
+          "name": "parameter_annotation",
+          "xyxy": [
+            927,
+            3171,
+            2114,
+            3422
+          ],
+          "ssim_rgb": 0.9018664249901249,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 0
+        }
+      ],
+      "comparable_regions_pass": false
+    },
+    {
+      "name": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "native_sha256": "b3457ca63c2da98e32459e8d309f739d8009a39b76b6fd231fe392047d74a8ee",
+      "candidate_sha256": "a0fafa70cb09f253054bbb70ac88b8a53f8b298a4ae98c80816a2ad2240e6083",
+      "regions": [
+        {
+          "name": "legend",
+          "xyxy": [
+            3332,
+            403,
+            4225,
+            834
+          ],
+          "ssim_rgb": 0.8838485058190751,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 38
+        },
+        {
+          "name": "parameter_annotation",
+          "xyxy": [
+            927,
+            3171,
+            1654,
+            3384
+          ],
+          "ssim_rgb": 0.9016049887591842,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 0
+        }
+      ],
+      "comparable_regions_pass": false
+    },
+    {
+      "name": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "native_sha256": "92488e951358bfe2a639cb130821ef145a4b3e3d68eaeaf52e385c299ea898ad",
+      "candidate_sha256": "09fc337f13f8631d67dc8353e7db565f1af4892691ef9c17af2df0284f8309af",
+      "regions": [
+        {
+          "name": "legend",
+          "xyxy": [
+            3332,
+            403,
+            4225,
+            834
+          ],
+          "ssim_rgb": 0.8830724464106917,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 38
+        },
+        {
+          "name": "parameter_annotation",
+          "xyxy": [
+            927,
+            3171,
+            2009,
+            3384
+          ],
+          "ssim_rgb": 0.9062846624534657,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 0
+        }
+      ],
+      "comparable_regions_pass": false
+    },
+    {
+      "name": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "native_sha256": "858621c28221d29ad0dfa608120bbd5274462b8cc22704bf2d5ae9e66f458b8b",
+      "candidate_sha256": "3f27e6ae14cce7edb40342a7ee22611d7952ce7731248a685346bf43631f8903",
+      "regions": [
+        {
+          "name": "legend",
+          "xyxy": [
+            3332,
+            403,
+            4225,
+            834
+          ],
+          "ssim_rgb": 0.8788504983708063,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 38
+        },
+        {
+          "name": "parameter_annotation",
+          "xyxy": [
+            927,
+            3171,
+            2114,
+            3422
+          ],
+          "ssim_rgb": 0.9083178767873848,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 0
+        }
+      ],
+      "comparable_regions_pass": false
+    },
+    {
+      "name": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "native_sha256": "129f832a5e262ecbded898ef62ffc80b98fa8b1cb40c5ea8c7a8d290ee7bfbc7",
+      "candidate_sha256": "ac4df2a7cc2ef14015b0ec9ae68b5f1c9052553fe23a1147b7107a5655ffa519",
+      "regions": [
+        {
+          "name": "legend",
+          "xyxy": [
+            3332,
+            403,
+            4225,
+            834
+          ],
+          "ssim_rgb": 0.8838791421208317,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 38
+        },
+        {
+          "name": "parameter_annotation",
+          "xyxy": [
+            927,
+            3171,
+            1608,
+            3384
+          ],
+          "ssim_rgb": 0.9067294751176077,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 0
+        }
+      ],
+      "comparable_regions_pass": false
+    },
+    {
+      "name": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "native_sha256": "e901f51ee125f2efed1d5ccbe3e88a1ba9d1e2a5b0e72c2b9a419bdf2b677c8e",
+      "candidate_sha256": "5a6b74083e40db77d4b3b72a83f3c81b6ee02342f326ed02b9ffe3ed43415c94",
+      "regions": [
+        {
+          "name": "legend",
+          "xyxy": [
+            3332,
+            403,
+            4225,
+            834
+          ],
+          "ssim_rgb": 0.8831811806550992,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 38
+        },
+        {
+          "name": "parameter_annotation",
+          "xyxy": [
+            927,
+            3171,
+            2009,
+            3384
+          ],
+          "ssim_rgb": 0.85282278071108,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 0
+        }
+      ],
+      "comparable_regions_pass": false
+    },
+    {
+      "name": "FracPaQ2D_Mohrplot_SD11A.png",
+      "native_sha256": "5d5b3300953db9a33855186cf267903b54649238a08a340789883ccb77198223",
+      "candidate_sha256": "b1210da584e4da55aa9e5a9b2880f877583446ff3609f0bccece9309d60a75cd",
+      "regions": [
+        {
+          "name": "legend",
+          "xyxy": [
+            3282,
+            1495,
+            4225,
+            1743
+          ],
+          "ssim_rgb": 0.8346590746837924,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 38
+        }
+      ],
+      "comparable_regions_pass": false
+    },
+    {
+      "name": "FracPaQ2D_IYXnodes_traces_SD11A.png",
+      "native_sha256": "fc898bbe4741fc27ce806aaf13bccd1c292b05cdd87cce373ca3d561ee20618a",
+      "candidate_sha256": "8ae5f9d3847f0e7bdf57b051773f1d8264ea48375d1c89252d4717d8c5e4fc7e",
+      "regions": [
+        {
+          "name": "legend",
+          "xyxy": [
+            2123,
+            4115,
+            2763,
+            4271
+          ],
+          "ssim_rgb": 0.7919229716481069,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 38
+        }
+      ],
+      "comparable_regions_pass": false
+    },
+    {
+      "name": "FracPaQ2D_cracktensor_SD11A.png",
+      "native_sha256": "2f364a7a93c917851cc5fc26b6dcc95c7565b74d0680c837f3bf73864183fd92",
+      "candidate_sha256": "d4fd10c0b033cb09c1d960df42fdd08d70644964410eaa2d4c8cc3ad174b6d5d",
+      "regions": [
+        {
+          "name": "legend",
+          "xyxy": [
+            1534,
+            4078,
+            3352,
+            4259
+          ],
+          "ssim_rgb": 0.6533031356611043,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 38
+        }
+      ],
+      "comparable_regions_pass": false
+    },
+    {
+      "name": "guiFracPaQ2D_graphtracemap_SD11A.png",
+      "native_sha256": "0eea7752381c199ea5c74242ac6c9c4e26cb96da487abbdb1d5118613d13df8c",
+      "candidate_sha256": "011ba292de237b6958d93b7fb7a5a915dc7b79806f4cf4b3a15f0d5ce34ac58b",
+      "regions": [
+        {
+          "name": "legend",
+          "xyxy": [
+            1847,
+            4115,
+            3040,
+            4271
+          ],
+          "ssim_rgb": 0.7955138502136266,
+          "threshold": 0.98,
+          "passed": false,
+          "exception": null,
+          "native_frame_detection_ink": 38
+        }
+      ],
+      "comparable_regions_pass": false
+    }
+  ],
+  "catalog": [
+    {
+      "index": 1,
+      "figure": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "region": "legend",
+      "path": "tests/reference/sprint16/final/detail-review/01-legend-FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "ssim_rgb": 0.8831561178272538,
+      "passed": false,
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "display_xyxy": [
+        3268,
+        339,
+        4289,
+        898
+      ]
+    },
+    {
+      "index": 2,
+      "figure": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "region": "parameter_annotation",
+      "path": "tests/reference/sprint16/final/detail-review/02-parameter_annotation-FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "ssim_rgb": 0.9018664249901249,
+      "passed": false,
+      "xyxy": [
+        927,
+        3171,
+        2114,
+        3422
+      ],
+      "display_xyxy": [
+        863,
+        3107,
+        2178,
+        3486
+      ]
+    },
+    {
+      "index": 3,
+      "figure": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "region": "legend",
+      "path": "tests/reference/sprint16/final/detail-review/03-legend-FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "ssim_rgb": 0.8838485058190751,
+      "passed": false,
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "display_xyxy": [
+        3268,
+        339,
+        4289,
+        898
+      ]
+    },
+    {
+      "index": 4,
+      "figure": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "region": "parameter_annotation",
+      "path": "tests/reference/sprint16/final/detail-review/04-parameter_annotation-FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "ssim_rgb": 0.9016049887591842,
+      "passed": false,
+      "xyxy": [
+        927,
+        3171,
+        1654,
+        3384
+      ],
+      "display_xyxy": [
+        863,
+        3107,
+        1718,
+        3448
+      ]
+    },
+    {
+      "index": 5,
+      "figure": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "region": "legend",
+      "path": "tests/reference/sprint16/final/detail-review/05-legend-FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "ssim_rgb": 0.8830724464106917,
+      "passed": false,
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "display_xyxy": [
+        3268,
+        339,
+        4289,
+        898
+      ]
+    },
+    {
+      "index": 6,
+      "figure": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "region": "parameter_annotation",
+      "path": "tests/reference/sprint16/final/detail-review/06-parameter_annotation-FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "ssim_rgb": 0.9062846624534657,
+      "passed": false,
+      "xyxy": [
+        927,
+        3171,
+        2009,
+        3384
+      ],
+      "display_xyxy": [
+        863,
+        3107,
+        2073,
+        3448
+      ]
+    },
+    {
+      "index": 7,
+      "figure": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "region": "legend",
+      "path": "tests/reference/sprint16/final/detail-review/07-legend-FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "ssim_rgb": 0.8788504983708063,
+      "passed": false,
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "display_xyxy": [
+        3268,
+        339,
+        4289,
+        898
+      ]
+    },
+    {
+      "index": 8,
+      "figure": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "region": "parameter_annotation",
+      "path": "tests/reference/sprint16/final/detail-review/08-parameter_annotation-FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "ssim_rgb": 0.9083178767873848,
+      "passed": false,
+      "xyxy": [
+        927,
+        3171,
+        2114,
+        3422
+      ],
+      "display_xyxy": [
+        863,
+        3107,
+        2178,
+        3486
+      ]
+    },
+    {
+      "index": 9,
+      "figure": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "region": "legend",
+      "path": "tests/reference/sprint16/final/detail-review/09-legend-FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "ssim_rgb": 0.8838791421208317,
+      "passed": false,
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "display_xyxy": [
+        3268,
+        339,
+        4289,
+        898
+      ]
+    },
+    {
+      "index": 10,
+      "figure": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "region": "parameter_annotation",
+      "path": "tests/reference/sprint16/final/detail-review/10-parameter_annotation-FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "ssim_rgb": 0.9067294751176077,
+      "passed": false,
+      "xyxy": [
+        927,
+        3171,
+        1608,
+        3384
+      ],
+      "display_xyxy": [
+        863,
+        3107,
+        1672,
+        3448
+      ]
+    },
+    {
+      "index": 11,
+      "figure": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "region": "legend",
+      "path": "tests/reference/sprint16/final/detail-review/11-legend-FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "ssim_rgb": 0.8831811806550992,
+      "passed": false,
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "display_xyxy": [
+        3268,
+        339,
+        4289,
+        898
+      ]
+    },
+    {
+      "index": 12,
+      "figure": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "region": "parameter_annotation",
+      "path": "tests/reference/sprint16/final/detail-review/12-parameter_annotation-FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "ssim_rgb": 0.85282278071108,
+      "passed": false,
+      "xyxy": [
+        927,
+        3171,
+        2009,
+        3384
+      ],
+      "display_xyxy": [
+        863,
+        3107,
+        2073,
+        3448
+      ]
+    },
+    {
+      "index": 13,
+      "figure": "FracPaQ2D_Mohrplot_SD11A.png",
+      "region": "legend",
+      "path": "tests/reference/sprint16/final/detail-review/13-legend-FracPaQ2D_Mohrplot_SD11A.png",
+      "ssim_rgb": 0.8346590746837924,
+      "passed": false,
+      "xyxy": [
+        3282,
+        1495,
+        4225,
+        1743
+      ],
+      "display_xyxy": [
+        3218,
+        1431,
+        4289,
+        1807
+      ]
+    },
+    {
+      "index": 14,
+      "figure": "FracPaQ2D_IYXnodes_traces_SD11A.png",
+      "region": "legend",
+      "path": "tests/reference/sprint16/final/detail-review/14-legend-FracPaQ2D_IYXnodes_traces_SD11A.png",
+      "ssim_rgb": 0.7919229716481069,
+      "passed": false,
+      "xyxy": [
+        2123,
+        4115,
+        2763,
+        4271
+      ],
+      "display_xyxy": [
+        2059,
+        4051,
+        2827,
+        4335
+      ]
+    },
+    {
+      "index": 15,
+      "figure": "FracPaQ2D_cracktensor_SD11A.png",
+      "region": "legend",
+      "path": "tests/reference/sprint16/final/detail-review/15-legend-FracPaQ2D_cracktensor_SD11A.png",
+      "ssim_rgb": 0.6533031356611043,
+      "passed": false,
+      "xyxy": [
+        1534,
+        4078,
+        3352,
+        4259
+      ],
+      "display_xyxy": [
+        1470,
+        4014,
+        3416,
+        4323
+      ]
+    },
+    {
+      "index": 16,
+      "figure": "guiFracPaQ2D_graphtracemap_SD11A.png",
+      "region": "legend",
+      "path": "tests/reference/sprint16/final/detail-review/16-legend-guiFracPaQ2D_graphtracemap_SD11A.png",
+      "ssim_rgb": 0.7955138502136266,
+      "passed": false,
+      "xyxy": [
+        1847,
+        4115,
+        3040,
+        4271
+      ],
+      "display_xyxy": [
+        1783,
+        4051,
+        3104,
+        4335
+      ]
+    }
+  ]
+}

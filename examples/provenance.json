@@ -28,5 +28,11 @@
     "sha256": "18df2ae97e9198c4d2932a36fef5dfa51d80dbcea0d63512f453d299d79657d7",
     "origin": "Project-authored analytical examples, MIT (root LICENSE); network copied from the project tensor_network fixture.",
     "purpose": "Move requires --skip-header1; remaining files load directly through their matching input type."
+  },
+  {
+    "path": "examples/SD11A.txt",
+    "sha256": "96bafa56537444279a748c3f4b7a4300f7e73341a04d2ba4ff8cf1299ad74688",
+    "origin": "Unmodified SD11A.txt from the user-provided FracPaQ MATLAB 2.8 distribution; FracPaQ Contributors / David Healy and collaborators, MIT. Original preserved in fracpaq-matlab/SD11A.txt.",
+    "purpose": "Worked example for the PyFracPaQ user manual; 445 traces, 1076 segments and 1521 nodes."
   }
 ]

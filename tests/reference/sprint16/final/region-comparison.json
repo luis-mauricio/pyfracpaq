@@ -2,7 +2,7 @@
   {
     "name": "FracPaQ2D_tracemap_SD11A.png",
     "native_sha256": "29c8658f80a8ce8ac103b7a40f1513aae0c0bc0361c9bab4b488633ff155bc52",
-    "candidate_sha256": "cd2fab8ac18156492e3b4ce3ed223a54653ec0b13f1aa8f9f43f54a0d677e384",
+    "candidate_sha256": "e8fda7aa76ae9281a52dc7ac7df46796ae6c61d4a4b2570397b0aeaf2cec0be0",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -14,7 +14,7 @@
           455
         ],
         "exception": null,
-        "ssim_rgb": 0.9870090137488111,
+        "ssim_rgb": 0.9867649126965342,
         "threshold": 0.98,
         "passed": true
       },
@@ -27,9 +27,9 @@
           4103
         ],
         "exception": null,
-        "ssim_rgb": 0.9957026268354658,
+        "ssim_rgb": 0.9406588630856395,
         "threshold": 0.98,
-        "passed": true
+        "passed": false
       },
       {
         "name": "left_ruler",
@@ -40,7 +40,7 @@
           4103
         ],
         "exception": null,
-        "ssim_rgb": 0.9855335587378723,
+        "ssim_rgb": 0.9854837058563349,
         "threshold": 0.98,
         "passed": true
       },
@@ -53,7 +53,7 @@
           4103
         ],
         "exception": null,
-        "ssim_rgb": 1.0,
+        "ssim_rgb": 0.999843449714881,
         "threshold": 0.98,
         "passed": true
       },
@@ -66,13 +66,13 @@
           4724
         ],
         "exception": null,
-        "ssim_rgb": 0.9922036091993562,
+        "ssim_rgb": 0.9921315645329839,
         "threshold": 0.98,
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": false
   },
   {
     "name": "FracPaQ2D_segmentstrikemap_SD11A.png",
@@ -315,7 +315,7 @@
   {
     "name": "FracPaQ2D_loglogplottracelengthdensity_SD11A.png",
     "native_sha256": "88a230a0c2fb0d695107945877b90a24a1d983ad4f02189d8decb2695a2f4ac0",
-    "candidate_sha256": "6aac87a929e85b3dd54daeb5289b7ae74faaca2ef972560c9dae9fa7181462be",
+    "candidate_sha256": "da2ac00d9e1e2972dcf8a1ae63e3094ca37178942821d9c190ed1595e85126fe",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -340,7 +340,7 @@
           4113
         ],
         "exception": null,
-        "ssim_rgb": 0.9972945100841338,
+        "ssim_rgb": 0.9969357957381222,
         "threshold": 0.98,
         "passed": true
       },
@@ -384,13 +384,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_loglogplottracelength_SD11A.png",
     "native_sha256": "477cf0012e26f4ccc84b3b5e4cb09092dc1576cb3708984b7f4544531077740d",
-    "candidate_sha256": "0e4d7a04ffcbd04a2314f5c086cd302f52a89806157ebd9a37ec38e6f597d2a2",
+    "candidate_sha256": "ab9d0e0c242448236374d62b8c3c94ae82bbe164ba9d432d81ae1280000438ae",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -415,7 +415,7 @@
           4113
         ],
         "exception": null,
-        "ssim_rgb": 0.9924859121495396,
+        "ssim_rgb": 0.989742510917066,
         "threshold": 0.98,
         "passed": true
       },
@@ -459,13 +459,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png",
     "native_sha256": "6ecbbdba836753d2e954e8c2d649d5bc81fab01f9e92c884616d4818c51d81c3",
-    "candidate_sha256": "0556c2cd74138470b846c51be87052cb1dec60b7e2c91b0b4a72041892f6ed74",
+    "candidate_sha256": "939306b79ed83037c6bf2888303cb6d397c67955d0e7af38b0ac5b58fbaca85a",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -490,7 +490,7 @@
           4113
         ],
         "exception": null,
-        "ssim_rgb": 0.9947165583637636,
+        "ssim_rgb": 0.9941318221236207,
         "threshold": 0.98,
         "passed": true
       },
@@ -534,13 +534,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_loglogplotsegmentlength_SD11A.png",
     "native_sha256": "d91dbd1fb68fa9ccf0100c17d9dfc71ddf12fdeb3712a77cd344cc12526d7f9e",
-    "candidate_sha256": "62034fa3bb1116d8732c9e99c4ae4a51b6528a0bb7188afbf90fea1afc47a194",
+    "candidate_sha256": "b5642f4ca5712b57407cb1c283bf0a226ac4d03dba86e660144cee344a55b7be",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -565,7 +565,7 @@
           4113
         ],
         "exception": null,
-        "ssim_rgb": 0.9927275673639678,
+        "ssim_rgb": 0.9906608459308058,
         "threshold": 0.98,
         "passed": true
       },
@@ -609,13 +609,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_segmentlength_variogram_SD11A.png",
     "native_sha256": "74d98d77f4f06836ab4b2209fe418d7017a232123a92825624333cacf9f9eb64",
-    "candidate_sha256": "38bafa3d2d54db63a2c3976bd02d7a89079c92c056ba12ee920e2e56254b2c95",
+    "candidate_sha256": "33b98b1700e7c286656ab5a78458177d8fec1b66a6a6b2d95298e1c265df0cf4",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -640,7 +640,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9957448882433749,
+        "ssim_rgb": 0.9951926573851972,
         "threshold": 0.98,
         "passed": true
       },
@@ -684,8 +684,8 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_histoangle_SD11A.png",
@@ -788,7 +788,7 @@
   {
     "name": "guiFracPaQ2D_tracelengthalonggraph_SD11A.png",
     "native_sha256": "65067bd47b4cb914ea2f44987249e747c8eb881e8496c384077450ed41bc16d3",
-    "candidate_sha256": "7b412e7c6a9bcf4f1e24c94dc348d5a7c08211050a28cc86d5ef88ec42c54d85",
+    "candidate_sha256": "4c46a91400c9403aff22e7d17d7a11cb6b73568c478e59169145ae48ba07eebf",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -800,7 +800,7 @@
           350
         ],
         "exception": null,
-        "ssim_rgb": 0.990961638744913,
+        "ssim_rgb": 0.9905465920010391,
         "threshold": 0.98,
         "passed": true
       },
@@ -813,7 +813,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.998634627827779,
+        "ssim_rgb": 0.9979913475902498,
         "threshold": 0.98,
         "passed": true
       },
@@ -839,7 +839,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 1.0,
+        "ssim_rgb": 0.9995769754768261,
         "threshold": 0.98,
         "passed": true
       },
@@ -857,13 +857,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "guiFracPaQ2D_tracelengthfromgraph_SD11A.png",
     "native_sha256": "03b25d44fadb0cc879b2871d0e7cb40a125377017444bbe3b16d55a0d233a59a",
-    "candidate_sha256": "31fa8f716be079def497f13c6b5c7954c4be900a1fe0bff89794214d2b4eb508",
+    "candidate_sha256": "cfad163e9666e4474e9de75cf1f71e398acf2458a1ed6cdb1389c240dd859226",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -888,7 +888,7 @@
           4208
         ],
         "exception": "Q07_halfway_centres",
-        "ssim_rgb": 0.9960911568598186,
+        "ssim_rgb": 0.992209678908022,
         "threshold": 0.98,
         "passed": null
       },
@@ -927,18 +927,18 @@
           4724
         ],
         "exception": null,
-        "ssim_rgb": 0.9856133889439335,
+        "ssim_rgb": 0.9854999364119683,
         "threshold": 0.98,
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 4
+    "comparable_region_count": 4,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
     "native_sha256": "17894f3250fefb193bc558474b0550aea3d2cb481d75d3e9e373f6006fea553b",
-    "candidate_sha256": "0445fe3d67e22139c5ed5c96f2b9ed6e9b4987f7c785fefabffd9756cefef292",
+    "candidate_sha256": "ebe81910fa9df8dc4908b91447ba37f8c2f57c56aad0925daec80b34280b6810",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -950,7 +950,7 @@
           350
         ],
         "exception": null,
-        "ssim_rgb": 0.9889619261535366,
+        "ssim_rgb": 0.9866422930763186,
         "threshold": 0.98,
         "passed": true
       },
@@ -963,7 +963,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9902557075758555,
+        "ssim_rgb": 0.9891034564553612,
         "threshold": 0.98,
         "passed": true
       },
@@ -989,7 +989,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9970141148502325,
+        "ssim_rgb": 0.9964732361403206,
         "threshold": 0.98,
         "passed": true
       },
@@ -1007,13 +1007,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
     "native_sha256": "b3457ca63c2da98e32459e8d309f739d8009a39b76b6fd231fe392047d74a8ee",
-    "candidate_sha256": "cfeb9ac7fd7c8a5a4d0188a892aa6e70dc7c189d3ccf35b45010d4e3291a4c7b",
+    "candidate_sha256": "a0fafa70cb09f253054bbb70ac88b8a53f8b298a4ae98c80816a2ad2240e6083",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -1025,7 +1025,7 @@
           350
         ],
         "exception": null,
-        "ssim_rgb": 0.991306909107658,
+        "ssim_rgb": 0.990600945427941,
         "threshold": 0.98,
         "passed": true
       },
@@ -1038,7 +1038,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9880261307991001,
+        "ssim_rgb": 0.9874016614226729,
         "threshold": 0.98,
         "passed": true
       },
@@ -1082,13 +1082,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
     "native_sha256": "92488e951358bfe2a639cb130821ef145a4b3e3d68eaeaf52e385c299ea898ad",
-    "candidate_sha256": "062a6803ecf60546a469351cb30e46490a2cb8573989583aeab0757b1c6fb73b",
+    "candidate_sha256": "09fc337f13f8631d67dc8353e7db565f1af4892691ef9c17af2df0284f8309af",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -1100,7 +1100,7 @@
           350
         ],
         "exception": null,
-        "ssim_rgb": 0.9909942665909285,
+        "ssim_rgb": 0.9901459212641782,
         "threshold": 0.98,
         "passed": true
       },
@@ -1113,7 +1113,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9814986683370073,
+        "ssim_rgb": 0.9802659679304634,
         "threshold": 0.98,
         "passed": true
       },
@@ -1139,7 +1139,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9971011657054483,
+        "ssim_rgb": 0.9967396602431777,
         "threshold": 0.98,
         "passed": true
       },
@@ -1152,18 +1152,18 @@
           4724
         ],
         "exception": null,
-        "ssim_rgb": 0.9919012053334715,
+        "ssim_rgb": 0.9916669048449592,
         "threshold": 0.98,
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
     "native_sha256": "858621c28221d29ad0dfa608120bbd5274462b8cc22704bf2d5ae9e66f458b8b",
-    "candidate_sha256": "6e6b88779ebcb4ecf97992d576ebe7ecec101386327f6f2c6b4a981731baaeb8",
+    "candidate_sha256": "3f27e6ae14cce7edb40342a7ee22611d7952ce7731248a685346bf43631f8903",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -1175,7 +1175,7 @@
           350
         ],
         "exception": null,
-        "ssim_rgb": 0.9893865910977976,
+        "ssim_rgb": 0.9847468886322784,
         "threshold": 0.98,
         "passed": true
       },
@@ -1188,7 +1188,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9870988225614421,
+        "ssim_rgb": 0.985455339449115,
         "threshold": 0.98,
         "passed": true
       },
@@ -1214,7 +1214,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9970696332815371,
+        "ssim_rgb": 0.9967967501226612,
         "threshold": 0.98,
         "passed": true
       },
@@ -1227,18 +1227,18 @@
           4724
         ],
         "exception": null,
-        "ssim_rgb": 0.9933304609133701,
+        "ssim_rgb": 0.9929976608011107,
         "threshold": 0.98,
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
     "native_sha256": "129f832a5e262ecbded898ef62ffc80b98fa8b1cb40c5ea8c7a8d290ee7bfbc7",
-    "candidate_sha256": "0fc14d60d570f7d5bc8932885670d6d14ae6a399c55b82c6a281d27fa88b16e4",
+    "candidate_sha256": "ac4df2a7cc2ef14015b0ec9ae68b5f1c9052553fe23a1147b7107a5655ffa519",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -1250,7 +1250,7 @@
           350
         ],
         "exception": null,
-        "ssim_rgb": 0.9903101303312365,
+        "ssim_rgb": 0.9890028039562392,
         "threshold": 0.98,
         "passed": true
       },
@@ -1263,7 +1263,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9873135100332049,
+        "ssim_rgb": 0.9860107935626603,
         "threshold": 0.98,
         "passed": true
       },
@@ -1307,13 +1307,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
     "native_sha256": "e901f51ee125f2efed1d5ccbe3e88a1ba9d1e2a5b0e72c2b9a419bdf2b677c8e",
-    "candidate_sha256": "5d3122ee2ff69dbe571bb152f5a0db1541060737e16690c6b9671901f7fb3a02",
+    "candidate_sha256": "5a6b74083e40db77d4b3b72a83f3c81b6ee02342f326ed02b9ffe3ed43415c94",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -1325,7 +1325,7 @@
           350
         ],
         "exception": null,
-        "ssim_rgb": 0.9894960077044493,
+        "ssim_rgb": 0.9879415748293928,
         "threshold": 0.98,
         "passed": true
       },
@@ -1338,7 +1338,7 @@
           4208
         ],
         "exception": "Q15_fitted_tail",
-        "ssim_rgb": 0.9760303712237571,
+        "ssim_rgb": 0.9740710980855461,
         "threshold": 0.98,
         "passed": null
       },
@@ -1364,7 +1364,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9971080958548167,
+        "ssim_rgb": 0.9967936810844381,
         "threshold": 0.98,
         "passed": true
       },
@@ -1377,18 +1377,18 @@
           4724
         ],
         "exception": null,
-        "ssim_rgb": 0.9924752830802621,
+        "ssim_rgb": 0.9918095816449187,
         "threshold": 0.98,
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 4
+    "comparable_region_count": 4,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_crossplotsegmentlengthangle_SD11A.png",
     "native_sha256": "23f6649061fba1d83117ffbe66ee83750b8495519e170a66abda3dca91bd461e",
-    "candidate_sha256": "2cb202d1f65e1f470c330a1daeb2489d672150e62e9490871acba751c2534545",
+    "candidate_sha256": "91ab822197cc5eb2740d92be1f323a2294057a88c2a164b478745a11f9861e0c",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -1413,7 +1413,7 @@
           4113
         ],
         "exception": null,
-        "ssim_rgb": 0.9952772680624536,
+        "ssim_rgb": 0.9805869155761223,
         "threshold": 0.98,
         "passed": true
       },
@@ -1457,8 +1457,8 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_roseangleEqArea_SD11A.png",
@@ -2497,7 +2497,7 @@
   {
     "name": "FracPaQ2D_blocksizecentroidmap_SD11A.png",
     "native_sha256": "5337269d2055c70fdff0875b1d8c23229390ea4e9cf3018288b4b51d72e0ddf6",
-    "candidate_sha256": "315ea79bf5a3e02395716ad426431cf26c95144767aee1d8b6768577c9d0a310",
+    "candidate_sha256": "c35379ab3044395baacd268d33cbe3003ca778703f65325697e4a71bdafdcb26",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -2522,7 +2522,7 @@
           4103
         ],
         "exception": "Q14_blocks",
-        "ssim_rgb": 0.9945622933132396,
+        "ssim_rgb": 0.9945780773946623,
         "threshold": 0.98,
         "passed": null
       },
@@ -2566,13 +2566,13 @@
         "passed": null
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 1
+    "comparable_region_count": 1,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_blocksizeloglog_SD11A.png",
     "native_sha256": "427fa419fa02bf392e33be2bd5d8bce95dc3d9264798036411a515552ffc0195",
-    "candidate_sha256": "b0fb097390803337d0ff594fee9e1a9e88833e0e32b4b487b87ff8237398b4f2",
+    "candidate_sha256": "a37a5557a0dc6c35b72ddf57944c736e64947bf3b304126fba2c3794350c4058",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -2597,7 +2597,7 @@
           4113
         ],
         "exception": "Q14_blocks",
-        "ssim_rgb": 0.6936835505444514,
+        "ssim_rgb": 0.6934519853782494,
         "threshold": 0.98,
         "passed": null
       },
@@ -2641,8 +2641,8 @@
         "passed": null
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 1
+    "comparable_region_count": 1,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_blocksizehisto_SD11A.png",
@@ -2722,7 +2722,7 @@
   {
     "name": "FracPaQ2D_IYXnodes_traces_SD11A.png",
     "native_sha256": "fc898bbe4741fc27ce806aaf13bccd1c292b05cdd87cce373ca3d561ee20618a",
-    "candidate_sha256": "630bc3543e38b79fe70d77fd6e52d8619e0cd38ae0f7b9385b207e386aea7f63",
+    "candidate_sha256": "8ae5f9d3847f0e7bdf57b051773f1d8264ea48375d1c89252d4717d8c5e4fc7e",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -2734,7 +2734,7 @@
           318
         ],
         "exception": "Q11_topology",
-        "ssim_rgb": 0.9223830503588353,
+        "ssim_rgb": 0.9223441422050004,
         "threshold": 0.98,
         "passed": null
       },
@@ -2747,7 +2747,7 @@
           3823
         ],
         "exception": "Q11_topology",
-        "ssim_rgb": 0.9678866035198151,
+        "ssim_rgb": 0.9637967367086181,
         "threshold": 0.98,
         "passed": null
       },
@@ -2773,7 +2773,7 @@
           3823
         ],
         "exception": null,
-        "ssim_rgb": 0.9999055477873092,
+        "ssim_rgb": 0.99981555114486,
         "threshold": 0.98,
         "passed": true
       },
@@ -2786,13 +2786,13 @@
           4724
         ],
         "exception": null,
-        "ssim_rgb": 0.9918812726873485,
+        "ssim_rgb": 0.9919659857298498,
         "threshold": 0.98,
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 3
+    "comparable_region_count": 3,
+    "comparable_regions_pass": true
   },
   {
     "name": "FracPaQ2D_XYnodes_traces_heat_SD11A.png",
@@ -2973,7 +2973,7 @@
   {
     "name": "FracPaQ2D_IYXtriangle_SD11A.png",
     "native_sha256": "cf5e5f4292606be4dd95fc367ff86cb2c410135ed88f4d3734f8a5ce34722f68",
-    "candidate_sha256": "e907bf0126d193e1200002156089274aaa6f6b60ebecbdafd09090c413d05077",
+    "candidate_sha256": "99525efda07b44f627c9ba332ae78a0fd3363b39163001b19aaa17858cd2f696",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -2985,13 +2985,13 @@
           4724
         ],
         "exception": "Q11_topology",
-        "ssim_rgb": 0.9821501453953814,
+        "ssim_rgb": 0.9821412576984686,
         "threshold": 0.98,
         "passed": null
       }
     ],
-    "comparable_regions_pass": null,
-    "comparable_region_count": 0
+    "comparable_region_count": 0,
+    "comparable_regions_pass": null
   },
   {
     "name": "FracPaQ2D_cracktensor_SD11A.png",
@@ -3120,7 +3120,7 @@
   {
     "name": "guiFracPaQ2D_segmentlengthalonggraph_SD11A.png",
     "native_sha256": "5f69c3deba312f46d6820428be70c60835404ff66ea12e1ba16785567e358e05",
-    "candidate_sha256": "4bf3d42a44945816b591b7e348b62b265fd8501db66d854b5747b13bb1b8d304",
+    "candidate_sha256": "d33be0382beacc27f5f00e9950bd3b2aca80e9f6a3feb341d6a6152d037e7ae9",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -3132,7 +3132,7 @@
           350
         ],
         "exception": null,
-        "ssim_rgb": 0.98853373838139,
+        "ssim_rgb": 0.988092562834118,
         "threshold": 0.98,
         "passed": true
       },
@@ -3145,7 +3145,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9986598493622424,
+        "ssim_rgb": 0.9979522899688181,
         "threshold": 0.98,
         "passed": true
       },
@@ -3171,7 +3171,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 1.0,
+        "ssim_rgb": 0.9995769754768261,
         "threshold": 0.98,
         "passed": true
       },
@@ -3189,13 +3189,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "guiFracPaQ2D_segmentanglealonggraph_SD11A.png",
     "native_sha256": "be2ddd7dd0b5c379247d2323e06135182ba8ad02668d58cc548f598f0e98a188",
-    "candidate_sha256": "f59f018333f1ab97eff8a9a6ffc8664aba7ba91ea4456ecf3df9997ccac14c57",
+    "candidate_sha256": "2b0c10b90b842a6d2116164cdf93e828f08236068dc80707f6894e36b106d678",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -3220,7 +3220,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9975021778081746,
+        "ssim_rgb": 0.9968331862356744,
         "threshold": 0.98,
         "passed": true
       },
@@ -3246,7 +3246,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 1.0,
+        "ssim_rgb": 0.9995769754768261,
         "threshold": 0.98,
         "passed": true
       },
@@ -3264,13 +3264,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "guiFracPaQ2D_graphtracemap_SD11A.png",
     "native_sha256": "0eea7752381c199ea5c74242ac6c9c4e26cb96da487abbdb1d5118613d13df8c",
-    "candidate_sha256": "74fdfc796062482e37f580f072d5f77c5bd923bbb26aa2af2f303070e8db9526",
+    "candidate_sha256": "011ba292de237b6958d93b7fb7a5a915dc7b79806f4cf4b3a15f0d5ce34ac58b",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -3295,7 +3295,7 @@
           3823
         ],
         "exception": null,
-        "ssim_rgb": 0.9833125371625745,
+        "ssim_rgb": 0.983314893327,
         "threshold": 0.98,
         "passed": true
       },
@@ -3308,7 +3308,7 @@
           3823
         ],
         "exception": null,
-        "ssim_rgb": 0.9888047131506686,
+        "ssim_rgb": 0.9887013915708116,
         "threshold": 0.98,
         "passed": true
       },
@@ -3321,7 +3321,7 @@
           3823
         ],
         "exception": null,
-        "ssim_rgb": 0.9998511038076169,
+        "ssim_rgb": 0.9996002831767852,
         "threshold": 0.98,
         "passed": true
       },
@@ -3334,18 +3334,18 @@
           4724
         ],
         "exception": null,
-        "ssim_rgb": 0.9882226203312232,
+        "ssim_rgb": 0.9880416307592338,
         "threshold": 0.98,
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "guiFracPaQ2D_intensityalonggraph_SD11A.png",
     "native_sha256": "cf50c95d06f444491f12adbb0bbe6455b4d3b3db5eb96b403bfdc9cc9ebcfe32",
-    "candidate_sha256": "225616b5bf5790a5d091f18c4a8cfd6ec7c3ab3d15c5ef99827e9fd707f435de",
+    "candidate_sha256": "b3cfc45c45c5592aa8cfef0b43f9217f16c3fed287e0d422e0d995beaa74150c",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -3357,7 +3357,7 @@
           350
         ],
         "exception": null,
-        "ssim_rgb": 0.9725078526128182,
+        "ssim_rgb": 0.972136068474515,
         "threshold": 0.98,
         "passed": false
       },
@@ -3370,7 +3370,7 @@
           4208
         ],
         "exception": "Q20_finite_circles",
-        "ssim_rgb": 0.9978438489059593,
+        "ssim_rgb": 0.9976619388145612,
         "threshold": 0.98,
         "passed": null
       },
@@ -3396,7 +3396,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 1.0,
+        "ssim_rgb": 0.9995769754768261,
         "threshold": 0.98,
         "passed": true
       },
@@ -3414,13 +3414,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": false,
-    "comparable_region_count": 4
+    "comparable_region_count": 4,
+    "comparable_regions_pass": false
   },
   {
     "name": "guiFracPaQ2D_densityalonggraph_SD11A.png",
     "native_sha256": "1ccc1774b5d52ec999569a862b729ff97fff79bec93d42827cad951b6c5e4f47",
-    "candidate_sha256": "c51781a77d1b9db4e697625a7ddd270588e6a6ffa1640ac6e33453247a568414",
+    "candidate_sha256": "b945c0579e78cd01c834b046dfceccd101cad6695ad8f0c6f1101c08ceb2bf20",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -3432,7 +3432,7 @@
           350
         ],
         "exception": null,
-        "ssim_rgb": 0.9721135627703378,
+        "ssim_rgb": 0.9717410252740127,
         "threshold": 0.98,
         "passed": false
       },
@@ -3445,7 +3445,7 @@
           4208
         ],
         "exception": "Q20_finite_circles",
-        "ssim_rgb": 0.9603422877301134,
+        "ssim_rgb": 0.96013526251136,
         "threshold": 0.98,
         "passed": null
       },
@@ -3471,7 +3471,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9999228762185889,
+        "ssim_rgb": 0.9995769754768261,
         "threshold": 0.98,
         "passed": true
       },
@@ -3489,13 +3489,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": false,
-    "comparable_region_count": 3
+    "comparable_region_count": 3,
+    "comparable_regions_pass": false
   },
   {
     "name": "guiFracPaQ2D_segmentlengthfromgraph_SD11A.png",
     "native_sha256": "f5160023c40b4478806e5661fe138035a1a6a4d3bd7eb721d4eb3125132d5e09",
-    "candidate_sha256": "fc309ad3f21a4614148ad55f33649b3bb1aa550ffa62255316cc799f6c214246",
+    "candidate_sha256": "5ffe16d6d775ba6d574f94614b2e74ad68931a903560035b2a80de2bc23a5567",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -3520,7 +3520,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9951169990421104,
+        "ssim_rgb": 0.9846840075683058,
         "threshold": 0.98,
         "passed": true
       },
@@ -3564,13 +3564,13 @@
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   },
   {
     "name": "guiFracPaQ2D_segmentanglefromgraph_SD11A.png",
     "native_sha256": "6d4359d32104597eaf623ff20b58a1cf2710b8220222a5bb7179f7c418843a11",
-    "candidate_sha256": "902c515b3517321569bd8e1c9f3528729f5f6731b30157da4213923ba574b4d6",
+    "candidate_sha256": "13d79f1ab31508c4dc60d5dc762ff7f2b7f532accd8a4bd1fe79dde6effb2b76",
     "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
     "regions": [
       {
@@ -3595,7 +3595,7 @@
           4208
         ],
         "exception": null,
-        "ssim_rgb": 0.9954898335997019,
+        "ssim_rgb": 0.9821736177500627,
         "threshold": 0.98,
         "passed": true
       },
@@ -3634,12 +3634,12 @@
           4724
         ],
         "exception": null,
-        "ssim_rgb": 0.9855584545318057,
+        "ssim_rgb": 0.9841333564759652,
         "threshold": 0.98,
         "passed": true
       }
     ],
-    "comparable_regions_pass": true,
-    "comparable_region_count": 5
+    "comparable_region_count": 5,
+    "comparable_regions_pass": true
   }
 ]

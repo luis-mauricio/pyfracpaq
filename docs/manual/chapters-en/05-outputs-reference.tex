@@ -1,0 +1,147 @@
+% !TeX root = ../pyfracpaq-user-manual-en.tex
+\major{Complementary tools}\label{sec:aux}
+Use the same prepared Python executable from the project root. With Miniforge activated, replace \code{.venv/bin/python} with \code{python}. Quote paths containing spaces.
+
+\subsection{Preprocess photographs for Hough}
+\begin{verbatim}
+.venv/bin/python -m pyfracpaq.tools preprocess photo.jpg \
+  prepared.tif --panel stages.png
+\end{verbatim}
+The command accepts eight-bit RGB/grayscale input and requires distinct paths for the input, TIFF and PNG panel. The TIFF is a binary 0/255 grayscale image. Grayscale conversion approximates \(0.298936R+0.587043G+0.114021B\), with rounding. The median uses a 20\(\times\)20 window; saturated subtraction is
+\begin{equation}D=\max\{\operatorname{median}(I)-I,0\}.\end{equation}
+Sobel, morphological closing and thinning/inversion follow. The median estimates the background, subtraction highlights dark structures and Sobel responds to gradients. Closing/thinning changes connectivity and thickness, potentially joining or losing traces. Inspect the panel before import. There is no AI segmentation.
+\plotfig{preprocess.png}{Preprocessing a reference photograph, separate from SD11A and the Hough example.}{fig:preprocess}
+
+\subsection{Convert Move objects to nodes}
+\begin{verbatim}
+.venv/bin/python -m pyfracpaq.tools move \
+  examples/move_objects.dat nodes.txt \
+  --x-column 1 --y-column 3 --skip-header 1
+\end{verbatim}
+Columns are one-based; defaults are X=1, Y=3 and no header lines. The supplied example requires one header line. Blank lines separate objects and the last object is retained even without a final blank line. TXT output uses four decimal places and TAB. Check it in Preview. A conversion error does not replace the previous output file.
+
+\subsection{Wavelet dialogue for an existing raster}
+\begin{verbatim}
+.venv/bin/python -m pyfracpaq.tools wavelet-dialog \
+  FracPaQ2D_wavelet_traces.png \
+  --output-directory . --tag Run1
+\end{verbatim}
+The dialogue accepts eight-bit L/RGB rasters and reuses the kernels/parameters in Section~\ref{sec:wavelets}. Run freezes its configuration and processes its own job. Cancel requests interruption at a safe stage or closes only the dialogue. The main preview is not replaced. PNGs use the tool's tag, but theta TXT retains the auxiliary \emph{untagged} filename. Changing --tag alone does not separate those TXT files.
+
+\subsection{APIs and legacy resources}
+An advanced variogram, order-16 tensor, linear/historical roses, probePlane, generic text reader and palettes are also available through Python APIs. They are not extra GUI 2.8 controls. Incomplete experiments and earlier interfaces remain references without new buttons. Their contracts are in the development documentation; ordinary tab use does not depend on them.
+
+\major{Output files and organisation}\label{sec:exports}
+\subsection{Figures, tags and output counts}
+Analytical PNGs use 20\(\times\)20 cm at 600 dpi, or 4724\(\times\)4724 pixels in the checked backend. Window size does not change that export resolution. Horizontal colourbars track plot width and vertical colourbars plot height, maintaining fixed clearance from axis labels.
+
+Most filenames follow \code{FracPaQ2D_name_SD11A.png}, where name stands for the output name. Graphs uses \code{guiFracPaQ2D_}; Wavelets uses, for example, \code{FracPaQ2Dwavelet_a32_SD11A.png}. The underscore before the tag remains when the tag is empty. Spaces/accents are accepted; path separators and reserved characters are rejected. A tag does not select a folder.
+\begin{longtable}{@{}p{.29\linewidth}p{.63\linewidth}@{}}
+\toprule Selection & PNGs per Run\\\midrule\endhead
+Traces/length/strike & One per selection; SVG may add a multicolour map.\\
+P21/P20 in Maps & One per map; Show scan circles adds a shared circle map.\\
+Stability & Map and rose per selection; one Mohr diagram per family.\\
+Lengths histograms & Two: traces and segments.\\
+Log-log lengths & Four: binned frequencies and complementary frequencies for both populations.\\
+MLE & Six additional figures, three models per population.\\
+Cross-plot/variogram & One per selection.\\
+Blocks & Three: centroids, histogram and complementary distribution.\\
+Angle histogram/rose & One per selection.\\
+I-Y-X & Four: nodes, X+Y heatmap, I heatmap and triangle.\\
+Tensors/permeability & One per selection.\\
+Wavelets & One panel per a, plus the fixed raster.\\
+Graphs & One per attribute profile; P21/P20 share a map and both circular profiles.\\
+Image Preview & Hough diagnostic before Run.\\\bottomrule
+\end{longtable}
+The default Run produces five PNGs and four TXT files. One checkbox does not necessarily correspond to one file.
+
+\subsection{TXT and intermediate files}\label{sec:txt}
+The names below use tag SD11A and a=32. TXT files have no header, apart from the connectivity class letters.
+\begin{longtable}{@{}p{.54\linewidth}p{.38\linewidth}@{}}
+\toprule File & Content\\\midrule\endhead
+\code{FracPaQ2Dsegmentlengths_SD11A.txt} & Sorted segment lengths; two decimal places.\\
+\code{FracPaQ2Dtracelengths_SD11A.txt} & Sorted trace lengths; two decimal places.\\
+\code{FracPaQ2Dsegmentangleslengths_SD11A.txt} & Raw angle/length pairs, aligned in source order; two decimal places.\\
+\code{FracPaQ2DEZROSE_SD11A.txt} & Corrected, axially duplicated and sorted angles; two decimal places.\\
+\code{FracPaQ2Dintensity_SD11A.txt} & X/Y/P21; centres to one decimal place, estimate to eight.\\
+\code{FracPaQ2Ddensity_SD11A.txt} & X/Y/P20, X outer/Y inner traversal.\\
+\code{FracPaQ2Dconnectivity_SD11A.txt} & Rows I, X and Y with their counts.\\
+\code{FracPaQ2Dsegmentdata_SD11A.txt} & One-based sequence, X1/Y1/X2/Y2 to four decimal places and raw angle to one.\\
+\code{FracPaQ2Dwavelet_theta_a32_SD11A.txt} & Main-tab selected orientations, one per line.\\
+\code{name_converted.txt} /\newline\code{name_colourHHHHHH_converted.txt} & SVG nodes beside the source, grouped by colour where required.\\
+\code{FracPaQ2D_blocksize.bmp} & Block raster, fixed and untagged.\\
+\code{FracPaQ2D_wavelet_traces.png} & 72-dpi Wavelet raster, fixed and untagged.\\
+\code{FracPaQ2Dwavelet_theta_a32.txt} & Auxiliary dialogue theta, untagged.\\\bottomrule
+\end{longtable}
+Lengths writes its three TXT files whenever that family is selected. Angles/crack tensor triggers EZROSE. P21 or P20 in Maps writes both circular TXT files. Only Slip tendency writes segmentdata. Graphs has no dedicated TXT. Preprocess writes to the supplied paths, and its panel resolution differs from the analytical PNG resolution.
+
+The historical text precision rounds values: different centres may appear identical in small units. Internal arrays retain their precision. Statistical tables are not node TXT files and should not be imported as such.
+
+\subsection{Replacement and partial runs}
+Each file is prepared in its own temporary file and atomically replaced. There is no single transaction covering a whole Run. A failure/interruption may leave files from different runs together; inspect the messages and folder. An error does not automatically roll back every file, and no generic cleanup of unrelated files is performed.
+
+\major{Interpretation and troubleshooting}\label{sec:limites}
+\subsection{A sequence for responsible analysis}
+\begin{enumerate}
+\item Check geometry/statistics and decide calibration before interpreting units.
+\item Compare maps against histograms/roses; assess segmentation and the angular reference.
+\item Try justified P21/P20 resolutions and record N/radius.
+\item Justify topological tolerance from digitisation, rather than the desired triangle appearance.
+\item Decide censoring before tail fitting; record cut-offs and parameters.
+\item Orient profiles around a geological question; state their points, direction and units.
+\item Interpret permeability/stability physically only with independently justified aperture/stress data.
+\item For Wavelets, state the raster, a, L and angular increment.
+\end{enumerate}
+
+\subsection{Approved differences}
+Q-05 applies trace-level censoring; Q-11 uses real-endpoint proximity. Q-12 defines the Wavelet raster, dimensions and tie handling. Q-14 excludes the exterior and calibrates blocks. Q-15 corrects cut-offs and tail searches. Q-17 corrects normalisation, colours and CSF equality. Q-20 uses finite counting and area-normalised P20. These are active defaults and may differ from legacy results.
+
+Raw/corrected angular conventions and linear colour indices with logarithmic colourbars in length maps are retained. Visual differences in five titles and two Hough side views were accepted without authorising changes to accumulators, peaks or endpoints. Markers use ordinary squares/circles. This does not establish universal pixel identity, equivalence to corrected legacy scientific results or suitability for every sample. Detailed audits are optional material in the full clone.
+
+\Needspace{27\baselineskip}
+\subsection{Common diagnostics}
+\begin{longtable}{@{}p{.34\linewidth}p{.58\linewidth}@{}}
+\toprule Situation & Check\\\midrule\endhead
+Run disabled & Refresh the preview; wait for processing; complete/cancel profile-line selection.\\
+TXT rejected & TABs, complete pairs, no header, finite values and two distinct nodes per trace.\\
+SVG rejected & Prepare curves, transforms and CSS in the source editor; do not merely change the extension.\\
+Image rejected & Eight-bit grayscale, JPEG/TIFF, single frame; RGB/alpha requires preparation.\\
+Hough finds no lines & Check white/background, threshold, FillGap and MinLength in the diagnostic.\\
+Tensor/circular Maps fails & Check that the two-dimensional area is positive.\\
+MLE has no sample & Recheck censoring/cut-offs; the tail needs two distinct values.\\
+No blocks & Check closures, trace ink and raster resolution in the BMP.\\
+ALONG is empty & The finite line must meet non-collinear segments; FROM uses different geometry.\\
+Wavelets is slow & Reduce a, L and orientations; respect the memory budget.\\
+Permeability in pixel\(^{2}\) & Physical calibration is missing; do not relabel the axis as metres.\\
+ModuleNotFoundError & Check the interpreter, project root and requirements.txt installation with the same Python.\\\bottomrule
+\end{longtable}
+
+\subsection{Minimum record for reproducibility}
+Keep the input/checksum, version, scale/units, north/flips, selections, bins, censoring/cut-offs, tolerance, physical parameters, profile points, Wavelet grid, tag and folder. For Monte Carlo, also retain the console seed. The GUI does not save a complete session; a PNG alone does not record all settings.
+
+SHA-256 of the supplied SD11A file:\par
+\code{96bafa56537444279a748c3f4b7a4300f7e73341a04d2ba4ff8cf1299ad74688}.
+
+\major{Feature map and references}
+\subsection{Find each analysis}
+\begin{longtable}{@{}p{.23\linewidth}p{.69\linewidth}@{}}
+\toprule Tab & Features and pages\\\midrule\endhead
+Maps & Traces (\pageref{feat:MAP-01}); lengths (\pageref{feat:MAP-04}/\pageref{feat:MAP-05}); strike (\pageref{feat:MAP-06}); P21/P20 (\pageref{feat:MAP-07}/\pageref{feat:MAP-08}); stability (\pageref{feat:MAP-11}--\pageref{feat:MAP-14}).\\
+Lengths & Histograms (\pageref{feat:LEN-02}); log-log (\pageref{feat:LEN-03}); cross-plot (\pageref{feat:LEN-06}); MLE (\pageref{feat:LEN-07}); blocks (\pageref{feat:LEN-13}); variogram (\pageref{feat:LEN-15}).\\
+Angles & Histogram (\pageref{feat:ANG-01}) and rose (\pageref{feat:ANG-02}).\\
+Fluid flow & I/Y/X (\pageref{feat:FLO-01}); tensors (\pageref{feat:FLO-08}); permeability (\pageref{feat:FLO-09}).\\
+Wavelets & Kernels and selection (\pageref{feat:WAV-01}).\\
+Graphs & ALONG (\pageref{feat:GRA-03}--\pageref{feat:GRA-07}); FROM (\pageref{feat:GRA-10}--\pageref{feat:GRA-12}).\\
+Complementary tools & Tools (\pageref{sec:aux}); files (\pageref{sec:exports}).\\\bottomrule
+\end{longtable}
+
+\subsection{Provenance and credits}
+The formulae describe Python implementation 0.9.0rc1 and its approved decisions, checked against the geometry, analysis and export modules. Corrected port results are not attributed to MATLAB. Illustration origins/checksums are recorded in \code{figure-provenance.json}; auxiliary examples are identified in their captions.
+
+SD11A was copied unchanged from the supplied FracPaQ MATLAB 2.8 distribution with MIT attribution. Synthetic examples were created by the project. Consider the original theory and references when publishing results~\cite{healy}. Preserve the credits to David Healy, collaborators and libraries in LICENSE/THIRD\_PARTY\_NOTICES. Product and library names identify references without implying endorsement.
+
+\begin{thebibliography}{9}
+\bibitem{healy} Healy, D. et al. (2017). \emph{FracPaQ: A MATLAB toolbox for the quantification of fracture patterns}. Journal of Structural Geology, 95, 1--16. \href{https://doi.org/10.1016/j.jsg.2016.12.003}{doi:10.1016/j.jsg.2016.12.003}.
+\bibitem{clauset} Clauset, A.; Shalizi, C. R.; Newman, M. E. J. (2009). \emph{Power-Law Distributions in Empirical Data}. SIAM Review, 51(4), 661--703. \href{https://doi.org/10.1137/070710111}{doi:10.1137/070710111}.
+\bibitem{sanderson} Sanderson, D. J.; Nixon, C. W. (2015). \emph{The use of topology in fracture network characterization}. Journal of Structural Geology, 72, 55--66. \url{https://www.sciencedirect.com/science/article/abs/pii/S0191814115000152}.
+\end{thebibliography}

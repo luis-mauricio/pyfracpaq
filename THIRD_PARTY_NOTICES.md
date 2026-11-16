@@ -1,5 +1,9 @@
 # Créditos e avisos de terceiros
 
+Os contratos e relatórios técnicos citados abaixo são material de manutenção do repositório completo; podem não acompanhar o ZIP de uso. As licenças e atribuições do programa e dos recursos distribuídos permanecem neste arquivo, em LICENSE e nos avisos em pyfracpaq/resources.
+
+O exemplo examples/SD11A.txt acompanha o manual como cópia sem alterações do SD11A.txt da distribuição FracPaQ MATLAB 2.8 fornecida pelo mantenedor. Preservam-se a atribuição FracPaQ Contributors/David Healy e colaboradores e o aviso MIT da distribuição. Checksum e procedência estão em examples/provenance.json. As ilustrações do manual são resultados Python/capturas da interface, com origens registradas em docs/manual/figure-provenance.json; não se atribuem ao MATLAB os resultados corrigidos do port.
+
 Registro iniciado na Sprint0 e revisado na auditoria S16. Preservar os avisos completos ao portar ou redistribuir trechos; não atribuir autoria exclusiva ao port Python.
 
 Na Sprint 2, FracPaQlogo.jpeg e FracPaQicon.jpeg foram copiados sem alteração para pyfracpaq/resources. Origem, SHA-256 e atribuição MIT estão em resources/provenance.json. A especificação de controles ui_spec.json deriva do FIG preservado e registra seu checksum. O pacote inclui esses recursos e os avisos da raiz; não inclui arquivos de fontes.

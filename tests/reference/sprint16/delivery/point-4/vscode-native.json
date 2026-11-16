@@ -1,0 +1,22 @@
+{
+  "tool": "Computer Use / native VS Code and Qt Cocoa",
+  "source_folder": "/Users/lm/developer/pyfracpaq",
+  "selected_python": "/tmp/pyfracpaq-source-validation-cah_c5sm/native-source-env/bin/python",
+  "python": "3.13.18",
+  "launcher": "Run Python File on run_gui.py",
+  "version_observed": "0.9.0rc1",
+  "preview_file": "examples/profiles.txt",
+  "preview_statistics": {
+    "traces": 2,
+    "segments": 4,
+    "nodes": 6,
+    "xmin": -6,
+    "ymin": -3,
+    "xmax": 6,
+    "ymax": 3
+  },
+  "run_enabled_after_preview": true,
+  "native_exit_verified": true,
+  "original_interpreter_restored": "/Users/lm/developer/pyfracpaq/.venv/bin/python",
+  "scope": "Actual native VS Code launch in the already trusted original workspace, with a fresh dependencies-only environment. Same application sources/resources as runtime ZIP; runtime-only ZIP runs and exports independently covered by both source checkers. Temporary ZIP workspace was viewed in Restricted Mode; no trust/security settings were changed."
+}

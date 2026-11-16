@@ -1,10 +1,12 @@
 # Manual local do PyFracPaQ
 
-O port usa a interface FracPaQ2.8 e funciona offline após instalar as dependências. CPython3.13.18/macOS arm64 é o ambiente verificado; Windows/Linux foram adiados pelo usuário e a homologação visual integral continua aberta. A entrega0.1.0rc1 é candidato local; [instalação/offline/VS Code](install.md) e [auditoria S16](parity/sprint-16.md) detalham o estado verificável. Referência original: [manual FracPaQ2.8](<../fracpaq-matlab/FracPaQ User Guide v2.8.pdf>), [README original](../fracpaq-matlab/README.md), [créditos](../THIRD_PARTY_NOTICES.md) e [licença](../LICENSE).
+O manual ilustrado contém o roteiro SD11A, os 30 recursos analíticos, figuras, teoria e fórmulas. Está disponível em **português brasileiro** ([PDF](manual/pyfracpaq-user-manual.pdf), [LaTeX](manual/pyfracpaq-user-manual.tex)) e **inglês** ([PDF](manual/pyfracpaq-user-manual-en.pdf), [LaTeX](manual/pyfracpaq-user-manual-en.tex)). As [instruções de compilação](manual/README.md) acompanham as duas versões. Este documento mantém a consulta rápida em português em Markdown.
+
+O port usa a interface FracPaQ 2.8 e funciona offline após preparar as bibliotecas. Versão **0.9.0rc1**, November 2026, contato luismauricio@me.com. Execute o código pela raiz no terminal ou VS Code, com Python 3.13 ou ambiente Miniforge; não é necessário instalar o pacote do projeto. [Preparação do ambiente](install.md), [notas e diferenças aceitas](release-notes.md), [créditos](../THIRD_PARTY_NOTICES.md) e [licença](../LICENSE). MATLAB e os testes não são necessários para usar o programa. Windows/Linux permanecem para testes posteriores do mantenedor.
 
 ## Instalar e iniciar
 
-Na raiz do projeto, criar .venv com Python3.13 e instalar requirements.txt e o pacote local. O procedimento completo, dependências de desenvolvimento e comandos PowerShell estão no [README](../README.md). Iniciar com `.venv/bin/python run_gui.py` ou `.venv/bin/python -m pyfracpaq`. No VS Code, selecionar o interpretador de .venv. Não é necessário MATLAB durante a operação.
+Na raiz do projeto, criar .venv com Python3.13 (ou usar um ambiente Miniforge Python3.13) e instalar as dependências de requirements.txt. Não é necessário instalar o pacote PyFracPaQ. O procedimento completo, dependências de desenvolvimento e comandos PowerShell estão no [README](../README.md). Iniciar com `.venv/bin/python run_gui.py` ou `.venv/bin/python -m pyfracpaq`. No VS Code, selecionar o interpretador de .venv. Não é necessário MATLAB durante a operação.
 
 Escolher o arquivo, clicar Preview, conferir estatísticas, selecionar as saídas nas seis abas e clicar Run. A tag Run1 produz o sufixo _Run1. Os PNGs têm 20×20cm/600dpi; arquivos são gravados no diretório corrente de execução. Repetir tag substitui os mesmos arquivos. Os originais não devem ser usados como diretório de saída.
 
@@ -54,7 +56,7 @@ O diálogo wavelet separado reutiliza um raster L/RGB de oito bits, com os mesmo
 
 ## APIs e legado
 
-APIs complementares: readtext em `pyfracpaq.io.text`; tensor16 e probe_plane em `pyfracpaq.analysis.auxiliary`; rosas linear/histórica em `pyfracpaq.analysis.roses`; variograma avançado em `pyfracpaq.analysis.variogram`; paletas em `pyfracpaq.analysis.palettes`; desenho em `pyfracpaq.plots.auxiliary`. Não são seletores da GUI2.8. [Contratos e destinação completa](parity/legacy.md).
+APIs complementares: readtext em `pyfracpaq.io.text`; tensor16 e probe_plane em `pyfracpaq.analysis.auxiliary`; rosas linear/histórica em `pyfracpaq.analysis.roses`; variograma avançado em `pyfracpaq.analysis.variogram`; paletas em `pyfracpaq.analysis.palettes`; desenho em `pyfracpaq.plots.auxiliary`. Não são seletores da GUI2.8. Os contratos técnicos e a destinação completa constam em docs/parity/legacy.md no repositório completo; não são necessários ao uso.
 
 Os scripts antigos podem ter formatos EPS/JPEG/TIFF, caminhos fixos e assinaturas incompatíveis. Ficam preservados como referências, sem execução automática. Não há salvamento de sessão nem relatório consolidado na GUI; seriam extensões futuras. index.html/assets/params.json são a página histórica, não um frontend web nem configuração da aplicação.
 

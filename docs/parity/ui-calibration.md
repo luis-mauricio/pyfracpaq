@@ -1,5 +1,7 @@
 # Revisão da fidelidade da interface
 
+**Atualização de 16/11/2026:** o usuário solicitou abertura com a largura da tela. A janela agora ocupa toda a largura útil do monitor, incluindo bordas nativas, com altura limitada e centralização vertical. Continua sendo uma janela normal redimensionável. Essa solicitação substitui a regra anterior de margem horizontal/limite de 1250 na abertura, documentada no histórico abaixo. [Verificação Qt](../../tests/reference/interface-identity/startup-width.json).
+
 14/11/2026, após relato do usuário sobre borda na navegação, tamanhos dos botões, largura da janela e outras diferenças. A implementação anterior preservava os blocos principais, mas redistribuía seus controles internos com layouts Qt e descartava propriedades visuais do FIG. Isso não atendia à fidelidade solicitada.
 
 Foram conferidos o FIG extraído, os callbacks de abertura e as capturas originais do manual nas páginas 5/6. Os 164 arquivos MATLAB permanecem intactos. A revisão atua na apresentação; não modifica cálculos, seleções padrão ou formatos dos resultados científicos.

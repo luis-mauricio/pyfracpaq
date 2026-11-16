@@ -1,0 +1,133 @@
+% !TeX root = ../pyfracpaq-user-manual.tex
+\major{Lengths: comprimentos, ajustes, blocos e variograma}\label{sec:lengths}
+A família calcula comprimentos de traços e segmentos separadamente. Nos controles de classe, o valor solicitado corresponde à construção histórica de centros: por exemplo, 20 intervalos podem produzir 21 centros. Não suponha que o valor do menu seja sempre o número final de barras. A família escreve três TXT, mesmo se apenas cross-plot, blocos ou variograma estiver selecionado.
+\uifig{ui-lengths.png}{Painel Lengths, com estatística descritiva, distribuições, ajustes e análises espaciais.}{fig:ui-lengths}
+
+\subsection{Censura e estatísticas descritivas}
+A opção de censura nas bordas exclui um traço inteiro se o primeiro ou o último nó tocar qualquer limite real do domínio. Todos os segmentos desse traço são excluídos pela mesma máscara, preservando a associação com seus ângulos. Não é um ajuste probabilístico para comprimentos não observados: é uma seleção geométrica de amostra.
+
+Um vértice interno que toca a borda não equivale automaticamente a uma extremidade censurada. O domínio é definido antes da seleção. Se a censura excluir tudo, a execução é recusada antes dos arquivos dessa família, preservando os anteriores. Para reproduzir as figuras SD11A, mantenha a censura desligada.
+
+O console informa quantidade, mínimo, máximo e média aritmética,
+\(\bar L=N^{-1}\sum_i L_i\), das duas populações. Sem censura, os valores do exemplo são:
+\begin{center}\begin{tabular}{@{}lrrrr@{}}\toprule
+População & N & Mínimo & Máximo & Média\\\midrule
+Traços &445&7.42496&2057.12077&138.48854\\
+Segmentos &1076&6.32851&318.36999&57.27454\\\bottomrule
+\end{tabular}\end{center}
+Os valores estão em pixels. A diferença entre médias é esperada: o número de segmentos por traço varia.
+
+\feature{LEN-02}{Histogram of lengths}
+Marque \control{Histogram of lengths} e escolha a discretização. Run produz duas figuras: comprimentos de traços e de segmentos, com frequência absoluta e eixo percentual correspondente. Para uma classe com \(n_j\) observações, a frequência percentual é \(100n_j/N\).
+
+Use esse resumo para comparar populações e identificar comprimentos dominantes, sem confundir forma do histograma com modelo estatístico. Aumentar classes reduz a quantidade por classe; extremos ficam mais instáveis. Comprimentos todos iguais são representados por uma classe, sem jitter artificial.
+\plotfig{histotracelength.png}{Histograma de traços SD11A. Não é a distribuição de todos os segmentos.}{fig:lengthhist}
+\plotfig{histosegmentlength.png}{Histograma de segmentos SD11A: a segmentação desloca a população para comprimentos menores.}{fig:segmenthist}
+
+\feature{LEN-03}{Log-log lengths}
+Marque \control{Log-log lengths}. São quatro gráficos: frequências por classes e frequências complementares para cada população. Os dois eixos são logarítmicos; pontos de frequência zero não são desenhados.
+
+Conceitualmente, a frequência complementar representa observações acima de um comprimento. A implementação mantém a construção do legado:
+\begin{equation}
+C_j=N-\sum_{k\leq j} n_k,
+\end{equation}
+com \(n_k\) contados por centros de classe. Em pixels, a grade complementar usa passo unitário; em metros, 1000 intervalos (1001 centros), salvo amostra constante. Portanto, não é uma função empírica sem discretização avaliada em cada valor observado.
+
+As figuras chamadas \emph{density distribution} mostram frequências dos histogramas em eixos log-log, não uma densidade de probabilidade normalizada por largura de classe. Uma tendência aproximadamente reta não basta para demonstrar lei de potência. Use a análise MLE e considere amostragem/censura.
+
+A linha vertical vermelha da complementar corresponde à diagonal do domínio arredondada para cima. Ela é uma referência geométrica, não um teto imposto ao percurso de um traço curvo, que pode ultrapassá-la.
+\plotfig{loglogplottracelength.png}{Complementar de comprimentos de traços. Pontos positivos são exibidos em log-log.}{fig:loglog}
+\plotfig{loglogplotsegmentlengthdensity.png}{Frequências por classes dos segmentos em log-log; não são probabilidades normalizadas.}{fig:logdensity}
+
+\feature{LEN-06}{Cross-plot lengths v angles}
+Marque \control{Cross-plot lengths v angles}. Pode ser executado sozinho. Cada observação relaciona comprimento do segmento e orientação corrigida, com duplicação axial para a representação angular. A opção não relaciona comprimento total do traço com ângulo médio.
+
+Procure se os segmentos mais longos se concentram em certas famílias; avalie o efeito da digitalização. Norte/flips pertencem à convenção angular da família. Os limites gráficos históricos podem não mostrar valores que uma correção angular legada deixa fora do intervalo; o diagnóstico e os dados preservados distinguem isso de perda na leitura.
+\plotfig{crossplotsegmentlengthangle.png}{Cross-plot do SD11A: associação entre orientação e comprimento de segmentos.}{fig:cross}
+
+\feature{LEN-07}{MLE analysis: três modelos, duas populações}\label{sec:mle}
+Ative \control{Log-log lengths} e depois \control{MLE analysis}. Informe cortes percentuais Lower/Upper; para o roteiro, ambos zero. Lower remove \(\lceil Np_{\mathrm{lower}}/100\rceil\) menores valores e Upper remove \(\lceil Np_{\mathrm{upper}}/100\rceil\) maiores, após ordenação. São percentuais de observações, não comprimentos de corte na unidade do eixo.
+
+A mesma população retida é usada na busca e no ajuste final, conforme Q-15. Para cada modelo, o programa testa limites inferiores candidatos \(x_{\min}\) e seleciona a cauda pela menor distância entre curvas complementares, com pelo menos duas observações e dois valores distintos. O menor \(x_{\min}\) vence empates. Nem todos os comprimentos precisam pertencer à cauda ajustada.
+
+Para \(z_i\geq x_{\min}\), os estimadores adotados são
+\begin{align}
+\widehat\alpha&=1+\frac{n}{\sum_i\ln(z_i/x_{\min})}
+&&\text{(lei de potência)},\\
+\widehat\lambda&=\frac{1}{\overline{z-x_{\min}}}
+&&\text{(exponencial)},\\
+\widehat\mu&=\frac1n\sum_i\ln z_i,\qquad
+\widehat\sigma^2=\frac1n\sum_i(\ln z_i-\widehat\mu)^2
+&&\text{(lognormal)}.
+\end{align}
+\(\alpha\) e \(\sigma\) são adimensionais; \(\lambda\) é inverso de comprimento; \(\mu\) depende do log da unidade escolhida. O ajuste lognormal usa média/desvio dos logs da cauda, como a implementação fornecida: não é uma nova otimização de lognormal condicionalmente truncada.
+
+As curvas usadas são
+\begin{align}
+S_{\mathrm{PL}}(x)&=(x/x_{\min})^{1-\alpha},\\
+S_{\mathrm{Exp}}(x)&=\exp[-\lambda(x-x_{\min})],\\
+S_{\mathrm{LN}}(x)&=\Phi\!\left(-\frac{\ln x-\mu}{\sigma}\right),
+\end{align}
+onde \(\Phi\) é a distribuição normal padrão. As figuras conservam os escalonamentos e convenções de exibição do FracPaQ. Lei de potência usa log-log, exponencial linear-log e lognormal log-linear; observe os eixos antes de comparar a curvatura.
+
+\textbf{Saídas.} Seis figuras de ajuste: três para traços e três para segmentos. Com a seleção Log-log, há ainda os quatro gráficos dessa opção, sem recalcular a família nem duplicar os TXT. As caixas mostram parâmetros e avaliações; linhas de corte ajudam a localizar a população.
+\plotfig{tracelengthsFittingPowerLaw.png}{Exemplo MLE de lei de potência para os traços SD11A. Não extrapole a reta além da cauda sem justificativa.}{fig:mlepl}
+\plotfig{tracelengthsFittingExponential.png}{Exemplo exponencial para traços; a escala dos eixos difere da figura de potência.}{fig:mleexp}
+\plotfig{tracelengthsFittingLogNormal.png}{Exemplo lognormal para traços. A mesma análise é feita separadamente para segmentos.}{fig:mleln}
+
+\subsubsection{O que significam os testes e as taxas}
+A distância de Kolmogorov--Smirnov compara os dois degraus empíricos:
+\begin{equation}D=\sup_x|F_1(x)-F_2(x)|.\end{equation}
+O procedimento conserva 2500 comparações de duas amostras por modelo, com p-valor assintótico e hipótese bilateral. A decisão usa \(p\leq\alpha_{\mathrm{sig}}\), com significância 0.1 para potência e 0.05 para exponencial/lognormal. Outra taxa contabiliza \(p>0.05\) nos três modelos. As duas quantidades não têm a mesma definição.
+
+\begin{note}{Interpretação estatística}
+As taxas não são probabilidades posteriores de um modelo ser verdadeiro. Não rejeitar não prova a distribuição, e uma reta log-log não a identifica. As seis avaliações são Monte Carlo: a GUI registra uma seed e execuções independentes podem variar. As figuras deste manual provêm de uma execução de comparação com seed registrada. Para fundamentação geral, veja Clauset et al.~\cite{clauset}; o procedimento implementado conserva particularidades do FracPaQ descritas aqui.
+\end{note}
+
+\feature{LEN-13}{Block size graphs}
+Marque \control{Block size graphs}. A rede é rasterizada nas coordenadas originais, com traços de espessura definida. Componentes brancos com conectividade 8 que tocam a borda são excluídos; os restantes são interpretados como blocos fechados no raster. A seleção gera mapa de centroides, histograma de áreas e complementar log-log, além do BMP de nome fixo.
+
+Se um componente ocupa \(n_p\) pixels e cada pixel representa \(\Delta x\Delta y\),
+\begin{equation}A_b=n_p\Delta x\Delta y.\end{equation}
+Centroides são calculados pelos centros dos pixels. A resolução é mantida nas coordenadas originais quando se aplica escala física; áreas mudam por \(1/s^2\) e centros por \(1/s\). A tinta do traço ocupa área: o resultado não é a área vetorial exata de um polígono. Fechamentos pequenos, lacunas e resolução podem alterar a quantidade de blocos.
+
+O SD11A ilustrado tem 67 componentes aceitos nessa configuração. Isso não inclui a região exterior e não é uma contagem de blocos 3D. Se nenhum componente fechado existir, as figuras informam a ausência sem inventar áreas. Confira também \code{examples/rectangles.txt}: cada interior rasterizado de um quadrado de 40 por 40 mede 1444 pixels\(^{2}\), e não 1600, devido à tinta.
+\plotfig{blocksizecentroidmap.png}{Centroides dos blocos identificados no raster SD11A.}{fig:blocks}
+\plotfig{blocksizehisto.png}{Distribuição de áreas dos componentes aceitos. O BMP intermediário permite conferir a segmentação.}{fig:blockhist}
+
+\feature{LEN-15}{Variogram of segment lengths}
+Marque \control{Variogram of segment lengths}. As posições são os centros dos segmentos e os valores são seus comprimentos, depois da máscara comum de censura quando ativa. O semivariograma experimental por classe de distância é
+\begin{equation}
+\widehat\gamma(h)=\frac{1}{2N(h)}\sum_{(i,j)\in h}(\ell_i-\ell_j)^2.
+\end{equation}
+A distância tem unidade de comprimento e \(\gamma\), de comprimento ao quadrado. Semelhança entre segmentos próximos tende a produzir diferenças pequenas; tendências, orientação e desenho da amostragem também influenciam a curva.
+
+A GUI usa 30 classes e distância máxima de metade da diagonal do envelope dos centros. Classes vazias ficam sem estimativa. Não há ajuste de modelo teórico, krigagem, alcance ou pepita calculados pela GUI. O comportamento histórico de pares inclui a diagonal para menos de 1000 observações e a exclui a partir de 1000; SD11A tem 1076 segmentos. Não compare populações distintas ignorando essa convenção.
+\plotfig{segmentlength_variogram.png}{Semivariograma experimental do comprimento dos segmentos SD11A; nenhuma curva teórica foi ajustada.}{fig:variogram}
+
+\major{Angles: histogramas e rosas}\label{sec:angles}
+Os dados são axiais: orientações opostas representam a mesma direção de fratura. A representação circular duplica cada orientação por \(180^\circ\), depois aplica as convenções angulares pertinentes. Isso não duplica a quantidade física de segmentos.
+\uifig{ui-angles.png}{Controles Angles: norte, histograma, largura angular das pétalas e opções de apresentação.}{fig:ui-angles}
+
+\feature{ANG-01}{Histogram of angles}
+Marque \control{Histogram of angles}; escolha 10, 20, 30 ou 50 intervalos solicitados. A construção histórica usa centros de 0 a \(360^\circ\), podendo produzir um centro a mais que o valor do menu. O eixo é orientação angular, não posição X/Y da rede.
+
+A frequência conta segmentos, e a representação axial é duplicada. Se uma correção angular legada deixar valores fora de \([0,360]\), o programa diagnostica esse caso; o histograma e a rosa não o tratam como uma nova normalização silenciosa. Para comparação entre amostras, use o mesmo norte, flips e discretização.
+\plotfig{histoangle.png}{Histograma angular SD11A, norte zero. Compare frequências dentro da mesma convenção axial.}{fig:anglehist}
+
+\feature{ANG-02}{Rose diagram (equal area)}
+Marque \control{Rose diagram (equal area)} e escolha pétalas de 5, 10, 20 ou \(30^\circ\). Por padrão, cada segmento contribui por contagem. \control{Length weighted?} usa os comprimentos como pesos; \control{Colour by strike?} altera a apresentação cromática e \control{Show mean vector?} acrescenta a referência de média conforme a seleção.
+
+Se \(p_j\) é o percentual da classe, o raio é proporcional à raiz quadrada:
+\begin{equation}r_j=50\sqrt{p_j}.\end{equation}
+Assim, a área da pétala é proporcional ao percentual; o raio não é o próprio percentual. Na ponderação, a contribuição decorre da soma dos comprimentos da classe dividida pelo total. As classes na emenda 0/180/360 conservam os ajustes históricos do FracPaQ; não se trata de um histograma polar genérico.
+
+As estatísticas axiais usam ângulos dobrados:
+\begin{align}
+C&=\frac1N\sum_i\cos(2\beta_i),\quad
+S=\frac1N\sum_i\sin(2\beta_i),\quad R=\sqrt{C^2+S^2},\\
+\overline\beta&=\frac12\operatorname{atan2}(S,C),\qquad
+s_\beta=\sqrt{2(1-R)}.
+\end{align}
+A expressão de \(s_\beta\) está em radianos e é convertida para graus no programa. A média é ajustada à representação axial e as estatísticas são não ponderadas na implementação, mesmo quando a rosa é ponderada por comprimento. \(R\) próximo de zero indica média sem orientação dominante; não interprete uma linha média como direção estrutural robusta nesse caso.
+\plotfig{roseangleEqArea.png}{Rosa não ponderada do SD11A, pétalas de 10 graus. O raio cresce com a raiz do percentual.}{fig:rose}

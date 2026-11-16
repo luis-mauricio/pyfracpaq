@@ -1,0 +1,73 @@
+{
+  "point": 3,
+  "complete": true,
+  "date": "2026-11-16",
+  "scope": "Version and release documentation only; no new packages generated, installed or published.",
+  "identity": {
+    "runtime_version": "0.9.0rc1",
+    "project_version": "0.9.0rc1",
+    "installed_metadata_version": "0.9.0rc1",
+    "prerelease": true,
+    "interface_date": "November 2026",
+    "contact": "luismauricio@me.com",
+    "reference": "FracPaQ MATLAB 2.8"
+  },
+  "documents": {
+    "README.md": "c97313c922740a640ad0a3bd72d50ab0b342d7cd02ae3ce27cdf4cf7c8d95a1f",
+    "CHANGELOG.md": "92bd14e8a974886ab16bbf1be119be927cb27ab3747e683dce08e12b0417060f",
+    "docs/install.md": "0ab07ee03a451e35a755928da4da20f33e0b59d4e5fe5670af161c3d4d0d2051",
+    "docs/user-guide.md": "8e748995bbbd85f9490094ac71904256617e1327bf3206d4d3567aca92b81931",
+    "docs/releases/0.9.0rc1.md": "de8d683478f851d7d36edc9b61d2b2be16e21c3a84368cabded05b968c455f91",
+    "docs/parity/divergences.md": "b8b4679afeab9a080008b4dc629986a5b3d6564637db13536484e15f3d6cc813",
+    "docs/parity/matrix.md": "2e0cc166a2fc3fb2e625ebd399c4781d06d0300e52e10a234b4b7d32476ca2c6",
+    "docs/parity/sprint-16.md": "89129c1a443f1a3426f79e418d20c49b1a9627adbb88003df12e4cde8006caa2",
+    "docs/parity/sprint-16-rendering.md": "e9cfea9b7a36bb3484746245a5fe3b163f4af216f0351de2133cece0d7c0284e",
+    "docs/parity/sprint-16-delivery.md": "e40518294e57f47466e190e3ea09da2d9b5a81c89961aafe643f2e81c09ebfa6",
+    "docs/decisions/0018-local-audit-and-delivery.md": "80922fd24f4a630985270ef6a2a4af70ef8d5b79f1e7bea28b208ca889681563",
+    "PRD.md": "e88ee092b576aae4ec5b154d44e9e0312947bd6634bcdd4a2e061e9b1f4a7f71",
+    "pyproject.toml": "4d9c5e606df83e1fa0d52f5f5e6de43e3a14ee5edcb4622ec1aecf78352c5524",
+    "pyfracpaq/__init__.py": "5c2d73fbdf7cf4a14d201fdb77a47cb5f2cd9ebe447eb0375e9972be731dc75b"
+  },
+  "local_links": {
+    "count": 184,
+    "broken": [],
+    "documents_checked": [
+      "README.md",
+      "CHANGELOG.md",
+      "docs/install.md",
+      "docs/user-guide.md",
+      "docs/releases/0.9.0rc1.md",
+      "docs/parity/divergences.md",
+      "docs/parity/matrix.md",
+      "docs/parity/sprint-16.md",
+      "docs/parity/sprint-16-rendering.md",
+      "docs/parity/sprint-16-delivery.md",
+      "docs/decisions/0018-local-audit-and-delivery.md"
+    ]
+  },
+  "tests": {
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "path": "tests/reference/sprint16/delivery/point-3/identity-checks.xml",
+    "sha256": "59b6146397be24506aef4aaef42ec501d3d9680bec6c2c652a75e717657fb107"
+  },
+  "preservation": {
+    "scientific_modules_match_point_2": true,
+    "all_53_accepted_png_hashes_preserved": true,
+    "all_11_data_reference_hashes_preserved": true,
+    "original_integrity_passed": true,
+    "old_release_version": "0.1.0rc1",
+    "new_packages_absent": true,
+    "current_dist_files": {
+      "dist/SHA256SUMS": "7ddea5cff9c8dbfc00cb2a2ca4663188fa6a4f9c642989fa9a4cfe63aec4f15a",
+      "dist/pyfracpaq-0.1.0rc1-py3-none-any.whl": "e163289a1a5e8e8534e46392727ed4d226a57648a44b819884f2323504e4160b",
+      "dist/pyfracpaq-0.1.0rc1-source.zip": "1bf61a155ab8363844a76160bb2bca6bd9d22e5cbe51fe84904e2a2d5fd9b04e",
+      "dist/release-manifest.json": "75f8acaa7dc83bb909cd68867afffe7ddf8ba6b3a2872e7e29d95f5b3cd9d1f8"
+    }
+  },
+  "next_point": 4,
+  "next_point_authorized": false,
+  "S16-09_complete": false
+}

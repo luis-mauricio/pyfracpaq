@@ -1,4 +1,6 @@
-# Resolvido em CPython 3.13.18 / macOS arm64; ver docs/decisions/0001-environment.md.
+# Bibliotecas para rodar: python -m pip install -r requirements.txt
+# Nao instala o pacote PyFracPaQ. Testes/desenvolvimento: requirements-dev.txt.
+# Pins resolvidos em CPython 3.13.18 / macOS arm64.
 contourpy==1.4.0
 cycler==0.12.1
 defusedxml==0.7.1

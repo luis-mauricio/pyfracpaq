@@ -1,6 +1,6 @@
 # Registro de divergências Q-01 a Q-21
 
-Registro iniciado na S0 e revisado na Sprint16 em 14/11/2026. Os resultados nativos efetivamente executados são identificados por questão; leitura estática não é captura nativa. Correções científicas autorizadas e limitações de homologação visual permanecem explícitas. O mantenedor científico decide alterações de método; testes de integridade não substituem essa decisão.
+Registro iniciado na S0, revisado na Sprint16 em 14/11/2026 e consolidado para 0.9.0rc1 em 16/11/2026. Os resultados nativos efetivamente executados são identificados por questão; leitura estática não é captura nativa. Correções científicas autorizadas e limitações de homologação visual permanecem explícitas. O mantenedor científico decide alterações de método; testes de integridade não substituem essa decisão.
 
 ## Procedimento de decisão
 
@@ -10,7 +10,7 @@ Registro iniciado na S0 e revisado na Sprint16 em 14/11/2026. Os resultados nati
 4. Se mudar fórmula, amostragem, normalização, significado angular, censura ou classificação científica, preencher resultado original/proposto, fundamento, impacto, alternativas e teste. Obter decisão explícita do mantenedor antes de promover a alteração a padrão. Não criar seletor de modo científico por conta própria.
 5. Registrar autor/data/decisão, atualizar matriz e testes e preservar a referência anterior. Questão sem resultado ou decisão permanece pendente; não declarar paridade naquele item.
 
-Cada questão registra separadamente resultado, decisão e estado. Q-15/Q-11/Q-17 foram reproduzidas no MATLAB e suas correções aprovadas explicitamente pelo usuário em 14/11/2026; outras questões mantêm as pendências descritas em cada item.
+Cada questão registra separadamente resultado, decisão e estado. Q-15/Q-11/Q-17 foram reproduzidas no MATLAB e suas correções aprovadas explicitamente pelo usuário em 14/11/2026; Q-05/12/14/20 também têm decisões próprias registradas abaixo. **S16-04 concluída nos contextos documentados**, com aceites visuais preservados; a revisão de interface/exportações da S16-09 também terminou. As ausências de reprodução nativa específica indicadas em cada questão continuam explícitas e não foram transformadas em evidência executada. [Notas consolidadas 0.9.0rc1](../releases/0.9.0rc1.md).
 
 ## Q-01 — P1
 
@@ -94,7 +94,7 @@ Cada questão registra separadamente resultado, decisão e estado. Q-15/Q-11/Q-1
 - Fundamento: PRD, política de fidelidade, RF relacionado e caso analítico; a correção deve preservar os resultados de entradas válidas.
 - Impacto a quantificar: fluxo, integridade, consistência de dados e arquivos; medir ausência de regressão nas análises relacionadas.
 - Decisão / autor / data: Construtor completo único nos três leitores, conforme PRD. Auditoria S16 corrigiu arredondamento dos bins, vizinhança de supressão e ordem dos endpoints Hough; nenhuma fórmula científica adicional.
-- Estado: Campos geométricos completos e Hough nativo testados. As famílias posteriores também têm testes Run com origem em imagem; homologação visual global continua aberta.
+- Estado: Campos geométricos completos e Hough nativo testados. As famílias posteriores também têm testes Run com origem em imagem; homologação dos contextos capturados concluída na S16-04, conforme os aceites documentados.
 
 ## Q-07 — P0
 
@@ -166,7 +166,7 @@ Cada questão registra separadamente resultado, decisão e estado. Q-15/Q-11/Q-1
 - Fundamento: PRD, política de fidelidade, RF relacionado e caso analítico; há possibilidade de alterar resultado científico.
 - Impacto medido: parâmetros/caudas ou classes/contagens e figuras/TXT conforme a comparação concreta vinculada à ADR. Diferença deliberada aprovada; não se declara igualdade com os resultados científicos alterados do legado.
 - Decisão / autor / data: **aprovada pelo usuário em 14/11/2026**, pela mensagem “Aprovo as Q-15 e a Q-11.” Proximidade euclidiana inclusiva de ponta real a segmento finito de outro traço, undershoot com Y inferido, vértices internos não são pontas e T exato com tolerância zero é Y. Comportamento aprovado ativado no registro padrão, sem criar modo científico alternativo.
-- Estado: correção científica aprovada, implementada e ativa na GUI padrão; testes e referência nativa documentados. Homologação visual integral continua pendente, sem declaração de identidade com os resultados defeituosos do legado.
+- Estado: correção científica aprovada, implementada e ativa na GUI padrão; testes e referência nativa documentados. Revisão visual concluída nos contextos documentados da S16-04, sem declaração de identidade com os resultados defeituosos do legado.
 
 ## Q-12 — P1
 
@@ -177,7 +177,7 @@ Cada questão registra separadamente resultado, decisão e estado. Q-15/Q-11/Q-1
 - Proposta: validar listas positivas inteiras sem eval e incremento inteiro divisor de 180; usar ny×nx para retângulos, preservar pixels/ausência de norte e tratar população vazia. Raster determinístico Agg com envelope dos nós e margens originais; aceitar explicitamente sua diferença da impressão MATLAB. Para empates de WC dentro de rtol=1e−12/atol=1e−14, escolher primeiro L e depois primeiro theta, mantendo o maior coeficiente real. Em Mexican/L=1, theta é fisicamente indeterminado e arredondamentos FFT mudam escolhas discretas; referência e proposta estão quantificadas no JSON.
 - Entrada, fundamento e impacto: tests/reference/sprint14/candidate/q12_comparison.json; alteração do raster pode mudar coeficientes, limiar, rosa e TXT; desempate pode mudar theta/L sem mudar WC fora da precisão declarada. A máscara estrita WC>0.5×máximo permanece.
 - Decisão / autor / data: **aprovada explicitamente pelo usuário em14/11/2026: “Aprovo a Q-12.”** Raster, amostragem axial, correção ny×nx e desempate conforme proposta registrada; a aprovação é própria desta família, independente de Q-14.
-- Estado: implementado e ativo no Run padrão, com referências nativas preservadas e diferenças aprovadas explícitas. Dois casos completos1944×1944, Qt e barras responsivas verificados; homologação integral fica na Sprint16.
+- Estado: implementado e ativo no Run padrão, com referências nativas preservadas e diferenças aprovadas explícitas. Dois casos completos1944×1944, Qt e barras responsivas verificados; revisão dos contextos capturados concluída na S16-04, com diferenças e aceites explícitos.
 
 ## Q-13 — P1
 
@@ -217,7 +217,7 @@ Cada questão registra separadamente resultado, decisão e estado. Q-15/Q-11/Q-1
 - Fundamento: PRD, política de fidelidade, RF relacionado e caso analítico; há possibilidade de alterar resultado científico.
 - Impacto medido: parâmetros/caudas ou classes/contagens e figuras/TXT conforme a comparação concreta vinculada à ADR. Diferença deliberada aprovada; não se declara igualdade com os resultados científicos alterados do legado.
 - Decisão / autor / data: **aprovada pelo usuário em 14/11/2026**, pela mensagem “Aprovo as Q-15 e a Q-11.” Lower remove os menores, Upper os maiores, mesma seleção na busca/ajuste final e lognormal por cauda com frequências complementares no mesmo sentido. Comportamento aprovado ativado no registro padrão, sem criar modo científico alternativo.
-- Estado: correção científica aprovada, implementada e ativa na GUI padrão; testes e referência nativa documentados. Homologação visual integral continua pendente, sem declaração de identidade com os resultados defeituosos do legado.
+- Estado: correção científica aprovada, implementada e ativa na GUI padrão; testes e referência nativa documentados. Revisão visual concluída nos contextos documentados da S16-04, sem declaração de identidade com os resultados defeituosos do legado.
 
 ## Q-16 — P1
 
@@ -245,7 +245,7 @@ Cada questão registra separadamente resultado, decisão e estado. Q-15/Q-11/Q-1
 - Fundamento: eliminar divisão por zero e incoerência de normalização/cor/classe; mudança de resultado científico depende da aprovação do usuário exigida pelo PRD.
 - Impacto medido: valores normalizados, cores/legendas e classificação no limite mudam; fórmulas físicas sn/tau/Ts/Td/Sf e arquivo segmentdata são preservados. Mapas de comprimento conservam o comportamento da referência com a divergência de legenda explícita.
 - Decisão / autor / data: **aprovada explicitamente pelo usuário em 14/11/2026**, pela mensagem “Aprovo a correção Q-17.” A pergunta incluía a correção de estabilidade/igualdade/validação e a preservação da convenção legada de cores por comprimento. ADR 0013 registra o algoritmo único promovido a padrão.
-- Estado: correção científica aprovada, implementada, testada e ativa no Run padrão. Comprimentos preservam a convenção legada aceita. Comparações de dados, paletas, arquivos e calibração visual registradas; homologação visual integral permanece na auditoria final.
+- Estado: correção científica aprovada, implementada, testada e ativa no Run padrão. Comprimentos preservam a convenção legada aceita. Comparações de dados, paletas, arquivos e calibração visual registradas; revisão visual concluída nos contextos documentados da S16-04, preservando as diferenças aceitas.
 
 ## Q-18 — P2
 

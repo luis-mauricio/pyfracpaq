@@ -1,0 +1,24 @@
+{
+  "scope": "Actual Qt startup frame fills available screen width, remains normal and fits vertically; later resizing remains free. Qt offscreen verification.",
+  "startup": {
+    "available_geometry": [
+      0,
+      0,
+      800,
+      800
+    ],
+    "window_frame": [
+      0,
+      52,
+      800,
+      695
+    ],
+    "window_client": [
+      2,
+      54,
+      796,
+      691
+    ]
+  },
+  "manual_resize_preserved": true
+}

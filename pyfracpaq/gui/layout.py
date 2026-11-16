@@ -1,11 +1,14 @@
 """Parent-relative FIG geometry, without layout-driven control redistribution."""
 
 from PySide6.QtCore import QRect, QSize, Qt
+
 from PySide6.QtGui import QFont
 from PySide6.QtWidgets import (
     QButtonGroup, QCheckBox, QGroupBox, QLabel, QLineEdit,
     QRadioButton, QStackedWidget, QWidget,
 )
+
+from pyfracpaq import CONTACT_EMAIL,RELEASE_DATE,__version__
 
 from .controls import Controls, PANELS
 
@@ -16,11 +19,9 @@ MINIMUM_BOARD_SIZE = QSize(1000, 591)
 
 
 def initial_window_size(available: QSize) -> QSize:
-    """Open as a normal, centred window with room for OS chrome on this screen."""
-    factor = min(1., .9 * available.width() / REFERENCE_SIZE.width(),
-                 .9 * max(1, available.height() - 32) / REFERENCE_SIZE.height())
-    return QSize(max(1, round(REFERENCE_SIZE.width() * factor)),
-                 max(1, round(REFERENCE_SIZE.height() * factor)))
+    """Use the available screen width and retain a bounded normal height."""
+    height=min(REFERENCE_SIZE.height(),round(.9*max(1,available.height()-32)))
+    return QSize(max(1,available.width()),max(1,height))
 
 
 def reference_rect(position, width: int, height: int) -> QRect:
@@ -58,6 +59,15 @@ class ReferenceBoard(QWidget):
             widget.setFont(font)
         for name, (widget, position) in self.anchors.items():
             rect = reference_rect(position, self.width(), self.height())
+            if name == 'text4':
+                # Keep the identity on one line without shrinking its font.
+                width=max(rect.width(),widget.fontMetrics().horizontalAdvance(widget.text())+12)
+                rect.setLeft(rect.right()-width+1)
+            elif name == 'axes_logo':
+                # Enlarge the logo slightly around its horizontal centre;
+                # keep its top anchor and the image's original aspect ratio.
+                extra=round(rect.width()*.12)
+                rect.adjust(-(extra//2),0,extra-extra//2,round(rect.height()*.12))
             if name == 'axes_tracemap':
                 # Position is the data rectangle, not the whole Matplotlib canvas.
                 rect.adjust(-round(48 * scale), -round(8 * scale),
@@ -152,7 +162,8 @@ def build_forms(c: Controls, board: ReferenceBoard) -> QStackedWidget:
         else:
             widget.setParent(c[parent])
             board.children_by_parent.setdefault(parent, []).append(name)
-    c['text4'].setText(c['text4'].text().strip())
+    c['text4'].setText(f'Version {__version__}, {RELEASE_DATE}   E-mail: {CONTACT_EMAIL}')
+    c['text4'].setWordWrap(False)
     c['text4'].setAlignment(Qt.AlignmentFlag.AlignCenter)
     c['text_message'].setWordWrap(False)
     c['label_stats'].setAlignment(Qt.AlignmentFlag.AlignLeft | Qt.AlignmentFlag.AlignTop)

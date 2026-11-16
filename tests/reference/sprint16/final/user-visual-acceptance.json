@@ -1,0 +1,584 @@
+{
+  "date": "2026-11-16",
+  "decision": "All sixteen current detail cases explicitly accepted; earlier title/Hough decisions preserved.",
+  "user_statement": "Aprovo todos de 1 a 16.",
+  "scope": "Current detail cases 1–16 explicitly approved. Prior title/Hough acceptances remain recorded. Mechanical propagation of the separately authorized global marker rendering is verified independently; no scientific discrepancy is approved by this appearance decision.",
+  "review_manifest_sha256": "9a9e78c89130e9db17c486cb877db19efe2a90ef465a5931b0678966e1948618",
+  "accepted_regions": [
+    {
+      "figure": "FracPaQ2D_dilationtendencymap_SD11A.png",
+      "region": "title",
+      "native_sha256": "15b31cee88955a9b8838732ddadeb6144ce1aab9b18903a710ca21f828c06557",
+      "candidate_sha256": "c33a9e97406ae6b91a6120bf832c159f03c99ac1b1c532cf3af15192443b1a46",
+      "label": "Dilatação",
+      "display_crop_xyxy": [
+        1318,
+        45,
+        3570,
+        203
+      ]
+    },
+    {
+      "figure": "FracPaQ2D_fracsuscepmap_SD11A.png",
+      "region": "title",
+      "native_sha256": "965aef9720e9c97691ced27c456c1feec53c6c55ee94d34df12c2055ed954fe2",
+      "candidate_sha256": "addbd775981bb43ac50a7e217875130de6a1e782d3955f3acafb8e77330a41ca",
+      "label": "Suscetibilidade de fraturas",
+      "display_crop_xyxy": [
+        1284,
+        45,
+        3603,
+        203
+      ]
+    },
+    {
+      "figure": "FracPaQ2D_CSFmap_SD11A.png",
+      "region": "title",
+      "native_sha256": "7c244a88f04f56b63210ae73457ae7b26cc290358b2520b8b9d5e80a0b52dfd2",
+      "candidate_sha256": "4ddd070587ddff4229773bc0f5cfb771506250c0e05c662b61418be32e4d42d7",
+      "label": "CSF",
+      "display_crop_xyxy": [
+        1146,
+        45,
+        3740,
+        203
+      ]
+    },
+    {
+      "figure": "guiFracPaQ2D_intensityalonggraph_SD11A.png",
+      "region": "title",
+      "native_sha256": "cf50c95d06f444491f12adbb0bbe6455b4d3b3db5eb96b403bfdc9cc9ebcfe32",
+      "candidate_sha256": "225616b5bf5790a5d091f18c4a8cfd6ec7c3ab3d15c5ef99827e9fd707f435de",
+      "label": "Graphs — intensidade P21",
+      "display_crop_xyxy": [
+        1710,
+        212,
+        3168,
+        350
+      ]
+    },
+    {
+      "figure": "guiFracPaQ2D_densityalonggraph_SD11A.png",
+      "region": "title",
+      "native_sha256": "1ccc1774b5d52ec999569a862b729ff97fff79bec93d42827cad951b6c5e4f47",
+      "candidate_sha256": "c51781a77d1b9db4e697625a7ddd270588e6a6ffa1640ac6e33453247a568414",
+      "label": "Graphs — densidade P20",
+      "display_crop_xyxy": [
+        1738,
+        212,
+        3148,
+        350
+      ]
+    },
+    {
+      "figure": "FracPaQ2D_Houghstuff_extra.png",
+      "region": "rho_panel",
+      "native_sha256": "cf55b80896faec67a7a99aabd9a0786c0e698a245f20cee5c3527d0209daf54d",
+      "candidate_sha256": "8ea7c5478347427e80b3ce26eab9fa31bd2da1bf99122e87bbfed67c47d9bde3",
+      "label": "Hough — vista lateral ρ",
+      "display_crop_xyxy": [
+        2362,
+        0,
+        4724,
+        2362
+      ],
+      "acceptance_scope": "Visual rendering of the reviewed Hough side view only; no numerical discrepancy approved."
+    },
+    {
+      "figure": "FracPaQ2D_Houghstuff_extra.png",
+      "region": "theta_panel",
+      "native_sha256": "cf55b80896faec67a7a99aabd9a0786c0e698a245f20cee5c3527d0209daf54d",
+      "candidate_sha256": "8ea7c5478347427e80b3ce26eab9fa31bd2da1bf99122e87bbfed67c47d9bde3",
+      "label": "Hough — vista lateral θ",
+      "display_crop_xyxy": [
+        2362,
+        2362,
+        4724,
+        4724
+      ],
+      "acceptance_scope": "Visual rendering of the reviewed Hough side view only; no numerical discrepancy approved."
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "17894f3250fefb193bc558474b0550aea3d2cb481d75d3e9e373f6006fea553b",
+      "candidate_sha256": "ebe81910fa9df8dc4908b91447ba37f8c2f57c56aad0925daec80b34280b6810",
+      "xyxy": [
+        927,
+        3171,
+        2114,
+        3422
+      ],
+      "detail_case": 2,
+      "label": "Detail review case 2",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "b3457ca63c2da98e32459e8d309f739d8009a39b76b6fd231fe392047d74a8ee",
+      "candidate_sha256": "a0fafa70cb09f253054bbb70ac88b8a53f8b298a4ae98c80816a2ad2240e6083",
+      "xyxy": [
+        927,
+        3171,
+        1654,
+        3384
+      ],
+      "detail_case": 4,
+      "label": "Detail review case 4",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "92488e951358bfe2a639cb130821ef145a4b3e3d68eaeaf52e385c299ea898ad",
+      "candidate_sha256": "09fc337f13f8631d67dc8353e7db565f1af4892691ef9c17af2df0284f8309af",
+      "xyxy": [
+        927,
+        3171,
+        2009,
+        3384
+      ],
+      "detail_case": 6,
+      "label": "Detail review case 6",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "858621c28221d29ad0dfa608120bbd5274462b8cc22704bf2d5ae9e66f458b8b",
+      "candidate_sha256": "3f27e6ae14cce7edb40342a7ee22611d7952ce7731248a685346bf43631f8903",
+      "xyxy": [
+        927,
+        3171,
+        2114,
+        3422
+      ],
+      "detail_case": 8,
+      "label": "Detail review case 8",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "129f832a5e262ecbded898ef62ffc80b98fa8b1cb40c5ea8c7a8d290ee7bfbc7",
+      "candidate_sha256": "ac4df2a7cc2ef14015b0ec9ae68b5f1c9052553fe23a1147b7107a5655ffa519",
+      "xyxy": [
+        927,
+        3171,
+        1608,
+        3384
+      ],
+      "detail_case": 10,
+      "label": "Detail review case 10",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "e901f51ee125f2efed1d5ccbe3e88a1ba9d1e2a5b0e72c2b9a419bdf2b677c8e",
+      "candidate_sha256": "5a6b74083e40db77d4b3b72a83f3c81b6ee02342f326ed02b9ffe3ed43415c94",
+      "xyxy": [
+        927,
+        3171,
+        2009,
+        3384
+      ],
+      "detail_case": 12,
+      "label": "Detail review case 12",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_Mohrplot_SD11A.png",
+      "region": "legend",
+      "native_sha256": "5d5b3300953db9a33855186cf267903b54649238a08a340789883ccb77198223",
+      "candidate_sha256": "b1210da584e4da55aa9e5a9b2880f877583446ff3609f0bccece9309d60a75cd",
+      "xyxy": [
+        3282,
+        1495,
+        4225,
+        1743
+      ],
+      "detail_case": 13,
+      "label": "Detail review case 13",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_cracktensor_SD11A.png",
+      "region": "legend",
+      "native_sha256": "2f364a7a93c917851cc5fc26b6dcc95c7565b74d0680c837f3bf73864183fd92",
+      "candidate_sha256": "d4fd10c0b033cb09c1d960df42fdd08d70644964410eaa2d4c8cc3ad174b6d5d",
+      "xyxy": [
+        1534,
+        4078,
+        3352,
+        4259
+      ],
+      "detail_case": 15,
+      "label": "Detail review case 15",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "region": "legend",
+      "native_sha256": "17894f3250fefb193bc558474b0550aea3d2cb481d75d3e9e373f6006fea553b",
+      "candidate_sha256": "ebe81910fa9df8dc4908b91447ba37f8c2f57c56aad0925daec80b34280b6810",
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "detail_case": 1,
+      "label": "Detail review case 1",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "region": "legend",
+      "native_sha256": "b3457ca63c2da98e32459e8d309f739d8009a39b76b6fd231fe392047d74a8ee",
+      "candidate_sha256": "a0fafa70cb09f253054bbb70ac88b8a53f8b298a4ae98c80816a2ad2240e6083",
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "detail_case": 3,
+      "label": "Detail review case 3",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "region": "legend",
+      "native_sha256": "92488e951358bfe2a639cb130821ef145a4b3e3d68eaeaf52e385c299ea898ad",
+      "candidate_sha256": "09fc337f13f8631d67dc8353e7db565f1af4892691ef9c17af2df0284f8309af",
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "detail_case": 5,
+      "label": "Detail review case 5",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "region": "legend",
+      "native_sha256": "858621c28221d29ad0dfa608120bbd5274462b8cc22704bf2d5ae9e66f458b8b",
+      "candidate_sha256": "3f27e6ae14cce7edb40342a7ee22611d7952ce7731248a685346bf43631f8903",
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "detail_case": 7,
+      "label": "Detail review case 7",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "region": "legend",
+      "native_sha256": "129f832a5e262ecbded898ef62ffc80b98fa8b1cb40c5ea8c7a8d290ee7bfbc7",
+      "candidate_sha256": "ac4df2a7cc2ef14015b0ec9ae68b5f1c9052553fe23a1147b7107a5655ffa519",
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "detail_case": 9,
+      "label": "Detail review case 9",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "region": "legend",
+      "native_sha256": "e901f51ee125f2efed1d5ccbe3e88a1ba9d1e2a5b0e72c2b9a419bdf2b677c8e",
+      "candidate_sha256": "5a6b74083e40db77d4b3b72a83f3c81b6ee02342f326ed02b9ffe3ed43415c94",
+      "xyxy": [
+        3332,
+        403,
+        4225,
+        834
+      ],
+      "detail_case": 11,
+      "label": "Detail review case 11",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "FracPaQ2D_IYXnodes_traces_SD11A.png",
+      "region": "legend",
+      "native_sha256": "fc898bbe4741fc27ce806aaf13bccd1c292b05cdd87cce373ca3d561ee20618a",
+      "candidate_sha256": "8ae5f9d3847f0e7bdf57b051773f1d8264ea48375d1c89252d4717d8c5e4fc7e",
+      "xyxy": [
+        2123,
+        4115,
+        2763,
+        4271
+      ],
+      "detail_case": 14,
+      "label": "Detail review case 14",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    },
+    {
+      "figure": "guiFracPaQ2D_graphtracemap_SD11A.png",
+      "region": "legend",
+      "native_sha256": "0eea7752381c199ea5c74242ac6c9c4e26cb96da487abbdb1d5118613d13df8c",
+      "candidate_sha256": "011ba292de237b6958d93b7fb7a5a915dc7b79806f4cf4b3a15f0d5ce34ac58b",
+      "xyxy": [
+        1847,
+        4115,
+        3040,
+        4271
+      ],
+      "detail_case": 16,
+      "label": "Detail review case 16",
+      "acceptance_scope": "Explicit final appearance approval of current detail region, including ordinary geometric markers. Prior scientific decisions remain separate.",
+      "user_statement": "Aprovo todos de 1 a 16."
+    }
+  ],
+  "decisions": [
+    {
+      "date": "2026-11-16",
+      "scope": "Five reviewed titles",
+      "user_statement": "Comparei os títulos e aceito do jeito que está. A diferença é mínima. Para mim está satisfatório."
+    },
+    {
+      "date": "2026-11-16",
+      "scope": "Visual rendering differences of both reviewed Hough side views, after explanation of their impact.",
+      "user_statement": "Então eu aceito essa diferença."
+    },
+    {
+      "date": "2026-11-16",
+      "scope": "Eight independent detail regions: six MLE parameter boxes, Mohr legend and crack tensor legend. Remaining eight marker legends are under discussion.",
+      "detail_cases": [
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        13,
+        15
+      ],
+      "user_statement": "Aprovo os 2, 4, 6, 8, 10, 12, 13 e 15.",
+      "detail_review_manifest_sha256": "91b6cc57243edc439d1501f73599eed7c77e9aac0984b2d0e720212e28696e3c"
+    },
+    {
+      "date": "2026-11-16",
+      "scope": "Ordinary geometric marker rendering authorized globally; acceptance of previously reviewed unchanged pixels is preserved by region SHA256.",
+      "user_statement": "Substitua essa renderização dos marcadores por formas geométricas normais."
+    },
+    {
+      "date": "2026-11-16",
+      "scope": "All sixteen current detail cases, after ordinary geometric marker replacement.",
+      "detail_cases": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "user_statement": "Aprovo todos de 1 a 16.",
+      "detail_review_manifest_sha256": "db04d51d3f5bf0463c9247f42651c9daed04223d7e227c0a24a1d44f440fb5b0"
+    }
+  ],
+  "detail_regions_under_discussion": [],
+  "marker_discussion": {
+    "square_cases": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      16
+    ],
+    "circle_cases": [
+      14
+    ],
+    "diagnosis": "Markers are specified as squares/circles; custom native-raster material rendering and minimum legend edge width produce the clipped-corner/lobed appearance. No scientific requirement for those artifacts. Production rendering has not been changed during discussion.",
+    "case16_colour_feedback": "User considers matching line/marker colours more appropriate than the native automatic-cycle legend colours; shape remains under discussion.",
+    "resolution": "Resolved: normal geometric markers implemented and all sixteen current detail cases explicitly approved."
+  },
+  "renderer_change_authorized": {
+    "date": "2026-11-16",
+    "user_statement": "Substitua essa renderização dos marcadores por formas geométricas normais.",
+    "scope": "Ordinary Matplotlib marker paths globally; same marker sizes/colours and scientific data. Remove custom atlas interception, combined map marker pass and forced legend outline enlargement.",
+    "final_appearance_acceptance": "All sixteen current detail cases explicitly approved after implementation."
+  },
+  "superseded_region_acceptances": [
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "17894f3250fefb193bc558474b0550aea3d2cb481d75d3e9e373f6006fea553b",
+      "candidate_sha256": "ebe81910fa9df8dc4908b91447ba37f8c2f57c56aad0925daec80b34280b6810",
+      "xyxy": [
+        927,
+        3171,
+        2114,
+        3422
+      ],
+      "detail_case": 2,
+      "label": "Detail review case 2",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "carried_from_candidate_sha256": "0445fe3d67e22139c5ed5c96f2b9ed6e9b4987f7c785fefabffd9756cefef292",
+      "unchanged_region_rgb_sha256": "422b4a733575475a56393c0764ea942d8fab373450eff61a6b6b6653ed426e52",
+      "carry_forward_reason": "Identical RGB pixels in the entire previously accepted quantitative region after the authorized geometric marker replacement."
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "b3457ca63c2da98e32459e8d309f739d8009a39b76b6fd231fe392047d74a8ee",
+      "candidate_sha256": "a0fafa70cb09f253054bbb70ac88b8a53f8b298a4ae98c80816a2ad2240e6083",
+      "xyxy": [
+        927,
+        3171,
+        1654,
+        3384
+      ],
+      "detail_case": 4,
+      "label": "Detail review case 4",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "carried_from_candidate_sha256": "cfeb9ac7fd7c8a5a4d0188a892aa6e70dc7c189d3ccf35b45010d4e3291a4c7b",
+      "unchanged_region_rgb_sha256": "aa1d0abbf5e387414365a0f654f52cf5fe053cd3b5c0fa9a9587b43b3d0274e3",
+      "carry_forward_reason": "Identical RGB pixels in the entire previously accepted quantitative region after the authorized geometric marker replacement."
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "92488e951358bfe2a639cb130821ef145a4b3e3d68eaeaf52e385c299ea898ad",
+      "candidate_sha256": "09fc337f13f8631d67dc8353e7db565f1af4892691ef9c17af2df0284f8309af",
+      "xyxy": [
+        927,
+        3171,
+        2009,
+        3384
+      ],
+      "detail_case": 6,
+      "label": "Detail review case 6",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "carried_from_candidate_sha256": "062a6803ecf60546a469351cb30e46490a2cb8573989583aeab0757b1c6fb73b",
+      "unchanged_region_rgb_sha256": "f56dd38b99a7145084ff6dba220c8a8a0ade6d936a824edc4f12e0d6be93713f",
+      "carry_forward_reason": "Identical RGB pixels in the entire previously accepted quantitative region after the authorized geometric marker replacement."
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "858621c28221d29ad0dfa608120bbd5274462b8cc22704bf2d5ae9e66f458b8b",
+      "candidate_sha256": "3f27e6ae14cce7edb40342a7ee22611d7952ce7731248a685346bf43631f8903",
+      "xyxy": [
+        927,
+        3171,
+        2114,
+        3422
+      ],
+      "detail_case": 8,
+      "label": "Detail review case 8",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "carried_from_candidate_sha256": "6e6b88779ebcb4ecf97992d576ebe7ecec101386327f6f2c6b4a981731baaeb8",
+      "unchanged_region_rgb_sha256": "c91e95fee7ba4272a4d5cc7e78889af9f7dc906bfe0f60f67b606534882a2d8d",
+      "carry_forward_reason": "Identical RGB pixels in the entire previously accepted quantitative region after the authorized geometric marker replacement."
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "129f832a5e262ecbded898ef62ffc80b98fa8b1cb40c5ea8c7a8d290ee7bfbc7",
+      "candidate_sha256": "ac4df2a7cc2ef14015b0ec9ae68b5f1c9052553fe23a1147b7107a5655ffa519",
+      "xyxy": [
+        927,
+        3171,
+        1608,
+        3384
+      ],
+      "detail_case": 10,
+      "label": "Detail review case 10",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "carried_from_candidate_sha256": "0fc14d60d570f7d5bc8932885670d6d14ae6a399c55b82c6a281d27fa88b16e4",
+      "unchanged_region_rgb_sha256": "6cb1ce64d81c0e77dd383b614da680acb4370808bed98cfc7729c427bd78c27d",
+      "carry_forward_reason": "Identical RGB pixels in the entire previously accepted quantitative region after the authorized geometric marker replacement."
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "e901f51ee125f2efed1d5ccbe3e88a1ba9d1e2a5b0e72c2b9a419bdf2b677c8e",
+      "candidate_sha256": "5a6b74083e40db77d4b3b72a83f3c81b6ee02342f326ed02b9ffe3ed43415c94",
+      "xyxy": [
+        927,
+        3171,
+        2009,
+        3384
+      ],
+      "detail_case": 12,
+      "label": "Detail review case 12",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "carried_from_candidate_sha256": "5d3122ee2ff69dbe571bb152f5a0db1541060737e16690c6b9671901f7fb3a02",
+      "unchanged_region_rgb_sha256": "bc6c6b58760ec8e405d3dd50ed00622b188dc0901741d73e5622658e155a2029",
+      "carry_forward_reason": "Identical RGB pixels in the entire previously accepted quantitative region after the authorized geometric marker replacement."
+    },
+    {
+      "figure": "FracPaQ2D_Mohrplot_SD11A.png",
+      "region": "legend",
+      "native_sha256": "5d5b3300953db9a33855186cf267903b54649238a08a340789883ccb77198223",
+      "candidate_sha256": "b1210da584e4da55aa9e5a9b2880f877583446ff3609f0bccece9309d60a75cd",
+      "xyxy": [
+        3282,
+        1495,
+        4225,
+        1743
+      ],
+      "detail_case": 13,
+      "label": "Detail review case 13",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate."
+    },
+    {
+      "figure": "FracPaQ2D_cracktensor_SD11A.png",
+      "region": "legend",
+      "native_sha256": "2f364a7a93c917851cc5fc26b6dcc95c7565b74d0680c837f3bf73864183fd92",
+      "candidate_sha256": "d4fd10c0b033cb09c1d960df42fdd08d70644964410eaa2d4c8cc3ad174b6d5d",
+      "xyxy": [
+        1534,
+        4078,
+        3352,
+        4259
+      ],
+      "detail_case": 15,
+      "label": "Detail review case 15",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate."
+    }
+  ],
+  "mechanical_propagation_resolution": {
+    "evidence": "tests/reference/sprint16/final/marker-propagation-proof.json",
+    "sha256": "b489abaf691d2ebd08f6bb170f1502565b4f1b1d605b77f7f145ba352824590f",
+    "basis": "Global ordinary marker replacement was explicitly requested and its final appearance accepted in cases 1–16. Existing map/title baselines were already passing/accepted; only pixels inside actual marker footprints changed. Resolved technically, not represented as three additional explicit user approvals."
+  }
+}

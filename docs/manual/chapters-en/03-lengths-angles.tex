@@ -1,0 +1,132 @@
+% !TeX root = ../pyfracpaq-user-manual-en.tex
+\major{Lengths: distributions, fits, blocks and variogram}\label{sec:lengths}
+This family analyses trace and segment lengths separately. Requested bin settings follow the historical construction of centres: 20 intervals can produce 21 centres. Do not assume that the menu value always equals the final number of bars. The family writes three TXT files even when only the cross-plot, blocks or variogram is selected.
+\uifig{ui-lengths.png}{Lengths controls: descriptive statistics, distributions, fits and spatial analyses.}{fig:ui-lengths}
+
+\subsection{Censoring and descriptive statistics}
+\control{Censor lengths at map edges} removes a whole trace if its first or last node touches any actual domain boundary. All segments of that trace are removed by the same mask, retaining alignment with their angles. This is a geometric sample selection, rather than a probabilistic correction for unobserved lengths.
+
+An internal vertex touching a boundary is not automatically a censored endpoint. The domain is defined before selection. If censoring removes everything, the run is rejected before the family's files are written, preserving existing files. Leave censoring off to reproduce the SD11A figures.
+
+The console reports count, minimum, maximum and arithmetic mean, \(\bar L=N^{-1}\sum_i L_i\), for both populations. Without censoring, the example gives:
+\begin{center}\begin{tabular}{@{}lrrrr@{}}\toprule
+Population & N & Minimum & Maximum & Mean\\\midrule
+Traces &445&7.42496&2057.12077&138.48854\\
+Segments &1076&6.32851&318.36999&57.27454\\\bottomrule
+\end{tabular}\end{center}
+Lengths are in pixels. Different means are expected because the number of segments per trace varies.
+
+\feature{LEN-02}{Histogram of lengths}
+Select \control{Histogram of lengths} and choose the bin setting. Run produces two figures: trace and segment lengths, each with absolute frequency and the corresponding percentage axis. For a bin containing \(n_j\) observations, the percentage is \(100n_j/N\).
+
+Use the histograms to compare populations and identify common lengths without mistaking histogram shape for a statistical model. More bins reduce observations per bin and can make the extremes less stable. If all lengths are equal, one populated bin is used without artificial jitter.
+\plotfig{histotracelength.png}{The SD11A trace-length histogram, rather than the distribution of all segments.}{fig:lengthhist}
+\plotfig{histosegmentlength.png}{The SD11A segment-length histogram. Subdivision shifts the population towards shorter lengths.}{fig:segmenthist}
+
+\feature{LEN-03}{Log-log lengths}
+Select \control{Log-log lengths}. Four figures are produced: binned frequencies and complementary frequencies for each population. Both axes are logarithmic; zero-frequency points are not plotted.
+
+Conceptually, complementary frequency describes observations above a length. The implementation retains the legacy construction:
+\begin{equation}
+C_j=N-\sum_{k\leq j} n_k,
+\end{equation}
+where \(n_k\) are counted around bin centres. The complementary grid has unit spacing in pixels and 1000 intervals (1001 centres) in metres, except for a constant sample. It is therefore not an unbinned empirical function evaluated at every observed length.
+
+Figures called \emph{density distribution} show histogram frequencies on log-log axes, rather than a probability density normalised by bin width. An approximately straight pattern does not establish a power law. Consider MLE, sampling and censoring together.
+
+The red vertical line in the complementary plot represents the domain diagonal rounded upwards. It is a geometric reference, not an imposed upper bound on the path length of a curved trace, which may exceed it.
+\plotfig{loglogplottracelength.png}{Complementary trace-length frequencies. Positive points are displayed on log-log axes.}{fig:loglog}
+\plotfig{loglogplotsegmentlengthdensity.png}{Binned segment frequencies on log-log axes, not normalised probabilities.}{fig:logdensity}
+
+\feature{LEN-06}{Cross-plot lengths v angles}
+Select \control{Cross-plot lengths v angles}; it can run on its own. Each observation pairs segment length with corrected orientation, using axial duplication for the angular display. It does not pair whole-trace length with a mean trace angle.
+
+Check whether longer segments concentrate in particular orientation sets, considering digitisation effects. North/flips follow this family's angular convention. Historical plotting limits can omit values that legacy angular correction leaves outside the displayed interval; diagnostics and preserved data distinguish that from import loss.
+\plotfig{crossplotsegmentlengthangle.png}{SD11A cross-plot showing the association between segment orientation and length.}{fig:cross}
+
+\feature{LEN-07}{MLE analysis: three models and two populations}\label{sec:mle}
+Enable \control{Log-log lengths}, then \control{MLE analysis}. Enter Lower/Upper percentage cut-offs; use zero for both in this walkthrough. Lower removes the \(\lceil Np_{\mathrm{lower}}/100\rceil\) smallest observations and Upper the \(\lceil Np_{\mathrm{upper}}/100\rceil\) largest after sorting. These are percentages of observations, not length thresholds in the axis unit.
+
+The same retained population is used for searching and final fitting, as approved in Q-15. For each model, candidate lower bounds \(x_{\min}\) are tested. The tail minimising the distance between complementary curves is selected, with at least two observations and two distinct values. Ties favour the smaller \(x_{\min}\). Not every observed length must belong to the fitted tail.
+
+For \(z_i\geq x_{\min}\), the adopted estimators are
+\begin{align}
+\widehat\alpha&=1+\frac{n}{\sum_i\ln(z_i/x_{\min})}
+&&\text{(power law)},\\
+\widehat\lambda&=\frac{1}{\overline{z-x_{\min}}}
+&&\text{(exponential)},\\
+\widehat\mu&=\frac1n\sum_i\ln z_i,\qquad
+\widehat\sigma^2=\frac1n\sum_i(\ln z_i-\widehat\mu)^2
+&&\text{(lognormal)}.
+\end{align}
+\(\alpha\) and \(\sigma\) are dimensionless; \(\lambda\) has inverse-length units and \(\mu\) depends on the logarithm of the chosen length unit. The lognormal estimator uses the mean and deviation of tail log-lengths, following the supplied implementation. It is not a new optimisation of a conditionally truncated lognormal distribution.
+
+The curves used are
+\begin{align}
+S_{\mathrm{PL}}(x)&=(x/x_{\min})^{1-\alpha},\\
+S_{\mathrm{Exp}}(x)&=\exp[-\lambda(x-x_{\min})],\\
+S_{\mathrm{LN}}(x)&=\Phi\!\left(-\frac{\ln x-\mu}{\sigma}\right),
+\end{align}
+where \(\Phi\) is the standard normal distribution function. Figures retain FracPaQ's scaling and display conventions. Power-law fits use log-log axes, exponential fits linear-log and lognormal fits log-linear; check the axes before comparing curvature.
+
+\textbf{Outputs.} Six fitted-model figures: three for traces and three for segments. The Log-log selection also produces its four figures, without recalculating the family or duplicating TXT files. Parameter boxes show estimates and assessments; cut-off lines help identify the population.
+\plotfig{tracelengthsFittingPowerLaw.png}{Example power-law MLE fit to SD11A trace lengths. Do not extrapolate beyond the tail without justification.}{fig:mlepl}
+\plotfig{tracelengthsFittingExponential.png}{Example exponential fit to traces; axis scaling differs from the power-law figure.}{fig:mleexp}
+\plotfig{tracelengthsFittingLogNormal.png}{Example lognormal fit to traces. The same analysis is performed separately for segments.}{fig:mleln}
+
+\subsubsection{Interpreting the tests and rates}
+The Kolmogorov--Smirnov distance compares the two empirical step functions:
+\begin{equation}D=\sup_x|F_1(x)-F_2(x)|.\end{equation}
+The procedure retains 2500 two-sample comparisons per model, an asymptotic p-value and a two-sided hypothesis. Decisions use \(p\leq\alpha_{\mathrm{sig}}\), with significance 0.1 for the power law and 0.05 for exponential/lognormal models. Another rate counts \(p>0.05\) for all three models. These quantities do not share the same definition.
+
+\begin{note}{Statistical interpretation}
+The rates are not posterior probabilities that a model is true. Failure to reject does not prove the distribution, and a straight log-log pattern does not identify it. The six assessments use Monte Carlo: the GUI records a seed and independent runs may vary. This manual's figures come from a comparison run with a recorded seed. See Clauset et al.~\cite{clauset} for general background; the implemented procedure retains the FracPaQ-specific choices described here.
+\end{note}
+
+\feature{LEN-13}{Block size graphs}
+Select \control{Block size graphs}. The network is rasterised in the original coordinate system with a defined trace thickness. White components with eight-connectivity touching the border are excluded; the remaining components represent closed blocks in the raster. Outputs include a centroid map, area histogram and complementary log-log plot, plus a fixed-name BMP.
+
+If a component contains \(n_p\) pixels and each pixel represents \(\Delta x\Delta y\),
+\begin{equation}A_b=n_p\Delta x\Delta y.\end{equation}
+Centroids are calculated from pixel centres. Resolution remains in the original coordinates when physical scaling is applied; areas change by \(1/s^2\) and centres by \(1/s\). Trace ink occupies area, so this is not exact vector-polygon area. Small closures, gaps and resolution can change the block count.
+
+The illustrated SD11A configuration yields 67 accepted components. This excludes the exterior and is not a three-dimensional block count. If no closed component exists, figures state that rather than fabricating areas. Also inspect \code{examples/rectangles.txt}: each rasterised interior of a 40-by-40 square has area 1444 pixels\(^{2}\), rather than 1600, because of trace ink.
+\plotfig{blocksizecentroidmap.png}{Centroids of the blocks identified in the SD11A raster.}{fig:blocks}
+\plotfig{blocksizehisto.png}{Area distribution of accepted components. The intermediate BMP supports checking the segmentation.}{fig:blockhist}
+
+\feature{LEN-15}{Variogram of segment lengths}
+Select \control{Variogram of segment lengths}. Positions are segment centres and values are their lengths, after the common censoring mask when enabled. The experimental semivariogram for a distance bin is
+\begin{equation}
+\widehat\gamma(h)=\frac{1}{2N(h)}\sum_{(i,j)\in h}(\ell_i-\ell_j)^2.
+\end{equation}
+Distance has length units and \(\gamma\) length-squared units. Similar nearby segments tend to give smaller differences, but trends, orientation and sampling design also influence the curve.
+
+The GUI uses 30 bins and a maximum distance of half the diagonal of the segment-centre envelope. Empty bins have no estimate. The GUI does not fit a theoretical model or calculate kriging, range or nugget parameters. The historical pair convention includes the diagonal below 1000 observations and excludes it from 1000 onwards; SD11A contains 1076 segments. Do not compare populations without accounting for that convention.
+\plotfig{segmentlength_variogram.png}{Experimental SD11A segment-length semivariogram, with no theoretical curve fitted.}{fig:variogram}
+
+\major{Angles: histograms and rose diagrams}\label{sec:angles}
+The data are axial: opposite orientations represent the same fracture direction. Circular display duplicates each orientation by \(180^\circ\), then applies the relevant angular conventions. This does not double the physical number of segments.
+\uifig{ui-angles.png}{Angles controls: north, histogram, petal width and display options.}{fig:ui-angles}
+
+\feature{ANG-01}{Histogram of angles}
+Select \control{Histogram of angles} and choose 10, 20, 30 or 50 requested intervals. The historical construction uses centres from 0 to \(360^\circ\), potentially giving one more centre than the menu value. The axis represents orientation, not the network's X/Y position.
+
+Frequency counts segments, with axial duplication for display. If legacy angular correction leaves values outside \([0,360]\), the application reports that case. Histogram and rose behaviour is retained instead of silently introducing a new normalisation. Compare samples using the same north, flips and bin settings.
+\plotfig{histoangle.png}{SD11A angle histogram with north zero. Compare frequencies within the same axial convention.}{fig:anglehist}
+
+\feature{ANG-02}{Rose diagram (equal area)}
+Select \control{Rose diagram (equal area)} and a petal width of 5, 10, 20 or \(30^\circ\). The default contribution is segment count. \control{Length weighted?} uses length as weight; \control{Colour by strike?} changes colour presentation and \control{Show mean vector?} adds the mean reference when selected.
+
+For bin percentage \(p_j\), radius is proportional to its square root:
+\begin{equation}r_j=50\sqrt{p_j}.\end{equation}
+Petal area is therefore proportional to percentage; radius is not the percentage itself. With weighting, the contribution follows the sum of bin lengths divided by total length. Bins across the 0/180/360 seam retain FracPaQ's historical adjustments; this is not a generic polar histogram.
+
+Axial statistics use doubled angles:
+\begin{align}
+C&=\frac1N\sum_i\cos(2\beta_i),\quad
+S=\frac1N\sum_i\sin(2\beta_i),\quad R=\sqrt{C^2+S^2},\\
+\overline\beta&=\frac12\operatorname{atan2}(S,C),\qquad
+s_\beta=\sqrt{2(1-R)}.
+\end{align}
+The \(s_\beta\) expression is in radians and is converted to degrees by the application. The mean is adjusted to the axial representation. These statistics are unweighted in the implementation even when the rose is length weighted. \(R\) near zero indicates no dominant mean orientation; do not treat a plotted mean line as a robust structural direction in that case.
+\plotfig{roseangleEqArea.png}{Unweighted SD11A rose with 10-degree petals. Radius grows with the square root of percentage.}{fig:rose}

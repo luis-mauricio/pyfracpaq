@@ -1,5 +1,7 @@
 # Comparação com SD11A.txt
 
+**Estado posterior — 16/11/2026:** S16-04 concluída após correções, revisão semântica e aceite dos 16 detalhes atuais; S16-09 permanece aberta. [Relatório final](sprint-16-rendering.md) e [estado](../../tests/reference/sprint16/final/status.json). A execução inicial abaixo é preservada como histórico.
+
 Em 15/11/2026, por indicação do usuário, o arquivo original `fracpaq-matlab/SD11A.txt` foi executado no MATLAB R2024b Update 9 e no port Python. **A captura pareada foi concluída; a homologação visual permanece aberta.** Os 164 arquivos originais e os oito resultados preexistentes foram preservados.
 
 ## Entrada e configuração

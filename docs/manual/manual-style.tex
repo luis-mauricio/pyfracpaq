@@ -1,0 +1,40 @@
+% Shared layout and typography for both language editions.
+\usepackage[margin=23mm,headheight=16pt,footskip=12mm]{geometry}
+\usepackage{fontspec}
+\setmainfont{texgyrepagella}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setsansfont{texgyreheros}[Extension=.otf,UprightFont=*-regular,BoldFont=*-bold,ItalicFont=*-italic,BoldItalicFont=*-bolditalic]
+\setmonofont[Scale=.86]{lmmono10-regular.otf}
+\usepackage{unicode-math}
+\setmathfont{texgyrepagella-math.otf}
+\usepackage{graphicx,booktabs,tabularx,longtable,array}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{enumitem,microtype,needspace,placeins,fancyhdr,lastpage,xurl}
+\usepackage[most]{tcolorbox}
+\definecolor{brand}{HTML}{126870}
+\definecolor{ink}{HTML}{18323A}
+\definecolor{pale}{HTML}{F0F6F6}
+\usepackage[colorlinks=true,linkcolor=brand,urlcolor=brand,citecolor=brand,bookmarksnumbered=true,pdfencoding=auto]{hyperref}
+\hypersetup{pdftitle={PyFracPaQ 0.9.0rc1 - \ManualTitle},pdfauthor={\ManualAuthor},pdfsubject={\ManualSubject}}
+\graphicspath{{assets/}}
+\setlength{\emergencystretch}{3em}
+\setcounter{tocdepth}{2}
+\setlist{nosep,topsep=5pt,leftmargin=*}
+\setkomafont{section}{\sffamily\bfseries\color{brand}\Large}
+\setkomafont{subsection}{\sffamily\bfseries\color{ink}\large}
+\setkomafont{subsubsection}{\sffamily\bfseries\normalsize}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\sffamily PyFracPaQ / \ManualTitle}
+\fancyhead[R]{\small\sffamily 0.9.0rc1}
+\fancyfoot[L]{\footnotesize \ManualDate}
+\fancyfoot[R]{\footnotesize\thepage\ / \pageref*{LastPage}}
+\renewcommand{\headrulewidth}{.3pt}
+\fancypagestyle{plain}{\fancyhf{}\fancyhead[L]{\small\sffamily PyFracPaQ / \ManualTitle}\fancyhead[R]{\small\sffamily 0.9.0rc1}\fancyfoot[L]{\footnotesize \ManualDate}\fancyfoot[R]{\footnotesize\thepage\ / \pageref*{LastPage}}\renewcommand{\headrulewidth}{.3pt}}
+\raggedbottom
+\renewcommand{\arraystretch}{1.12}
+\newcommand{\control}[1]{\textsf{#1}}
+\newcommand{\code}[1]{{\small\texttt{\detokenize{#1}}}}
+\newcommand{\major}[1]{\FloatBarrier\clearpage\section{#1}}
+\newcommand{\feature}[2]{\FloatBarrier\Needspace{5\baselineskip}\subsection{#2}\label{feat:#1}}
+\newcommand{\plotfig}[3]{\begin{figure}[htbp]\centering\includegraphics[width=.82\linewidth]{#1}\caption{#2}\label{#3}\end{figure}}
+\newcommand{\uifig}[3]{\begin{figure}[htbp]\centering\includegraphics[width=.72\linewidth]{#1}\caption{#2}\label{#3}\end{figure}}
+\newtcolorbox{note}[1]{colback=pale,colframe=brand,boxrule=.5pt,arc=1mm,title={#1},fonttitle=\sffamily\bfseries}

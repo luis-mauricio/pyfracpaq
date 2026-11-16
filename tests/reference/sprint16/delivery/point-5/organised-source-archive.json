@@ -1,0 +1,17 @@
+{
+  "version": "0.9.0rc1",
+  "published": false,
+  "actual_index_changed": false,
+  "snapshot_files": 2585,
+  "snapshot_bytes": 850108838,
+  "temporary_repository": "/tmp/pyfracpaq-git-source-bff2sd0h/repository",
+  "temporary_tree": "d9da35dc582392afe135ada70e28dd9d65e1bc8e",
+  "archive": "dist/0.9.0rc1/organised-source/pyfracpaq-0.9.0rc1-code.zip",
+  "archive_sha256": "d5f24923e85c2fed479deb930a6f14cd5585e24e50856dbe274bbdbc795e15c9",
+  "archive_bytes": 48948149,
+  "runtime_files": 262,
+  "runtime_folder": "/tmp/pyfracpaq-git-source-bff2sd0h/download/pyfracpaq-0.9.0rc1",
+  "tests_and_reports_absent_from_zip": true,
+  "all_runtime_modules_and_resources_match": true,
+  "scope": "Candidate working-tree snapshot in a temporary Git repository; real git archive/export-ignore. GitHub publication and actual remote Download ZIP belong to point 5."
+}

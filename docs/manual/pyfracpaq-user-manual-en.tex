@@ -1,0 +1,47 @@
+% !TeX program = xelatex
+% Compile in this directory: latexmk -xelatex pyfracpaq-user-manual-en.tex
+\documentclass[11pt,a4paper,oneside,parskip=half]{scrartcl}
+\newcommand{\ManualTitle}{User manual}
+\newcommand{\ManualDate}{November 2026}
+\newcommand{\ManualAuthor}{PyFracPaQ documentation}
+\newcommand{\ManualSubject}{Usage, methods and SD11A worked examples}
+\usepackage[british]{babel}
+\input{manual-style.tex}
+\begin{document}
+\begin{titlepage}
+\thispagestyle{empty}
+\vspace*{13mm}
+\includegraphics[width=.54\linewidth]{logo.png}\par
+\vspace{18mm}
+{\Huge\sffamily\bfseries\color{ink} User manual\par}
+\vspace{5mm}
+{\Large Usage, methods and SD11A worked examples\par}
+\vspace{10mm}
+{\large PyFracPaQ 0.9.0rc1\par}
+{\large November 2026\par}
+\vspace{12mm}
+\includegraphics[width=.60\linewidth]{tracemap.png}
+\vfill
+{\small Python implementation based on FracPaQ MATLAB 2.8.\par
+Run the code locally; MATLAB is not required.\par
+Contact: \href{mailto:luismauricio@me.com}{luismauricio@me.com}.}
+\end{titlepage}
+\section*{How to use this manual}
+\addcontentsline{toc}{section}{How to use this manual}
+Start with Sections~\ref{sec:inicio}--\ref{sec:roteiro} to prepare the environment, understand the inputs and run the first example. Then turn to the relevant application tab. Each feature describes its controls, calculation, interpretation and outputs. Control labels retain the wording used in the interface, including \control{Colour by strike?}.
+
+The main example is \code{examples/SD11A.txt}, copied unchanged from the FracPaQ distribution supplied by the maintainer. The illustrated results use pixels without physical calibration. Do not interpret those pixels as metres, or the illustrative stress and aperture parameters as measurements of this sample.
+
+The analytical figures are reviewed Python outputs. Interface captures show the actual widgets in an illustrative 1250\,\(\times\)\,739-pixel window. The application opens at the available screen width; its appearance and size can vary with the monitor. Tab panels are cropped only to improve legibility on the printed page.
+
+\begin{note}{Scientific scope}
+The application describes two-dimensional traces. Intensity, connectivity, tensors and permeability are estimates under the stated assumptions, not complete flow simulations or reconstructions of three-dimensional fractures. Section~\ref{sec:limites} summarises the approved corrections to legacy behaviour. The MATLAB reference is version 2.8; 0.9.0rc1 identifies this Python port.
+\end{note}
+\clearpage
+\tableofcontents
+\input{chapters-en/01-getting-started}
+\input{chapters-en/02-maps}
+\input{chapters-en/03-lengths-angles}
+\input{chapters-en/04-flow-wavelets-graphs}
+\input{chapters-en/05-outputs-reference}
+\end{document}

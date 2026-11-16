@@ -1,0 +1,931 @@
+{
+  "date": "2026-11-16",
+  "user_instruction": "Substitua essa renderização dos marcadores por formas geométricas normais.",
+  "scope": "Ordinary Matplotlib marker paths globally; same marker sizes/colours and scientific data. Remove custom atlas interception, combined map marker pass and forced legend outline enlargement.",
+  "before_production_modules": {
+    "pyfracpaq/__init__.py": "544535f4952c1ef24798b752d68697c1efdd44503f1e13b688ff73e04517f735",
+    "pyfracpaq/__main__.py": "8676a429c316292a45dfb6573fcba189cd13aeec716bf028b391505812dadc84",
+    "pyfracpaq/analysis/__init__.py": "55734bf037fefd36cd4253fc2d02b0c626c76442c50659d454ba08ee4a3dae3d",
+    "pyfracpaq/analysis/angles.py": "856f29206f3aea92bd879cab6284c0e682d411f611e99db18827513e738975a5",
+    "pyfracpaq/analysis/auxiliary.py": "3fb2e02e89d844d6229fa63e24c60fe289c876e03e5a978170935cad39bbc819",
+    "pyfracpaq/analysis/blocks.py": "0e4e86361afae58091c2b90c5f79a9ad2f95423f2dac77c5974f8ba48c5271ce",
+    "pyfracpaq/analysis/circular.py": "a55209fc8aa5317c33de9dafa363f1acc36657aa5f21ec9165f0deadfa22f8df",
+    "pyfracpaq/analysis/compatibility.py": "f4cb8e0dea707513189266e913b269e233298dfba0852d543379567dd85c6b51",
+    "pyfracpaq/analysis/connectivity.py": "ba39bf53398d24145f998631b09aa8f5653d6141c78ba02ecc72285dd6da721b",
+    "pyfracpaq/analysis/hough.py": "b7365dbe55f41032255fe1538f81536d79b163d90ed45be836b047bf5a9c3dda",
+    "pyfracpaq/analysis/ks.py": "a89702de55653cf1258a7dcf3db4d0731b411a95a578ad8c9aea3eabbdd02c5f",
+    "pyfracpaq/analysis/lengths.py": "b927c3216ae1192b682674cd6dc6e0294c54f2e720a6fe6957dcfb3df176747e",
+    "pyfracpaq/analysis/maps.py": "54414f6efbc788d5d6e085e0c3018ce58d7c17e0aa8abf40be6d7928f4bc4140",
+    "pyfracpaq/analysis/mle.py": "aa60f3f1b0409d9c4c4efd722f0ea72f2330fbb56656b762a5bd41f2f3593d59",
+    "pyfracpaq/analysis/palettes.py": "e3b03fe9f0a4f20af0bdec80afee33db902dc7647c8be889d71f594837308fba",
+    "pyfracpaq/analysis/preprocess.py": "abc603313a5e5b2ff7158536e936d2779625c9ba152f7ed8d1d7fc6558c9d0d1",
+    "pyfracpaq/analysis/profiles.py": "2e65174358d59ae79061688b4647fbeeac7e085e86ed830f77e3ed9c6915ebc3",
+    "pyfracpaq/analysis/registry.py": "f9cfc173129b692df5dded0f8203c3ad2176b2e48c80d9be9d9450376d19608e",
+    "pyfracpaq/analysis/roses.py": "a9054a0b334667c8fda516873f7f328e4664ffc4a93c1f6436f18817c8f42e20",
+    "pyfracpaq/analysis/stability.py": "b5d7a973a38eb2e797df53e3cb3e3cbffa7571c5d33e9d4524d96c93b9fcaf33",
+    "pyfracpaq/analysis/tensors.py": "4b4fcc59c86f64dd281b7f73d2a7205de57aabd34bf3ab1a5e0ed46c91c0ce83",
+    "pyfracpaq/analysis/variogram.py": "c13c42ebf9c097735b79e1d9a9169d139bcf4b54fd82fc94907ca3e527fbb7e5",
+    "pyfracpaq/analysis/wavelets.py": "fb2702f0b90c2622958a31220d5baa9bb6458f99b5f70aa946fe9998238b9e13",
+    "pyfracpaq/app.py": "42084bf54bc25e53c9010790fdf28468139e37168093a3de2718c453f48e627a",
+    "pyfracpaq/domain/__init__.py": "994040f608488a3ac5d5252c9e9d76884a434096420117af196685bb6f0bef07",
+    "pyfracpaq/domain/construction.py": "95b8eb40852845c7fd8ee45257721ffc58af39c78cd09fcbc0ca51cc45229000",
+    "pyfracpaq/domain/execution.py": "4a1c65f5bc740b1fb3b7326c1abe547b24815b887c1d3a1b8169a49ecccb8053",
+    "pyfracpaq/domain/models.py": "c1f05c5680e795e5d615c9e086b01a07a281b993a91d84d268be44b4997e93f0",
+    "pyfracpaq/geometry/__init__.py": "8075b128c5f7edccf01a11dfaf779b58ca1652ed7f101cb8186cb53ded9fdbb7",
+    "pyfracpaq/geometry/circles.py": "712fcdd9d3a18c57a97d799cbf7eed2b85b3a4881524e008f74a7333779caed1",
+    "pyfracpaq/geometry/intersections.py": "0de7e3f38af61225c01bcea4ff9b8306f60858191592f198782175e72a204dcb",
+    "pyfracpaq/geometry/primitives.py": "7dd3732ad9e0199d5480f3278cfd4e38a06d0f37739359e12838f5a86f56664f",
+    "pyfracpaq/geometry/profiles.py": "36a14b8008fb36f064af862421cd427356c3ede3195aef67e5c514d9a90550a5",
+    "pyfracpaq/gui/__init__.py": "56cbb40e51b5a4468d919bbed3f78c71c14960f1d21d94de03159b659be3a06e",
+    "pyfracpaq/gui/controls.py": "3bf956417c508027ad981d340694e5dc6365b7125fb463bbf3069b6e5b434578",
+    "pyfracpaq/gui/figures.py": "780d226f8485340b22bde18c9683ef2dfba14bae6523b1848766e8781f94dad3",
+    "pyfracpaq/gui/layout.py": "fc21bf2bf9dfa3446a767b04214184bacd65da837b149074f217d65fc044e754",
+    "pyfracpaq/gui/main_window.py": "d8b2258e3e631f8e81e66cc21ca9bd508be23e1c93ba75f2570eda547c284465",
+    "pyfracpaq/gui/profile_selection.py": "58b8df0f89f2407bf0057aaa20eb8968e642ee78cdb0f57bc3af3e54f8826748",
+    "pyfracpaq/gui/style.py": "7eb26371c4832c6847550e89eadfc0bf3905706e56b6d288f9e143dfc02b16ba",
+    "pyfracpaq/gui/wavelet_dialog.py": "9526f3e4469373e57fb4e159b07c498ddd1e399f0ee65f2c8d3beb1f644f9879",
+    "pyfracpaq/io/__init__.py": "834f3abe34a659ff646749ddc5c7c0e177f1063e2e9daf00315609505b065c5e",
+    "pyfracpaq/io/angles.py": "2c1c88fd66118cf3c9ac3061fd3c12f898651fe3ce864baf947575717aefed90",
+    "pyfracpaq/io/block_raster.py": "57522ba6d3964b0fa7a07cf53c619f1b64152e90837a3d9235ef7b1395f8bf43",
+    "pyfracpaq/io/circular.py": "fc97df44232fada87b7adb6bc76a38921f0fcb251161530bc4bc94783d4ec824",
+    "pyfracpaq/io/colours.py": "414f9d3bd289c909c3feaf4469fb8d29735b5e923d40e59424c67fb3a50b9ff6",
+    "pyfracpaq/io/connectivity.py": "22d361d1716e9a86f9b721131f66d75910d9ab058299f8cc72e3eff8a3d681e2",
+    "pyfracpaq/io/figures.py": "7892794e3eb9995c868a5c998f47319c33653d900a6b39238fb04b3e09f3306b",
+    "pyfracpaq/io/images.py": "80b13b2013ca09c9822fe84f467d931ebb0341cd7c189216ba9122efe6a90432",
+    "pyfracpaq/io/lengths.py": "0abc5a94a7a3dcdb1cb22e8615159bc2c0c2e67216e3d13e8edd9aa0097734b6",
+    "pyfracpaq/io/move.py": "1982f47ebe13c9c250af27487e77513b5252aa1ead0e31dffde3c9f9263f8d11",
+    "pyfracpaq/io/nodes.py": "c8b0d925ed71eee44068ad11b959671238d2779b4bfb50478c481804b8c2483b",
+    "pyfracpaq/io/stability.py": "7403248551d623c532cbcc9a5714a79024d00d016c5ed7ee39de548f0a0f7726",
+    "pyfracpaq/io/svg.py": "0b5d9d7a26f6c6f070fdbb2fb4ebaa6e13319e648f608fc908f014321329579f",
+    "pyfracpaq/io/text.py": "b0a50c886dbc55bc60ed99b2bf7f914207474065131977d3e1c8f777aded0a04",
+    "pyfracpaq/io/wavelets.py": "bdebc44169fa0bbb7fe40948b6629fe9cb55a3ff49ffd7665e1febdf946f116c",
+    "pyfracpaq/plots/__init__.py": "bae0847b94c213816a7502948a562ac9b2d8de0ec1d0603c7ae51db7d32744aa",
+    "pyfracpaq/plots/angles.py": "4e204e555c03d24bb38c8a5c540f1b3fe561be956e7385f551f46e6ba040da39",
+    "pyfracpaq/plots/annotations.py": "ba8f3f74df809d2149f81369106520c2e829b24c439165ccbeec787ddef03799",
+    "pyfracpaq/plots/auxiliary.py": "bbd66d1229876e4c57472747fe48977b3d92c41a9bf06b40f4ed878193f2e00d",
+    "pyfracpaq/plots/blocks.py": "a9d887187d7fda1b1eb979c21ef21524c5b8d186203e59855e7045abd90d0d0d",
+    "pyfracpaq/plots/circular.py": "c74d75c96ee809263e09c0e3cd3d35421032b182a9e96e427cd87ddfdfd15cba",
+    "pyfracpaq/plots/colourbars.py": "f9f15b01c0058238b3aa209378321031f2187c719996367afcbcbfef4fcc04f0",
+    "pyfracpaq/plots/connectivity.py": "2ac466bab8c482ebbe9dd3f6e985b1cef6c07018b105ced071439852761dc3fb",
+    "pyfracpaq/plots/dashes.py": "ed2e8b3afa1e793c9261c7ba7eb80d8df965bd6cae749b292f989388fec294c6",
+    "pyfracpaq/plots/grids.py": "cbb13c27b8892d4e82172fb123669b66c92a2e68dc84254f2d068c57442aabed",
+    "pyfracpaq/plots/hough.py": "febc101405bbe312d2aa144d1f3ad0ebf5775a22724415a9d8a40166fdfe813d",
+    "pyfracpaq/plots/legends.py": "7bb7628ead9ab2f46b934240d9942d65151566d20f9c8031f7a6d23172083493",
+    "pyfracpaq/plots/lengths.py": "b6845965bac68f3af73dd7fb3c973c26389ff9ca7d27dfb9beffbd3a89529d91",
+    "pyfracpaq/plots/maps.py": "daa527e9931ffe593ff07d6b63de1e92f0d9ceb41e755c3fe7c219f8e276db3f",
+    "pyfracpaq/plots/markers.py": "f991d7c080e21d3ad43c965abe6cb0617e3dc04cf22534ab6426a20b80a1f466",
+    "pyfracpaq/plots/mle.py": "c87db799e14bdc3a1f0bebcde2cf3d96182cccd41d808702f149a82a5be95b53",
+    "pyfracpaq/plots/preprocess.py": "9394e74908d0fd74cc42948cb3823084349dc0c2520ca00229e1244b3aba396f",
+    "pyfracpaq/plots/preview.py": "fd41293ce7de9e2571de9daea19745de0fb82d4e46ee7a4a3f4ea745bb4420f7",
+    "pyfracpaq/plots/profiles.py": "36ad36e09c152d2a12d044914f6800411d9ab0c2adb1ad63300988cb9b142a8d",
+    "pyfracpaq/plots/raster.py": "13b61b81957af5c98ef35c9e08d669fa0b1f8bb14c612cc24df8a475debfb010",
+    "pyfracpaq/plots/results.py": "ca7bec00ffe01de430024dd10c06c7dd336bf912927a406a639ce5f47daa4346",
+    "pyfracpaq/plots/roses.py": "a4fef8ace1b350a80f7431551e836a22b0a88a502fc7f800ce299c0117c261e6",
+    "pyfracpaq/plots/stability.py": "3261b5d0c64e4de86c7d9cfa5d14dbd876a5865aee536902dda7ea22f7421423",
+    "pyfracpaq/plots/style.py": "93ed2074318d1355982f1fba96873292b4c3c8866050ccc6cf0a5de924fd936f",
+    "pyfracpaq/plots/tensors.py": "40f34835c85be328cce3ccc83bc24a2e830d042fa14d23b2804eecd307126c9a",
+    "pyfracpaq/plots/tex.py": "cb22d592bbacf261f7ab0da08691b31f496259181da6e89690ee1d4b0e0daf15",
+    "pyfracpaq/plots/ticks.py": "9dd7956afa811ac9cfc6e42f7b927eda9cabf6a14bc4b1ca53304ddf13362412",
+    "pyfracpaq/plots/variogram.py": "3f84c09c52e9979f9a53b802dc52eeb82b37921075945425ce475ac380665de3",
+    "pyfracpaq/plots/wavelets.py": "4a47bf7b3acb76b7aa26dd5552553c813131f0ebea07b5aae7824e48509e34a2",
+    "pyfracpaq/resources/__init__.py": "8fb6bc0d227db7199f2854177e50f92d9734c1c465be0865c84f7007533c221d",
+    "pyfracpaq/tools/__init__.py": "b21e71eea2b3bd7b6e587004e0a3f1779732cbe31a40108fce62af71a4a0097d",
+    "pyfracpaq/tools/__main__.py": "86961f911350736d6a73b38fc56ad0c3f7b20313af1c7805b63cee592004c0e2",
+    "pyfracpaq/workers/__init__.py": "01e15e9232e8dcb336b4d28f0914ee215ec529fe7d12a2b4be63013e21c983bc",
+    "pyfracpaq/workers/jobs.py": "60673791483c8ae2617d4dcfcc7de88b5d32daf06c83dc6aae7a7887346db14e"
+  },
+  "before_primary_images": {
+    "FracPaQ2D_tracemap_SD11A.png": "cd2fab8ac18156492e3b4ce3ed223a54653ec0b13f1aa8f9f43f54a0d677e384",
+    "FracPaQ2D_segmentstrikemap_SD11A.png": "f94940d0cfd658b58754d9960acce4751dbcc7ee689545b3cb268ffc5ad3dbc0",
+    "FracPaQ2D_histotracelength_SD11A.png": "c533e990210b8c41f7b2f0cf1a6165f4056323d77c657a663a1383ed18870d3d",
+    "FracPaQ2D_histosegmentlength_SD11A.png": "7fd20247a00de021fbbc20201839d90d47038007c6bf3cf8318d35bbe083f1ef",
+    "FracPaQ2D_loglogplottracelengthdensity_SD11A.png": "6aac87a929e85b3dd54daeb5289b7ae74faaca2ef972560c9dae9fa7181462be",
+    "FracPaQ2D_loglogplottracelength_SD11A.png": "0e4d7a04ffcbd04a2314f5c086cd302f52a89806157ebd9a37ec38e6f597d2a2",
+    "FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png": "0556c2cd74138470b846c51be87052cb1dec60b7e2c91b0b4a72041892f6ed74",
+    "FracPaQ2D_loglogplotsegmentlength_SD11A.png": "62034fa3bb1116d8732c9e99c4ae4a51b6528a0bb7188afbf90fea1afc47a194",
+    "FracPaQ2D_segmentlength_variogram_SD11A.png": "38bafa3d2d54db63a2c3976bd02d7a89079c92c056ba12ee920e2e56254b2c95",
+    "FracPaQ2D_histoangle_SD11A.png": "b40e7cc3642b012dd93b8f2527aa27d5f28eee03b023174a3609effc20887f1c",
+    "FracPaQ2D_permeability_polar_SD11A.png": "afaf31c191547575db9c2f7021665e950b50e08f98fdc6b677e4471ecef26840",
+    "guiFracPaQ2D_tracelengthalonggraph_SD11A.png": "7b412e7c6a9bcf4f1e24c94dc348d5a7c08211050a28cc86d5ef88ec42c54d85",
+    "guiFracPaQ2D_tracelengthfromgraph_SD11A.png": "31fa8f716be079def497f13c6b5c7954c4be900a1fe0bff89794214d2b4eb508",
+    "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png": "0445fe3d67e22139c5ed5c96f2b9ed6e9b4987f7c785fefabffd9756cefef292",
+    "FracPaQ2D_tracelengthsFittingExponential_SD11A.png": "cfeb9ac7fd7c8a5a4d0188a892aa6e70dc7c189d3ccf35b45010d4e3291a4c7b",
+    "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png": "062a6803ecf60546a469351cb30e46490a2cb8573989583aeab0757b1c6fb73b",
+    "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png": "6e6b88779ebcb4ecf97992d576ebe7ecec101386327f6f2c6b4a981731baaeb8",
+    "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png": "0fc14d60d570f7d5bc8932885670d6d14ae6a399c55b82c6a281d27fa88b16e4",
+    "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png": "5d3122ee2ff69dbe571bb152f5a0db1541060737e16690c6b9671901f7fb3a02",
+    "FracPaQ2D_crossplotsegmentlengthangle_SD11A.png": "2cb202d1f65e1f470c330a1daeb2489d672150e62e9490871acba751c2534545",
+    "FracPaQ2D_roseangleEqArea_SD11A.png": "dc643ca29747f6de8a202e8bc47a7b302c2d228faf366307322200b96459caed",
+    "FracPaQ2D_Mohrplot_SD11A.png": "b1210da584e4da55aa9e5a9b2880f877583446ff3609f0bccece9309d60a75cd",
+    "FracPaQ2D_sliptendencymap_SD11A.png": "f55174527f4e44b7f9a825c950bfb39bb25ce20466d269c219d0ad6f42896688",
+    "FracPaQ2D_sliptendencyrose_SD11A.png": "32b0dbfd827774b77cb4d09f7705b1cb3f0ac044694119ea3c4b6b7409afae30",
+    "FracPaQ2D_dilationtendencymap_SD11A.png": "c33a9e97406ae6b91a6120bf832c159f03c99ac1b1c532cf3af15192443b1a46",
+    "FracPaQ2D_dilationtendencyrose_SD11A.png": "c4708c7f582f238d8add9d35f4e9022378ef63042aeff81f840c247568ff397c",
+    "FracPaQ2D_fracsuscepmap_SD11A.png": "addbd775981bb43ac50a7e217875130de6a1e782d3955f3acafb8e77330a41ca",
+    "FracPaQ2D_fracsusceprose_SD11A.png": "4b3c1ade9f01b3caa9d603f23904ef540bfee229fc609f39e49944a27ef48c5e",
+    "FracPaQ2D_CSFmap_SD11A.png": "4ddd070587ddff4229773bc0f5cfb771506250c0e05c662b61418be32e4d42d7",
+    "FracPaQ2D_CSFrose_SD11A.png": "2c1a8a50c5bc4dc230075f2220058ba718fbbb94aa62ba32dedc994e96f29386",
+    "FracPaQ2D_tracelengthmap_SD11A.png": "ce1f540de7d0d2ecbeb8ed191f44fd4e496604e098ade3f40c6989247db70ab4",
+    "FracPaQ2D_segmentlengthmap_SD11A.png": "d6dc4d7573d6b9268ab21cc8a64bc555b2645a32b00a66c85717b2289905280d",
+    "FracPaQ2D_scancircle_SD11A.png": "82c0b574c9d3d3679303d509cd53657502137fb007b365e56541dcf4de3bb31a",
+    "FracPaQ2D_intensityP21_SD11A.png": "17d1c42b41e339b16e2617fd5841a6006ad318d2da12df098ca982f1d0b49ab7",
+    "FracPaQ2D_densityP20_SD11A.png": "b0730824d7a27c7a0366e639f7ac8ae86448f4ec9a9e615ee4a756c370048a67",
+    "FracPaQ2D_blocksizecentroidmap_SD11A.png": "315ea79bf5a3e02395716ad426431cf26c95144767aee1d8b6768577c9d0a310",
+    "FracPaQ2D_blocksizeloglog_SD11A.png": "b0fb097390803337d0ff594fee9e1a9e88833e0e32b4b487b87ff8237398b4f2",
+    "FracPaQ2D_blocksizehisto_SD11A.png": "81d7845208911dc916e1081b9c3dd772dfcba9a0604836c2fdcdb0b7fc55e71d",
+    "FracPaQ2D_IYXnodes_traces_SD11A.png": "630bc3543e38b79fe70d77fd6e52d8619e0cd38ae0f7b9385b207e386aea7f63",
+    "FracPaQ2D_XYnodes_traces_heat_SD11A.png": "4baf2168a4a3d1d836f002802d81b92d97bb142e5911b304c937c3886e2e0aa3",
+    "FracPaQ2D_Inodes_traces_heat_SD11A.png": "fea92d2f499b5ac76bfde03ec351276283e6c368496f6c7d975d2294285a35f8",
+    "FracPaQ2D_IYXtriangle_SD11A.png": "e907bf0126d193e1200002156089274aaa6f6b60ebecbdafd09090c413d05077",
+    "FracPaQ2D_cracktensor_SD11A.png": "d4fd10c0b033cb09c1d960df42fdd08d70644964410eaa2d4c8cc3ad174b6d5d",
+    "FracPaQ2Dwavelet_a32_SD11A.png": "a0fc41801cbd60df5130de9069aa9407fb990cdc13eb6c560113ce494b96ff1d",
+    "guiFracPaQ2D_segmentlengthalonggraph_SD11A.png": "4bf3d42a44945816b591b7e348b62b265fd8501db66d854b5747b13bb1b8d304",
+    "guiFracPaQ2D_segmentanglealonggraph_SD11A.png": "f59f018333f1ab97eff8a9a6ffc8664aba7ba91ea4456ecf3df9997ccac14c57",
+    "guiFracPaQ2D_graphtracemap_SD11A.png": "74fdfc796062482e37f580f072d5f77c5bd923bbb26aa2af2f303070e8db9526",
+    "guiFracPaQ2D_intensityalonggraph_SD11A.png": "225616b5bf5790a5d091f18c4a8cfd6ec7c3ab3d15c5ef99827e9fd707f435de",
+    "guiFracPaQ2D_densityalonggraph_SD11A.png": "c51781a77d1b9db4e697625a7ddd270588e6a6ffa1640ac6e33453247a568414",
+    "guiFracPaQ2D_segmentlengthfromgraph_SD11A.png": "fc309ad3f21a4614148ad55f33649b3bb1aa550ffa62255316cc799f6c214246",
+    "guiFracPaQ2D_segmentanglefromgraph_SD11A.png": "902c515b3517321569bd8e1c9f3528729f5f6731b30157da4213923ba574b4d6"
+  },
+  "before_accepted_regions": [
+    {
+      "figure": "FracPaQ2D_dilationtendencymap_SD11A.png",
+      "region": "title",
+      "native_sha256": "15b31cee88955a9b8838732ddadeb6144ce1aab9b18903a710ca21f828c06557",
+      "candidate_sha256": "c33a9e97406ae6b91a6120bf832c159f03c99ac1b1c532cf3af15192443b1a46",
+      "label": "Dilatação",
+      "display_crop_xyxy": [
+        1318,
+        45,
+        3570,
+        203
+      ],
+      "xyxy": [
+        0,
+        0,
+        4724,
+        304
+      ],
+      "before_crop_rgb_sha256": "a1b3af987caeee8b7b5a61e093dfd42754a6e4879646bff522c5cd2103986b86"
+    },
+    {
+      "figure": "FracPaQ2D_fracsuscepmap_SD11A.png",
+      "region": "title",
+      "native_sha256": "965aef9720e9c97691ced27c456c1feec53c6c55ee94d34df12c2055ed954fe2",
+      "candidate_sha256": "addbd775981bb43ac50a7e217875130de6a1e782d3955f3acafb8e77330a41ca",
+      "label": "Suscetibilidade de fraturas",
+      "display_crop_xyxy": [
+        1284,
+        45,
+        3603,
+        203
+      ],
+      "xyxy": [
+        0,
+        0,
+        4724,
+        304
+      ],
+      "before_crop_rgb_sha256": "b40e6d82cfca2cbe4171312eab968ac5cf1145e486a83dd16b8f06fd561cc857"
+    },
+    {
+      "figure": "FracPaQ2D_CSFmap_SD11A.png",
+      "region": "title",
+      "native_sha256": "7c244a88f04f56b63210ae73457ae7b26cc290358b2520b8b9d5e80a0b52dfd2",
+      "candidate_sha256": "4ddd070587ddff4229773bc0f5cfb771506250c0e05c662b61418be32e4d42d7",
+      "label": "CSF",
+      "display_crop_xyxy": [
+        1146,
+        45,
+        3740,
+        203
+      ],
+      "xyxy": [
+        0,
+        0,
+        4724,
+        304
+      ],
+      "before_crop_rgb_sha256": "2a7e6713716f250ca72200597583236b316fe8c20a86c5cfd5791558d79645c5"
+    },
+    {
+      "figure": "guiFracPaQ2D_intensityalonggraph_SD11A.png",
+      "region": "title",
+      "native_sha256": "cf50c95d06f444491f12adbb0bbe6455b4d3b3db5eb96b403bfdc9cc9ebcfe32",
+      "candidate_sha256": "225616b5bf5790a5d091f18c4a8cfd6ec7c3ab3d15c5ef99827e9fd707f435de",
+      "label": "Graphs — intensidade P21",
+      "display_crop_xyxy": [
+        1710,
+        212,
+        3168,
+        350
+      ],
+      "xyxy": [
+        0,
+        0,
+        4724,
+        350
+      ],
+      "before_crop_rgb_sha256": "df24cf5735fa964f2cfc316dd7f999c4e52936b9e6c618bf484742b87fd5d4e4"
+    },
+    {
+      "figure": "guiFracPaQ2D_densityalonggraph_SD11A.png",
+      "region": "title",
+      "native_sha256": "1ccc1774b5d52ec999569a862b729ff97fff79bec93d42827cad951b6c5e4f47",
+      "candidate_sha256": "c51781a77d1b9db4e697625a7ddd270588e6a6ffa1640ac6e33453247a568414",
+      "label": "Graphs — densidade P20",
+      "display_crop_xyxy": [
+        1738,
+        212,
+        3148,
+        350
+      ],
+      "xyxy": [
+        0,
+        0,
+        4724,
+        350
+      ],
+      "before_crop_rgb_sha256": "ceae605af89e430d35b84653d1ebf83892ebdedf668fb4a586bc8c0bf5415603"
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "17894f3250fefb193bc558474b0550aea3d2cb481d75d3e9e373f6006fea553b",
+      "candidate_sha256": "0445fe3d67e22139c5ed5c96f2b9ed6e9b4987f7c785fefabffd9756cefef292",
+      "xyxy": [
+        927,
+        3171,
+        2114,
+        3422
+      ],
+      "detail_case": 2,
+      "label": "Detail review case 2",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "before_crop_rgb_sha256": "422b4a733575475a56393c0764ea942d8fab373450eff61a6b6b6653ed426e52"
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "b3457ca63c2da98e32459e8d309f739d8009a39b76b6fd231fe392047d74a8ee",
+      "candidate_sha256": "cfeb9ac7fd7c8a5a4d0188a892aa6e70dc7c189d3ccf35b45010d4e3291a4c7b",
+      "xyxy": [
+        927,
+        3171,
+        1654,
+        3384
+      ],
+      "detail_case": 4,
+      "label": "Detail review case 4",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "before_crop_rgb_sha256": "aa1d0abbf5e387414365a0f654f52cf5fe053cd3b5c0fa9a9587b43b3d0274e3"
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "92488e951358bfe2a639cb130821ef145a4b3e3d68eaeaf52e385c299ea898ad",
+      "candidate_sha256": "062a6803ecf60546a469351cb30e46490a2cb8573989583aeab0757b1c6fb73b",
+      "xyxy": [
+        927,
+        3171,
+        2009,
+        3384
+      ],
+      "detail_case": 6,
+      "label": "Detail review case 6",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "before_crop_rgb_sha256": "f56dd38b99a7145084ff6dba220c8a8a0ade6d936a824edc4f12e0d6be93713f"
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "858621c28221d29ad0dfa608120bbd5274462b8cc22704bf2d5ae9e66f458b8b",
+      "candidate_sha256": "6e6b88779ebcb4ecf97992d576ebe7ecec101386327f6f2c6b4a981731baaeb8",
+      "xyxy": [
+        927,
+        3171,
+        2114,
+        3422
+      ],
+      "detail_case": 8,
+      "label": "Detail review case 8",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "before_crop_rgb_sha256": "c91e95fee7ba4272a4d5cc7e78889af9f7dc906bfe0f60f67b606534882a2d8d"
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "129f832a5e262ecbded898ef62ffc80b98fa8b1cb40c5ea8c7a8d290ee7bfbc7",
+      "candidate_sha256": "0fc14d60d570f7d5bc8932885670d6d14ae6a399c55b82c6a281d27fa88b16e4",
+      "xyxy": [
+        927,
+        3171,
+        1608,
+        3384
+      ],
+      "detail_case": 10,
+      "label": "Detail review case 10",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "before_crop_rgb_sha256": "6cb1ce64d81c0e77dd383b614da680acb4370808bed98cfc7729c427bd78c27d"
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "region": "parameter_annotation",
+      "native_sha256": "e901f51ee125f2efed1d5ccbe3e88a1ba9d1e2a5b0e72c2b9a419bdf2b677c8e",
+      "candidate_sha256": "5d3122ee2ff69dbe571bb152f5a0db1541060737e16690c6b9671901f7fb3a02",
+      "xyxy": [
+        927,
+        3171,
+        2009,
+        3384
+      ],
+      "detail_case": 12,
+      "label": "Detail review case 12",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "before_crop_rgb_sha256": "bc6c6b58760ec8e405d3dd50ed00622b188dc0901741d73e5622658e155a2029"
+    },
+    {
+      "figure": "FracPaQ2D_Mohrplot_SD11A.png",
+      "region": "legend",
+      "native_sha256": "5d5b3300953db9a33855186cf267903b54649238a08a340789883ccb77198223",
+      "candidate_sha256": "b1210da584e4da55aa9e5a9b2880f877583446ff3609f0bccece9309d60a75cd",
+      "xyxy": [
+        3282,
+        1495,
+        4225,
+        1743
+      ],
+      "detail_case": 13,
+      "label": "Detail review case 13",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "before_crop_rgb_sha256": "42c3f644356bd7ff385edacc4648bc30a0c5e95d530bb7a60419fbe45a861b53"
+    },
+    {
+      "figure": "FracPaQ2D_cracktensor_SD11A.png",
+      "region": "legend",
+      "native_sha256": "2f364a7a93c917851cc5fc26b6dcc95c7565b74d0680c837f3bf73864183fd92",
+      "candidate_sha256": "d4fd10c0b033cb09c1d960df42fdd08d70644964410eaa2d4c8cc3ad174b6d5d",
+      "xyxy": [
+        1534,
+        4078,
+        3352,
+        4259
+      ],
+      "detail_case": 15,
+      "label": "Detail review case 15",
+      "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate.",
+      "before_crop_rgb_sha256": "8e6943f1ec83980e5b906ad59f07f0824a234be687f1ccef1b262eabfc7d591f"
+    }
+  ],
+  "before_visual_acceptance": {
+    "date": "2026-11-16",
+    "decision": "Seven earlier title/Hough regions and eight independent detail regions accepted by the user; eight marker legends remain under discussion.",
+    "user_statement": "Aprovo os 2, 4, 6, 8, 10, 12, 13 e 15.",
+    "scope": "Fifteen explicitly reviewed regions in their hash-bound current state. Raw SSIM failures remain unchanged. Cases 1, 3, 5, 7, 9, 11, 14 and 16 are not approved.",
+    "review_manifest_sha256": "9a9e78c89130e9db17c486cb877db19efe2a90ef465a5931b0678966e1948618",
+    "accepted_regions": [
+      {
+        "figure": "FracPaQ2D_dilationtendencymap_SD11A.png",
+        "region": "title",
+        "native_sha256": "15b31cee88955a9b8838732ddadeb6144ce1aab9b18903a710ca21f828c06557",
+        "candidate_sha256": "c33a9e97406ae6b91a6120bf832c159f03c99ac1b1c532cf3af15192443b1a46",
+        "label": "Dilatação",
+        "display_crop_xyxy": [
+          1318,
+          45,
+          3570,
+          203
+        ]
+      },
+      {
+        "figure": "FracPaQ2D_fracsuscepmap_SD11A.png",
+        "region": "title",
+        "native_sha256": "965aef9720e9c97691ced27c456c1feec53c6c55ee94d34df12c2055ed954fe2",
+        "candidate_sha256": "addbd775981bb43ac50a7e217875130de6a1e782d3955f3acafb8e77330a41ca",
+        "label": "Suscetibilidade de fraturas",
+        "display_crop_xyxy": [
+          1284,
+          45,
+          3603,
+          203
+        ]
+      },
+      {
+        "figure": "FracPaQ2D_CSFmap_SD11A.png",
+        "region": "title",
+        "native_sha256": "7c244a88f04f56b63210ae73457ae7b26cc290358b2520b8b9d5e80a0b52dfd2",
+        "candidate_sha256": "4ddd070587ddff4229773bc0f5cfb771506250c0e05c662b61418be32e4d42d7",
+        "label": "CSF",
+        "display_crop_xyxy": [
+          1146,
+          45,
+          3740,
+          203
+        ]
+      },
+      {
+        "figure": "guiFracPaQ2D_intensityalonggraph_SD11A.png",
+        "region": "title",
+        "native_sha256": "cf50c95d06f444491f12adbb0bbe6455b4d3b3db5eb96b403bfdc9cc9ebcfe32",
+        "candidate_sha256": "225616b5bf5790a5d091f18c4a8cfd6ec7c3ab3d15c5ef99827e9fd707f435de",
+        "label": "Graphs — intensidade P21",
+        "display_crop_xyxy": [
+          1710,
+          212,
+          3168,
+          350
+        ]
+      },
+      {
+        "figure": "guiFracPaQ2D_densityalonggraph_SD11A.png",
+        "region": "title",
+        "native_sha256": "1ccc1774b5d52ec999569a862b729ff97fff79bec93d42827cad951b6c5e4f47",
+        "candidate_sha256": "c51781a77d1b9db4e697625a7ddd270588e6a6ffa1640ac6e33453247a568414",
+        "label": "Graphs — densidade P20",
+        "display_crop_xyxy": [
+          1738,
+          212,
+          3148,
+          350
+        ]
+      },
+      {
+        "figure": "FracPaQ2D_Houghstuff_extra.png",
+        "region": "rho_panel",
+        "native_sha256": "cf55b80896faec67a7a99aabd9a0786c0e698a245f20cee5c3527d0209daf54d",
+        "candidate_sha256": "8ea7c5478347427e80b3ce26eab9fa31bd2da1bf99122e87bbfed67c47d9bde3",
+        "label": "Hough — vista lateral ρ",
+        "display_crop_xyxy": [
+          2362,
+          0,
+          4724,
+          2362
+        ],
+        "acceptance_scope": "Visual rendering of the reviewed Hough side view only; no numerical discrepancy approved."
+      },
+      {
+        "figure": "FracPaQ2D_Houghstuff_extra.png",
+        "region": "theta_panel",
+        "native_sha256": "cf55b80896faec67a7a99aabd9a0786c0e698a245f20cee5c3527d0209daf54d",
+        "candidate_sha256": "8ea7c5478347427e80b3ce26eab9fa31bd2da1bf99122e87bbfed67c47d9bde3",
+        "label": "Hough — vista lateral θ",
+        "display_crop_xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "acceptance_scope": "Visual rendering of the reviewed Hough side view only; no numerical discrepancy approved."
+      },
+      {
+        "figure": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+        "region": "parameter_annotation",
+        "native_sha256": "17894f3250fefb193bc558474b0550aea3d2cb481d75d3e9e373f6006fea553b",
+        "candidate_sha256": "0445fe3d67e22139c5ed5c96f2b9ed6e9b4987f7c785fefabffd9756cefef292",
+        "xyxy": [
+          927,
+          3171,
+          2114,
+          3422
+        ],
+        "detail_case": 2,
+        "label": "Detail review case 2",
+        "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate."
+      },
+      {
+        "figure": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+        "region": "parameter_annotation",
+        "native_sha256": "b3457ca63c2da98e32459e8d309f739d8009a39b76b6fd231fe392047d74a8ee",
+        "candidate_sha256": "cfeb9ac7fd7c8a5a4d0188a892aa6e70dc7c189d3ccf35b45010d4e3291a4c7b",
+        "xyxy": [
+          927,
+          3171,
+          1654,
+          3384
+        ],
+        "detail_case": 4,
+        "label": "Detail review case 4",
+        "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate."
+      },
+      {
+        "figure": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+        "region": "parameter_annotation",
+        "native_sha256": "92488e951358bfe2a639cb130821ef145a4b3e3d68eaeaf52e385c299ea898ad",
+        "candidate_sha256": "062a6803ecf60546a469351cb30e46490a2cb8573989583aeab0757b1c6fb73b",
+        "xyxy": [
+          927,
+          3171,
+          2009,
+          3384
+        ],
+        "detail_case": 6,
+        "label": "Detail review case 6",
+        "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate."
+      },
+      {
+        "figure": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+        "region": "parameter_annotation",
+        "native_sha256": "858621c28221d29ad0dfa608120bbd5274462b8cc22704bf2d5ae9e66f458b8b",
+        "candidate_sha256": "6e6b88779ebcb4ecf97992d576ebe7ecec101386327f6f2c6b4a981731baaeb8",
+        "xyxy": [
+          927,
+          3171,
+          2114,
+          3422
+        ],
+        "detail_case": 8,
+        "label": "Detail review case 8",
+        "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate."
+      },
+      {
+        "figure": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+        "region": "parameter_annotation",
+        "native_sha256": "129f832a5e262ecbded898ef62ffc80b98fa8b1cb40c5ea8c7a8d290ee7bfbc7",
+        "candidate_sha256": "0fc14d60d570f7d5bc8932885670d6d14ae6a399c55b82c6a281d27fa88b16e4",
+        "xyxy": [
+          927,
+          3171,
+          1608,
+          3384
+        ],
+        "detail_case": 10,
+        "label": "Detail review case 10",
+        "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate."
+      },
+      {
+        "figure": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+        "region": "parameter_annotation",
+        "native_sha256": "e901f51ee125f2efed1d5ccbe3e88a1ba9d1e2a5b0e72c2b9a419bdf2b677c8e",
+        "candidate_sha256": "5d3122ee2ff69dbe571bb152f5a0db1541060737e16690c6b9671901f7fb3a02",
+        "xyxy": [
+          927,
+          3171,
+          2009,
+          3384
+        ],
+        "detail_case": 12,
+        "label": "Detail review case 12",
+        "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate."
+      },
+      {
+        "figure": "FracPaQ2D_Mohrplot_SD11A.png",
+        "region": "legend",
+        "native_sha256": "5d5b3300953db9a33855186cf267903b54649238a08a340789883ccb77198223",
+        "candidate_sha256": "b1210da584e4da55aa9e5a9b2880f877583446ff3609f0bccece9309d60a75cd",
+        "xyxy": [
+          3282,
+          1495,
+          4225,
+          1743
+        ],
+        "detail_case": 13,
+        "label": "Detail review case 13",
+        "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate."
+      },
+      {
+        "figure": "FracPaQ2D_cracktensor_SD11A.png",
+        "region": "legend",
+        "native_sha256": "2f364a7a93c917851cc5fc26b6dcc95c7565b74d0680c837f3bf73864183fd92",
+        "candidate_sha256": "d4fd10c0b033cb09c1d960df42fdd08d70644964410eaa2d4c8cc3ad174b6d5d",
+        "xyxy": [
+          1534,
+          4078,
+          3352,
+          4259
+        ],
+        "detail_case": 15,
+        "label": "Detail review case 15",
+        "acceptance_scope": "Appearance of this explicitly reviewed region; prior scientific decisions remain separate."
+      }
+    ],
+    "decisions": [
+      {
+        "date": "2026-11-16",
+        "scope": "Five reviewed titles",
+        "user_statement": "Comparei os títulos e aceito do jeito que está. A diferença é mínima. Para mim está satisfatório."
+      },
+      {
+        "date": "2026-11-16",
+        "scope": "Visual rendering differences of both reviewed Hough side views, after explanation of their impact.",
+        "user_statement": "Então eu aceito essa diferença."
+      },
+      {
+        "date": "2026-11-16",
+        "scope": "Eight independent detail regions: six MLE parameter boxes, Mohr legend and crack tensor legend. Remaining eight marker legends are under discussion.",
+        "detail_cases": [
+          2,
+          4,
+          6,
+          8,
+          10,
+          12,
+          13,
+          15
+        ],
+        "user_statement": "Aprovo os 2, 4, 6, 8, 10, 12, 13 e 15.",
+        "detail_review_manifest_sha256": "91b6cc57243edc439d1501f73599eed7c77e9aac0984b2d0e720212e28696e3c"
+      }
+    ],
+    "detail_regions_under_discussion": [
+      {
+        "case": 1,
+        "figure": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+        "region": "legend"
+      },
+      {
+        "case": 3,
+        "figure": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+        "region": "legend"
+      },
+      {
+        "case": 5,
+        "figure": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+        "region": "legend"
+      },
+      {
+        "case": 7,
+        "figure": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+        "region": "legend"
+      },
+      {
+        "case": 9,
+        "figure": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+        "region": "legend"
+      },
+      {
+        "case": 11,
+        "figure": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+        "region": "legend"
+      },
+      {
+        "case": 14,
+        "figure": "FracPaQ2D_IYXnodes_traces_SD11A.png",
+        "region": "legend"
+      },
+      {
+        "case": 16,
+        "figure": "guiFracPaQ2D_graphtracemap_SD11A.png",
+        "region": "legend"
+      }
+    ],
+    "marker_discussion": {
+      "square_cases": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        16
+      ],
+      "circle_cases": [
+        14
+      ],
+      "diagnosis": "Markers are specified as squares/circles; custom native-raster material rendering and minimum legend edge width produce the clipped-corner/lobed appearance. No scientific requirement for those artifacts. Production rendering has not been changed during discussion.",
+      "case16_colour_feedback": "User considers matching line/marker colours more appropriate than the native automatic-cycle legend colours; shape remains under discussion."
+    }
+  },
+  "status": "Implemented, verified and final appearance accepted for cases 1–16. Three mechanical propagation regions independently proved; raw SSIM retained.",
+  "carried_unchanged_accepted_regions": [
+    {
+      "figure": "FracPaQ2D_dilationtendencymap_SD11A.png",
+      "region": "title"
+    },
+    {
+      "figure": "FracPaQ2D_fracsuscepmap_SD11A.png",
+      "region": "title"
+    },
+    {
+      "figure": "FracPaQ2D_CSFmap_SD11A.png",
+      "region": "title"
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "region": "parameter_annotation"
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "region": "parameter_annotation"
+    },
+    {
+      "figure": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "region": "parameter_annotation"
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "region": "parameter_annotation"
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "region": "parameter_annotation"
+    },
+    {
+      "figure": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "region": "parameter_annotation"
+    },
+    {
+      "figure": "FracPaQ2D_Mohrplot_SD11A.png",
+      "region": "legend"
+    },
+    {
+      "figure": "FracPaQ2D_cracktensor_SD11A.png",
+      "region": "legend"
+    }
+  ],
+  "changed_previously_reviewed_regions": [
+    {
+      "figure": "guiFracPaQ2D_intensityalonggraph_SD11A.png",
+      "region": "title",
+      "reason": "Marker overlaps the broad title ROI; title wording/style unchanged, strict pixel acceptance requires current-image review."
+    },
+    {
+      "figure": "guiFracPaQ2D_densityalonggraph_SD11A.png",
+      "region": "title",
+      "reason": "Marker overlaps the broad title ROI; title wording/style unchanged, strict pixel acceptance requires current-image review."
+    }
+  ],
+  "after_primary_images": {
+    "FracPaQ2D_tracemap_SD11A.png": "e8fda7aa76ae9281a52dc7ac7df46796ae6c61d4a4b2570397b0aeaf2cec0be0",
+    "FracPaQ2D_segmentstrikemap_SD11A.png": "f94940d0cfd658b58754d9960acce4751dbcc7ee689545b3cb268ffc5ad3dbc0",
+    "FracPaQ2D_histotracelength_SD11A.png": "c533e990210b8c41f7b2f0cf1a6165f4056323d77c657a663a1383ed18870d3d",
+    "FracPaQ2D_histosegmentlength_SD11A.png": "7fd20247a00de021fbbc20201839d90d47038007c6bf3cf8318d35bbe083f1ef",
+    "FracPaQ2D_loglogplottracelengthdensity_SD11A.png": "da2ac00d9e1e2972dcf8a1ae63e3094ca37178942821d9c190ed1595e85126fe",
+    "FracPaQ2D_loglogplottracelength_SD11A.png": "ab9d0e0c242448236374d62b8c3c94ae82bbe164ba9d432d81ae1280000438ae",
+    "FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png": "939306b79ed83037c6bf2888303cb6d397c67955d0e7af38b0ac5b58fbaca85a",
+    "FracPaQ2D_loglogplotsegmentlength_SD11A.png": "b5642f4ca5712b57407cb1c283bf0a226ac4d03dba86e660144cee344a55b7be",
+    "FracPaQ2D_segmentlength_variogram_SD11A.png": "33b98b1700e7c286656ab5a78458177d8fec1b66a6a6b2d95298e1c265df0cf4",
+    "FracPaQ2D_histoangle_SD11A.png": "b40e7cc3642b012dd93b8f2527aa27d5f28eee03b023174a3609effc20887f1c",
+    "FracPaQ2D_permeability_polar_SD11A.png": "afaf31c191547575db9c2f7021665e950b50e08f98fdc6b677e4471ecef26840",
+    "guiFracPaQ2D_tracelengthalonggraph_SD11A.png": "4c46a91400c9403aff22e7d17d7a11cb6b73568c478e59169145ae48ba07eebf",
+    "guiFracPaQ2D_tracelengthfromgraph_SD11A.png": "cfad163e9666e4474e9de75cf1f71e398acf2458a1ed6cdb1389c240dd859226",
+    "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png": "ebe81910fa9df8dc4908b91447ba37f8c2f57c56aad0925daec80b34280b6810",
+    "FracPaQ2D_tracelengthsFittingExponential_SD11A.png": "a0fafa70cb09f253054bbb70ac88b8a53f8b298a4ae98c80816a2ad2240e6083",
+    "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png": "09fc337f13f8631d67dc8353e7db565f1af4892691ef9c17af2df0284f8309af",
+    "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png": "3f27e6ae14cce7edb40342a7ee22611d7952ce7731248a685346bf43631f8903",
+    "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png": "ac4df2a7cc2ef14015b0ec9ae68b5f1c9052553fe23a1147b7107a5655ffa519",
+    "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png": "5a6b74083e40db77d4b3b72a83f3c81b6ee02342f326ed02b9ffe3ed43415c94",
+    "FracPaQ2D_crossplotsegmentlengthangle_SD11A.png": "91ab822197cc5eb2740d92be1f323a2294057a88c2a164b478745a11f9861e0c",
+    "FracPaQ2D_roseangleEqArea_SD11A.png": "dc643ca29747f6de8a202e8bc47a7b302c2d228faf366307322200b96459caed",
+    "FracPaQ2D_Mohrplot_SD11A.png": "b1210da584e4da55aa9e5a9b2880f877583446ff3609f0bccece9309d60a75cd",
+    "FracPaQ2D_sliptendencymap_SD11A.png": "f55174527f4e44b7f9a825c950bfb39bb25ce20466d269c219d0ad6f42896688",
+    "FracPaQ2D_sliptendencyrose_SD11A.png": "32b0dbfd827774b77cb4d09f7705b1cb3f0ac044694119ea3c4b6b7409afae30",
+    "FracPaQ2D_dilationtendencymap_SD11A.png": "c33a9e97406ae6b91a6120bf832c159f03c99ac1b1c532cf3af15192443b1a46",
+    "FracPaQ2D_dilationtendencyrose_SD11A.png": "c4708c7f582f238d8add9d35f4e9022378ef63042aeff81f840c247568ff397c",
+    "FracPaQ2D_fracsuscepmap_SD11A.png": "addbd775981bb43ac50a7e217875130de6a1e782d3955f3acafb8e77330a41ca",
+    "FracPaQ2D_fracsusceprose_SD11A.png": "4b3c1ade9f01b3caa9d603f23904ef540bfee229fc609f39e49944a27ef48c5e",
+    "FracPaQ2D_CSFmap_SD11A.png": "4ddd070587ddff4229773bc0f5cfb771506250c0e05c662b61418be32e4d42d7",
+    "FracPaQ2D_CSFrose_SD11A.png": "2c1a8a50c5bc4dc230075f2220058ba718fbbb94aa62ba32dedc994e96f29386",
+    "FracPaQ2D_tracelengthmap_SD11A.png": "ce1f540de7d0d2ecbeb8ed191f44fd4e496604e098ade3f40c6989247db70ab4",
+    "FracPaQ2D_segmentlengthmap_SD11A.png": "d6dc4d7573d6b9268ab21cc8a64bc555b2645a32b00a66c85717b2289905280d",
+    "FracPaQ2D_scancircle_SD11A.png": "82c0b574c9d3d3679303d509cd53657502137fb007b365e56541dcf4de3bb31a",
+    "FracPaQ2D_intensityP21_SD11A.png": "17d1c42b41e339b16e2617fd5841a6006ad318d2da12df098ca982f1d0b49ab7",
+    "FracPaQ2D_densityP20_SD11A.png": "b0730824d7a27c7a0366e639f7ac8ae86448f4ec9a9e615ee4a756c370048a67",
+    "FracPaQ2D_blocksizecentroidmap_SD11A.png": "c35379ab3044395baacd268d33cbe3003ca778703f65325697e4a71bdafdcb26",
+    "FracPaQ2D_blocksizeloglog_SD11A.png": "a37a5557a0dc6c35b72ddf57944c736e64947bf3b304126fba2c3794350c4058",
+    "FracPaQ2D_blocksizehisto_SD11A.png": "81d7845208911dc916e1081b9c3dd772dfcba9a0604836c2fdcdb0b7fc55e71d",
+    "FracPaQ2D_IYXnodes_traces_SD11A.png": "8ae5f9d3847f0e7bdf57b051773f1d8264ea48375d1c89252d4717d8c5e4fc7e",
+    "FracPaQ2D_XYnodes_traces_heat_SD11A.png": "4baf2168a4a3d1d836f002802d81b92d97bb142e5911b304c937c3886e2e0aa3",
+    "FracPaQ2D_Inodes_traces_heat_SD11A.png": "fea92d2f499b5ac76bfde03ec351276283e6c368496f6c7d975d2294285a35f8",
+    "FracPaQ2D_IYXtriangle_SD11A.png": "99525efda07b44f627c9ba332ae78a0fd3363b39163001b19aaa17858cd2f696",
+    "FracPaQ2D_cracktensor_SD11A.png": "d4fd10c0b033cb09c1d960df42fdd08d70644964410eaa2d4c8cc3ad174b6d5d",
+    "FracPaQ2Dwavelet_a32_SD11A.png": "a0fc41801cbd60df5130de9069aa9407fb990cdc13eb6c560113ce494b96ff1d",
+    "guiFracPaQ2D_segmentlengthalonggraph_SD11A.png": "d33be0382beacc27f5f00e9950bd3b2aca80e9f6a3feb341d6a6152d037e7ae9",
+    "guiFracPaQ2D_segmentanglealonggraph_SD11A.png": "2b0c10b90b842a6d2116164cdf93e828f08236068dc80707f6894e36b106d678",
+    "guiFracPaQ2D_graphtracemap_SD11A.png": "011ba292de237b6958d93b7fb7a5a915dc7b79806f4cf4b3a15f0d5ce34ac58b",
+    "guiFracPaQ2D_intensityalonggraph_SD11A.png": "b3cfc45c45c5592aa8cfef0b43f9217f16c3fed287e0d422e0d995beaa74150c",
+    "guiFracPaQ2D_densityalonggraph_SD11A.png": "b945c0579e78cd01c834b046dfceccd101cad6695ad8f0c6f1101c08ceb2bf20",
+    "guiFracPaQ2D_segmentlengthfromgraph_SD11A.png": "5ffe16d6d775ba6d574f94614b2e74ad68931a903560035b2a80de2bc23a5567",
+    "guiFracPaQ2D_segmentanglefromgraph_SD11A.png": "13d79f1ab31508c4dc60d5dc762ff7f2b7f532accd8a4bd1fe79dde6effb2b76"
+  },
+  "changed_primary_figures": [
+    "FracPaQ2D_tracemap_SD11A.png",
+    "FracPaQ2D_loglogplottracelengthdensity_SD11A.png",
+    "FracPaQ2D_loglogplottracelength_SD11A.png",
+    "FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png",
+    "FracPaQ2D_loglogplotsegmentlength_SD11A.png",
+    "FracPaQ2D_segmentlength_variogram_SD11A.png",
+    "guiFracPaQ2D_tracelengthalonggraph_SD11A.png",
+    "guiFracPaQ2D_tracelengthfromgraph_SD11A.png",
+    "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+    "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+    "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+    "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+    "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+    "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+    "FracPaQ2D_crossplotsegmentlengthangle_SD11A.png",
+    "FracPaQ2D_blocksizecentroidmap_SD11A.png",
+    "FracPaQ2D_blocksizeloglog_SD11A.png",
+    "FracPaQ2D_IYXnodes_traces_SD11A.png",
+    "FracPaQ2D_IYXtriangle_SD11A.png",
+    "guiFracPaQ2D_segmentlengthalonggraph_SD11A.png",
+    "guiFracPaQ2D_segmentanglealonggraph_SD11A.png",
+    "guiFracPaQ2D_graphtracemap_SD11A.png",
+    "guiFracPaQ2D_intensityalonggraph_SD11A.png",
+    "guiFracPaQ2D_densityalonggraph_SD11A.png",
+    "guiFracPaQ2D_segmentlengthfromgraph_SD11A.png",
+    "guiFracPaQ2D_segmentanglefromgraph_SD11A.png"
+  ],
+  "after_production_modules": {
+    "pyfracpaq/__init__.py": "544535f4952c1ef24798b752d68697c1efdd44503f1e13b688ff73e04517f735",
+    "pyfracpaq/__main__.py": "8676a429c316292a45dfb6573fcba189cd13aeec716bf028b391505812dadc84",
+    "pyfracpaq/analysis/__init__.py": "55734bf037fefd36cd4253fc2d02b0c626c76442c50659d454ba08ee4a3dae3d",
+    "pyfracpaq/analysis/angles.py": "856f29206f3aea92bd879cab6284c0e682d411f611e99db18827513e738975a5",
+    "pyfracpaq/analysis/auxiliary.py": "3fb2e02e89d844d6229fa63e24c60fe289c876e03e5a978170935cad39bbc819",
+    "pyfracpaq/analysis/blocks.py": "0e4e86361afae58091c2b90c5f79a9ad2f95423f2dac77c5974f8ba48c5271ce",
+    "pyfracpaq/analysis/circular.py": "a55209fc8aa5317c33de9dafa363f1acc36657aa5f21ec9165f0deadfa22f8df",
+    "pyfracpaq/analysis/compatibility.py": "f4cb8e0dea707513189266e913b269e233298dfba0852d543379567dd85c6b51",
+    "pyfracpaq/analysis/connectivity.py": "ba39bf53398d24145f998631b09aa8f5653d6141c78ba02ecc72285dd6da721b",
+    "pyfracpaq/analysis/hough.py": "b7365dbe55f41032255fe1538f81536d79b163d90ed45be836b047bf5a9c3dda",
+    "pyfracpaq/analysis/ks.py": "a89702de55653cf1258a7dcf3db4d0731b411a95a578ad8c9aea3eabbdd02c5f",
+    "pyfracpaq/analysis/lengths.py": "b927c3216ae1192b682674cd6dc6e0294c54f2e720a6fe6957dcfb3df176747e",
+    "pyfracpaq/analysis/maps.py": "54414f6efbc788d5d6e085e0c3018ce58d7c17e0aa8abf40be6d7928f4bc4140",
+    "pyfracpaq/analysis/mle.py": "aa60f3f1b0409d9c4c4efd722f0ea72f2330fbb56656b762a5bd41f2f3593d59",
+    "pyfracpaq/analysis/palettes.py": "e3b03fe9f0a4f20af0bdec80afee33db902dc7647c8be889d71f594837308fba",
+    "pyfracpaq/analysis/preprocess.py": "abc603313a5e5b2ff7158536e936d2779625c9ba152f7ed8d1d7fc6558c9d0d1",
+    "pyfracpaq/analysis/profiles.py": "2e65174358d59ae79061688b4647fbeeac7e085e86ed830f77e3ed9c6915ebc3",
+    "pyfracpaq/analysis/registry.py": "f9cfc173129b692df5dded0f8203c3ad2176b2e48c80d9be9d9450376d19608e",
+    "pyfracpaq/analysis/roses.py": "a9054a0b334667c8fda516873f7f328e4664ffc4a93c1f6436f18817c8f42e20",
+    "pyfracpaq/analysis/stability.py": "b5d7a973a38eb2e797df53e3cb3e3cbffa7571c5d33e9d4524d96c93b9fcaf33",
+    "pyfracpaq/analysis/tensors.py": "4b4fcc59c86f64dd281b7f73d2a7205de57aabd34bf3ab1a5e0ed46c91c0ce83",
+    "pyfracpaq/analysis/variogram.py": "c13c42ebf9c097735b79e1d9a9169d139bcf4b54fd82fc94907ca3e527fbb7e5",
+    "pyfracpaq/analysis/wavelets.py": "fb2702f0b90c2622958a31220d5baa9bb6458f99b5f70aa946fe9998238b9e13",
+    "pyfracpaq/app.py": "42084bf54bc25e53c9010790fdf28468139e37168093a3de2718c453f48e627a",
+    "pyfracpaq/domain/__init__.py": "994040f608488a3ac5d5252c9e9d76884a434096420117af196685bb6f0bef07",
+    "pyfracpaq/domain/construction.py": "95b8eb40852845c7fd8ee45257721ffc58af39c78cd09fcbc0ca51cc45229000",
+    "pyfracpaq/domain/execution.py": "4a1c65f5bc740b1fb3b7326c1abe547b24815b887c1d3a1b8169a49ecccb8053",
+    "pyfracpaq/domain/models.py": "c1f05c5680e795e5d615c9e086b01a07a281b993a91d84d268be44b4997e93f0",
+    "pyfracpaq/geometry/__init__.py": "8075b128c5f7edccf01a11dfaf779b58ca1652ed7f101cb8186cb53ded9fdbb7",
+    "pyfracpaq/geometry/circles.py": "712fcdd9d3a18c57a97d799cbf7eed2b85b3a4881524e008f74a7333779caed1",
+    "pyfracpaq/geometry/intersections.py": "0de7e3f38af61225c01bcea4ff9b8306f60858191592f198782175e72a204dcb",
+    "pyfracpaq/geometry/primitives.py": "7dd3732ad9e0199d5480f3278cfd4e38a06d0f37739359e12838f5a86f56664f",
+    "pyfracpaq/geometry/profiles.py": "36a14b8008fb36f064af862421cd427356c3ede3195aef67e5c514d9a90550a5",
+    "pyfracpaq/gui/__init__.py": "56cbb40e51b5a4468d919bbed3f78c71c14960f1d21d94de03159b659be3a06e",
+    "pyfracpaq/gui/controls.py": "3bf956417c508027ad981d340694e5dc6365b7125fb463bbf3069b6e5b434578",
+    "pyfracpaq/gui/figures.py": "780d226f8485340b22bde18c9683ef2dfba14bae6523b1848766e8781f94dad3",
+    "pyfracpaq/gui/layout.py": "fc21bf2bf9dfa3446a767b04214184bacd65da837b149074f217d65fc044e754",
+    "pyfracpaq/gui/main_window.py": "d8b2258e3e631f8e81e66cc21ca9bd508be23e1c93ba75f2570eda547c284465",
+    "pyfracpaq/gui/profile_selection.py": "58b8df0f89f2407bf0057aaa20eb8968e642ee78cdb0f57bc3af3e54f8826748",
+    "pyfracpaq/gui/style.py": "7eb26371c4832c6847550e89eadfc0bf3905706e56b6d288f9e143dfc02b16ba",
+    "pyfracpaq/gui/wavelet_dialog.py": "9526f3e4469373e57fb4e159b07c498ddd1e399f0ee65f2c8d3beb1f644f9879",
+    "pyfracpaq/io/__init__.py": "834f3abe34a659ff646749ddc5c7c0e177f1063e2e9daf00315609505b065c5e",
+    "pyfracpaq/io/angles.py": "2c1c88fd66118cf3c9ac3061fd3c12f898651fe3ce864baf947575717aefed90",
+    "pyfracpaq/io/block_raster.py": "57522ba6d3964b0fa7a07cf53c619f1b64152e90837a3d9235ef7b1395f8bf43",
+    "pyfracpaq/io/circular.py": "fc97df44232fada87b7adb6bc76a38921f0fcb251161530bc4bc94783d4ec824",
+    "pyfracpaq/io/colours.py": "414f9d3bd289c909c3feaf4469fb8d29735b5e923d40e59424c67fb3a50b9ff6",
+    "pyfracpaq/io/connectivity.py": "22d361d1716e9a86f9b721131f66d75910d9ab058299f8cc72e3eff8a3d681e2",
+    "pyfracpaq/io/figures.py": "7892794e3eb9995c868a5c998f47319c33653d900a6b39238fb04b3e09f3306b",
+    "pyfracpaq/io/images.py": "80b13b2013ca09c9822fe84f467d931ebb0341cd7c189216ba9122efe6a90432",
+    "pyfracpaq/io/lengths.py": "0abc5a94a7a3dcdb1cb22e8615159bc2c0c2e67216e3d13e8edd9aa0097734b6",
+    "pyfracpaq/io/move.py": "1982f47ebe13c9c250af27487e77513b5252aa1ead0e31dffde3c9f9263f8d11",
+    "pyfracpaq/io/nodes.py": "c8b0d925ed71eee44068ad11b959671238d2779b4bfb50478c481804b8c2483b",
+    "pyfracpaq/io/stability.py": "7403248551d623c532cbcc9a5714a79024d00d016c5ed7ee39de548f0a0f7726",
+    "pyfracpaq/io/svg.py": "0b5d9d7a26f6c6f070fdbb2fb4ebaa6e13319e648f608fc908f014321329579f",
+    "pyfracpaq/io/text.py": "b0a50c886dbc55bc60ed99b2bf7f914207474065131977d3e1c8f777aded0a04",
+    "pyfracpaq/io/wavelets.py": "bdebc44169fa0bbb7fe40948b6629fe9cb55a3ff49ffd7665e1febdf946f116c",
+    "pyfracpaq/plots/__init__.py": "bae0847b94c213816a7502948a562ac9b2d8de0ec1d0603c7ae51db7d32744aa",
+    "pyfracpaq/plots/angles.py": "4e204e555c03d24bb38c8a5c540f1b3fe561be956e7385f551f46e6ba040da39",
+    "pyfracpaq/plots/annotations.py": "ba8f3f74df809d2149f81369106520c2e829b24c439165ccbeec787ddef03799",
+    "pyfracpaq/plots/auxiliary.py": "bbd66d1229876e4c57472747fe48977b3d92c41a9bf06b40f4ed878193f2e00d",
+    "pyfracpaq/plots/blocks.py": "a9d887187d7fda1b1eb979c21ef21524c5b8d186203e59855e7045abd90d0d0d",
+    "pyfracpaq/plots/circular.py": "c74d75c96ee809263e09c0e3cd3d35421032b182a9e96e427cd87ddfdfd15cba",
+    "pyfracpaq/plots/colourbars.py": "f9f15b01c0058238b3aa209378321031f2187c719996367afcbcbfef4fcc04f0",
+    "pyfracpaq/plots/connectivity.py": "2ac466bab8c482ebbe9dd3f6e985b1cef6c07018b105ced071439852761dc3fb",
+    "pyfracpaq/plots/dashes.py": "ed2e8b3afa1e793c9261c7ba7eb80d8df965bd6cae749b292f989388fec294c6",
+    "pyfracpaq/plots/grids.py": "cbb13c27b8892d4e82172fb123669b66c92a2e68dc84254f2d068c57442aabed",
+    "pyfracpaq/plots/hough.py": "febc101405bbe312d2aa144d1f3ad0ebf5775a22724415a9d8a40166fdfe813d",
+    "pyfracpaq/plots/legends.py": "7bb7628ead9ab2f46b934240d9942d65151566d20f9c8031f7a6d23172083493",
+    "pyfracpaq/plots/lengths.py": "b6845965bac68f3af73dd7fb3c973c26389ff9ca7d27dfb9beffbd3a89529d91",
+    "pyfracpaq/plots/maps.py": "a33efc5d491de87fc345cf40ea96d4589d62635619158a0f052afbffeace39df",
+    "pyfracpaq/plots/markers.py": "34e18d089a7aafe3dfe14733467cdb3828da5b0b3c7e2f3c3456e3bf0b70abb8",
+    "pyfracpaq/plots/mle.py": "c87db799e14bdc3a1f0bebcde2cf3d96182cccd41d808702f149a82a5be95b53",
+    "pyfracpaq/plots/preprocess.py": "9394e74908d0fd74cc42948cb3823084349dc0c2520ca00229e1244b3aba396f",
+    "pyfracpaq/plots/preview.py": "fd41293ce7de9e2571de9daea19745de0fb82d4e46ee7a4a3f4ea745bb4420f7",
+    "pyfracpaq/plots/profiles.py": "36ad36e09c152d2a12d044914f6800411d9ab0c2adb1ad63300988cb9b142a8d",
+    "pyfracpaq/plots/raster.py": "3bb14c3ce0ac03287cf6c3bfaef699aadd8bf99bb29a1a5745856e5f37282640",
+    "pyfracpaq/plots/results.py": "ca7bec00ffe01de430024dd10c06c7dd336bf912927a406a639ce5f47daa4346",
+    "pyfracpaq/plots/roses.py": "a4fef8ace1b350a80f7431551e836a22b0a88a502fc7f800ce299c0117c261e6",
+    "pyfracpaq/plots/stability.py": "3261b5d0c64e4de86c7d9cfa5d14dbd876a5865aee536902dda7ea22f7421423",
+    "pyfracpaq/plots/style.py": "7baf035b7cba4f659e72edae7dc1827fa44280d6597ca5ad35a11cb7b5c10eb2",
+    "pyfracpaq/plots/tensors.py": "40f34835c85be328cce3ccc83bc24a2e830d042fa14d23b2804eecd307126c9a",
+    "pyfracpaq/plots/tex.py": "cb22d592bbacf261f7ab0da08691b31f496259181da6e89690ee1d4b0e0daf15",
+    "pyfracpaq/plots/ticks.py": "9dd7956afa811ac9cfc6e42f7b927eda9cabf6a14bc4b1ca53304ddf13362412",
+    "pyfracpaq/plots/variogram.py": "3f84c09c52e9979f9a53b802dc52eeb82b37921075945425ce475ac380665de3",
+    "pyfracpaq/plots/wavelets.py": "4a47bf7b3acb76b7aa26dd5552553c813131f0ebea07b5aae7824e48509e34a2",
+    "pyfracpaq/resources/__init__.py": "8fb6bc0d227db7199f2854177e50f92d9734c1c465be0865c84f7007533c221d",
+    "pyfracpaq/tools/__init__.py": "b21e71eea2b3bd7b6e587004e0a3f1779732cbe31a40108fce62af71a4a0097d",
+    "pyfracpaq/tools/__main__.py": "86961f911350736d6a73b38fc56ad0c3f7b20313af1c7805b63cee592004c0e2",
+    "pyfracpaq/workers/__init__.py": "01e15e9232e8dcb336b4d28f0914ee215ec529fe7d12a2b4be63013e21c983bc",
+    "pyfracpaq/workers/jobs.py": "60673791483c8ae2617d4dcfcc7de88b5d32daf06c83dc6aae7a7887346db14e"
+  },
+  "changed_modules": [
+    "pyfracpaq/plots/maps.py",
+    "pyfracpaq/plots/markers.py",
+    "pyfracpaq/plots/raster.py",
+    "pyfracpaq/plots/style.py"
+  ],
+  "scientific_modules_unchanged": true,
+  "regression_report": "tests/reference/sprint16/final/geometric-markers-checks.json",
+  "review_gallery": "tests/reference/sprint16/final/marker-review/index.html",
+  "final_user_statement": "Aprovo todos de 1 a 16.",
+  "propagation_proof": "tests/reference/sprint16/final/marker-propagation-proof.json"
+}

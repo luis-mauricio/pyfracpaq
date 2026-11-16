@@ -1,0 +1,292 @@
+{
+  "scope": "Qt offscreen captures; not MATLAB reference or visual parity approval.",
+  "platform": "offscreen",
+  "qt_scale_factor": "1.5",
+  "device_pixel_ratio": 1.5,
+  "logical_size": [
+    1250,
+    739
+  ],
+  "startup": {
+    "logical_size": [
+      533,
+      451
+    ],
+    "available_size": [
+      533,
+      533
+    ],
+    "maximized": false
+  },
+  "navigation_geometry": {
+    "pbMapsTab": {
+      "actual": [
+        0,
+        8,
+        71,
+        50
+      ],
+      "expected": [
+        0,
+        8,
+        71,
+        50
+      ],
+      "maximum_deviation_pixels": 0
+    },
+    "pbLengthsTab": {
+      "actual": [
+        75,
+        8,
+        71,
+        50
+      ],
+      "expected": [
+        75,
+        8,
+        71,
+        50
+      ],
+      "maximum_deviation_pixels": 0
+    },
+    "pbAnglesTab": {
+      "actual": [
+        150,
+        8,
+        71,
+        50
+      ],
+      "expected": [
+        150,
+        8,
+        71,
+        50
+      ],
+      "maximum_deviation_pixels": 0
+    },
+    "pbFluidTab": {
+      "actual": [
+        225,
+        8,
+        71,
+        50
+      ],
+      "expected": [
+        225,
+        8,
+        71,
+        50
+      ],
+      "maximum_deviation_pixels": 0
+    },
+    "pbWaveletsTab": {
+      "actual": [
+        300,
+        8,
+        71,
+        50
+      ],
+      "expected": [
+        300,
+        8,
+        71,
+        50
+      ],
+      "maximum_deviation_pixels": 0
+    },
+    "pbGraphsTab": {
+      "actual": [
+        375,
+        8,
+        71,
+        50
+      ],
+      "expected": [
+        375,
+        8,
+        71,
+        50
+      ],
+      "maximum_deviation_pixels": 0
+    }
+  },
+  "navigation_border": "none",
+  "font": "Helvetica",
+  "input": "/Users/lm/developer/pyfracpaq/tests/fixtures/nodes/mixed.txt",
+  "input_sha256": "63b5d3d2d096b6831a58189a2ef36ef93a34f05ae9b86e396ed4e730abe8cf3a",
+  "captures": [
+    {
+      "state": "initial",
+      "path": "initial.png",
+      "sha256": "ea05cb33382ad674b51f99ddc63fdf425c1d0d30b0ed544e9a620492fec0f9e9",
+      "raster_size": [
+        1875,
+        1109
+      ]
+    },
+    {
+      "state": "preview",
+      "path": "preview.png",
+      "sha256": "127bd6ac5990b10c936ac093c7cedd119b1c592f3ea25e56ef732947365166c2",
+      "raster_size": [
+        1875,
+        1109
+      ]
+    },
+    {
+      "state": "maps",
+      "path": "maps.png",
+      "sha256": "127bd6ac5990b10c936ac093c7cedd119b1c592f3ea25e56ef732947365166c2",
+      "raster_size": [
+        1875,
+        1109
+      ]
+    },
+    {
+      "state": "lengths",
+      "path": "lengths.png",
+      "sha256": "018e6488f6d999371c7d2ee3263e42d551e056dfa87ae86eab6505c97ae1b63d",
+      "raster_size": [
+        1875,
+        1109
+      ]
+    },
+    {
+      "state": "angles",
+      "path": "angles.png",
+      "sha256": "6518dc947ecf21ab43be6914103e63015beee40593d3c45349fd091396fef789",
+      "raster_size": [
+        1875,
+        1109
+      ]
+    },
+    {
+      "state": "fluid",
+      "path": "fluid.png",
+      "sha256": "4593527f666f80204fc4366349626ed432e80390b3d01699e21303c54283cdbb",
+      "raster_size": [
+        1875,
+        1109
+      ]
+    },
+    {
+      "state": "wavelets",
+      "path": "wavelets.png",
+      "sha256": "ff6bc2b9d465e141e05faffed5260e9614e86087bdd58ccbccbc2d263d33e8d0",
+      "raster_size": [
+        1875,
+        1109
+      ]
+    },
+    {
+      "state": "graphs",
+      "path": "graphs.png",
+      "sha256": "a7027204ecd3fe711faa41636d2818dbb0114cefdf3a5079e0a341d849919c2d",
+      "raster_size": [
+        1875,
+        1109
+      ]
+    }
+  ],
+  "text_fit_violations": [],
+  "focus_check": {
+    "control": "edit_FilenameTag",
+    "has_focus": true
+  },
+  "macro_geometry": {
+    "axes_logo": [
+      988,
+      631,
+      244,
+      65
+    ],
+    "axes_icon": [
+      739,
+      7,
+      42,
+      51
+    ],
+    "uibgTabMaps": [
+      787,
+      75,
+      457,
+      477
+    ],
+    "text19": [
+      219,
+      5,
+      513,
+      47
+    ],
+    "uipanel1": [
+      10,
+      11,
+      202,
+      446
+    ],
+    "uibuttongroup7": [
+      10,
+      461,
+      202,
+      235
+    ],
+    "text_message": [
+      8,
+      705,
+      776,
+      24
+    ],
+    "uibgTabButtons": [
+      790,
+      1,
+      448,
+      68
+    ],
+    "pushbutton_run": [
+      792,
+      630,
+      87,
+      58
+    ],
+    "pushbutton_exit": [
+      890,
+      630,
+      87,
+      58
+    ],
+    "text4": [
+      847,
+      602,
+      371,
+      23
+    ],
+    "text55": [
+      791,
+      562,
+      145,
+      25
+    ],
+    "edit_FilenameTag": [
+      944,
+      561,
+      66,
+      24
+    ]
+  },
+  "macro_position_deviation_pixels": {
+    "axes_logo": 26,
+    "axes_icon": 0,
+    "uibgTabMaps": 0,
+    "text19": 0,
+    "uipanel1": 0,
+    "uibuttongroup7": 0,
+    "text_message": 0,
+    "uibgTabButtons": 0,
+    "pushbutton_run": 0,
+    "pushbutton_exit": 0,
+    "text4": 0,
+    "text55": 0,
+    "edit_FilenameTag": 0
+  },
+  "reference_limit": "FIG parent-relative control rectangles with integer rounding, explicit panel title insets and local repairs for clipped labels. Supplied manual screenshots guide proportions/style; not native MATLAB pixel parity approval."
+}

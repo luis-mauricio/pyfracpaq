@@ -1,0 +1,83 @@
+{
+  "S16-09_complete": false,
+  "execution_policy": "One point at a time. Stop after each completed point and wait for explicit user authorization.",
+  "completed_points": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "next_point": 5,
+  "next_point_authorized": false,
+  "points": [
+    {
+      "number": 1,
+      "title": "Revisão final da interface no macOS",
+      "complete": true
+    },
+    {
+      "number": 2,
+      "title": "Conferência das exportações da versão final",
+      "complete": true
+    },
+    {
+      "number": 3,
+      "title": "Consolidação de versão e documentação",
+      "complete": true
+    },
+    {
+      "number": 4,
+      "title": "Preparação e validação do código para clone/download",
+      "complete": true
+    },
+    {
+      "number": 5,
+      "title": "Disponibilização do código no GitHub",
+      "complete": false
+    }
+  ],
+  "point_1_evidence": "tests/reference/sprint16/delivery/point-1/summary.json",
+  "point_2_evidence": "tests/reference/sprint16/delivery/point-2/summary.json",
+  "point_3_evidence": "tests/reference/sprint16/delivery/point-3/summary.json",
+  "distribution": {
+    "decision": "docs/decisions/0019-source-distribution.md",
+    "method": "GitHub clone or download ZIP; run from project folder",
+    "runtime": "Python3.13; terminal or VS Code; Miniforge environment optional",
+    "install_project_required": false,
+    "installers_or_wheels_for_users": false,
+    "point_4_complete": true,
+    "local_package_checks": "Historical internal evidence; do not complete the redefined point 4.",
+    "runtime_archive_policy": ".gitattributes/export-ignore: runtime ZIP excludes tests, audit reports and development tools; full clone preserves them."
+  },
+  "point_4_evidence": "tests/reference/sprint16/delivery/point-4/summary.json",
+  "point_5_preparation": {
+    "status": "documents_approved_pending_user_upload",
+    "readme": "README.md",
+    "manual_pdf": "docs/manual/pyfracpaq-user-manual.pdf",
+    "manual_latex": "docs/manual/pyfracpaq-user-manual.tex",
+    "manual_pages": 73,
+    "upload_owner": "user",
+    "agent_commit_allowed": false,
+    "agent_push_allowed": false,
+    "remote_verification": "Pending user upload and repository link; S16-09 remains open.",
+    "readme_language": "en",
+    "manuals": {
+      "pt-BR": {
+        "pdf": "docs/manual/pyfracpaq-user-manual.pdf",
+        "latex": "docs/manual/pyfracpaq-user-manual.tex",
+        "pages": 73,
+        "numbered_figures": 51
+      },
+      "en-GB": {
+        "pdf": "docs/manual/pyfracpaq-user-manual-en.pdf",
+        "latex": "docs/manual/pyfracpaq-user-manual-en.tex",
+        "pages": 71,
+        "numbered_figures": 51
+      }
+    },
+    "bilingual_evidence": "tests/reference/sprint16/delivery/point-5/bilingual-documentation-checks.json",
+    "documents_approved_by_user": true,
+    "planning_document": "docs/planning/PRD.md",
+    "organisation_evidence": "tests/reference/sprint16/delivery/point-5/repository-organisation.json"
+  }
+}

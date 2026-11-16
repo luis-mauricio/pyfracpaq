@@ -98,7 +98,7 @@ class MainWindow(QMainWindow):
             can_pick=lambda: self.dataset is not None and not self.busy and not self._closing)
         c.add('axes_tracemap', self.canvas)
         self.board.anchor('axes_tracemap', self.canvas)
-        for name, filename in [('axes_logo', 'FracPaQlogo.jpeg'),
+        for name, filename in [('axes_logo', 'pyfracpaq-logo.png'),
                                ('axes_icon', 'FracPaQicon.jpeg')]:
             pixmap = QPixmap()
             pixmap.loadFromData(resource_bytes(filename))
@@ -114,8 +114,21 @@ class MainWindow(QMainWindow):
         self.board.position_preview_axes()
         available = self.screen().availableGeometry()
         self.resize(initial_window_size(available.size()))
-        self.move(available.center() - self.rect().center())
+        self.move(available.left(),available.top()+(available.height()-self.height())//2)
+        self._startup_width_pending=True
         LOG.info('PyFracPaQ %s — FracPaQ version 2.8 reference', __version__)
+
+    def showEvent(self,event) -> None:
+        super().showEvent(event)
+        if self._startup_width_pending:
+            self._startup_width_pending=False
+            # Window decorations are measurable after the first show. Include
+            # them in the requested screen width, without maximizing height.
+            available=self.screen().availableGeometry()
+            borders=self.frameGeometry().width()-self.width()
+            self.resize(max(1,available.width()-borders),self.height())
+            self.move(available.left(),available.top()+max(
+                0,(available.height()-self.frameGeometry().height())//2))
 
     @property
     def busy(self) -> bool:

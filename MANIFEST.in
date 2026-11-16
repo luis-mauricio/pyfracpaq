@@ -1,0 +1,7 @@
+include README.md CHANGELOG.md LICENSE THIRD_PARTY_NOTICES.md
+include requirements.txt requirements-dev.txt run_gui.py
+recursive-include docs *.md
+recursive-include examples *.md *.py *.txt *.svg *.tif *.tiff
+prune tests
+prune fracpaq-matlab
+global-exclude __pycache__ *.py[cod] .DS_Store .env .env.*
