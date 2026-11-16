@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-14",
+  "os": "macOS27.2.1 arm64",
+  "vscode": "1.146.0",
+  "interpreter": "CPython3.13.18 .venv/bin/python",
+  "method": "Actual VS Code UI Run Python File, then integrated terminal module entrypoint; native Cocoa app inspected via computer use.",
+  "checks": [
+    "Initial/Preview/six tabs",
+    "Browse cancel",
+    "Native file chooser accepts spaces/accents and uppercase TXT",
+    "Statistics2traces/3segments/5nodes",
+    "Run generates5PNG/4TXT",
+    "Actual FigureWindow rose/toolbar/colourbar observed",
+    "Main Exit and later application Quit returned terminal prompt",
+    "Post-fix native Cmd+W closes the focused FigureWindow and leaves the owner usable",
+    "Final Exit closes remaining own figures and restores the terminal prompt"
+  ],
+  "font": "Helvetica after source reference capture; plot Arial",
+  "source_preservation": "Outputs only in /tmp/pyfracpaq-s16-desktop; no user outputs replaced.",
+  "artifacts": [
+    {
+      "path": "/tmp/pyfracpaq-s16-desktop/FracPaQ2DEZROSE_Run1.txt",
+      "sha256": "423ad576d129f0de3694718e2d2458d4c4b86c6955e0b3d8758bca66025f0140",
+      "bytes": 42
+    },
+    {
+      "path": "/tmp/pyfracpaq-s16-desktop/FracPaQ2D_histosegmentlength_Run1.png",
+      "sha256": "fea767ef6fdd0f9b075742598bd6d33e6071fbdc417549c639bc3897477db261",
+      "bytes": 208350
+    },
+    {
+      "path": "/tmp/pyfracpaq-s16-desktop/FracPaQ2D_histotracelength_Run1.png",
+      "sha256": "70380b7e25e186124dc4a715ccb4f7d49156fa5a4d206fd4b91c1aa89322b6d1",
+      "bytes": 200059
+    },
+    {
+      "path": "/tmp/pyfracpaq-s16-desktop/FracPaQ2D_roseangleEqArea_Run1.png",
+      "sha256": "6d036663845ad905d8dca62338b90178f90419ec2b5376affe23e3b77b8769c5",
+      "bytes": 623340
+    },
+    {
+      "path": "/tmp/pyfracpaq-s16-desktop/FracPaQ2D_segmentstrikemap_Run1.png",
+      "sha256": "722b4445efa2a99fb41b9e475000a7cc8565ccb6a0d2be68e89e5d40313e74da",
+      "bytes": 214363
+    },
+    {
+      "path": "/tmp/pyfracpaq-s16-desktop/FracPaQ2D_tracemap_Run1.png",
+      "sha256": "4d2109494426131b5ccd042de7eaa945b24f789f1751a93eb2b44f0afc05f08f",
+      "bytes": 183351
+    },
+    {
+      "path": "/tmp/pyfracpaq-s16-desktop/FracPaQ2Dsegmentangleslengths_Run1.txt",
+      "sha256": "ac9ff164df4eb9ba171f060a573cf6dde4d888644a27f539ee84050081d104af",
+      "bytes": 42
+    },
+    {
+      "path": "/tmp/pyfracpaq-s16-desktop/FracPaQ2Dsegmentlengths_Run1.txt",
+      "sha256": "f447e1f74253d0203776bea9eb20ee1393ae4645f6ea1ccc1ef372d17dc270f7",
+      "bytes": 21
+    },
+    {
+      "path": "/tmp/pyfracpaq-s16-desktop/FracPaQ2Dtracelengths_Run1.txt",
+      "sha256": "95c39eed8d52ed727c8bc15d27443510ec82cf42edda107332e265d6e8a1f590",
+      "bytes": 14
+    }
+  ],
+  "limits": "Manual native smoke; no full pixel/DPI acceptance claim. Windows/Linux explicitly deferred to user."
+}

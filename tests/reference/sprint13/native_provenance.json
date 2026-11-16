@@ -1,0 +1,237 @@
+{
+  "date": "2026-11-14",
+  "native_version": "24.2.0.3212159 (R2024b) Update 9",
+  "capture_script": "scripts/capture_native_s1213.m",
+  "capture_script_sha256": "a336b1abd6c3ca753db1fd6b0d5141f9486f8b4b92de4fbe728c37440db3d3b1",
+  "source_manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7",
+  "original_files_sha256_verified": 164,
+  "extra_original_folder_files_preserved": [
+    {
+      "path": "FracPaQ2D_histosegmentlength_Run1.png",
+      "sha256": "40432818e85ebdfb2599d0d1bea58f557cf5992af2872442385fbe7a1ebed908"
+    },
+    {
+      "path": "FracPaQ2D_histotracelength_Run1.png",
+      "sha256": "99d26d3653cfe46c4c012e6de5c5729c8ea823cc367629df7d49653fdd3eb96f"
+    },
+    {
+      "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+      "sha256": "f3c3d3e634a477f64c75c8f16c977d5f61ade54547996a2a76f6403a09f48266"
+    },
+    {
+      "path": "FracPaQ2D_tracelengthmap_Run1.png",
+      "sha256": "e94c17131fa2052be91e7fe3b7c44f830b5354f9d407f0503e0ea37686d557cf"
+    },
+    {
+      "path": "FracPaQ2D_tracemap_Run1.png",
+      "sha256": "781ac030cb77dabe45b557c0d59967455473ffdb68140f2339244af3d89db048"
+    },
+    {
+      "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+      "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7"
+    },
+    {
+      "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+      "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839"
+    },
+    {
+      "path": "FracPaQ2Dtracelengths_Run1.txt",
+      "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "tests/reference/sprint13/native/graph_arrays.mat",
+      "sha256": "a471f014b2bedeb0e693b5ae953a435caa9d26f8331c9183e8c85b7e42313ca2",
+      "bytes": 1788,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_densityalonggraph_native.png",
+      "sha256": "198789ccd5c49295bc0ffae8ce0bc882282eb8955b0bdeca136cf17229941421",
+      "bytes": 171387,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_densityalonggraph_native_density_only.png",
+      "sha256": "47f2211bfaade95fc617fe0cc492c15b9cd2a33d64ed764a4d5f7856eac0bd49",
+      "bytes": 171387,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_graphtracemap_native.png",
+      "sha256": "485205ebe61f35b8addba4efbb60592007f5bd0bb705f9e1354351b4dc0d28ec",
+      "bytes": 202177,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_graphtracemap_native_density_only.png",
+      "sha256": "b7a8fad9c8dd57d8278e8cb31fd963ef89e82031d1f26b12d49bec4adf7e4e7a",
+      "bytes": 202177,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_intensityalonggraph_native.png",
+      "sha256": "bbf9618e65932207b7dc45d75ab7804e610adec5169d1208661b735d8088b418",
+      "bytes": 177770,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_intensityalonggraph_native_density_only.png",
+      "sha256": "5e38a2e9a4b65590fde05c839c28ce748d1fa76f2fd49bad884ae076d55558ed",
+      "bytes": 177770,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_segmentanglealonggraph_native.png",
+      "sha256": "a3bd0d9578d5bdc29895d58e14119936cb0525490a9636b366fdb275b03bd18d",
+      "bytes": 198786,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_segmentanglefromgraph_native.png",
+      "sha256": "7a10dcb8f9ded976d7c4e0591d7aed376abe4b92169b75e91bdd0fc683e93c53",
+      "bytes": 192139,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_segmentlengthalonggraph_native.png",
+      "sha256": "be5db779debd116deea55bf56263e5738614ffa029f5bbd253b34c8d312fb56c",
+      "bytes": 168270,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_segmentlengthfromgraph_native.png",
+      "sha256": "6b84a41ab85b4aeba7ef19a0c22c3f07914ed5b6aff4d2fb26a667a693be10a2",
+      "bytes": 159347,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_tracelengthalonggraph_native.png",
+      "sha256": "2eb67b66ddc6fb4ca27bf3f75c6f7cd4444fc323d24e191002ad49c2721f303f",
+      "bytes": 173125,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/guiFracPaQ2D_tracelengthfromgraph_native.png",
+      "sha256": "7e47377a11de53862429f9a657c8c194eff249fc566991c1d13231b793f4ed07",
+      "bytes": 168499,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint13/native/native_calls.json",
+      "sha256": "f3db30faacc53da6a39fe7313f956352937c448f6b4d55871e8c09599752e9ce",
+      "bytes": 296,
+      "role": "Actual supplied MATLAB source execution output"
+    }
+  ],
+  "limitations": "Native outputs are preserved. Approved Q-14/P20 differences are recorded separately; renderer pixel identity is not claimed."
+}

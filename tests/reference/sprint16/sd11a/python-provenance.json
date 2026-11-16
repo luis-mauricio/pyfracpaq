@@ -1,0 +1,924 @@
+{
+  "input_sha256": "96bafa56537444279a748c3f4b7a4300f7e73341a04d2ba4ff8cf1299ad74688",
+  "script": "scripts/compare_sd11a.py",
+  "script_sha256": "fd2ab4d1ee458ab68ec4698f618f94c4872cc954adeb773f919bb3a02d3bb406",
+  "parameters_sha256": "fcdf9e4d0feff41bfa1a8b9a9f438fb0ef57ead7391d99ef06a8ad33b1ef3e4f",
+  "implementation": [
+    {
+      "path": "pyfracpaq/__init__.py",
+      "sha256": "544535f4952c1ef24798b752d68697c1efdd44503f1e13b688ff73e04517f735"
+    },
+    {
+      "path": "pyfracpaq/__main__.py",
+      "sha256": "8676a429c316292a45dfb6573fcba189cd13aeec716bf028b391505812dadc84"
+    },
+    {
+      "path": "pyfracpaq/analysis/__init__.py",
+      "sha256": "55734bf037fefd36cd4253fc2d02b0c626c76442c50659d454ba08ee4a3dae3d"
+    },
+    {
+      "path": "pyfracpaq/analysis/angles.py",
+      "sha256": "856f29206f3aea92bd879cab6284c0e682d411f611e99db18827513e738975a5"
+    },
+    {
+      "path": "pyfracpaq/analysis/auxiliary.py",
+      "sha256": "3fb2e02e89d844d6229fa63e24c60fe289c876e03e5a978170935cad39bbc819"
+    },
+    {
+      "path": "pyfracpaq/analysis/blocks.py",
+      "sha256": "0e4e86361afae58091c2b90c5f79a9ad2f95423f2dac77c5974f8ba48c5271ce"
+    },
+    {
+      "path": "pyfracpaq/analysis/circular.py",
+      "sha256": "a55209fc8aa5317c33de9dafa363f1acc36657aa5f21ec9165f0deadfa22f8df"
+    },
+    {
+      "path": "pyfracpaq/analysis/compatibility.py",
+      "sha256": "e1ba74eafa1fee1972b4dbf55faa161975a0417d654c5f9bf555b9b3824184e5"
+    },
+    {
+      "path": "pyfracpaq/analysis/connectivity.py",
+      "sha256": "ba39bf53398d24145f998631b09aa8f5653d6141c78ba02ecc72285dd6da721b"
+    },
+    {
+      "path": "pyfracpaq/analysis/hough.py",
+      "sha256": "b7365dbe55f41032255fe1538f81536d79b163d90ed45be836b047bf5a9c3dda"
+    },
+    {
+      "path": "pyfracpaq/analysis/ks.py",
+      "sha256": "a89702de55653cf1258a7dcf3db4d0731b411a95a578ad8c9aea3eabbdd02c5f"
+    },
+    {
+      "path": "pyfracpaq/analysis/lengths.py",
+      "sha256": "b927c3216ae1192b682674cd6dc6e0294c54f2e720a6fe6957dcfb3df176747e"
+    },
+    {
+      "path": "pyfracpaq/analysis/maps.py",
+      "sha256": "54414f6efbc788d5d6e085e0c3018ce58d7c17e0aa8abf40be6d7928f4bc4140"
+    },
+    {
+      "path": "pyfracpaq/analysis/mle.py",
+      "sha256": "aa60f3f1b0409d9c4c4efd722f0ea72f2330fbb56656b762a5bd41f2f3593d59"
+    },
+    {
+      "path": "pyfracpaq/analysis/palettes.py",
+      "sha256": "e3b03fe9f0a4f20af0bdec80afee33db902dc7647c8be889d71f594837308fba"
+    },
+    {
+      "path": "pyfracpaq/analysis/preprocess.py",
+      "sha256": "abc603313a5e5b2ff7158536e936d2779625c9ba152f7ed8d1d7fc6558c9d0d1"
+    },
+    {
+      "path": "pyfracpaq/analysis/profiles.py",
+      "sha256": "2e65174358d59ae79061688b4647fbeeac7e085e86ed830f77e3ed9c6915ebc3"
+    },
+    {
+      "path": "pyfracpaq/analysis/registry.py",
+      "sha256": "f9cfc173129b692df5dded0f8203c3ad2176b2e48c80d9be9d9450376d19608e"
+    },
+    {
+      "path": "pyfracpaq/analysis/roses.py",
+      "sha256": "a9054a0b334667c8fda516873f7f328e4664ffc4a93c1f6436f18817c8f42e20"
+    },
+    {
+      "path": "pyfracpaq/analysis/stability.py",
+      "sha256": "b5d7a973a38eb2e797df53e3cb3e3cbffa7571c5d33e9d4524d96c93b9fcaf33"
+    },
+    {
+      "path": "pyfracpaq/analysis/tensors.py",
+      "sha256": "4b4fcc59c86f64dd281b7f73d2a7205de57aabd34bf3ab1a5e0ed46c91c0ce83"
+    },
+    {
+      "path": "pyfracpaq/analysis/variogram.py",
+      "sha256": "c13c42ebf9c097735b79e1d9a9169d139bcf4b54fd82fc94907ca3e527fbb7e5"
+    },
+    {
+      "path": "pyfracpaq/analysis/wavelets.py",
+      "sha256": "c35891f5e66abc81de401b6e72841fd1c53428cdc5e4893c594e01e28e5003d9"
+    },
+    {
+      "path": "pyfracpaq/app.py",
+      "sha256": "42084bf54bc25e53c9010790fdf28468139e37168093a3de2718c453f48e627a"
+    },
+    {
+      "path": "pyfracpaq/domain/__init__.py",
+      "sha256": "994040f608488a3ac5d5252c9e9d76884a434096420117af196685bb6f0bef07"
+    },
+    {
+      "path": "pyfracpaq/domain/construction.py",
+      "sha256": "95b8eb40852845c7fd8ee45257721ffc58af39c78cd09fcbc0ca51cc45229000"
+    },
+    {
+      "path": "pyfracpaq/domain/execution.py",
+      "sha256": "4a1c65f5bc740b1fb3b7326c1abe547b24815b887c1d3a1b8169a49ecccb8053"
+    },
+    {
+      "path": "pyfracpaq/domain/models.py",
+      "sha256": "c1f05c5680e795e5d615c9e086b01a07a281b993a91d84d268be44b4997e93f0"
+    },
+    {
+      "path": "pyfracpaq/geometry/__init__.py",
+      "sha256": "8075b128c5f7edccf01a11dfaf779b58ca1652ed7f101cb8186cb53ded9fdbb7"
+    },
+    {
+      "path": "pyfracpaq/geometry/circles.py",
+      "sha256": "712fcdd9d3a18c57a97d799cbf7eed2b85b3a4881524e008f74a7333779caed1"
+    },
+    {
+      "path": "pyfracpaq/geometry/intersections.py",
+      "sha256": "0de7e3f38af61225c01bcea4ff9b8306f60858191592f198782175e72a204dcb"
+    },
+    {
+      "path": "pyfracpaq/geometry/primitives.py",
+      "sha256": "7dd3732ad9e0199d5480f3278cfd4e38a06d0f37739359e12838f5a86f56664f"
+    },
+    {
+      "path": "pyfracpaq/geometry/profiles.py",
+      "sha256": "36a14b8008fb36f064af862421cd427356c3ede3195aef67e5c514d9a90550a5"
+    },
+    {
+      "path": "pyfracpaq/gui/__init__.py",
+      "sha256": "56cbb40e51b5a4468d919bbed3f78c71c14960f1d21d94de03159b659be3a06e"
+    },
+    {
+      "path": "pyfracpaq/gui/controls.py",
+      "sha256": "3bf956417c508027ad981d340694e5dc6365b7125fb463bbf3069b6e5b434578"
+    },
+    {
+      "path": "pyfracpaq/gui/figures.py",
+      "sha256": "780d226f8485340b22bde18c9683ef2dfba14bae6523b1848766e8781f94dad3"
+    },
+    {
+      "path": "pyfracpaq/gui/layout.py",
+      "sha256": "fc21bf2bf9dfa3446a767b04214184bacd65da837b149074f217d65fc044e754"
+    },
+    {
+      "path": "pyfracpaq/gui/main_window.py",
+      "sha256": "d8b2258e3e631f8e81e66cc21ca9bd508be23e1c93ba75f2570eda547c284465"
+    },
+    {
+      "path": "pyfracpaq/gui/profile_selection.py",
+      "sha256": "58b8df0f89f2407bf0057aaa20eb8968e642ee78cdb0f57bc3af3e54f8826748"
+    },
+    {
+      "path": "pyfracpaq/gui/style.py",
+      "sha256": "7eb26371c4832c6847550e89eadfc0bf3905706e56b6d288f9e143dfc02b16ba"
+    },
+    {
+      "path": "pyfracpaq/gui/wavelet_dialog.py",
+      "sha256": "9526f3e4469373e57fb4e159b07c498ddd1e399f0ee65f2c8d3beb1f644f9879"
+    },
+    {
+      "path": "pyfracpaq/io/__init__.py",
+      "sha256": "834f3abe34a659ff646749ddc5c7c0e177f1063e2e9daf00315609505b065c5e"
+    },
+    {
+      "path": "pyfracpaq/io/angles.py",
+      "sha256": "2c1c88fd66118cf3c9ac3061fd3c12f898651fe3ce864baf947575717aefed90"
+    },
+    {
+      "path": "pyfracpaq/io/block_raster.py",
+      "sha256": "57522ba6d3964b0fa7a07cf53c619f1b64152e90837a3d9235ef7b1395f8bf43"
+    },
+    {
+      "path": "pyfracpaq/io/circular.py",
+      "sha256": "fc97df44232fada87b7adb6bc76a38921f0fcb251161530bc4bc94783d4ec824"
+    },
+    {
+      "path": "pyfracpaq/io/colours.py",
+      "sha256": "414f9d3bd289c909c3feaf4469fb8d29735b5e923d40e59424c67fb3a50b9ff6"
+    },
+    {
+      "path": "pyfracpaq/io/connectivity.py",
+      "sha256": "22d361d1716e9a86f9b721131f66d75910d9ab058299f8cc72e3eff8a3d681e2"
+    },
+    {
+      "path": "pyfracpaq/io/figures.py",
+      "sha256": "7892794e3eb9995c868a5c998f47319c33653d900a6b39238fb04b3e09f3306b"
+    },
+    {
+      "path": "pyfracpaq/io/images.py",
+      "sha256": "80b13b2013ca09c9822fe84f467d931ebb0341cd7c189216ba9122efe6a90432"
+    },
+    {
+      "path": "pyfracpaq/io/lengths.py",
+      "sha256": "0abc5a94a7a3dcdb1cb22e8615159bc2c0c2e67216e3d13e8edd9aa0097734b6"
+    },
+    {
+      "path": "pyfracpaq/io/move.py",
+      "sha256": "1982f47ebe13c9c250af27487e77513b5252aa1ead0e31dffde3c9f9263f8d11"
+    },
+    {
+      "path": "pyfracpaq/io/nodes.py",
+      "sha256": "c8b0d925ed71eee44068ad11b959671238d2779b4bfb50478c481804b8c2483b"
+    },
+    {
+      "path": "pyfracpaq/io/stability.py",
+      "sha256": "7403248551d623c532cbcc9a5714a79024d00d016c5ed7ee39de548f0a0f7726"
+    },
+    {
+      "path": "pyfracpaq/io/svg.py",
+      "sha256": "0b5d9d7a26f6c6f070fdbb2fb4ebaa6e13319e648f608fc908f014321329579f"
+    },
+    {
+      "path": "pyfracpaq/io/text.py",
+      "sha256": "b0a50c886dbc55bc60ed99b2bf7f914207474065131977d3e1c8f777aded0a04"
+    },
+    {
+      "path": "pyfracpaq/io/wavelets.py",
+      "sha256": "bdebc44169fa0bbb7fe40948b6629fe9cb55a3ff49ffd7665e1febdf946f116c"
+    },
+    {
+      "path": "pyfracpaq/plots/__init__.py",
+      "sha256": "bae0847b94c213816a7502948a562ac9b2d8de0ec1d0603c7ae51db7d32744aa"
+    },
+    {
+      "path": "pyfracpaq/plots/angles.py",
+      "sha256": "7455c035fb35fde6eb4fdca6f776d8abba867e04c87c528097f9aa4083bbd8da"
+    },
+    {
+      "path": "pyfracpaq/plots/auxiliary.py",
+      "sha256": "bbd66d1229876e4c57472747fe48977b3d92c41a9bf06b40f4ed878193f2e00d"
+    },
+    {
+      "path": "pyfracpaq/plots/blocks.py",
+      "sha256": "2e262a006b570376209f248feec82148831ba01385bd4210b78c21e3a359de46"
+    },
+    {
+      "path": "pyfracpaq/plots/circular.py",
+      "sha256": "68972b1c7e8c73ca2df70f1ee6d0ff957a2d81930cd566969086038e9c1a9943"
+    },
+    {
+      "path": "pyfracpaq/plots/colourbars.py",
+      "sha256": "062771b55beb0a306a819873971d609dc128909631f8c8a5a722b2a54b5714c2"
+    },
+    {
+      "path": "pyfracpaq/plots/connectivity.py",
+      "sha256": "a1ca43ff29acf65b5952c26a333586e1c565375b4140a5d9b4baacbaadce240e"
+    },
+    {
+      "path": "pyfracpaq/plots/hough.py",
+      "sha256": "ca951c87e0e5e2da1242ae494efa15b9f39e3b1a5aa9c9994b96e5060b9f5c3e"
+    },
+    {
+      "path": "pyfracpaq/plots/lengths.py",
+      "sha256": "ee25e2e65ce29f68334e94e3e7dac375cf6287a0391a564167748ffde609670b"
+    },
+    {
+      "path": "pyfracpaq/plots/maps.py",
+      "sha256": "14fb2d9d4ab076152b40b89a41fee5d47190c4bae030f8839914ba2a394c50b5"
+    },
+    {
+      "path": "pyfracpaq/plots/mle.py",
+      "sha256": "c3032ba6b9cf507afa23e0a72e92d1d2418bd7ba6f012c02ebeb7a81ce712a3f"
+    },
+    {
+      "path": "pyfracpaq/plots/preprocess.py",
+      "sha256": "9394e74908d0fd74cc42948cb3823084349dc0c2520ca00229e1244b3aba396f"
+    },
+    {
+      "path": "pyfracpaq/plots/preview.py",
+      "sha256": "fd41293ce7de9e2571de9daea19745de0fb82d4e46ee7a4a3f4ea745bb4420f7"
+    },
+    {
+      "path": "pyfracpaq/plots/profiles.py",
+      "sha256": "10fec163084e2835499dd4cb97e5bca96b3039a2bf18511ea341097c834e6dfc"
+    },
+    {
+      "path": "pyfracpaq/plots/results.py",
+      "sha256": "ca7bec00ffe01de430024dd10c06c7dd336bf912927a406a639ce5f47daa4346"
+    },
+    {
+      "path": "pyfracpaq/plots/roses.py",
+      "sha256": "a4fef8ace1b350a80f7431551e836a22b0a88a502fc7f800ce299c0117c261e6"
+    },
+    {
+      "path": "pyfracpaq/plots/stability.py",
+      "sha256": "a1141f4eee551c6b4c19bfb849832fc4fd5cb1c21f148ddbe0bccf15143e9052"
+    },
+    {
+      "path": "pyfracpaq/plots/style.py",
+      "sha256": "e51df27aae53ab152f82026603b5c2955257842b16d1a9423cd263962c653504"
+    },
+    {
+      "path": "pyfracpaq/plots/tensors.py",
+      "sha256": "75ebf74be40fa56b29ba4da626e88e946c62a3b94cfd9ce4c0837a168a09d757"
+    },
+    {
+      "path": "pyfracpaq/plots/variogram.py",
+      "sha256": "1594db3cea2d6387ab6dc16245c50698328f62c8ee6c208cebfa787e03898ac6"
+    },
+    {
+      "path": "pyfracpaq/plots/wavelets.py",
+      "sha256": "09afca45147b77eac592748c7ef1c97e0eac2f1085006ff599a61fcedc44f843"
+    },
+    {
+      "path": "pyfracpaq/resources/__init__.py",
+      "sha256": "8fb6bc0d227db7199f2854177e50f92d9734c1c465be0865c84f7007533c221d"
+    },
+    {
+      "path": "pyfracpaq/tools/__init__.py",
+      "sha256": "b21e71eea2b3bd7b6e587004e0a3f1779732cbe31a40108fce62af71a4a0097d"
+    },
+    {
+      "path": "pyfracpaq/tools/__main__.py",
+      "sha256": "86961f911350736d6a73b38fc56ad0c3f7b20313af1c7805b63cee592004c0e2"
+    },
+    {
+      "path": "pyfracpaq/workers/__init__.py",
+      "sha256": "01e15e9232e8dcb336b4d28f0914ee215ec529fe7d12a2b4be63013e21c983bc"
+    },
+    {
+      "path": "pyfracpaq/workers/jobs.py",
+      "sha256": "60673791483c8ae2617d4dcfcc7de88b5d32daf06c83dc6aae7a7887346db14e"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2DEZROSE_SD11A.txt",
+      "bytes": 15064,
+      "sha256": "477882701cbb8077201f56c05499e9ba132e8812db3f6cdd998df0c856915ee6"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_CSFmap_SD11A.png",
+      "bytes": 1788597,
+      "sha256": "33964ab0914e52f97a06fbe0ab40fb41d755524afad660d61ca483db56dcc14d"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_CSFrose_SD11A.png",
+      "bytes": 552272,
+      "sha256": "6ed60843029f32cf177fccfb4482a445f7aeb5d884b39e7ec70cce04bfdec315"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_IYXnodes_traces_SD11A.png",
+      "bytes": 1562513,
+      "sha256": "951734f7d37a33ee994db8c5099af8e75cbef911fc47910b106a52aa960a5666"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_IYXtriangle_SD11A.png",
+      "bytes": 509657,
+      "sha256": "a2ac513113f5448a55c0355df050303d19e9303cb49d2eae805babcdad481902"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_Inodes_traces_heat_SD11A.png",
+      "bytes": 218196,
+      "sha256": "6394832991ee71591cb968ca819d06f2abe709eaca9334cb1672d23ebddb5255"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_Mohrplot_SD11A.png",
+      "bytes": 291353,
+      "sha256": "26318e66ae301bf965dcdbacf85bc029377934d4bd2c00053787c7d63836e31d"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_XYnodes_traces_heat_SD11A.png",
+      "bytes": 229154,
+      "sha256": "06cb5450ffd8b6fbf3d86e3f6fe884289902aa40c3ab9ae4be8aecf0a9546473"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_blocksize.bmp",
+      "bytes": 3975078,
+      "sha256": "d671e18be92764d6218077b5a3ea5ed124709ca60ae1f453b04d24523b713942"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_blocksizecentroidmap_SD11A.png",
+      "bytes": 1530003,
+      "sha256": "2487d846a19d50c14cde31da83131b98d08508dfca265372d81c17a888903d91"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_blocksizehisto_SD11A.png",
+      "bytes": 193295,
+      "sha256": "553a929f221b23cbf806f3f5e607951e11c88d35cfce8f02d522fed9d8fe9fa6"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_blocksizeloglog_SD11A.png",
+      "bytes": 214758,
+      "sha256": "3b27882eed8330aa6817cbf284621f33fecd53ea02d277262dca00f58266865b"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_cracktensor_SD11A.png",
+      "bytes": 876886,
+      "sha256": "a83da7ec13dd15d340c11153376834f4c88bb953671023cca4e6f75583042955"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_crossplotsegmentlengthangle_SD11A.png",
+      "bytes": 263271,
+      "sha256": "65a5a234c632b750a89ced00de51286cc0ae4693b243497a2a10a21bf8f3be05"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_densityP20_SD11A.png",
+      "bytes": 253142,
+      "sha256": "2fcc03f69bbd39eb4ebe54f5a6bf8d145390e348d8efe109ca213814273ba0b5"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_dilationtendencymap_SD11A.png",
+      "bytes": 1692481,
+      "sha256": "71b1be993a1cf0d5a28dfe2fe70a37878c333b16d9a197a11afa11939417319a"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_dilationtendencyrose_SD11A.png",
+      "bytes": 690541,
+      "sha256": "d217d30ebc585eb7479340465dffafd358d0252d910404deaeac40862d0f7fd6"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_fracsuscepmap_SD11A.png",
+      "bytes": 1843191,
+      "sha256": "19a577b98ba5ff8444181393d5f35348872826f0f6cf6228f5072f1448b7f409"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_fracsusceprose_SD11A.png",
+      "bytes": 676914,
+      "sha256": "e6f6a2a5ffcff9b58d0c16a75b3f76c6eec1c0c12d9d444df7fb829f92c3d58a"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_histoangle_SD11A.png",
+      "bytes": 227915,
+      "sha256": "fd1499b2b631c4ad2cd8400f8735fd6a6e0a9f7ce9e6e6d2e6a6b9de971db441"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_histosegmentlength_SD11A.png",
+      "bytes": 211930,
+      "sha256": "216f706bc627b95f0f84618957c452a63bd79028d63db1f78fe1bbbb82651b9a"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_histotracelength_SD11A.png",
+      "bytes": 202198,
+      "sha256": "8995be83f473b1e5e2579718de36697d4f3fc9977080dce53e6b3ff29ea54ec1"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_intensityP21_SD11A.png",
+      "bytes": 242341,
+      "sha256": "533436e4a6806a77397d285e5a8fd4c8a2ca114fd4307994768cd58f00bbe3b1"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_loglogplotsegmentlength_SD11A.png",
+      "bytes": 348623,
+      "sha256": "d6ff69766df88c6b6d56d9eb2bb895572c0630e99c5beef8a5d7cb62bd5db74a"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png",
+      "bytes": 274977,
+      "sha256": "4be0045c4f681642a84e0675a6269252a5e00442ddc3bf9e0cc4386ef39121d2"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_loglogplottracelength_SD11A.png",
+      "bytes": 337652,
+      "sha256": "1e547d29eb08d68847c53b29b20767fd1dae5af440ba881baf69e5fcc2c69fce"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_loglogplottracelengthdensity_SD11A.png",
+      "bytes": 292362,
+      "sha256": "a11e9b0cd082f923783cda960b84806bd78bd6a91c3372c2252e6f4a54af5267"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_permeability_polar_SD11A.png",
+      "bytes": 703389,
+      "sha256": "43b6bd82c930fb3763c8a6a8035c86be6bf7705d335c31569aa7b6f39e1db9ba"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_roseangleEqArea_SD11A.png",
+      "bytes": 768785,
+      "sha256": "c16c6df22a78b2fac8e63323de418c6fa06156f6e5a04352a222c7b908ef66d3"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_scancircle_SD11A.png",
+      "bytes": 2196845,
+      "sha256": "ebd526b6997848a24eb81f9182cc5f6fa716f5f5e113b36e2bf55cfb1adca845"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_segmentlength_variogram_SD11A.png",
+      "bytes": 182895,
+      "sha256": "21a0e80d8474b0df5436a6d938badc0fb4d3e8afcde3296b02a8879d5b88b4dc"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_segmentlengthmap_SD11A.png",
+      "bytes": 1911751,
+      "sha256": "fae8f110d0eb277d2f6a645defd833facd552411c1ea45ab04ea89b246d3b190"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "bytes": 392950,
+      "sha256": "e710c3f7e0d14d33a87ba1e9b817b42216b1322b46b6064543092ffd34a8d205"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "bytes": 380752,
+      "sha256": "528a8f69971155df25ce2d29c3fa2fc157caf047cf3b2e8e36bba52c1aaae4e1"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "bytes": 402518,
+      "sha256": "f6c12dbcb52a101cd1a9ced79abe6074aa13bf1cc3fd1673a3286f2d19141a54"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_segmentstrikemap_SD11A.png",
+      "bytes": 1892537,
+      "sha256": "8e3642e0ad5dcc4488a5bdca9122e69d253329b0ec5365b369087e58c7d4a1c3"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_sliptendencymap_SD11A.png",
+      "bytes": 1842133,
+      "sha256": "a57c610ee3ab45195cafe5852ab4f5d3647e48fd60d2180bbb13d98aef1fedab"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_sliptendencyrose_SD11A.png",
+      "bytes": 705775,
+      "sha256": "8e2bb8cbb70080e554509040d3076c1912409e2aaec0665cbeda9f114ee98f75"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_tracelengthmap_SD11A.png",
+      "bytes": 1880715,
+      "sha256": "9704716278b59fd671274d884b50aa6d278433f5bd7331628c6dbc47e79f9223"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "bytes": 363794,
+      "sha256": "6fb99b2ff0f3e4736e17be49a66974af5bec6ea06234aa1be9bf8833644dc5cd"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "bytes": 392320,
+      "sha256": "5e928bf56fde3d93da2b6e2135dc4a201c1c9baa15e47d82d3125856d6b98d83"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "bytes": 420221,
+      "sha256": "7e08855c7c55280598c881d5d6296dff558d9b29fa92f9fe589401cbd4acda21"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_tracemap_SD11A.png",
+      "bytes": 2716226,
+      "sha256": "be59e4ef845bacfd46c6bc83fc83d7ca9313b9631f253ac68529e493fee50bc5"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2D_wavelet_traces.png",
+      "bytes": 212905,
+      "sha256": "09e224bd41674162f5237210807f78afaa624df947da5848dab2025168e7b728"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2Dconnectivity_SD11A.txt",
+      "bytes": 17,
+      "sha256": "856af0e2830eeeba531f83c8572376781c0dbd05ca5d78c78e048d0f480296d0"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2Ddensity_SD11A.txt",
+      "bytes": 4752,
+      "sha256": "291855b1677ff6f2a2fee4ad720709558ba146d3acc3e7e5a70fad93783c86ea"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2Dintensity_SD11A.txt",
+      "bytes": 4752,
+      "sha256": "c35400909e9b51e5db28564293ea85b9177340ebcb3b9d0a7e9862531ee6ec32"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2Dsegmentangleslengths_SD11A.txt",
+      "bytes": 15064,
+      "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2Dsegmentdata_SD11A.txt",
+      "bytes": 51753,
+      "sha256": "397995d68aac71eab15a5e7e6d58ff413d548402ebae71d6ef099f88c1633eaa"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2Dsegmentlengths_SD11A.txt",
+      "bytes": 7532,
+      "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2Dtracelengths_SD11A.txt",
+      "bytes": 3120,
+      "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2Dwavelet_a32_SD11A.png",
+      "bytes": 983616,
+      "sha256": "71c4992d70de3feb89c7e8396d60c7493b293efd13fec8bc82cfe237bec3ee2d"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/FracPaQ2Dwavelet_theta_a32_SD11A.txt",
+      "bytes": 74183,
+      "sha256": "d2efb54450714383526e8ecd4913de9d0d9598f5a34a5a1093e90136ea5358d3"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/arrays-schema.json",
+      "bytes": 219835,
+      "sha256": "e0f75f67bfe76386608162180a13fff177862db1ab762ea140b81bab6c7ca27a"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/arrays.npz",
+      "bytes": 28346697,
+      "sha256": "348c5111e44a645b0dc10ce66dcdabbaa8f2d611deb7a09e98551cc7cee85825"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/configuration.json",
+      "bytes": 4641,
+      "sha256": "dfbd2a47724dba801e2494c60dec21070c43b29630063c98ca6c37c881709f4c"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/guiFracPaQ2D_densityalonggraph_SD11A.png",
+      "bytes": 224283,
+      "sha256": "c2b70ee5a6072a47722295bfa173c13aaa6f34691ffdde8de6ea681394e8cdce"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/guiFracPaQ2D_graphtracemap_SD11A.png",
+      "bytes": 1480511,
+      "sha256": "00fd2db2442c3aba26ca4862d184d417c7031ea50ed9d5da7e7cd1f699c4d0ac"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/guiFracPaQ2D_intensityalonggraph_SD11A.png",
+      "bytes": 234432,
+      "sha256": "064be9ab58508fb93a2203fb9cf3f6f783cbf0c1162a1d881bf20164108a308b"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/guiFracPaQ2D_segmentanglealonggraph_SD11A.png",
+      "bytes": 263076,
+      "sha256": "e5c398aa5fc33081df6ded380d692a7a4ff03e8507ea95f9049031ebcfe9d1bc"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/guiFracPaQ2D_segmentanglefromgraph_SD11A.png",
+      "bytes": 768499,
+      "sha256": "d959833f0e1956e086e97ffaa78c4b0323ab2993ea6b55b96280bdf61d3ac375"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/guiFracPaQ2D_segmentlengthalonggraph_SD11A.png",
+      "bytes": 251676,
+      "sha256": "868ac57112b05060a0234966278a4621b2497796ac422b92aedbe88e8354d8dd"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/guiFracPaQ2D_segmentlengthfromgraph_SD11A.png",
+      "bytes": 580740,
+      "sha256": "4854a02954665de9e9712e3160564bbbcb0f5aa1c7a179ecc5871f1b23f72339"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/guiFracPaQ2D_tracelengthalonggraph_SD11A.png",
+      "bytes": 249184,
+      "sha256": "3d632e6101ae61297457b93e743993478f8deba1e2a99b601c2227980d18caee"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/guiFracPaQ2D_tracelengthfromgraph_SD11A.png",
+      "bytes": 355154,
+      "sha256": "0c1ebae80883da0938ac338523a4fc5ecf7c840376b25d4512f86575d2fce97c"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_CSFmap_SD11A.png",
+      "bytes": 181582,
+      "sha256": "b4c2fe71e733b183d4ba397bdb03f5d18bcfb5a1060a497ce1382cdf21364483"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_CSFrose_SD11A.png",
+      "bytes": 69220,
+      "sha256": "f55c879faf15340cba4c2fe55f9c3f8bd97f462eba904883365359863fc276ee"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_IYXnodes_traces_SD11A.png",
+      "bytes": 198561,
+      "sha256": "8f043f1c45bdda2d8110fb3c20f179cc5db7fc201a3a22a226fce0dac8a5a45d"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_IYXtriangle_SD11A.png",
+      "bytes": 60994,
+      "sha256": "bb6f97a3af14cbb30a249a73a89727561db94f51f68713d8f4a8d1d7b0c77f95"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_Inodes_traces_heat_SD11A.png",
+      "bytes": 33275,
+      "sha256": "bb32e993a69c9e7ba2b2aeefa4b7a3197d612c00d2fea792f527818d99fcf5de"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_Mohrplot_SD11A.png",
+      "bytes": 36323,
+      "sha256": "a5cb6eec2cc521a56f6633077fd290c89b9090651c86024d00657b206d96eea5"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_XYnodes_traces_heat_SD11A.png",
+      "bytes": 34759,
+      "sha256": "951f89fdb65f4a6fbaf1a861bbff949d0811f7a13f6a561d36898431b14c6ab0"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_blocksizecentroidmap_SD11A.png",
+      "bytes": 165124,
+      "sha256": "6624eb04333626191e6c6503e4e13c3312d4c3095daa52280e35e7e5c4b56258"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_blocksizehisto_SD11A.png",
+      "bytes": 26594,
+      "sha256": "3f1ed1efa6eba2cea5fdec416924ac9e6fd2613e3fbb71e734879ee2e9d8265a"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_blocksizeloglog_SD11A.png",
+      "bytes": 54800,
+      "sha256": "c6affd04b8abab85138db97e8ba379288736f1e72cdad2f064dc9e2a74f5b877"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_cracktensor_SD11A.png",
+      "bytes": 94953,
+      "sha256": "8c02b93337d36ccb868dbc9a1969c4c840d1622882bf13ecbaa3b9ba621e6813"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_crossplotsegmentlengthangle_SD11A.png",
+      "bytes": 95331,
+      "sha256": "7789f73161980993ea7acf772607d04be6da8b146dc57a6532ddbb23412fb7cd"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_densityP20_SD11A.png",
+      "bytes": 42826,
+      "sha256": "c73697fdd9f87b1999a05fc937838d4fdd07dceb93e8a88bdd75a77db2883fa1"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_dilationtendencymap_SD11A.png",
+      "bytes": 206753,
+      "sha256": "f2a2495b254fb251595f928083cbdf2befd2b11b45c17994bdb068e1c5b4d98a"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_dilationtendencyrose_SD11A.png",
+      "bytes": 91504,
+      "sha256": "52ba9760f638bc319705b20cd397955d7a89b7a0365079caec0f5bb237c56d9f"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_fracsuscepmap_SD11A.png",
+      "bytes": 216982,
+      "sha256": "d6181a13a1f1eeebad9fa73b2f3dd44d9e634e27babe37b9eddc7ea8b789aa66"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_fracsusceprose_SD11A.png",
+      "bytes": 88192,
+      "sha256": "66883dc871e38d1f32f70101a949ba8167d42869777c4849983d762bdd627b96"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_histoangle_SD11A.png",
+      "bytes": 35811,
+      "sha256": "0e9810f07f330cf70d5345c4e40e32704aded4a4669e83dd341d90a090e58f24"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_histosegmentlength_SD11A.png",
+      "bytes": 31179,
+      "sha256": "5fc6743d46b5cba6ec4b5625c76f3dacc6e2497fff08173bb365c52f7a88a971"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_histotracelength_SD11A.png",
+      "bytes": 27192,
+      "sha256": "bd36c0bb56c9b13a49c3c0de524e16a67150cc1ed0c2188cff2156ead770fa73"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_intensityP21_SD11A.png",
+      "bytes": 39961,
+      "sha256": "bb14c0d370215670b69a0b0a4a5f7ad4dd8374cccd8a004e4c6ffd1cf099c979"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_loglogplotsegmentlength_SD11A.png",
+      "bytes": 109550,
+      "sha256": "d3196dffae22d92043d7c2788e293b53557917c4c558d3a72acd9490a4994229"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png",
+      "bytes": 75461,
+      "sha256": "05a191fe9e273973119054736652bc85c724ed548819634e4a53b02b155d2c64"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_loglogplottracelength_SD11A.png",
+      "bytes": 100013,
+      "sha256": "3d7e1eee0d0ff702ebcac65a4ee6d1cb0281e1b0966feb8c688d23a9082709f9"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_loglogplottracelengthdensity_SD11A.png",
+      "bytes": 82051,
+      "sha256": "4a88843b14f682bcb1dbf3585b2ac3de94e984a6916e8181fe3b6812f879a838"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_permeability_polar_SD11A.png",
+      "bytes": 69279,
+      "sha256": "0d4a7f337f1192501b82e7ced9c0ed6f838cd89632a0ef1bd2f7ffaf9a332193"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_roseangleEqArea_SD11A.png",
+      "bytes": 106801,
+      "sha256": "7514efb2fb629531f55a093077aba48cb0a132927d06cdf74f1e4a74fecee5cf"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_scancircle_SD11A.png",
+      "bytes": 246744,
+      "sha256": "2d9bd8047bfc4496a0433d9a886d48affde503ff5dbbf641e8be9867a14812c9"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_segmentlength_variogram_SD11A.png",
+      "bytes": 27192,
+      "sha256": "7a97b8f06959fb8a0476b437adea37c1d3cab2d5ea2c5f81bdbdc776b9e9c448"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_segmentlengthmap_SD11A.png",
+      "bytes": 229329,
+      "sha256": "53e56a8a3d950e304c51446d477792a1e2320112f75f96bebf6caa11f93fe52f"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+      "bytes": 81894,
+      "sha256": "da9dc3c4d616663781e68e29ea3644ae3f9ad71f66dfb2dd5f303cf9e2da2de8"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+      "bytes": 91446,
+      "sha256": "f84c9a787ce4daf3b60695139f8ccafa2d16a216a20ad15bcb8797f57da42e0b"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+      "bytes": 102321,
+      "sha256": "2bdc226aef0d3fea8226e38bed60132a4fdf210f131402c1f4a7f6d7351df1c5"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_segmentstrikemap_SD11A.png",
+      "bytes": 229978,
+      "sha256": "2a49d6e6d2b1a4dfca6c92b3a71c2976cb0447b90fafe9ec38ef3d698a82bccc"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_sliptendencymap_SD11A.png",
+      "bytes": 216948,
+      "sha256": "640bc33d4f78fd3d2e3ca4ca2dabc2c8fa5213569aae08da6963e3b08603560b"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_sliptendencyrose_SD11A.png",
+      "bytes": 94835,
+      "sha256": "eded40f34978e6da17cd66ba00855fa69d4d94417f5e814a733394b088143bb2"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_tracelengthmap_SD11A.png",
+      "bytes": 227884,
+      "sha256": "22c53b9f2cb9daa2623b99750304eb0394948d287861b25f1fb88d978e824c78"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+      "bytes": 75589,
+      "sha256": "c37cc4afee6d65df87ff46129fd968cf5ffedbacc8e44cba5281244c6dd3a6f4"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+      "bytes": 102903,
+      "sha256": "b71ba6fc796f130bc005a20c537ff7687a403083ccc3d17b41b1c3bcf8eb5228"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+      "bytes": 113693,
+      "sha256": "305e13856edb298a903a932569fda954c709286ad738922c79618eed1f23ee4c"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2D_tracemap_SD11A.png",
+      "bytes": 437066,
+      "sha256": "dd99d6399226112849cb137f9f702246f97c52eca7716f4e789f8fae73d6a2c9"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-FracPaQ2Dwavelet_a32_SD11A.png",
+      "bytes": 127074,
+      "sha256": "5930633f97d6909d71ae22afc1996e75544928a126b322bd4afa06d520f80f3f"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-guiFracPaQ2D_densityalonggraph_SD11A.png",
+      "bytes": 33140,
+      "sha256": "80de5c3a469bb75f0a06a1bb56fd4b3f2a1465b8969901f0c6b14df214c574c0"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-guiFracPaQ2D_graphtracemap_SD11A.png",
+      "bytes": 160481,
+      "sha256": "f889b09d325c92e94b6c9cb8def790de79f245f330f22f27bb8ecfddc4d4f42c"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-guiFracPaQ2D_intensityalonggraph_SD11A.png",
+      "bytes": 36030,
+      "sha256": "2ab3014983a8e3d14189afa147686b35b5be1b7f733fa48a23dd45a0a8714e7b"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-guiFracPaQ2D_segmentanglealonggraph_SD11A.png",
+      "bytes": 38391,
+      "sha256": "8ce09a09ee40a8265238f21e8850952d6a8dfa99a1d2de39f07252cc3fbd34b0"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-guiFracPaQ2D_segmentanglefromgraph_SD11A.png",
+      "bytes": 131664,
+      "sha256": "168037c602a59e358bf16955d72e5ce93c53cb06617e04fb93355ef98b53076b"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-guiFracPaQ2D_segmentlengthalonggraph_SD11A.png",
+      "bytes": 37705,
+      "sha256": "13fe9d19f0d895524008a28fb64bb10fa1207f7a78b422c4e8e08747272b9fe1"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-guiFracPaQ2D_segmentlengthfromgraph_SD11A.png",
+      "bytes": 94918,
+      "sha256": "04b621271d0e31a17f9054523eb35f64fefbe9d83776d38ef672a238b38073a2"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-guiFracPaQ2D_tracelengthalonggraph_SD11A.png",
+      "bytes": 37286,
+      "sha256": "1366cb8ea9759994f6381ba0fa0c2dde6d95b778e6b1e85bc5a8fc2537c0d164"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/qa-guiFracPaQ2D_tracelengthfromgraph_SD11A.png",
+      "bytes": 57276,
+      "sha256": "38008adc377c266f17e9436d7e12616ffabc59caebfad5a5ebbc55065fc11807"
+    },
+    {
+      "path": "tests/reference/sprint16/sd11a/python/validation.json",
+      "bytes": 210169,
+      "sha256": "6bbda4dfe9a53ba6c61375a25f003d6cf1f012ddd59554cd375fcd1aa72a91ef"
+    }
+  ],
+  "scope": "Implementation manifest recorded after paired run; original production compute/render/export, audit-only seed. Initial direct-L2 native diagnostic is excluded from the paired native manifest."
+}

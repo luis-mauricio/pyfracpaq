@@ -1,0 +1,331 @@
+{
+  "scope": "Approved Q-11 implementation, active in production Run; full visual homologation pending.",
+  "figures": [
+    {
+      "path": "FracPaQ2D_IYXnodes_traces_TXT.png",
+      "sha256": "ea46c145c282c2043eeb0bd6c851a3ab90d76ed8d39d72b15f329fc03a03bed7",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_IYXnodes_traces_TXT.png",
+      "qa_sha256": "7cc7dc83a5d53a0f42121a6be70d0f09f79f90190ef09006d07dad31eec4077c"
+    },
+    {
+      "path": "FracPaQ2D_XYnodes_traces_heat_TXT.png",
+      "sha256": "cafa572d544382c2a0770872f869f7b48ff0ee7095df48b1d8420bebe837986c",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_XYnodes_traces_heat_TXT.png",
+      "qa_sha256": "2937fa5c37e8018e332e80296fccd9b539cdad894087bdeeaf7c9851f49974f6"
+    },
+    {
+      "path": "FracPaQ2D_Inodes_traces_heat_TXT.png",
+      "sha256": "e25191120bedfce9f741a49c8cd88737329c11a6c3e7838c08140c60185e1149",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_Inodes_traces_heat_TXT.png",
+      "qa_sha256": "7f94e32b400e2a127fafc4995145b93d4bd2350a412dda456fdab58419d973b5"
+    },
+    {
+      "path": "FracPaQ2D_IYXtriangle_TXT.png",
+      "sha256": "34bc8650693fd40bf1feafe3f94d7c79a0614b4410f1e98eca1905b8aceecf0b",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_IYXtriangle_TXT.png",
+      "qa_sha256": "c696da7111232f88ad685d025ebd3f9a34b0f58d280811986055aeb3cc1a1348"
+    },
+    {
+      "path": "FracPaQ2D_IYXnodes_traces_SVG.png",
+      "sha256": "ea46c145c282c2043eeb0bd6c851a3ab90d76ed8d39d72b15f329fc03a03bed7",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_IYXnodes_traces_SVG.png",
+      "qa_sha256": "7cc7dc83a5d53a0f42121a6be70d0f09f79f90190ef09006d07dad31eec4077c"
+    },
+    {
+      "path": "FracPaQ2D_XYnodes_traces_heat_SVG.png",
+      "sha256": "cafa572d544382c2a0770872f869f7b48ff0ee7095df48b1d8420bebe837986c",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_XYnodes_traces_heat_SVG.png",
+      "qa_sha256": "2937fa5c37e8018e332e80296fccd9b539cdad894087bdeeaf7c9851f49974f6"
+    },
+    {
+      "path": "FracPaQ2D_Inodes_traces_heat_SVG.png",
+      "sha256": "e25191120bedfce9f741a49c8cd88737329c11a6c3e7838c08140c60185e1149",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_Inodes_traces_heat_SVG.png",
+      "qa_sha256": "7f94e32b400e2a127fafc4995145b93d4bd2350a412dda456fdab58419d973b5"
+    },
+    {
+      "path": "FracPaQ2D_IYXtriangle_SVG.png",
+      "sha256": "34bc8650693fd40bf1feafe3f94d7c79a0614b4410f1e98eca1905b8aceecf0b",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_IYXtriangle_SVG.png",
+      "qa_sha256": "c696da7111232f88ad685d025ebd3f9a34b0f58d280811986055aeb3cc1a1348"
+    },
+    {
+      "path": "FracPaQ2D_IYXnodes_traces_Hough.png",
+      "sha256": "0962893ede8ddc1f6651c70980f445f9ef510937d6a12c4bf0585b8ba02247a2",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_IYXnodes_traces_Hough.png",
+      "qa_sha256": "1d1da99e9c0cd08f0f0294fde464bdd5b97114d3884259a810d6da7e91fde433"
+    },
+    {
+      "path": "FracPaQ2D_XYnodes_traces_heat_Hough.png",
+      "sha256": "fdb6ac16707e1b3c2b2b9cef183c2a41fd21d859c101d898534ca2ec0b31b242",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_XYnodes_traces_heat_Hough.png",
+      "qa_sha256": "1f1602b217fd6582c677aad3f82a490b28f0a02658fdf8d8334eca58590cb641"
+    },
+    {
+      "path": "FracPaQ2D_Inodes_traces_heat_Hough.png",
+      "sha256": "53b569259d19265e675ff96f2aae93f7eb2c4d59bfbabcd04a5ff98ee53f88ea",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_Inodes_traces_heat_Hough.png",
+      "qa_sha256": "e2ae5a1c511493f2a394c7de487786afbe1fb5c2e13f28ba8795f98144b73121"
+    },
+    {
+      "path": "FracPaQ2D_IYXtriangle_Hough.png",
+      "sha256": "34bc8650693fd40bf1feafe3f94d7c79a0614b4410f1e98eca1905b8aceecf0b",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_IYXtriangle_Hough.png",
+      "qa_sha256": "c696da7111232f88ad685d025ebd3f9a34b0f58d280811986055aeb3cc1a1348"
+    },
+    {
+      "path": "FracPaQ2D_IYXnodes_traces_zero.png",
+      "sha256": "bb9bd74be4b84a413989b5d28edf51b47dc7d60107b038273da767a92cfc7b3a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_IYXnodes_traces_zero.png",
+      "qa_sha256": "ef42865dc924da5fd85891ed821581e7673b0e2098933fa1921fc18515a4098a"
+    },
+    {
+      "path": "FracPaQ2D_XYnodes_traces_heat_zero.png",
+      "sha256": "3555fda1d846f760f4be945ef36fb92a78c11798eb72741ac5934e2ee9624928",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_XYnodes_traces_heat_zero.png",
+      "qa_sha256": "f47720437455ff30f880886efad4c76be251c73434fc84914852f5f6c63d7317"
+    },
+    {
+      "path": "FracPaQ2D_Inodes_traces_heat_zero.png",
+      "sha256": "433dbf57eeae02848cbfb08ffb8bc9f6a2558b28388294a81ac56c6828ed7ecf",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_Inodes_traces_heat_zero.png",
+      "qa_sha256": "07cb9d5dc893271902144b92146b357fcf60cda6fb39f4018729de8e5baa0d7c"
+    },
+    {
+      "path": "FracPaQ2D_IYXtriangle_zero.png",
+      "sha256": "8ad2836b62a0c8886c45c6249e8383f1c51da07d5a08acb7f1c66e77b286c4cb",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_IYXtriangle_zero.png",
+      "qa_sha256": "72fe6abcab51eb5067df9f5a0b829b76bc5062c2722a62709c10fde85305f5cd"
+    }
+  ],
+  "cases": [
+    {
+      "tag": "TXT",
+      "input_mode": "txt",
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 4.0,
+        "y_max": 6.0
+      },
+      "counts_I_Y_X": [
+        1,
+        0,
+        0
+      ],
+      "grid_shape": [
+        5,
+        3
+      ],
+      "common_colour_maximum": 1
+    },
+    {
+      "tag": "SVG",
+      "input_mode": "svg",
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 4.0,
+        "y_max": 6.0
+      },
+      "counts_I_Y_X": [
+        1,
+        0,
+        0
+      ],
+      "grid_shape": [
+        5,
+        3
+      ],
+      "common_colour_maximum": 1
+    },
+    {
+      "tag": "Hough",
+      "input_mode": "image",
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 48.0,
+        "y_max": 24.0
+      },
+      "counts_I_Y_X": [
+        4,
+        0,
+        0
+      ],
+      "grid_shape": [
+        3,
+        6
+      ],
+      "common_colour_maximum": 1
+    },
+    {
+      "tag": "zero",
+      "input_mode": "txt",
+      "bounds": {
+        "x_min": -3.0,
+        "y_min": -3.0,
+        "x_max": 3.0,
+        "y_max": 3.0
+      },
+      "counts_I_Y_X": [
+        0,
+        0,
+        0
+      ],
+      "grid_shape": [
+        3,
+        3
+      ],
+      "common_colour_maximum": 0
+    }
+  ],
+  "arrays_sha256": "a1f68863425406257db1e3c3ad843e6ce8d27ee8bacdb3e579ebf4075d1b63ac",
+  "q11_sha256": "fd9d1a1fb9f4b1e8690eab94b062753f0e1873f6731e64b97f50befaa317c6b2",
+  "txt": [
+    {
+      "path": "FracPaQ2Dconnectivity_Hough.txt",
+      "sha256": "e035878b3a665de8569f364f7c7ecdf97eda2821d19988429cfbf45213b0bb51"
+    },
+    {
+      "path": "FracPaQ2Dconnectivity_SVG.txt",
+      "sha256": "7066d6538ff199a79fbf07911a8fd1f5f3bffa5ee5ce92a52a4eba60d2042f69"
+    },
+    {
+      "path": "FracPaQ2Dconnectivity_TXT.txt",
+      "sha256": "7066d6538ff199a79fbf07911a8fd1f5f3bffa5ee5ce92a52a4eba60d2042f69"
+    },
+    {
+      "path": "FracPaQ2Dconnectivity_zero.txt",
+      "sha256": "e936df4e39e55d9e0e202e7f0b0904fc1e3c3f6b2a9776554e63ca947ec44cb6"
+    }
+  ]
+}

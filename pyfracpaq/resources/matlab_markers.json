@@ -1,0 +1,394 @@
+{
+  "native_version": "24.2.0.3212159 (R2024b) Update 9",
+  "dpi": 600,
+  "sha256": "5e837ed8001add6f2ea67ea88a1611ebf63588117544caa5772094665779dc4a",
+  "capture_script_sha256": "eb8c6f33ec95ab3f38fd2ad4b4acc81977cce9bfd7a163db245d5c0114b1727d",
+  "primitive_capture_sha256": "de3d2e5e21ffbe50326597e1778529903f10a2ccefb1a54d80810e1064c1bc02",
+  "glyphs": [
+    {
+      "key": "o_2_0.5_0",
+      "shape": "o",
+      "size_points": 2,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 30
+    },
+    {
+      "key": "o_2_0.5_1",
+      "shape": "o",
+      "size_points": 2,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 30
+    },
+    {
+      "key": "o_2_1_0",
+      "shape": "o",
+      "size_points": 2,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 34
+    },
+    {
+      "key": "o_2_1_1",
+      "shape": "o",
+      "size_points": 2,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 34
+    },
+    {
+      "key": "o_3_0.5_0",
+      "shape": "o",
+      "size_points": 3,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 34
+    },
+    {
+      "key": "o_3_0.5_1",
+      "shape": "o",
+      "size_points": 3,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 34
+    },
+    {
+      "key": "o_3_1_0",
+      "shape": "o",
+      "size_points": 3,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 38
+    },
+    {
+      "key": "o_3_1_1",
+      "shape": "o",
+      "size_points": 3,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 38
+    },
+    {
+      "key": "o_4_0.5_0",
+      "shape": "o",
+      "size_points": 4,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 38
+    },
+    {
+      "key": "o_4_0.5_1",
+      "shape": "o",
+      "size_points": 4,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 38
+    },
+    {
+      "key": "o_4_1_0",
+      "shape": "o",
+      "size_points": 4,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 42
+    },
+    {
+      "key": "o_4_1_1",
+      "shape": "o",
+      "size_points": 4,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 42
+    },
+    {
+      "key": "o_6_0.5_0",
+      "shape": "o",
+      "size_points": 6,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 46
+    },
+    {
+      "key": "o_6_0.5_1",
+      "shape": "o",
+      "size_points": 6,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 46
+    },
+    {
+      "key": "o_6_1_0",
+      "shape": "o",
+      "size_points": 6,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 50
+    },
+    {
+      "key": "o_6_1_1",
+      "shape": "o",
+      "size_points": 6,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 50
+    },
+    {
+      "key": "o_8_0.5_0",
+      "shape": "o",
+      "size_points": 8,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 55
+    },
+    {
+      "key": "o_8_0.5_1",
+      "shape": "o",
+      "size_points": 8,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 55
+    },
+    {
+      "key": "o_8_1_0",
+      "shape": "o",
+      "size_points": 8,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 59
+    },
+    {
+      "key": "o_8_1_1",
+      "shape": "o",
+      "size_points": 8,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 59
+    },
+    {
+      "key": "o_12_0.5_0",
+      "shape": "o",
+      "size_points": 12,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 71
+    },
+    {
+      "key": "o_12_0.5_1",
+      "shape": "o",
+      "size_points": 12,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 71
+    },
+    {
+      "key": "o_12_1_0",
+      "shape": "o",
+      "size_points": 12,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 75
+    },
+    {
+      "key": "o_12_1_1",
+      "shape": "o",
+      "size_points": 12,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 75
+    },
+    {
+      "key": "s_2_0.5_0",
+      "shape": "s",
+      "size_points": 2,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 30
+    },
+    {
+      "key": "s_2_0.5_1",
+      "shape": "s",
+      "size_points": 2,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 30
+    },
+    {
+      "key": "s_2_1_0",
+      "shape": "s",
+      "size_points": 2,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 34
+    },
+    {
+      "key": "s_2_1_1",
+      "shape": "s",
+      "size_points": 2,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 34
+    },
+    {
+      "key": "s_3_0.5_0",
+      "shape": "s",
+      "size_points": 3,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 34
+    },
+    {
+      "key": "s_3_0.5_1",
+      "shape": "s",
+      "size_points": 3,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 34
+    },
+    {
+      "key": "s_3_1_0",
+      "shape": "s",
+      "size_points": 3,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 38
+    },
+    {
+      "key": "s_3_1_1",
+      "shape": "s",
+      "size_points": 3,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 38
+    },
+    {
+      "key": "s_4_0.5_0",
+      "shape": "s",
+      "size_points": 4,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 38
+    },
+    {
+      "key": "s_4_0.5_1",
+      "shape": "s",
+      "size_points": 4,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 38
+    },
+    {
+      "key": "s_4_1_0",
+      "shape": "s",
+      "size_points": 4,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 42
+    },
+    {
+      "key": "s_4_1_1",
+      "shape": "s",
+      "size_points": 4,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 42
+    },
+    {
+      "key": "s_6_0.5_0",
+      "shape": "s",
+      "size_points": 6,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 46
+    },
+    {
+      "key": "s_6_0.5_1",
+      "shape": "s",
+      "size_points": 6,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 46
+    },
+    {
+      "key": "s_6_1_0",
+      "shape": "s",
+      "size_points": 6,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 50
+    },
+    {
+      "key": "s_6_1_1",
+      "shape": "s",
+      "size_points": 6,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 50
+    },
+    {
+      "key": "s_8_0.5_0",
+      "shape": "s",
+      "size_points": 8,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 55
+    },
+    {
+      "key": "s_8_0.5_1",
+      "shape": "s",
+      "size_points": 8,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 55
+    },
+    {
+      "key": "s_8_1_0",
+      "shape": "s",
+      "size_points": 8,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 59
+    },
+    {
+      "key": "s_8_1_1",
+      "shape": "s",
+      "size_points": 8,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 59
+    },
+    {
+      "key": "s_12_0.5_0",
+      "shape": "s",
+      "size_points": 12,
+      "linewidth_points": 0.5,
+      "filled": false,
+      "pad": 71
+    },
+    {
+      "key": "s_12_0.5_1",
+      "shape": "s",
+      "size_points": 12,
+      "linewidth_points": 0.5,
+      "filled": true,
+      "pad": 71
+    },
+    {
+      "key": "s_12_1_0",
+      "shape": "s",
+      "size_points": 12,
+      "linewidth_points": 1,
+      "filled": false,
+      "pad": 75
+    },
+    {
+      "key": "s_12_1_1",
+      "shape": "s",
+      "size_points": 12,
+      "linewidth_points": 1,
+      "filled": true,
+      "pad": 75
+    }
+  ],
+  "scope": "Independent basic-graphics primitive materials; no scientific images, observations, or MATLAB code."
+}

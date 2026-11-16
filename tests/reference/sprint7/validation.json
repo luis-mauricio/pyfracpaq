@@ -1,0 +1,293 @@
+{
+  "scope": "Python Sprint 7; corrected geometry approved by user; native MATLAB parity pending.",
+  "date": "2026-11-14",
+  "python": "3.13.18",
+  "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2",
+  "matlab_comparison": "pending",
+  "cases": [
+    {
+      "input_mode": "TXT",
+      "input": "tests/fixtures/nodes/mixed.txt",
+      "input_sha256": "63b5d3d2d096b6831a58189a2ef36ef93a34f05ae9b86e396ed4e730abe8cf3a",
+      "scale": null,
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 4.0,
+        "y_max": 6.0
+      },
+      "segments": 3,
+      "grid_shape": [
+        5,
+        3
+      ],
+      "dx": 1.0,
+      "dy": 1.0,
+      "radius": 0.495,
+      "image_extent": [
+        0.5,
+        3.5,
+        0.5,
+        5.5
+      ],
+      "global_P21": 0.4583333333333333,
+      "global_P20": 0.125,
+      "mean_local_P21": 0.16835016835016836,
+      "mean_local_P20": 0.043303048829546734
+    },
+    {
+      "input_mode": "SVG",
+      "input": "tests/fixtures/svg/multicolour.svg",
+      "input_sha256": "04fb0037735b79565c002181e6b223dc6347e8b26f24b7c88defbf6ae1a716d0",
+      "scale": null,
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 4.0,
+        "y_max": 6.0
+      },
+      "segments": 3,
+      "grid_shape": [
+        5,
+        3
+      ],
+      "dx": 1.0,
+      "dy": 1.0,
+      "radius": 0.495,
+      "image_extent": [
+        0.5,
+        3.5,
+        0.5,
+        5.5
+      ],
+      "global_P21": 0.4583333333333333,
+      "global_P20": 0.125,
+      "mean_local_P21": 0.16835016835016836,
+      "mean_local_P20": 0.043303048829546734
+    },
+    {
+      "input_mode": "Hough",
+      "input": "tests/fixtures/images/rectangular.tif",
+      "input_sha256": "5dafc5d3bbcea5dbf4563eb0086271261ba59b490346bf3c06c699196230d6f0",
+      "scale": 2,
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 24.0,
+        "y_max": 12.0
+      },
+      "segments": 3,
+      "grid_shape": [
+        3,
+        7
+      ],
+      "dx": 2.9999999999999996,
+      "dy": 3.0,
+      "radius": 1.4849999999999999,
+      "image_extent": [
+        1.4999999999999998,
+        22.499999999999996,
+        1.5,
+        10.5
+      ],
+      "global_P21": 0.1440972222222222,
+      "global_P20": 0.010416666666666666,
+      "mean_local_P21": 0.22446689113355783,
+      "mean_local_P20": 0.020620499442641306
+    },
+    {
+      "input_mode": "Hough",
+      "input": "fracpaq-matlab/MacduffBinary.tif",
+      "input_sha256": "3042478044a4266b90ee238886df55842316d7a21a15fdfe3419329c76cc03b2",
+      "segments": 1507,
+      "grid_shape": [
+        12,
+        12
+      ],
+      "radius": 9.747692307692308,
+      "global_P21": 0.29755877154063654,
+      "global_P20": 0.0229949951171875
+    },
+    {
+      "input_mode": "Hough",
+      "input": "fracpaq-matlab/Orkney1aBinary.tif",
+      "input_sha256": "b1d9ee96581147b90f132ab5bcc3792df57cb8b8363126b9384f21d967db609d",
+      "segments": 169,
+      "grid_shape": [
+        12,
+        12
+      ],
+      "radius": 19.495384615384616,
+      "global_P21": 0.01797601369056962,
+      "global_P20": 0.000644683837890625
+    }
+  ],
+  "figures": [
+    {
+      "input_mode": "TXT",
+      "path": "FracPaQ2D_scancircle_TXT.png",
+      "sha256": "c65a6ec0d517f77cb9b5b03fc4b6d82e88adebfbb4efd4a7c4927ff4d9137436",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_scancircle_TXT.png",
+      "qa_sha256": "717936bd734967f38ea9b303b3fa48c0460da275eccf60ee9693725f93ab6a15"
+    },
+    {
+      "input_mode": "TXT",
+      "path": "FracPaQ2D_intensityP21_TXT.png",
+      "sha256": "0b981111bf75cbe204e4b818bd784d0f1f84049cafe39c7c3e11518d3749679e",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_intensityP21_TXT.png",
+      "qa_sha256": "6ee3b39b2d2e302b2e4ec91118bc86bf5ce7ca55715f8a050a7dfb047f05667a"
+    },
+    {
+      "input_mode": "TXT",
+      "path": "FracPaQ2D_densityP20_TXT.png",
+      "sha256": "fc4b9aca9ac1c5f2c800aa5b8a5878856b939d2f14a449889f3c0170910976ce",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_densityP20_TXT.png",
+      "qa_sha256": "3f3f8852d395f89d96a1469e666afbdbe9cf031c3cc3e2c920ce4603a41c91b1"
+    },
+    {
+      "input_mode": "SVG",
+      "path": "FracPaQ2D_scancircle_SVG.png",
+      "sha256": "c65a6ec0d517f77cb9b5b03fc4b6d82e88adebfbb4efd4a7c4927ff4d9137436",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_scancircle_SVG.png",
+      "qa_sha256": "717936bd734967f38ea9b303b3fa48c0460da275eccf60ee9693725f93ab6a15"
+    },
+    {
+      "input_mode": "SVG",
+      "path": "FracPaQ2D_intensityP21_SVG.png",
+      "sha256": "0b981111bf75cbe204e4b818bd784d0f1f84049cafe39c7c3e11518d3749679e",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_intensityP21_SVG.png",
+      "qa_sha256": "6ee3b39b2d2e302b2e4ec91118bc86bf5ce7ca55715f8a050a7dfb047f05667a"
+    },
+    {
+      "input_mode": "SVG",
+      "path": "FracPaQ2D_densityP20_SVG.png",
+      "sha256": "fc4b9aca9ac1c5f2c800aa5b8a5878856b939d2f14a449889f3c0170910976ce",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_densityP20_SVG.png",
+      "qa_sha256": "3f3f8852d395f89d96a1469e666afbdbe9cf031c3cc3e2c920ce4603a41c91b1"
+    },
+    {
+      "input_mode": "Hough",
+      "path": "FracPaQ2D_scancircle_Hough.png",
+      "sha256": "5bb7e14a2ca46b635b7cc2bcc498bdaac533558cd39d388ec79e0e2d7df2bfea",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_scancircle_Hough.png",
+      "qa_sha256": "2490d5b9116dc4006b390c64d5cdaf5292df0be84950e14025e2bb39cbd54b4f"
+    },
+    {
+      "input_mode": "Hough",
+      "path": "FracPaQ2D_intensityP21_Hough.png",
+      "sha256": "cf3527836ebe92be291af2dffce3ebdcf706d2306182a1ac9a18d4d2f763e585",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_intensityP21_Hough.png",
+      "qa_sha256": "9d95c1b846343da16c84e20599368b7b5f106b34aa1194d5b90aca82a0792143"
+    },
+    {
+      "input_mode": "Hough",
+      "path": "FracPaQ2D_densityP20_Hough.png",
+      "sha256": "07ccfb3908aabaf92148cbbcca27a34e7b250f16314dc10eb1f3e5b28de9b997",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_densityP20_Hough.png",
+      "qa_sha256": "58b7e1b6f48174c4b760ef245c40cedfbb6c7915851dcdf36fd1f974f29675bf"
+    }
+  ],
+  "txt": [
+    {
+      "path": "FracPaQ2Ddensity_Hough.txt",
+      "sha256": "f7affcccc2cab01d84b69d8c59f3e83a388ea805331c988a1ff770cc2e6a96d3"
+    },
+    {
+      "path": "FracPaQ2Ddensity_SVG.txt",
+      "sha256": "9536bd0f5f8d14c20fdbf795bc851ecebf0f95c15fc9eea291e28bf306186e06"
+    },
+    {
+      "path": "FracPaQ2Ddensity_TXT.txt",
+      "sha256": "9536bd0f5f8d14c20fdbf795bc851ecebf0f95c15fc9eea291e28bf306186e06"
+    },
+    {
+      "path": "FracPaQ2Dintensity_Hough.txt",
+      "sha256": "cdcc8e70ab214da98205563525fb224b1525c6b5c3dfec67100977a11eb28624"
+    },
+    {
+      "path": "FracPaQ2Dintensity_SVG.txt",
+      "sha256": "b5ff812c0754881419146cf9c8ce4503bf4c3b81b3360857b4535e8fa5dbba4d"
+    },
+    {
+      "path": "FracPaQ2Dintensity_TXT.txt",
+      "sha256": "b5ff812c0754881419146cf9c8ce4503bf4c3b81b3360857b4535e8fa5dbba4d"
+    }
+  ],
+  "arrays_sha256": "6bf148974047cbcb19d00f43688cdeb5fcd40c1397a55c3382103e1e4bd75a6b",
+  "parameters_sha256": "230e47bd0dc0618fb67930b5c745607c88ad788a36c7846d8fcf40e8b59b3c06",
+  "q20_sha256": "bb590b92c79b65add8e8209ed58ac5e41fbe804fa3823f6989a251847330b812"
+}

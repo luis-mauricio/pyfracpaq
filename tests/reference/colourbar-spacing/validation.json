@@ -1,0 +1,1027 @@
+{
+  "date": "2026-11-14",
+  "scope": "Fixed label clearance and responsive colourbar length; no scientific change.",
+  "families": [
+    "MAP-04",
+    "MAP-05",
+    "MAP-06",
+    "ANG-02",
+    "MAP-07",
+    "MAP-08"
+  ],
+  "cases": [
+    {
+      "analysis_id": "MAP-04",
+      "figures": [
+        {
+          "path": "FracPaQ2D_tracelengthmap_square.png",
+          "sha256": "4d12003f17ab5bc1e697fe41ec817d711ee31a15395dec446af4ae68e235d9f9",
+          "inches": [
+            6,
+            6
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              85.8,
+              574.2
+            ],
+            "bar_endpoints_px": [
+              85.8,
+              574.2
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_tracelengthmap_wide.png",
+          "sha256": "f8b7bcce5e03505684258dbd09a23c2be24b1fd49501df9cb349c394460d5482",
+          "inches": [
+            10,
+            4
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              304.1180121527778,
+              795.8819878472223
+            ],
+            "bar_endpoints_px": [
+              304.1180121527778,
+              795.8819878472223
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.0
+          }
+        },
+        {
+          "path": "FracPaQ2D_tracelengthmap_tall.png",
+          "sha256": "1d8fa23049602279abfb1921145a3e8c6059089f13e4a45e46f3517de3d60bcc",
+          "inches": [
+            4,
+            9
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              57.2,
+              382.8
+            ],
+            "bar_endpoints_px": [
+              57.2,
+              382.8
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_tracelengthmap_small.png",
+          "sha256": "f76634b6a0750ca882f91bb59043fd98af92604eff7f9bcb01d248dc7c0c42a7",
+          "inches": [
+            3.4,
+            2.8
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              51.33801215277777,
+              322.66198784722224
+            ],
+            "bar_endpoints_px": [
+              51.33801215277777,
+              322.66198784722224
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 24.999999999999996
+          }
+        },
+        {
+          "path": "FracPaQ2D_tracelengthmap_large.png",
+          "sha256": "4acef39dd0546e1075e8304b436f20104ded3cce4a2a3d31ce84c9470c66fc61",
+          "inches": [
+            14,
+            10
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              200.20000000000002,
+              1339.8
+            ],
+            "bar_endpoints_px": [
+              200.20000000000002,
+              1339.8
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_tracelengthmap_600dpi.png",
+          "sha256": "f232552fa16ac9afad02974b363230eef55fe31eed38191fff63616e9f653f34",
+          "size": [
+            4724,
+            4724
+          ],
+          "dpi": 600,
+          "geometry": {
+            "plot_endpoints_px": [
+              614.1732283464567,
+              4110.23622047244
+            ],
+            "bar_endpoints_px": [
+              614.1732283464567,
+              4110.23622047244
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.000000000000018
+          }
+        }
+      ]
+    },
+    {
+      "analysis_id": "MAP-05",
+      "figures": [
+        {
+          "path": "FracPaQ2D_segmentlengthmap_square.png",
+          "sha256": "ff6f5e7cfef374c38395a8b0f01ae746ebecf01cb4748bb6c2c3b9eb67120235",
+          "inches": [
+            6,
+            6
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              85.8,
+              574.2
+            ],
+            "bar_endpoints_px": [
+              85.8,
+              574.2
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_segmentlengthmap_wide.png",
+          "sha256": "020cf4816683c7a156a5ecdcdbaf2430bce4a056099cf9485b02f4e3e8e12c9e",
+          "inches": [
+            10,
+            4
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              304.1180121527778,
+              795.8819878472223
+            ],
+            "bar_endpoints_px": [
+              304.1180121527778,
+              795.8819878472223
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.0
+          }
+        },
+        {
+          "path": "FracPaQ2D_segmentlengthmap_tall.png",
+          "sha256": "665acd537683590ee0f5e73944c42c19a4018cf6d5d0c23ce2c8c00ad3be80c1",
+          "inches": [
+            4,
+            9
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              57.2,
+              382.8
+            ],
+            "bar_endpoints_px": [
+              57.2,
+              382.8
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_segmentlengthmap_small.png",
+          "sha256": "6ca6291902754f63bf63e7b4057de24045383ea03568c9889e1d0adba3c8ee1a",
+          "inches": [
+            3.4,
+            2.8
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              51.33801215277777,
+              322.66198784722224
+            ],
+            "bar_endpoints_px": [
+              51.33801215277777,
+              322.66198784722224
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 24.999999999999996
+          }
+        },
+        {
+          "path": "FracPaQ2D_segmentlengthmap_large.png",
+          "sha256": "59a357af82c2fd84f78d0c825341dffa6855bbbdbacb813d29584bda6379e366",
+          "inches": [
+            14,
+            10
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              200.20000000000002,
+              1339.8
+            ],
+            "bar_endpoints_px": [
+              200.20000000000002,
+              1339.8
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_segmentlengthmap_600dpi.png",
+          "sha256": "0f12196a27b242f13f226a511751bd496185be4fdcb8c7e5bf136deee9cba283",
+          "size": [
+            4724,
+            4724
+          ],
+          "dpi": 600,
+          "geometry": {
+            "plot_endpoints_px": [
+              614.1732283464567,
+              4110.23622047244
+            ],
+            "bar_endpoints_px": [
+              614.1732283464567,
+              4110.23622047244
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.000000000000018
+          }
+        }
+      ]
+    },
+    {
+      "analysis_id": "MAP-06",
+      "figures": [
+        {
+          "path": "FracPaQ2D_segmentstrikemap_square.png",
+          "sha256": "262cd993b2ac11c30837e1904abd3c2918016f0610ea856f66c53302fb9c9bb3",
+          "inches": [
+            6,
+            6
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              85.8,
+              574.2
+            ],
+            "bar_endpoints_px": [
+              85.8,
+              574.2
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_segmentstrikemap_wide.png",
+          "sha256": "45d675312983ecece29d8a4370816952e695604bedd4eb90569da813de3d8827",
+          "inches": [
+            10,
+            4
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              304.1180121527778,
+              795.8819878472223
+            ],
+            "bar_endpoints_px": [
+              304.1180121527778,
+              795.8819878472223
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.0
+          }
+        },
+        {
+          "path": "FracPaQ2D_segmentstrikemap_tall.png",
+          "sha256": "df8e92d695710a16fdb998becca1fee37e69ef8649bc13adb0a7bb5b212dc4c5",
+          "inches": [
+            4,
+            9
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              57.2,
+              382.8
+            ],
+            "bar_endpoints_px": [
+              57.2,
+              382.8
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_segmentstrikemap_small.png",
+          "sha256": "ab939521def15cbbaf0acd04da99c8467f1d073c55ffb15161eebb54fd72727e",
+          "inches": [
+            3.4,
+            2.8
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              51.33801215277777,
+              322.66198784722224
+            ],
+            "bar_endpoints_px": [
+              51.33801215277777,
+              322.66198784722224
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 24.999999999999996
+          }
+        },
+        {
+          "path": "FracPaQ2D_segmentstrikemap_large.png",
+          "sha256": "558715e3c6dbe21a0c6d070f1594cf9d2f633750545887de8e3bd14a920862a2",
+          "inches": [
+            14,
+            10
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              200.20000000000002,
+              1339.8
+            ],
+            "bar_endpoints_px": [
+              200.20000000000002,
+              1339.8
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_segmentstrikemap_600dpi.png",
+          "sha256": "0bdd1cdf5eb015fda25faca957cee1d29a668b278bbd5f8dfed23e9e75d3a890",
+          "size": [
+            4724,
+            4724
+          ],
+          "dpi": 600,
+          "geometry": {
+            "plot_endpoints_px": [
+              614.1732283464567,
+              4110.23622047244
+            ],
+            "bar_endpoints_px": [
+              614.1732283464567,
+              4110.23622047244
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.000000000000018
+          }
+        }
+      ]
+    },
+    {
+      "analysis_id": "MAP-07",
+      "figures": [
+        {
+          "path": "FracPaQ2D_intensityP21_square.png",
+          "sha256": "c15f7507472728e98de75fff22a4897d0c7642db6f376ecddcf7b0897cd87a8c",
+          "inches": [
+            6,
+            6
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              85.8,
+              574.2
+            ],
+            "bar_endpoints_px": [
+              85.8,
+              574.2
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_intensityP21_wide.png",
+          "sha256": "e11278aed85e7b70090e085f31d24eb6e48d8cc9b9134040b3ef814761d2a75e",
+          "inches": [
+            10,
+            4
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              308.78017578125,
+              791.21982421875
+            ],
+            "bar_endpoints_px": [
+              308.78017578125,
+              791.21982421875
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.000000000000004
+          }
+        },
+        {
+          "path": "FracPaQ2D_intensityP21_tall.png",
+          "sha256": "9c9479d033513353d8394b78e63ff967db5511fe5d5aa3045ff6d2e1f80bab22",
+          "inches": [
+            4,
+            9
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              57.2,
+              382.8
+            ],
+            "bar_endpoints_px": [
+              57.2,
+              382.8
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_intensityP21_small.png",
+          "sha256": "609f98d554fcc9ca448141b2821658e1ea756119fb858dc5d72213ef429b0009",
+          "inches": [
+            3.4,
+            2.8
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              56.00017578124999,
+              317.99982421875
+            ],
+            "bar_endpoints_px": [
+              56.000175781249986,
+              317.99982421875
+            ],
+            "maximum_deviation_px": 7.105427357601002e-15,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.0
+          }
+        },
+        {
+          "path": "FracPaQ2D_intensityP21_large.png",
+          "sha256": "7a5d0869071ca00fc53cc0e5c47022d48f87a67af13dfd24ef9c2dae337e7096",
+          "inches": [
+            14,
+            10
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              200.20000000000002,
+              1339.8
+            ],
+            "bar_endpoints_px": [
+              200.20000000000002,
+              1339.8
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_intensityP21_600dpi.png",
+          "sha256": "0d5eb21b7b5d0b62b9084294c96aae97e1c14ab9a2cb62328106f51d48fa0a33",
+          "size": [
+            4724,
+            4724
+          ],
+          "dpi": 600,
+          "geometry": {
+            "plot_endpoints_px": [
+              614.1732283464567,
+              4110.23622047244
+            ],
+            "bar_endpoints_px": [
+              614.1732283464567,
+              4110.23622047244
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.000000000000018
+          }
+        }
+      ]
+    },
+    {
+      "analysis_id": "MAP-08",
+      "figures": [
+        {
+          "path": "FracPaQ2D_densityP20_square.png",
+          "sha256": "cd7d1f7f6eaf5a876d16cd509e94f0d793ac0b9c67f024f60a680be4c0b17a8f",
+          "inches": [
+            6,
+            6
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              85.8,
+              574.2
+            ],
+            "bar_endpoints_px": [
+              85.8,
+              574.2
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_densityP20_wide.png",
+          "sha256": "fee3fa1271035416b75577b1803589d0a6f72298bdefbe7aa1af2d7026aeadf1",
+          "inches": [
+            10,
+            4
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              308.78017578125,
+              791.21982421875
+            ],
+            "bar_endpoints_px": [
+              308.78017578125,
+              791.21982421875
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.000000000000004
+          }
+        },
+        {
+          "path": "FracPaQ2D_densityP20_tall.png",
+          "sha256": "d0e198f201bd18c8e1608f3fabf6ed45a178dc827e561fb8845d154216bbaa66",
+          "inches": [
+            4,
+            9
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              57.2,
+              382.8
+            ],
+            "bar_endpoints_px": [
+              57.2,
+              382.8
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_densityP20_small.png",
+          "sha256": "032332f072dad98e48af3912e86faa783712426ccaa3831ef528b3f7e6e2a6bb",
+          "inches": [
+            3.4,
+            2.8
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              56.00017578124999,
+              317.99982421875
+            ],
+            "bar_endpoints_px": [
+              56.000175781249986,
+              317.99982421875
+            ],
+            "maximum_deviation_px": 7.105427357601002e-15,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.0
+          }
+        },
+        {
+          "path": "FracPaQ2D_densityP20_large.png",
+          "sha256": "658651aa39417fb90f4a05714bb8941991975f407761849efff48109dcac860c",
+          "inches": [
+            14,
+            10
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              200.20000000000002,
+              1339.8
+            ],
+            "bar_endpoints_px": [
+              200.20000000000002,
+              1339.8
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_densityP20_600dpi.png",
+          "sha256": "2a4b1c52dea31644c10338af283c1126e2d85bae704d227d6d9e56161f78e61a",
+          "size": [
+            4724,
+            4724
+          ],
+          "dpi": 600,
+          "geometry": {
+            "plot_endpoints_px": [
+              614.1732283464567,
+              4110.23622047244
+            ],
+            "bar_endpoints_px": [
+              614.1732283464567,
+              4110.23622047244
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.000000000000018
+          }
+        }
+      ]
+    },
+    {
+      "analysis_id": "ANG-02",
+      "figures": [
+        {
+          "path": "FracPaQ2D_roseangleEqArea_square.png",
+          "sha256": "46a68965cc95f53fc7c551ea070b7b6d8826ce85b0e24a5dee5e0d1e92f69e01",
+          "inches": [
+            6,
+            6
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              118.8,
+              541.2
+            ],
+            "bar_endpoints_px": [
+              118.8,
+              541.2
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 24.999999999999993
+          }
+        },
+        {
+          "path": "FracPaQ2D_roseangleEqArea_wide.png",
+          "sha256": "7f7f0c9f198f455037d5276193566eb1f41a3e9714a730217ab6de0f75929fc6",
+          "inches": [
+            10,
+            4
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              409.2,
+              690.8
+            ],
+            "bar_endpoints_px": [
+              409.2,
+              690.8
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.0
+          }
+        },
+        {
+          "path": "FracPaQ2D_roseangleEqArea_tall.png",
+          "sha256": "76e51777b87078418a8f9bf28000cd0d3004b3ec7c073f273045e29d04f17f87",
+          "inches": [
+            4,
+            9
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              52.8,
+              387.2
+            ],
+            "bar_endpoints_px": [
+              52.79999999999999,
+              387.19999999999993
+            ],
+            "maximum_deviation_px": 5.684341886080802e-14,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_roseangleEqArea_small.png",
+          "sha256": "53251fad8de0b4a504ca46e621f93f68617e6d8beddbfc81bd7aad977fdb6c32",
+          "inches": [
+            3.4,
+            2.8
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              97.56200303819443,
+              276.43799696180554
+            ],
+            "bar_endpoints_px": [
+              97.56200303819442,
+              276.43799696180554
+            ],
+            "maximum_deviation_px": 1.4210854715202004e-14,
+            "orientation": "horizontal",
+            "label_clearance_points": 24.999999999999996
+          }
+        },
+        {
+          "path": "FracPaQ2D_roseangleEqArea_large.png",
+          "sha256": "451d45e9838d59b401a0d25e0aa8f67ddacb46e76e7bb93dec3307b14094b290",
+          "inches": [
+            14,
+            10
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              417.99999999999994,
+              1122.0000000000002
+            ],
+            "bar_endpoints_px": [
+              417.99999999999994,
+              1122.0000000000002
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "FracPaQ2D_roseangleEqArea_600dpi.png",
+          "sha256": "ff86d7e3c16347280be0604d908ef970d6a56a43179f14af6e8b90e6aa146784",
+          "size": [
+            4724,
+            4724
+          ],
+          "dpi": 600,
+          "geometry": {
+            "plot_endpoints_px": [
+              850.3937007874015,
+              3874.015748031496
+            ],
+            "bar_endpoints_px": [
+              850.3937007874015,
+              3874.015748031496
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "horizontal",
+            "label_clearance_points": 24.99999999999999
+          }
+        }
+      ]
+    },
+    {
+      "analysis_id": "vertical_layout_example",
+      "figures": [
+        {
+          "path": "vertical_layout_square.png",
+          "sha256": "bca56d1ce76eedceeff97e3f124529ab6f64cc77459cc9e1c6bf937947cac840",
+          "inches": [
+            6,
+            6
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              145.35833333333335,
+              514.6416666666667
+            ],
+            "bar_endpoints_px": [
+              145.35833333333335,
+              514.6416666666667
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "vertical",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "vertical_layout_wide.png",
+          "sha256": "88131edb293a60fe2133ad0d300ee884e6f0d59cdc7e21a445f2c7cbad260c4e",
+          "inches": [
+            10,
+            4
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              66.0,
+              374.0
+            ],
+            "bar_endpoints_px": [
+              66.0,
+              374.0
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "vertical",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "vertical_layout_tall.png",
+          "sha256": "d57c30f15b9030450e9023cdd7d71dab4c097395986f1fcf4534cf27edaf4a4f",
+          "inches": [
+            4,
+            9
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              397.8083333333333,
+              592.1916666666667
+            ],
+            "bar_endpoints_px": [
+              397.8083333333333,
+              592.1916666666667
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "vertical",
+            "label_clearance_points": 25.00000000000001
+          }
+        },
+        {
+          "path": "vertical_layout_small.png",
+          "sha256": "95604d5f9a0dff8431bea8b23e31e813d0911896e97e0c05f0fb49837865dbb9",
+          "inches": [
+            3.4,
+            2.8
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              88.04333333333335,
+              219.95666666666665
+            ],
+            "bar_endpoints_px": [
+              88.04333333333335,
+              219.95666666666665
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "vertical",
+            "label_clearance_points": 24.99999999999997
+          }
+        },
+        {
+          "path": "vertical_layout_large.png",
+          "sha256": "033e34e67740fc4e1d2a88b4708fb4320b17bb99cf3acd3671f4f429600026ad",
+          "inches": [
+            14,
+            10
+          ],
+          "dpi": 110,
+          "geometry": {
+            "plot_endpoints_px": [
+              165.0,
+              935.0
+            ],
+            "bar_endpoints_px": [
+              165.0,
+              935.0
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "vertical",
+            "label_clearance_points": 24.999999999999936
+          }
+        },
+        {
+          "path": "vertical_layout_600dpi.png",
+          "sha256": "1a33abd547761a1605ca2c5d79e7e82197843dc0f2197c691fb11a96d752d148",
+          "size": [
+            4724,
+            4724
+          ],
+          "dpi": 600,
+          "geometry": {
+            "plot_endpoints_px": [
+              944.8818897637792,
+              3779.527559055118
+            ],
+            "bar_endpoints_px": [
+              944.8818897637792,
+              3779.527559055118
+            ],
+            "maximum_deviation_px": 0.0,
+            "orientation": "vertical",
+            "label_clearance_points": 24.99999999999996
+          }
+        }
+      ]
+    }
+  ],
+  "all_endpoints_deviation_below_px": 1e-08,
+  "fixed_label_clearance_points": 25,
+  "clearance_tolerance_points": 1e-08,
+  "png": 42,
+  "original_files_unchanged": 164,
+  "additional_workspace_reference_files_preserved": [
+    {
+      "path": "FracPaQ2D_histosegmentlength_Run1.png",
+      "sha256": "40432818e85ebdfb2599d0d1bea58f557cf5992af2872442385fbe7a1ebed908"
+    },
+    {
+      "path": "FracPaQ2D_histotracelength_Run1.png",
+      "sha256": "99d26d3653cfe46c4c012e6de5c5729c8ea823cc367629df7d49653fdd3eb96f"
+    },
+    {
+      "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+      "sha256": "f3c3d3e634a477f64c75c8f16c977d5f61ade54547996a2a76f6403a09f48266"
+    },
+    {
+      "path": "FracPaQ2D_tracelengthmap_Run1.png",
+      "sha256": "0dd841d96db4fcdc8337a1251d5fa3bc4e3e8873b76e438ed520f6ad51a00293"
+    },
+    {
+      "path": "FracPaQ2D_tracemap_Run1.png",
+      "sha256": "781ac030cb77dabe45b557c0d59967455473ffdb68140f2339244af3d89db048"
+    },
+    {
+      "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+      "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7"
+    },
+    {
+      "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+      "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839"
+    },
+    {
+      "path": "FracPaQ2Dtracelengths_Run1.txt",
+      "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874"
+    }
+  ],
+  "parameters_sha256": "2b575ff8ee02e7dad5c01ef67221541dcada67e9de82118f48cfa309bbf7b3f4",
+  "data_files": [
+    {
+      "path": "FracPaQ2DEZROSE_Run1.txt",
+      "sha256": "fb21d7536675f87becc96ada61d505f8d5f51fcd453a20f82d84383fe4e4a7ee"
+    },
+    {
+      "path": "FracPaQ2Ddensity_Run1.txt",
+      "sha256": "dae211387584110e9269b3f6871a661b273939ab80e17b62c0c55c6decb00a65"
+    },
+    {
+      "path": "FracPaQ2Dintensity_Run1.txt",
+      "sha256": "462f953d40213fcf80a1fa96c0e060c5fd84d8483a2705a7fd5abab069ba9e7f"
+    }
+  ]
+}

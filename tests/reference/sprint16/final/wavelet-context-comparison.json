@@ -1,0 +1,146 @@
+[
+  {
+    "kernel": "morlet",
+    "input_sha256": "96bafa56537444279a748c3f4b7a4300f7e73341a04d2ba4ff8cf1299ad74688",
+    "parameters": {
+      "a": [
+        16,
+        32
+      ],
+      "entered_L": [
+        2,
+        4
+      ],
+      "ratios": [
+        0.5,
+        0.25
+      ],
+      "step": 30,
+      "input": "fracpaq-matlab/SD11A.txt"
+    },
+    "comparisons": [
+      {
+        "scale": 16,
+        "coefficients_pass": true,
+        "maximum_absolute_error": 3.3306690738754696e-15,
+        "selection_exact": true,
+        "doubled_angles_exact": true,
+        "histogram_centres_pass": true,
+        "histogram_log_counts_pass": true,
+        "native_angle_count": 25296,
+        "shared_angle_count": 25296,
+        "production_angle_count": 26998,
+        "production_native_maximum_coefficient_difference": 0.7200464436572938,
+        "production_native_raster_difference_fraction": 0.05191557011973107
+      },
+      {
+        "scale": 32,
+        "coefficients_pass": true,
+        "maximum_absolute_error": 1.5265566588595902e-15,
+        "selection_exact": true,
+        "doubled_angles_exact": true,
+        "histogram_centres_pass": true,
+        "histogram_log_counts_pass": true,
+        "native_angle_count": 50972,
+        "shared_angle_count": 50972,
+        "production_angle_count": 63178,
+        "production_native_maximum_coefficient_difference": 0.3553042470674938,
+        "production_native_raster_difference_fraction": 0.05191557011973107
+      }
+    ],
+    "production_pngs": [
+      {
+        "path": "tests/reference/sprint16/final/python-contexts/morlet/FracPaQ2Dwavelet_a16_context.png",
+        "sha256": "1722f41ebcd98a5ec1a02fdc404165bab8f456f1c486b09bc491b69b97c655ca"
+      },
+      {
+        "path": "tests/reference/sprint16/final/python-contexts/morlet/FracPaQ2Dwavelet_a32_context.png",
+        "sha256": "c76aa08ab6549bd41858e732eb84fe83c564524b0bbd9a464737a7782c90f5c8"
+      }
+    ],
+    "shared_native_pixels_pngs": [
+      {
+        "path": "tests/reference/sprint16/final/shared-native-pixels/morlet/FracPaQ2Dwavelet_a16_context.png",
+        "sha256": "c464cca9a3ad5ee60b51837c3fb391f0bb22578762fe7cc6e71e494d1d5910a8"
+      },
+      {
+        "path": "tests/reference/sprint16/final/shared-native-pixels/morlet/FracPaQ2Dwavelet_a32_context.png",
+        "sha256": "b951fc3d39874251cd4b43e48cf2d9be45ea7a1904fcdbeaada3477a92139e4b"
+      }
+    ],
+    "seconds": 2.813956582976971,
+    "scope": "Shared native pixels test CWT independently; production Run retains the approved Q12 raster."
+  },
+  {
+    "kernel": "mexican",
+    "input_sha256": "96bafa56537444279a748c3f4b7a4300f7e73341a04d2ba4ff8cf1299ad74688",
+    "parameters": {
+      "a": [
+        16,
+        32
+      ],
+      "entered_L": [
+        2,
+        4
+      ],
+      "ratios": [
+        0.5,
+        0.25
+      ],
+      "step": 30,
+      "input": "fracpaq-matlab/SD11A.txt"
+    },
+    "comparisons": [
+      {
+        "scale": 16,
+        "coefficients_pass": true,
+        "maximum_absolute_error": 3.3306690738754696e-16,
+        "selection_exact": true,
+        "doubled_angles_exact": true,
+        "histogram_centres_pass": true,
+        "histogram_log_counts_pass": true,
+        "native_angle_count": 126708,
+        "shared_angle_count": 126708,
+        "production_angle_count": 147582,
+        "production_native_maximum_coefficient_difference": 0.29606413267223786,
+        "production_native_raster_difference_fraction": 0.05191557011973107
+      },
+      {
+        "scale": 32,
+        "coefficients_pass": true,
+        "maximum_absolute_error": 1.5265566588595902e-16,
+        "selection_exact": true,
+        "doubled_angles_exact": true,
+        "histogram_centres_pass": true,
+        "histogram_log_counts_pass": true,
+        "native_angle_count": 342126,
+        "shared_angle_count": 342126,
+        "production_angle_count": 353876,
+        "production_native_maximum_coefficient_difference": 0.13346858230739117,
+        "production_native_raster_difference_fraction": 0.05191557011973107
+      }
+    ],
+    "production_pngs": [
+      {
+        "path": "tests/reference/sprint16/final/python-contexts/mexican/FracPaQ2Dwavelet_a16_context.png",
+        "sha256": "631000973a108dbb2f4cac13fdc9a776a51f2eebe80fe75735af81c53fecdd10"
+      },
+      {
+        "path": "tests/reference/sprint16/final/python-contexts/mexican/FracPaQ2Dwavelet_a32_context.png",
+        "sha256": "561ab2f4d4e6049ee0cdbcc415acb89e4bccf73756efed476bece5751e5a650e"
+      }
+    ],
+    "shared_native_pixels_pngs": [
+      {
+        "path": "tests/reference/sprint16/final/shared-native-pixels/mexican/FracPaQ2Dwavelet_a16_context.png",
+        "sha256": "838b91cebd57f696f46df780cd782402a14e5a7196efccdbe4852835ed17d592"
+      },
+      {
+        "path": "tests/reference/sprint16/final/shared-native-pixels/mexican/FracPaQ2Dwavelet_a32_context.png",
+        "sha256": "8916de42ca4f36fa9cb87339c3a5b7fa8116d2136ec9214178b4eab54f9aa459"
+      }
+    ],
+    "seconds": 2.7506811670027673,
+    "scope": "Shared native pixels test CWT independently; production Run retains the approved Q12 raster."
+  }
+]

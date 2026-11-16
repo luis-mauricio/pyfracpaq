@@ -1,0 +1,72 @@
+[
+  {
+    "input": "fracpaq-matlab/ThinSection_H12Z.svg",
+    "sha256": "efe167ac67f6ccd7214880cb516b03eaadd742bcf895c4f1da26e751aca8b6a8",
+    "result": "<path> id=(none): Unsupported SVG path command 'c'; only one M followed by absolute L/pairs is supported."
+  },
+  {
+    "input": "fracpaq-matlab/ThinSection_H12Z_new.svg",
+    "sha256": "d6463787a93bdb46a8058b64f142bd6d8eb5996ab781c99c8e013c52fc5c468a",
+    "result": "<path> id=(none): Unsupported SVG path command 'c'; only one M followed by absolute L/pairs is supported."
+  },
+  {
+    "input": "fracpaq-matlab/Tile 1 No BG copy.svg",
+    "sha256": "7767370c0f130633007f6dbfa24955f45a38a2aabb226d515a6bab09af2501e7",
+    "result": "<path> id=(none): A trace must contain at least two complete X/Y pairs."
+  },
+  {
+    "input": "fracpaq-matlab/Tile 1 No BG.svg",
+    "sha256": "a0e1c69521f872548ca86d66e58603d4d9744e4e9f67b409c539541d4a07afbf",
+    "result": "<path> id=(none): A trace must contain at least two complete X/Y pairs."
+  },
+  {
+    "input": "fracpaq-matlab/Tile 4 No BG.svg",
+    "sha256": "2f1f25f343b88d966303cb8979935da45c0c10388a0c62471a568257e0507623",
+    "result": "<path> id=(none): Unsupported SVG path command 'l'; only one M followed by absolute L/pairs is supported."
+  },
+  {
+    "input": "fracpaq-matlab/blocksizetest.svg",
+    "sha256": "a4047f4e184d6289483e13893b3c6b6e6dd21397352b663a765e494004fa8b5f",
+    "result": "<path> id=(none): Unsupported SVG path command 'c'; only one M followed by absolute L/pairs is supported."
+  },
+  {
+    "input": "fracpaq-matlab/leftsideFaults.svg",
+    "sha256": "b4eec440002722af5d478109822b492900fb22c52ee954b50c3dfe8cf289cf36",
+    "result": "CSS stylesheets are unsupported; put stroke on each element or in inline/group style."
+  },
+  {
+    "input": "fracpaq-matlab/leftsideJoints.svg",
+    "sha256": "98d2b4107cb7ccb4f79671322804b4dec39f5e023e506bf23c77feafc8a1ec50",
+    "result": "CSS stylesheets are unsupported; put stroke on each element or in inline/group style."
+  },
+  {
+    "input": "fracpaq-matlab/map1.svg",
+    "sha256": "910d1b8fc57e9f44e1d6caeb91edd3584c11f5e040462689008eda5985822d4f",
+    "result": "Unsupported SVG element <polygon>; polygon, curves and referenced shapes are not converted silently."
+  },
+  {
+    "input": "fracpaq-matlab/map1_edit.svg",
+    "sha256": "b319339465b5331c03e083b788076b5bad587750bf02163a8d31aecddecb1e1f",
+    "result": "SVG conversion geometry at eight decimal places: A trace needs two distinct consecutive nodes."
+  },
+  {
+    "input": "fracpaq-matlab/map7.svg",
+    "sha256": "a7dbde58f9c7da9461b8cc9a2643d2baddeecb4d37147bd1b250a504ede7890a",
+    "result": "Unsupported SVG element <polygon>; polygon, curves and referenced shapes are not converted silently."
+  },
+  {
+    "input": "fracpaq-matlab/map7_edit.svg",
+    "sha256": "a155875251210910dff14b354eee707c5f1b6c88b20b438e330ebb34e1072fb6",
+    "result": "SVG conversion geometry at eight decimal places: A trace needs two distinct consecutive nodes."
+  },
+  {
+    "input": "fracpaq-matlab/rightsideFaults.svg",
+    "sha256": "202b3db71f9deefffa4009cb28676e5718ce8834c28d514bb1db81c49b8c437d",
+    "result": "CSS stylesheets are unsupported; put stroke on each element or in inline/group style."
+  },
+  {
+    "input": "fracpaq-matlab/rightsideJoints.svg",
+    "sha256": "5f015974e873e4906528c7687fb53ed1258942c0e40f78e07152f767004752dc",
+    "result": "CSS stylesheets are unsupported; put stroke on each element or in inline/group style."
+  }
+]

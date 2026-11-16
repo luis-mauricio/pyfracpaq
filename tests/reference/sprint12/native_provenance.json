@@ -1,0 +1,414 @@
+{
+  "date": "2026-11-14",
+  "native_version": "24.2.0.3212159 (R2024b) Update 9",
+  "capture_script": "scripts/capture_native_s1213.m",
+  "capture_script_sha256": "a336b1abd6c3ca753db1fd6b0d5141f9486f8b4b92de4fbe728c37440db3d3b1",
+  "source_manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7",
+  "original_files_sha256_verified": 164,
+  "extra_original_folder_files_preserved": [
+    {
+      "path": "FracPaQ2D_histosegmentlength_Run1.png",
+      "sha256": "40432818e85ebdfb2599d0d1bea58f557cf5992af2872442385fbe7a1ebed908"
+    },
+    {
+      "path": "FracPaQ2D_histotracelength_Run1.png",
+      "sha256": "99d26d3653cfe46c4c012e6de5c5729c8ea823cc367629df7d49653fdd3eb96f"
+    },
+    {
+      "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+      "sha256": "f3c3d3e634a477f64c75c8f16c977d5f61ade54547996a2a76f6403a09f48266"
+    },
+    {
+      "path": "FracPaQ2D_tracelengthmap_Run1.png",
+      "sha256": "e94c17131fa2052be91e7fe3b7c44f830b5354f9d407f0503e0ea37686d557cf"
+    },
+    {
+      "path": "FracPaQ2D_tracemap_Run1.png",
+      "sha256": "781ac030cb77dabe45b557c0d59967455473ffdb68140f2339244af3d89db048"
+    },
+    {
+      "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+      "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7"
+    },
+    {
+      "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+      "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839"
+    },
+    {
+      "path": "FracPaQ2Dtracelengths_Run1.txt",
+      "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "tests/reference/sprint12/native/FracPaQ2D_segmentlength_variogram_native_variogram.png",
+      "sha256": "ce38265148d0f61bd37ed5a260ed2b63021827e9dc1caa4f120b48be8ad46553",
+      "bytes": 141537,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/FracPaQ2Dsegmentangleslengths_native_variogram.txt",
+      "sha256": "9ac63fd911a4f0f6a7af2957954bb3e4e05c97beda61de640fd8ab08c60966ab",
+      "bytes": 56,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/FracPaQ2Dsegmentlengths_native_variogram.txt",
+      "sha256": "17ab9d2956c0d497158fc57f7b3f56d43b14284b60486175680be30d9c672349",
+      "bytes": 28,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/FracPaQ2Dtracelengths_native_variogram.txt",
+      "sha256": "c270245b29e1125b0e7149a374b0f1fddf7054199efd67a1f32a0f0501dbc212",
+      "bytes": 14,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/native_calls.json",
+      "sha256": "2b8f7eb5cc0e2fce7d51c0f205500a432e0ab60fb2c66012f79c803cb9229149",
+      "bytes": 108,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksize.bmp",
+      "sha256": "70dfffc87603078a94f098c93f1c5de889c2a441aad824bb0f0cadf985e3e97d",
+      "bytes": 9078,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        100,
+        80
+      ],
+      "mode": "P",
+      "dpi": null
+    },
+    {
+      "path": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksizecentroidmap_native_nested.png",
+      "sha256": "17bd242236a8ff8dca5fa91c25f6aff66c52adce9026e14bab55c1ea59d2e8a1",
+      "bytes": 162222,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksizehisto_native_nested.png",
+      "sha256": "7700b980332d2f66aa9d396faae55ae9598a4619aacbc05181e1a625e2aacd40",
+      "bytes": 183727,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksizeloglog_native_nested.png",
+      "sha256": "ec4d4713a7d650f6f00175e5e80f96557408988ccea8c84a0caa7a7468a2d476",
+      "bytes": 271476,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/nested/FracPaQ2Dsegmentangleslengths_native_nested.txt",
+      "sha256": "5927c0033cbb4562c891b497ccbed18ff1c7f379d34e7b6a6f1878e3fa50129d",
+      "bytes": 112,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/nested/FracPaQ2Dsegmentlengths_native_nested.txt",
+      "sha256": "6e206ef34516ddbe33bd936a81da7ac53e0329f04c352c6c52f82ebccbb52fa4",
+      "bytes": 56,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/nested/FracPaQ2Dtracelengths_native_nested.txt",
+      "sha256": "df4958750f43d5cab4e816fc919f633f3d9a8a63376e43dc841c23c8e9c0b0f6",
+      "bytes": 14,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/nested/raster_arrays.mat",
+      "sha256": "5cbea9534dad39df75bbd1aea2e4ab878685ada209a4aab89ef0d81b29b4e7d8",
+      "bytes": 809,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/oblique/FracPaQ2D_blocksize.bmp",
+      "sha256": "e307afec3cdd2d040773ac25940adfb05a2f9e048a9eb142127f674d30376c1e",
+      "bytes": 5878,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        80,
+        60
+      ],
+      "mode": "P",
+      "dpi": null
+    },
+    {
+      "path": "tests/reference/sprint12/native/oblique/FracPaQ2D_blocksizecentroidmap_native_oblique.png",
+      "sha256": "50683f11846b5adee66d4206d0b6fb238ad643741144b04fb753f072cca1883c",
+      "bytes": 174018,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/oblique/FracPaQ2D_blocksizehisto_native_oblique.png",
+      "sha256": "bdb320d89207bf4235434164c8d309f726868f67a7eb1130ba303afa469ac1ef",
+      "bytes": 170877,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/oblique/FracPaQ2D_blocksizeloglog_native_oblique.png",
+      "sha256": "72c1fc6fc0b817b48e753fc93e5b1c9882f7625a26453302239d83385a9ce785",
+      "bytes": 268969,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/oblique/FracPaQ2Dsegmentangleslengths_native_oblique.txt",
+      "sha256": "99657405c721e8be92ca6f044634c85b9f23cf2ffe895c8f8257f348db045456",
+      "bytes": 56,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/oblique/FracPaQ2Dsegmentlengths_native_oblique.txt",
+      "sha256": "9a410cdfadbf9d1190e76652226948dfe72a2bfa0ce91df8f579f5ba20733888",
+      "bytes": 28,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/oblique/FracPaQ2Dtracelengths_native_oblique.txt",
+      "sha256": "d6562255731e5c426c41697086d620082458984c6f8597030f94f7e0105e9ff0",
+      "bytes": 7,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/oblique/raster_arrays.mat",
+      "sha256": "324644e37b19625b4e206325445cab33fa552a0b043b727d4123c65c0c7fb5df",
+      "bytes": 1404,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/scaled/FracPaQ2D_blocksize.bmp",
+      "sha256": "f8043338778c84d5420522aed7fe439ac9996a31d71ed5eceb7ab8d5efa4b14e",
+      "bytes": 1150,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        10,
+        6
+      ],
+      "mode": "P",
+      "dpi": null
+    },
+    {
+      "path": "tests/reference/sprint12/native/scaled/FracPaQ2D_blocksizecentroidmap_native_scaled.png",
+      "sha256": "8b1470410102317b9d44aa0044e03ae2fe651112ace3ee7d55babcc8a364cfa5",
+      "bytes": 142632,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/scaled/FracPaQ2D_blocksizehisto_native_scaled.png",
+      "sha256": "311c118ac213230421d6d224d6455e9f88bb944f65056975dc7f304d965ffba6",
+      "bytes": 178285,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/scaled/FracPaQ2D_blocksizeloglog_native_scaled.png",
+      "sha256": "c479ec5151d5dc60fbd4b3e0db3c78d8ae6913b541848c30f9d24384995c3df5",
+      "bytes": 291863,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/scaled/FracPaQ2Dsegmentangleslengths_native_scaled.txt",
+      "sha256": "e80b6a24474d8265e1a5ccfba3d3064ae03fe9f0df612227b35fcd633d5af046",
+      "bytes": 112,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/scaled/FracPaQ2Dsegmentlengths_native_scaled.txt",
+      "sha256": "8029ebba7d8a272333c83a2ef9db9cfe0ce1d1f8443635419b0b130c962dbb3c",
+      "bytes": 56,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/scaled/FracPaQ2Dtracelengths_native_scaled.txt",
+      "sha256": "876892a5e1e4012c6e23d6616887f7eed325b53a693c7b2b73a33b38382298f9",
+      "bytes": 14,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/scaled/raster_arrays.mat",
+      "sha256": "f609b1c02de6a2838b65aee6e721118e36ff95feb4e2fe156831e83d3dcb4cd1",
+      "bytes": 668,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/separate/FracPaQ2D_blocksize.bmp",
+      "sha256": "c6a771981c6bf82e6fd2a2fce186b9b083b713fddbc7f87405329dd2fc4d19f2",
+      "bytes": 7078,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        100,
+        60
+      ],
+      "mode": "P",
+      "dpi": null
+    },
+    {
+      "path": "tests/reference/sprint12/native/separate/FracPaQ2D_blocksizecentroidmap_native_separate.png",
+      "sha256": "c19ef3989343691d0315149606148dca25c0ad2244b7ab6fca1e2e9315e1fd94",
+      "bytes": 158354,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/separate/FracPaQ2D_blocksizehisto_native_separate.png",
+      "sha256": "e7f682de994c33f0af35a9875971b60e37f58a01cf5e973a7fcbf5a9aa9aec56",
+      "bytes": 170237,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/separate/FracPaQ2D_blocksizeloglog_native_separate.png",
+      "sha256": "890880c7f6441e70d3a7583078adde67d8f8d44703b7b66944cb4e9bc91b2999",
+      "bytes": 237065,
+      "role": "Actual supplied MATLAB source execution output",
+      "size": [
+        4724,
+        4724
+      ],
+      "mode": "RGB",
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint12/native/separate/FracPaQ2Dsegmentangleslengths_native_separate.txt",
+      "sha256": "a3dc683d7309f39c8fd6d0865a46bf431ac40d718f8ebad877ca91c13844efc0",
+      "bytes": 112,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/separate/FracPaQ2Dsegmentlengths_native_separate.txt",
+      "sha256": "404b00b6aa90ca83755d5ea7999006689a977a5eb4811943b8f987e92c6ef2bb",
+      "bytes": 56,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/separate/FracPaQ2Dtracelengths_native_separate.txt",
+      "sha256": "8a3683824066e8134827973b30505c2edd2a72922fa000ad3fd3ce517d49d470",
+      "bytes": 14,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/separate/raster_arrays.mat",
+      "sha256": "8411b08a01ad981f3266465b6fb22eca82c834c3b60fc48ab7504bb1056ed146",
+      "bytes": 818,
+      "role": "Actual supplied MATLAB source execution output"
+    },
+    {
+      "path": "tests/reference/sprint12/native/variogram_arrays.mat",
+      "sha256": "b463f9484be32eec401c7c6f8de5a895c533e216f8a723d8eda03afb9aaf5483",
+      "bytes": 1244,
+      "role": "Actual supplied MATLAB source execution output"
+    }
+  ],
+  "limitations": "Native outputs are preserved. Approved Q-14/P20 differences are recorded separately; renderer pixel identity is not claimed."
+}

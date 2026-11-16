@@ -1,0 +1,89 @@
+{
+  "decision": "Q-14 approved and active in the default Run",
+  "source": "Actual MATLAB routine outputs and bitmap component arrays, scripts/capture_native_s1213.m",
+  "input": "Two closed 40x40 rectangles: (10,10)..(50,50) and (70,30)..(110,70)",
+  "native": {
+    "unscaled_shape_yx": [
+      60,
+      100
+    ],
+    "areas_pixels": [
+      2721,
+      1368,
+      1368
+    ],
+    "touches_border": [
+      1,
+      0,
+      0
+    ],
+    "plotted_centroids": [
+      [
+        60.503491363469315,
+        39.49614112458655
+      ],
+      [
+        31.5,
+        29.5
+      ],
+      [
+        89.5,
+        49.5
+      ]
+    ],
+    "scaled10": {
+      "shape_yx": [
+        6,
+        10
+      ],
+      "areas_pixels": [
+        5,
+        2,
+        6,
+        2
+      ]
+    }
+  },
+  "proposed": {
+    "raster_method": "Deterministic offscreen Agg, full trace envelope, white background, black .5-point lines at 300 dpi; one pixel per original unscaled unit, with exact pixel-to-world transform. Raster differs from MATLAB screen/print geometry.",
+    "unscaled_shape_yx": [
+      60,
+      100
+    ],
+    "include_only": "White 8-connected components that do not touch any raster boundary",
+    "areas_pixels": [
+      1444,
+      1444
+    ],
+    "centroids_unscaled": [
+      [
+        30.0,
+        30.0
+      ],
+      [
+        90.0,
+        50.0
+      ]
+    ],
+    "scaled10_areas_metres2": [
+      14.44,
+      14.44
+    ],
+    "scaled10_shape_yx": [
+      60,
+      100
+    ],
+    "area_meaning": "White raster area after fracture ink, not vector polygon area.",
+    "constant_or_empty": "Complete outputs with one histogram bin or explicit empty status; no invented nonzero complementary counts."
+  },
+  "approval": {
+    "author": "user",
+    "date": "2026-11-14",
+    "statement": "Aprovo ambos Q-14 e Extensão Q-20.",
+    "decisions": [
+      "Q-14",
+      "Q-20 Graphs P20 normalization extension"
+    ],
+    "scope": "Enclosed white 8-connected blocks, fixed unscaled raster and calibrated areas/centres; Graphs P20=m/(2*pi*r^2), retaining the previously approved finite counts."
+  }
+}

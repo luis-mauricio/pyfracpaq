@@ -1,0 +1,4789 @@
+[
+  {
+    "id": "MAP-01",
+    "path": "FracPaQ2D_tracemap_SD11A.png",
+    "sha256": "cd2fab8ac18156492e3b4ce3ed223a54653ec0b13f1aa8f9f43f54a0d677e384",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          624.9550295339641,
+          4274.625,
+          4266.044970466036
+        ],
+        "title": "Mapped traces (n=445), segments (n=1076) & nodes (n=1521)\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Mapped traces (n=445), segments (n=1076) & nodes (n=1521)\n",
+            "bbox": [
+              1115.5078125,
+              4269.049934658745,
+              3772.4921875,
+              4468.591764085828
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              387.80496442979745,
+              2617.2265625,
+              473.83198265896414
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              284.6813151041667,
+              2272.2734375,
+              370.70833333333337,
+              2618.7265625
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-06",
+    "path": "FracPaQ2D_segmentstrikemap_SD11A.png",
+    "sha256": "f94940d0cfd658b58754d9960acce4751dbcc7ee689545b3cb268ffc5ad3dbc0",
+    "axes": [
+      {
+        "bbox": [
+          759.1249999999999,
+          1065.4024816038445,
+          4128.875,
+          4416.5975183961555
+        ],
+        "title": "Segment strike map, n=1076\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment strike map, n=1076\n",
+            "bbox": [
+              1826.1875,
+              4419.602482588864,
+              3061.8125,
+              4619.144312015947
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              827.2524164996779,
+              2617.2265625,
+              913.2794347288445
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              430.4313151041666,
+              2567.7734375,
+              516.4583333333333,
+              2914.2265625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          759.1249999999999,
+          500.80884694634454,
+          4128.875,
+          618.9190831663445
+        ],
+        "title": "",
+        "xlabel": "Segment strike, degrees",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          180.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0,
+          20,
+          40,
+          60,
+          80,
+          100,
+          120,
+          140,
+          160,
+          180
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Segment strike, degrees",
+            "bbox": [
+              2037.5,
+              287.11337168592786,
+              2850.5,
+              357.50643809217786
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-02",
+    "path": "FracPaQ2D_histotracelength_SD11A.png",
+    "sha256": "c533e990210b8c41f7b2f0cf1a6165f4056323d77c657a663a1383ed18870d3d",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "Trace lengths, n=445\n",
+        "xlabel": "Trace length, pixels",
+        "ylabel": "Frequency",
+        "xlim": [
+          0.0,
+          2262.832849184593
+        ],
+        "ylim": [
+          0.0,
+          256.8
+        ],
+        "xticks": [
+          0.0,
+          500.0,
+          1000.0,
+          1500.0,
+          2000.0
+        ],
+        "yticks": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Trace lengths, n=445\n",
+            "bbox": [
+              1989.2578125,
+              4279.129964192709,
+              2898.7421875,
+              4478.671793619792
+            ]
+          },
+          {
+            "text": "Trace length, pixels",
+            "bbox": [
+              2046.5546875,
+              377.7192382812503,
+              2841.4453125,
+              463.7519531250003
+            ]
+          },
+          {
+            "text": "Frequency",
+            "bbox": [
+              331.01936848958337,
+              2228.9296875,
+              417.05208333333337,
+              2662.0703125
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "",
+        "xlabel": "",
+        "ylabel": "Frequency, %",
+        "xlim": [
+          0.0,
+          2262.832849184593
+        ],
+        "ylim": [
+          0.0,
+          57.70786516853933
+        ],
+        "xticks": [
+          0.0,
+          500.0,
+          1000.0,
+          1500.0,
+          2000.0
+        ],
+        "yticks": [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Frequency, %",
+            "bbox": [
+              4442.3125,
+              2162.703125,
+              4528.34521484375,
+              2728.296875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-02",
+    "path": "FracPaQ2D_histosegmentlength_SD11A.png",
+    "sha256": "7fd20247a00de021fbbc20201839d90d47038007c6bf3cf8318d35bbe083f1ef",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "Segment lengths, n=1076\n",
+        "xlabel": "Segment length, pixels",
+        "ylabel": "Frequency",
+        "xlim": [
+          0.0,
+          350.2069880799069
+        ],
+        "ylim": [
+          0.0,
+          337.2
+        ],
+        "xticks": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0
+        ],
+        "yticks": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment lengths, n=1076\n",
+            "bbox": [
+              1892.5,
+              4279.129964192709,
+              2995.5,
+              4478.671793619792
+            ]
+          },
+          {
+            "text": "Segment length, pixels",
+            "bbox": [
+              1980.2734375,
+              377.7192382812503,
+              2907.7265625,
+              463.7519531250003
+            ]
+          },
+          {
+            "text": "Frequency",
+            "bbox": [
+              331.01936848958337,
+              2228.9296875,
+              417.05208333333337,
+              2662.0703125
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "",
+        "xlabel": "",
+        "ylabel": "Frequency, %",
+        "xlim": [
+          0.0,
+          350.2069880799069
+        ],
+        "ylim": [
+          0.0,
+          31.33828996282528
+        ],
+        "xticks": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0
+        ],
+        "yticks": [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Frequency, %",
+            "bbox": [
+              4442.3125,
+              2162.703125,
+              4528.34521484375,
+              2728.296875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-03",
+    "path": "FracPaQ2D_loglogplottracelengthdensity_SD11A.png",
+    "sha256": "6aac87a929e85b3dd54daeb5289b7ae74faaca2ef972560c9dae9fa7181462be",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "Density distribution of trace lengths, n=445\n",
+        "xlabel": "Trace length, pixels",
+        "ylabel": "Frequency, n(L)",
+        "xlim": [
+          6.68246212110473,
+          2262.832849184593
+        ],
+        "ylim": [
+          0.1,
+          256.8
+        ],
+        "xticks": [
+          0.001,
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "yticks": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0,
+          1000.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Density distribution of trace lengths, n=445\n",
+            "bbox": [
+              1502.8828125,
+              4279.129964192709,
+              3385.1171875,
+              4478.671793619792
+            ]
+          },
+          {
+            "text": "Trace length, pixels",
+            "bbox": [
+              2046.5546875,
+              348.7996419270836,
+              2841.4453125,
+              434.8323567708336
+            ]
+          },
+          {
+            "text": "Frequency, n(L)",
+            "bbox": [
+              318.08186848958337,
+              2121.9453125,
+              404.11458333333337,
+              2769.0546875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-03",
+    "path": "FracPaQ2D_loglogplottracelength_SD11A.png",
+    "sha256": "0e4d7a04ffcbd04a2314f5c086cd302f52a89806157ebd9a37ec38e6f597d2a2",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "Cumulative distribution of trace lengths, n=445\n",
+        "xlabel": "Trace length, pixels",
+        "ylabel": "Cumulative frequency, C(L)",
+        "xlim": [
+          6.68246212110473,
+          3099.8
+        ],
+        "ylim": [
+          0.1,
+          534.0
+        ],
+        "xticks": [
+          0.001,
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "yticks": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0,
+          1000.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Cumulative distribution of trace lengths, n=445\n",
+            "bbox": [
+              1421.390625,
+              4279.129964192709,
+              3466.609375,
+              4478.671793619792
+            ]
+          },
+          {
+            "text": "Trace length, pixels",
+            "bbox": [
+              2046.5546875,
+              348.7996419270836,
+              2841.4453125,
+              434.8323567708336
+            ]
+          },
+          {
+            "text": "Cumulative frequency, C(L)",
+            "bbox": [
+              318.08186848958337,
+              1887.6015625,
+              404.1145833333334,
+              3003.3984375
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-03",
+    "path": "FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png",
+    "sha256": "0556c2cd74138470b846c51be87052cb1dec60b7e2c91b0b4a72041892f6ed74",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "Density distribution of segment lengths, n=1076\n",
+        "xlabel": "Segment length, pixels",
+        "ylabel": "Frequency, n(L)",
+        "xlim": [
+          5.695656239626787,
+          350.2069880799069
+        ],
+        "ylim": [
+          0.1,
+          337.2
+        ],
+        "xticks": [
+          0.001,
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "yticks": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0,
+          1000.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Density distribution of segment lengths, n=1076\n",
+            "bbox": [
+              1398.46875,
+              4279.129964192709,
+              3489.53125,
+              4478.671793619792
+            ]
+          },
+          {
+            "text": "Segment length, pixels",
+            "bbox": [
+              1980.2734375,
+              348.7996419270836,
+              2907.7265625,
+              434.8323567708336
+            ]
+          },
+          {
+            "text": "Frequency, n(L)",
+            "bbox": [
+              318.08186848958337,
+              2121.9453125,
+              404.11458333333337,
+              2769.0546875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-03",
+    "path": "FracPaQ2D_loglogplotsegmentlength_SD11A.png",
+    "sha256": "62034fa3bb1116d8732c9e99c4ae4a51b6528a0bb7188afbf90fea1afc47a194",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "Cumulative distribution of segment lengths, n=1076\n",
+        "xlabel": "Segment length, pixels",
+        "ylabel": "Cumulative frequency, C(L)",
+        "xlim": [
+          5.695656239626787,
+          3099.8
+        ],
+        "ylim": [
+          0.1,
+          1291.2
+        ],
+        "xticks": [
+          0.001,
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "yticks": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Cumulative distribution of segment lengths, n=1076\n",
+            "bbox": [
+              1316.9765625,
+              4279.129964192709,
+              3571.0234375,
+              4478.671793619792
+            ]
+          },
+          {
+            "text": "Segment length, pixels",
+            "bbox": [
+              1980.2734375,
+              348.7996419270836,
+              2907.7265625,
+              434.8323567708336
+            ]
+          },
+          {
+            "text": "Cumulative frequency, C(L)",
+            "bbox": [
+              318.08186848958337,
+              1887.6015625,
+              404.1145833333334,
+              3003.3984375
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-15",
+    "path": "FracPaQ2D_segmentlength_variogram_SD11A.png",
+    "sha256": "38bafa3d2d54db63a2c3976bd02d7a89079c92c056ba12ee920e2e56254b2c95",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Semivariogram, n=1076\n",
+        "xlabel": "h, pixels",
+        "ylabel": "$\\gamma$ (h)",
+        "xlim": [
+          0.0,
+          1400.0
+        ],
+        "ylim": [
+          400.0,
+          1800.0
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0
+        ],
+        "yticks": [
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Semivariogram, n=1076\n",
+            "bbox": [
+              1930.6015625,
+              4373.629964192709,
+              2957.3984375,
+              4573.171793619792
+            ]
+          },
+          {
+            "text": "h, pixels",
+            "bbox": [
+              2275.8515625,
+              283.2249348958333,
+              2612.1484375,
+              369.251953125
+            ]
+          },
+          {
+            "text": "$\\gamma$ (h)",
+            "bbox": [
+              284.19124348958337,
+              2353.0390625,
+              370.70833333333337,
+              2537.9609375
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ANG-01",
+    "path": "FracPaQ2D_histoangle_SD11A.png",
+    "sha256": "b40e7cc3642b012dd93b8f2527aa27d5f28eee03b023174a3609effc20887f1c",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "Trace segment angles, n=1076\n",
+        "xlabel": "Trace segment angle, degrees",
+        "ylabel": "Frequency",
+        "xlim": [
+          -10.0,
+          370.0
+        ],
+        "ylim": [
+          0.0,
+          458.70000000000005
+        ],
+        "xticks": [
+          0,
+          60,
+          120,
+          180,
+          240,
+          300,
+          360
+        ],
+        "yticks": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0,
+          400.0,
+          450.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Trace segment angles, n=1076\n",
+            "bbox": [
+              1780.3046875,
+              4279.129964192709,
+              3107.6953125,
+              4478.671793619792
+            ]
+          },
+          {
+            "text": "Trace segment angle, degrees",
+            "bbox": [
+              1822.2890625,
+              377.7192382812503,
+              3065.7109375,
+              463.7519531250003
+            ]
+          },
+          {
+            "text": "Frequency",
+            "bbox": [
+              331.01936848958337,
+              2228.9296875,
+              417.05208333333337,
+              2662.0703125
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "",
+        "xlabel": "",
+        "ylabel": "Frequency, %",
+        "xlim": [
+          -10.0,
+          370.0
+        ],
+        "ylim": [
+          0.0,
+          21.315055762081787
+        ],
+        "xticks": [
+          0,
+          60,
+          120,
+          180,
+          240,
+          300,
+          360
+        ],
+        "yticks": [
+          0.0,
+          2.0,
+          4.0,
+          6.0,
+          8.0,
+          10.0,
+          12.0,
+          14.0,
+          16.0,
+          18.0,
+          20.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Frequency, %",
+            "bbox": [
+              4442.3125,
+              2162.703125,
+              4528.34521484375,
+              2728.296875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "FLO-09",
+    "path": "FracPaQ2D_permeability_polar_SD11A.png",
+    "sha256": "afaf31c191547575db9c2f7021665e950b50e08f98fdc6b677e4471ecef26840",
+    "axes": [
+      {
+        "bbox": [
+          614.173228344,
+          614.1732283439998,
+          4275.590551164,
+          4275.590551163999
+        ],
+        "title": "Permeability tensor, pixels$^2$",
+        "xlabel": "",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          6.283185307179586
+        ],
+        "ylim": [
+          0.0,
+          1.2000000000000001e-12
+        ],
+        "xticks": [
+          0.0,
+          0.5235987755982988,
+          1.0471975511965976,
+          1.5707963267948966,
+          2.0943951023931953,
+          2.6179938779914944,
+          3.141592653589793,
+          3.6651914291880923,
+          4.1887902047863905,
+          4.71238898038469,
+          5.235987755982989,
+          5.759586531581287
+        ],
+        "yticks": [
+          5e-13,
+          1e-12
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Permeability tensor, pixels$^2$",
+            "bbox": [
+              1842.881889754,
+              4591.8686023439595,
+              3046.881889754,
+              4705.6290190106265
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "GRA-03",
+    "path": "guiFracPaQ2D_tracelengthalonggraph_SD11A.png",
+    "sha256": "7b412e7c6a9bcf4f1e24c94dc348d5a7c08211050a28cc86d5ef88ec42c54d85",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Trace lengths",
+        "xlabel": "Distance along line from point 1, pixels",
+        "ylabel": "Trace length, pixels",
+        "xlim": [
+          0.0,
+          1949.714888888889
+        ],
+        "ylim": [
+          0.0,
+          2057.1207719859935
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0,
+          2000.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Trace lengths",
+            "bbox": [
+              2145.96875,
+              4376.328125,
+              2742.03125,
+              4462.36083984375
+            ]
+          },
+          {
+            "text": "Distance along line from point 1, pixels",
+            "bbox": [
+              1659.2890625,
+              283.21923828125,
+              3228.7109375,
+              369.251953125
+            ]
+          },
+          {
+            "text": "Trace length, pixels",
+            "bbox": [
+              284.67561848958337,
+              2048.0546875,
+              370.70833333333337,
+              2842.9453125
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "GRA-10",
+    "path": "guiFracPaQ2D_tracelengthfromgraph_SD11A.png",
+    "sha256": "31fa8f716be079def497f13c6b5c7954c4be900a1fe0bff89794214d2b4eb508",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Trace lengths",
+        "xlabel": "Perpendicular distance from line, pixels",
+        "ylabel": "Trace length, pixels",
+        "xlim": [
+          -1000.0,
+          1000.0
+        ],
+        "ylim": [
+          0.0,
+          2500.0
+        ],
+        "xticks": [
+          -1000.0,
+          -800.0,
+          -600.0,
+          -400.0,
+          -200.0,
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0
+        ],
+        "yticks": [
+          0.0,
+          500.0,
+          1000.0,
+          1500.0,
+          2000.0,
+          2500.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Trace lengths",
+            "bbox": [
+              2145.96875,
+              4376.328125,
+              2742.03125,
+              4462.36083984375
+            ]
+          },
+          {
+            "text": "Perpendicular distance from line, pixels",
+            "bbox": [
+              1646.5703125,
+              283.2249348958333,
+              3241.4296875,
+              369.251953125
+            ]
+          },
+          {
+            "text": "Trace length, pixels",
+            "bbox": [
+              284.67561848958337,
+              2048.0546875,
+              370.70833333333337,
+              2842.9453125
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-07",
+    "path": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+    "sha256": "0445fe3d67e22139c5ed5c96f2b9ed6e9b4987f7c785fefabffd9756cefef292",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Power Law Distribution MLE, trace lengths\n",
+        "xlabel": "Length, pixels",
+        "ylabel": "Pr(l $\\geq$ l)",
+        "xlim": [
+          7.424957912338589,
+          2057.1207719859935
+        ],
+        "ylim": [
+          0.001,
+          1.0
+        ],
+        "xticks": [
+          1.0,
+          10.0,
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "yticks": [
+          0.0001,
+          0.001,
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Power Law Distribution MLE, trace lengths\n",
+            "bbox": [
+              1514.4140625,
+              4373.629964192709,
+              3373.5859375,
+              4573.171793619792
+            ]
+          },
+          {
+            "text": "Length, pixels",
+            "bbox": [
+              2161.1484375,
+              254.29964192708331,
+              2726.8515625,
+              340.3323567708333
+            ]
+          },
+          {
+            "text": "Pr(l $\\geq$ l)",
+            "bbox": [
+              318.08186848958337,
+              2287.6953125,
+              404.11458333333337,
+              2603.3046875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-07",
+    "path": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+    "sha256": "cfeb9ac7fd7c8a5a4d0188a892aa6e70dc7c189d3ccf35b45010d4e3291a4c7b",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Exponential Distribution MLE, trace lengths\n",
+        "xlabel": "Length, pixels",
+        "ylabel": "Pr(l $\\geq$ l)",
+        "xlim": [
+          0.0,
+          2500.0
+        ],
+        "ylim": [
+          0.0001,
+          1.0
+        ],
+        "xticks": [
+          0.0,
+          500.0,
+          1000.0,
+          1500.0,
+          2000.0,
+          2500.0
+        ],
+        "yticks": [
+          1e-05,
+          0.0001,
+          0.001,
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Exponential Distribution MLE, trace lengths\n",
+            "bbox": [
+              1494.0703125,
+              4373.629964192709,
+              3393.9296875,
+              4573.171793619792
+            ]
+          },
+          {
+            "text": "Length, pixels",
+            "bbox": [
+              2161.1484375,
+              283.21923828125,
+              2726.8515625,
+              369.251953125
+            ]
+          },
+          {
+            "text": "Pr(l $\\geq$ l)",
+            "bbox": [
+              318.08186848958337,
+              2287.6953125,
+              404.11458333333337,
+              2603.3046875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-07",
+    "path": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+    "sha256": "062a6803ecf60546a469351cb30e46490a2cb8573989583aeab0757b1c6fb73b",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Lognormal Distribution MLE, trace lengths\n",
+        "xlabel": "Length, pixels",
+        "ylabel": "Pr(l $\\geq$ l)",
+        "xlim": [
+          7.424957912338589,
+          2057.1207719859935
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          1.0,
+          10.0,
+          100.0,
+          1000.0,
+          10000.0
+        ],
+        "yticks": [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Lognormal Distribution MLE, trace lengths\n",
+            "bbox": [
+              1517.03125,
+              4373.629964192709,
+              3370.96875,
+              4573.171793619792
+            ]
+          },
+          {
+            "text": "Length, pixels",
+            "bbox": [
+              2161.1484375,
+              254.29964192708331,
+              2726.8515625,
+              340.3323567708333
+            ]
+          },
+          {
+            "text": "Pr(l $\\geq$ l)",
+            "bbox": [
+              354.20686848958337,
+              2287.6953125,
+              440.23958333333337,
+              2603.3046875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-07",
+    "path": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+    "sha256": "6e6b88779ebcb4ecf97992d576ebe7ecec101386327f6f2c6b4a981731baaeb8",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Power Law Distribution MLE, segment lengths\n",
+        "xlabel": "Length, pixels",
+        "ylabel": "Pr(l $\\geq$ l)",
+        "xlim": [
+          6.3285069329186525,
+          318.36998916355174
+        ],
+        "ylim": [
+          0.0009302325581395349,
+          1.0
+        ],
+        "xticks": [
+          1.0,
+          10.0,
+          100.0,
+          1000.0
+        ],
+        "yticks": [
+          0.0001,
+          0.001,
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Power Law Distribution MLE, segment lengths\n",
+            "bbox": [
+              1435.4921875,
+              4373.629964192709,
+              3452.5078125,
+              4573.171793619792
+            ]
+          },
+          {
+            "text": "Length, pixels",
+            "bbox": [
+              2161.1484375,
+              254.29964192708331,
+              2726.8515625,
+              340.3323567708333
+            ]
+          },
+          {
+            "text": "Pr(l $\\geq$ l)",
+            "bbox": [
+              318.08186848958337,
+              2287.6953125,
+              404.11458333333337,
+              2603.3046875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-07",
+    "path": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+    "sha256": "0fc14d60d570f7d5bc8932885670d6d14ae6a399c55b82c6a281d27fa88b16e4",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Exponential Distribution MLE, segment lengths\n",
+        "xlabel": "Length, pixels",
+        "ylabel": "Pr(l $\\geq$ l)",
+        "xlim": [
+          0.0,
+          350.0
+        ],
+        "ylim": [
+          0.0001,
+          1.0
+        ],
+        "xticks": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0
+        ],
+        "yticks": [
+          1e-05,
+          0.0001,
+          0.001,
+          0.01,
+          0.1,
+          1.0,
+          10.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Exponential Distribution MLE, segment lengths\n",
+            "bbox": [
+              1415.1484375,
+              4373.629964192709,
+              3472.8515625,
+              4573.171793619792
+            ]
+          },
+          {
+            "text": "Length, pixels",
+            "bbox": [
+              2161.1484375,
+              283.21923828125,
+              2726.8515625,
+              369.251953125
+            ]
+          },
+          {
+            "text": "Pr(l $\\geq$ l)",
+            "bbox": [
+              318.08186848958337,
+              2287.6953125,
+              404.11458333333337,
+              2603.3046875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-07",
+    "path": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+    "sha256": "5d3122ee2ff69dbe571bb152f5a0db1541060737e16690c6b9671901f7fb3a02",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Lognormal Distribution MLE, segment lengths\n",
+        "xlabel": "Length, pixels",
+        "ylabel": "Pr(l $\\geq$ l)",
+        "xlim": [
+          6.3285069329186525,
+          318.36998916355174
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          1.0,
+          10.0,
+          100.0,
+          1000.0
+        ],
+        "yticks": [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Lognormal Distribution MLE, segment lengths\n",
+            "bbox": [
+              1438.109375,
+              4373.629964192709,
+              3449.890625,
+              4573.171793619792
+            ]
+          },
+          {
+            "text": "Length, pixels",
+            "bbox": [
+              2161.1484375,
+              254.29964192708331,
+              2726.8515625,
+              340.3323567708333
+            ]
+          },
+          {
+            "text": "Pr(l $\\geq$ l)",
+            "bbox": [
+              354.20686848958337,
+              2287.6953125,
+              440.23958333333337,
+              2603.3046875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-06",
+    "path": "FracPaQ2D_crossplotsegmentlengthangle_SD11A.png",
+    "sha256": "2cb202d1f65e1f470c330a1daeb2489d672150e62e9490871acba751c2534545",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "Trace segment lengths versus angles, n=1076\n",
+        "xlabel": "Trace segment angle, degrees",
+        "ylabel": "Trace segment length, pixels",
+        "xlim": [
+          -10.0,
+          370.0
+        ],
+        "ylim": [
+          0.0,
+          350.2069880799069
+        ],
+        "xticks": [
+          0,
+          60,
+          120,
+          180,
+          240,
+          300,
+          360
+        ],
+        "yticks": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Trace segment lengths versus angles, n=1076\n",
+            "bbox": [
+              1444.046875,
+              4279.129964192709,
+              3443.953125,
+              4478.671793619792
+            ]
+          },
+          {
+            "text": "Trace segment angle, degrees",
+            "bbox": [
+              1822.2890625,
+              377.7192382812503,
+              3065.7109375,
+              463.7519531250003
+            ]
+          },
+          {
+            "text": "Trace segment length, pixels",
+            "bbox": [
+              331.0193684895833,
+              1859.515625,
+              417.05208333333337,
+              3031.484375
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ANG-02",
+    "path": "FracPaQ2D_roseangleEqArea_SD11A.png",
+    "sha256": "dc643ca29747f6de8a202e8bc47a7b302c2d228faf366307322200b96459caed",
+    "axes": [
+      {
+        "bbox": [
+          723.2499999999999,
+          965.7500000000002,
+          4164.75,
+          4407.25
+        ],
+        "title": "Segment angles (equal area), n=1076\n",
+        "xlabel": "",
+        "ylabel": "",
+        "xlim": [
+          -158.11388300841898,
+          158.11388300841898
+        ],
+        "ylim": [
+          -158.11388300841898,
+          158.11388300841898
+        ],
+        "xticks": [
+          -150.0,
+          -100.0,
+          -50.0,
+          0.0,
+          50.0,
+          100.0,
+          150.0
+        ],
+        "yticks": [
+          -150.0,
+          -100.0,
+          -50.0,
+          0.0,
+          50.0,
+          100.0,
+          150.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment angles (equal area), n=1076\n",
+            "bbox": [
+              1640.2421875,
+              4410.254964192709,
+              3247.7578125,
+              4609.796793619792
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          723.2499999999999,
+          639.3064304466668,
+          4164.75,
+          757.4166666666669
+        ],
+        "title": "",
+        "xlabel": "Segment strike, degrees",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          180.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0,
+          20,
+          40,
+          60,
+          80,
+          100,
+          120,
+          140,
+          160,
+          180
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Segment strike, degrees",
+            "bbox": [
+              2037.5,
+              425.6109551862502,
+              2850.5,
+              496.0040215925002
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-11",
+    "path": "FracPaQ2D_Mohrplot_SD11A.png",
+    "sha256": "b1210da584e4da55aa9e5a9b2880f877583446ff3609f0bccece9309d60a75cd",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          1613.3977272727273,
+          4274.625,
+          3277.602272727273
+        ],
+        "title": "Mohr diagram $\\mu$=0.6, $C_0$=0 MPa\n",
+        "xlabel": "Normal stress, MPa",
+        "ylabel": "Shear stress, MPa",
+        "xlim": [
+          0.0,
+          110.00000000000001
+        ],
+        "ylim": [
+          0.0,
+          50.0
+        ],
+        "xticks": [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0
+        ],
+        "yticks": [
+          0.0,
+          10.0,
+          20.0,
+          30.0,
+          40.0,
+          50.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Mohr diagram $\\mu$=0.6, $C_0$=0 MPa\n",
+            "bbox": [
+              1771.0234375,
+              3301.4405702533145,
+              3116.9765625,
+              3526.275414003315
+            ]
+          },
+          {
+            "text": "Normal stress, MPa",
+            "bbox": [
+              2041.5859375,
+              1376.2476621685605,
+              2846.4140625,
+              1462.2746803977273
+            ]
+          },
+          {
+            "text": "Shear stress, MPa",
+            "bbox": [
+              377.3688151041667,
+              2068.484375,
+              463.39583333333337,
+              2822.515625
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-11",
+    "path": "FracPaQ2D_sliptendencymap_SD11A.png",
+    "sha256": "f55174527f4e44b7f9a825c950bfb39bb25ce20466d269c219d0ad6f42896688",
+    "axes": [
+      {
+        "bbox": [
+          759.1249999999999,
+          1065.4024816038445,
+          4128.875,
+          4416.5975183961555
+        ],
+        "title": "Normalised slip tendency for $\\sigma_1$=100 MPa, $\\sigma_2$=50 MPa, $\\theta$=0°\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Normalised slip tendency for $\\sigma_1$=100 MPa, $\\sigma_2$=50 MPa, $\\theta$=0°\n",
+            "bbox": [
+              1169.3671875,
+              4440.435815922197,
+              3718.6328125,
+              4665.942826338864
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              827.2524164996779,
+              2617.2265625,
+              913.2794347288445
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              430.4313151041666,
+              2567.7734375,
+              516.4583333333333,
+              2914.2265625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          759.1249999999999,
+          500.80884694634454,
+          4128.875,
+          618.9190831663445
+        ],
+        "title": "",
+        "xlabel": "Normalised slip tendency",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          1.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0.0,
+          0.1,
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Normalised slip tendency",
+            "bbox": [
+              2025.03125,
+              287.12069590467786,
+              2862.96875,
+              357.50643809217786
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-11",
+    "path": "FracPaQ2D_sliptendencyrose_SD11A.png",
+    "sha256": "32b0dbfd827774b77cb4d09f7705b1cb3f0ac044694119ea3c4b6b7409afae30",
+    "axes": [
+      {
+        "bbox": [
+          723.2499999999999,
+          965.7500000000002,
+          4164.75,
+          4407.25
+        ],
+        "title": "Segment angles (equal area), colour-coded by $T_s$\n",
+        "xlabel": "",
+        "ylabel": "",
+        "xlim": [
+          -158.11388300841898,
+          158.11388300841898
+        ],
+        "ylim": [
+          -158.11388300841898,
+          158.11388300841898
+        ],
+        "xticks": [
+          -150.0,
+          -100.0,
+          -50.0,
+          0.0,
+          50.0,
+          100.0,
+          150.0
+        ],
+        "yticks": [
+          -150.0,
+          -100.0,
+          -50.0,
+          0.0,
+          50.0,
+          100.0,
+          150.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment angles (equal area), colour-coded by $T_s$\n",
+            "bbox": [
+              1377.9296875,
+              4447.754964192709,
+              3510.0703125,
+              4672.558557942709
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          723.2499999999999,
+          639.3064304466668,
+          4164.75,
+          757.4166666666669
+        ],
+        "title": "",
+        "xlabel": "Normalised slip tendency, $T_s$",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          1.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0.0,
+          0.1,
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Normalised slip tendency, $T_s$",
+            "bbox": [
+              1966.3046875,
+              399.0321791445835,
+              2921.6953125,
+              496.0040215925002
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-12",
+    "path": "FracPaQ2D_dilationtendencymap_SD11A.png",
+    "sha256": "c33a9e97406ae6b91a6120bf832c159f03c99ac1b1c532cf3af15192443b1a46",
+    "axes": [
+      {
+        "bbox": [
+          759.1249999999999,
+          1065.4024816038445,
+          4128.875,
+          4416.5975183961555
+        ],
+        "title": "Dilation tendency for $\\sigma_1$=100 MPa, $\\sigma_2$=50 MPa, $\\theta$=0°\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Dilation tendency for $\\sigma_1$=100 MPa, $\\sigma_2$=50 MPa, $\\theta$=0°\n",
+            "bbox": [
+              1342.8671875,
+              4440.435815922197,
+              3545.1328125,
+              4665.942826338864
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              827.2524164996779,
+              2617.2265625,
+              913.2794347288445
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              430.4313151041666,
+              2567.7734375,
+              516.4583333333333,
+              2914.2265625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          759.1249999999999,
+          500.80884694634454,
+          4128.875,
+          618.9190831663445
+        ],
+        "title": "",
+        "xlabel": "Dilation tendency",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          1.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0.0,
+          0.1,
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Dilation tendency",
+            "bbox": [
+              2156.296875,
+              287.12069590467786,
+              2731.703125,
+              357.50643809217786
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-12",
+    "path": "FracPaQ2D_dilationtendencyrose_SD11A.png",
+    "sha256": "c4708c7f582f238d8add9d35f4e9022378ef63042aeff81f840c247568ff397c",
+    "axes": [
+      {
+        "bbox": [
+          723.2499999999999,
+          965.7500000000002,
+          4164.75,
+          4407.25
+        ],
+        "title": "Segment angles (equal area), colour-coded by $T_d$\n",
+        "xlabel": "",
+        "ylabel": "",
+        "xlim": [
+          -158.11388300841898,
+          158.11388300841898
+        ],
+        "ylim": [
+          -158.11388300841898,
+          158.11388300841898
+        ],
+        "xticks": [
+          -150.0,
+          -100.0,
+          -50.0,
+          0.0,
+          50.0,
+          100.0,
+          150.0
+        ],
+        "yticks": [
+          -150.0,
+          -100.0,
+          -50.0,
+          0.0,
+          50.0,
+          100.0,
+          150.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment angles (equal area), colour-coded by $T_d$\n",
+            "bbox": [
+              1375.921875,
+              4447.754964192709,
+              3512.078125,
+              4672.558557942709
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          723.2499999999999,
+          639.3064304466668,
+          4164.75,
+          757.4166666666669
+        ],
+        "title": "",
+        "xlabel": "Dilation tendency, $T_d$",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          1.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0.0,
+          0.1,
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Dilation tendency, $T_d$",
+            "bbox": [
+              2095.890625,
+              399.0321791445835,
+              2792.109375,
+              496.0040215925002
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-13",
+    "path": "FracPaQ2D_fracsuscepmap_SD11A.png",
+    "sha256": "addbd775981bb43ac50a7e217875130de6a1e782d3955f3acafb8e77330a41ca",
+    "axes": [
+      {
+        "bbox": [
+          759.1249999999999,
+          1065.4024816038445,
+          4128.875,
+          4416.5975183961555
+        ],
+        "title": "Fracture susceptibility $\\sigma_1$=100 MPa, $\\sigma_2$=50 MPa, $\\theta$=0°\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Fracture susceptibility $\\sigma_1$=100 MPa, $\\sigma_2$=50 MPa, $\\theta$=0°\n",
+            "bbox": [
+              1309.625,
+              4440.435815922197,
+              3578.375,
+              4665.942826338864
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              827.2524164996779,
+              2617.2265625,
+              913.2794347288445
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              430.4313151041666,
+              2567.7734375,
+              516.4583333333333,
+              2914.2265625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          759.1249999999999,
+          500.80884694634454,
+          4128.875,
+          618.9190831663445
+        ],
+        "title": "",
+        "xlabel": "Fracture susceptibility ($\\Delta P_f$), MPa",
+        "ylabel": "",
+        "xlim": [
+          26.415608175648387,
+          100.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Fracture susceptibility ($\\Delta P_f$), MPa",
+            "bbox": [
+              1873.0234375,
+              261.2303964255112,
+              3014.9765625,
+              357.50643809217786
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-13",
+    "path": "FracPaQ2D_fracsusceprose_SD11A.png",
+    "sha256": "4b3c1ade9f01b3caa9d603f23904ef540bfee229fc609f39e49944a27ef48c5e",
+    "axes": [
+      {
+        "bbox": [
+          723.2499999999999,
+          965.7500000000002,
+          4164.75,
+          4407.25
+        ],
+        "title": "Segment angles (equal area), colour-coded by $S_f$\n",
+        "xlabel": "",
+        "ylabel": "",
+        "xlim": [
+          -158.11388300841898,
+          158.11388300841898
+        ],
+        "ylim": [
+          -158.11388300841898,
+          158.11388300841898
+        ],
+        "xticks": [
+          -150.0,
+          -100.0,
+          -50.0,
+          0.0,
+          50.0,
+          100.0,
+          150.0
+        ],
+        "yticks": [
+          -150.0,
+          -100.0,
+          -50.0,
+          0.0,
+          50.0,
+          100.0,
+          150.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment angles (equal area), colour-coded by $S_f$\n",
+            "bbox": [
+              1383.546875,
+              4447.754964192709,
+              3504.453125,
+              4671.699182942709
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          723.2499999999999,
+          639.3064304466668,
+          4164.75,
+          757.4166666666669
+        ],
+        "title": "",
+        "xlabel": "Fracture susceptibility ($\\Delta P_f$), MPa",
+        "ylabel": "",
+        "xlim": [
+          26.415608175648387,
+          100.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          20.0,
+          30.0,
+          40.0,
+          50.0,
+          60.0,
+          70.0,
+          80.0,
+          90.0,
+          100.0
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Fracture susceptibility ($\\Delta P_f$), MPa",
+            "bbox": [
+              1873.0234375,
+              399.7279799258335,
+              3014.9765625,
+              496.0040215925002
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-14",
+    "path": "FracPaQ2D_CSFmap_SD11A.png",
+    "sha256": "4ddd070587ddff4229773bc0f5cfb771506250c0e05c662b61418be32e4d42d7",
+    "axes": [
+      {
+        "bbox": [
+          759.1249999999999,
+          1065.4024816038445,
+          4128.875,
+          4416.5975183961555
+        ],
+        "title": "Critically stressed fractures $\\sigma_1'$=100 MPa, $\\sigma_2'$=50 MPa, $\\theta$=0°\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Critically stressed fractures $\\sigma_1'$=100 MPa, $\\sigma_2'$=50 MPa, $\\theta$=0°\n",
+            "bbox": [
+              1172.921875,
+              4440.435815922197,
+              3715.078125,
+              4665.942826338864
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              827.2524164996779,
+              2617.2265625,
+              913.2794347288445
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              430.4313151041666,
+              2567.7734375,
+              516.4583333333333,
+              2914.2265625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          759.1249999999999,
+          500.80884694634454,
+          4128.875,
+          618.9190831663445
+        ],
+        "title": "",
+        "xlabel": "Critically Stressed Fractures, $P_f$=0 MPa",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          1.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0,
+          1
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Critically Stressed Fractures, $P_f$=0 MPa",
+            "bbox": [
+              1790.65625,
+              261.2230722067612,
+              3097.34375,
+              357.49911387342786
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-14",
+    "path": "FracPaQ2D_CSFrose_SD11A.png",
+    "sha256": "2c1a8a50c5bc4dc230075f2220058ba718fbbb94aa62ba32dedc994e96f29386",
+    "axes": [
+      {
+        "bbox": [
+          723.2499999999999,
+          965.7500000000002,
+          4164.75,
+          4407.25
+        ],
+        "title": "Segment angles (equal area), colour-coded by CSF\n",
+        "xlabel": "",
+        "ylabel": "",
+        "xlim": [
+          -158.11388300841898,
+          158.11388300841898
+        ],
+        "ylim": [
+          -158.11388300841898,
+          158.11388300841898
+        ],
+        "xticks": [
+          -150.0,
+          -100.0,
+          -50.0,
+          0.0,
+          50.0,
+          100.0,
+          150.0
+        ],
+        "yticks": [
+          -150.0,
+          -100.0,
+          -50.0,
+          0.0,
+          50.0,
+          100.0,
+          150.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment angles (equal area), colour-coded by CSF\n",
+            "bbox": [
+              1336.03125,
+              4447.754964192709,
+              3551.96875,
+              4647.296793619792
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          723.2499999999999,
+          639.3064304466668,
+          4164.75,
+          757.4166666666669
+        ],
+        "title": "",
+        "xlabel": "Critically Stressed Fractures, $P_f$=0 MPa",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          1.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0,
+          1
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Critically Stressed Fractures, $P_f$=0 MPa",
+            "bbox": [
+              1790.65625,
+              399.7206557070835,
+              3097.34375,
+              495.9966973737502
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-04",
+    "path": "FracPaQ2D_tracelengthmap_SD11A.png",
+    "sha256": "ce1f540de7d0d2ecbeb8ed191f44fd4e496604e098ade3f40c6989247db70ab4",
+    "axes": [
+      {
+        "bbox": [
+          759.1249999999999,
+          1065.4024816038445,
+          4128.875,
+          4416.5975183961555
+        ],
+        "title": "Trace length map, n=445\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Trace length map, n=445\n",
+            "bbox": [
+              1907.765625,
+              4419.602482588864,
+              2980.234375,
+              4619.144312015947
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              827.2524164996779,
+              2617.2265625,
+              913.2794347288445
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              430.4313151041666,
+              2567.7734375,
+              516.4583333333333,
+              2914.2265625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          759.1249999999999,
+          500.80884694634454,
+          4128.875,
+          618.9190831663445
+        ],
+        "title": "",
+        "xlabel": "Trace length, pixels",
+        "ylabel": "",
+        "xlim": [
+          2.0571207719859936,
+          2057.120771985994
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          2.0571207719859936,
+          171.4267309988328,
+          685.7069239953312,
+          2057.1207719859935
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Trace length, pixels",
+            "bbox": [
+              2118.8125,
+              287.12069590467786,
+              2769.1875,
+              357.50643809217786
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-05",
+    "path": "FracPaQ2D_segmentlengthmap_SD11A.png",
+    "sha256": "d6dc4d7573d6b9268ab21cc8a64bc555b2645a32b00a66c85717b2289905280d",
+    "axes": [
+      {
+        "bbox": [
+          759.1249999999999,
+          1065.4024816038445,
+          4128.875,
+          4416.5975183961555
+        ],
+        "title": "Segment length map, n=1076\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment length map, n=1076\n",
+            "bbox": [
+              1811.0078125,
+              4419.602482588864,
+              3076.9921875,
+              4619.144312015947
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              827.2524164996779,
+              2617.2265625,
+              913.2794347288445
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              430.4313151041666,
+              2567.7734375,
+              516.4583333333333,
+              2914.2265625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          759.1249999999999,
+          500.80884694634454,
+          4128.875,
+          618.9190831663445
+        ],
+        "title": "",
+        "xlabel": "Segment length, pixels",
+        "ylabel": "",
+        "xlim": [
+          0.31836998916355175,
+          318.36998916355174
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0.31836998916355175,
+          26.530832430295977,
+          106.12332972118391,
+          318.36998916355174
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Segment length, pixels",
+            "bbox": [
+              2064.5625,
+              287.11337168592786,
+              2823.4375,
+              357.50643809217786
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-07",
+    "path": "FracPaQ2D_scancircle_SD11A.png",
+    "sha256": "82c0b574c9d3d3679303d509cd53657502137fb007b365e56541dcf4de3bb31a",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          624.9550295339641,
+          4274.625,
+          4266.044970466036
+        ],
+        "title": "Mapped trace segments, n=1076\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Mapped trace segments, n=1076\n",
+            "bbox": [
+              1739.59375,
+              4269.049934658745,
+              3148.40625,
+              4468.591764085828
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              387.80496442979745,
+              2617.2265625,
+              473.83198265896414
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              284.6813151041667,
+              2272.2734375,
+              370.70833333333337,
+              2618.7265625
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-07",
+    "path": "FracPaQ2D_intensityP21_SD11A.png",
+    "sha256": "17d1c42b41e339b16e2617fd5841a6006ad318d2da12df098ca982f1d0b49ab7",
+    "axes": [
+      {
+        "bbox": [
+          759.1249999999999,
+          1065.4024816038445,
+          4128.875,
+          4416.5975183961555
+        ],
+        "title": "Estimated Intensity of segments (P21)\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Estimated Intensity of segments (P21)\n",
+            "bbox": [
+              1616.171875,
+              4419.602482588864,
+              3271.828125,
+              4619.144312015947
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              827.2524164996779,
+              2617.2265625,
+              913.2794347288445
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              430.4313151041666,
+              2567.7734375,
+              516.4583333333333,
+              2914.2265625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          759.1249999999999,
+          500.80884694634454,
+          4128.875,
+          618.9190831663445
+        ],
+        "title": "",
+        "xlabel": "Intensity of segments (P21), pixel$^{-1}$",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          0.04957207856488069
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0.0,
+          0.01,
+          0.02,
+          0.03,
+          0.04,
+          0.05
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Intensity of segments (P21), pixel$^{-1}$",
+            "bbox": [
+              1862.890625,
+              257.0092050192612,
+              3025.109375,
+              357.50643809217786
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "MAP-08",
+    "path": "FracPaQ2D_densityP20_SD11A.png",
+    "sha256": "b0730824d7a27c7a0366e639f7ac8ae86448f4ec9a9e615ee4a756c370048a67",
+    "axes": [
+      {
+        "bbox": [
+          759.1249999999999,
+          1065.4024816038445,
+          4128.875,
+          4416.5975183961555
+        ],
+        "title": "Estimated Density of segments (P20)\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Estimated Density of segments (P20)\n",
+            "bbox": [
+              1639.0703125,
+              4419.602482588864,
+              3248.9296875,
+              4619.144312015947
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              827.2524164996779,
+              2617.2265625,
+              913.2794347288445
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              430.4313151041666,
+              2567.7734375,
+              516.4583333333333,
+              2914.2265625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          759.1249999999999,
+          500.80884694634454,
+          4128.875,
+          618.9190831663445
+        ],
+        "title": "",
+        "xlabel": "Density of segments (P20), pixel$^{-2}$",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          0.0013627868518789697
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0.0,
+          0.0002,
+          0.0004,
+          0.0006000000000000001,
+          0.0008,
+          0.001,
+          0.0012000000000000001,
+          0.0014
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Density of segments (P20), pixel$^{-2}$",
+            "bbox": [
+              1877.515625,
+              257.0092050192612,
+              3010.484375,
+              357.50643809217786
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-13",
+    "path": "FracPaQ2D_blocksizecentroidmap_SD11A.png",
+    "sha256": "315ea79bf5a3e02395716ad426431cf26c95144767aee1d8b6768577c9d0a310",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          624.9550295339641,
+          4274.625,
+          4266.044970466036
+        ],
+        "title": "Block centroids, n=67\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Block centroids, n=67\n",
+            "bbox": [
+              1968.9140625,
+              4269.049934658745,
+              2919.0859375,
+              4468.586067471245
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              387.80496442979745,
+              2617.2265625,
+              473.83198265896414
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              284.6813151041667,
+              2272.2734375,
+              370.70833333333337,
+              2618.7265625
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-13",
+    "path": "FracPaQ2D_blocksizeloglog_SD11A.png",
+    "sha256": "b0fb097390803337d0ff594fee9e1a9e88833e0e32b4b487b87ff8237398b4f2",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "Block sizes (areas), n=67\n",
+        "xlabel": "Block size (area), pixels$^2$",
+        "ylabel": "Cumulative frequency",
+        "xlim": [
+          0.8997290020266872,
+          238135.4737017461
+        ],
+        "ylim": [
+          0.1,
+          80.39999999999999
+        ],
+        "xticks": [
+          0.1,
+          1.0,
+          10.0,
+          100.0,
+          1000.0,
+          10000.0,
+          100000.0,
+          1000000.0
+        ],
+        "yticks": [
+          0.01,
+          0.1,
+          1.0,
+          10.0,
+          100.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Block sizes (areas), n=67\n",
+            "bbox": [
+              1900.0234375,
+              4279.129964192709,
+              2987.9765625,
+              4478.671793619792
+            ]
+          },
+          {
+            "text": "Block size (area), pixels$^2$",
+            "bbox": [
+              1939.6171875,
+              321.1813151041669,
+              2948.3828125,
+              434.8323567708336
+            ]
+          },
+          {
+            "text": "Cumulative frequency",
+            "bbox": [
+              318.08186848958337,
+              2002.1953125,
+              404.11458333333337,
+              2888.8046875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "LEN-13",
+    "path": "FracPaQ2D_blocksizehisto_SD11A.png",
+    "sha256": "81d7845208911dc916e1081b9c3dd772dfcba9a0604836c2fdcdb0b7fc55e71d",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          614.8750000000002,
+          4274.625,
+          4276.125
+        ],
+        "title": "Block sizes (areas), n=67\n",
+        "xlabel": "Block size (area), pixels$^2$",
+        "ylabel": "Frequency, %",
+        "xlim": [
+          0.0,
+          238135.4737017461
+        ],
+        "ylim": [
+          0.0,
+          51.71641791044776
+        ],
+        "xticks": [
+          0.0,
+          50000.0,
+          100000.0,
+          150000.0,
+          200000.0
+        ],
+        "yticks": [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0,
+          35.0,
+          40.0,
+          45.0,
+          50.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Block sizes (areas), n=67\n",
+            "bbox": [
+              1900.0234375,
+              4279.129964192709,
+              2987.9765625,
+              4478.671793619792
+            ]
+          },
+          {
+            "text": "Block size (area), pixels$^2$",
+            "bbox": [
+              1939.6171875,
+              350.1009114583336,
+              2948.3828125,
+              463.7519531250003
+            ]
+          },
+          {
+            "text": "Frequency, %",
+            "bbox": [
+              377.36311848958337,
+              2162.703125,
+              463.39583333333337,
+              2728.296875
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "FLO-01",
+    "path": "FracPaQ2D_IYXnodes_traces_SD11A.png",
+    "sha256": "630bc3543e38b79fe70d77fd6e52d8619e0cd38ae0f7b9385b207e386aea7f63",
+    "axes": [
+      {
+        "bbox": [
+          684.7499999999999,
+          904.1870150673275,
+          4203.25,
+          4403.312984932672
+        ],
+        "title": "Connectivity node types\n$n_I=606,\\ n_Y=224,\\ n_X=90$",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Connectivity node types\n$n_I=606,\\ n_Y=224,\\ n_X=90$",
+            "bbox": [
+              1914.2265625,
+              4403.3129849326715,
+              2973.7734375,
+              4627.170615141004
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              667.0369499631609,
+              2617.2265625,
+              753.0639681923275
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              356.0563151041666,
+              2480.5234375,
+              442.08333333333326,
+              2826.9765625
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "FLO-01",
+    "path": "FracPaQ2D_XYnodes_traces_heat_SD11A.png",
+    "sha256": "4baf2168a4a3d1d836f002802d81b92d97bb142e5911b304c937c3886e2e0aa3",
+    "axes": [
+      {
+        "bbox": [
+          759.1249999999999,
+          1065.4024816038445,
+          4128.875,
+          4416.5975183961555
+        ],
+        "title": "(X+Y)-nodes, n_X+n_Y=314\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "(X+Y)-nodes, n_X+n_Y=314\n",
+            "bbox": [
+              1851.7109375,
+              4419.602482588864,
+              3036.2890625,
+              4619.144312015947
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              827.2524164996779,
+              2617.2265625,
+              913.2794347288445
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              430.4313151041666,
+              2567.7734375,
+              516.4583333333333,
+              2914.2265625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          759.1249999999999,
+          500.80884694634454,
+          4128.875,
+          618.9190831663445
+        ],
+        "title": "",
+        "xlabel": "Number of (X+Y)-nodes",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          26.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Number of (X+Y)-nodes",
+            "bbox": [
+              2046.9296875,
+              287.11337168592786,
+              2841.0703125,
+              357.50643809217786
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "FLO-01",
+    "path": "FracPaQ2D_Inodes_traces_heat_SD11A.png",
+    "sha256": "fea92d2f499b5ac76bfde03ec351276283e6c368496f6c7d975d2294285a35f8",
+    "axes": [
+      {
+        "bbox": [
+          759.1249999999999,
+          1065.4024816038445,
+          4128.875,
+          4416.5975183961555
+        ],
+        "title": "I-nodes, n_I=606\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "I-nodes, n_I=606\n",
+            "bbox": [
+              2086.078125,
+              4419.602482588864,
+              2801.921875,
+              4619.138615401364
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              827.2524164996779,
+              2617.2265625,
+              913.2794347288445
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              430.4313151041666,
+              2567.7734375,
+              516.4583333333333,
+              2914.2265625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          759.1249999999999,
+          500.80884694634454,
+          4128.875,
+          618.9190831663445
+        ],
+        "title": "",
+        "xlabel": "Number of I-nodes",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          26.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [
+          0.0,
+          5.0,
+          10.0,
+          15.0,
+          20.0,
+          25.0,
+          30.0
+        ],
+        "yticks": [],
+        "colourbar": true,
+        "texts": [
+          {
+            "text": "Number of I-nodes",
+            "bbox": [
+              2133.40625,
+              287.11337168592786,
+              2754.59375,
+              357.50643809217786
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "FLO-01",
+    "path": "FracPaQ2D_IYXtriangle_SD11A.png",
+    "sha256": "e907bf0126d193e1200002156089274aaa6f6b60ebecbdafd09090c413d05077",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          1001.6683467741938,
+          4274.625,
+          3889.331653225806
+        ],
+        "title": "Connectivity of traces\nY:X:I = 0.24:0.10:0.66\n",
+        "xlabel": "",
+        "ylabel": "",
+        "xlim": [
+          -0.056596561076222685,
+          1.2112970994554746
+        ],
+        "ylim": [
+          -1.0,
+          0.0
+        ],
+        "xticks": [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0,
+          1.2000000000000002
+        ],
+        "yticks": [
+          -1.0,
+          -0.9,
+          -0.8,
+          -0.7000000000000001,
+          -0.6000000000000001,
+          -0.5,
+          -0.4,
+          -0.30000000000000004,
+          -0.2,
+          -0.1,
+          0.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Connectivity of traces\nY:X:I = 0.24:0.10:0.66\n",
+            "bbox": [
+              1965.125,
+              3892.3366174185144,
+              2922.875,
+              4191.646513251848
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "FLO-08",
+    "path": "FracPaQ2D_cracktensor_SD11A.png",
+    "sha256": "d4fd10c0b033cb09c1d960df42fdd08d70644964410eaa2d4c8cc3ad174b6d5d",
+    "axes": [
+      {
+        "bbox": [
+          686.527559052372,
+          831.02362204392,
+          4202.2913385658685,
+          4346.787401557416
+        ],
+        "title": "Crack tensors, n=1076",
+        "xlabel": "",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          6.283185307179586
+        ],
+        "ylim": [
+          0.0,
+          1.4000000000000001
+        ],
+        "xticks": [
+          0.0,
+          0.5235987755982988,
+          1.0471975511965976,
+          1.5707963267948966,
+          2.0943951023931953,
+          2.6179938779914944,
+          3.141592653589793,
+          3.6651914291880923,
+          4.1887902047863905,
+          4.71238898038469,
+          5.235987755982989,
+          5.759586531581287
+        ],
+        "yticks": [
+          0.5,
+          1.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Crack tensors, n=1076",
+            "bbox": [
+              1956.4797613091205,
+              4591.957813722322,
+              2932.3391363091205,
+              4677.984831951489
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "WAV-01",
+    "path": "FracPaQ2Dwavelet_a32_SD11A.png",
+    "sha256": "a0fc41801cbd60df5130de9069aa9407fb990cdc13eb6c560113ce494b96ff1d",
+    "axes": [
+      {
+        "bbox": [
+          613.8749999999999,
+          2874.375,
+          1842.6249999999998,
+          4103.125
+        ],
+        "title": "Binary image\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.5,
+          1944.5
+        ],
+        "ylim": [
+          1944.5,
+          0.5
+        ],
+        "xticks": [
+          500.0,
+          1000.0,
+          1500.0
+        ],
+        "yticks": [
+          500.0,
+          1000.0,
+          1500.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Binary image\n",
+            "bbox": [
+              940.3828125,
+              4106.129964192708,
+              1516.1171875,
+              4305.671793619791
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              1055.0234375,
+              2624.937434895833,
+              1401.4765625,
+              2710.9644531249996
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              272.89381510416655,
+              3315.5234375,
+              358.92083333333323,
+              3661.9765625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          2050.958333333333,
+          2874.375,
+          2160.632124041556,
+          4103.125
+        ],
+        "title": "",
+        "xlabel": "",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          1.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [],
+        "yticks": [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0
+        ],
+        "colourbar": true,
+        "texts": []
+      },
+      {
+        "bbox": [
+          2694.5,
+          2874.875,
+          3922.25,
+          4102.625
+        ],
+        "title": "WC map, a=32\n",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.5,
+          1944.5
+        ],
+        "ylim": [
+          1944.5,
+          0.5
+        ],
+        "xticks": [
+          500.0,
+          1000.0,
+          1500.0
+        ],
+        "yticks": [
+          500.0,
+          1000.0,
+          1500.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "WC map, a=32\n",
+            "bbox": [
+              2996.3125,
+              4105.629964192708,
+              3620.4375,
+              4305.166097005208
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              3135.1484375,
+              2625.4474348958333,
+              3481.6015625,
+              2711.474453125
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              2353.528815104167,
+              3315.5234375,
+              2439.5558333333333,
+              3661.9765625
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          4130.583333333333,
+          2874.875,
+          4240.2571240415555,
+          4102.625
+        ],
+        "title": "",
+        "xlabel": "",
+        "ylabel": "",
+        "xlim": [
+          0.0,
+          1.0
+        ],
+        "ylim": [
+          0.0,
+          1.0
+        ],
+        "xticks": [],
+        "yticks": [
+          0.0,
+          0.2,
+          0.4,
+          0.6000000000000001,
+          0.8,
+          1.0
+        ],
+        "colourbar": true,
+        "texts": []
+      },
+      {
+        "bbox": [
+          674.25,
+          520.2499999999999,
+          2135.75,
+          1981.7499999999998
+        ],
+        "title": "Distribution of $\\theta_{opt}$, WC threshold=0.06\n",
+        "xlabel": "",
+        "ylabel": "",
+        "xlim": [
+          -353.5533905932738,
+          353.5533905932738
+        ],
+        "ylim": [
+          -353.5533905932738,
+          353.5533905932738
+        ],
+        "xticks": [
+          -400.0,
+          -200.0,
+          0.0,
+          200.0,
+          400.0
+        ],
+        "yticks": [
+          -400.0,
+          -300.0,
+          -200.0,
+          -100.0,
+          0.0,
+          100.0,
+          200.0,
+          300.0,
+          400.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Distribution of $\\theta_{opt}$, WC threshold=0.06\n",
+            "bbox": [
+              562.1171875,
+              1991.0049641927083,
+              2251.8828125,
+              2230.996349609375
+            ]
+          }
+        ]
+      },
+      {
+        "bbox": [
+          2754.25,
+          520.2499999999999,
+          4215.75,
+          1981.7499999999998
+        ],
+        "title": "WC histogram, a=32\n",
+        "xlabel": "$WC_{opt}$",
+        "ylabel": "$\\log_{10}$(frequency)",
+        "xlim": [
+          0.0,
+          0.14
+        ],
+        "ylim": [
+          0.0,
+          6.459198067307667
+        ],
+        "xticks": [
+          0.0,
+          0.05,
+          0.1
+        ],
+        "yticks": [
+          0.0,
+          1.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "WC histogram, a=32\n",
+            "bbox": [
+              3045.609375,
+              1984.7549641927083,
+              3924.390625,
+              2184.2967936197915
+            ]
+          },
+          {
+            "text": "$WC_{opt}$",
+            "bbox": [
+              3357.6796875,
+              246.1619466145832,
+              3612.3203125,
+              369.1269531249999
+            ]
+          },
+          {
+            "text": "$\\log_{10}$(frequency)",
+            "bbox": [
+              2541.321451822917,
+              917.234375,
+              2650.6145833333335,
+              1584.765625
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "GRA-04",
+    "path": "guiFracPaQ2D_segmentlengthalonggraph_SD11A.png",
+    "sha256": "4bf3d42a44945816b591b7e348b62b265fd8501db66d854b5747b13bb1b8d304",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Segment lengths",
+        "xlabel": "Distance along line from point 1, pixels",
+        "ylabel": "Segment length, pixels",
+        "xlim": [
+          0.0,
+          1949.714888888889
+        ],
+        "ylim": [
+          0.0,
+          204.98919483719132
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          180.0,
+          200.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment lengths",
+            "bbox": [
+              2074.703125,
+              4376.328125,
+              2813.296875,
+              4462.36083984375
+            ]
+          },
+          {
+            "text": "Distance along line from point 1, pixels",
+            "bbox": [
+              1659.2890625,
+              283.21923828125,
+              3228.7109375,
+              369.251953125
+            ]
+          },
+          {
+            "text": "Segment length, pixels",
+            "bbox": [
+              331.01936848958337,
+              1981.7734375,
+              417.05208333333337,
+              2909.2265625
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "GRA-05",
+    "path": "guiFracPaQ2D_segmentanglealonggraph_SD11A.png",
+    "sha256": "f59f018333f1ab97eff8a9a6ffc8664aba7ba91ea4456ecf3df9997ccac14c57",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Segment angles",
+        "xlabel": "Distance along line from point 1, pixels",
+        "ylabel": "Segment angle, degrees",
+        "xlim": [
+          0.0,
+          1949.714888888889
+        ],
+        "ylim": [
+          0.0,
+          180.0
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          180.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment angles",
+            "bbox": [
+              2092.4765625,
+              4376.328125,
+              2795.5234375,
+              4462.36083984375
+            ]
+          },
+          {
+            "text": "Distance along line from point 1, pixels",
+            "bbox": [
+              1659.2890625,
+              283.21923828125,
+              3228.7109375,
+              369.251953125
+            ]
+          },
+          {
+            "text": "Segment angle, degrees",
+            "bbox": [
+              331.01936848958337,
+              1946.046875,
+              417.05208333333337,
+              2944.953125
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "GRA-06",
+    "path": "guiFracPaQ2D_graphtracemap_SD11A.png",
+    "sha256": "74fdfc796062482e37f580f072d5f77c5bd923bbb26aa2af2f303070e8db9526",
+    "axes": [
+      {
+        "bbox": [
+          684.7499999999999,
+          904.1870150673275,
+          4203.25,
+          4403.312984932672
+        ],
+        "title": "Mapped trace segments, n=1076",
+        "xlabel": "X, pixels",
+        "ylabel": "Y, pixels",
+        "xlim": [
+          0.0,
+          1997.7
+        ],
+        "ylim": [
+          1.8,
+          1988.5
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Mapped trace segments, n=1076",
+            "bbox": [
+              1739.59375,
+              4406.016109932672,
+              3148.40625,
+              4492.048824776422
+            ]
+          },
+          {
+            "text": "X, pixels",
+            "bbox": [
+              2270.7734375,
+              667.0369499631609,
+              2617.2265625,
+              753.0639681923275
+            ]
+          },
+          {
+            "text": "Y, pixels",
+            "bbox": [
+              356.0563151041666,
+              2480.5234375,
+              442.08333333333326,
+              2826.9765625
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "GRA-06",
+    "path": "guiFracPaQ2D_intensityalonggraph_SD11A.png",
+    "sha256": "225616b5bf5790a5d091f18c4a8cfd6ec7c3ab3d15c5ef99827e9fd707f435de",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Estimated intensity (P21), pixel$^{-1}$",
+        "xlabel": "Distance along line from point 1, pixels",
+        "ylabel": "Intensity, pixels$^{-1}$",
+        "xlim": [
+          0.0,
+          1914.4625
+        ],
+        "ylim": [
+          0.0,
+          0.03604144766481454
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          0.0,
+          0.005,
+          0.01,
+          0.015,
+          0.02,
+          0.025,
+          0.03,
+          0.035
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Estimated intensity (P21), pixel$^{-1}$",
+            "bbox": [
+              1735.4765625,
+              4379.3125,
+              3152.5234375,
+              4493.072916666667
+            ]
+          },
+          {
+            "text": "Distance along line from point 1, pixels",
+            "bbox": [
+              1659.2890625,
+              283.21923828125,
+              3228.7109375,
+              369.251953125
+            ]
+          },
+          {
+            "text": "Intensity, pixels$^{-1}$",
+            "bbox": [
+              233.90104166666669,
+              2099.5546875,
+              347.55208333333337,
+              2791.4453125
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "GRA-06",
+    "path": "guiFracPaQ2D_densityalonggraph_SD11A.png",
+    "sha256": "c51781a77d1b9db4e697625a7ddd270588e6a6ffa1640ac6e33453247a568414",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Estimated density (P20), pixel$^{-2}$",
+        "xlabel": "Distance along line from point 1, pixels",
+        "ylabel": "Density, pixels$^{-2}$",
+        "xlim": [
+          0.0,
+          1914.4625
+        ],
+        "ylim": [
+          0.0,
+          0.0009647868295972746
+        ],
+        "xticks": [
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0,
+          1200.0,
+          1400.0,
+          1600.0,
+          1800.0
+        ],
+        "yticks": [
+          0.0,
+          0.0001,
+          0.0002,
+          0.00030000000000000003,
+          0.0004,
+          0.0005,
+          0.0006000000000000001,
+          0.0007,
+          0.0008,
+          0.0009000000000000001
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Estimated density (P20), pixel$^{-2}$",
+            "bbox": [
+              1763.5078125,
+              4379.3125,
+              3124.4921875,
+              4493.072916666667
+            ]
+          },
+          {
+            "text": "Distance along line from point 1, pixels",
+            "bbox": [
+              1659.2890625,
+              283.21923828125,
+              3228.7109375,
+              369.251953125
+            ]
+          },
+          {
+            "text": "Density, pixels$^{-2}$",
+            "bbox": [
+              187.55729166666669,
+              2117.4140625,
+              301.20833333333337,
+              2773.5859375
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "GRA-11",
+    "path": "guiFracPaQ2D_segmentlengthfromgraph_SD11A.png",
+    "sha256": "fc309ad3f21a4614148ad55f33649b3bb1aa550ffa62255316cc799f6c214246",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Segment lengths",
+        "xlabel": "Perpendicular distance from line, pixels",
+        "ylabel": "Segment length, pixels",
+        "xlim": [
+          -1000.0,
+          1000.0
+        ],
+        "ylim": [
+          0.0,
+          350.0
+        ],
+        "xticks": [
+          -1000.0,
+          -800.0,
+          -600.0,
+          -400.0,
+          -200.0,
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0
+        ],
+        "yticks": [
+          0.0,
+          50.0,
+          100.0,
+          150.0,
+          200.0,
+          250.0,
+          300.0,
+          350.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment lengths",
+            "bbox": [
+              2074.703125,
+              4376.328125,
+              2813.296875,
+              4462.36083984375
+            ]
+          },
+          {
+            "text": "Perpendicular distance from line, pixels",
+            "bbox": [
+              1646.5703125,
+              283.2249348958333,
+              3241.4296875,
+              369.251953125
+            ]
+          },
+          {
+            "text": "Segment length, pixels",
+            "bbox": [
+              331.01936848958337,
+              1981.7734375,
+              417.05208333333337,
+              2909.2265625
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "GRA-12",
+    "path": "guiFracPaQ2D_segmentanglefromgraph_SD11A.png",
+    "sha256": "902c515b3517321569bd8e1c9f3528729f5f6731b30157da4213923ba574b4d6",
+    "axes": [
+      {
+        "bbox": [
+          613.375,
+          520.375,
+          4274.625,
+          4370.625
+        ],
+        "title": "Segment angles",
+        "xlabel": "Perpendicular distance from line, pixels",
+        "ylabel": "Segment angle, degrees",
+        "xlim": [
+          -1000.0,
+          1000.0
+        ],
+        "ylim": [
+          0.0,
+          180.0
+        ],
+        "xticks": [
+          -1000.0,
+          -800.0,
+          -600.0,
+          -400.0,
+          -200.0,
+          0.0,
+          200.0,
+          400.0,
+          600.0,
+          800.0,
+          1000.0
+        ],
+        "yticks": [
+          0.0,
+          20.0,
+          40.0,
+          60.0,
+          80.0,
+          100.0,
+          120.0,
+          140.0,
+          160.0,
+          180.0
+        ],
+        "colourbar": false,
+        "texts": [
+          {
+            "text": "Segment angles",
+            "bbox": [
+              2092.4765625,
+              4376.328125,
+              2795.5234375,
+              4462.36083984375
+            ]
+          },
+          {
+            "text": "Perpendicular distance from line, pixels",
+            "bbox": [
+              1646.5703125,
+              283.2249348958333,
+              3241.4296875,
+              369.251953125
+            ]
+          },
+          {
+            "text": "Segment angle, degrees",
+            "bbox": [
+              331.01936848958337,
+              1946.046875,
+              417.05208333333337,
+              2944.953125
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

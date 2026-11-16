@@ -1,0 +1,23 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "PyFracPaQ — módulo",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "pyfracpaq",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "PyFracPaQ — run_gui.py",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_gui.py",
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+  "python": "3.13.18",
+  "source": "fracpaq-matlab/map1_edit_converted.txt",
+  "source_sha256": "e3754807afbe03da1a88d11c2808555c25ad22ef58ab03f55e22c0dc8234cf56",
+  "prepared": "tests/reference/sprint16/benchmarks/map1_prepared.txt",
+  "prepared_sha256": "183476e558ead2baa0804b2e5ebaca278828a41eef9cbd7bae029379becfec41",
+  "removed_degenerate_lines_1based": [
+    1589,
+    1595,
+    1604
+  ],
+  "traces": 2120,
+  "segments": 4356,
+  "read_seconds": 0.04957629201817326,
+  "compute_seconds": 0.08673216699389741,
+  "analysis_ids": [
+    "MAP-01",
+    "LEN-02",
+    "ANG-01"
+  ],
+  "peak_rss_bytes": 141819904,
+  "scope": "Fresh process; macOS bytes. Imports included in peak; rendering/export excluded. Production readers refuse degenerate rows; preparation here is explicit on a copy."
+}

@@ -1,0 +1,44 @@
+{
+  "native_sha256": "c12319bdc5e2626f0987dd1603b64aff03abcd4f0e34b896b3c5fb7cde55c93b",
+  "script_sha256": "25ddbbd880337e66853270cc22ce160f684048d22f604bfcb919c31ee7c1fdc3",
+  "region_xyxy": [
+    700,
+    0,
+    4300,
+    440
+  ],
+  "records": [
+    {
+      "stroke_points": null,
+      "ssim_rgb": 0.9850871414747912
+    },
+    {
+      "stroke_points": 0,
+      "ssim_rgb": 0.9842951864150448
+    },
+    {
+      "stroke_points": 0.02,
+      "ssim_rgb": 0.9858372821473881
+    },
+    {
+      "stroke_points": 0.04,
+      "ssim_rgb": 0.9870479565696799
+    },
+    {
+      "stroke_points": 0.06,
+      "ssim_rgb": 0.9870217205410614
+    },
+    {
+      "stroke_points": 0.08,
+      "ssim_rgb": 0.986911456785123
+    },
+    {
+      "stroke_points": 0.1,
+      "ssim_rgb": 0.9864474146659892
+    },
+    {
+      "stroke_points": 0.12,
+      "ssim_rgb": 0.9858556818114788
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "families": [
+    {
+      "family": "Geometria/TXT",
+      "evidence": "tests/reference/sprint16/numeric-comparison.json",
+      "sha256": "72468a8958ab1ada9df3df771892dc636615ebc71925b43479619451e1fd46a9",
+      "scope": "Native lengths/angles/centres match; Q07 distance deliberately corrected.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "SVG",
+      "evidence": "tests/reference/sprint16/svg-comparison.json",
+      "sha256": "00aaab592e0b754f8a67111b1907dbb588a4d9132579a7f8bd7a4e5b9d4ee57a",
+      "scope": "Native converter emits NaN/omissions; XML correction Q09 is explicit.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "Hough",
+      "evidence": "tests/reference/sprint16/hough_comparison.json",
+      "sha256": "0dca80318b0af1bba9d2978d32e6b7b74afcf2f58af1eddacf4715b0bcb45898",
+      "scope": "All seven stage arrays/threshold exact in five cases, including real rasters.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "Mapas básicos/Angles/Lengths",
+      "evidence": "tests/reference/sprint16/candidate/validation.json",
+      "sha256": "e658beac2dba91f1897cb994ea456a0cf8fec5463e03b9065785272123848dcb",
+      "scope": "Paired native context; exact four TXT and distribution arrays.13 exploratory SSIM comparisons fail some regions.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "Circular P21/P20",
+      "evidence": "tests/reference/sprint7/validation.json",
+      "sha256": "bd58d6150d8fac2e98ec9e74285c22897ec82c864b0dda81607345e2b4839d77",
+      "scope": "Analytic finite geometry Q20 approved; S16 adds native Maps arrays/TXT. Corrected counts intentionally differ.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "MLE/K-S",
+      "evidence": "tests/reference/sprint8/native_ks_comparison.json",
+      "sha256": "91de91ad897b7b50313d013915f6bc7806a77e5ad3727419d16fda2f23b73686",
+      "scope": "7500 shared-vector K-S comparisons; scientific Q15 approved. S16 adds six original GUI-function PNGs; new stochastic Run is functional evidence.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "I-Y-X",
+      "evidence": "tests/reference/sprint9/native/native_topology.json",
+      "sha256": "669518d14af3ac67816ed0f56ba85e25365dbc3ef02039e18bd30d94b44e5ebb",
+      "scope": "Seven native cases plus S16 triangle/TXT. Endpoint tolerance/classification Q11 approved; not identity of defective classifications.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "Crack tensors/permeabilidade",
+      "evidence": "tests/reference/sprint10/native_comparison.json",
+      "sha256": "882e154f565ac2d3e798ead5ebcd4a10adf18cb7d91b666ff0e700042ad4bb8c",
+      "scope": "Native tensors/polar/K comparisons, dimensional tolerances and shared regression tests.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "Estabilidade/Mohr",
+      "evidence": "tests/reference/sprint11/q17_comparison.json",
+      "sha256": "cc23b7bd6b01239cc9c79aa26841e465641e04e1d77be3b70367641a2850769a",
+      "scope": "Native defects, corrected physical values/normalization/palette and inclusive CSF; Q17 approved.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "Blocos/variograma",
+      "evidence": "tests/reference/sprint12/native_comparison.json",
+      "sha256": "344a5c57736e5ff20dc965fb4a09f6109e45ccd0585198de6d27a0c9250decdc",
+      "scope": "Native raster/components/variogram/helper arrays; Q14 population/area correction approved.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "Graphs ALONG/FROM",
+      "evidence": "tests/reference/sprint13/native_comparison.json",
+      "sha256": "b3afcc86e09901ee48a0196a002839b87e56bf4ca669022a67abd605d60b58a1",
+      "scope": "Native intersections/signed distances/profiles; circular geometry and P20 normalization explicitly approved.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "Wavelets2D",
+      "evidence": "tests/reference/sprint14/native_comparison.json",
+      "sha256": "97a2589131b2b96d4ce08a9c2f79db4cf45255d734311497f0ab7d840c42de2d",
+      "scope": "Native kernel/FFT/helper panels and integrated raster; full production Python separately. Q12 approved. Catalog PNG is wavelet2 variant; full integrated primary MATLAB visual context still missing.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    },
+    {
+      "family": "Utilitários/paletas",
+      "evidence": "tests/reference/sprint15/native_comparison.json",
+      "sha256": "d6a4675687349c1a9b9e9335cd10dacc3a5edf9adc63e4a81a3128c6f5dfbe73",
+      "scope": "Native preprocess stages, tensor16/probe/palettes; legacy destinations audited separately.",
+      "visual_acceptance": "Open; see fixed thresholds and per-context limitations."
+    }
+  ],
+  "review_sheets": [
+    {
+      "path": "tests/reference/sprint16/review-sheet-1.png",
+      "sha256": "3115ae090a27b0bf1c327e248060d957459986b59ba90edd9183dbcafbdfe4cd"
+    },
+    {
+      "path": "tests/reference/sprint16/review-sheet-2.png",
+      "sha256": "72beb55a1db12c560e0b53fa2119a8586d5b5b0fe46b376052b233a7fc1a2f8c"
+    },
+    {
+      "path": "tests/reference/sprint16/review-sheet-3.png",
+      "sha256": "195a19a4d51f3f13270f525447e72f9cef4ce852e1627113892c4ab99635e626"
+    },
+    {
+      "path": "tests/reference/sprint16/review-sheet-4.png",
+      "sha256": "e2c52eaa73ae382e1cf19f3550059cf3cf1dd49c3b30e934640c7424b086860d"
+    },
+    {
+      "path": "tests/reference/sprint16/review-sheet-5.png",
+      "sha256": "68b84eff25095c7a692b3dc9d0d49d67563eec3bf3517c15ec2e1539e3a3d2f5"
+    }
+  ],
+  "scope": "Sheets are scaled previews for human review, never used for SSIM. The available53 native names include explicitly identified auxiliary variants; no claim that all primary GUI contexts were captured."
+}

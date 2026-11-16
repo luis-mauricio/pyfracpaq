@@ -1,0 +1,36 @@
+{
+  "role": "Complementary utilities; no new main GUI controls.",
+  "figures": [
+    {
+      "path": "FracPaQ2D_imagePreprocess_steps.png",
+      "sha256": "95689bd8d9442a00a424d5f4117eab7b454d6b392be6274c726eae632a4dcf3c",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_imagePreprocess_steps.png",
+      "qa_sha256": "f2f9e3d34bd5c21b3c063ba808f45a8e16fd3da9f78114cfe898d27be1bd3bc8"
+    },
+    {
+      "path": "FracPaQ2D_auxiliary_apis_apis.png",
+      "sha256": "8ed4cd1c43167b708ec050ed4d10d7077c37d1b45746c068edf7fc7dcd4bee0f",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_auxiliary_apis_apis.png",
+      "qa_sha256": "f7ae4d18bb1f46f6ca78edd5f446942028c1598759fd2ec8d38339d03683ada8"
+    }
+  ],
+  "tensor16_components": 65536,
+  "advanced_variogram": "Already ported in Sprint12; preserved API.",
+  "dialog": "guiWaveletDialog .fig defaults/objects replicated; async Run/Cancel regression tested."
+}

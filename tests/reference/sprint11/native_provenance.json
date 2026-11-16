@@ -1,0 +1,313 @@
+{
+  "date": "2026-11-14",
+  "native_version": "24.2.0.3212159 (R2024b) Update 9",
+  "platform": "MATLAB R2024b installed on macOS arm64; process batch separate from interactive application",
+  "capture_script": "scripts/capture_native_s1011.m",
+  "capture_script_sha256": "696f5e0c6b4aab98d819c0da0229a900cc961ea1d2aa3813dfde8766da95891f",
+  "source_manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7",
+  "original_files_sha256_verified": 164,
+  "extra_original_folder_files_preserved": [
+    {
+      "path": "FracPaQ2D_histosegmentlength_Run1.png",
+      "sha256": "40432818e85ebdfb2599d0d1bea58f557cf5992af2872442385fbe7a1ebed908"
+    },
+    {
+      "path": "FracPaQ2D_histotracelength_Run1.png",
+      "sha256": "99d26d3653cfe46c4c012e6de5c5729c8ea823cc367629df7d49653fdd3eb96f"
+    },
+    {
+      "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+      "sha256": "f3c3d3e634a477f64c75c8f16c977d5f61ade54547996a2a76f6403a09f48266"
+    },
+    {
+      "path": "FracPaQ2D_tracelengthmap_Run1.png",
+      "sha256": "e94c17131fa2052be91e7fe3b7c44f830b5354f9d407f0503e0ea37686d557cf"
+    },
+    {
+      "path": "FracPaQ2D_tracemap_Run1.png",
+      "sha256": "781ac030cb77dabe45b557c0d59967455473ffdb68140f2339244af3d89db048"
+    },
+    {
+      "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+      "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7"
+    },
+    {
+      "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+      "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839"
+    },
+    {
+      "path": "FracPaQ2Dtracelengths_Run1.txt",
+      "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_CSFmap_native_csf.png",
+      "sha256": "ec00539bec54627e16fbb2c2211ff7cbce597124b50c0d071aed7012f66c0d14",
+      "bytes": 345443,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_CSFmap_native_equality_csf.png",
+      "sha256": "4ca30fb59c0d4b9057ef6d154c90d78a835519cfdeae97c9b3bbd76375b78a2d",
+      "bytes": 198782,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_CSFrose_native_csf.png",
+      "sha256": "c94d0b3053bc7e511e94572bb9bc675b8bb31ecc5c3cb51375b12c7fcaebc42e",
+      "bytes": 275077,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_CSFrose_native_equality_csf.png",
+      "sha256": "84ff415b1cbd1c717b2a16581116223d808939f6810b2340302cc942ed2b071c",
+      "bytes": 388599,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_csf.png",
+      "sha256": "2b0deb7de558f0ddad8710ddc15d66bc714abb9eafa87e3aeeb12fc8b2021e9d",
+      "bytes": 258226,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_dilation.png",
+      "sha256": "d5ce285e619b9784367a3b331990283ef2109341f2f65eb5d921d9ef5e775425",
+      "bytes": 258226,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_equal_stress_dilation.png",
+      "sha256": "fe9a2f4be06a8145434e2d4aacba3b6c1baee52805cde7a3b996fc11a6e7c67b",
+      "bytes": 224038,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_equality_csf.png",
+      "sha256": "0f051b9fde8fdc55230214e4711936a2d3b65e98addd4ebb844e8af4cb1dfcc0",
+      "bytes": 182345,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_q17.png",
+      "sha256": "ba11aaef555eeece3c7e412a0ee241cb2bb6ad05ac1030c9af98a050de86b05f",
+      "bytes": 258226,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_slip.png",
+      "sha256": "a831fa0230e0dcaa3e52de225cc5a06d1c5bc7b1a84142c10074c3bc25dcca1a",
+      "bytes": 258226,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_susceptibility.png",
+      "sha256": "a5cd757fdfc7e6e101d1da4da1dcd1eed118bc30a883082636335d5493c586a9",
+      "bytes": 258226,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_zero_friction_susceptibility.png",
+      "sha256": "21e6581401ea34b7f7414f00ad8cb9ee57bde8dd782b1d8ee02ceab074948336",
+      "bytes": 228087,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_dilationtendencymap_native_dilation.png",
+      "sha256": "03e9e0d6cc094356337d7ec463f06f330040ed57725c5995e65a4019f37ea04b",
+      "bytes": 393515,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_dilationtendencyrose_native_dilation.png",
+      "sha256": "93402fa31eec6a21b2dff512f1e6b6e0606c64ad13128ba17734bb9f8b463395",
+      "bytes": 428897,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_fracsuscepmap_native_susceptibility.png",
+      "sha256": "eb16989fe2502db30346a3b4db7b21ab1ab29a2ddf1b09654ef9b6c6120d7bc6",
+      "bytes": 404684,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_fracsusceprose_native_susceptibility.png",
+      "sha256": "b87a7684a6dcebb0bbb107a0314d1fef3a7d0bc4ba3b00651681570263afc5e2",
+      "bytes": 431028,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_sliptendencymap_native_slip.png",
+      "sha256": "8861175511a199a9b588757e4186f57de7094f23ae74585c7794fc651ca58abc",
+      "bytes": 413718,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2D_sliptendencyrose_native_slip.png",
+      "sha256": "5249ce54cbb46f78528ff1d9eebaad3ab618625cffe30d54c8c7425bb6c6d293",
+      "bytes": 448240,
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "path": "tests/reference/sprint11/native/FracPaQ2Dsegmentdata_native_slip.txt",
+      "sha256": "6f3b20a6a1482a189e7517624b1939d02b01b14cb0e88b14e975edcc037dee09",
+      "bytes": 1670
+    },
+    {
+      "path": "tests/reference/sprint11/native/layout.json",
+      "sha256": "dc10d236077e0c9deadbe555f7632017a65211f516075a5d2b07bc6894097d0e",
+      "bytes": 6524
+    },
+    {
+      "path": "tests/reference/sprint11/native/native_calls.json",
+      "sha256": "bd3458bed1eaad4da62e765d3b8c03dad05d3a512e0ced6acbef6a034d2d9a35",
+      "bytes": 725
+    },
+    {
+      "path": "tests/reference/sprint11/native/stability_arrays.mat",
+      "sha256": "00bc3d5e06ac5ba68f94c1b05b21267f38705a58fb316b9853c7f96b948723f7",
+      "bytes": 1634
+    }
+  ],
+  "roles": {
+    "tensor_arrays.mat": "Direct getF2/4/8 outputs plus P/K equations executed in MATLAB (GUI functions do not return these tensors).",
+    "stability_arrays.mat": "Intermediate source equations evaluated in MATLAB, including non-finite values in deliberately invalid cases; contains unmodified native jet tables.",
+    "native_calls.json": "Actual unmodified source GUI routine calls: successes and errors, not inferred from formula evaluation.",
+    "layout.json": "Actual post-export native positions/ticks/fonts/limits, captured from figure handles.",
+    "png": "Actual guiPrint source output at 20x20 cm / 600 dpi."
+  },
+  "controlled_defaults": {
+    "Axes_FontName": "Arial",
+    "Text_FontName": "Arial",
+    "PolarAxes_FontName": "Native Helvetica default, not overridden",
+    "FigureVisible": "off"
+  },
+  "scientific_parity": "Valid equations compared; Q-17 corrected stability values/colours/classes intentionally differ with explicit user approval. Full visual region/SSIM acceptance not claimed."
+}

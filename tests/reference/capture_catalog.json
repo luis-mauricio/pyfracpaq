@@ -1,0 +1,1997 @@
+{
+  "schema_version": 1,
+  "status": "Paridade não demonstrada",
+  "screens": [
+    {
+      "name": "initial",
+      "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/details/gui_initial.png",
+            "sha256": "ed3d693575c7b3a7cd2587e987fd75db40ee89e7cf7b8cd326fbfc804d2fb043"
+          }
+        ],
+        "geometry": {
+          "path": "tests/reference/sprint16/native/details/gui_initial.mat",
+          "sha256": "509073feb9325d9734540ecddf5d6b92f844f882523488178386763467e35321"
+        },
+        "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente."
+      },
+      "matlab_png": "tests/reference/sprint16/native/details/gui_initial.png"
+    },
+    {
+      "name": "preview",
+      "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/details/gui_preview.png",
+            "sha256": "133898b74caf044a528a7a841c5a8f7459e6c8f26adc22c37e0cacf6cfc762be"
+          }
+        ],
+        "geometry": {
+          "path": "tests/reference/sprint16/native/details/gui_preview.mat",
+          "sha256": "4e26f71b1ec7b9ff5d9c4a487888fc06c72eba2a28de7ac588f51d989e4e1d4a"
+        },
+        "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente."
+      },
+      "matlab_png": "tests/reference/sprint16/native/details/gui_preview.png"
+    },
+    {
+      "name": "Maps",
+      "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/details/gui_maps.png",
+            "sha256": "63040b9dcf68ea8bd56d851cc085cd59806f4cf0197a547951cb5fd1b33f6c81"
+          }
+        ],
+        "geometry": {
+          "path": "tests/reference/sprint16/native/details/gui_maps.mat",
+          "sha256": "60975326d4f78a102e22d68b185e3fc8f84ca003c17918a7256be0bf1da991b8"
+        },
+        "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente."
+      },
+      "matlab_png": "tests/reference/sprint16/native/details/gui_maps.png"
+    },
+    {
+      "name": "Lengths",
+      "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/details/gui_lengths.png",
+            "sha256": "52dee6cb25d45d1a6127eba9f30d3c24ced252f2d7e3a1d2d0d072dc75896baf"
+          }
+        ],
+        "geometry": {
+          "path": "tests/reference/sprint16/native/details/gui_lengths.mat",
+          "sha256": "ace84d911f2195a3b048f4c458d75811cad7ab3c20184482533d746457023944"
+        },
+        "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente."
+      },
+      "matlab_png": "tests/reference/sprint16/native/details/gui_lengths.png"
+    },
+    {
+      "name": "Angles",
+      "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/details/gui_angles.png",
+            "sha256": "bedc86c8a1d31df51b8423a1a23d55dc76fbe5a58f1b33288f9ef156bd69b560"
+          }
+        ],
+        "geometry": {
+          "path": "tests/reference/sprint16/native/details/gui_angles.mat",
+          "sha256": "bef2a972193a78a70dd087ff58d464d0c534ce17c9823aabe317f3bced9c6808"
+        },
+        "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente."
+      },
+      "matlab_png": "tests/reference/sprint16/native/details/gui_angles.png"
+    },
+    {
+      "name": "Fluid flow",
+      "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/details/gui_fluid.png",
+            "sha256": "29754a2aae3bd2c78b4e33adeb6549632ce104027a4d44fccdc751d70f0d60a8"
+          }
+        ],
+        "geometry": {
+          "path": "tests/reference/sprint16/native/details/gui_fluid.mat",
+          "sha256": "77caed3d645def8bbdf5586089b40544d0db5023abda5279f33810f575dc4d41"
+        },
+        "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente."
+      },
+      "matlab_png": "tests/reference/sprint16/native/details/gui_fluid.png"
+    },
+    {
+      "name": "Wavelets",
+      "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/details/gui_wavelets.png",
+            "sha256": "9ce5dbb71bba23e8a7c357a495b9c6593212f6a19b9850e43f4cdc6cbf294cde"
+          }
+        ],
+        "geometry": {
+          "path": "tests/reference/sprint16/native/details/gui_wavelets.mat",
+          "sha256": "75570a424358b40d51a360779aa74dbac3c689cdbe66ba67d12ebf56af0d4f5a"
+        },
+        "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente."
+      },
+      "matlab_png": "tests/reference/sprint16/native/details/gui_wavelets.png"
+    },
+    {
+      "name": "Graphs",
+      "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/details/gui_graphs.png",
+            "sha256": "55d56c867c936020d8fe632a287482bbe57500e1ea81336fcf21d99e0bc1ecf4"
+          }
+        ],
+        "geometry": {
+          "path": "tests/reference/sprint16/native/details/gui_graphs.mat",
+          "sha256": "367478675c0a699d1850ed232641908b2de19ab5172c66f14d2b96927f3e17ca"
+        },
+        "status": "Captura MATLAB por print e propriedades em pixels; comparação desktop/DPI pendente."
+      },
+      "matlab_png": "tests/reference/sprint16/native/details/gui_graphs.png"
+    }
+  ],
+  "figures": [
+    {
+      "name": "FracPaQ2D_Houghstuff{tag}.png",
+      "group": "Diagnóstico Hough",
+      "matlab_png": "tests/reference/sprint16/native/details/FracPaQ2D_Houghstuff_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/details/FracPaQ2D_Houghstuff_audit.png",
+            "sha256": "ee232e0db54591ba8e2b0295abb101e451bdc982581defa9567987f1a66a977d"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/candidate/FracPaQ2D_Houghstuff_audit.png",
+            "sha256": "542b88d13197906b878d74c2a7cee830393a958ff216166e8be36aec7431f0ae"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_tracemap{tag}.png",
+      "group": "Mapa básico e cores",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_tracemap_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_tracemap_audit.png",
+            "sha256": "86cc809ae6b9c49854caf154fdf6a5f0a576efe1266e8582f065d12030c4a668"
+          },
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_tracemap_multicolour_audit.png",
+            "sha256": "739b21f0053f674bc390aa08286ec8db040606f79bc76e47c18c9471be56beef"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_tracemap_audit_all.png",
+            "sha256": "0eb30f8c5f1f8346d27ad42bf24a43957786fb07afe1cb6118d47fedfcd31fd6"
+          },
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_tracemap_multicolour_audit_all.png",
+            "sha256": "a4e591f52d3a3eb29f325807449d03591cfbec196cdbb23fa1a9572331def406"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_tracemap_multicolour{tag}.png",
+      "group": "Mapa básico e cores",
+      "matlab_png": "tests/reference/sprint16/native/exports/FracPaQ2D_tracemap_multicolour_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_tracemap_multicolour_audit.png",
+            "sha256": "739b21f0053f674bc390aa08286ec8db040606f79bc76e47c18c9471be56beef"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_tracemap_multicolour_audit_all.png",
+            "sha256": "a4e591f52d3a3eb29f325807449d03591cfbec196cdbb23fa1a9572331def406"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_tracelengthmap{tag}.png",
+      "group": "Mapa básico e cores",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_tracelengthmap_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_tracelengthmap_audit.png",
+            "sha256": "953d255f81b94027df31c61c4a91a9c9c7ad2ca6970b4d7e930334f1f63c7b44"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_tracelengthmap_audit_all.png",
+            "sha256": "ebbe921195d1dc9af8dc799cf8ae52acaf40ecbb7ec974ec3bfd12089697f3df"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_segmentlengthmap{tag}.png",
+      "group": "Mapa básico e cores",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_segmentlengthmap_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_segmentlengthmap_audit.png",
+            "sha256": "0e1824f663d710c477d6ab9ad1e00e867cf4893ff516ea2adf5ea4b2b3c8b50e"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_segmentlengthmap_audit_all.png",
+            "sha256": "21ff5f0455318958c4e5482dae00217b21906638cd26f3ba0472cf7a9bb25b6d"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_segmentstrikemap{tag}.png",
+      "group": "Mapa básico e cores",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_segmentstrikemap_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_segmentstrikemap_audit.png",
+            "sha256": "efb4ba2377df7dd7758c537703c4c27f74452a4af911a2e421a5f1f321995609"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_segmentstrikemap_audit_all.png",
+            "sha256": "fd424a8f756f876aff3852ef14a2756ebf69be07f6b50c8099920d2102a83c4e"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_Mohrplot{tag}.png",
+      "group": "Estabilidade e Mohr",
+      "matlab_png": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_csf.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_csf.png",
+            "sha256": "2b0deb7de558f0ddad8710ddc15d66bc714abb9eafa87e3aeeb12fc8b2021e9d"
+          },
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_dilation.png",
+            "sha256": "d5ce285e619b9784367a3b331990283ef2109341f2f65eb5d921d9ef5e775425"
+          },
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_equal_stress_dilation.png",
+            "sha256": "fe9a2f4be06a8145434e2d4aacba3b6c1baee52805cde7a3b996fc11a6e7c67b"
+          },
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_equality_csf.png",
+            "sha256": "0f051b9fde8fdc55230214e4711936a2d3b65e98addd4ebb844e8af4cb1dfcc0"
+          },
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_q17.png",
+            "sha256": "ba11aaef555eeece3c7e412a0ee241cb2bb6ad05ac1030c9af98a050de86b05f"
+          },
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_slip.png",
+            "sha256": "a831fa0230e0dcaa3e52de225cc5a06d1c5bc7b1a84142c10074c3bc25dcca1a"
+          },
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_susceptibility.png",
+            "sha256": "a5cd757fdfc7e6e101d1da4da1dcd1eed118bc30a883082636335d5493c586a9"
+          },
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_Mohrplot_native_zero_friction_susceptibility.png",
+            "sha256": "21e6581401ea34b7f7414f00ad8cb9ee57bde8dd782b1d8ee02ceab074948336"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_Mohrplot_audit_all.png",
+            "sha256": "26318e66ae301bf965dcdbacf85bc029377934d4bd2c00053787c7d63836e31d"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_sliptendencymap{tag}.png",
+      "group": "Estabilidade e Mohr",
+      "matlab_png": "tests/reference/sprint11/native/FracPaQ2D_sliptendencymap_native_slip.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_sliptendencymap_native_slip.png",
+            "sha256": "8861175511a199a9b588757e4186f57de7094f23ae74585c7794fc651ca58abc"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_sliptendencymap_audit_all.png",
+            "sha256": "33ab6bb59ff588d7f64059c6e0eebdd4e4a9867cf1a01dedfbcad10bead3a8be"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_sliptendencyrose{tag}.png",
+      "group": "Estabilidade e Mohr",
+      "matlab_png": "tests/reference/sprint11/native/FracPaQ2D_sliptendencyrose_native_slip.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_sliptendencyrose_native_slip.png",
+            "sha256": "5249ce54cbb46f78528ff1d9eebaad3ab618625cffe30d54c8c7425bb6c6d293"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_sliptendencyrose_audit_all.png",
+            "sha256": "38be96b6dceb4048c4fcf264400c452aa5c3acf180f2de70b0154b2bd3fe31ef"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_dilationtendencymap{tag}.png",
+      "group": "Estabilidade e Mohr",
+      "matlab_png": "tests/reference/sprint11/native/FracPaQ2D_dilationtendencymap_native_dilation.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_dilationtendencymap_native_dilation.png",
+            "sha256": "03e9e0d6cc094356337d7ec463f06f330040ed57725c5995e65a4019f37ea04b"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_dilationtendencymap_audit_all.png",
+            "sha256": "ebe830a5761503c6beb96cf80fbb0518f56b3e2234790c500030a06ea7e136ca"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_dilationtendencyrose{tag}.png",
+      "group": "Estabilidade e Mohr",
+      "matlab_png": "tests/reference/sprint11/native/FracPaQ2D_dilationtendencyrose_native_dilation.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_dilationtendencyrose_native_dilation.png",
+            "sha256": "93402fa31eec6a21b2dff512f1e6b6e0606c64ad13128ba17734bb9f8b463395"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_dilationtendencyrose_audit_all.png",
+            "sha256": "7aa3674946fb28f7c8d7a2c25613629a361f9235e2311ad12ec2ee886936c652"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_fracsuscepmap{tag}.png",
+      "group": "Estabilidade e Mohr",
+      "matlab_png": "tests/reference/sprint11/native/FracPaQ2D_fracsuscepmap_native_susceptibility.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_fracsuscepmap_native_susceptibility.png",
+            "sha256": "eb16989fe2502db30346a3b4db7b21ab1ab29a2ddf1b09654ef9b6c6120d7bc6"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_fracsuscepmap_audit_all.png",
+            "sha256": "8b09ee68cb0590e0d4b2b3152ca501c022a69f8beafcab15ab9883aea86c6a3f"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_fracsusceprose{tag}.png",
+      "group": "Estabilidade e Mohr",
+      "matlab_png": "tests/reference/sprint11/native/FracPaQ2D_fracsusceprose_native_susceptibility.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_fracsusceprose_native_susceptibility.png",
+            "sha256": "b87a7684a6dcebb0bbb107a0314d1fef3a7d0bc4ba3b00651681570263afc5e2"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_fracsusceprose_audit_all.png",
+            "sha256": "e08edf5ae6c049fded384d79da39ce90ff18efd5cc2eef7e69ab378360c29104"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_CSFmap{tag}.png",
+      "group": "Estabilidade e Mohr",
+      "matlab_png": "tests/reference/sprint11/native/FracPaQ2D_CSFmap_native_csf.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_CSFmap_native_csf.png",
+            "sha256": "ec00539bec54627e16fbb2c2211ff7cbce597124b50c0d071aed7012f66c0d14"
+          },
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_CSFmap_native_equality_csf.png",
+            "sha256": "4ca30fb59c0d4b9057ef6d154c90d78a835519cfdeae97c9b3bbd76375b78a2d"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_CSFmap_audit_all.png",
+            "sha256": "4342f22580c4e09d255fe3d090c27598ea442e920f6881db958a8754c6813e41"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_CSFrose{tag}.png",
+      "group": "Estabilidade e Mohr",
+      "matlab_png": "tests/reference/sprint11/native/FracPaQ2D_CSFrose_native_csf.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_CSFrose_native_csf.png",
+            "sha256": "c94d0b3053bc7e511e94572bb9bc675b8bb31ecc5c3cb51375b12c7fcaebc42e"
+          },
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2D_CSFrose_native_equality_csf.png",
+            "sha256": "84ff415b1cbd1c717b2a16581116223d808939f6810b2340302cc942ed2b071c"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_CSFrose_audit_all.png",
+            "sha256": "9bf987c8213638053ceae24f3cf91e28c5b4f77c757fa75dc810567746c4c62c"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_scancircle{tag}.png",
+      "group": "P21/P20",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_scancircle_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_scancircle_audit.png",
+            "sha256": "367f07bfab736b5ac7b8d3309e4eb2b18be83a3eadf3831fa3bd0fbb581fe8c0"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_scancircle_audit_all.png",
+            "sha256": "253221e369516c98b93c24b8b949aa94a08c89573b06de2539777bccb23f073a"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_intensityP21{tag}.png",
+      "group": "P21/P20",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_intensityP21_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_intensityP21_audit.png",
+            "sha256": "cf499c470d2f496e4ef8c9ee16392655dc0a77e648a6d54295af1cecf17e5223"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_intensityP21_audit_all.png",
+            "sha256": "71f435c25ff9450e45535dbe9d76e4569c459e391192b5b3d4985eb60c07256b"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_densityP20{tag}.png",
+      "group": "P21/P20",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_densityP20_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_densityP20_audit.png",
+            "sha256": "8c692327967a5d2c82486e4fa79c050c7e554eac3e02451f185d4f2ad9c91209"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_densityP20_audit_all.png",
+            "sha256": "3b5a048a2faec3e905a0d57f85cb9ca7d31671ed6d9eaf678aef79f69a3401a1"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_histotracelength{tag}.png",
+      "group": "Histogramas de comprimento",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_histotracelength_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_histotracelength_audit.png",
+            "sha256": "eb3877d300644629d2c725ed13b25d924afdf4404427c49d7c9d98262517a16e"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_histotracelength_audit_all.png",
+            "sha256": "3089b79e5bf6f3a54ba2920d2e3f12c9fcdfc3f2fb898d40698d979cced3edd0"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_histosegmentlength{tag}.png",
+      "group": "Histogramas de comprimento",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_histosegmentlength_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_histosegmentlength_audit.png",
+            "sha256": "0b36f377bbaee72aea3d98424b9606065fe36509acfb8dda275e812b87a00019"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_histosegmentlength_audit_all.png",
+            "sha256": "5eaf795ddfd825b14d824c713005118788603229664a6b3556120f66699a68f1"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_loglogplottracelengthdensity{tag}.png",
+      "group": "Log-log",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_loglogplottracelengthdensity_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_loglogplottracelengthdensity_audit.png",
+            "sha256": "bb3aef79e735d2c8a5096a2662f69ac650dd58f2fdd8066e7e210ab6d1a5e711"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_loglogplottracelengthdensity_audit_all.png",
+            "sha256": "98ff6c9a1b3a7ecdd6c4c908dddc3dcb154aa44ea9962325020c646896534b1a"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_loglogplottracelength{tag}.png",
+      "group": "Log-log",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_loglogplottracelength_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_loglogplottracelength_audit.png",
+            "sha256": "a7271bc0da8b43aee22d1af29ae412c61c98b80bbb08c71b0e1526db519ecb9e"
+          },
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_loglogplottracelengthdensity_audit.png",
+            "sha256": "bb3aef79e735d2c8a5096a2662f69ac650dd58f2fdd8066e7e210ab6d1a5e711"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_loglogplottracelength_audit_all.png",
+            "sha256": "23a5661808be5603533e0ad890d6206cc6480dea3d40cf7ee1db9745177d2d65"
+          },
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_loglogplottracelengthdensity_audit_all.png",
+            "sha256": "98ff6c9a1b3a7ecdd6c4c908dddc3dcb154aa44ea9962325020c646896534b1a"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_loglogplotsegmentlengthdensity{tag}.png",
+      "group": "Log-log",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_loglogplotsegmentlengthdensity_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_loglogplotsegmentlengthdensity_audit.png",
+            "sha256": "b7739818ac4a64421e06537c13c0074735132cac1c64c1cf582537f10a3b15a0"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_loglogplotsegmentlengthdensity_audit_all.png",
+            "sha256": "41bd2b17aebbbf1e425b14da07544d467419e547312f727f0085f4a6cb1f2202"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_loglogplotsegmentlength{tag}.png",
+      "group": "Log-log",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_loglogplotsegmentlength_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_loglogplotsegmentlength_audit.png",
+            "sha256": "5c9dc40d9cced02dd569ba2417e23917283a433ca509b83efef0fdfaf69aecd0"
+          },
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_loglogplotsegmentlengthdensity_audit.png",
+            "sha256": "b7739818ac4a64421e06537c13c0074735132cac1c64c1cf582537f10a3b15a0"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_loglogplotsegmentlength_audit_all.png",
+            "sha256": "b673f837fb5d857efa3d90de560833f05011edcf65b40eef6c6389ba9941a44c"
+          },
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_loglogplotsegmentlengthdensity_audit_all.png",
+            "sha256": "41bd2b17aebbbf1e425b14da07544d467419e547312f727f0085f4a6cb1f2202"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_crossplotsegmentlengthangle{tag}.png",
+      "group": "Cross-plot",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_crossplotsegmentlengthangle_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_crossplotsegmentlengthangle_audit.png",
+            "sha256": "d4b587e259ecf124f993058f6f3194d2780b2a13ebf51b95a5a626183af2e193"
+          },
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_crossplotsegmentlengthangle_censor.png",
+            "sha256": "fdc4230eb06ce2c6c8335fb855741cf4e1e544299c829fc73d0f912d0c329bfb"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_crossplotsegmentlengthangle_audit_all.png",
+            "sha256": "23daf154b7bcf953a05ea030a8faaf081c38d29830f39f6118a4c013d0da95e6"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_tracelengthsFittingPowerLaw{tag}.png",
+      "group": "MLE",
+      "matlab_png": "tests/reference/sprint16/native/exports/FracPaQ2D_tracelengthsFittingPowerLaw_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_tracelengthsFittingPowerLaw_audit.png",
+            "sha256": "14bb99290887fff49afc6f72763f5764b5ecfafb10c8a32b96d70877da860413"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_tracelengthsFittingPowerLaw_audit_all.png",
+            "sha256": "0721caa744904056063e10ca02ddf24d78411443fe2b5577feb155ffe7a8e184"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_tracelengthsFittingExponential{tag}.png",
+      "group": "MLE",
+      "matlab_png": "tests/reference/sprint16/native/exports/FracPaQ2D_tracelengthsFittingExponential_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_tracelengthsFittingExponential_audit.png",
+            "sha256": "b282368715c3faca68f5a21f894f2a90f476ef2a312aae13d473f415a958be58"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_tracelengthsFittingExponential_audit_all.png",
+            "sha256": "66ad78b8e239accaa9e3343b84c18d3212362e085c6076e194c7aad8ba6f66db"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_tracelengthsFittingLogNormal{tag}.png",
+      "group": "MLE",
+      "matlab_png": "tests/reference/sprint16/native/exports/FracPaQ2D_tracelengthsFittingLogNormal_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_tracelengthsFittingLogNormal_audit.png",
+            "sha256": "e0c62bb1fb9a6bf32da0595031ad37b2555ba5a7cd5f0a80b00c0d15b715371f"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_tracelengthsFittingLogNormal_audit_all.png",
+            "sha256": "7a292f199f56ec3254196635d311e1a09923ea2d0057ed63a30ac247382b27a1"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_segmentlengthsFittingPowerLaw{tag}.png",
+      "group": "MLE",
+      "matlab_png": "tests/reference/sprint16/native/exports/FracPaQ2D_segmentlengthsFittingPowerLaw_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_segmentlengthsFittingPowerLaw_audit.png",
+            "sha256": "d2802b001bab843b897745169288d918ff77f46c0d869e978a9f990418051685"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_segmentlengthsFittingPowerLaw_audit_all.png",
+            "sha256": "db9543e688cebbfc89962319ca2e0c5157bb13ffcb1ae1e9506857a66df019f0"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_segmentlengthsFittingExponential{tag}.png",
+      "group": "MLE",
+      "matlab_png": "tests/reference/sprint16/native/exports/FracPaQ2D_segmentlengthsFittingExponential_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_segmentlengthsFittingExponential_audit.png",
+            "sha256": "fdc4470d4abe56805ae3ae1c8492d27bd2af953e1514eca4d7110a0f88f3515f"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_segmentlengthsFittingExponential_audit_all.png",
+            "sha256": "8b0ba541887526d3c0b1cbfea162593bdcace3c92e5706ddb573beecc1dcd2ff"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_segmentlengthsFittingLogNormal{tag}.png",
+      "group": "MLE",
+      "matlab_png": "tests/reference/sprint16/native/exports/FracPaQ2D_segmentlengthsFittingLogNormal_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_segmentlengthsFittingLogNormal_audit.png",
+            "sha256": "a506ddd224fd29b288f7d20dc2d9451017a6cc758190474eeae6271e2509d4ef"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_segmentlengthsFittingLogNormal_audit_all.png",
+            "sha256": "5a6de555ef9a0eee93400d8433e0e70dedaa6ccf391dac7fb55e2ab1f9467fdc"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_blocksizecentroidmap{tag}.png",
+      "group": "Blocos e variograma",
+      "matlab_png": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksizecentroidmap_native_nested.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksizecentroidmap_native_nested.png",
+            "sha256": "17bd242236a8ff8dca5fa91c25f6aff66c52adce9026e14bab55c1ea59d2e8a1"
+          },
+          {
+            "path": "tests/reference/sprint12/native/oblique/FracPaQ2D_blocksizecentroidmap_native_oblique.png",
+            "sha256": "50683f11846b5adee66d4206d0b6fb238ad643741144b04fb753f072cca1883c"
+          },
+          {
+            "path": "tests/reference/sprint12/native/scaled/FracPaQ2D_blocksizecentroidmap_native_scaled.png",
+            "sha256": "8b1470410102317b9d44aa0044e03ae2fe651112ace3ee7d55babcc8a364cfa5"
+          },
+          {
+            "path": "tests/reference/sprint12/native/separate/FracPaQ2D_blocksizecentroidmap_native_separate.png",
+            "sha256": "c19ef3989343691d0315149606148dca25c0ad2244b7ab6fca1e2e9315e1fd94"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_blocksizecentroidmap_audit_all.png",
+            "sha256": "84dc32016cae2d4d6e83e4c30b37df0e142ac8e6eb81b0e2b10cb3f62c7f6dd0"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_blocksizeloglog{tag}.png",
+      "group": "Blocos e variograma",
+      "matlab_png": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksizeloglog_native_nested.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksizeloglog_native_nested.png",
+            "sha256": "ec4d4713a7d650f6f00175e5e80f96557408988ccea8c84a0caa7a7468a2d476"
+          },
+          {
+            "path": "tests/reference/sprint12/native/oblique/FracPaQ2D_blocksizeloglog_native_oblique.png",
+            "sha256": "72c1fc6fc0b817b48e753fc93e5b1c9882f7625a26453302239d83385a9ce785"
+          },
+          {
+            "path": "tests/reference/sprint12/native/scaled/FracPaQ2D_blocksizeloglog_native_scaled.png",
+            "sha256": "c479ec5151d5dc60fbd4b3e0db3c78d8ae6913b541848c30f9d24384995c3df5"
+          },
+          {
+            "path": "tests/reference/sprint12/native/separate/FracPaQ2D_blocksizeloglog_native_separate.png",
+            "sha256": "890880c7f6441e70d3a7583078adde67d8f8d44703b7b66944cb4e9bc91b2999"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_blocksizeloglog_audit_all.png",
+            "sha256": "5cf4f127cef4a988d5652747c56e6fd2776b03022a4edb6fb92d34fbb9ea3294"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_blocksizehisto{tag}.png",
+      "group": "Blocos e variograma",
+      "matlab_png": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksizehisto_native_nested.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksizehisto_native_nested.png",
+            "sha256": "7700b980332d2f66aa9d396faae55ae9598a4619aacbc05181e1a625e2aacd40"
+          },
+          {
+            "path": "tests/reference/sprint12/native/oblique/FracPaQ2D_blocksizehisto_native_oblique.png",
+            "sha256": "bdb320d89207bf4235434164c8d309f726868f67a7eb1130ba303afa469ac1ef"
+          },
+          {
+            "path": "tests/reference/sprint12/native/scaled/FracPaQ2D_blocksizehisto_native_scaled.png",
+            "sha256": "311c118ac213230421d6d224d6455e9f88bb944f65056975dc7f304d965ffba6"
+          },
+          {
+            "path": "tests/reference/sprint12/native/separate/FracPaQ2D_blocksizehisto_native_separate.png",
+            "sha256": "e7f682de994c33f0af35a9875971b60e37f58a01cf5e973a7fcbf5a9aa9aec56"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_blocksizehisto_audit_all.png",
+            "sha256": "c4416f96e6507f6c33c391cc66c81fad39a9476063a9541b84988a64692c53e3"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_segmentlength_variogram{tag}.png",
+      "group": "Blocos e variograma",
+      "matlab_png": "tests/reference/sprint12/native/FracPaQ2D_segmentlength_variogram_native_variogram.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint12/native/FracPaQ2D_segmentlength_variogram_native_variogram.png",
+            "sha256": "ce38265148d0f61bd37ed5a260ed2b63021827e9dc1caa4f120b48be8ad46553"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_segmentlength_variogram_audit_all.png",
+            "sha256": "31e72e2582f1dc9a66e5913257905009ae6a5165128c1ab10eddc99ed2169812"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_roseangleEqArea{tag}.png",
+      "group": "Ângulos",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_roseangleEqArea_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_roseangleEqArea_audit.png",
+            "sha256": "1c8343aa6838b7c077578d4911779cde03ec363b3a003f5981d8f03ae54f94f4"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_roseangleEqArea_audit_all.png",
+            "sha256": "3ffc362e8ba0887aee7f9c9d8a6ed28950190bd8a47a82146d3d512866ec0c96"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_histoangle{tag}.png",
+      "group": "Ângulos",
+      "matlab_png": "tests/reference/sprint16/native/FracPaQ2D_histoangle_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2D_histoangle_audit.png",
+            "sha256": "9c6e74b71d6864075b2007341ab57bc717d2ee717384318fc8ec18673710fe0a"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_histoangle_audit_all.png",
+            "sha256": "7556ab78948c462a913dcd66dad028c95aae3b35a5e57f437ba38e741b8ec947"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_IYXnodes_traces{tag}.png",
+      "group": "Conectividade",
+      "matlab_png": "tests/reference/sprint16/native/exports/FracPaQ2D_IYXnodes_traces_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_IYXnodes_traces_audit.png",
+            "sha256": "8a0b486f5f758d4f033bfc693ce0b8432da3c1b6f00bed6c3cbfc3fe33364828"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_IYXnodes_traces_native_cross.png",
+            "sha256": "d6d4b44f5897fbe088d4cc97fd8a2b12509da95871c033b70a9e909303efbc8a"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_IYXnodes_traces_native_kink_cross.png",
+            "sha256": "edef36a01e84e2aef67e5809d641f228b1a046d2b5d91ce232374e52352b8c51"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_IYXnodes_traces_native_overshoot.png",
+            "sha256": "78406a37aa3a45c0e45d21a0a47c6b6b5fc383433b45fc3491d7c81d02ebd396"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_IYXnodes_traces_native_tee.png",
+            "sha256": "4ed16bfad228672b08454371afad9f27937533001f113b6716c4859bca3c798e"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_IYXnodes_traces_native_tee_zero.png",
+            "sha256": "65f7353ada1cc414ce2a9edc009414989aa8de0067099b57f9aa91b41fdc40ab"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_IYXnodes_traces_audit_all.png",
+            "sha256": "912eabb2e1d2207eeb15ccca33a2c358fb7da6f8f7715bd6c8fb0b8bb9912d77"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_XYnodes_traces_heat{tag}.png",
+      "group": "Conectividade",
+      "matlab_png": "tests/reference/sprint16/native/exports/FracPaQ2D_XYnodes_traces_heat_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_XYnodes_traces_heat_audit.png",
+            "sha256": "027ac5aceb98403fa68f10c42b7c62786c2e58b5296b300cf027ca2af16b4d96"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_XYnodes_traces_heat_native_cross.png",
+            "sha256": "9278cd0d920113e0129b2f493eab8f4f708348cf5b47e05a951b77b3bbf524d0"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_XYnodes_traces_heat_native_kink_cross.png",
+            "sha256": "f049e82c477fcf4e08e5b292cf237188f43eda7070c52546e3bb9c52ecb5706c"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_XYnodes_traces_heat_native_overshoot.png",
+            "sha256": "015fd186718bfa66b5636ad49120323522becb7e253855613e36d8e696061c35"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_XYnodes_traces_heat_native_tee.png",
+            "sha256": "1b57c5b2e05c6149e9c0d827da222433ec71fe88aee996a2f690b0e5c45af4c7"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_XYnodes_traces_heat_native_tee_zero.png",
+            "sha256": "3425206c23f1a6fa7661b6185ec3249c224ce26e6f2547787b21b38b03ebce95"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_XYnodes_traces_heat_audit_all.png",
+            "sha256": "739f940f00cac0b6753d2031244c88a850039108b8c70b3cad14ab8c6e449074"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_Inodes_traces_heat{tag}.png",
+      "group": "Conectividade",
+      "matlab_png": "tests/reference/sprint16/native/exports/FracPaQ2D_Inodes_traces_heat_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_Inodes_traces_heat_audit.png",
+            "sha256": "5dd2fe86a460af069abbb1ee09ad0734c465e90b7f47961685812f236f954505"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_Inodes_traces_heat_native_cross.png",
+            "sha256": "efa16adb49df1818b8ff0e56466ca3d8c9252a01ba96ee8e2ba4b552003ed049"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_Inodes_traces_heat_native_kink_cross.png",
+            "sha256": "6015e3622e03a2a8d491729ce8c22e367a9086fe295fb715b09735582c8be21e"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_Inodes_traces_heat_native_overshoot.png",
+            "sha256": "5b4dc11918d489025d780eda8f37c11cc8d2af4390b1c1c79869306d0db3d02d"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_Inodes_traces_heat_native_tee.png",
+            "sha256": "d787811e2eed73b4cc63477157d55e35f66601991eddcb99abf1b1c0516f2c9b"
+          },
+          {
+            "path": "tests/reference/sprint9/native/FracPaQ2D_Inodes_traces_heat_native_tee_zero.png",
+            "sha256": "9331405d51fc1a379d5a38cf5e3711414d996b819b80c5cd56e2ef6df1ccde70"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_Inodes_traces_heat_audit_all.png",
+            "sha256": "a4622ce830a08a210ccee585148ff85accafe6526055452596879426c4826065"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_IYXtriangle{tag}.png",
+      "group": "Conectividade",
+      "matlab_png": "tests/reference/sprint16/native/exports/FracPaQ2D_IYXtriangle_audit.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2D_IYXtriangle_audit.png",
+            "sha256": "1bc63e3429f71d8e735682a3c2cceb4588ab93513ad059ba46f10d7b672c743e"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_IYXtriangle_audit_all.png",
+            "sha256": "fe6271b7a05840dc16ec526842dd8ed3cb50c3bd4aeaf16f996708284c6f9ed5"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_permeability_polar{tag}.png",
+      "group": "Tensores",
+      "matlab_png": "tests/reference/sprint10/native/FracPaQ2D_permeability_polar_native.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint10/native/FracPaQ2D_permeability_polar_native.png",
+            "sha256": "99cdbe2d0652972265b284b714df5a029ccc23c012d64bbf76330d06f60ac59d"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_permeability_polar_audit_all.png",
+            "sha256": "9fd2b79d09bc9345c78bd90b6150bd2487d258012ac8ee62d1b117e354472c4d"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2D_cracktensor{tag}.png",
+      "group": "Tensores",
+      "matlab_png": "tests/reference/sprint10/native/FracPaQ2D_cracktensor_native.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint10/native/FracPaQ2D_cracktensor_native.png",
+            "sha256": "1db2ff79e4303613364439ef6e3e3927d5277d96dc8ce407fe2219e74bf22815"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_cracktensor_audit_all.png",
+            "sha256": "089ae3b9e2dd584fd00254be09bceda2d1fecfbb18ba76e4f285ab2a6103870c"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "FracPaQ2Dwavelet_a{a}{tag}.png",
+      "group": "Wavelet",
+      "matlab_png": "tests/reference/sprint14/native/details_mexican/FracPaQ2Dwavelet_a2_details.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint14/native/details_mexican/FracPaQ2Dwavelet_a2_details.png",
+            "sha256": "ec94a8f1624c0717200321d3d0e1f2d4faae9be1034b8d39ec7f13b333029e46"
+          },
+          {
+            "path": "tests/reference/sprint14/native/details_morlet/FracPaQ2Dwavelet_a2_details.png",
+            "sha256": "9c2897fdb73c4f64403b4c258854af6d5d3d8a5f62a0c499c6d162681141ee9a"
+          },
+          {
+            "path": "tests/reference/sprint14/native/mexican/FracPaQ2Dwavelet_a2_native_mexican.png",
+            "sha256": "31cd47040af4d23ca400b4b0647bca0ae2bd071b386423de6204a348cd5a412e"
+          },
+          {
+            "path": "tests/reference/sprint14/native/morlet/FracPaQ2Dwavelet_a2_native_morlet.png",
+            "sha256": "91cbbd02ff75737dd15e511c61665bb3df503853164dea262a9bcc0d129daebf"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dwavelet_a32_audit_all.png",
+            "sha256": "c8bc2eae6cae8f10eabc9e5be0042a322d2d4b1179cc50f78ad1df6ab421ece9"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "guiFracPaQ2D_tracelengthalonggraph{tag}.png",
+      "group": "Graphs ALONG",
+      "matlab_png": "tests/reference/sprint13/native/guiFracPaQ2D_tracelengthalonggraph_native.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_tracelengthalonggraph_native.png",
+            "sha256": "2eb67b66ddc6fb4ca27bf3f75c6f7cd4444fc323d24e191002ad49c2721f303f"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/guiFracPaQ2D_tracelengthalonggraph_audit_all.png",
+            "sha256": "a058fbb5c4f25a5dbafb97d733aca72f1e726d23b039b7a00cad17fc6972ada1"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "guiFracPaQ2D_segmentlengthalonggraph{tag}.png",
+      "group": "Graphs ALONG",
+      "matlab_png": "tests/reference/sprint13/native/guiFracPaQ2D_segmentlengthalonggraph_native.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_segmentlengthalonggraph_native.png",
+            "sha256": "be5db779debd116deea55bf56263e5738614ffa029f5bbd253b34c8d312fb56c"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/guiFracPaQ2D_segmentlengthalonggraph_audit_all.png",
+            "sha256": "c7c3f73e67c97d7c057f3c1b5ea5dc94f1ae3cb77873009b5e6704d2897c3d49"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "guiFracPaQ2D_segmentanglealonggraph{tag}.png",
+      "group": "Graphs ALONG",
+      "matlab_png": "tests/reference/sprint13/native/guiFracPaQ2D_segmentanglealonggraph_native.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_segmentanglealonggraph_native.png",
+            "sha256": "a3bd0d9578d5bdc29895d58e14119936cb0525490a9636b366fdb275b03bd18d"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/guiFracPaQ2D_segmentanglealonggraph_audit_all.png",
+            "sha256": "23afdb1a15d1c37ae71c7d254c6dcf36f15e0c5b9dde1bde2fe7d76843a11ace"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "guiFracPaQ2D_intensityalonggraph{tag}.png",
+      "group": "Graphs ALONG",
+      "matlab_png": "tests/reference/sprint13/native/guiFracPaQ2D_intensityalonggraph_native.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_intensityalonggraph_native.png",
+            "sha256": "bbf9618e65932207b7dc45d75ab7804e610adec5169d1208661b735d8088b418"
+          },
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_intensityalonggraph_native_density_only.png",
+            "sha256": "5e38a2e9a4b65590fde05c839c28ce748d1fa76f2fd49bad884ae076d55558ed"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/guiFracPaQ2D_intensityalonggraph_audit_all.png",
+            "sha256": "07de01d42a3c40f608f01fc0367859afcedc7c8cddd347e945f1f2832493e9f4"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "guiFracPaQ2D_densityalonggraph{tag}.png",
+      "group": "Graphs ALONG",
+      "matlab_png": "tests/reference/sprint13/native/guiFracPaQ2D_densityalonggraph_native.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_densityalonggraph_native.png",
+            "sha256": "198789ccd5c49295bc0ffae8ce0bc882282eb8955b0bdeca136cf17229941421"
+          },
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_densityalonggraph_native_density_only.png",
+            "sha256": "47f2211bfaade95fc617fe0cc492c15b9cd2a33d64ed764a4d5f7856eac0bd49"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/guiFracPaQ2D_densityalonggraph_audit_all.png",
+            "sha256": "5b41529ada304dcbbef72f1526114653a548c67a585228cb7f8aabc09add897a"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "guiFracPaQ2D_tracelengthfromgraph{tag}.png",
+      "group": "Graphs FROM e mapa",
+      "matlab_png": "tests/reference/sprint13/native/guiFracPaQ2D_tracelengthfromgraph_native.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_tracelengthfromgraph_native.png",
+            "sha256": "7e47377a11de53862429f9a657c8c194eff249fc566991c1d13231b793f4ed07"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/guiFracPaQ2D_tracelengthfromgraph_audit_all.png",
+            "sha256": "22f36c7506cc6cbf77e4abac548826efa99726eaa1d1dd53d44054b049616824"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "guiFracPaQ2D_segmentlengthfromgraph{tag}.png",
+      "group": "Graphs FROM e mapa",
+      "matlab_png": "tests/reference/sprint13/native/guiFracPaQ2D_segmentlengthfromgraph_native.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_segmentlengthfromgraph_native.png",
+            "sha256": "6b84a41ab85b4aeba7ef19a0c22c3f07914ed5b6aff4d2fb26a667a693be10a2"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/guiFracPaQ2D_segmentlengthfromgraph_audit_all.png",
+            "sha256": "bd34d8a868f4ef81f0230da80a1e1338416fb5379c985303dc060cadb610bb81"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "guiFracPaQ2D_segmentanglefromgraph{tag}.png",
+      "group": "Graphs FROM e mapa",
+      "matlab_png": "tests/reference/sprint13/native/guiFracPaQ2D_segmentanglefromgraph_native.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_segmentanglefromgraph_native.png",
+            "sha256": "7a10dcb8f9ded976d7c4e0591d7aed376abe4b92169b75e91bdd0fc683e93c53"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/guiFracPaQ2D_segmentanglefromgraph_audit_all.png",
+            "sha256": "1ac7482cdf097de53fc881afb1bbf9e63ba734c932787ad164569a00c57fe94c"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    },
+    {
+      "name": "guiFracPaQ2D_graphtracemap{tag}.png",
+      "group": "Graphs FROM e mapa",
+      "matlab_png": "tests/reference/sprint13/native/guiFracPaQ2D_graphtracemap_native.png",
+      "matlab_arrays": null,
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente.",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_graphtracemap_native.png",
+            "sha256": "485205ebe61f35b8addba4efbb60592007f5bd0bb705f9e1354351b4dc0d28ec"
+          },
+          {
+            "path": "tests/reference/sprint13/native/guiFracPaQ2D_graphtracemap_native_density_only.png",
+            "sha256": "b7a8fad9c8dd57d8278e8cb31fd963ef89e82031d1f26b12d49bec4adf7e4e7a"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/guiFracPaQ2D_graphtracemap_audit_all.png",
+            "sha256": "ea21a5c2c7b46ad31c68bb37c11a155ef88f6f78fdeec09fd0b9a849cc4e7828"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      }
+    }
+  ],
+  "data_and_intermediates": [
+    {
+      "name": "FracPaQ2Dsegmentlengths{tag}.txt",
+      "trigger": "Execução da rotina Lengths",
+      "content": "Comprimentos de segmentos ordenados, uma coluna, duas casas decimais",
+      "matlab_file": "tests/reference/sprint12/native/FracPaQ2Dsegmentlengths_native_variogram.txt",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint12/native/FracPaQ2Dsegmentlengths_native_variogram.txt",
+            "sha256": "17ab9d2956c0d497158fc57f7b3f56d43b14284b60486175680be30d9c672349"
+          },
+          {
+            "path": "tests/reference/sprint12/native/nested/FracPaQ2Dsegmentlengths_native_nested.txt",
+            "sha256": "6e206ef34516ddbe33bd936a81da7ac53e0329f04c352c6c52f82ebccbb52fa4"
+          },
+          {
+            "path": "tests/reference/sprint12/native/oblique/FracPaQ2Dsegmentlengths_native_oblique.txt",
+            "sha256": "9a410cdfadbf9d1190e76652226948dfe72a2bfa0ce91df8f579f5ba20733888"
+          },
+          {
+            "path": "tests/reference/sprint12/native/scaled/FracPaQ2Dsegmentlengths_native_scaled.txt",
+            "sha256": "8029ebba7d8a272333c83a2ef9db9cfe0ce1d1f8443635419b0b130c962dbb3c"
+          },
+          {
+            "path": "tests/reference/sprint12/native/separate/FracPaQ2Dsegmentlengths_native_separate.txt",
+            "sha256": "404b00b6aa90ca83755d5ea7999006689a977a5eb4811943b8f987e92c6ef2bb"
+          },
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentlengths_audit.txt",
+            "sha256": "ef315c5922db8d8234e8670cf08dc3efa61b6a736b782cedab84148b381742f5"
+          },
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentlengths_censor.txt",
+            "sha256": "e3c7eeb60f70f4ff246085559b9c78ca4aa325a928407c8ea020612ca0271e51"
+          },
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2Dsegmentlengths_audit.txt",
+            "sha256": "7d136bfda03dd42cde3bcd9b42921eaef8b44be03c3121baadd567fcf2a8c12e"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dsegmentlengths_audit_all.txt",
+            "sha256": "7d136bfda03dd42cde3bcd9b42921eaef8b44be03c3121baadd567fcf2a8c12e"
+          },
+          {
+            "path": "tests/reference/sprint5/FracPaQ2Dsegmentlengths_SVG.txt",
+            "sha256": "f447e1f74253d0203776bea9eb20ee1393ae4645f6ea1ccc1ef372d17dc270f7"
+          },
+          {
+            "path": "tests/reference/sprint5/FracPaQ2Dsegmentlengths_red.txt",
+            "sha256": "23302a554ac481bc657e6013b51cc4b9ef7fcd99a5af24976973e5658ab52781"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "FracPaQ2Dtracelengths{tag}.txt",
+      "trigger": "Execução da rotina Lengths",
+      "content": "Comprimentos totais ordenados, uma coluna, duas casas",
+      "matlab_file": "tests/reference/sprint12/native/FracPaQ2Dtracelengths_native_variogram.txt",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint12/native/FracPaQ2Dtracelengths_native_variogram.txt",
+            "sha256": "c270245b29e1125b0e7149a374b0f1fddf7054199efd67a1f32a0f0501dbc212"
+          },
+          {
+            "path": "tests/reference/sprint12/native/nested/FracPaQ2Dtracelengths_native_nested.txt",
+            "sha256": "df4958750f43d5cab4e816fc919f633f3d9a8a63376e43dc841c23c8e9c0b0f6"
+          },
+          {
+            "path": "tests/reference/sprint12/native/oblique/FracPaQ2Dtracelengths_native_oblique.txt",
+            "sha256": "d6562255731e5c426c41697086d620082458984c6f8597030f94f7e0105e9ff0"
+          },
+          {
+            "path": "tests/reference/sprint12/native/scaled/FracPaQ2Dtracelengths_native_scaled.txt",
+            "sha256": "876892a5e1e4012c6e23d6616887f7eed325b53a693c7b2b73a33b38382298f9"
+          },
+          {
+            "path": "tests/reference/sprint12/native/separate/FracPaQ2Dtracelengths_native_separate.txt",
+            "sha256": "8a3683824066e8134827973b30505c2edd2a72922fa000ad3fd3ce517d49d470"
+          },
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2Dtracelengths_audit.txt",
+            "sha256": "f1962792585e10e9a5d292e801150ca660ab842be69f1fb15652aae668f41516"
+          },
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2Dtracelengths_censor.txt",
+            "sha256": "e3c7eeb60f70f4ff246085559b9c78ca4aa325a928407c8ea020612ca0271e51"
+          },
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2Dtracelengths_audit.txt",
+            "sha256": "9a6b6850605d4d0e9861cf0d63a01d8b04910a1f954b0fa3ecb88385fcb1adec"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dtracelengths_audit_all.txt",
+            "sha256": "9a6b6850605d4d0e9861cf0d63a01d8b04910a1f954b0fa3ecb88385fcb1adec"
+          },
+          {
+            "path": "tests/reference/sprint5/FracPaQ2Dtracelengths_SVG.txt",
+            "sha256": "95c39eed8d52ed727c8bc15d27443510ec82cf42edda107332e265d6e8a1f590"
+          },
+          {
+            "path": "tests/reference/sprint5/FracPaQ2Dtracelengths_red.txt",
+            "sha256": "23302a554ac481bc657e6013b51cc4b9ef7fcd99a5af24976973e5658ab52781"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "FracPaQ2Dsegmentangleslengths{tag}.txt",
+      "trigger": "Execução da rotina Lengths",
+      "content": "Ângulo original e comprimento de cada segmento; ver Q-10",
+      "matlab_file": "tests/reference/sprint12/native/FracPaQ2Dsegmentangleslengths_native_variogram.txt",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint12/native/FracPaQ2Dsegmentangleslengths_native_variogram.txt",
+            "sha256": "9ac63fd911a4f0f6a7af2957954bb3e4e05c97beda61de640fd8ab08c60966ab"
+          },
+          {
+            "path": "tests/reference/sprint12/native/nested/FracPaQ2Dsegmentangleslengths_native_nested.txt",
+            "sha256": "5927c0033cbb4562c891b497ccbed18ff1c7f379d34e7b6a6f1878e3fa50129d"
+          },
+          {
+            "path": "tests/reference/sprint12/native/oblique/FracPaQ2Dsegmentangleslengths_native_oblique.txt",
+            "sha256": "99657405c721e8be92ca6f044634c85b9f23cf2ffe895c8f8257f348db045456"
+          },
+          {
+            "path": "tests/reference/sprint12/native/scaled/FracPaQ2Dsegmentangleslengths_native_scaled.txt",
+            "sha256": "e80b6a24474d8265e1a5ccfba3d3064ae03fe9f0df612227b35fcd633d5af046"
+          },
+          {
+            "path": "tests/reference/sprint12/native/separate/FracPaQ2Dsegmentangleslengths_native_separate.txt",
+            "sha256": "a3dc683d7309f39c8fd6d0865a46bf431ac40d718f8ebad877ca91c13844efc0"
+          },
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentangleslengths_audit.txt",
+            "sha256": "cd35d07d290bb63fa11a18225ca3b1dba16053617cdac9242b732df8a2d5275c"
+          },
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentangleslengths_censor.txt",
+            "sha256": "f1666bf88371015778f86792b4766af46d8a9a6e514a23e1b6ee6e16799e3d04"
+          },
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2Dsegmentangleslengths_audit.txt",
+            "sha256": "d39a92dd8c9d748c67f3e0e57c22b88809125935fc615399364bd8b7b3a1a754"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dsegmentangleslengths_audit_all.txt",
+            "sha256": "d39a92dd8c9d748c67f3e0e57c22b88809125935fc615399364bd8b7b3a1a754"
+          },
+          {
+            "path": "tests/reference/sprint5/FracPaQ2Dsegmentangleslengths_SVG.txt",
+            "sha256": "eaebdf267a249b293b345992094207408aac3b103b7e89c80036c01f0f525760"
+          },
+          {
+            "path": "tests/reference/sprint5/FracPaQ2Dsegmentangleslengths_red.txt",
+            "sha256": "0f71017b15f1bfa5a98ac2934ac263b3116681a2badad84b8143ec2315f17d97"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "FracPaQ2DEZROSE{tag}.txt",
+      "trigger": "Execução da rotina Angles, inclusive ao pedir crack tensor",
+      "content": "Ângulos duplicados/corrigidos/invertidos, ordenados",
+      "matlab_file": "tests/reference/sprint16/native/FracPaQ2DEZROSE_audit.txt",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2DEZROSE_audit.txt",
+            "sha256": "d04b7fa146f6e018ceef6999339129c64103d1ef5de96be6a5bb45ea8538214c"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2DEZROSE_audit_all.txt",
+            "sha256": "15c514536ab388c64a588aa5bd9688147c1a597afffda514746c41c89f2bd42a"
+          },
+          {
+            "path": "tests/reference/sprint5/FracPaQ2DEZROSE_SVG.txt",
+            "sha256": "423ad576d129f0de3694718e2d2458d4c4b86c6955e0b3d8758bca66025f0140"
+          },
+          {
+            "path": "tests/reference/sprint5/FracPaQ2DEZROSE_red.txt",
+            "sha256": "55f78f260e4f99fc2e51dcfb2df9b7e208e12a113246213b18b599f4917f4403"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "FracPaQ2Dintensity{tag}.txt",
+      "trigger": "P21 ou P20",
+      "content": "X, Y e intensidade por centro de círculo",
+      "matlab_file": "tests/reference/sprint16/native/FracPaQ2Dintensity_audit.txt",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2Dintensity_audit.txt",
+            "sha256": "ba6a22cedfd1eb0ac2e7aff0744f11d49c14edb31d779d07c783e20c62ac94fa"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dintensity_audit_all.txt",
+            "sha256": "619f4a35b2788b672d039f697e21f18c6524911eba135314a6fb7decfd5a80f6"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "FracPaQ2Ddensity{tag}.txt",
+      "trigger": "P21 ou P20",
+      "content": "X, Y e densidade por centro de círculo",
+      "matlab_file": "tests/reference/sprint16/native/FracPaQ2Ddensity_audit.txt",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/FracPaQ2Ddensity_audit.txt",
+            "sha256": "5cfb879568f6cc22f7c0bcfc865d5c859cba04a349f183a97b2d599f7d9e9e4e"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2Ddensity_audit_all.txt",
+            "sha256": "73aea1a157f2cedefdc6c6b15f8243120dd4037f61382be69339c2d343036906"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "FracPaQ2Dconnectivity{tag}.txt",
+      "trigger": "I-Y-X",
+      "content": "Contagens rotuladas I, X e Y",
+      "matlab_file": "tests/reference/sprint16/native/exports/FracPaQ2Dconnectivity_audit.txt",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/FracPaQ2Dconnectivity_audit.txt",
+            "sha256": "679f0e4a71d9b73afd50b58d0dffa3376eedf1ceac22c5c069b31e766b648708"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dconnectivity_audit_all.txt",
+            "sha256": "a9b57df6a495744f126f006c8d5f40bdf967605754e521c0c29c715fc2ed1739"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "FracPaQ2Dsegmentdata{tag}.txt",
+      "trigger": "Slip tendency",
+      "content": "Índice sequencial, X1, Y1, X2, Y2 e ângulo original; não contém os valores de Ts",
+      "matlab_file": "tests/reference/sprint11/native/FracPaQ2Dsegmentdata_native_slip.txt",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint11/native/FracPaQ2Dsegmentdata_native_slip.txt",
+            "sha256": "6f3b20a6a1482a189e7517624b1939d02b01b14cb0e88b14e975edcc037dee09"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dsegmentdata_audit_all.txt",
+            "sha256": "f326680cf998ecbfad494ad83e57a91bd892a47fbe285f1314f7e227d6cc510f"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "FracPaQ2Dwavelet_theta_a{a}{tag}.txt",
+      "trigger": "Wavelet, por escala",
+      "content": "Orientações ótimas duplicadas, em graus",
+      "matlab_file": "tests/reference/sprint14/native/details_mexican/FracPaQ2Dwavelet_theta_a2.txt",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint14/native/details_mexican/FracPaQ2Dwavelet_theta_a2.txt",
+            "sha256": "150d0150c96fe7b8abd15292f4f13cde3443d26514d5c7c0f9d761be2cbd43fc"
+          },
+          {
+            "path": "tests/reference/sprint14/native/details_morlet/FracPaQ2Dwavelet_theta_a2.txt",
+            "sha256": "4e65238a04e1ce64f2d3944fe53f439b83748ca8bb0ac7c14a2df502dcfd28bc"
+          },
+          {
+            "path": "tests/reference/sprint14/native/mexican/FracPaQ2Dwavelet_theta_a2.txt",
+            "sha256": "150d0150c96fe7b8abd15292f4f13cde3443d26514d5c7c0f9d761be2cbd43fc"
+          },
+          {
+            "path": "tests/reference/sprint14/native/morlet/FracPaQ2Dwavelet_theta_a2.txt",
+            "sha256": "4e65238a04e1ce64f2d3944fe53f439b83748ca8bb0ac7c14a2df502dcfd28bc"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dwavelet_theta_a32_audit_all.txt",
+            "sha256": "eeed1a96e298967b636ec06d6a5237861e8a64ff5bfcd0fda19d60d64b502194"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "nome_converted.txt",
+      "trigger": "SVG com uma cor ou sem separação multicolorida",
+      "content": "Nós convertidos; não usa a tag da execução",
+      "matlab_file": "tests/reference/sprint16/native/exports/multicolour_colourFF0000_converted.txt",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/multicolour_colourFF0000_converted.txt",
+            "sha256": "2473618af4820c9bceca63bb43de81654a0fde0095ef5ac4aafae04beeef2a59"
+          },
+          {
+            "path": "tests/reference/sprint16/native/exports/simple_converted.txt",
+            "sha256": "2473618af4820c9bceca63bb43de81654a0fde0095ef5ac4aafae04beeef2a59"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint5/inputs/multicolour_colour0000FF_converted.txt",
+            "sha256": "e938ef21096780bdff6335b0722a78b5f7caba69385e2083f0aee8cd8d4d66a7"
+          },
+          {
+            "path": "tests/reference/sprint5/inputs/multicolour_colourFF0000_converted.txt",
+            "sha256": "2ed55ed6a1765ec54e1bf8b1c3604c7673f2473b58d067b3c522cd39c17b6dda"
+          },
+          {
+            "path": "tests/reference/sprint5/inputs/simple_converted.txt",
+            "sha256": "556766e6eefecfcd80bd2a1e4355902642c44fff7ce37a42b6ccbb508368ed45"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "nome_colourHHHHHH_converted.txt",
+      "trigger": "SVG com várias cores",
+      "content": "Nós por cor, permitindo carregar cada conjunto separadamente",
+      "matlab_file": "tests/reference/sprint16/native/exports/multicolour_colourFF0000_converted.txt",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint16/native/exports/multicolour_colourFF0000_converted.txt",
+            "sha256": "2473618af4820c9bceca63bb43de81654a0fde0095ef5ac4aafae04beeef2a59"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint5/inputs/multicolour_colour0000FF_converted.txt",
+            "sha256": "e938ef21096780bdff6335b0722a78b5f7caba69385e2083f0aee8cd8d4d66a7"
+          },
+          {
+            "path": "tests/reference/sprint5/inputs/multicolour_colourFF0000_converted.txt",
+            "sha256": "2ed55ed6a1765ec54e1bf8b1c3604c7673f2473b58d067b3c522cd39c17b6dda"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "FracPaQ2D_blocksize.bmp",
+      "trigger": "Block size graphs",
+      "content": "Raster intermediário de 300 dpi, nome fixo",
+      "matlab_file": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksize.bmp",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksize.bmp",
+            "sha256": "70dfffc87603078a94f098c93f1c5de889c2a441aad824bb0f0cadf985e3e97d"
+          },
+          {
+            "path": "tests/reference/sprint12/native/oblique/FracPaQ2D_blocksize.bmp",
+            "sha256": "e307afec3cdd2d040773ac25940adfb05a2f9e048a9eb142127f674d30376c1e"
+          },
+          {
+            "path": "tests/reference/sprint12/native/scaled/FracPaQ2D_blocksize.bmp",
+            "sha256": "f8043338778c84d5420522aed7fe439ac9996a31d71ed5eceb7ab8d5efa4b14e"
+          },
+          {
+            "path": "tests/reference/sprint12/native/separate/FracPaQ2D_blocksize.bmp",
+            "sha256": "c6a771981c6bf82e6fd2a2fce186b9b083b713fddbc7f87405329dd2fc4d19f2"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_blocksize.bmp",
+            "sha256": "20495fbd28a0b2da77b0bd8ae978d58fcb61a7d5cadc744d37ce66bd83ea9da7"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "FracPaQ2D_wavelet_traces.png",
+      "trigger": "Wavelet",
+      "content": "Raster intermediário de 72 dpi, nome fixo",
+      "matlab_file": "tests/reference/sprint14/native/details_mexican/FracPaQ2D_wavelet_traces.png",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint14/native/details_mexican/FracPaQ2D_wavelet_traces.png",
+            "sha256": "1754a2a401f57c0205e2bd927377ce311dcdff0c924b8c3c569cb2a25b00a4c3"
+          },
+          {
+            "path": "tests/reference/sprint14/native/details_morlet/FracPaQ2D_wavelet_traces.png",
+            "sha256": "8bc9acee630c23993bc000296543e6606ded99ea98317b095e3db8dc51b4abf0"
+          },
+          {
+            "path": "tests/reference/sprint14/native/mexican/FracPaQ2D_wavelet_traces.png",
+            "sha256": "bbfd0f50b6345667cb5e6a9410c948f89ad5ded3d0f7ad576d746efcd92519b0"
+          },
+          {
+            "path": "tests/reference/sprint14/native/morlet/FracPaQ2D_wavelet_traces.png",
+            "sha256": "7418b50169583535f843c4e9b28e3e1d85acd438855036eb58ac3745e48024da"
+          },
+          {
+            "path": "tests/reference/sprint14/native/rectangular/FracPaQ2D_wavelet_traces.png",
+            "sha256": "6acaca2a834eac86e1be4fc73425c50445d64e9b0611c62deb65b33b8bd7d3c9"
+          },
+          {
+            "path": "tests/reference/sprint14/native/step270/FracPaQ2D_wavelet_traces.png",
+            "sha256": "7ae0ca892f73b81b13d03ea33b1769e5d8acccaf8f83805bfa4ab3e18a0f5d78"
+          },
+          {
+            "path": "tests/reference/sprint14/native/step40/FracPaQ2D_wavelet_traces.png",
+            "sha256": "7ae0ca892f73b81b13d03ea33b1769e5d8acccaf8f83805bfa4ab3e18a0f5d78"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_wavelet_traces.png",
+            "sha256": "53c9c3a699f87ce061950fe434e67b5d9079129aefa70ee6beffa6f91cb76f9c"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    {
+      "name": "FracPaQ2D_Example1_processed.tif",
+      "trigger": "Script de pré-processamento",
+      "content": "Imagem preparada para Hough; fora do fluxo GUI",
+      "matlab_file": "tests/reference/sprint15/native/FracPaQ2D_Example1_processed.tif",
+      "evidence": {
+        "native": [
+          {
+            "path": "tests/reference/sprint15/native/FracPaQ2D_Example1_processed.tif",
+            "sha256": "3f4ea0ceffba82001949d3bfb76db5c217d0f6ffa715de098b0a8db49aa0955f"
+          }
+        ],
+        "python": [
+          {
+            "path": "tests/reference/sprint16/auxiliary/FracPaQ2D_Example1_processed.tif",
+            "sha256": "f4c8f0217c053d40b2aec6fa316dd52dff29ca3342f6a79658d06c0680202617"
+          }
+        ],
+        "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+      },
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    }
+  ],
+  "auxiliary": [
+    "Diálogo wavelet Run/Cancel",
+    "Pré-processamento: seis etapas",
+    "APIs e experimentos: destinação AUX na matriz"
+  ]
+}

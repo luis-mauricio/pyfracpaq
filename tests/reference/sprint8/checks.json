@@ -1,0 +1,133 @@
+{
+  "date": "2026-11-14",
+  "scope": "Sprint 8: approved implementation active in production Run.",
+  "tests": {
+    "tests": 490,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "baseline_before_sprints": 433,
+  "new_cases": 57,
+  "tests_command": "QT_QPA_PLATFORM=offscreen MPLCONFIGDIR=/tmp/pyfracpaq-matplotlib /Users/lm/developer/pyfracpaq/.venv/bin/python -m pytest -q --junitxml=/tmp/pyfracpaq-s89-approved-tests.xml",
+  "tests_location": "/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-s89-approved-duu17ec_",
+  "tests_xml_sha256": "cf50a0c5bed27a109866963a5e3db239b0b150755664d3b3c977a6b4c42b9481",
+  "source_integrity": {
+    "baseline_original_files_sha256_verified": 164,
+    "source_manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7",
+    "extra_original_folder_files_preserved": [
+      {
+        "path": "FracPaQ2D_histosegmentlength_Run1.png",
+        "sha256": "40432818e85ebdfb2599d0d1bea58f557cf5992af2872442385fbe7a1ebed908",
+        "bytes": 193946
+      },
+      {
+        "path": "FracPaQ2D_histotracelength_Run1.png",
+        "sha256": "99d26d3653cfe46c4c012e6de5c5729c8ea823cc367629df7d49653fdd3eb96f",
+        "bytes": 181809
+      },
+      {
+        "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+        "sha256": "f3c3d3e634a477f64c75c8f16c977d5f61ade54547996a2a76f6403a09f48266",
+        "bytes": 1207790
+      },
+      {
+        "path": "FracPaQ2D_tracelengthmap_Run1.png",
+        "sha256": "e94c17131fa2052be91e7fe3b7c44f830b5354f9d407f0503e0ea37686d557cf",
+        "bytes": 1198619
+      },
+      {
+        "path": "FracPaQ2D_tracemap_Run1.png",
+        "sha256": "781ac030cb77dabe45b557c0d59967455473ffdb68140f2339244af3d89db048",
+        "bytes": 1613778
+      },
+      {
+        "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+        "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7",
+        "bytes": 15064
+      },
+      {
+        "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+        "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839",
+        "bytes": 7532
+      },
+      {
+        "path": "FracPaQ2Dtracelengths_Run1.txt",
+        "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874",
+        "bytes": 3120
+      }
+    ],
+    "root_strict_manifest_result": "Fails on these 8 additional user outputs; baseline content unchanged. Full tests use isolated copy with exactly the 164 manifest originals. Verifier unchanged."
+  },
+  "dependency_check": "No broken requirements found. No dependency changed.",
+  "warnings": "973 pre-existing Matplotlib Qt backend deprecations: AA_UseHighDpiPixmaps (305 from new GUI flows).",
+  "package": {
+    "filename": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "eb09cd617ceac0492f8c0d14dd8a7bf55ba971c59b7ce32ca1f0ddb5806a9033",
+    "zip_import_outside_root": true,
+    "core_without_qt_or_matplotlib": true,
+    "six_models_2500_each": true,
+    "approved_scientific_analyses_active_in_default_registry": true,
+    "renderers_figure_counts": [
+      6,
+      4
+    ],
+    "png_600dpi": [
+      "/private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-s89-wheel-smoke-cufdvmc7/FracPaQ2D_tracelengthsFittingPowerLaw_.png",
+      "/private/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-s89-wheel-smoke-cufdvmc7/FracPaQ2D_XYnodes_traces_heat_.png"
+    ],
+    "connectivity_txt_blank_tag": true
+  },
+  "artifacts": {
+    "png": 6,
+    "txt": 3,
+    "qa": 6,
+    "size": [
+      4724,
+      4724
+    ],
+    "dpi": 599.9988,
+    "hashes_verified": true,
+    "arrays_and_txt_consistent": true,
+    "validation_sha256": "3013703d6e22f36d97d497540c2bf6e640f0ed8e2df13c49e667b9cf7d760d94",
+    "native_provenance_sha256": "f73ed8ac3868a16a9c904fde33a9e9e2114b0f321ce6b8e337b7b38795a28e54"
+  },
+  "native_ks_comparison": {
+    "power_law": {
+      "D_max_error": 0.0,
+      "p_max_error": 2.220446049250313e-16,
+      "decisions_exact": true,
+      "simulations": 2500,
+      "alpha": 0.1
+    },
+    "exponential": {
+      "D_max_error": 0.0,
+      "p_max_error": 2.220446049250313e-16,
+      "decisions_exact": true,
+      "simulations": 2500,
+      "alpha": 0.05
+    },
+    "lognormal": {
+      "D_max_error": 0.0,
+      "p_max_error": 2.220446049250313e-16,
+      "decisions_exact": true,
+      "simulations": 2500,
+      "alpha": 0.05
+    }
+  },
+  "acceptance": "All Sprint 8/9 tasks implemented and validated; scientific corrections approved explicitly. Full native visual homologation remains pending.",
+  "scientific_approval": {
+    "author": "user",
+    "date": "2026-11-14",
+    "statement": "Aprovo as Q-15 e a Q-11.",
+    "ids": [
+      "Q-15",
+      "Q-11"
+    ],
+    "activated_default_registry": true
+  },
+  "pre_approval_checks": {
+    "path": "checks-before-approval.json",
+    "sha256": "9f3f1210b1f3eec08af664b4ace66112507e536c4fbc536fb197405f6763fa22"
+  }
+}

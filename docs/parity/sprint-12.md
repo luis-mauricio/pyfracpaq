@@ -1,0 +1,13 @@
+# Sprint 12 — Blocos e variograma
+
+Sprint concluída: variograma e blocos integrados ao Run padrão. **Q-14 aprovada explicitamente em 14/11/2026:** “Aprovo ambos Q-14 e Extensão Q-20.” [Contrato técnico/científico](../decisions/0014-blocks-and-variogram.md).
+
+Implementados raster independente da tela, Otsu/conectividade 8 com ordem nativa, áreas/centroides calibrados, três figuras, BMP visível de nome fixo, temporários próprios e os três TXT de Lengths. A regra aprovada de excluir o exterior e preservar a resolução sem escala está quantificada em [Q-14](../../tests/reference/sprint12/candidate/q14_comparison.json), com registro da aprovação explícita do usuário.
+
+O semivariograma usa centros/comprimentos dos segmentos retidos, 30 classes e contagens de pares. API auxiliar mantém variantes de nuvem, anisotropia, subamostragem com RNG local e plotit sem novos controles na aba. Preservados auto-pares condicionados ao tamanho da amostra e os detalhes de bins/nuvens do original.
+
+[Comparações nativas](../../tests/reference/sprint12/native_comparison.json): contagens exatas, erro máximo de γ abaixo de 5e−16 nos exemplos, incluindo 999/1000 observações. Nos quatro BMPs originais, máscara, limiar, ordem, áreas, centroides e bordas coincidem exatamente. Isso não afirma igualdade da rasterização Agg com a impressão MATLAB. [Proveniência](../../tests/reference/sprint12/native_provenance.json) e [captura](../../scripts/capture_native_s1213.m).
+
+[Saídas de produção aprovadas](../../tests/reference/sprint12/candidate/validation.json): nove PNGs com miniaturas QA, arrays e arquivos, incluindo retângulos sem escala/com escala 10 e semivariograma da mesma rede do PNG nativo. Área branca conhecida: dois quadrados rasterizados de 1444 pixels²; a espessura da fratura explica a diferença para os 1600 geométricos. Escala altera área por 1/s² sem reamostrar. Constantes têm uma barra percentual/CCDF zero explícito; redes abertas têm saída vazia controlada. Translação, reversão dos nós, Hough, cancelamento, orçamento e substituição do BMP foram testados.
+
+A comparação visual verificou os quatro nomes, marcadores, cores, títulos, unidades, aspecto do mapa, eixos quadrados de áreas e exportação. As diferenças de população/raster/calibração são parte da decisão Q-14 aprovada. Testes Qt do registro padrão verificam três PNGs/Lengths TXT/BMP, raster idêntico após escala e execução conjunta das duas sprints com caches compartilhados e 13 PNGs. Não se declara homologação visual integral nem identidade de pixels. Checagens finais da entrega estão em [checks.json](../../tests/reference/sprint12/checks.json).

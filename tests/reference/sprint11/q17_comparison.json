@@ -1,0 +1,131 @@
+{
+  "decision": {
+    "id": "Q-17",
+    "author": "user",
+    "date": "2026-11-14",
+    "statement": "Aprovo a correção Q-17.",
+    "scope": "Correct stability normalization, colour lookup, inclusive CSF and contextual validation; retain legacy length-map colour convention."
+  },
+  "input": {
+    "raw_strikes": [
+      0.0,
+      90.0
+    ],
+    "sigma1": 100,
+    "sigma2": 50,
+    "sigma1_azimuth": 30,
+    "C0": 2,
+    "Pf": 10,
+    "mu": 0.6
+  },
+  "native": {
+    "source_formula_evaluation": true,
+    "source_normal_stress": [
+      62.5,
+      87.5
+    ],
+    "source_shear_stress": [
+      21.650635094610966,
+      21.650635094610966
+    ],
+    "source_preliminary_Tsmax": 0.0,
+    "source_TsNorm": [
+      "Inf",
+      "Inf"
+    ],
+    "source_Sf_range": [
+      43.333333333333336,
+      93.33333333333333
+    ],
+    "source_Sf": [
+      19.748941508981723,
+      44.74894150898172
+    ],
+    "source_Sf_colour_indices": [
+      1,
+      1
+    ],
+    "actual_function_call": {
+      "success": false,
+      "error": "Index in position 1 is invalid. Array indices must be positive integers or logical values.",
+      "identifier": "MATLAB:badsubscript"
+    },
+    "degenerate_calls": {
+      "slip": {
+        "success": true
+      },
+      "dilation": {
+        "success": true
+      },
+      "susceptibility": {
+        "success": true
+      },
+      "csf": {
+        "success": true
+      },
+      "rotated_orthogonal": {
+        "success": false,
+        "error": "Index in position 1 is invalid. Array indices must be positive integers or logical values.",
+        "identifier": "MATLAB:badsubscript"
+      },
+      "zero_friction_susceptibility": {
+        "success": false,
+        "error": "Index in position 1 is invalid. Array indices must be positive integers or logical values.",
+        "identifier": "MATLAB:badsubscript"
+      },
+      "equal_stress_dilation": {
+        "success": false,
+        "error": "Index in position 1 is invalid. Array indices must be positive integers or logical values.",
+        "identifier": "MATLAB:badsubscript"
+      },
+      "equality_csf": {
+        "success": true
+      },
+      "version": "24.2.0.3212159 (R2024b) Update 9"
+    }
+  },
+  "proposed": {
+    "normal_stress": [
+      62.50000000000002,
+      87.5
+    ],
+    "shear_stress": [
+      21.65063509461098,
+      21.650635094610966
+    ],
+    "TsNorm": [
+      1.0,
+      0.7142857142857141
+    ],
+    "Sf_range": [
+      19.748941508981723,
+      44.74894150898172
+    ],
+    "Sf_colour_indices_one_based": [
+      1,
+      100
+    ],
+    "shared_normalization": "Actual corrected segment values; rose midpoints use the same range; colour indices saturate to palette bounds.",
+    "constant_normalization": "Zero when the observed range is constant; no epsilon modifies physical values."
+  },
+  "equality": {
+    "native_map_CSF": [
+      1,
+      1
+    ],
+    "native_rose_CSF_count": 0,
+    "proposed_map_CSF": [
+      1.0,
+      1.0
+    ],
+    "proposed_rose_CSF_count": 36,
+    "criterion": "tau >= mu*(sn-Pf)+C0 in both map and rose"
+  },
+  "validation_proposed": [
+    "Compressive Sigma1 >= Sigma2 > 0; no sorting or sign changes.",
+    "Friction zero rejected only if susceptibility is selected.",
+    "Equal principal stresses rejected only if dilation is selected.",
+    "Zero shear/constant susceptibility have finite constant colour normalization."
+  ],
+  "existing_length_colour_convention": "Retain source linear colour lookup with logarithmic bar, as documented in Sprint 3; no change to existing length maps."
+}

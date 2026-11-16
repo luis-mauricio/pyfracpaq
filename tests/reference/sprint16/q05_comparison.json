@@ -1,0 +1,43 @@
+{
+  "question": "Q-05",
+  "status": "Explicitly approved by user on2026-11-14: Aprovo a Q-05.",
+  "native_execution": "guiFracPaQ2Dlength on lengths_edges.txt, scripts/capture_native_s16.m; actual saved TXT",
+  "native": {
+    "trace_lengths": [
+      4,
+      4,
+      4
+    ],
+    "segment_lengths": [
+      4,
+      4,
+      4
+    ],
+    "exported_raw_angles": [
+      90,
+      90,
+      0
+    ]
+  },
+  "proposed_and_current": {
+    "trace_lengths": [
+      7.0,
+      5.0
+    ],
+    "segment_lengths": [
+      3.0,
+      4.0,
+      5.0
+    ],
+    "raw_angles": [
+      90.0,
+      0.0,
+      36.86989764584402
+    ],
+    "excluded_traces": 4,
+    "excluded_segments": 4
+  },
+  "rule": "Exclude whole trace if first or actual last node touches any true edge; use one aligned mask for IDs/lengths/angles.",
+  "impact": "Population/statistics change intentionally. No two scientific modes.",
+  "approval_message": "Ignore os testes em Windows e Linux. Eu mesmo testarei quando puder. Aprovo a Q-05."
+}

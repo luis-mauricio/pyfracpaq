@@ -1,0 +1,40 @@
+{
+  "wheel": "dist/pyfracpaq-0.1.0rc1-py3-none-any.whl",
+  "sha256": "e163289a1a5e8e8534e46392727ed4d226a57648a44b819884f2323504e4160b",
+  "install": "Fresh CPython3.13 venv, pip --no-index --find-links, pinned wheels; pip check passes.",
+  "entrypoints": [
+    {
+      "mode": "script",
+      "exit_code": 0,
+      "version": "0.1.0rc1",
+      "module": "/private/tmp/pyfracpaq-s16-clean313/.venv/lib/python3.13/site-packages/pyfracpaq/__init__.py",
+      "prefix": "/private/tmp/pyfracpaq-s16-clean313/.venv",
+      "python": "3.13.18",
+      "network": "socket connect/DNS denied",
+      "readers": [
+        "TXT",
+        "SVG",
+        "Hough"
+      ],
+      "stdout": "DELIVERY:{\"version\": \"0.1.0rc1\", \"module\": \"/private/tmp/pyfracpaq-s16-clean313/.venv/lib/python3.13/site-packages/pyfracpaq/__init__.py\", \"prefix\": \"/private/tmp/pyfracpaq-s16-clean313/.venv\", \"python\": \"3.13.18\", \"network\": \"socket connect/DNS denied\", \"readers\": [\"TXT\", \"SVG\", \"Hough\"]}\nPyFracPaQ 0.1.0rc1 — FracPaQ version 2.8 reference\nMAIN_WINDOW_OBSERVED\n",
+      "stderr": "This plugin does not support propagateSizeHints()\nThis plugin does not support raise()\n"
+    },
+    {
+      "mode": "module",
+      "exit_code": 0,
+      "version": "0.1.0rc1",
+      "module": "/private/tmp/pyfracpaq-s16-clean313/.venv/lib/python3.13/site-packages/pyfracpaq/__init__.py",
+      "prefix": "/private/tmp/pyfracpaq-s16-clean313/.venv",
+      "python": "3.13.18",
+      "network": "socket connect/DNS denied",
+      "readers": [
+        "TXT",
+        "SVG",
+        "Hough"
+      ],
+      "stdout": "DELIVERY:{\"version\": \"0.1.0rc1\", \"module\": \"/private/tmp/pyfracpaq-s16-clean313/.venv/lib/python3.13/site-packages/pyfracpaq/__init__.py\", \"prefix\": \"/private/tmp/pyfracpaq-s16-clean313/.venv\", \"python\": \"3.13.18\", \"network\": \"socket connect/DNS denied\", \"readers\": [\"TXT\", \"SVG\", \"Hough\"]}\nPyFracPaQ 0.1.0rc1 — FracPaQ version 2.8 reference\nMAIN_WINDOW_OBSERVED\n",
+      "stderr": "This plugin does not support propagateSizeHints()\nThis plugin does not support raise()\n"
+    }
+  ],
+  "scope": "Installed package outside source with -I; Qt offscreen, not native appearance certification."
+}

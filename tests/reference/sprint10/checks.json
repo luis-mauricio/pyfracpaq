@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-14",
+  "scope": "Sprint 10 implemented and integrated in production Run.",
+  "tests": {
+    "tests": 558,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "baseline_before_sprints": 490,
+  "new_cases": 68,
+  "pytest_xml_sha256": "94d7d3949f50e26b9618a573817f1639340e01960ced9e8d6d0f730d724798f1",
+  "pytest_command": "QT_QPA_PLATFORM=offscreen MPLCONFIGDIR=/tmp/pyfracpaq-matplotlib /Users/lm/developer/pyfracpaq/.venv/bin/python -m pytest -q --junitxml=/tmp/pyfracpaq-s1011-tests.xml",
+  "tests_location": "/var/folders/tf/l0gd5mm97bj_sfs9syzk98c00000gn/T/pyfracpaq-s1011-clean-l2cf5nus",
+  "source_integrity": {
+    "original_baseline_files_sha256_verified": 164,
+    "source_manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7",
+    "extra_original_folder_files_preserved": [
+      {
+        "path": "FracPaQ2D_histosegmentlength_Run1.png",
+        "sha256": "40432818e85ebdfb2599d0d1bea58f557cf5992af2872442385fbe7a1ebed908"
+      },
+      {
+        "path": "FracPaQ2D_histotracelength_Run1.png",
+        "sha256": "99d26d3653cfe46c4c012e6de5c5729c8ea823cc367629df7d49653fdd3eb96f"
+      },
+      {
+        "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+        "sha256": "f3c3d3e634a477f64c75c8f16c977d5f61ade54547996a2a76f6403a09f48266"
+      },
+      {
+        "path": "FracPaQ2D_tracelengthmap_Run1.png",
+        "sha256": "e94c17131fa2052be91e7fe3b7c44f830b5354f9d407f0503e0ea37686d557cf"
+      },
+      {
+        "path": "FracPaQ2D_tracemap_Run1.png",
+        "sha256": "781ac030cb77dabe45b557c0d59967455473ffdb68140f2339244af3d89db048"
+      },
+      {
+        "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+        "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7"
+      },
+      {
+        "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+        "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839"
+      },
+      {
+        "path": "FracPaQ2Dtracelengths_Run1.txt",
+        "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874"
+      }
+    ],
+    "test_isolation_reason": "Root strict manifest reports the eight additional user outputs; baseline contents are intact. Full tests use a clean copy with exactly the manifest originals; verifier unchanged."
+  },
+  "dependency_check": "No broken requirements found. No dependency changed.",
+  "warnings": "1631 existing Matplotlib Qt deprecations AA_UseHighDpiPixmaps, including 658 from new GUI tests.",
+  "package": {
+    "filename": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "30596cefec49ca2f720f4055c1f99f9d4849af5470cc92dbbae3ca82cfa8b247",
+    "zip_import_outside_root": true,
+    "core_without_qt_or_matplotlib": true,
+    "default_registry_six_new_analyses": true,
+    "shared_stability_cache": true,
+    "png_600dpi": [
+      "FracPaQ2D_Mohrplot_.png",
+      "FracPaQ2D_sliptendencymap_.png",
+      "FracPaQ2D_sliptendencyrose_.png",
+      "FracPaQ2D_dilationtendencymap_.png",
+      "FracPaQ2D_dilationtendencyrose_.png",
+      "FracPaQ2D_fracsuscepmap_.png",
+      "FracPaQ2D_fracsusceprose_.png",
+      "FracPaQ2D_CSFmap_.png",
+      "FracPaQ2D_CSFrose_.png",
+      "FracPaQ2D_cracktensor_.png",
+      "FracPaQ2D_permeability_polar_.png"
+    ],
+    "coupled_ezrose_and_segmentdata_blank_tag": true,
+    "frozen_jet_and_style_resources": true,
+    "permeability_unit": "metres^2"
+  },
+  "artifacts": {
+    "png": 10,
+    "qa": 10,
+    "txt": 5,
+    "size": [
+      4724,
+      4724
+    ],
+    "dpi": 599.9988,
+    "hashes_verified": true,
+    "arrays_and_files_consistent": true,
+    "validation_sha256": "91bb55e98d4be5f4388b8278d66a39cb91f68f04c94670447fe6447ea6d9b51a",
+    "native_provenance_sha256": "a1dc85df39e7d95db1f9be754455733b1aa8adcc104cae6cb051c1c27e48a594"
+  },
+  "scientific_approval": {
+    "id": "Q-17",
+    "author": "user",
+    "date": "2026-11-14",
+    "statement": "Aprovo a correção Q-17.",
+    "scope": "Correct stability normalization, colour lookup, inclusive CSF and contextual validation; retain legacy length-map colour convention."
+  },
+  "acceptance": "Requested Sprint 10/11 implementation, numerical/native references, Run integration, files and visual calibration verified. Full regional SSIM and multi-platform visual homologation remain for final audit."
+}

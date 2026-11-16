@@ -1,0 +1,1155 @@
+{
+  "files": [
+    {
+      "path": "102.txt",
+      "bytes": 11384,
+      "sha256": "11e92900e2038d5b8b0970d8a054098223380847e1de1ecf4d2d0fd06d1eada4",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "103.txt",
+      "bytes": 14549,
+      "sha256": "493c943010d5e61253b99da70a0e94fac265439cb0162d0be072a99cbe3c74a9",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "166.txt",
+      "bytes": 14879,
+      "sha256": "372a0ad6047f9a43e5746338d3b77a27e579563a3790b5299aef475c3900dc5e",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "69.txt",
+      "bytes": 58903,
+      "sha256": "2c6ddfd2e536bb3e1cd272a5387ef80d9dae7f1a7c9a6f2b1d2dee2c196841f9",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "83.txt",
+      "bytes": 40322,
+      "sha256": "6e30102c3adec8ef825ed4e80bbb44b711ff1db199a726ea6c9b53f560c2f90f",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "FracPaQ User Guide v2.8.pdf",
+      "bytes": 34815038,
+      "sha256": "5b0d4fdf1d7eaced795ae5d4e116a86da0781eb52d31b6d98a2aedce768d703c",
+      "role": "documentation",
+      "disposition": "Preserve original manual, credits/bibliography and license; link from local user guide."
+    },
+    {
+      "path": "FracPaQ2D_imagePreprocess.m",
+      "bytes": 1764,
+      "sha256": "4330652bbdcaf85a6af57c3bcac7b38622db5fa6cb92f28cee55d2d7111486f7",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "FracPaQ2Dwave_2_Morlet.m",
+      "bytes": 6212,
+      "sha256": "032c487bd7e6885a41829d92be4ea654aad2a08604bccd94dea892ac490a6254",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "FracPaQicon.jpeg",
+      "bytes": 8128,
+      "sha256": "f29ab6ff8eb4c52b8571c46292a243ece2d14dc746266241f811962867c0ed7b",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "FracPaQlogo.jpeg",
+      "bytes": 17571,
+      "sha256": "9f78a9a62e46e9d8476df7ea444192075e9b78a7edb329f533c0af3e0e286c08",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Fractures_H12Z.txt",
+      "bytes": 140759,
+      "sha256": "3c0a064639292fe5d3b440ebad813cbbbc10a194c88590e2989e31b76c662837",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "IYXtest1_converted.txt",
+      "bytes": 714,
+      "sha256": "1f93eb29a91638709db293f168d15f839ce02a149603b327cec0f0ada433efff",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "IYXtest2_converted.txt",
+      "bytes": 714,
+      "sha256": "c25a8f966ca86aa10868d677b6a079737c3c102aab8485368700098e84d57382",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "KStestLogNorm.m",
+      "bytes": 2850,
+      "sha256": "7e7e9a371193d39835419c3b9c3f2cfdf91215ada7192bd2bf66ac81ab2930d3",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "KStestPower.m",
+      "bytes": 2871,
+      "sha256": "c33fb934ef76b4aa7f219ca20509c380cad4e1a29dab4d4d0102ded308c17b19",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "KStestexp.m",
+      "bytes": 2846,
+      "sha256": "fdb8ab0e2411382124bae117e41b7e5a464d437af7f1cd57080cac07fcef95a1",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1091,
+      "sha256": "8b85a35a5413a8d6927a8966f19b67b0cfe7d4db14152de0280aa6245b1ba39c",
+      "role": "documentation",
+      "disposition": "Preserve original manual, credits/bibliography and license; link from local user guide."
+    },
+    {
+      "path": "Macduff.tiff",
+      "bytes": 262398,
+      "sha256": "f518b2cfc3ede9347c91d8d321c109841bd700146f6ae84f0f1536a8baca3c0c",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "MacduffBinary.tif",
+      "bytes": 65684,
+      "sha256": "3042478044a4266b90ee238886df55842316d7a21a15fdfe3419329c76cc03b2",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "MacduffColour.tif",
+      "bytes": 148794,
+      "sha256": "bce2362365aec17fa3464173e3c5f69bcefef235dd5893e96db94c510c33044e",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "MacduffColourCropped.jpg",
+      "bytes": 26004,
+      "sha256": "067268f49016dbbffded73591d6373ca42deea6b96c6e205d39eccbd4420e555",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Move2FracPaq.m",
+      "bytes": 2574,
+      "sha256": "705877ff173f4fe2f1a249e0e7d848bf1ca0fb21167ffe68c4c4e6caf2160898",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "Orkney1a.jpg",
+      "bytes": 84340,
+      "sha256": "79e65807c866e304520fe2cf595a5b18bb1803a496db34562c573bd6ad3bbe39",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Orkney1a.tiff",
+      "bytes": 1048878,
+      "sha256": "7a6a1fb5df188f6aa95f197253f8d083dc363b45f8fa89c35b19bb3761bc2f41",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Orkney1aBinary.tif",
+      "bytes": 262292,
+      "sha256": "b1d9ee96581147b90f132ab5bcc3792df57cb8b8363126b9384f21d967db609d",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "PlotExp.m",
+      "bytes": 2358,
+      "sha256": "ef5c4237f5440724492f526c93229e001ac1b4d051c3e7527932f535a962c415",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "PlotLogNorm.m",
+      "bytes": 2437,
+      "sha256": "273e1669760582f146b644bdb234b2c69a1d5f2d46abf6a8452d42c18ffc76f3",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "PlotPowerLaw.m",
+      "bytes": 2824,
+      "sha256": "075b19537aaf3baea3c1dc6c3a0786774f5240ebd9863f62b88d5d9ef14f9906",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "README.md",
+      "bytes": 742,
+      "sha256": "6c7444bd82f2bb0e4f4271fa3a286f4c8e4c2b51169af4de01057e0e6a0ab42d",
+      "role": "documentation",
+      "disposition": "Preserve original manual, credits/bibliography and license; link from local user guide."
+    },
+    {
+      "path": "SD11A.txt",
+      "bytes": 32976,
+      "sha256": "96bafa56537444279a748c3f4b7a4300f7e73341a04d2ba4ff8cf1299ad74688",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "SD11B.txt",
+      "bytes": 55652,
+      "sha256": "8d65a4da43da577aa35c5ebdb9f52e6186a3f8545181368bcac3bb4a793becdf",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Souter_All.txt",
+      "bytes": 162827,
+      "sha256": "95120f7663e2d718ff25d61593cb24b6f6227c579c622d2cb441cf1189c07d9f",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Souter_Blue.txt",
+      "bytes": 132401,
+      "sha256": "33c60eac1bf2c9b11cb399ce6026af9ec9d4f6521156da9fdd2cae2baf6e376a",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Souter_Green.txt",
+      "bytes": 21577,
+      "sha256": "d2764e5cda3b50b65c1ea49280e9bb8df1e381d2c75310d1677135d6bd5f3f62",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Souter_Green_colour008000.txt",
+      "bytes": 21577,
+      "sha256": "d2764e5cda3b50b65c1ea49280e9bb8df1e381d2c75310d1677135d6bd5f3f62",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Souter_Red.txt",
+      "bytes": 8851,
+      "sha256": "85f449b1d0071ace2c85202f6ed3276ee0a814208e13b43beb9b13872b1653bc",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "ThinSection_H12Z.svg",
+      "bytes": 251716,
+      "sha256": "efe167ac67f6ccd7214880cb516b03eaadd742bcf895c4f1da26e751aca8b6a8",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "ThinSection_H12Z.txt",
+      "bytes": 105615,
+      "sha256": "f98268f0039756ae69f55f16e7bfcf6e243bf0a34d8408e664014f1a08324a55",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "ThinSection_H12Z_new.svg",
+      "bytes": 251716,
+      "sha256": "d6463787a93bdb46a8058b64f142bd6d8eb5996ab781c99c8e013c52fc5c468a",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "ThinSection_H12Zconverted.txt",
+      "bytes": 163382,
+      "sha256": "ef99e24d804af961e7eb0c4a2f7517d229b77be25621bca9338ea101e788c891",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Tile 1 No BG copy.svg",
+      "bytes": 362102,
+      "sha256": "7767370c0f130633007f6dbfa24955f45a38a2aabb226d515a6bab09af2501e7",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Tile 1 No BG.svg",
+      "bytes": 423911,
+      "sha256": "a0e1c69521f872548ca86d66e58603d4d9744e4e9f67b409c539541d4a07afbf",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Tile 1 No BG.txt",
+      "bytes": 250035,
+      "sha256": "507d925c2602be06a50ffeb9ac31cb657573c63abcf7802eb4283583847cfef5",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Tile 1.txt",
+      "bytes": 250035,
+      "sha256": "a83e5dd6b0ffcb5ecc01f52b640496fb46e6b2486f36b911f180b5c262501ee6",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Tile 4 No BG.svg",
+      "bytes": 287653,
+      "sha256": "2f1f25f343b88d966303cb8979935da45c0c10388a0c62471a568257e0507623",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Tile 4 No BG.txt",
+      "bytes": 180221,
+      "sha256": "47b40901132df099be23d13c93aa0a5e242f3ddf3d96569840f8b9ceeb8d93ac",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "Tile 4.txt",
+      "bytes": 180221,
+      "sha256": "47b40901132df099be23d13c93aa0a5e242f3ddf3d96569840f8b9ceeb8d93ac",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "arc.m",
+      "bytes": 409,
+      "sha256": "82b03a092201a4a90508b4b1e3b92e9ce2c91ce9a3595ef4695406871d22f35c",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "arc2.m",
+      "bytes": 445,
+      "sha256": "f137bec138125b23142ad2835fb2471fd6da5622b6c0c48ea611e504870dccd4",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "blocksize.m",
+      "bytes": 1065,
+      "sha256": "33782072d7b184783e58971975dceb56700f7ecc233803a0cbed4a9f01f11fef",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "blocksizetest.svg",
+      "bytes": 1568,
+      "sha256": "a4047f4e184d6289483e13893b3c6b6e6dd21397352b663a765e494004fa8b5f",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "centax2.m",
+      "bytes": 3831,
+      "sha256": "48ea6da8a79469e6b5c6ba23b4d9426cb7d2bfd73411655c8f3fe3fae1e4cacc",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "circStat.m",
+      "bytes": 1631,
+      "sha256": "11e27eaa4e9b9c436c4354d505d9b1e0b8e73ad2c99217908dabccfcaf7db7ed",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "cmocean.m",
+      "bytes": 395222,
+      "sha256": "ce23d8bad220cb72247adb86f19ad78c47867eca22bcbcc1a4e43e306d6266a3",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "convertSVG2txt.m",
+      "bytes": 5420,
+      "sha256": "10833726175855b2decf6dc8613bae5bffdf61c5d90c2b6f9f4c8d8613268f65",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "convertSVG2txt_colour.m",
+      "bytes": 8617,
+      "sha256": "ee7c1d4ed5588e3c9db871140bdfc803ad39ccb8599827b557ef4c39bd87fac7",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "convertSVG2txt_colour2.m",
+      "bytes": 11901,
+      "sha256": "81bba108a9a3710f77209688b63613f435127e14f67ecf8d9388689705f2697a",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "distancePointEdge.m",
+      "bytes": 2784,
+      "sha256": "093f8be91b4f2933b666fe302347a75fbcf7e1cb65555ddfd260041db17c7198",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "distancePoints.m",
+      "bytes": 3867,
+      "sha256": "2c5be12bbc97f80d30ef04c0216d749e2f85306bbccbaf99a271a097cfad55ab",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "doubleAngles.m",
+      "bytes": 1523,
+      "sha256": "233d30a7cd6c60a56e3d1cb93cc60eca5ecb754b99677b0a6902f38684ba8f74",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "fittingExponential.m",
+      "bytes": 4782,
+      "sha256": "0d585c329b51f440258499035e3ff0ca906f05a36be060370381fa07a140bef3",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "fittingLognormal.m",
+      "bytes": 4961,
+      "sha256": "31db9215334ef38b5e6d44e7b8b8ddb712abdad66387c74735f5e45bdcb8ec4a",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "fittingPL.m",
+      "bytes": 5358,
+      "sha256": "27b234e5b72da3da0c9a0905b2f28297672ca48bb4f6fa8732988bffdff9958e",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "getConnectivity.m",
+      "bytes": 16466,
+      "sha256": "a26701cc06cba16bc3d096857ca17cdebc8923c815124918c57254c4d2e9448a",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "getF16tensor.m",
+      "bytes": 4706,
+      "sha256": "ee7ab256605b229ab3168a2ab9b07d12c8793fdd29f246784b3b14765a79f0c0",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "getF2tensor.m",
+      "bytes": 793,
+      "sha256": "c92f8698322f4ed29233a0eab4de8bbe3f79b729909f6234170050a207e63075",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "getF4tensor.m",
+      "bytes": 1002,
+      "sha256": "3bf2dbd13ce4e364ddf319a75dd901170e403559ce4b4e4e10a9d33be0eb376e",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "getF8tensor.m",
+      "bytes": 1854,
+      "sha256": "6056f88bc59d9137ae7730bdda107e5ee8a79af9643bb475ca9f0366c61f6129",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "getMapLimits.m",
+      "bytes": 581,
+      "sha256": "08449f54f81358f461e12821914aff156b6ad0463ad75b6e8eb3c6bfae701f68",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2D.fig",
+      "bytes": 198847,
+      "sha256": "5963c82475aba99a08b0b4a381a7f3fe49db0cdf189bf2be1753a2fa54546388",
+      "role": "gui_reference",
+      "disposition": "Saved reference properties/defaults extracted and preserved; only main2.8 and auxiliary wavelet dialogue are Python entrypoints."
+    },
+    {
+      "path": "guiFracPaQ2D.m",
+      "bytes": 103020,
+      "sha256": "cf0f18306da896647f9588cfca84ad4c7e5eb987db921a7533349b3d5579eb68",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2Dangle.m",
+      "bytes": 5201,
+      "sha256": "9d5408c9dfdef4864018357514bf92ba1b9c2b27c3b79560d3671b3fcfe2bd26",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2Dcracktensor.m",
+      "bytes": 2846,
+      "sha256": "6a04d288b0629acd8855da1c203d3368ccea5dc002706fefe79f69ce6a4bfd90",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2Dgraphs.m",
+      "bytes": 16493,
+      "sha256": "bdfd880b0f4285319cea6ef5643ba25529f0de89ea30b6af17c6aa2d07658837",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2Dimage.m",
+      "bytes": 9850,
+      "sha256": "1e32868b02903498fc253b9fba3e9397f44442e82e20a7e3fb38bd83c42b1427",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2Dlength.m",
+      "bytes": 24533,
+      "sha256": "17e6bb3220e622ad4c78e27376a0f106e0258d4cb99e014bdd805bdf3849161d",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2Dlist.m",
+      "bytes": 8603,
+      "sha256": "8e9b4ef42c97de3eb931d6ed45bebb6c8811bbf51a84c0eedee7c1e5ee87a794",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2Dpattern.m",
+      "bytes": 16969,
+      "sha256": "1025efa999545f07abfbc91346d25ed806730bf942645f2de9bbbda8dac123ff",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2Dtabbed.m",
+      "bytes": 64117,
+      "sha256": "f3d81e923abeb4fdd6324e0ccb2285e7721f865bcf3dd7155db982b42f0000bf",
+      "role": "legacy",
+      "disposition": "Interface2.2 without matching FIG; preserve only, never entrypoint."
+    },
+    {
+      "path": "guiFracPaQ2Dtensor.m",
+      "bytes": 3939,
+      "sha256": "c2893333ccc7e9b4f2c0b506c07ebbea6004a1b42c8c14a6a661ba794b01b9e9",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2Dtracemap.m",
+      "bytes": 22503,
+      "sha256": "4a9104120ffa67c9bcacfb364b567dbf4f5c7f497c1ddba94aa3e1767e4a18ff",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2Dwavelet.m",
+      "bytes": 8087,
+      "sha256": "9757e667686aad863b2f2ee1efce29e72fe0492ccb6bf759655d37dcaa1f7b27",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiFracPaQ2Dwavelet2.m",
+      "bytes": 6816,
+      "sha256": "3f8c02b5aa8917fe627344c459cd985449b8d4c191e1fad9e73569a2f3e2d3c6",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "guiFracPaQ2Dwavelet3.m",
+      "bytes": 6586,
+      "sha256": "6160fb80d5126969451818f94840503df1e08b704ee531e2105d5f532ab3a53a",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "guiPrint.m",
+      "bytes": 1693,
+      "sha256": "f3879b745193839b0ce52139661bf9c5323442826a807eb86fa520dd857a64c0",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "guiWaveletDialog.fig",
+      "bytes": 14553,
+      "sha256": "178487fd76b4bddf9babaef4a2b68d400ac397f60855d0c26361972a8786c687",
+      "role": "gui_reference",
+      "disposition": "Saved reference properties/defaults extracted and preserved; only main2.8 and auxiliary wavelet dialogue are Python entrypoints."
+    },
+    {
+      "path": "guiWaveletDialog.m",
+      "bytes": 8590,
+      "sha256": "b73d7a3c6b59ffdaa0a200d4116fe25f12ea039287c8a00cec64d71eec0d3ab4",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "guiWaveletTest.m",
+      "bytes": 122,
+      "sha256": "de4724c167282770e46b554e5b8d35d81dbdc0b2e02bcbcf5ac5a70f042ad3b2",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "hexRGB.m",
+      "bytes": 1332,
+      "sha256": "6f7dc0b5417f3cd9ced46340ab625bb0e44ac4b8958a87b297ddd25fd094e5db",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "images/body-bg.jpg",
+      "bytes": 2281,
+      "sha256": "1df84adb415f3d7efd212642b9c1927a2c6ce49e6ded6a60f369b39b2adfec2b",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "images/download-button.png",
+      "bytes": 27151,
+      "sha256": "d46d241826979bf10a9ef3b1a871db58669b86a248179d13d723f135e748642f",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "images/github-button.png",
+      "bytes": 1550,
+      "sha256": "1229dc7a1c62d0135082dcc46a4d415d97cd6ccb4a1f6ad33605420556ee7ee8",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "images/header-bg.jpg",
+      "bytes": 9461,
+      "sha256": "aec7fb1a0b74deea73d969677eaaa7a8cce314fe1ae27085a20f8e76bdc02678",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "images/highlight-bg.jpg",
+      "bytes": 30991,
+      "sha256": "6906d143f7338275143c91615256abd2d6746c496608832190991fdc559aa74a",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "images/sidebar-bg.jpg",
+      "bytes": 2270,
+      "sha256": "e0a2e94adb6f3f5c73ff5346eaf203e1836b654b1150ab61ad7b3c23cfc19556",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "index.html",
+      "bytes": 2307,
+      "sha256": "f3b22122bda598a333c29e991067086ef8637944fec9a891152c68d5f270c192",
+      "role": "historical_site",
+      "disposition": "Preserve offline site/assets; params.json is site metadata, no hosting or app settings."
+    },
+    {
+      "path": "javascripts/main.js",
+      "bytes": 48,
+      "sha256": "7296658b9cee3c944e4f5a06a78c63e1c2a5ebe0b6e4e4e0c631b6b08b39034b",
+      "role": "historical_site",
+      "disposition": "Preserve offline site/assets; params.json is site metadata, no hosting or app settings."
+    },
+    {
+      "path": "leftsideFaults.svg",
+      "bytes": 21465965,
+      "sha256": "b4eec440002722af5d478109822b492900fb22c52ee954b50c3dfe8cf289cf36",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "leftsideFaults.txt",
+      "bytes": 27050,
+      "sha256": "519ceb26c32e44271ef92e37c8d495f8a5473699a378fa34bbd21bc1f699f196",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "leftsideFaults2.txt",
+      "bytes": 26824,
+      "sha256": "fd9aac45be132a45e1cdda1d603434b5e2c3c8ccd85ee42b36b1f4cd74061fa3",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "leftsideFaults_converted.txt",
+      "bytes": 47852,
+      "sha256": "49e2ea56c36a70184b34088b6300d718e12c3c624fca4bb018b01d9d79fb0064",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "leftsideFaultsconverted.txt",
+      "bytes": 47310,
+      "sha256": "c8e81d3b7da089faca27caa4e727ce168d1810427f025835d0847963ff1f30ee",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "leftsideJoints.svg",
+      "bytes": 18535450,
+      "sha256": "98d2b4107cb7ccb4f79671322804b4dec39f5e023e506bf23c77feafc8a1ec50",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "leftsideJoints.txt",
+      "bytes": 19366,
+      "sha256": "aa06c14c9a895a0385474132383b42616eca3b610c3854eb2b2e000a84685cbd",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "leftsideJointsconverted.txt",
+      "bytes": 34440,
+      "sha256": "dd217178da59620297591ca2ec52ac770901ac5e6f5e90a18dea1708a6532165",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "lineSegmentIntersect.m",
+      "bytes": 4660,
+      "sha256": "9a872a048cac4635586dd50b639dc9ec6dfe12b0a0397bb8c485b4a20ea926e3",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "logplots.m",
+      "bytes": 3514,
+      "sha256": "4b4daeb7088bd6eae6ad659d7f3254aedfaff625885d2e079269031ba69506c1",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "map1.svg",
+      "bytes": 270040,
+      "sha256": "910d1b8fc57e9f44e1d6caeb91edd3584c11f5e040462689008eda5985822d4f",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "map1_edit.svg",
+      "bytes": 269903,
+      "sha256": "b319339465b5331c03e083b788076b5bad587750bf02163a8d31aecddecb1e1f",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "map1_edit_converted.txt",
+      "bytes": 171769,
+      "sha256": "e3754807afbe03da1a88d11c2808555c25ad22ef58ab03f55e22c0dc8234cf56",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "map1_edit_converted2.txt",
+      "bytes": 528,
+      "sha256": "b07209a3ad20acfd84b677f0e9a0756275b35137ec37b163ea607acc23c978ce",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "map7.svg",
+      "bytes": 540104,
+      "sha256": "a7dbde58f9c7da9461b8cc9a2643d2baddeecb4d37147bd1b250a504ede7890a",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "map7_converted.txt",
+      "bytes": 376990,
+      "sha256": "7ab16893e3ea91d525d3d7c4e99e1547003a3f735966399581ef2efbf77f6728",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "map7_edit.svg",
+      "bytes": 539967,
+      "sha256": "a155875251210910dff14b354eee707c5f1b6c88b20b438e330ebb34e1072fb6",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "map7_edit_converted.txt",
+      "bytes": 376884,
+      "sha256": "61292474ed0b0a5adb20b3efd8402e7edb303139c65f50e61dd764d78a066bce",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "method b1.txt",
+      "bytes": 4206,
+      "sha256": "27b0faf6b0fb521039d4471191fad459859720c79c62bd964949b130ede9d42c",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "method b2.txt",
+      "bytes": 7339,
+      "sha256": "4d63efcd40cc68f3142d2d4cc98de28254aa019cc911406d6a07ccf41c39e152",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "mexicanhat.m",
+      "bytes": 2173,
+      "sha256": "db921fae1ebb0590b7766f68213fe1e35c3c7af0ac18cf37a7d17592bdf36710",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "mexicanhatCWT.m",
+      "bytes": 4121,
+      "sha256": "b57afbef41de7e36ce76e2779957028532930bd760d621ba879d450e0615d195",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "mexicanhatCWTself.m",
+      "bytes": 3823,
+      "sha256": "f0082c95b98162961c5ab6e9fd8452b50f4b97e4a92b9746fa06d9498c23bba3",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "morlet.m",
+      "bytes": 2179,
+      "sha256": "df880d2f37fa1bf623ff0ce2c89472209cf47904b277cacf55c54da46bb43251",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "morletCWT.m",
+      "bytes": 3956,
+      "sha256": "169386e3e8bf04e84388485eeb9c996a94b47f8506b0b5787d02f3153ff0beb9",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "morletCWTself.m",
+      "bytes": 4076,
+      "sha256": "ebe64a3870856da8845977e665e39898368ac76dd79dd1b44d07015e4f40412d",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "newCM.m",
+      "bytes": 799,
+      "sha256": "e70320618ba34bb7bee8ad5acbf438b8f041355fe36eba16121f45706f1b136d",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "params.json",
+      "bytes": 611,
+      "sha256": "fe9c5544ac4e2f2653d738a8f4ba419b69530cecc09c1fa043c911033d593ca2",
+      "role": "historical_site",
+      "disposition": "Preserve offline site/assets; params.json is site metadata, no hosting or app settings."
+    },
+    {
+      "path": "plotCrackTensor.m",
+      "bytes": 5027,
+      "sha256": "248659ebd2dd73b62616ec71422bdc697d5c9a93d0104ad8b02b487dcaaa6d86",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "plotEllipse.m",
+      "bytes": 1801,
+      "sha256": "b530329f326b0069a248fb2fd332f67dde4e159fa7ba4b206f60824c1a2782b0",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "plotMohr.m",
+      "bytes": 691,
+      "sha256": "72a29d7aa7236b532bb01d257c7bc8f922e99c396d5c3306bc4eb8e668f1a4a1",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "plotMohr2D.m",
+      "bytes": 2250,
+      "sha256": "ec2e4fe727fea1db64973c5f45a2da7987f91cd87d4bbcc69adfd71dd1f465ee",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "plotSouterMap.m",
+      "bytes": 1763,
+      "sha256": "f5cf73810c27392171f6ea822fbe34fbdb834e4926b64379e877c913134678d8",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "probePlane.m",
+      "bytes": 5739,
+      "sha256": "c859836b17485233f7526dd2408390b0226b1e9cbf6f92e72e0c8a0c183819db",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "readTraces.m",
+      "bytes": 7394,
+      "sha256": "cc2e3040f45c59482761094d811d02aea26a04182b34f629b81a06478a3cfa2c",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "readtext.m",
+      "bytes": 20055,
+      "sha256": "532285e927092df2ef220218ff344bc977527302fe700632f4bdec100d1ed5bb",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "reverseAxis.m",
+      "bytes": 1364,
+      "sha256": "d1d6564c8ac1129176afa365112e45ae6316d042d994a9c8917465edd0b4b2f1",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "rightsideFaults.svg",
+      "bytes": 11815672,
+      "sha256": "202b3db71f9deefffa4009cb28676e5718ce8834c28d514bb1db81c49b8c437d",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "rightsideFaults.txt",
+      "bytes": 18533,
+      "sha256": "b19de052f9773e82536ae5077d73f976f8813741e64d775fbb6f2773c6626540",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "rightsideFaultsconverted.txt",
+      "bytes": 33000,
+      "sha256": "bf7d538c40074f4390b35f10a1c6034943c01c1f911add2e106be6bc11dc7f22",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "rightsideJoints.svg",
+      "bytes": 11962974,
+      "sha256": "5f015974e873e4906528c7687fb53ed1258942c0e40f78e07152f767004752dc",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "rightsideJoints.txt",
+      "bytes": 18838,
+      "sha256": "f4d3afff0d8d763344987c0131442a23e40cc3015548b05b1d9e468a3fdd596a",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "rightsideJointsconverted.txt",
+      "bytes": 30176,
+      "sha256": "24abb9205d28ebd70e98d16dc5aee529460fd733176eaad00bbaeefc490e29c7",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "roseEqualArea.m",
+      "bytes": 6641,
+      "sha256": "1bc028b173df9a6b582fd55bb6a7e403cca19132a4bab12ad2fd587604a1a761",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "roseEqualArea2.m",
+      "bytes": 6069,
+      "sha256": "a8b622baa545a22f3b030d1e06f7b2bd633778556b090a72d1a70e032371f1a6",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "roseEqualAreaColour.m",
+      "bytes": 7288,
+      "sha256": "c9d610bc3ecee8134f16727fc8136cfeeb043a1ccfe461a22ca1f4fc1ad74faf",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "roseEqualAreaColourTendency.m",
+      "bytes": 10231,
+      "sha256": "865ca3654efc747ef96d7a32a4582d0512284aefc436c80999500f8c3ee31085",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "roseLinear.m",
+      "bytes": 3303,
+      "sha256": "3f176f1f1972f7238f1052ed8c488ec18a4426c0ac74a88d8ab6fa817882acc1",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "rosePlot.m",
+      "bytes": 4082,
+      "sha256": "0449c5a8f17da7d6a646e28d2efda3fd9ac451407688bd48824fb9add1f6db30",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "souter_all_colour24378D.txt",
+      "bytes": 132401,
+      "sha256": "053b8169ef227693272ae1c39bbb52908155e2ff797488d054b88b28f9d24216",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "souter_all_colour5BB030.txt",
+      "bytes": 21577,
+      "sha256": "8cb209659aed67272a8d01b7d40b4d018fa9c6cc82e85b0fcb61721965e830ba",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "souter_all_colourE42A12.txt",
+      "bytes": 8851,
+      "sha256": "cc13a350698bbfccb1e3a50de3c036f3bc117a39d604436f446ed57f6da49e3c",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "souter_all_mytest.txt",
+      "bytes": 21577,
+      "sha256": "8cb209659aed67272a8d01b7d40b4d018fa9c6cc82e85b0fcb61721965e830ba",
+      "role": "example_or_asset",
+      "disposition": "Preserve source data/assets; curated valid examples and preparation restrictions documented separately."
+    },
+    {
+      "path": "stylesheets/github-light.css",
+      "bytes": 3133,
+      "sha256": "8b5238fd7cc76fbbc2fd15c2f39bdb380b0e076184debc33c557daba296556f4",
+      "role": "historical_site",
+      "disposition": "Preserve offline site/assets; params.json is site metadata, no hosting or app settings."
+    },
+    {
+      "path": "stylesheets/normalize.css",
+      "bytes": 7699,
+      "sha256": "cc05deb16561331001daa8e140f96f0d12ae6c3388c0add2e226c6376930bc32",
+      "role": "historical_site",
+      "disposition": "Preserve offline site/assets; params.json is site metadata, no hosting or app settings."
+    },
+    {
+      "path": "stylesheets/print.css",
+      "bytes": 3277,
+      "sha256": "a01de173a4bcb1289dd6828d9c914daa93be2a9e607ec3c10f10e4cc34358693",
+      "role": "historical_site",
+      "disposition": "Preserve offline site/assets; params.json is site metadata, no hosting or app settings."
+    },
+    {
+      "path": "stylesheets/stylesheet.css",
+      "bytes": 5779,
+      "sha256": "50e04910e88a5794f1913be2678b3e52e88c58fe8eea94abaf7fbdf5ccca4428",
+      "role": "historical_site",
+      "disposition": "Preserve offline site/assets; params.json is site metadata, no hosting or app settings."
+    },
+    {
+      "path": "testCM.m",
+      "bytes": 478,
+      "sha256": "6ca4b44ecec16856370edae4af955e2353334054f13cc8aae218fb10de7b2562",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "testImage.m",
+      "bytes": 877,
+      "sha256": "5c09485f6182885234dbaa47f49ffde1deb541a76813e7842bb115698a75b030",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "testWavelet.m",
+      "bytes": 367,
+      "sha256": "f556f2ba2d43f7cd603b73968f3999c107928157c0af0fae75726338c0070ba8",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "testmaps.m",
+      "bytes": 5088,
+      "sha256": "1e0fcc943f800d739bdad0e03dc4b1f2a422724962f4fb600cf0332f038f6ee6",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "trilines.m",
+      "bytes": 1426,
+      "sha256": "ec4356a53debb2a3f4051fd174505b74e92f02843e9a676573eec566594a2558",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "triplot.m",
+      "bytes": 1832,
+      "sha256": "b690ca65e0f88343f4ed01dd48688962caf7ef3020fe1ebaee09ca3bda422279",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "tripts.m",
+      "bytes": 1991,
+      "sha256": "11db7d2ea1a4441e4015ce302ccc397cc55ef11574a3ed66e31f1f94a15439a4",
+      "role": "complementary",
+      "disposition": "Python utility/API or dialogue documented in docs/parity/legacy.md; kept outside main2.8 controls."
+    },
+    {
+      "path": "tritest.m",
+      "bytes": 226,
+      "sha256": "3d414c4b032b0d5cc4b87a55d50ac2f091fc441feb407a40e52b7786c35916b4",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    },
+    {
+      "path": "variogram.m",
+      "bytes": 12655,
+      "sha256": "ba6cc81cb21f2db33dbb93fee71444ad219d60bb2a0a37ee94cb36b015d9d812",
+      "role": "integrated_library",
+      "disposition": "Contract ported into pyfracpaq analysis/io/geometry/plots; original retained as scientific reference."
+    },
+    {
+      "path": "waveletDialog.m",
+      "bytes": 2065,
+      "sha256": "aa08c5952aa24cd120091e7d4b1c8df15bdb4626fa28b714d53107c69657882b",
+      "role": "experiment",
+      "disposition": "Preserve original, review hardcoded paths/old signatures; no GUI selector or automatic execution."
+    }
+  ],
+  "count": 164,
+  "source_manifest": "tests/reference/source_manifest.json",
+  "note": "Destinations preserve all164 originals; no legacy script is executed automatically."
+}

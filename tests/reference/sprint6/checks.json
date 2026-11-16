@@ -1,0 +1,43 @@
+{
+  "scope": "Python Sprints 5/6 implementation; native MATLAB equality remains pending.",
+  "date": "2026-11-14",
+  "tests": {
+    "tests": 319,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "new_cases_since_sprint4": 67,
+  "pytest_command": "QT_QPA_PLATFORM=offscreen MPLCONFIGDIR=/tmp/pyfracpaq-matplotlib .venv/bin/python -m pytest -q --junitxml=/tmp/pyfracpaq-sprint56-tests.xml",
+  "pytest_xml_sha256": "1e1d63d83bf5f197df1bea17121d5c4b959ec2dc2c4a85b3a9cb67133619f82c",
+  "dependency_check": "No broken requirements found.",
+  "dependency_warning": "494 installed Matplotlib Qt backend deprecation warnings: AA_UseHighDpiPixmaps.",
+  "package": {
+    "filename": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "e6c7b9861604868a5f3389cd8d9833de90487580d8d9024a89cf8c0e946dd4bc",
+    "zip_import_outside_root": true,
+    "verified": [
+      "SVG conversion",
+      "image Hough",
+      "complete dataset",
+      "4-panel render",
+      "frozen palette/style resources"
+    ]
+  },
+  "artifacts": {
+    "png": 17,
+    "txt": 4,
+    "hashes_verified": true,
+    "size": [
+      4724,
+      4724
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  "original_source_files_unchanged": 164,
+  "source_manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7",
+  "matlab_comparison": "pending"
+}

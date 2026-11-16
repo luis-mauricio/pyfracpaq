@@ -1,0 +1,162 @@
+{
+  "generator": "scripts/validate_sprint1213.py",
+  "role": "All nine Graphs production figures through the default registry; Q-20 extension approved.",
+  "approval": {
+    "author": "user",
+    "date": "2026-11-14",
+    "statement": "Aprovo ambos Q-14 e Extensão Q-20.",
+    "decisions": [
+      "Q-14",
+      "Q-20 Graphs P20 normalization extension"
+    ],
+    "scope": "Enclosed white 8-connected blocks, fixed unscaled raster and calibrated areas/centres; Graphs P20=m/(2*pi*r^2), retaining the previously approved finite counts."
+  },
+  "production_registry": [
+    "GRA-03",
+    "GRA-04",
+    "GRA-05",
+    "GRA-06",
+    "GRA-07",
+    "GRA-10",
+    "GRA-11",
+    "GRA-12"
+  ],
+  "figures": [
+    {
+      "id": "GRA-03",
+      "path": "guiFracPaQ2D_tracelengthalonggraph_Run1.png",
+      "sha256": "ede4b0acbd60e46fe3acbc9581274638b8fac1602dbd5936d02980247e8c3437",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_tracelengthalonggraph_Run1.png",
+      "qa_sha256": "31c3ec9316705d51d34ef9de50d245990fb1e67bce799ac5431842e8dcf4d496"
+    },
+    {
+      "id": "GRA-04",
+      "path": "guiFracPaQ2D_segmentlengthalonggraph_Run1.png",
+      "sha256": "b9c62eb3a6cc1d046b372df87652ca25b6341390a662f87319a281bf3c6f7b68",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_segmentlengthalonggraph_Run1.png",
+      "qa_sha256": "54b68b99c2fe1b2ea0d42447a501536796ac6fe408c6f47a970dec8f212343ac"
+    },
+    {
+      "id": "GRA-05",
+      "path": "guiFracPaQ2D_segmentanglealonggraph_Run1.png",
+      "sha256": "85cb5c1d320a2cac81580317979f2dd9736514aa35a58c0b0e1b2bcb54cd9db7",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_segmentanglealonggraph_Run1.png",
+      "qa_sha256": "7016940907629a2f8c6c9663df3ff180024b6d6ed77458ba17f6a2adbd5af7c0"
+    },
+    {
+      "id": "GRA-06",
+      "path": "guiFracPaQ2D_graphtracemap_Run1.png",
+      "sha256": "15eba90ed0214b758257283564c004a67c2311558ef9ae9ded121dc593831d04",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_graphtracemap_Run1.png",
+      "qa_sha256": "80ac21949daf353029ba40709d4c62d7dc40bd655aa67660e62a9783bd37d8c3"
+    },
+    {
+      "id": "GRA-06",
+      "path": "guiFracPaQ2D_intensityalonggraph_Run1.png",
+      "sha256": "1065bb663bb74d2d8b07d4eddc9027aab69aad1202898519893e4dea7efcac54",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_intensityalonggraph_Run1.png",
+      "qa_sha256": "1213074f0afe2f48110f7bc25e95db9da84cdc5c8b9443c9a93a1284e46bc375"
+    },
+    {
+      "id": "GRA-06",
+      "path": "guiFracPaQ2D_densityalonggraph_Run1.png",
+      "sha256": "4cdecf9912ffab4011ecc7a8009c46cbef7e74737a155842f27ebbe9824b1334",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_densityalonggraph_Run1.png",
+      "qa_sha256": "d9aefa68aca086c5bb4a49631e7defe64fb3dd620630d328a052f7464a6abaa2"
+    },
+    {
+      "id": "GRA-10",
+      "path": "guiFracPaQ2D_tracelengthfromgraph_Run1.png",
+      "sha256": "5d1637c5152d47e02e4bf8e5a737d4dadb6838bc25099e3b94daf9763e1b89a6",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_tracelengthfromgraph_Run1.png",
+      "qa_sha256": "a2f45a51abee5405e1f4fd66e59d5e068e21cb612a937e620615af661e216910"
+    },
+    {
+      "id": "GRA-11",
+      "path": "guiFracPaQ2D_segmentlengthfromgraph_Run1.png",
+      "sha256": "47e9fcbee3fae392056146a4d07d9109978bd15e0c94425cd8b23f246c1ee8df",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_segmentlengthfromgraph_Run1.png",
+      "qa_sha256": "5154c2bc9b8aa2973cebc387281cdfc78e3dbd9f5c00745767ae08a978ad9e28"
+    },
+    {
+      "id": "GRA-12",
+      "path": "guiFracPaQ2D_segmentanglefromgraph_Run1.png",
+      "sha256": "6334f88f21d315d49f93c8bf5b8d0446fea67641a11eb418700a91d759cc0636",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_segmentanglefromgraph_Run1.png",
+      "qa_sha256": "1695f083b3853ad3622855bbf4ffa690173bbc4e43cff7d4fceb5ea13c6a361b"
+    }
+  ],
+  "graphs_txt": []
+}

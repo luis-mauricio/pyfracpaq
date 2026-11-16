@@ -1,0 +1,146 @@
+{
+  "source": "tests/reference/sprint16/benchmarks/map1_prepared.txt",
+  "source_sha256": "183476e558ead2baa0804b2e5ebaca278828a41eef9cbd7bae029379becfec41",
+  "qt_platform": "offscreen",
+  "heartbeat_interval_seconds": 0.02,
+  "heartbeat_samples": 16,
+  "maximum_heartbeat_gap_seconds": 0.3585613750037737,
+  "elapsed_seconds": 2.3960831250005867,
+  "exports": [
+    {
+      "basename": "FracPaQ2D_tracemap",
+      "seconds": 0.330580584006384
+    },
+    {
+      "basename": "FracPaQ2D_tracelengthmap",
+      "seconds": 0.30097183398902416
+    },
+    {
+      "basename": "FracPaQ2D_segmentlengthmap",
+      "seconds": 0.3026906669838354
+    },
+    {
+      "basename": "FracPaQ2D_segmentstrikemap",
+      "seconds": 0.30978025001240894
+    },
+    {
+      "basename": "FracPaQ2D_histotracelength",
+      "seconds": 0.1398821669863537
+    },
+    {
+      "basename": "FracPaQ2D_histosegmentlength",
+      "seconds": 0.14068141698953696
+    },
+    {
+      "basename": "FracPaQ2D_histoangle",
+      "seconds": 0.1536003749934025
+    },
+    {
+      "basename": "FracPaQ2D_roseangleEqArea",
+      "seconds": 0.23053870900184847
+    }
+  ],
+  "messages": [
+    {
+      "seconds": 0.0073206250090152025,
+      "message": "Input changed. Click Preview."
+    },
+    {
+      "seconds": 0.026437124994117767,
+      "message": "Input changed. Click Preview."
+    },
+    {
+      "seconds": 0.02759404099197127,
+      "message": "Reading node file..."
+    },
+    {
+      "seconds": 0.10179849999258295,
+      "message": "Reading node file..."
+    },
+    {
+      "seconds": 0.10227920798934065,
+      "message": "Collecting fracture trace data..."
+    },
+    {
+      "seconds": 0.11551491598947905,
+      "message": "Ready. Click Run to generate maps and graphs."
+    },
+    {
+      "seconds": 0.13118562498129904,
+      "message": "Running..."
+    },
+    {
+      "seconds": 0.1812595829833299,
+      "message": "Running Traces, segments..."
+    },
+    {
+      "seconds": 0.18147416599094868,
+      "message": "Running Traces, by length..."
+    },
+    {
+      "seconds": 0.18164437499945052,
+      "message": "Running Segments, by length..."
+    },
+    {
+      "seconds": 0.1818036249896977,
+      "message": "Running Segments, by strike..."
+    },
+    {
+      "seconds": 0.1819863749842625,
+      "message": "Running Histogram of lengths..."
+    },
+    {
+      "seconds": 0.18924079099087976,
+      "message": "Running Histogram of angles..."
+    },
+    {
+      "seconds": 0.19258149998495355,
+      "message": "Running Rose diagram (equal area)..."
+    },
+    {
+      "seconds": 0.19278504099929705,
+      "message": "Calculations completed."
+    },
+    {
+      "seconds": 0.20765208298689686,
+      "message": "Saving PNG: FracPaQ2D_tracemap..."
+    },
+    {
+      "seconds": 0.5796456660027616,
+      "message": "Saving PNG: FracPaQ2D_tracelengthmap..."
+    },
+    {
+      "seconds": 0.9259607080020942,
+      "message": "Saving PNG: FracPaQ2D_segmentlengthmap..."
+    },
+    {
+      "seconds": 1.2768364159855992,
+      "message": "Saving PNG: FracPaQ2D_segmentstrikemap..."
+    },
+    {
+      "seconds": 1.6356430829910096,
+      "message": "Saving PNG: FracPaQ2D_histotracelength..."
+    },
+    {
+      "seconds": 1.793134999985341,
+      "message": "Saving PNG: FracPaQ2D_histosegmentlength..."
+    },
+    {
+      "seconds": 1.960536166006932,
+      "message": "Saving PNG: FracPaQ2D_histoangle..."
+    },
+    {
+      "seconds": 2.1461095830018166,
+      "message": "Saving PNG: FracPaQ2D_roseangleEqArea..."
+    },
+    {
+      "seconds": 2.3957472080073785,
+      "message": "Completed. Selected outputs have been generated."
+    }
+  ],
+  "peak_rss_bytes": 347095040,
+  "exit_during_export": false,
+  "main_window_deleted": true,
+  "unrelated_window_preserved": true,
+  "scope": "Actual prepared real input, production worker/render/export, no mocks. macOS RSS bytes; Qt offscreen. Each PNG still blocks for its measured duration; event loop resumes between outputs."
+}

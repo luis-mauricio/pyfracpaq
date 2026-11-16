@@ -1,0 +1,27 @@
+[build-system]
+requires = ['setuptools==84.2.1']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'pyfracpaq'
+version = '0.1.0rc1'
+description = 'Port desktop científico do FracPaQ 2.8; candidato local em auditoria'
+readme = 'README.md'
+requires-python = '>=3.13,<3.14'
+license = 'MIT'
+license-files = ['LICENSE', 'THIRD_PARTY_NOTICES.md']
+dynamic = ['dependencies']
+
+[tool.setuptools.dynamic]
+dependencies = {file = ['requirements.txt']}
+
+[tool.setuptools.packages.find]
+include = ['pyfracpaq*']
+
+[tool.setuptools.package-data]
+'pyfracpaq.resources' = ['*.json', '*.jpeg', '*.qss', '*.mplstyle', '*.npz', '*LICENSE.txt']
+
+[tool.pytest.ini_options]
+testpaths = ['tests']
+qt_api = 'pyside6'
+pythonpath = ['scripts']

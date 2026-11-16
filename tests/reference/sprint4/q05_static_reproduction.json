@@ -1,0 +1,64 @@
+{
+  "scope": "Static Python emulation of supplied source, not MATLAB execution.",
+  "trace_keep": [
+    false,
+    true,
+    true,
+    true,
+    false,
+    false
+  ],
+  "segment_keep": [
+    false,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false
+  ],
+  "lengths": [
+    4.0,
+    4.0,
+    4.0
+  ],
+  "misaligned_angles": [
+    90.0,
+    90.0,
+    0.0
+  ],
+  "angles_with_common_mask": [
+    90.0,
+    0.0,
+    0.0
+  ],
+  "corrected_trace_keep": [
+    false,
+    false,
+    false,
+    false,
+    true,
+    true
+  ],
+  "corrected_segment_keep": [
+    false,
+    false,
+    false,
+    false,
+    true,
+    true,
+    true
+  ],
+  "corrected_angles": [
+    90.0,
+    0.0,
+    36.86989764584402
+  ],
+  "corrected_lengths": [
+    3.0,
+    4.0,
+    5.0
+  ],
+  "source": "fracpaq-matlab/guiFracPaQ2Dlength.m",
+  "source_sha256": "17e6bb3220e622ad4c78e27376a0f106e0258d4cb99e014bdd805bdf3849161d"
+}

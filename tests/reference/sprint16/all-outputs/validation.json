@@ -1,0 +1,6850 @@
+{
+  "analysis_ids": [
+    "MAP-01",
+    "MAP-04",
+    "MAP-05",
+    "MAP-06",
+    "MAP-07",
+    "MAP-08",
+    "MAP-11",
+    "MAP-12",
+    "MAP-13",
+    "MAP-14",
+    "LEN-02",
+    "LEN-03",
+    "LEN-07",
+    "LEN-06",
+    "LEN-13",
+    "LEN-15",
+    "ANG-01",
+    "ANG-02",
+    "FLO-01",
+    "FLO-08",
+    "FLO-09",
+    "WAV-01",
+    "GRA-03",
+    "GRA-04",
+    "GRA-05",
+    "GRA-06",
+    "GRA-07",
+    "GRA-10",
+    "GRA-11",
+    "GRA-12"
+  ],
+  "mle_root_seed": 243113359402514431248269548392629151578,
+  "mle_rng": "PCG64;6 streams;2500 comparisons/model",
+  "figures": [
+    {
+      "id": "MAP-01",
+      "path": "FracPaQ2D_tracemap_audit_all.png",
+      "sha256": "0eb30f8c5f1f8346d27ad42bf24a43957786fb07afe1cb6118d47fedfcd31fd6",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracemap_audit_all.png",
+      "qa_sha256": "ff6973876a178bbcad3d031370a822623d3f9998ea52c8e33102e99e3be3b3cc"
+    },
+    {
+      "id": "MAP-01",
+      "path": "FracPaQ2D_tracemap_multicolour_audit_all.png",
+      "sha256": "a4e591f52d3a3eb29f325807449d03591cfbec196cdbb23fa1a9572331def406",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracemap_multicolour_audit_all.png",
+      "qa_sha256": "2881ba5d48467fa4a0b1d720d742655766462ab3c4fd572256fcd3902d5a4981"
+    },
+    {
+      "id": "MAP-04",
+      "path": "FracPaQ2D_tracelengthmap_audit_all.png",
+      "sha256": "ebbe921195d1dc9af8dc799cf8ae52acaf40ecbb7ec974ec3bfd12089697f3df",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracelengthmap_audit_all.png",
+      "qa_sha256": "2dbb21cd709835d34e7567e54d77dac40f451f960e2fad67ae859822a041acb4"
+    },
+    {
+      "id": "MAP-05",
+      "path": "FracPaQ2D_segmentlengthmap_audit_all.png",
+      "sha256": "21ff5f0455318958c4e5482dae00217b21906638cd26f3ba0472cf7a9bb25b6d",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlengthmap_audit_all.png",
+      "qa_sha256": "bb05273df4fbf044f4e7bc26303ad58d7c44184764e2fb2aad5ef820d5ccd2fa"
+    },
+    {
+      "id": "MAP-06",
+      "path": "FracPaQ2D_segmentstrikemap_audit_all.png",
+      "sha256": "fd424a8f756f876aff3852ef14a2756ebf69be07f6b50c8099920d2102a83c4e",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentstrikemap_audit_all.png",
+      "qa_sha256": "21f7d59cdc7e11d187a1049a3f3667bd8865763df098d5298264b52359110bf8"
+    },
+    {
+      "id": "MAP-07",
+      "path": "FracPaQ2D_scancircle_audit_all.png",
+      "sha256": "253221e369516c98b93c24b8b949aa94a08c89573b06de2539777bccb23f073a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_scancircle_audit_all.png",
+      "qa_sha256": "1f73eadcbf7b8ab63802851b2954bece84a5b6a219445a053c9858a6a2d690fc"
+    },
+    {
+      "id": "MAP-07",
+      "path": "FracPaQ2D_intensityP21_audit_all.png",
+      "sha256": "71f435c25ff9450e45535dbe9d76e4569c459e391192b5b3d4985eb60c07256b",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_intensityP21_audit_all.png",
+      "qa_sha256": "bedbdfde9677bdcbac2276533940a2eeedcaecef54bb5e3a419df1aec601d56c"
+    },
+    {
+      "id": "MAP-08",
+      "path": "FracPaQ2D_densityP20_audit_all.png",
+      "sha256": "3b5a048a2faec3e905a0d57f85cb9ca7d31671ed6d9eaf678aef79f69a3401a1",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_densityP20_audit_all.png",
+      "qa_sha256": "318c65ef7ac7b9e4ce2ee82e7f9d10b73f0b82dc9d85d68197f36e27d08cd6ee"
+    },
+    {
+      "id": "MAP-11",
+      "path": "FracPaQ2D_Mohrplot_audit_all.png",
+      "sha256": "26318e66ae301bf965dcdbacf85bc029377934d4bd2c00053787c7d63836e31d",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_Mohrplot_audit_all.png",
+      "qa_sha256": "a5cb6eec2cc521a56f6633077fd290c89b9090651c86024d00657b206d96eea5"
+    },
+    {
+      "id": "MAP-11",
+      "path": "FracPaQ2D_sliptendencymap_audit_all.png",
+      "sha256": "33ab6bb59ff588d7f64059c6e0eebdd4e4a9867cf1a01dedfbcad10bead3a8be",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_sliptendencymap_audit_all.png",
+      "qa_sha256": "5ae0b36535df396111ffe5dcaa49a4b2b6318f11a839ff060f399cb1edb2af7a"
+    },
+    {
+      "id": "MAP-11",
+      "path": "FracPaQ2D_sliptendencyrose_audit_all.png",
+      "sha256": "38be96b6dceb4048c4fcf264400c452aa5c3acf180f2de70b0154b2bd3fe31ef",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_sliptendencyrose_audit_all.png",
+      "qa_sha256": "75362ad9814af4ff281963719f01071da72aa8fd80ae4d56a73431e013b6f325"
+    },
+    {
+      "id": "MAP-12",
+      "path": "FracPaQ2D_dilationtendencymap_audit_all.png",
+      "sha256": "ebe830a5761503c6beb96cf80fbb0518f56b3e2234790c500030a06ea7e136ca",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_dilationtendencymap_audit_all.png",
+      "qa_sha256": "509ac47f7321f07126f6e31e71c11bfb524d7b3a79ca80f1b9677a2832b439e8"
+    },
+    {
+      "id": "MAP-12",
+      "path": "FracPaQ2D_dilationtendencyrose_audit_all.png",
+      "sha256": "7aa3674946fb28f7c8d7a2c25613629a361f9235e2311ad12ec2ee886936c652",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_dilationtendencyrose_audit_all.png",
+      "qa_sha256": "62865c23c7120f0e1aab84d15367bdc63bfae804e0d523a072297dc34a6e3345"
+    },
+    {
+      "id": "MAP-13",
+      "path": "FracPaQ2D_fracsuscepmap_audit_all.png",
+      "sha256": "8b09ee68cb0590e0d4b2b3152ca501c022a69f8beafcab15ab9883aea86c6a3f",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_fracsuscepmap_audit_all.png",
+      "qa_sha256": "65c1fb240dbebd4801111726f4f0991b4c7a6e9929781debed16e08a7f6f7355"
+    },
+    {
+      "id": "MAP-13",
+      "path": "FracPaQ2D_fracsusceprose_audit_all.png",
+      "sha256": "e08edf5ae6c049fded384d79da39ce90ff18efd5cc2eef7e69ab378360c29104",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_fracsusceprose_audit_all.png",
+      "qa_sha256": "0483ff848224f6a50a89a4b27ce6f8b31a16f26bc7c1e57214d36fc082a25b44"
+    },
+    {
+      "id": "MAP-14",
+      "path": "FracPaQ2D_CSFmap_audit_all.png",
+      "sha256": "4342f22580c4e09d255fe3d090c27598ea442e920f6881db958a8754c6813e41",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_CSFmap_audit_all.png",
+      "qa_sha256": "0bbf6db5c2088fe5db130baaa48262b345f25949070d1e6e634e1b5cb868c470"
+    },
+    {
+      "id": "MAP-14",
+      "path": "FracPaQ2D_CSFrose_audit_all.png",
+      "sha256": "9bf987c8213638053ceae24f3cf91e28c5b4f77c757fa75dc810567746c4c62c",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_CSFrose_audit_all.png",
+      "qa_sha256": "e8df23f2457b2ae0b9addcab98054b9a736e43848273fcaaa4bdeaffd7df4272"
+    },
+    {
+      "id": "LEN-02",
+      "path": "FracPaQ2D_histotracelength_audit_all.png",
+      "sha256": "3089b79e5bf6f3a54ba2920d2e3f12c9fcdfc3f2fb898d40698d979cced3edd0",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_histotracelength_audit_all.png",
+      "qa_sha256": "0db398f36fd78507f5c588fb056fabd4de3f9fb41db757d5bb73105195948a02"
+    },
+    {
+      "id": "LEN-02",
+      "path": "FracPaQ2D_histosegmentlength_audit_all.png",
+      "sha256": "5eaf795ddfd825b14d824c713005118788603229664a6b3556120f66699a68f1",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_histosegmentlength_audit_all.png",
+      "qa_sha256": "5c0b76852fc808b2ef30fd56bb88e8a0b892e298143e9abdd25626bd52b80468"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplottracelengthdensity_audit_all.png",
+      "sha256": "98ff6c9a1b3a7ecdd6c4c908dddc3dcb154aa44ea9962325020c646896534b1a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplottracelengthdensity_audit_all.png",
+      "qa_sha256": "b8b58eb061c11d7f28535ead4ed754e161b09655b10b62cbee0d5542ce64faa4"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplottracelength_audit_all.png",
+      "sha256": "23a5661808be5603533e0ad890d6206cc6480dea3d40cf7ee1db9745177d2d65",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplottracelength_audit_all.png",
+      "qa_sha256": "61199c2a0254adf0c356c180988bb1f9ae8235ddc51abee324282b5e79339095"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplotsegmentlengthdensity_audit_all.png",
+      "sha256": "41bd2b17aebbbf1e425b14da07544d467419e547312f727f0085f4a6cb1f2202",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplotsegmentlengthdensity_audit_all.png",
+      "qa_sha256": "1c112e35b645815164839823934cc657af19fbd4143f1642d8b1ed12c8d0248d"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplotsegmentlength_audit_all.png",
+      "sha256": "b673f837fb5d857efa3d90de560833f05011edcf65b40eef6c6389ba9941a44c",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplotsegmentlength_audit_all.png",
+      "qa_sha256": "411820a42e52361e1f7849fbff7507dcafc3f5f520fa9b9011700f900ed4593c"
+    },
+    {
+      "id": "LEN-07",
+      "path": "FracPaQ2D_tracelengthsFittingPowerLaw_audit_all.png",
+      "sha256": "0721caa744904056063e10ca02ddf24d78411443fe2b5577feb155ffe7a8e184",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracelengthsFittingPowerLaw_audit_all.png",
+      "qa_sha256": "f1c1945200d7f9d37d0d5cd958ebcfe5917ec8c1bed8cf1eb6254d1b7803daa7"
+    },
+    {
+      "id": "LEN-07",
+      "path": "FracPaQ2D_tracelengthsFittingExponential_audit_all.png",
+      "sha256": "66ad78b8e239accaa9e3343b84c18d3212362e085c6076e194c7aad8ba6f66db",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracelengthsFittingExponential_audit_all.png",
+      "qa_sha256": "1acc331a3785ccf16d4dedf4c345157d0ebde49d49b929c90701b30d9855af31"
+    },
+    {
+      "id": "LEN-07",
+      "path": "FracPaQ2D_tracelengthsFittingLogNormal_audit_all.png",
+      "sha256": "7a292f199f56ec3254196635d311e1a09923ea2d0057ed63a30ac247382b27a1",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracelengthsFittingLogNormal_audit_all.png",
+      "qa_sha256": "31cc82068499768f5147cae91e3f9f5b160806cca09cd9a96fbb907d6396b3f2"
+    },
+    {
+      "id": "LEN-07",
+      "path": "FracPaQ2D_segmentlengthsFittingPowerLaw_audit_all.png",
+      "sha256": "db9543e688cebbfc89962319ca2e0c5157bb13ffcb1ae1e9506857a66df019f0",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlengthsFittingPowerLaw_audit_all.png",
+      "qa_sha256": "d867f73efd991c1e56dcacefcd93b435de9f7f76a331fa22096f965aa07b2675"
+    },
+    {
+      "id": "LEN-07",
+      "path": "FracPaQ2D_segmentlengthsFittingExponential_audit_all.png",
+      "sha256": "8b0ba541887526d3c0b1cbfea162593bdcace3c92e5706ddb573beecc1dcd2ff",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlengthsFittingExponential_audit_all.png",
+      "qa_sha256": "dc699c1f6c400635d2a60a893c37f35492c9fd05247312762b2bd10b0c117938"
+    },
+    {
+      "id": "LEN-07",
+      "path": "FracPaQ2D_segmentlengthsFittingLogNormal_audit_all.png",
+      "sha256": "5a6de555ef9a0eee93400d8433e0e70dedaa6ccf391dac7fb55e2ab1f9467fdc",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlengthsFittingLogNormal_audit_all.png",
+      "qa_sha256": "9d2ed41a3b7d3169acc4ef0b3410a06085e2c2a35d8573bfb043a6a35c650279"
+    },
+    {
+      "id": "LEN-06",
+      "path": "FracPaQ2D_crossplotsegmentlengthangle_audit_all.png",
+      "sha256": "23daf154b7bcf953a05ea030a8faaf081c38d29830f39f6118a4c013d0da95e6",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_crossplotsegmentlengthangle_audit_all.png",
+      "qa_sha256": "d96dcc5031d38d31c4ebce90dcefba428f37bf3b622b0fffe170363841a323d4"
+    },
+    {
+      "id": "LEN-13",
+      "path": "FracPaQ2D_blocksizecentroidmap_audit_all.png",
+      "sha256": "84dc32016cae2d4d6e83e4c30b37df0e142ac8e6eb81b0e2b10cb3f62c7f6dd0",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_blocksizecentroidmap_audit_all.png",
+      "qa_sha256": "ac6553c3178df47b9dfcc26dbb9eb3d662f64870b3e2e39c0ac41d6bb3cb24bf"
+    },
+    {
+      "id": "LEN-13",
+      "path": "FracPaQ2D_blocksizeloglog_audit_all.png",
+      "sha256": "5cf4f127cef4a988d5652747c56e6fd2776b03022a4edb6fb92d34fbb9ea3294",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_blocksizeloglog_audit_all.png",
+      "qa_sha256": "2ec6b2b97e2565b47f77598ee3800254c2b3f3f2bad109847558b27c10b9edf5"
+    },
+    {
+      "id": "LEN-13",
+      "path": "FracPaQ2D_blocksizehisto_audit_all.png",
+      "sha256": "c4416f96e6507f6c33c391cc66c81fad39a9476063a9541b84988a64692c53e3",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_blocksizehisto_audit_all.png",
+      "qa_sha256": "eba03307aad063d528b9eef0d74f68430dba8c4a0a0062369fbcadfc677d275a"
+    },
+    {
+      "id": "LEN-15",
+      "path": "FracPaQ2D_segmentlength_variogram_audit_all.png",
+      "sha256": "31e72e2582f1dc9a66e5913257905009ae6a5165128c1ab10eddc99ed2169812",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlength_variogram_audit_all.png",
+      "qa_sha256": "5e5994c999c5b27c1a4bcfec30241ebcfba51640a145f4a6f2ee6c6c0c4ff595"
+    },
+    {
+      "id": "ANG-01",
+      "path": "FracPaQ2D_histoangle_audit_all.png",
+      "sha256": "7556ab78948c462a913dcd66dad028c95aae3b35a5e57f437ba38e741b8ec947",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_histoangle_audit_all.png",
+      "qa_sha256": "e884edc624221cea22ef6f86d045449a284ca6a224ba0c5132d1708d1d8692fb"
+    },
+    {
+      "id": "ANG-02",
+      "path": "FracPaQ2D_roseangleEqArea_audit_all.png",
+      "sha256": "3ffc362e8ba0887aee7f9c9d8a6ed28950190bd8a47a82146d3d512866ec0c96",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_roseangleEqArea_audit_all.png",
+      "qa_sha256": "5c262808f23fb202ec21a9735f3794a2f7362f1d088738d7308794a1df5e2c36"
+    },
+    {
+      "id": "FLO-01",
+      "path": "FracPaQ2D_IYXnodes_traces_audit_all.png",
+      "sha256": "912eabb2e1d2207eeb15ccca33a2c358fb7da6f8f7715bd6c8fb0b8bb9912d77",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_IYXnodes_traces_audit_all.png",
+      "qa_sha256": "0066c9be0392457fbc88c7ff7a64e41227243dd36b7658ba4644fe61c5a810a2"
+    },
+    {
+      "id": "FLO-01",
+      "path": "FracPaQ2D_XYnodes_traces_heat_audit_all.png",
+      "sha256": "739f940f00cac0b6753d2031244c88a850039108b8c70b3cad14ab8c6e449074",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_XYnodes_traces_heat_audit_all.png",
+      "qa_sha256": "2efaaf6ba5442323eac22d638f01e797edd470d362ce581524b4eb78ccbecccb"
+    },
+    {
+      "id": "FLO-01",
+      "path": "FracPaQ2D_Inodes_traces_heat_audit_all.png",
+      "sha256": "a4622ce830a08a210ccee585148ff85accafe6526055452596879426c4826065",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_Inodes_traces_heat_audit_all.png",
+      "qa_sha256": "662d1717188190dda3c08924c007a63aeb495a849e69882b363f688a36a8721c"
+    },
+    {
+      "id": "FLO-01",
+      "path": "FracPaQ2D_IYXtriangle_audit_all.png",
+      "sha256": "fe6271b7a05840dc16ec526842dd8ed3cb50c3bd4aeaf16f996708284c6f9ed5",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_IYXtriangle_audit_all.png",
+      "qa_sha256": "be0d748af19bea48d135f6ccf17bb382025fbb80d8ef6b8071ec5b972074037f"
+    },
+    {
+      "id": "FLO-08",
+      "path": "FracPaQ2D_cracktensor_audit_all.png",
+      "sha256": "089ae3b9e2dd584fd00254be09bceda2d1fecfbb18ba76e4f285ab2a6103870c",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_cracktensor_audit_all.png",
+      "qa_sha256": "0afa308570aea3ff1e6c7084664dc9b0564433ad64b1ecaad53a504c2e2bcfa0"
+    },
+    {
+      "id": "FLO-09",
+      "path": "FracPaQ2D_permeability_polar_audit_all.png",
+      "sha256": "9fd2b79d09bc9345c78bd90b6150bd2487d258012ac8ee62d1b117e354472c4d",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_permeability_polar_audit_all.png",
+      "qa_sha256": "c3be49e48ca0dbef81d899e35de66a37e8f673357b7b21003521a9c7d98495d4"
+    },
+    {
+      "id": "WAV-01",
+      "path": "FracPaQ2Dwavelet_a32_audit_all.png",
+      "sha256": "c8bc2eae6cae8f10eabc9e5be0042a322d2d4b1179cc50f78ad1df6ab421ece9",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2Dwavelet_a32_audit_all.png",
+      "qa_sha256": "c29e486a8e376b60e3f55ac03d0dd069ea6982d311dcd62dff85852c2e5399cc"
+    },
+    {
+      "id": "GRA-03",
+      "path": "guiFracPaQ2D_tracelengthalonggraph_audit_all.png",
+      "sha256": "a058fbb5c4f25a5dbafb97d733aca72f1e726d23b039b7a00cad17fc6972ada1",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_tracelengthalonggraph_audit_all.png",
+      "qa_sha256": "f2a91c11f56386f6c8bd6aa0679ba89b9259dd36d142964110d17909296f4fe1"
+    },
+    {
+      "id": "GRA-04",
+      "path": "guiFracPaQ2D_segmentlengthalonggraph_audit_all.png",
+      "sha256": "c7c3f73e67c97d7c057f3c1b5ea5dc94f1ae3cb77873009b5e6704d2897c3d49",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_segmentlengthalonggraph_audit_all.png",
+      "qa_sha256": "38142e242712350210cd8c4324a00c3303dc9231bc53883a1ca83df6ba9ab41a"
+    },
+    {
+      "id": "GRA-05",
+      "path": "guiFracPaQ2D_segmentanglealonggraph_audit_all.png",
+      "sha256": "23afdb1a15d1c37ae71c7d254c6dcf36f15e0c5b9dde1bde2fe7d76843a11ace",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_segmentanglealonggraph_audit_all.png",
+      "qa_sha256": "e0da7c893918cdf5d2fc7cc36f5bea2b124b161d48cd28d66912949721e2a2f7"
+    },
+    {
+      "id": "GRA-06",
+      "path": "guiFracPaQ2D_graphtracemap_audit_all.png",
+      "sha256": "ea21a5c2c7b46ad31c68bb37c11a155ef88f6f78fdeec09fd0b9a849cc4e7828",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_graphtracemap_audit_all.png",
+      "qa_sha256": "28e5ae61a6313398acd148ab9e350b9802cfe14f8a9353bdce6e90caae1c6cb1"
+    },
+    {
+      "id": "GRA-06",
+      "path": "guiFracPaQ2D_intensityalonggraph_audit_all.png",
+      "sha256": "07de01d42a3c40f608f01fc0367859afcedc7c8cddd347e945f1f2832493e9f4",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_intensityalonggraph_audit_all.png",
+      "qa_sha256": "3938a0bcfacc6604d0c4f30de609da5f48c15dd24e40efb51c5a134312f317a2"
+    },
+    {
+      "id": "GRA-06",
+      "path": "guiFracPaQ2D_densityalonggraph_audit_all.png",
+      "sha256": "5b41529ada304dcbbef72f1526114653a548c67a585228cb7f8aabc09add897a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_densityalonggraph_audit_all.png",
+      "qa_sha256": "c0add35a8aeb2968b159ac03c7bc0e154b46356b4b00da36bdd14c686952b1d9"
+    },
+    {
+      "id": "GRA-10",
+      "path": "guiFracPaQ2D_tracelengthfromgraph_audit_all.png",
+      "sha256": "22f36c7506cc6cbf77e4abac548826efa99726eaa1d1dd53d44054b049616824",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_tracelengthfromgraph_audit_all.png",
+      "qa_sha256": "62a1c3bd489a9833881c9b63a78c11cd8b4ae1c5af27193384f6aedc7640d519"
+    },
+    {
+      "id": "GRA-11",
+      "path": "guiFracPaQ2D_segmentlengthfromgraph_audit_all.png",
+      "sha256": "bd34d8a868f4ef81f0230da80a1e1338416fb5379c985303dc060cadb610bb81",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_segmentlengthfromgraph_audit_all.png",
+      "qa_sha256": "fb389bf8ba36298abb6f8c42cb7d68f6f5cf0d34a326ba63e588701276140f71"
+    },
+    {
+      "id": "GRA-12",
+      "path": "guiFracPaQ2D_segmentanglefromgraph_audit_all.png",
+      "sha256": "1ac7482cdf097de53fc881afb1bbf9e63ba734c932787ad164569a00c57fe94c",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-guiFracPaQ2D_segmentanglefromgraph_audit_all.png",
+      "qa_sha256": "dfce9bd58978f6c693756f2107a63875b7aecec0edc7c1d445cd62530286f750"
+    }
+  ],
+  "files": [
+    {
+      "name": "FracPaQ2DEZROSE_audit_all.txt",
+      "sha256": "15c514536ab388c64a588aa5bd9688147c1a597afffda514746c41c89f2bd42a",
+      "bytes": 840
+    },
+    {
+      "name": "FracPaQ2D_CSFmap_audit_all.png",
+      "sha256": "4342f22580c4e09d255fe3d090c27598ea442e920f6881db958a8754c6813e41",
+      "bytes": 571831
+    },
+    {
+      "name": "FracPaQ2D_CSFrose_audit_all.png",
+      "sha256": "9bf987c8213638053ceae24f3cf91e28c5b4f77c757fa75dc810567746c4c62c",
+      "bytes": 558770
+    },
+    {
+      "name": "FracPaQ2D_IYXnodes_traces_audit_all.png",
+      "sha256": "912eabb2e1d2207eeb15ccca33a2c358fb7da6f8f7715bd6c8fb0b8bb9912d77",
+      "bytes": 489348
+    },
+    {
+      "name": "FracPaQ2D_IYXtriangle_audit_all.png",
+      "sha256": "fe6271b7a05840dc16ec526842dd8ed3cb50c3bd4aeaf16f996708284c6f9ed5",
+      "bytes": 508397
+    },
+    {
+      "name": "FracPaQ2D_Inodes_traces_heat_audit_all.png",
+      "sha256": "a4622ce830a08a210ccee585148ff85accafe6526055452596879426c4826065",
+      "bytes": 194297
+    },
+    {
+      "name": "FracPaQ2D_Mohrplot_audit_all.png",
+      "sha256": "26318e66ae301bf965dcdbacf85bc029377934d4bd2c00053787c7d63836e31d",
+      "bytes": 291353
+    },
+    {
+      "name": "FracPaQ2D_XYnodes_traces_heat_audit_all.png",
+      "sha256": "739f940f00cac0b6753d2031244c88a850039108b8c70b3cad14ab8c6e449074",
+      "bytes": 207426
+    },
+    {
+      "name": "FracPaQ2D_blocksize.bmp",
+      "sha256": "20495fbd28a0b2da77b0bd8ae978d58fcb61a7d5cadc744d37ce66bd83ea9da7",
+      "bytes": 11178
+    },
+    {
+      "name": "FracPaQ2D_blocksizecentroidmap_audit_all.png",
+      "sha256": "84dc32016cae2d4d6e83e4c30b37df0e142ac8e6eb81b0e2b10cb3f62c7f6dd0",
+      "bytes": 469991
+    },
+    {
+      "name": "FracPaQ2D_blocksizehisto_audit_all.png",
+      "sha256": "c4416f96e6507f6c33c391cc66c81fad39a9476063a9541b84988a64692c53e3",
+      "bytes": 200332
+    },
+    {
+      "name": "FracPaQ2D_blocksizeloglog_audit_all.png",
+      "sha256": "5cf4f127cef4a988d5652747c56e6fd2776b03022a4edb6fb92d34fbb9ea3294",
+      "bytes": 248380
+    },
+    {
+      "name": "FracPaQ2D_cracktensor_audit_all.png",
+      "sha256": "089ae3b9e2dd584fd00254be09bceda2d1fecfbb18ba76e4f285ab2a6103870c",
+      "bytes": 854462
+    },
+    {
+      "name": "FracPaQ2D_crossplotsegmentlengthangle_audit_all.png",
+      "sha256": "23daf154b7bcf953a05ea030a8faaf081c38d29830f39f6118a4c013d0da95e6",
+      "bytes": 214920
+    },
+    {
+      "name": "FracPaQ2D_densityP20_audit_all.png",
+      "sha256": "3b5a048a2faec3e905a0d57f85cb9ca7d31671ed6d9eaf678aef79f69a3401a1",
+      "bytes": 234124
+    },
+    {
+      "name": "FracPaQ2D_dilationtendencymap_audit_all.png",
+      "sha256": "ebe830a5761503c6beb96cf80fbb0518f56b3e2234790c500030a06ea7e136ca",
+      "bytes": 535219
+    },
+    {
+      "name": "FracPaQ2D_dilationtendencyrose_audit_all.png",
+      "sha256": "7aa3674946fb28f7c8d7a2c25613629a361f9235e2311ad12ec2ee886936c652",
+      "bytes": 692123
+    },
+    {
+      "name": "FracPaQ2D_fracsuscepmap_audit_all.png",
+      "sha256": "8b09ee68cb0590e0d4b2b3152ca501c022a69f8beafcab15ab9883aea86c6a3f",
+      "bytes": 551643
+    },
+    {
+      "name": "FracPaQ2D_fracsusceprose_audit_all.png",
+      "sha256": "e08edf5ae6c049fded384d79da39ce90ff18efd5cc2eef7e69ab378360c29104",
+      "bytes": 695073
+    },
+    {
+      "name": "FracPaQ2D_histoangle_audit_all.png",
+      "sha256": "7556ab78948c462a913dcd66dad028c95aae3b35a5e57f437ba38e741b8ec947",
+      "bytes": 214432
+    },
+    {
+      "name": "FracPaQ2D_histosegmentlength_audit_all.png",
+      "sha256": "5eaf795ddfd825b14d824c713005118788603229664a6b3556120f66699a68f1",
+      "bytes": 202374
+    },
+    {
+      "name": "FracPaQ2D_histotracelength_audit_all.png",
+      "sha256": "3089b79e5bf6f3a54ba2920d2e3f12c9fcdfc3f2fb898d40698d979cced3edd0",
+      "bytes": 211974
+    },
+    {
+      "name": "FracPaQ2D_intensityP21_audit_all.png",
+      "sha256": "71f435c25ff9450e45535dbe9d76e4569c459e391192b5b3d4985eb60c07256b",
+      "bytes": 215265
+    },
+    {
+      "name": "FracPaQ2D_loglogplotsegmentlength_audit_all.png",
+      "sha256": "b673f837fb5d857efa3d90de560833f05011edcf65b40eef6c6389ba9941a44c",
+      "bytes": 290301
+    },
+    {
+      "name": "FracPaQ2D_loglogplotsegmentlengthdensity_audit_all.png",
+      "sha256": "41bd2b17aebbbf1e425b14da07544d467419e547312f727f0085f4a6cb1f2202",
+      "bytes": 256132
+    },
+    {
+      "name": "FracPaQ2D_loglogplottracelength_audit_all.png",
+      "sha256": "23a5661808be5603533e0ad890d6206cc6480dea3d40cf7ee1db9745177d2d65",
+      "bytes": 292308
+    },
+    {
+      "name": "FracPaQ2D_loglogplottracelengthdensity_audit_all.png",
+      "sha256": "98ff6c9a1b3a7ecdd6c4c908dddc3dcb154aa44ea9962325020c646896534b1a",
+      "bytes": 267592
+    },
+    {
+      "name": "FracPaQ2D_permeability_polar_audit_all.png",
+      "sha256": "9fd2b79d09bc9345c78bd90b6150bd2487d258012ac8ee62d1b117e354472c4d",
+      "bytes": 733471
+    },
+    {
+      "name": "FracPaQ2D_roseangleEqArea_audit_all.png",
+      "sha256": "3ffc362e8ba0887aee7f9c9d8a6ed28950190bd8a47a82146d3d512866ec0c96",
+      "bytes": 724962
+    },
+    {
+      "name": "FracPaQ2D_scancircle_audit_all.png",
+      "sha256": "253221e369516c98b93c24b8b949aa94a08c89573b06de2539777bccb23f073a",
+      "bytes": 659005
+    },
+    {
+      "name": "FracPaQ2D_segmentlength_variogram_audit_all.png",
+      "sha256": "31e72e2582f1dc9a66e5913257905009ae6a5165128c1ab10eddc99ed2169812",
+      "bytes": 183647
+    },
+    {
+      "name": "FracPaQ2D_segmentlengthmap_audit_all.png",
+      "sha256": "21ff5f0455318958c4e5482dae00217b21906638cd26f3ba0472cf7a9bb25b6d",
+      "bytes": 538104
+    },
+    {
+      "name": "FracPaQ2D_segmentlengthsFittingExponential_audit_all.png",
+      "sha256": "8b0ba541887526d3c0b1cbfea162593bdcace3c92e5706ddb573beecc1dcd2ff",
+      "bytes": 375035
+    },
+    {
+      "name": "FracPaQ2D_segmentlengthsFittingLogNormal_audit_all.png",
+      "sha256": "5a6de555ef9a0eee93400d8433e0e70dedaa6ccf391dac7fb55e2ab1f9467fdc",
+      "bytes": 405231
+    },
+    {
+      "name": "FracPaQ2D_segmentlengthsFittingPowerLaw_audit_all.png",
+      "sha256": "db9543e688cebbfc89962319ca2e0c5157bb13ffcb1ae1e9506857a66df019f0",
+      "bytes": 412417
+    },
+    {
+      "name": "FracPaQ2D_segmentstrikemap_audit_all.png",
+      "sha256": "fd424a8f756f876aff3852ef14a2756ebf69be07f6b50c8099920d2102a83c4e",
+      "bytes": 553531
+    },
+    {
+      "name": "FracPaQ2D_sliptendencymap_audit_all.png",
+      "sha256": "33ab6bb59ff588d7f64059c6e0eebdd4e4a9867cf1a01dedfbcad10bead3a8be",
+      "bytes": 542133
+    },
+    {
+      "name": "FracPaQ2D_sliptendencyrose_audit_all.png",
+      "sha256": "38be96b6dceb4048c4fcf264400c452aa5c3acf180f2de70b0154b2bd3fe31ef",
+      "bytes": 720041
+    },
+    {
+      "name": "FracPaQ2D_tracelengthmap_audit_all.png",
+      "sha256": "ebbe921195d1dc9af8dc799cf8ae52acaf40ecbb7ec974ec3bfd12089697f3df",
+      "bytes": 534578
+    },
+    {
+      "name": "FracPaQ2D_tracelengthsFittingExponential_audit_all.png",
+      "sha256": "66ad78b8e239accaa9e3343b84c18d3212362e085c6076e194c7aad8ba6f66db",
+      "bytes": 371792
+    },
+    {
+      "name": "FracPaQ2D_tracelengthsFittingLogNormal_audit_all.png",
+      "sha256": "7a292f199f56ec3254196635d311e1a09923ea2d0057ed63a30ac247382b27a1",
+      "bytes": 405973
+    },
+    {
+      "name": "FracPaQ2D_tracelengthsFittingPowerLaw_audit_all.png",
+      "sha256": "0721caa744904056063e10ca02ddf24d78411443fe2b5577feb155ffe7a8e184",
+      "bytes": 445173
+    },
+    {
+      "name": "FracPaQ2D_tracemap_audit_all.png",
+      "sha256": "0eb30f8c5f1f8346d27ad42bf24a43957786fb07afe1cb6118d47fedfcd31fd6",
+      "bytes": 613207
+    },
+    {
+      "name": "FracPaQ2D_tracemap_multicolour_audit_all.png",
+      "sha256": "a4e591f52d3a3eb29f325807449d03591cfbec196cdbb23fa1a9572331def406",
+      "bytes": 478559
+    },
+    {
+      "name": "FracPaQ2D_wavelet_traces.png",
+      "sha256": "53c9c3a699f87ce061950fe434e67b5d9079129aefa70ee6beffa6f91cb76f9c",
+      "bytes": 54008
+    },
+    {
+      "name": "FracPaQ2Dconnectivity_audit_all.txt",
+      "sha256": "a9b57df6a495744f126f006c8d5f40bdf967605754e521c0c29c715fc2ed1739",
+      "bytes": 14
+    },
+    {
+      "name": "FracPaQ2Ddensity_audit_all.txt",
+      "sha256": "73aea1a157f2cedefdc6c6b15f8243120dd4037f61382be69339c2d343036906",
+      "bytes": 297
+    },
+    {
+      "name": "FracPaQ2Dintensity_audit_all.txt",
+      "sha256": "619f4a35b2788b672d039f697e21f18c6524911eba135314a6fb7decfd5a80f6",
+      "bytes": 297
+    },
+    {
+      "name": "FracPaQ2Dsegmentangleslengths_audit_all.txt",
+      "sha256": "d39a92dd8c9d748c67f3e0e57c22b88809125935fc615399364bd8b7b3a1a754",
+      "bytes": 840
+    },
+    {
+      "name": "FracPaQ2Dsegmentdata_audit_all.txt",
+      "sha256": "f326680cf998ecbfad494ad83e57a91bd892a47fbe285f1314f7e227d6cc510f",
+      "bytes": 2779
+    },
+    {
+      "name": "FracPaQ2Dsegmentlengths_audit_all.txt",
+      "sha256": "7d136bfda03dd42cde3bcd9b42921eaef8b44be03c3121baadd567fcf2a8c12e",
+      "bytes": 420
+    },
+    {
+      "name": "FracPaQ2Dtracelengths_audit_all.txt",
+      "sha256": "9a6b6850605d4d0e9861cf0d63a01d8b04910a1f954b0fa3ecb88385fcb1adec",
+      "bytes": 357
+    },
+    {
+      "name": "FracPaQ2Dwavelet_a32_audit_all.png",
+      "sha256": "c8bc2eae6cae8f10eabc9e5be0042a322d2d4b1179cc50f78ad1df6ab421ece9",
+      "bytes": 723836
+    },
+    {
+      "name": "FracPaQ2Dwavelet_theta_a32_audit_all.txt",
+      "sha256": "eeed1a96e298967b636ec06d6a5237861e8a64ff5bfcd0fda19d60d64b502194",
+      "bytes": 442505
+    },
+    {
+      "name": "guiFracPaQ2D_densityalonggraph_audit_all.png",
+      "sha256": "5b41529ada304dcbbef72f1526114653a548c67a585228cb7f8aabc09add897a",
+      "bytes": 212348
+    },
+    {
+      "name": "guiFracPaQ2D_graphtracemap_audit_all.png",
+      "sha256": "ea21a5c2c7b46ad31c68bb37c11a155ef88f6f78fdeec09fd0b9a849cc4e7828",
+      "bytes": 563504
+    },
+    {
+      "name": "guiFracPaQ2D_intensityalonggraph_audit_all.png",
+      "sha256": "07de01d42a3c40f608f01fc0367859afcedc7c8cddd347e945f1f2832493e9f4",
+      "bytes": 207981
+    },
+    {
+      "name": "guiFracPaQ2D_segmentanglealonggraph_audit_all.png",
+      "sha256": "23afdb1a15d1c37ae71c7d254c6dcf36f15e0c5b9dde1bde2fe7d76843a11ace",
+      "bytes": 235767
+    },
+    {
+      "name": "guiFracPaQ2D_segmentanglefromgraph_audit_all.png",
+      "sha256": "1ac7482cdf097de53fc881afb1bbf9e63ba734c932787ad164569a00c57fe94c",
+      "bytes": 277451
+    },
+    {
+      "name": "guiFracPaQ2D_segmentlengthalonggraph_audit_all.png",
+      "sha256": "c7c3f73e67c97d7c057f3c1b5ea5dc94f1ae3cb77873009b5e6704d2897c3d49",
+      "bytes": 212283
+    },
+    {
+      "name": "guiFracPaQ2D_segmentlengthfromgraph_audit_all.png",
+      "sha256": "bd34d8a868f4ef81f0230da80a1e1338416fb5379c985303dc060cadb610bb81",
+      "bytes": 247462
+    },
+    {
+      "name": "guiFracPaQ2D_tracelengthalonggraph_audit_all.png",
+      "sha256": "a058fbb5c4f25a5dbafb97d733aca72f1e726d23b039b7a00cad17fc6972ada1",
+      "bytes": 221444
+    },
+    {
+      "name": "guiFracPaQ2D_tracelengthfromgraph_audit_all.png",
+      "sha256": "22f36c7506cc6cbf77e4abac548826efa99726eaa1d1dd53d44054b049616824",
+      "bytes": 251289
+    }
+  ],
+  "progress": [
+    {
+      "percent": 0,
+      "message": "Running Traces, segments...",
+      "seconds": 0.00019829199300147593
+    },
+    {
+      "percent": 3,
+      "message": "Running Traces, by length...",
+      "seconds": 0.00033062498550862074
+    },
+    {
+      "percent": 7,
+      "message": "Running Segments, by length...",
+      "seconds": 0.00045354198664426804
+    },
+    {
+      "percent": 10,
+      "message": "Running Segments, by strike...",
+      "seconds": 0.000567584007512778
+    },
+    {
+      "percent": 13,
+      "message": "Running Estimated Intensity, P21...",
+      "seconds": 0.0006802089919801801
+    },
+    {
+      "percent": 14,
+      "message": "Circular scan windows: 1/9",
+      "seconds": 0.0009430419886484742
+    },
+    {
+      "percent": 14,
+      "message": "Circular scan windows: 2/9",
+      "seconds": 0.0010147920111194253
+    },
+    {
+      "percent": 14,
+      "message": "Circular scan windows: 3/9",
+      "seconds": 0.0010764169855974615
+    },
+    {
+      "percent": 15,
+      "message": "Circular scan windows: 4/9",
+      "seconds": 0.0011329170083627105
+    },
+    {
+      "percent": 15,
+      "message": "Circular scan windows: 5/9",
+      "seconds": 0.0011960419942624867
+    },
+    {
+      "percent": 16,
+      "message": "Circular scan windows: 6/9",
+      "seconds": 0.0012543339980766177
+    },
+    {
+      "percent": 16,
+      "message": "Circular scan windows: 7/9",
+      "seconds": 0.0013165420095901936
+    },
+    {
+      "percent": 16,
+      "message": "Circular scan windows: 8/9",
+      "seconds": 0.0013734170061070472
+    },
+    {
+      "percent": 17,
+      "message": "Circular scan windows: 9/9",
+      "seconds": 0.0014267920050770044
+    },
+    {
+      "percent": 17,
+      "message": "Running Estimated Density, P20...",
+      "seconds": 0.00238716701278463
+    },
+    {
+      "percent": 20,
+      "message": "Running Slip tendency...",
+      "seconds": 0.002388166991295293
+    },
+    {
+      "percent": 21,
+      "message": "Calculating slip...",
+      "seconds": 0.0026745839859358966
+    },
+    {
+      "percent": 22,
+      "message": "Calculating dilation...",
+      "seconds": 0.0026944999990519136
+    },
+    {
+      "percent": 22,
+      "message": "Calculating susceptibility...",
+      "seconds": 0.0027146250067744404
+    },
+    {
+      "percent": 23,
+      "message": "Calculating csf...",
+      "seconds": 0.0027369169984012842
+    },
+    {
+      "percent": 23,
+      "message": "Stability completed.",
+      "seconds": 0.003303709003375843
+    },
+    {
+      "percent": 23,
+      "message": "Running Dilation tendency...",
+      "seconds": 0.003305458987597376
+    },
+    {
+      "percent": 27,
+      "message": "Running Fracture susceptibility...",
+      "seconds": 0.003306333994260058
+    },
+    {
+      "percent": 30,
+      "message": "Running Critically stressed fractures...",
+      "seconds": 0.003306875005364418
+    },
+    {
+      "percent": 33,
+      "message": "Running Histogram of lengths...",
+      "seconds": 0.003307292005047202
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005644666991429403
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005655708984704688
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.00566404199344106
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005670916987583041
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005679541995050386
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005685709009412676
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005691583995940164
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.00569733401061967
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.00570312500349246
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005708791984943673
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.00571450000279583
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005720791989006102
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005727874988224357
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005733458994654939
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005738750012824312
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005744208989199251
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005749709001975134
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005755166988819838
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005760667001595721
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005766416987171397
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005771750002168119
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005777042009867728
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005782458989415318
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005787959002191201
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005793291988084093
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.0057985419989563525
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.00580445901141502
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005810041999211535
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005815374985104427
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.0058206669928040355
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005825792002724484
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005830999987665564
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005836291995365173
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.00584145900211297
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005846791988005862
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005852166999829933
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005857292009750381
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005862666992470622
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.0058680420042946935
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005873374990187585
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005878750002011657
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005884124984731898
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005889166990527883
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005894375004572794
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005899459007196128
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005904583988012746
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005909833998885006
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005915042012929916
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.005920083989622071
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.00592516700271517
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: K-S comparison 25/2500",
+      "seconds": 0.00619975000154227
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: K-S comparison 50/2500",
+      "seconds": 0.0063893340120557696
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: K-S comparison 75/2500",
+      "seconds": 0.006583000009413809
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: K-S comparison 100/2500",
+      "seconds": 0.006774749985197559
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: K-S comparison 125/2500",
+      "seconds": 0.006963874999200925
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: K-S comparison 150/2500",
+      "seconds": 0.0071522920043207705
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: K-S comparison 175/2500",
+      "seconds": 0.00733550000586547
+    },
+    {
+      "percent": 33,
+      "message": "MLE power_law: K-S comparison 200/2500",
+      "seconds": 0.007521916995756328
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 225/2500",
+      "seconds": 0.007708084012847394
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 250/2500",
+      "seconds": 0.007893917005276307
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 275/2500",
+      "seconds": 0.008082374988589436
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 300/2500",
+      "seconds": 0.008268834004411474
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 325/2500",
+      "seconds": 0.008456667012069374
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 350/2500",
+      "seconds": 0.008646959002362564
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 375/2500",
+      "seconds": 0.008833333995426074
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 400/2500",
+      "seconds": 0.009023583988891914
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 425/2500",
+      "seconds": 0.00921104199369438
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 450/2500",
+      "seconds": 0.009400499984622002
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 475/2500",
+      "seconds": 0.009600749996025115
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 500/2500",
+      "seconds": 0.009787041984964162
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 525/2500",
+      "seconds": 0.009973625012207776
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 550/2500",
+      "seconds": 0.010159208992263302
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 575/2500",
+      "seconds": 0.010353166988352314
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 600/2500",
+      "seconds": 0.010540458984905854
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 625/2500",
+      "seconds": 0.010733041999628767
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 650/2500",
+      "seconds": 0.010920917004114017
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 675/2500",
+      "seconds": 0.011109249986475334
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 700/2500",
+      "seconds": 0.011296584008960053
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 725/2500",
+      "seconds": 0.011483874986879528
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 750/2500",
+      "seconds": 0.011669875006191432
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 775/2500",
+      "seconds": 0.01185933398664929
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 800/2500",
+      "seconds": 0.012052875012159348
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 825/2500",
+      "seconds": 0.012239792005857453
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 850/2500",
+      "seconds": 0.012426667002728209
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 875/2500",
+      "seconds": 0.012617750006029382
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 900/2500",
+      "seconds": 0.012803666992112994
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 925/2500",
+      "seconds": 0.012997374986298382
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 950/2500",
+      "seconds": 0.013184167008148506
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 975/2500",
+      "seconds": 0.013371000008191913
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1000/2500",
+      "seconds": 0.01356120899436064
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1025/2500",
+      "seconds": 0.013748958997894078
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1050/2500",
+      "seconds": 0.013934958988102153
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1075/2500",
+      "seconds": 0.014126750000286847
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1100/2500",
+      "seconds": 0.014311959006590769
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1125/2500",
+      "seconds": 0.01449770899489522
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1150/2500",
+      "seconds": 0.014684374997159466
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1175/2500",
+      "seconds": 0.014873000007355586
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1200/2500",
+      "seconds": 0.0150584589864593
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1225/2500",
+      "seconds": 0.015250083990395069
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1250/2500",
+      "seconds": 0.01544387498870492
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1275/2500",
+      "seconds": 0.015635416988516226
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1300/2500",
+      "seconds": 0.015831249998882413
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1325/2500",
+      "seconds": 0.016032374987844378
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1350/2500",
+      "seconds": 0.016223334008827806
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1375/2500",
+      "seconds": 0.016420041996752843
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1400/2500",
+      "seconds": 0.01660841700504534
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1425/2500",
+      "seconds": 0.01679658400826156
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1450/2500",
+      "seconds": 0.016981541994027793
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1475/2500",
+      "seconds": 0.017178749985760078
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1500/2500",
+      "seconds": 0.01736704198992811
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1525/2500",
+      "seconds": 0.017556209000758827
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1550/2500",
+      "seconds": 0.017747083998983726
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1575/2500",
+      "seconds": 0.017936874995939434
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1600/2500",
+      "seconds": 0.01812449999852106
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1625/2500",
+      "seconds": 0.01831120898714289
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1650/2500",
+      "seconds": 0.018498041987186298
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1675/2500",
+      "seconds": 0.018694041995331645
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1700/2500",
+      "seconds": 0.019023625005502254
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1725/2500",
+      "seconds": 0.019218458997784182
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1750/2500",
+      "seconds": 0.01941741700284183
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1775/2500",
+      "seconds": 0.019613999989815056
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1800/2500",
+      "seconds": 0.019817958993371576
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1825/2500",
+      "seconds": 0.0200166669965256
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1850/2500",
+      "seconds": 0.02021874999627471
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1875/2500",
+      "seconds": 0.020447458984563127
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1900/2500",
+      "seconds": 0.020678000000771135
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1925/2500",
+      "seconds": 0.020896250003715977
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1950/2500",
+      "seconds": 0.021117166994372383
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 1975/2500",
+      "seconds": 0.02134999999543652
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2000/2500",
+      "seconds": 0.021565667004324496
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2025/2500",
+      "seconds": 0.021780667011626065
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2050/2500",
+      "seconds": 0.02199537499109283
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2075/2500",
+      "seconds": 0.022212584008229896
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2100/2500",
+      "seconds": 0.022454708989243954
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2125/2500",
+      "seconds": 0.022670542006380856
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2150/2500",
+      "seconds": 0.022887708997586742
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2175/2500",
+      "seconds": 0.02310329201282002
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2200/2500",
+      "seconds": 0.023312792007345706
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2225/2500",
+      "seconds": 0.023540624999441206
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2250/2500",
+      "seconds": 0.023754166992148384
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2275/2500",
+      "seconds": 0.02397804200882092
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2300/2500",
+      "seconds": 0.024192209006287158
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2325/2500",
+      "seconds": 0.02440820899209939
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2350/2500",
+      "seconds": 0.024623459001304582
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2375/2500",
+      "seconds": 0.024837292003212497
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2400/2500",
+      "seconds": 0.025051083997823298
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2425/2500",
+      "seconds": 0.02526374999433756
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2450/2500",
+      "seconds": 0.025480999989667907
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2475/2500",
+      "seconds": 0.02569637499982491
+    },
+    {
+      "percent": 34,
+      "message": "MLE power_law: K-S comparison 2500/2500",
+      "seconds": 0.025913124991348013
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.026906541985226795
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.026919458992779255
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02692862501135096
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.026936624984955415
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02694470901042223
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.026952249987516552
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.026961083989590406
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.026970959006575868
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.026982167008100078
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.026992667000740767
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02700041700154543
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02700800000457093
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027016625012038276
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027025541989132762
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027034166996600106
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02704133398947306
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02704862499376759
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027055791986640543
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02706304201274179
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027070459007518366
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027077625010861084
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027084834000561386
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027092292002635077
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02709958399645984
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027107250003609806
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02711437499965541
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02712275000521913
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027130041999043897
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027137291996041313
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027144374995259568
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02715154198813252
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027159749995917082
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.0271762500051409
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02718450000975281
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027193459012778476
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027206291997572407
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02721400000154972
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027221124997595325
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02722824999364093
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027235249988734722
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027242417010711506
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027256792003754526
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027263541996944696
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027270374994259328
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027277124987449497
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027284084004350007
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027290958998491988
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02729795899358578
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.027304791990900412
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.02731154198409058
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 25/2500",
+      "seconds": 0.027582959010032937
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 50/2500",
+      "seconds": 0.02777491699089296
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 75/2500",
+      "seconds": 0.027983125008177012
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 100/2500",
+      "seconds": 0.028175124985864386
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 125/2500",
+      "seconds": 0.028359583986457437
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 150/2500",
+      "seconds": 0.028561791987158358
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 175/2500",
+      "seconds": 0.028802958986489102
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 200/2500",
+      "seconds": 0.02898524998454377
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 225/2500",
+      "seconds": 0.029144458996597677
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 250/2500",
+      "seconds": 0.02929841700824909
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 275/2500",
+      "seconds": 0.02945462500792928
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 300/2500",
+      "seconds": 0.02961933400365524
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 325/2500",
+      "seconds": 0.02977237501181662
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 350/2500",
+      "seconds": 0.029923791997134686
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 375/2500",
+      "seconds": 0.03007499998784624
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 400/2500",
+      "seconds": 0.030229374999180436
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 425/2500",
+      "seconds": 0.030380916985450312
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 450/2500",
+      "seconds": 0.030538124992744997
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 475/2500",
+      "seconds": 0.030696250003529713
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 500/2500",
+      "seconds": 0.030849750008201227
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 525/2500",
+      "seconds": 0.03100537499994971
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 550/2500",
+      "seconds": 0.0311612089863047
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 575/2500",
+      "seconds": 0.03131399999256246
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 600/2500",
+      "seconds": 0.03147058398462832
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 625/2500",
+      "seconds": 0.03162674998748116
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 650/2500",
+      "seconds": 0.031784833990968764
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 675/2500",
+      "seconds": 0.03194545899168588
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 700/2500",
+      "seconds": 0.03210170898819342
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 725/2500",
+      "seconds": 0.03225516699603759
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 750/2500",
+      "seconds": 0.03241033400991
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 775/2500",
+      "seconds": 0.03256483399309218
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 800/2500",
+      "seconds": 0.032720499992137775
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 825/2500",
+      "seconds": 0.03288616699865088
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 850/2500",
+      "seconds": 0.033054958999855444
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 875/2500",
+      "seconds": 0.0332132919866126
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 900/2500",
+      "seconds": 0.03337520899367519
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 925/2500",
+      "seconds": 0.03353762498591095
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 950/2500",
+      "seconds": 0.03370279198861681
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 975/2500",
+      "seconds": 0.03386212501209229
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1000/2500",
+      "seconds": 0.034029875008855015
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1025/2500",
+      "seconds": 0.03419312500045635
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1050/2500",
+      "seconds": 0.034359624987700954
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1075/2500",
+      "seconds": 0.03452266700332984
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1100/2500",
+      "seconds": 0.03468120898469351
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1125/2500",
+      "seconds": 0.03487020899774507
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1150/2500",
+      "seconds": 0.03506266701151617
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1175/2500",
+      "seconds": 0.03522604200406931
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1200/2500",
+      "seconds": 0.03539249999448657
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1225/2500",
+      "seconds": 0.03558354199049063
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1250/2500",
+      "seconds": 0.03576420899480581
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1275/2500",
+      "seconds": 0.03594025000347756
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1300/2500",
+      "seconds": 0.036109334003413096
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1325/2500",
+      "seconds": 0.036291958997026086
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1350/2500",
+      "seconds": 0.03645991699886508
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1375/2500",
+      "seconds": 0.03663175000110641
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1400/2500",
+      "seconds": 0.03679774998454377
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1425/2500",
+      "seconds": 0.036967458989238366
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1450/2500",
+      "seconds": 0.03714462500647642
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1475/2500",
+      "seconds": 0.03730925000854768
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1500/2500",
+      "seconds": 0.03747995899175294
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1525/2500",
+      "seconds": 0.03765620899503119
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1550/2500",
+      "seconds": 0.03784595898468979
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1575/2500",
+      "seconds": 0.038028250011848286
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1600/2500",
+      "seconds": 0.038212499988731
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1625/2500",
+      "seconds": 0.0383934169949498
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1650/2500",
+      "seconds": 0.038562500005355105
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1675/2500",
+      "seconds": 0.038728084007743746
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1700/2500",
+      "seconds": 0.03893654199782759
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1725/2500",
+      "seconds": 0.03909941698657349
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1750/2500",
+      "seconds": 0.03926020898506977
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1775/2500",
+      "seconds": 0.03941816699807532
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1800/2500",
+      "seconds": 0.039580791984917596
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1825/2500",
+      "seconds": 0.039742875000229105
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1850/2500",
+      "seconds": 0.03990387500380166
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1875/2500",
+      "seconds": 0.04008425000938587
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1900/2500",
+      "seconds": 0.04024541701073758
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1925/2500",
+      "seconds": 0.040407749998848885
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1950/2500",
+      "seconds": 0.040573792008217424
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 1975/2500",
+      "seconds": 0.040735249989666045
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2000/2500",
+      "seconds": 0.040899209008784965
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2025/2500",
+      "seconds": 0.041062042000703514
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2050/2500",
+      "seconds": 0.04122429198469035
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2075/2500",
+      "seconds": 0.04138695899746381
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2100/2500",
+      "seconds": 0.041550583991920575
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2125/2500",
+      "seconds": 0.04171499999938533
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2150/2500",
+      "seconds": 0.04187858398654498
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2175/2500",
+      "seconds": 0.04204208400915377
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2200/2500",
+      "seconds": 0.04220512500614859
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2225/2500",
+      "seconds": 0.04236749999108724
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2250/2500",
+      "seconds": 0.042530750011792406
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2275/2500",
+      "seconds": 0.04269654199015349
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2300/2500",
+      "seconds": 0.04287095900508575
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2325/2500",
+      "seconds": 0.04303312499541789
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2350/2500",
+      "seconds": 0.04319691698765382
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2375/2500",
+      "seconds": 0.04336129198782146
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2400/2500",
+      "seconds": 0.04352404200471938
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2425/2500",
+      "seconds": 0.043693459010683
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2450/2500",
+      "seconds": 0.043862208985956386
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2475/2500",
+      "seconds": 0.04402999999001622
+    },
+    {
+      "percent": 34,
+      "message": "MLE exponential: K-S comparison 2500/2500",
+      "seconds": 0.04419412498828024
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.044952583994017914
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.044965459004743025
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04497545899357647
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04498470900580287
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.044995667005423456
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045004499988863245
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045012958988081664
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04502312498516403
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045033125003101304
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045043124991934747
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04505270899971947
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045062208984745666
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045070874999510124
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04508070900919847
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045089749997714534
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04509787500137463
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04510608399868943
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04511416700552218
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045122084004106
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04512999998405576
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045138334011426196
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04514624999137595
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04515391698805615
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04516158398473635
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045169749995693564
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045177374995546415
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04518524999730289
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04519295899081044
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04520133399637416
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04520895899622701
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04521654199925251
+    },
+    {
+      "percent": 34,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04522425000322983
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04523225000593811
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.0452397920016665
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04524733399739489
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045255000004544854
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04526258399710059
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04527020899695344
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04527766699902713
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04528504199697636
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.045292916998732835
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04530079200048931
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04530829199939035
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04531579199829139
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.0453235000022687
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04533091699704528
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04533870899467729
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04534629199770279
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04535366699565202
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.04536104199360125
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 25/2500",
+      "seconds": 0.04563529198640026
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 50/2500",
+      "seconds": 0.04584499998600222
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 75/2500",
+      "seconds": 0.04605341699789278
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 100/2500",
+      "seconds": 0.04627341698505916
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 125/2500",
+      "seconds": 0.04648370901122689
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 150/2500",
+      "seconds": 0.04670320899458602
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 175/2500",
+      "seconds": 0.04691141701187007
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 200/2500",
+      "seconds": 0.047122458985541016
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 225/2500",
+      "seconds": 0.04733904200838879
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 250/2500",
+      "seconds": 0.047552250005537644
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 275/2500",
+      "seconds": 0.04776891699293628
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 300/2500",
+      "seconds": 0.047980875009670854
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 325/2500",
+      "seconds": 0.04824691699468531
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 350/2500",
+      "seconds": 0.04851399999461137
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 375/2500",
+      "seconds": 0.04877662498620339
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 400/2500",
+      "seconds": 0.04902983398642391
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 425/2500",
+      "seconds": 0.04928079200908542
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 450/2500",
+      "seconds": 0.0495226249913685
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 475/2500",
+      "seconds": 0.0497619170055259
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 500/2500",
+      "seconds": 0.05000633400049992
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 525/2500",
+      "seconds": 0.05026129199541174
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 550/2500",
+      "seconds": 0.05056179198436439
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 575/2500",
+      "seconds": 0.050823917001252994
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 600/2500",
+      "seconds": 0.05106199998408556
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 625/2500",
+      "seconds": 0.051288041984662414
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 650/2500",
+      "seconds": 0.05152549999183975
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 675/2500",
+      "seconds": 0.051739999995334074
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 700/2500",
+      "seconds": 0.051950749999377877
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 725/2500",
+      "seconds": 0.052165625005727634
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 750/2500",
+      "seconds": 0.05238037501112558
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 775/2500",
+      "seconds": 0.052593083993997425
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 800/2500",
+      "seconds": 0.052804125007241964
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 825/2500",
+      "seconds": 0.053031374991405755
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 850/2500",
+      "seconds": 0.05324912499054335
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 875/2500",
+      "seconds": 0.053469125006813556
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 900/2500",
+      "seconds": 0.05370699998456985
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 925/2500",
+      "seconds": 0.05393845899379812
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 950/2500",
+      "seconds": 0.0541605000034906
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 975/2500",
+      "seconds": 0.05438112499541603
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1000/2500",
+      "seconds": 0.05459708400303498
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1025/2500",
+      "seconds": 0.054811084002722055
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1050/2500",
+      "seconds": 0.05502574998536147
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1075/2500",
+      "seconds": 0.05524079198949039
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1100/2500",
+      "seconds": 0.05545595899457112
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1125/2500",
+      "seconds": 0.05567224998958409
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1150/2500",
+      "seconds": 0.05588695898768492
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1175/2500",
+      "seconds": 0.05610124999657273
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1200/2500",
+      "seconds": 0.056316709000384435
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1225/2500",
+      "seconds": 0.05653454200364649
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1250/2500",
+      "seconds": 0.056751333991996944
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1275/2500",
+      "seconds": 0.056966417003422976
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1300/2500",
+      "seconds": 0.057190416991943493
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1325/2500",
+      "seconds": 0.05740600000717677
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1350/2500",
+      "seconds": 0.057621459010988474
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1375/2500",
+      "seconds": 0.05783700000029057
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1400/2500",
+      "seconds": 0.05805500000133179
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1425/2500",
+      "seconds": 0.058271166984923184
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1450/2500",
+      "seconds": 0.05848887498723343
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1475/2500",
+      "seconds": 0.058704458991996944
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1500/2500",
+      "seconds": 0.05892041701008566
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1525/2500",
+      "seconds": 0.05913595898891799
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1550/2500",
+      "seconds": 0.05936587500036694
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1575/2500",
+      "seconds": 0.05959312498453073
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1600/2500",
+      "seconds": 0.05981337500270456
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1625/2500",
+      "seconds": 0.0600300419901032
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1650/2500",
+      "seconds": 0.06025037501240149
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1675/2500",
+      "seconds": 0.060471042001154274
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1700/2500",
+      "seconds": 0.06073633400956169
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1725/2500",
+      "seconds": 0.060953459003940225
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1750/2500",
+      "seconds": 0.06117949998588301
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1775/2500",
+      "seconds": 0.06140337500255555
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1800/2500",
+      "seconds": 0.061622209002962336
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1825/2500",
+      "seconds": 0.06183845899067819
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1850/2500",
+      "seconds": 0.06206154200481251
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1875/2500",
+      "seconds": 0.06229245898430236
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1900/2500",
+      "seconds": 0.06250425000325777
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1925/2500",
+      "seconds": 0.06271658401237801
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1950/2500",
+      "seconds": 0.06297716699191369
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 1975/2500",
+      "seconds": 0.06325570898479782
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2000/2500",
+      "seconds": 0.06352991700987332
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2025/2500",
+      "seconds": 0.06380729199736379
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2050/2500",
+      "seconds": 0.06409795899526216
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2075/2500",
+      "seconds": 0.06438024999806657
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2100/2500",
+      "seconds": 0.06465987500268966
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2125/2500",
+      "seconds": 0.06494308399851434
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2150/2500",
+      "seconds": 0.06525570899248123
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2175/2500",
+      "seconds": 0.0655527499911841
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2200/2500",
+      "seconds": 0.06582895899191499
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2225/2500",
+      "seconds": 0.06610604200977832
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2250/2500",
+      "seconds": 0.06638795899925753
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2275/2500",
+      "seconds": 0.06666662500356324
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2300/2500",
+      "seconds": 0.0669657500111498
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2325/2500",
+      "seconds": 0.06724629199015908
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2350/2500",
+      "seconds": 0.0675455000018701
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2375/2500",
+      "seconds": 0.06784500001231208
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2400/2500",
+      "seconds": 0.06813704199157655
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2425/2500",
+      "seconds": 0.06843583399313502
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2450/2500",
+      "seconds": 0.06872437498532236
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2475/2500",
+      "seconds": 0.06901050001033582
+    },
+    {
+      "percent": 35,
+      "message": "MLE lognormal: K-S comparison 2500/2500",
+      "seconds": 0.06924754200736061
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.06996337499003857
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.06997179199242964
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.06997862498974428
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.06998504200601019
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.06999141699634492
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.06999766698572785
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07000412500929087
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07001049999962561
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07001687498996034
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.0700232090021018
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07002949999878183
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07003570900997147
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07004191700252704
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07004812499508262
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07005441701039672
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07006062500295229
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.0700668339850381
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07007308400352485
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07007929199608043
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07008529201266356
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.0700913339969702
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07009729198762216
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07010354200610891
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07010974999866448
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07011604198487476
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07012212500558235
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07012820898671634
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07013420900329947
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07014029199490324
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07014629201148637
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07015237500309013
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07015837499056943
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07016458400175907
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07017054199241102
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.0701768749859184
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.0701825839933008
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07018862498807721
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07019462500466034
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07020066698896699
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07020645900047384
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07021262499620207
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07021858400548808
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07022445899201557
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07023041701177135
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07023629199829884
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07024195900885388
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.0702482089982368
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07025404198793694
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.0702597500057891
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: searching xmin...",
+      "seconds": 0.07026554198819213
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 25/2500",
+      "seconds": 0.07053008399088867
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 50/2500",
+      "seconds": 0.07073566698818468
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 75/2500",
+      "seconds": 0.07094116701046005
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 100/2500",
+      "seconds": 0.07116366698755883
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 125/2500",
+      "seconds": 0.07137208399944939
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 150/2500",
+      "seconds": 0.07158054198953323
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 175/2500",
+      "seconds": 0.07182562499656342
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 200/2500",
+      "seconds": 0.07205516699468717
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 225/2500",
+      "seconds": 0.07228487500105985
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 250/2500",
+      "seconds": 0.0724992920004297
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 275/2500",
+      "seconds": 0.07270691700978205
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 300/2500",
+      "seconds": 0.07291495898971334
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 325/2500",
+      "seconds": 0.07312308400287293
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 350/2500",
+      "seconds": 0.07333029201254249
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 375/2500",
+      "seconds": 0.07353845899342559
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 400/2500",
+      "seconds": 0.0737469999876339
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 425/2500",
+      "seconds": 0.0739547919947654
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 450/2500",
+      "seconds": 0.07416620900039561
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 475/2500",
+      "seconds": 0.07437716700951569
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 500/2500",
+      "seconds": 0.07459795899922028
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 525/2500",
+      "seconds": 0.07482191699091345
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 550/2500",
+      "seconds": 0.07503079200978391
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 575/2500",
+      "seconds": 0.07523904199479148
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 600/2500",
+      "seconds": 0.0754475420108065
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 625/2500",
+      "seconds": 0.07565491698915139
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 650/2500",
+      "seconds": 0.07586599999922328
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 675/2500",
+      "seconds": 0.07607908398495056
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 700/2500",
+      "seconds": 0.07629954200820066
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 725/2500",
+      "seconds": 0.07651574999908917
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 750/2500",
+      "seconds": 0.07672358400304802
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 775/2500",
+      "seconds": 0.07693487498909235
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 800/2500",
+      "seconds": 0.07714908401248977
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 825/2500",
+      "seconds": 0.0773580840032082
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 850/2500",
+      "seconds": 0.07756666699424386
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 875/2500",
+      "seconds": 0.0777747500105761
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 900/2500",
+      "seconds": 0.07799024999258108
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 925/2500",
+      "seconds": 0.0782001249899622
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 950/2500",
+      "seconds": 0.07840712499455549
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 975/2500",
+      "seconds": 0.07861483399756253
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1000/2500",
+      "seconds": 0.07882583400350995
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1025/2500",
+      "seconds": 0.07903420898946933
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1050/2500",
+      "seconds": 0.0792420000070706
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1075/2500",
+      "seconds": 0.07945349998772144
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1100/2500",
+      "seconds": 0.07967245898908004
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1125/2500",
+      "seconds": 0.07988062500953674
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1150/2500",
+      "seconds": 0.0800924589857459
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1175/2500",
+      "seconds": 0.08030137501191348
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1200/2500",
+      "seconds": 0.0805102500016801
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1225/2500",
+      "seconds": 0.08075933399959467
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1250/2500",
+      "seconds": 0.08096679201116785
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1275/2500",
+      "seconds": 0.08117345900973305
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1300/2500",
+      "seconds": 0.08137995901051909
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1325/2500",
+      "seconds": 0.08159041698672809
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1350/2500",
+      "seconds": 0.0817917920066975
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1375/2500",
+      "seconds": 0.08199825001065619
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1400/2500",
+      "seconds": 0.08220637499471195
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1425/2500",
+      "seconds": 0.0824299170053564
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1450/2500",
+      "seconds": 0.08265387499704957
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1475/2500",
+      "seconds": 0.08289595899987034
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1500/2500",
+      "seconds": 0.08312179200584069
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1525/2500",
+      "seconds": 0.08336645900271833
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1550/2500",
+      "seconds": 0.08362662501167506
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1575/2500",
+      "seconds": 0.08385958400322124
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1600/2500",
+      "seconds": 0.08410379200358875
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1625/2500",
+      "seconds": 0.08434179201140068
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1650/2500",
+      "seconds": 0.08457758399890736
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1675/2500",
+      "seconds": 0.08481775000109337
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1700/2500",
+      "seconds": 0.08507520900457166
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1725/2500",
+      "seconds": 0.08531791699351743
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1750/2500",
+      "seconds": 0.0855645420087967
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1775/2500",
+      "seconds": 0.0857970840006601
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1800/2500",
+      "seconds": 0.08602858398808166
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1825/2500",
+      "seconds": 0.08626633399398997
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1850/2500",
+      "seconds": 0.08649445898481645
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1875/2500",
+      "seconds": 0.08672266700887121
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1900/2500",
+      "seconds": 0.08695112500572577
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1925/2500",
+      "seconds": 0.08717908398830332
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1950/2500",
+      "seconds": 0.08742112500476651
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 1975/2500",
+      "seconds": 0.08766133399331011
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 2000/2500",
+      "seconds": 0.08789129200158641
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 2025/2500",
+      "seconds": 0.08813266700599343
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 2050/2500",
+      "seconds": 0.0883753749949392
+    },
+    {
+      "percent": 35,
+      "message": "MLE power_law: K-S comparison 2075/2500",
+      "seconds": 0.08860516699496657
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2100/2500",
+      "seconds": 0.08885066700167954
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2125/2500",
+      "seconds": 0.08908112498465925
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2150/2500",
+      "seconds": 0.08931025001220405
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2175/2500",
+      "seconds": 0.08953737499541603
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2200/2500",
+      "seconds": 0.08976470900233835
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2225/2500",
+      "seconds": 0.09000916700460948
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2250/2500",
+      "seconds": 0.09023695898940787
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2275/2500",
+      "seconds": 0.09046483400743455
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2300/2500",
+      "seconds": 0.0907074169954285
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2325/2500",
+      "seconds": 0.09091145900310948
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2350/2500",
+      "seconds": 0.09111516698612832
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2375/2500",
+      "seconds": 0.09131499999784864
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2400/2500",
+      "seconds": 0.09151770899188705
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2425/2500",
+      "seconds": 0.09172037499956787
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2450/2500",
+      "seconds": 0.0919257499917876
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2475/2500",
+      "seconds": 0.09212799998931587
+    },
+    {
+      "percent": 36,
+      "message": "MLE power_law: K-S comparison 2500/2500",
+      "seconds": 0.0923308749916032
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09297075000358745
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09297954200883396
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.0929865000071004
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09299316699616611
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.0929994999896735
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09300562500720844
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09301204199437052
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.0930182499869261
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09302475000731647
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09303070898749866
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09303679200820625
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09304270899156108
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09304870900814421
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09305470899562351
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.0930604999884963
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09306650000507943
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.0930726669903379
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09307858400279656
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09308445898932405
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.0930901670071762
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09309608399053104
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09310187501250766
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.0931077919958625
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09311516699381173
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09312208398478106
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09312791700358503
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09313370898598805
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09313945900066756
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09314520898624323
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09315087500726804
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09316245900117792
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09316841699182987
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09317425001063384
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09317991699208505
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.0931855840026401
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09319112499360926
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.0931966670032125
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.0932021249900572
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09320762500283308
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09321312498650514
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09321891699801199
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09322445900761522
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09323004199541174
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09323558400501497
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09324112499598414
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09324666700558737
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09325220898608677
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09325816700584255
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09326395898824558
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: searching xmin...",
+      "seconds": 0.09326954200514592
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 25/2500",
+      "seconds": 0.09354420899762772
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 50/2500",
+      "seconds": 0.09376754198456183
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 75/2500",
+      "seconds": 0.09398737500305288
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 100/2500",
+      "seconds": 0.09420266700908542
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 125/2500",
+      "seconds": 0.0944186249980703
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 150/2500",
+      "seconds": 0.0946334170002956
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 175/2500",
+      "seconds": 0.09484804200474173
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 200/2500",
+      "seconds": 0.09506516699912027
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 225/2500",
+      "seconds": 0.09528841701103374
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 250/2500",
+      "seconds": 0.09549987499485724
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 275/2500",
+      "seconds": 0.0957119170052465
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 300/2500",
+      "seconds": 0.09592625001096167
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 325/2500",
+      "seconds": 0.09613612500834279
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 350/2500",
+      "seconds": 0.09636083399527706
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 375/2500",
+      "seconds": 0.09657012499519624
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 400/2500",
+      "seconds": 0.09678191700368188
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 425/2500",
+      "seconds": 0.09699250000994653
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 450/2500",
+      "seconds": 0.09720349998679012
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 475/2500",
+      "seconds": 0.09741408401168883
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 500/2500",
+      "seconds": 0.0976247499929741
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 525/2500",
+      "seconds": 0.09783741700812243
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 550/2500",
+      "seconds": 0.09804833400994539
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 575/2500",
+      "seconds": 0.09825833400827833
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 600/2500",
+      "seconds": 0.09847054199781269
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 625/2500",
+      "seconds": 0.09868058399297297
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 650/2500",
+      "seconds": 0.0988991670019459
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 675/2500",
+      "seconds": 0.0991093750053551
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 700/2500",
+      "seconds": 0.0993200840021018
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 725/2500",
+      "seconds": 0.09952779198647477
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 750/2500",
+      "seconds": 0.09973866699147038
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 775/2500",
+      "seconds": 0.0999511250120122
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 800/2500",
+      "seconds": 0.10016108400304802
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 825/2500",
+      "seconds": 0.10037129200645722
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 850/2500",
+      "seconds": 0.10061558400047943
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 875/2500",
+      "seconds": 0.10084774999995716
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 900/2500",
+      "seconds": 0.1010848339938093
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 925/2500",
+      "seconds": 0.10131033399375156
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 950/2500",
+      "seconds": 0.10153650000574999
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 975/2500",
+      "seconds": 0.10175787500338629
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1000/2500",
+      "seconds": 0.10198075001244433
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1025/2500",
+      "seconds": 0.10220745898550376
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1050/2500",
+      "seconds": 0.10242787501192652
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1075/2500",
+      "seconds": 0.10265562499989755
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1100/2500",
+      "seconds": 0.102879167010542
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1125/2500",
+      "seconds": 0.10311575001105666
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1150/2500",
+      "seconds": 0.10334754199720919
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1175/2500",
+      "seconds": 0.10360887501155958
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1200/2500",
+      "seconds": 0.10387045898823999
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1225/2500",
+      "seconds": 0.10413670900743455
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1250/2500",
+      "seconds": 0.10441141700721346
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1275/2500",
+      "seconds": 0.10467466700356454
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1300/2500",
+      "seconds": 0.1049373339919839
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1325/2500",
+      "seconds": 0.10520208399975672
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1350/2500",
+      "seconds": 0.10544833401218057
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1375/2500",
+      "seconds": 0.1056992500089109
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1400/2500",
+      "seconds": 0.10595624998677522
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1425/2500",
+      "seconds": 0.10620262500015087
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1450/2500",
+      "seconds": 0.10644800000591204
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1475/2500",
+      "seconds": 0.10672837498714216
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1500/2500",
+      "seconds": 0.10701241699280217
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1525/2500",
+      "seconds": 0.10727462498471141
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1550/2500",
+      "seconds": 0.10754866700153798
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1575/2500",
+      "seconds": 0.10780166700715199
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1600/2500",
+      "seconds": 0.10805570898810402
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1625/2500",
+      "seconds": 0.10830158399767242
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1650/2500",
+      "seconds": 0.10854816698702052
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1675/2500",
+      "seconds": 0.10879637498874217
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1700/2500",
+      "seconds": 0.10904433400719427
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1725/2500",
+      "seconds": 0.10931020899442956
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1750/2500",
+      "seconds": 0.10957812500419095
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1775/2500",
+      "seconds": 0.10982929199235514
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1800/2500",
+      "seconds": 0.11007683401112445
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1825/2500",
+      "seconds": 0.11033349999343045
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1850/2500",
+      "seconds": 0.11060520898899995
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1875/2500",
+      "seconds": 0.11083141699782573
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1900/2500",
+      "seconds": 0.11105137498816475
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1925/2500",
+      "seconds": 0.1112666669941973
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1950/2500",
+      "seconds": 0.11147974999039434
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 1975/2500",
+      "seconds": 0.1116976669873111
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2000/2500",
+      "seconds": 0.11191312500159256
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2025/2500",
+      "seconds": 0.11213591700652614
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2050/2500",
+      "seconds": 0.11234991700621322
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2075/2500",
+      "seconds": 0.1125680000113789
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2100/2500",
+      "seconds": 0.1127989589876961
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2125/2500",
+      "seconds": 0.11303116698400117
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2150/2500",
+      "seconds": 0.11324879201129079
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2175/2500",
+      "seconds": 0.11347241699695587
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2200/2500",
+      "seconds": 0.11369583400664851
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2225/2500",
+      "seconds": 0.11391433401149698
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2250/2500",
+      "seconds": 0.11413170900777914
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2275/2500",
+      "seconds": 0.11435062499367632
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2300/2500",
+      "seconds": 0.1145682499918621
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2325/2500",
+      "seconds": 0.11478562498814426
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2350/2500",
+      "seconds": 0.11500220900052227
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2375/2500",
+      "seconds": 0.11522437501116656
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2400/2500",
+      "seconds": 0.11544208400300704
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2425/2500",
+      "seconds": 0.11566216699429788
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2450/2500",
+      "seconds": 0.11587941698962823
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2475/2500",
+      "seconds": 0.11610045901034027
+    },
+    {
+      "percent": 36,
+      "message": "MLE exponential: K-S comparison 2500/2500",
+      "seconds": 0.1163292090059258
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11738508398411795
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11739550001220778
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11740454199025407
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11741499998606741
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11743620899505913
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11744574998738244
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11745491699548438
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11746395900263451
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11747291698702611
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11748154199449345
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11749020899878815
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.1174987500126008
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11750716698588803
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11751554199145176
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11752520900336094
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.1175352499994915
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11754454200854525
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11755312499008141
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.1175616669934243
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11757658398710191
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11758566700154915
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11759541698847897
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11760595900705084
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11761433401261456
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11762299999827519
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11763137500383891
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11763983400305733
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11765004199696705
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11766516699572094
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11767741700168699
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11768579200725071
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11769395900773816
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11770245898514986
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11771070898976177
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11771904199849814
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11772708399803378
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11773520900169387
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11774325001169927
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11775158400996588
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11775970898452215
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11776820899103768
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11777641699882224
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11778454200248234
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11779250000836328
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11780062501202337
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11780862498562783
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11781662498833612
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.1178246249910444
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11783262499375269
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: searching xmin...",
+      "seconds": 0.11784062499646097
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 25/2500",
+      "seconds": 0.11817729199538007
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 50/2500",
+      "seconds": 0.11842149999574758
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 75/2500",
+      "seconds": 0.11867541700485162
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 100/2500",
+      "seconds": 0.11891316701075993
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 125/2500",
+      "seconds": 0.11915679200319573
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 150/2500",
+      "seconds": 0.11939629199332558
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 175/2500",
+      "seconds": 0.11964570899726823
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 200/2500",
+      "seconds": 0.11988637500326149
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 225/2500",
+      "seconds": 0.12012295899330638
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 250/2500",
+      "seconds": 0.12043983399053104
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 275/2500",
+      "seconds": 0.12069429201073945
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 300/2500",
+      "seconds": 0.12094616700778715
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 325/2500",
+      "seconds": 0.12119070900371298
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 350/2500",
+      "seconds": 0.12144550000084564
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 375/2500",
+      "seconds": 0.12170016698655672
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 400/2500",
+      "seconds": 0.12194766700849868
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 425/2500",
+      "seconds": 0.12220645899651572
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 450/2500",
+      "seconds": 0.12244649999774992
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 475/2500",
+      "seconds": 0.12267849998897873
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 500/2500",
+      "seconds": 0.12289441699977033
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 525/2500",
+      "seconds": 0.12313166700187139
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 550/2500",
+      "seconds": 0.12337912499788217
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 575/2500",
+      "seconds": 0.1236018750059884
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 600/2500",
+      "seconds": 0.1238161250075791
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 625/2500",
+      "seconds": 0.12403241699212231
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 650/2500",
+      "seconds": 0.12424733399529941
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 675/2500",
+      "seconds": 0.12447095901006833
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 700/2500",
+      "seconds": 0.12469366699224338
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 725/2500",
+      "seconds": 0.12490991700906307
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 750/2500",
+      "seconds": 0.1251270420034416
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 775/2500",
+      "seconds": 0.12534450000384822
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 800/2500",
+      "seconds": 0.12558045898913406
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 825/2500",
+      "seconds": 0.12579954200191423
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 850/2500",
+      "seconds": 0.12602641701232642
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 875/2500",
+      "seconds": 0.12625583400949836
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 900/2500",
+      "seconds": 0.12647508399095386
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 925/2500",
+      "seconds": 0.12671337500796653
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 950/2500",
+      "seconds": 0.12694066698895767
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 975/2500",
+      "seconds": 0.12717995900311507
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1000/2500",
+      "seconds": 0.12740645901067182
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1025/2500",
+      "seconds": 0.12762937499792315
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1050/2500",
+      "seconds": 0.1278481670015026
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1075/2500",
+      "seconds": 0.12806824999279343
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1100/2500",
+      "seconds": 0.1282868749985937
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1125/2500",
+      "seconds": 0.12850324998726137
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1150/2500",
+      "seconds": 0.1287220419908408
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1175/2500",
+      "seconds": 0.1289402499969583
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1200/2500",
+      "seconds": 0.12916695899912156
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1225/2500",
+      "seconds": 0.12938737499644049
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1250/2500",
+      "seconds": 0.12961829200503416
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1275/2500",
+      "seconds": 0.1298384999972768
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1300/2500",
+      "seconds": 0.1300736250123009
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1325/2500",
+      "seconds": 0.1302913750114385
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1350/2500",
+      "seconds": 0.13051741701201536
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1375/2500",
+      "seconds": 0.13073933401028626
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1400/2500",
+      "seconds": 0.13096662500174716
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1425/2500",
+      "seconds": 0.13119266700232401
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1450/2500",
+      "seconds": 0.131421500002034
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1475/2500",
+      "seconds": 0.1317092500103172
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1500/2500",
+      "seconds": 0.13195025001186877
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1525/2500",
+      "seconds": 0.13221154198981822
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1550/2500",
+      "seconds": 0.13244420901173726
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1575/2500",
+      "seconds": 0.13267316701239906
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1600/2500",
+      "seconds": 0.13289712500409223
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1625/2500",
+      "seconds": 0.13312612500158139
+    },
+    {
+      "percent": 36,
+      "message": "MLE lognormal: K-S comparison 1650/2500",
+      "seconds": 0.13334504200611264
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1675/2500",
+      "seconds": 0.13357587499194779
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1700/2500",
+      "seconds": 0.133808709011646
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1725/2500",
+      "seconds": 0.13403024998842739
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1750/2500",
+      "seconds": 0.13425379199907184
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1775/2500",
+      "seconds": 0.13451308399089612
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1800/2500",
+      "seconds": 0.1347657089936547
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1825/2500",
+      "seconds": 0.13500591699266806
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1850/2500",
+      "seconds": 0.13522641701274551
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1875/2500",
+      "seconds": 0.13545029200031422
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1900/2500",
+      "seconds": 0.13566979201277718
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1925/2500",
+      "seconds": 0.13589066700660624
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1950/2500",
+      "seconds": 0.1361123340029735
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 1975/2500",
+      "seconds": 0.136332374997437
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2000/2500",
+      "seconds": 0.13655258400831372
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2025/2500",
+      "seconds": 0.13677437498699874
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2050/2500",
+      "seconds": 0.1370079590124078
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2075/2500",
+      "seconds": 0.13723754198872484
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2100/2500",
+      "seconds": 0.1374610000057146
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2125/2500",
+      "seconds": 0.13768220899510197
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2150/2500",
+      "seconds": 0.13790279199020006
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2175/2500",
+      "seconds": 0.13812279200647026
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2200/2500",
+      "seconds": 0.1383546249999199
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2225/2500",
+      "seconds": 0.1385906669893302
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2250/2500",
+      "seconds": 0.1388162089860998
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2275/2500",
+      "seconds": 0.13909854198573157
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2300/2500",
+      "seconds": 0.13936941701103933
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2325/2500",
+      "seconds": 0.13964870900963433
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2350/2500",
+      "seconds": 0.13989645900437608
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2375/2500",
+      "seconds": 0.14014841700554825
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2400/2500",
+      "seconds": 0.14040158400894143
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2425/2500",
+      "seconds": 0.14065466698957607
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2450/2500",
+      "seconds": 0.14091416698647663
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2475/2500",
+      "seconds": 0.14116162501159124
+    },
+    {
+      "percent": 37,
+      "message": "MLE lognormal: K-S comparison 2500/2500",
+      "seconds": 0.1414058750087861
+    },
+    {
+      "percent": 33,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14591791699058376
+    },
+    {
+      "percent": 33,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14593279198743403
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.145943499985151
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14595258398912847
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14596233400516212
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1459710419876501
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1459797499992419
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1459880000038538
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1459966670081485
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14600512498873286
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1460136249952484
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14602245899732225
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14603104200796224
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14603966698632576
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14604858399252407
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14605720899999142
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14606616698438302
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.146074749995023
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14608354200026952
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14609233400551602
+    },
+    {
+      "percent": 34,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14610141699085943
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14611245898413472
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14612225000746548
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1461315419874154
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14614108399837278
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14615587500156835
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1461658749904018
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14617654200992547
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14618562499526888
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1461963340116199
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14620816698879935
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1462198749941308
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1462338340061251
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14624579198425636
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14625629200600088
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14636166699347086
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1463719590101391
+    },
+    {
+      "percent": 35,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14638175000436604
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14639149999129586
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14640087500447407
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1464108339860104
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1464205420052167
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14643095899373293
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1464407919847872
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14645070899860002
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14646233399980702
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14647233398864046
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1464819590037223
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14649325000937097
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1465029999963008
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1465124590031337
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1465242090052925
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14653441699920222
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14654458398581482
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1465545840037521
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14656470899353735
+    },
+    {
+      "percent": 36,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14657524999347515
+    },
+    {
+      "percent": 37,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1465862090117298
+    },
+    {
+      "percent": 37,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.14659824999398552
+    },
+    {
+      "percent": 37,
+      "message": "Accumulating variogram pairs...",
+      "seconds": 0.1466085840074811
+    },
+    {
+      "percent": 34,
+      "message": "Rasterizing block boundaries at fixed input resolution...",
+      "seconds": 0.14791237498866394
+    },
+    {
+      "percent": 35,
+      "message": "Binarizing and labeling white 8-connected components...",
+      "seconds": 0.1583179589943029
+    },
+    {
+      "percent": 37,
+      "message": "Block statistics: 8 enclosed components.",
+      "seconds": 0.15897099999710917
+    },
+    {
+      "percent": 37,
+      "message": "Running Log-log lengths...",
+      "seconds": 0.16192466698703356
+    },
+    {
+      "percent": 40,
+      "message": "Running MLE analysis...",
+      "seconds": 0.16192566699464805
+    },
+    {
+      "percent": 43,
+      "message": "Running Cross-plot lengths v angles...",
+      "seconds": 0.1619261669984553
+    },
+    {
+      "percent": 47,
+      "message": "Running Block size graphs...",
+      "seconds": 0.16192654200131074
+    },
+    {
+      "percent": 50,
+      "message": "Running Variogram of segment lengths...",
+      "seconds": 0.16192691700416617
+    },
+    {
+      "percent": 53,
+      "message": "Running Histogram of angles...",
+      "seconds": 0.16192725001019426
+    },
+    {
+      "percent": 54,
+      "message": "Projecting crack tensor of order 2...",
+      "seconds": 0.16232062500785105
+    },
+    {
+      "percent": 56,
+      "message": "Projecting crack tensor of order 4...",
+      "seconds": 0.16246337498887442
+    },
+    {
+      "percent": 57,
+      "message": "Projecting crack tensor of order 8...",
+      "seconds": 0.16266533400630578
+    },
+    {
+      "percent": 57,
+      "message": "Running Rose diagram (equal area)...",
+      "seconds": 0.16290979200857691
+    },
+    {
+      "percent": 60,
+      "message": "Running I-Y-X connectivity...",
+      "seconds": 0.16291045901016332
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16325149999465793
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16326362499967217
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16326962498715147
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16327495899167843
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16332458399119787
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1633299170061946
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1633728340093512
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16337741698953323
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16338158398866653
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16338554199319333
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16343383400817402
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16348995899898
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1635502919962164
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16357624999363907
+    },
+    {
+      "percent": 60,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16358070899150334
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16361570899607614
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1636467089992948
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16365191698423587
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1636728339944966
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16367829201044515
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16369616700103506
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1637000420014374
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16370362500310875
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1637072919984348
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16371100000105798
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16372929199133068
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16377020900836214
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16382004201295786
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16384062499855645
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1638610840018373
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16389374999562278
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1639513749978505
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16395524999825284
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16395895899040624
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1639784589933697
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16399645898491144
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1640285000030417
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1640448750113137
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16404920900822617
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16406679200008512
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16408499999670312
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16414874998736195
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16417308399104513
+    },
+    {
+      "percent": 61,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16419570898870006
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16419966699322686
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1642032089876011
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16420666698832065
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16422783400048502
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16424933398957364
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16428533400176093
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16431625001132488
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16433404199779034
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1643382920010481
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.1643615420034621
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16438050000579096
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16439879199606366
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16441658401163295
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16443445900222287
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16443858400452882
+    },
+    {
+      "percent": 62,
+      "message": "Connectivity: trace intersections...",
+      "seconds": 0.16444316698471084
+    },
+    {
+      "percent": 63,
+      "message": "Connectivity completed.",
+      "seconds": 0.16492579199257307
+    },
+    {
+      "percent": 63,
+      "message": "Running Crack tensor plot...",
+      "seconds": 0.16492712500621565
+    },
+    {
+      "percent": 67,
+      "message": "Running Permeability plot (polar)...",
+      "seconds": 0.16492779200780205
+    },
+    {
+      "percent": 67,
+      "message": "Calculating parallel-plate permeability...",
+      "seconds": 0.16502320900326595
+    },
+    {
+      "percent": 70,
+      "message": "Permeability completed.",
+      "seconds": 0.1651283339888323
+    },
+    {
+      "percent": 70,
+      "message": "Running Run wavelet analysis...",
+      "seconds": 0.1651301250094548
+    },
+    {
+      "percent": 70,
+      "message": "Rasterizing traces at 72 dpi...",
+      "seconds": 0.16539924999233335
+    },
+    {
+      "percent": 72,
+      "message": "Wavelet a=32, theta=0, L=2...",
+      "seconds": 1.1567729169910308
+    },
+    {
+      "percent": 73,
+      "message": "Wavelet a=32, theta=90, L=2...",
+      "seconds": 1.9956038339878432
+    },
+    {
+      "percent": 73,
+      "message": "Running ALONG: Trace length...",
+      "seconds": 2.1116402090119664
+    },
+    {
+      "percent": 73,
+      "message": "Intersecting profile line...",
+      "seconds": 2.111916249996284
+    },
+    {
+      "percent": 73,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1119496669853106
+    },
+    {
+      "percent": 73,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1119712090003304
+    },
+    {
+      "percent": 73,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1119912499852944
+    },
+    {
+      "percent": 73,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112007084011566
+    },
+    {
+      "percent": 73,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1120256670110393
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.11204337500385
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1120596250111703
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1120787500112783
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1120986669848207
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1121172920102254
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112133291986538
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1121487919881474
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1121639169869013
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112181625008816
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1122015840082895
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1122199170058593
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112236084009055
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.11225733399624
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112280917004682
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1122969170100987
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1123124590085354
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1123277920123655
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1123428749851882
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1123577920079697
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1123735420114826
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112395292002475
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112412874994334
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1124279589857906
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1124430839845445
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1124584169883747
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112473499990301
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112489374994766
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112504374992568
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1125206249998882
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112535541993566
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112553459010087
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112568624987034
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1125872090051416
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1126025000121444
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1126176670077257
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1126329590042587
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1126489999878686
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1126641249866225
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.11268179200124
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1126992919889744
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112717125011841
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112732584006153
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112753541994607
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1127697500051
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112785375007661
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1128009170060977
+    },
+    {
+      "percent": 74,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1128166250127833
+    },
+    {
+      "percent": 75,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1129196670081
+    },
+    {
+      "percent": 75,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112954834010452
+    },
+    {
+      "percent": 75,
+      "message": "Intersecting profile line...",
+      "seconds": 2.112975458992878
+    },
+    {
+      "percent": 75,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1129927090078127
+    },
+    {
+      "percent": 75,
+      "message": "Intersecting profile line...",
+      "seconds": 2.11300970899174
+    },
+    {
+      "percent": 75,
+      "message": "Intersecting profile line...",
+      "seconds": 2.1130255839962047
+    },
+    {
+      "percent": 75,
+      "message": "Intersecting profile line...",
+      "seconds": 2.113046749989735
+    },
+    {
+      "percent": 75,
+      "message": "Sampling profile circles...",
+      "seconds": 2.113794875011081
+    },
+    {
+      "percent": 76,
+      "message": "Sampling profile circles...",
+      "seconds": 2.1138952919864096
+    },
+    {
+      "percent": 76,
+      "message": "Sampling profile circles...",
+      "seconds": 2.1140105839876924
+    },
+    {
+      "percent": 77,
+      "message": "Graphs completed.",
+      "seconds": 2.1141602089919616
+    },
+    {
+      "percent": 77,
+      "message": "Running ALONG: Segment length...",
+      "seconds": 2.114168416999746
+    },
+    {
+      "percent": 80,
+      "message": "Running ALONG: Segment angle...",
+      "seconds": 2.114169042004505
+    },
+    {
+      "percent": 83,
+      "message": "Running ALONG: Estimated intensity, P21...",
+      "seconds": 2.1141696670092642
+    },
+    {
+      "percent": 87,
+      "message": "Running ALONG: Estimated density, P20...",
+      "seconds": 2.1141701669839676
+    },
+    {
+      "percent": 90,
+      "message": "Running FROM: Trace length...",
+      "seconds": 2.1141707089846022
+    },
+    {
+      "percent": 93,
+      "message": "Running FROM: Segment length...",
+      "seconds": 2.114171124994755
+    },
+    {
+      "percent": 97,
+      "message": "Running FROM: Segment angle...",
+      "seconds": 2.1141715419944376
+    },
+    {
+      "percent": 100,
+      "message": "Calculations completed.",
+      "seconds": 2.1141721669991966
+    }
+  ],
+  "seconds": 19.247261959011666,
+  "peak_rss_bytes": 1961213952,
+  "rss_unit": "bytes on this macOS host; rerun separately on other OS",
+  "dataset": {
+    "traces": 51,
+    "segments": 60
+  },
+  "scope": "All production compute/render routes with real resolution/exporters; synthetic audit input. Stochastic MLE runs are functionality evidence, not shared-RNG parity."
+}

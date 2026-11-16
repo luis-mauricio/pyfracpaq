@@ -1,0 +1,44 @@
+[
+  {
+    "trace": 0,
+    "nodes_exact": true,
+    "colour_exact": true,
+    "lengths_match": true,
+    "angles_match": true
+  },
+  {
+    "trace": 1,
+    "nodes_exact": true,
+    "colour_exact": true,
+    "lengths_match": true,
+    "angles_match": true
+  },
+  {
+    "trace": 2,
+    "nodes_exact": true,
+    "colour_exact": true,
+    "lengths_match": true,
+    "angles_match": true
+  },
+  {
+    "trace": 3,
+    "nodes_exact": true,
+    "colour_exact": true,
+    "lengths_match": true,
+    "angles_match": true
+  },
+  {
+    "trace": 4,
+    "nodes_exact": true,
+    "colour_exact": true,
+    "lengths_match": true,
+    "angles_match": true
+  },
+  {
+    "trace": 5,
+    "nodes_exact": true,
+    "colour_exact": true,
+    "lengths_match": true,
+    "angles_match": true
+  }
+]

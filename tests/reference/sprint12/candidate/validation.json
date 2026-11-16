@@ -1,0 +1,157 @@
+{
+  "role": "Approved Q-14 production outputs through the default registry; historical candidate paths retained.",
+  "approval": {
+    "author": "user",
+    "date": "2026-11-14",
+    "statement": "Aprovo ambos Q-14 e Extensão Q-20.",
+    "decisions": [
+      "Q-14",
+      "Q-20 Graphs P20 normalization extension"
+    ],
+    "scope": "Enclosed white 8-connected blocks, fixed unscaled raster and calibrated areas/centres; Graphs P20=m/(2*pi*r^2), retaining the previously approved finite counts."
+  },
+  "production_registry": [
+    "LEN-13",
+    "LEN-15"
+  ],
+  "generator": "scripts/validate_sprint1213.py",
+  "figures": [
+    {
+      "tag": "unscaled",
+      "path": "FracPaQ2D_blocksizecentroidmap_unscaled.png",
+      "sha256": "c292efd9c7125ef4c400d256f45c560567b72e4b2d31818ffd7ebe205dab4f86",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_blocksizecentroidmap_unscaled.png",
+      "qa_sha256": "9ffce3c8c2f48767ca68d79ac7929fb251c93a4601a67a200b81bd27d8395c12"
+    },
+    {
+      "tag": "unscaled",
+      "path": "FracPaQ2D_blocksizeloglog_unscaled.png",
+      "sha256": "62e781e34fa15d94d87f5a86b0476a7188fe40c531ae25e083a44292ab53940b",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_blocksizeloglog_unscaled.png",
+      "qa_sha256": "7c0570f20f6f33907d5d6041a2ca0c8a6d96b4c73dd413a41c36c6deeb708c6a"
+    },
+    {
+      "tag": "unscaled",
+      "path": "FracPaQ2D_blocksizehisto_unscaled.png",
+      "sha256": "2777bbd6f9baa5c9dc6b329c9959debecefcf3f50acfdd8f12f506fb05664ab0",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_blocksizehisto_unscaled.png",
+      "qa_sha256": "d7dd063089208fb0c662554324a53178b401b9a4d4bf862e5f6d460c9a41ce3a"
+    },
+    {
+      "tag": "unscaled",
+      "path": "FracPaQ2D_segmentlength_variogram_unscaled.png",
+      "sha256": "3a2416351a8e26fe66a133c928c102d505bb69ce0ef135a0ee938c508005e7bd",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlength_variogram_unscaled.png",
+      "qa_sha256": "c04a82ea774d2c8a442abfb92184a7cb436078f8961310f96bed7fd3a7484770"
+    },
+    {
+      "tag": "scaled10",
+      "path": "FracPaQ2D_blocksizecentroidmap_scaled10.png",
+      "sha256": "88a5f37b8078028c44d5be287f3ec5e726962e113021a552e7c8435fc922dffb",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_blocksizecentroidmap_scaled10.png",
+      "qa_sha256": "0dba4103a70a727dd7b80e91c2f34cab2671a67f2d75966a6bb556f5c237586f"
+    },
+    {
+      "tag": "scaled10",
+      "path": "FracPaQ2D_blocksizeloglog_scaled10.png",
+      "sha256": "57cd33b1149c5b78f52081e9b3d17939d962e37c78c046b0207df5b1352495ce",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_blocksizeloglog_scaled10.png",
+      "qa_sha256": "e4ba1f2a31bf31f22c4657b7ec925757fc9175dd610d3aadaa473ebbc721e3ab"
+    },
+    {
+      "tag": "scaled10",
+      "path": "FracPaQ2D_blocksizehisto_scaled10.png",
+      "sha256": "e8693caa774d7e9b0bcc7bb826a2ea6e37041ebe7b8613a4d9feaf505b6e99ff",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_blocksizehisto_scaled10.png",
+      "qa_sha256": "cfda03cc7c5887bf4ba222130844dcb689c5dd3e5164e2c5d98126d0137cc022"
+    },
+    {
+      "tag": "scaled10",
+      "path": "FracPaQ2D_segmentlength_variogram_scaled10.png",
+      "sha256": "0d6f6c7bc9607efd7e754fecc93a592c55b4df0214f8895c89570269d86028ea",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlength_variogram_scaled10.png",
+      "qa_sha256": "72403c4846d0dc908ce7ae7274c8dec6430960fea591c9720b097bc6d38443db"
+    },
+    {
+      "tag": "native_style",
+      "path": "FracPaQ2D_segmentlength_variogram_native_style.png",
+      "sha256": "8b4a1ac28aff5a001c2b9e657ac280ab87a923bf81dc4e83880e8746e08f5fd4",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlength_variogram_native_style.png",
+      "qa_sha256": "efd3956ea15adaf3627fac27b60a403d0deb962fcc1f52911c547c529d081599"
+    }
+  ],
+  "area_definition": "White 8-connected enclosed raster components, excluding line ink; not vector polygon area.",
+  "export": "Three PNG blocks + one variogram, three Lengths TXT, fixed FracPaQ2D_blocksize.bmp."
+}

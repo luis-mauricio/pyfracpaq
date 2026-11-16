@@ -1,0 +1,72 @@
+{
+  "approval": {
+    "id": "Q-12",
+    "author": "user",
+    "date": "2026-11-14",
+    "statement": "Aprovo a Q-12.",
+    "scope": "Deterministic 1944x1944/72dpi raster with source margins/thicknesses; ny-by-nx rectangular arrays; integer angular divisor of180; stable first L/theta within rtol1e-12/atol1e-14 while retaining actual maximum WC."
+  },
+  "role": "Actual full production raster/FFT/default-registry runs, not reduced UI fixtures.",
+  "cases": [
+    {
+      "kernel": "morlet",
+      "shape_yx": [
+        1944,
+        1944
+      ],
+      "scale": 32,
+      "L_input": [
+        2
+      ],
+      "angular_step": 90,
+      "seconds": 3.3211154169985093,
+      "maximum_wc": 0.1779621491889064,
+      "selected": 83637,
+      "figure": {
+        "path": "FracPaQ2Dwavelet_a32_morlet.png",
+        "sha256": "de329c586f041a0a4029447a3ae194abf1f1c695aa673cbf7e773772aa295457",
+        "size": [
+          4724,
+          4724
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "qa": "qa-FracPaQ2Dwavelet_a32_morlet.png",
+        "qa_sha256": "de80f2ca51187d79a3cf00b09a60f1a9714c40556cf88c3e4b5f3ec6f5dba038"
+      }
+    },
+    {
+      "kernel": "mexican",
+      "shape_yx": [
+        1944,
+        1944
+      ],
+      "scale": 32,
+      "L_input": [
+        2
+      ],
+      "angular_step": 90,
+      "seconds": 2.3610872919962276,
+      "maximum_wc": 0.07170302218409462,
+      "selected": 83914,
+      "figure": {
+        "path": "FracPaQ2Dwavelet_a32_mexican.png",
+        "sha256": "8322c6769f524f2ac90bff601c1919dfdf76748b65fbff3354acecb3de41b0c2",
+        "size": [
+          4724,
+          4724
+        ],
+        "dpi": [
+          599.9988,
+          599.9988
+        ],
+        "qa": "qa-FracPaQ2Dwavelet_a32_mexican.png",
+        "qa_sha256": "5d91978edd4fb8df020b4d91dafbcbfa94b5500734f009156e82246f24d193ff"
+      }
+    }
+  ],
+  "process_peak_rss_native_units": 1805369344,
+  "rss_note": "macOS ru_maxrss reports bytes; process peak includes both runs, rendering and compression."
+}

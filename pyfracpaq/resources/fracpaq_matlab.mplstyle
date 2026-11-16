@@ -1,0 +1,52 @@
+# Explicit MATLAB-inspired figure contract; calibrated against source/manual.
+font.family: sans-serif
+font.sans-serif: Arial, DejaVu Sans
+font.size: 10
+text.hinting: none
+figure.figsize: 7.874015748, 7.874015748
+figure.facecolor: white
+figure.autolayout: False
+figure.constrained_layout.use: False
+axes.facecolor: white
+axes.edgecolor: 0.15
+axes.labelcolor: 0.15
+axes.linewidth: 0.5
+axes.labelsize: 11
+axes.labelpad: 3
+axes.titlesize: 11
+axes.titleweight: bold
+axes.unicode_minus: False
+axes.grid: False
+xtick.direction: in
+ytick.direction: in
+xtick.top: True
+ytick.right: True
+xtick.labelsize: 10
+ytick.labelsize: 10
+xtick.major.pad: 5.75
+ytick.major.pad: 3.875
+xtick.color: 0.15
+ytick.color: 0.15
+grid.color: 0.15
+grid.linewidth: 0.5
+grid.alpha: 0.14901960784313725
+lines.dotted_pattern: 1, 1
+lines.dashed_pattern: 4, 4
+lines.dashdot_pattern: 4, 1, 2, 1
+lines.linewidth: 0.5
+lines.markersize: 6
+lines.markeredgewidth: 0.5
+mathtext.fontset: custom
+mathtext.default: regular
+mathtext.rm: Arial
+mathtext.it: Arial:italic
+mathtext.bf: Arial:bold
+mathtext.sf: Arial
+mathtext.cal: Arial
+legend.fontsize: 9
+legend.frameon: True
+legend.fancybox: False
+legend.edgecolor: black
+savefig.facecolor: white
+savefig.edgecolor: white
+savefig.transparent: False

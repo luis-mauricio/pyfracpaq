@@ -1,0 +1,56 @@
+[
+  {
+    "input": "fracpaq-matlab/IYXtest1_converted.txt",
+    "sha256": "1f93eb29a91638709db293f168d15f839ce02a149603b327cec0f0ada433efff",
+    "traces": {
+      "count": 13,
+      "minimum": 5.0,
+      "maximum": 69.0,
+      "mean": 28.076923076923077
+    },
+    "segments": {
+      "count": 14,
+      "minimum": 5.0,
+      "maximum": 69.0,
+      "mean": 26.071428571428573
+    },
+    "domain_diagonal": 119.5198728245642,
+    "scope": "Python computation and three TXT exports; no native MATLAB comparison."
+  },
+  {
+    "input": "fracpaq-matlab/IYXtest2_converted.txt",
+    "sha256": "c25a8f966ca86aa10868d677b6a079737c3c102aab8485368700098e84d57382",
+    "traces": {
+      "count": 13,
+      "minimum": 5.0,
+      "maximum": 69.00004539360826,
+      "mean": 28.076926893525744
+    },
+    "segments": {
+      "count": 14,
+      "minimum": 5.0,
+      "maximum": 69.00004539360826,
+      "mean": 26.071432115416762
+    },
+    "domain_diagonal": 119.5198728245642,
+    "scope": "Python computation and three TXT exports; no native MATLAB comparison."
+  },
+  {
+    "input": "fracpaq-matlab/Souter_Blue.txt",
+    "sha256": "33c60eac1bf2c9b11cb399ce6026af9ec9d4f6521156da9fdd2cae2baf6e376a",
+    "traces": {
+      "count": 2561,
+      "minimum": 4.656493793618107,
+      "maximum": 1238.8368070484344,
+      "mean": 107.92817813885677
+    },
+    "segments": {
+      "count": 4075,
+      "minimum": 3.9621528302176134,
+      "maximum": 520.8600271961078,
+      "mean": 67.82921821192937
+    },
+    "domain_diagonal": 8409.265811930143,
+    "scope": "Python computation and three TXT exports; no native MATLAB comparison."
+  }
+]

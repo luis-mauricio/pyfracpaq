@@ -1,0 +1,10 @@
+{
+  "author": "user",
+  "date": "2026-11-14",
+  "statement": "Aprovo ambos Q-14 e Extensão Q-20.",
+  "decisions": [
+    "Q-14",
+    "Q-20 Graphs P20 normalization extension"
+  ],
+  "scope": "Enclosed white 8-connected blocks, fixed unscaled raster and calibrated areas/centres; Graphs P20=m/(2*pi*r^2), retaining the previously approved finite counts."
+}

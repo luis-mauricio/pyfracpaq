@@ -1,0 +1,833 @@
+[
+  {
+    "name": "shared-native-pixels/morlet/FracPaQ2Dwavelet_a16_context.png",
+    "native_sha256": "c7f17d89bc97a338c408599d0ffbf0f9b103d2e80683d1ed02bc17e158ca5729",
+    "candidate_sha256": "c464cca9a3ad5ee60b51837c3fb391f0bb22578762fe7cc6e71e494d1d5910a8",
+    "native": "tests/reference/sprint16/final/native-contexts/morlet/FracPaQ2Dwavelet_a16_context.png",
+    "candidate": "tests/reference/sprint16/final/shared-native-pixels/morlet/FracPaQ2Dwavelet_a16_context.png",
+    "definitions": [
+      {
+        "name": "binary_panel",
+        "xyxy": [
+          0,
+          0,
+          1870,
+          2362
+        ],
+        "exception": null
+      },
+      {
+        "name": "binary_colourbar",
+        "xyxy": [
+          1870,
+          0,
+          2362,
+          2362
+        ],
+        "exception": "user_colourbar_geometry"
+      },
+      {
+        "name": "coefficient_panel",
+        "xyxy": [
+          2362,
+          0,
+          3945,
+          2362
+        ],
+        "exception": null
+      },
+      {
+        "name": "coefficient_colourbar",
+        "xyxy": [
+          3945,
+          0,
+          4724,
+          2362
+        ],
+        "exception": "user_colourbar_geometry"
+      },
+      {
+        "name": "rose_panel",
+        "xyxy": [
+          0,
+          2362,
+          2362,
+          4724
+        ],
+        "exception": null
+      },
+      {
+        "name": "histogram_panel",
+        "xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "exception": null
+      }
+    ],
+    "regions": [
+      {
+        "name": "binary_panel",
+        "xyxy": [
+          0,
+          0,
+          1870,
+          2362
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9884487287858997,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "binary_colourbar",
+        "xyxy": [
+          1870,
+          0,
+          2362,
+          2362
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8496837063989943,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "coefficient_panel",
+        "xyxy": [
+          2362,
+          0,
+          3945,
+          2362
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9864889407333751,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "coefficient_colourbar",
+        "xyxy": [
+          3945,
+          0,
+          4724,
+          2362
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.9072971776318305,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "rose_panel",
+        "xyxy": [
+          0,
+          2362,
+          2362,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9873247099980721,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "histogram_panel",
+        "xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9806042462200161,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true
+  },
+  {
+    "name": "shared-native-pixels/morlet/FracPaQ2Dwavelet_a32_context.png",
+    "native_sha256": "13929d8fe4c661038a4b9a6b74f09adda6977526df73001da09962be4f59d470",
+    "candidate_sha256": "b951fc3d39874251cd4b43e48cf2d9be45ea7a1904fcdbeaada3477a92139e4b",
+    "native": "tests/reference/sprint16/final/native-contexts/morlet/FracPaQ2Dwavelet_a32_context.png",
+    "candidate": "tests/reference/sprint16/final/shared-native-pixels/morlet/FracPaQ2Dwavelet_a32_context.png",
+    "definitions": [
+      {
+        "name": "binary_panel",
+        "xyxy": [
+          0,
+          0,
+          1870,
+          2362
+        ],
+        "exception": null
+      },
+      {
+        "name": "binary_colourbar",
+        "xyxy": [
+          1870,
+          0,
+          2362,
+          2362
+        ],
+        "exception": "user_colourbar_geometry"
+      },
+      {
+        "name": "coefficient_panel",
+        "xyxy": [
+          2362,
+          0,
+          3945,
+          2362
+        ],
+        "exception": null
+      },
+      {
+        "name": "coefficient_colourbar",
+        "xyxy": [
+          3945,
+          0,
+          4724,
+          2362
+        ],
+        "exception": "user_colourbar_geometry"
+      },
+      {
+        "name": "rose_panel",
+        "xyxy": [
+          0,
+          2362,
+          2362,
+          4724
+        ],
+        "exception": null
+      },
+      {
+        "name": "histogram_panel",
+        "xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "exception": null
+      }
+    ],
+    "regions": [
+      {
+        "name": "binary_panel",
+        "xyxy": [
+          0,
+          0,
+          1870,
+          2362
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9884487287858997,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "binary_colourbar",
+        "xyxy": [
+          1870,
+          0,
+          2362,
+          2362
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8496837063989943,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "coefficient_panel",
+        "xyxy": [
+          2362,
+          0,
+          3945,
+          2362
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9872838368471712,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "coefficient_colourbar",
+        "xyxy": [
+          3945,
+          0,
+          4724,
+          2362
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.9072971776318305,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "rose_panel",
+        "xyxy": [
+          0,
+          2362,
+          2362,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9872826215201188,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "histogram_panel",
+        "xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9816504077522755,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true
+  },
+  {
+    "name": "shared-native-pixels/mexican/FracPaQ2Dwavelet_a16_context.png",
+    "native_sha256": "dfe032c6098ccf57977fd872630122dace4c1d553856ee5e932b929e4b9f5463",
+    "candidate_sha256": "838b91cebd57f696f46df780cd782402a14e5a7196efccdbe4852835ed17d592",
+    "native": "tests/reference/sprint16/final/native-contexts/mexican/FracPaQ2Dwavelet_a16_context.png",
+    "candidate": "tests/reference/sprint16/final/shared-native-pixels/mexican/FracPaQ2Dwavelet_a16_context.png",
+    "definitions": [
+      {
+        "name": "binary_panel",
+        "xyxy": [
+          0,
+          0,
+          1870,
+          2362
+        ],
+        "exception": null
+      },
+      {
+        "name": "binary_colourbar",
+        "xyxy": [
+          1870,
+          0,
+          2362,
+          2362
+        ],
+        "exception": "user_colourbar_geometry"
+      },
+      {
+        "name": "coefficient_panel",
+        "xyxy": [
+          2362,
+          0,
+          3945,
+          2362
+        ],
+        "exception": null
+      },
+      {
+        "name": "coefficient_colourbar",
+        "xyxy": [
+          3945,
+          0,
+          4724,
+          2362
+        ],
+        "exception": "user_colourbar_geometry"
+      },
+      {
+        "name": "rose_panel",
+        "xyxy": [
+          0,
+          2362,
+          2362,
+          4724
+        ],
+        "exception": null
+      },
+      {
+        "name": "histogram_panel",
+        "xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "exception": null
+      }
+    ],
+    "regions": [
+      {
+        "name": "binary_panel",
+        "xyxy": [
+          0,
+          0,
+          1870,
+          2362
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9884487287858997,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "binary_colourbar",
+        "xyxy": [
+          1870,
+          0,
+          2362,
+          2362
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8496837063989943,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "coefficient_panel",
+        "xyxy": [
+          2362,
+          0,
+          3945,
+          2362
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9874551784927242,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "coefficient_colourbar",
+        "xyxy": [
+          3945,
+          0,
+          4724,
+          2362
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.9072971776318305,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "rose_panel",
+        "xyxy": [
+          0,
+          2362,
+          2362,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9880702506110328,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "histogram_panel",
+        "xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9811149291874529,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true
+  },
+  {
+    "name": "shared-native-pixels/mexican/FracPaQ2Dwavelet_a32_context.png",
+    "native_sha256": "c7dcee67705fd4abc8dc3409d21dd57af8a4d52d785cedd354f0f46d3c12447e",
+    "candidate_sha256": "8916de42ca4f36fa9cb87339c3a5b7fa8116d2136ec9214178b4eab54f9aa459",
+    "native": "tests/reference/sprint16/final/native-contexts/mexican/FracPaQ2Dwavelet_a32_context.png",
+    "candidate": "tests/reference/sprint16/final/shared-native-pixels/mexican/FracPaQ2Dwavelet_a32_context.png",
+    "definitions": [
+      {
+        "name": "binary_panel",
+        "xyxy": [
+          0,
+          0,
+          1870,
+          2362
+        ],
+        "exception": null
+      },
+      {
+        "name": "binary_colourbar",
+        "xyxy": [
+          1870,
+          0,
+          2362,
+          2362
+        ],
+        "exception": "user_colourbar_geometry"
+      },
+      {
+        "name": "coefficient_panel",
+        "xyxy": [
+          2362,
+          0,
+          3945,
+          2362
+        ],
+        "exception": null
+      },
+      {
+        "name": "coefficient_colourbar",
+        "xyxy": [
+          3945,
+          0,
+          4724,
+          2362
+        ],
+        "exception": "user_colourbar_geometry"
+      },
+      {
+        "name": "rose_panel",
+        "xyxy": [
+          0,
+          2362,
+          2362,
+          4724
+        ],
+        "exception": null
+      },
+      {
+        "name": "histogram_panel",
+        "xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "exception": null
+      }
+    ],
+    "regions": [
+      {
+        "name": "binary_panel",
+        "xyxy": [
+          0,
+          0,
+          1870,
+          2362
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9884487287858997,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "binary_colourbar",
+        "xyxy": [
+          1870,
+          0,
+          2362,
+          2362
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8496837063989943,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "coefficient_panel",
+        "xyxy": [
+          2362,
+          0,
+          3945,
+          2362
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9874931087608038,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "coefficient_colourbar",
+        "xyxy": [
+          3945,
+          0,
+          4724,
+          2362
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.9072971776318305,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "rose_panel",
+        "xyxy": [
+          0,
+          2362,
+          2362,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9882534104335026,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "histogram_panel",
+        "xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9805196659097347,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true
+  },
+  {
+    "name": "FracPaQ2D_Houghstuff_extra.png",
+    "native_sha256": "cf55b80896faec67a7a99aabd9a0786c0e698a245f20cee5c3527d0209daf54d",
+    "candidate_sha256": "8ea7c5478347427e80b3ce26eab9fa31bd2da1bf99122e87bbfed67c47d9bde3",
+    "native": "tests/reference/sprint16/final/native-extra/FracPaQ2D_Houghstuff_extra.png",
+    "candidate": "tests/reference/sprint16/final/python-extra/FracPaQ2D_Houghstuff_extra.png",
+    "definitions": [
+      {
+        "name": "raw_panel",
+        "xyxy": [
+          0,
+          0,
+          2362,
+          2362
+        ],
+        "exception": null
+      },
+      {
+        "name": "rho_panel",
+        "xyxy": [
+          2362,
+          0,
+          4724,
+          2362
+        ],
+        "exception": null
+      },
+      {
+        "name": "plan_panel",
+        "xyxy": [
+          0,
+          2362,
+          2362,
+          4724
+        ],
+        "exception": null
+      },
+      {
+        "name": "theta_panel",
+        "xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "exception": null
+      }
+    ],
+    "regions": [
+      {
+        "name": "raw_panel",
+        "xyxy": [
+          0,
+          0,
+          2362,
+          2362
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9877674075952864,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "rho_panel",
+        "xyxy": [
+          2362,
+          0,
+          4724,
+          2362
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9559169915718213,
+        "threshold": 0.98,
+        "passed": false
+      },
+      {
+        "name": "plan_panel",
+        "xyxy": [
+          0,
+          2362,
+          2362,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9827150674523665,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "theta_panel",
+        "xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9379442346100205,
+        "threshold": 0.98,
+        "passed": false
+      }
+    ],
+    "comparable_regions_pass": false
+  },
+  {
+    "name": "FracPaQ2D_tracemap_multicolour_extra.png",
+    "native_sha256": "ce5efabe4426d0b0ffb53c056ed0bc4c0e920532d86f7c81c50c18f637bec78e",
+    "candidate_sha256": "d59a43b1e6a8674fbea988e8746e7ba30de1cc3bfcfa190e3fb005782a7c68e4",
+    "native": "tests/reference/sprint16/final/native-extra/FracPaQ2D_tracemap_multicolour_extra.png",
+    "candidate": "tests/reference/sprint16/final/python-extra/FracPaQ2D_tracemap_multicolour_extra.png",
+    "definitions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": null
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          463,
+          445,
+          4279,
+          4113
+        ],
+        "exception": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          463,
+          4113
+        ],
+        "exception": null
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": null
+      }
+    ],
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9855053978233944,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          463,
+          445,
+          4279,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9972217397454951,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          463,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9964425407246699,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9935771671033663,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true
+  }
+]

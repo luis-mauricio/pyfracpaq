@@ -1,0 +1,10 @@
+{
+  "font": "cmmib10.ttf",
+  "source": "https://ctan.net/fonts/cm/ps-type1/bakoma/ttf/cmmib10.ttf",
+  "sha256": "a0bca7adcaa2abc011f1e98d19456a5d9d7d8b7c5f301e3b3f44bbed9b321f27",
+  "license": "BAKOMA_LICENSE.txt",
+  "license_source": "https://ctan.net/fonts/cm/ps-type1/bakoma/LICENCE",
+  "license_sha256": "5887eee5a0041c99ff06b8f03f44dcd7303c0bff8dc7084e89ee32df6458e74b",
+  "author": "Basil K. Malyshev, 1994–1995",
+  "scope": "Unmodified public BaKoMa Computer Modern bold math italic. Not copied from the MATLAB installation."
+}

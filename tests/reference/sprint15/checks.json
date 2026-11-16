@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-14",
+  "status": "Sprints14/15 complete: nine tasks each checked; Q-12 approved and active in default Run; all nineteen AUX and164 originals have explicit destinations.",
+  "approval": {
+    "id": "Q-12",
+    "author": "user",
+    "date": "2026-11-14",
+    "statement": "Aprovo a Q-12.",
+    "scope": "Deterministic 1944x1944/72dpi raster with source margins/thicknesses; ny-by-nx rectangular arrays; integer angular divisor of180; stable first L/theta within rtol1e-12/atol1e-14 while retaining actual maximum WC."
+  },
+  "pytest": {
+    "tests": 672,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 60.01,
+    "baseline_previous_tests": 628,
+    "new_tests": 44,
+    "junit": "pytest-s1415.xml",
+    "junit_sha256": "74b181543710ec6913379b09982c52abcf211b4c469d5fb5b84cbfadee4e1e87",
+    "command": "QT_QPA_PLATFORM=offscreen MPLCONFIGDIR=/tmp/pyfracpaq-matplotlib python -m pytest -q --junitxml=/tmp/pyfracpaq-s1415-junit.xml",
+    "cwd": "/tmp/pyfracpaq-s1415-final-u_w97kie",
+    "isolation": "Full project copy excluding environments/build/caches; original folder populated with exactly164 manifest files. Strict source_manifest verifier unchanged; eight existing user outputs in the working original folder preserved byte-for-byte."
+  },
+  "native_integrity": {
+    "manifest_files": 164,
+    "sha256_all_match": true,
+    "preexisting_user_files_preserved": [
+      {
+        "path": "FracPaQ2D_histosegmentlength_Run1.png",
+        "sha256": "40432818e85ebdfb2599d0d1bea58f557cf5992af2872442385fbe7a1ebed908"
+      },
+      {
+        "path": "FracPaQ2D_histotracelength_Run1.png",
+        "sha256": "99d26d3653cfe46c4c012e6de5c5729c8ea823cc367629df7d49653fdd3eb96f"
+      },
+      {
+        "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+        "sha256": "f3c3d3e634a477f64c75c8f16c977d5f61ade54547996a2a76f6403a09f48266"
+      },
+      {
+        "path": "FracPaQ2D_tracelengthmap_Run1.png",
+        "sha256": "e94c17131fa2052be91e7fe3b7c44f830b5354f9d407f0503e0ea37686d557cf"
+      },
+      {
+        "path": "FracPaQ2D_tracemap_Run1.png",
+        "sha256": "781ac030cb77dabe45b557c0d59967455473ffdb68140f2339244af3d89db048"
+      },
+      {
+        "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+        "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7"
+      },
+      {
+        "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+        "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839"
+      },
+      {
+        "path": "FracPaQ2Dtracelengths_Run1.txt",
+        "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874"
+      }
+    ]
+  },
+  "native_provenance": "native_provenance.json",
+  "native_comparison": "native_comparison.json",
+  "production_evidence": "validation.json",
+  "package": {
+    "wheel": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "5d3de300e37ba436cc88463d41c754109c0b7652b6a1b3a5675a87d9919b9a9c",
+    "bytes": 314231,
+    "build": "pip wheel --no-deps --no-build-isolation --no-cache-dir .",
+    "smoke": {
+      "package_import": "/tmp/pyfracpaq-s1415-installed-b7h1twmv/pyfracpaq/__init__.py",
+      "wheel": "/tmp/pyfracpaq-s1415-wheel/pyfracpaq-0.0.0-py3-none-any.whl",
+      "all_default_analyses_available": true,
+      "full_wavelet_shape_yx": [
+        1944,
+        1944
+      ],
+      "wavelet_png": "FracPaQ2Dwavelet_a32_installed.png",
+      "wavelet_theta_txt": true,
+      "visible_raster": true,
+      "auxiliary_dialog_objects": 14,
+      "preprocess_and_move_cli": true,
+      "tensor16_components": 65536,
+      "readtext": true,
+      "native_runtime_required": false
+    }
+  },
+  "code_sha256": {
+    "pyfracpaq/analysis/wavelets.py": "c35891f5e66abc81de401b6e72841fd1c53428cdc5e4893c594e01e28e5003d9",
+    "pyfracpaq/analysis/preprocess.py": "abc603313a5e5b2ff7158536e936d2779625c9ba152f7ed8d1d7fc6558c9d0d1",
+    "pyfracpaq/analysis/auxiliary.py": "3fb2e02e89d844d6229fa63e24c60fe289c876e03e5a978170935cad39bbc819",
+    "pyfracpaq/analysis/roses.py": "a9054a0b334667c8fda516873f7f328e4664ffc4a93c1f6436f18817c8f42e20",
+    "pyfracpaq/analysis/palettes.py": "e3b03fe9f0a4f20af0bdec80afee33db902dc7647c8be889d71f594837308fba",
+    "pyfracpaq/analysis/registry.py": "f9cfc173129b692df5dded0f8203c3ad2176b2e48c80d9be9d9450376d19608e",
+    "pyfracpaq/io/wavelets.py": "bdebc44169fa0bbb7fe40948b6629fe9cb55a3ff49ffd7665e1febdf946f116c",
+    "pyfracpaq/io/text.py": "b0a50c886dbc55bc60ed99b2bf7f914207474065131977d3e1c8f777aded0a04",
+    "pyfracpaq/io/move.py": "1982f47ebe13c9c250af27487e77513b5252aa1ead0e31dffde3c9f9263f8d11",
+    "pyfracpaq/plots/wavelets.py": "09afca45147b77eac592748c7ef1c97e0eac2f1085006ff599a61fcedc44f843",
+    "pyfracpaq/plots/preprocess.py": "9394e74908d0fd74cc42948cb3823084349dc0c2520ca00229e1244b3aba396f",
+    "pyfracpaq/plots/auxiliary.py": "bbd66d1229876e4c57472747fe48977b3d92c41a9bf06b40f4ed878193f2e00d",
+    "pyfracpaq/plots/roses.py": "a4fef8ace1b350a80f7431551e836a22b0a88a502fc7f800ce299c0117c261e6",
+    "pyfracpaq/gui/wavelet_dialog.py": "9526f3e4469373e57fb4e159b07c498ddd1e399f0ee65f2c8d3beb1f644f9879",
+    "pyfracpaq/tools/__main__.py": "86961f911350736d6a73b38fc56ad0c3f7b20313af1c7805b63cee592004c0e2",
+    "pyfracpaq/resources/wavelet_dialog.json": "c91785cea97ba1d40c777d05469c4775c1a4ad525aef54333619d086804c0e26",
+    "pyfracpaq/resources/wavelet_dialog_provenance.json": "003a5379e779332fd4753d9ecd12cf1e9b69ed3b3b01197d0bef49f1d75d39c0"
+  },
+  "visual_review": "Actual production wavelet four-panel PNG and auxiliary dialogue offscreen QA inspected. Two vertical colourbars tested for matching data-box height and25-point clearance across square/wide/tall/small/export layouts. No full pixel identity or cross-platform audit claimed.",
+  "prd_unchecked": [],
+  "remaining_scope": "Sprint16 and product-wide definition of done remain open; not asserted complete by these sprints."
+}

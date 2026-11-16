@@ -1,0 +1,32 @@
+[
+  {
+    "path": "examples/colours.svg",
+    "sha256": "bcb87e46a473e70217b7ab559753e90007d66091bd50028391563c2f9632b6b6",
+    "origin": "Project-authored analytical examples, MIT (root LICENSE); network copied from the project tensor_network fixture.",
+    "purpose": "Move requires --skip-header1; remaining files load directly through their matching input type."
+  },
+  {
+    "path": "examples/move_objects.dat",
+    "sha256": "3d2f8c4137ba0ff23d3259be591a011bc24a3a63cb7bbb72114f3e884974d33f",
+    "origin": "Project-authored analytical examples, MIT (root LICENSE); network copied from the project tensor_network fixture.",
+    "purpose": "Move requires --skip-header1; remaining files load directly through their matching input type."
+  },
+  {
+    "path": "examples/network.tif",
+    "sha256": "583c94c350773223146935b880d762515818e7abab585d31ff156c91d8715bf3",
+    "origin": "Project-authored analytical examples, MIT (root LICENSE); network copied from the project tensor_network fixture.",
+    "purpose": "Move requires --skip-header1; remaining files load directly through their matching input type."
+  },
+  {
+    "path": "examples/profiles.txt",
+    "sha256": "e3aff77b9b1ec1f217edb22a0b73714d9df8112bf65e68bf7d979be8823543b9",
+    "origin": "Project-authored analytical examples, MIT (root LICENSE); network copied from the project tensor_network fixture.",
+    "purpose": "Move requires --skip-header1; remaining files load directly through their matching input type."
+  },
+  {
+    "path": "examples/rectangles.txt",
+    "sha256": "18df2ae97e9198c4d2932a36fef5dfa51d80dbcea0d63512f453d299d79657d7",
+    "origin": "Project-authored analytical examples, MIT (root LICENSE); network copied from the project tensor_network fixture.",
+    "purpose": "Move requires --skip-header1; remaining files load directly through their matching input type."
+  }
+]

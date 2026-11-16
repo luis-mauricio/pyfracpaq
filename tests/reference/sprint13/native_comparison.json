@@ -1,0 +1,30 @@
+{
+  "trace_along": {
+    "x_max_error": 0.0,
+    "y_max_error": 0.0
+  },
+  "segment_along": {
+    "x_max_error": 0.0,
+    "y_max_error": 0.0
+  },
+  "angle_along": {
+    "x_max_error": 0.0,
+    "y_max_error": 2.842170943040401e-14
+  },
+  "trace_from": {
+    "x_max_error": 0.0,
+    "y_max_error": 0.0
+  },
+  "segment_from": {
+    "x_max_error": 0.0,
+    "y_max_error": 0.0
+  },
+  "angle_from": {
+    "x_max_error": 0.0,
+    "y_max_error": 2.842170943040401e-14
+  },
+  "intensity": {
+    "x_max_error": 0.0,
+    "y_max_error": 0.0
+  }
+}

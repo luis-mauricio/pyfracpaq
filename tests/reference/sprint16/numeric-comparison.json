@@ -1,0 +1,83 @@
+{
+  "trace_lengths": {
+    "maximum_absolute_error": 0.0,
+    "rtol": 1e-10,
+    "atol": 8e-12
+  },
+  "segment_lengths": {
+    "maximum_absolute_error": 0.0,
+    "rtol": 1e-10,
+    "atol": 8e-12
+  },
+  "raw_angles": {
+    "maximum_absolute_error": 0.0,
+    "rtol": 1e-10,
+    "atol": 8e-12
+  },
+  "trace_midpoints": {
+    "maximum_absolute_error": 8.881784197001252e-16,
+    "rtol": 1e-10,
+    "atol": 8e-12
+  },
+  "north_minus360_doubled": {
+    "exact": true
+  },
+  "north_minus360_flipped": {
+    "exact": true
+  },
+  "north_0_doubled": {
+    "exact": true
+  },
+  "north_0_flipped": {
+    "exact": true
+  },
+  "north_12p5_doubled": {
+    "exact": true
+  },
+  "north_12p5_flipped": {
+    "exact": true
+  },
+  "north_360_doubled": {
+    "exact": true
+  },
+  "north_360_flipped": {
+    "exact": true
+  },
+  "Q07_euclidean": {
+    "native": [
+      0.0,
+      10.0,
+      5.656854249492381,
+      4.0,
+      4.47213595499958
+    ],
+    "python": [
+      8.0,
+      6.0,
+      5.656854249492381,
+      5.656854249492381,
+      6.324555320336759
+    ],
+    "status": "Intentional technical correction authorized by PRD; vertical source distance0 becomes8."
+  },
+  "figure3_axes1": {
+    "frequencies_exact": true,
+    "centres_maximum_absolute_error": 0.0
+  },
+  "figure4_axes1": {
+    "frequencies_exact": true,
+    "centres_maximum_absolute_error": 0.0
+  },
+  "figure5_axes1": {
+    "frequencies_exact": true,
+    "centres_maximum_absolute_error": 0.0
+  },
+  "figure6_axes1": {
+    "frequencies_exact": true,
+    "centres_maximum_absolute_error": 0.0
+  },
+  "input": {
+    "path": "tests/reference/sprint16/inputs/directional.txt",
+    "sha256": "b601922dbedcce31707293468030dfaa82ebf46a87f28334e3f9c1ba0b6949d1"
+  }
+}

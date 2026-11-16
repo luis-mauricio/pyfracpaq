@@ -1,0 +1,3645 @@
+[
+  {
+    "name": "FracPaQ2D_tracemap_SD11A.png",
+    "native_sha256": "29c8658f80a8ce8ac103b7a40f1513aae0c0bc0361c9bab4b488633ff155bc52",
+    "candidate_sha256": "cd2fab8ac18156492e3b4ce3ed223a54653ec0b13f1aa8f9f43f54a0d677e384",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          455
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9870090137488111,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          610,
+          455,
+          4279,
+          4103
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9957026268354658,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          455,
+          610,
+          4103
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9855335587378723,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          455,
+          4724,
+          4103
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4103,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9922036091993562,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_segmentstrikemap_SD11A.png",
+    "native_sha256": "9d7232672ee704886a952ab9d26c800eef7b93b81802220944afa5ae1bcc87a6",
+    "candidate_sha256": "f94940d0cfd658b58754d9960acce4751dbcc7ee689545b3cb268ffc5ad3dbc0",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          304
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9941760943708499,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          756,
+          304,
+          4133,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9975106596181326,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          304,
+          756,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9818080142925605,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4133,
+          304,
+          4724,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler",
+        "xyxy": [
+          0,
+          3663,
+          4724,
+          3965
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9891338451597579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3965,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8691736656296148,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_histotracelength_SD11A.png",
+    "native_sha256": "0a456b60c4d19c82bb08962c1cc812f6ad6455362f4f2ac32f229f2afbe261fe",
+    "candidate_sha256": "c533e990210b8c41f7b2f0cf1a6165f4056323d77c657a663a1383ed18870d3d",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": null,
+        "ssim_rgb": 0.99512563040467,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          614,
+          445,
+          4275,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9936728301433845,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          614,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.989152654833096,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4275,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9916289987769958,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9940619350576304,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_histosegmentlength_SD11A.png",
+    "native_sha256": "73974c474270d9deedf7873fd2441c503ba2134783687e4813331aaf737ad14d",
+    "candidate_sha256": "7fd20247a00de021fbbc20201839d90d47038007c6bf3cf8318d35bbe083f1ef",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9940129556548628,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          614,
+          445,
+          4275,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.994387292849403,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          614,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9881185039724819,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4275,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.991215979940378,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9918253194504453,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_loglogplottracelengthdensity_SD11A.png",
+    "native_sha256": "88a230a0c2fb0d695107945877b90a24a1d983ad4f02189d8decb2695a2f4ac0",
+    "candidate_sha256": "6aac87a929e85b3dd54daeb5289b7ae74faaca2ef972560c9dae9fa7181462be",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9896552358276914,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          610,
+          445,
+          4279,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9972945100841338,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          610,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9889061369195121,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9914611525977599,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_loglogplottracelength_SD11A.png",
+    "native_sha256": "477cf0012e26f4ccc84b3b5e4cb09092dc1576cb3708984b7f4544531077740d",
+    "candidate_sha256": "0e4d7a04ffcbd04a2314f5c086cd302f52a89806157ebd9a37ec38e6f597d2a2",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9884695164416503,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          610,
+          445,
+          4279,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9924859121495396,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          610,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9859453324253735,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.990875699872475,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png",
+    "native_sha256": "6ecbbdba836753d2e954e8c2d649d5bc81fab01f9e92c884616d4818c51d81c3",
+    "candidate_sha256": "0556c2cd74138470b846c51be87052cb1dec60b7e2c91b0b4a72041892f6ed74",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9890228906684536,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          610,
+          445,
+          4279,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9947165583637636,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          610,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9888994116253252,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9905626616540489,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_loglogplotsegmentlength_SD11A.png",
+    "native_sha256": "d91dbd1fb68fa9ccf0100c17d9dfc71ddf12fdeb3712a77cd344cc12526d7f9e",
+    "candidate_sha256": "62034fa3bb1116d8732c9e99c4ae4a51b6528a0bb7188afbf90fea1afc47a194",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9886562400255414,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          610,
+          445,
+          4279,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9927275673639678,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          610,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9843877422974107,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9894788311249743,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_segmentlength_variogram_SD11A.png",
+    "native_sha256": "74d98d77f4f06836ab4b2209fe418d7017a232123a92825624333cacf9f9eb64",
+    "candidate_sha256": "38bafa3d2d54db63a2c3976bd02d7a89079c92c056ba12ee920e2e56254b2c95",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9947723373812657,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          417,
+          350,
+          4279,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9957448882433749,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          417,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9985186318290303,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9939500804102886,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_histoangle_SD11A.png",
+    "native_sha256": "d1fe13d6d8486b7db89b5428364242a5b7b59f745cfa542c41c6917e40869c1d",
+    "candidate_sha256": "b40e7cc3642b012dd93b8f2527aa27d5f28eee03b023174a3609effc20887f1c",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9922811226210818,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          614,
+          445,
+          4275,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.992503191225245,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          614,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9842661717318809,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4275,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9893164925143404,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9919713658634107,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_permeability_polar_SD11A.png",
+    "native_sha256": "2acb1fcdb14d2f800cfd272bf15915c3573524fe65483a03d45eeb385833d52f",
+    "candidate_sha256": "afaf31c191547575db9c2f7021665e950b50e08f98fdc6b677e4471ecef26840",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "polar_plot_title_and_rulers",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9833486186388841,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 1
+  },
+  {
+    "name": "guiFracPaQ2D_tracelengthalonggraph_SD11A.png",
+    "native_sha256": "65067bd47b4cb914ea2f44987249e747c8eb881e8496c384077450ed41bc16d3",
+    "candidate_sha256": "7b412e7c6a9bcf4f1e24c94dc348d5a7c08211050a28cc86d5ef88ec42c54d85",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.990961638744913,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          610,
+          350,
+          4279,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.998634627827779,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          610,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9812335687735532,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9860999607027675,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "guiFracPaQ2D_tracelengthfromgraph_SD11A.png",
+    "native_sha256": "03b25d44fadb0cc879b2871d0e7cb40a125377017444bbe3b16d55a0d233a59a",
+    "candidate_sha256": "31fa8f716be079def497f13c6b5c7954c4be900a1fe0bff89794214d2b4eb508",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9900518215581723,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          419,
+          350,
+          4279,
+          4208
+        ],
+        "exception": "Q07_halfway_centres",
+        "ssim_rgb": 0.9960911568598186,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          419,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9915379196493531,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9856133889439335,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 4
+  },
+  {
+    "name": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+    "native_sha256": "17894f3250fefb193bc558474b0550aea3d2cb481d75d3e9e373f6006fea553b",
+    "candidate_sha256": "0445fe3d67e22139c5ed5c96f2b9ed6e9b4987f7c785fefabffd9756cefef292",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9889619261535366,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          457,
+          350,
+          4275,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9902557075758555,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          457,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9955030246172182,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4275,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9970141148502325,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9924383272363325,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+    "native_sha256": "b3457ca63c2da98e32459e8d309f739d8009a39b76b6fd231fe392047d74a8ee",
+    "candidate_sha256": "cfeb9ac7fd7c8a5a4d0188a892aa6e70dc7c189d3ccf35b45010d4e3291a4c7b",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.991306909107658,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          457,
+          350,
+          4279,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9880261307991001,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          457,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9952300595310885,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9928735687404012,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+    "native_sha256": "92488e951358bfe2a639cb130821ef145a4b3e3d68eaeaf52e385c299ea898ad",
+    "candidate_sha256": "062a6803ecf60546a469351cb30e46490a2cb8573989583aeab0757b1c6fb73b",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9909942665909285,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          556,
+          350,
+          4275,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9814986683370073,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          556,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9872914010365808,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4275,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9971011657054483,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9919012053334715,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+    "native_sha256": "858621c28221d29ad0dfa608120bbd5274462b8cc22704bf2d5ae9e66f458b8b",
+    "candidate_sha256": "6e6b88779ebcb4ecf97992d576ebe7ecec101386327f6f2c6b4a981731baaeb8",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9893865910977976,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          457,
+          350,
+          4275,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9870988225614421,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          457,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9953835372462886,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4275,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9970696332815371,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9933304609133701,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+    "native_sha256": "129f832a5e262ecbded898ef62ffc80b98fa8b1cb40c5ea8c7a8d290ee7bfbc7",
+    "candidate_sha256": "0fc14d60d570f7d5bc8932885670d6d14ae6a399c55b82c6a281d27fa88b16e4",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9903101303312365,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          457,
+          350,
+          4279,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9873135100332049,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          457,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9952300595310885,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9927971910090464,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+    "native_sha256": "e901f51ee125f2efed1d5ccbe3e88a1ba9d1e2a5b0e72c2b9a419bdf2b677c8e",
+    "candidate_sha256": "5d3122ee2ff69dbe571bb152f5a0db1541060737e16690c6b9671901f7fb3a02",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9894960077044493,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          556,
+          350,
+          4275,
+          4208
+        ],
+        "exception": "Q15_fitted_tail",
+        "ssim_rgb": 0.9760303712237571,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          556,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9872914010365808,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4275,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9971080958548167,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9924752830802621,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 4
+  },
+  {
+    "name": "FracPaQ2D_crossplotsegmentlengthangle_SD11A.png",
+    "native_sha256": "23f6649061fba1d83117ffbe66ee83750b8495519e170a66abda3dca91bd461e",
+    "candidate_sha256": "2cb202d1f65e1f470c330a1daeb2489d672150e62e9490871acba751c2534545",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": null,
+        "ssim_rgb": 0.989063847581813,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          458,
+          445,
+          4279,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9952772680624536,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          458,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9865927450218085,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9920727007956195,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_roseangleEqArea_SD11A.png",
+    "native_sha256": "29be85f10b32d014b56e83a92c1e1ad11dba50cc39089881409039722209d964",
+    "candidate_sha256": "dc643ca29747f6de8a202e8bc47a7b302c2d228faf366307322200b96459caed",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "rose_title_and_annotations",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          3954
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9918605099561333,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3954,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.9581068769063741,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 1
+  },
+  {
+    "name": "FracPaQ2D_Mohrplot_SD11A.png",
+    "native_sha256": "5d5b3300953db9a33855186cf267903b54649238a08a340789883ccb77198223",
+    "candidate_sha256": "b1210da584e4da55aa9e5a9b2880f877583446ff3609f0bccece9309d60a75cd",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          1443
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9949070694761076,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          491,
+          1443,
+          4279,
+          3115
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9872119049812312,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          1443,
+          491,
+          3115
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9869953103991188,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          1443,
+          4724,
+          3115
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          3115,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9975971953100865,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_sliptendencymap_SD11A.png",
+    "native_sha256": "85c668d3d3379b413f3834dce2f57e19ecc3d939f3d7f66fec5c959abdaea4cb",
+    "candidate_sha256": "f55174527f4e44b7f9a825c950bfb39bb25ce20466d269c219d0ad6f42896688",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          304
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9804873890152427,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          756,
+          304,
+          4133,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9974550220660086,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          304,
+          756,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9818080142925605,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4133,
+          304,
+          4724,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler",
+        "xyxy": [
+          0,
+          3663,
+          4724,
+          3965
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9891338451597579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3965,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8392798089654369,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_sliptendencyrose_SD11A.png",
+    "native_sha256": "d75c9ac390d34fae67ab4983a0d9e499f2fa1093158b3120a328e9a2705614a6",
+    "candidate_sha256": "32b0dbfd827774b77cb4d09f7705b1cb3f0ac044694119ea3c4b6b7409afae30",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "rose_title_and_annotations",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          3954
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9857765381377835,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3954,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.9560824439364165,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 1
+  },
+  {
+    "name": "FracPaQ2D_dilationtendencymap_SD11A.png",
+    "native_sha256": "15b31cee88955a9b8838732ddadeb6144ce1aab9b18903a710ca21f828c06557",
+    "candidate_sha256": "c33a9e97406ae6b91a6120bf832c159f03c99ac1b1c532cf3af15192443b1a46",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          304
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9793384952626933,
+        "threshold": 0.98,
+        "passed": false
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          756,
+          304,
+          4133,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9975812327658818,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          304,
+          756,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9818080142925605,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4133,
+          304,
+          4724,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler",
+        "xyxy": [
+          0,
+          3663,
+          4724,
+          3965
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9891338451597579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3965,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8440095708210889,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": false,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_dilationtendencyrose_SD11A.png",
+    "native_sha256": "31e88a490611a0b255044c219ecdbacc340034e75f6d2014e9775074a66dca16",
+    "candidate_sha256": "c4708c7f582f238d8add9d35f4e9022378ef63042aeff81f840c247568ff397c",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "rose_title_and_annotations",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          3954
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9858936573913978,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3954,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.9562006217632314,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 1
+  },
+  {
+    "name": "FracPaQ2D_fracsuscepmap_SD11A.png",
+    "native_sha256": "965aef9720e9c97691ced27c456c1feec53c6c55ee94d34df12c2055ed954fe2",
+    "candidate_sha256": "addbd775981bb43ac50a7e217875130de6a1e782d3955f3acafb8e77330a41ca",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          304
+        ],
+        "exception": null,
+        "ssim_rgb": 0.979891218209057,
+        "threshold": 0.98,
+        "passed": false
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          756,
+          304,
+          4133,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9974424921795954,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          304,
+          756,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9818080142925605,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4133,
+          304,
+          4724,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler",
+        "xyxy": [
+          0,
+          3663,
+          4724,
+          3965
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9891338451597579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3965,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8358675720057341,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": false,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_fracsusceprose_SD11A.png",
+    "native_sha256": "7a97f0d7d0878e55943e50a4226a42e6722582d6082bf9a47f76795c6fec052d",
+    "candidate_sha256": "4b3c1ade9f01b3caa9d603f23904ef540bfee229fc609f39e49944a27ef48c5e",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "rose_title_and_annotations",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          3954
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9862458847362275,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3954,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.9462197352400722,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 1
+  },
+  {
+    "name": "FracPaQ2D_CSFmap_SD11A.png",
+    "native_sha256": "7c244a88f04f56b63210ae73457ae7b26cc290358b2520b8b9d5e80a0b52dfd2",
+    "candidate_sha256": "4ddd070587ddff4229773bc0f5cfb771506250c0e05c662b61418be32e4d42d7",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          304
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9761127681630656,
+        "threshold": 0.98,
+        "passed": false
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          756,
+          304,
+          4133,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9973833439165047,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          304,
+          756,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9818080142925605,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4133,
+          304,
+          4724,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler",
+        "xyxy": [
+          0,
+          3663,
+          4724,
+          3965
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9891338451597579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3965,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8377686523479131,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": false,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_CSFrose_SD11A.png",
+    "native_sha256": "555b1827ba1c2fd4e67ac9b3a7487f67e1bd015ffdff4fe692f75a41b90bd3b8",
+    "candidate_sha256": "2c1a8a50c5bc4dc230075f2220058ba718fbbb94aa62ba32dedc994e96f29386",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "rose_title_and_annotations",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          3954
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9851223821947143,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3954,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.9559924773683216,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 1
+  },
+  {
+    "name": "FracPaQ2D_tracelengthmap_SD11A.png",
+    "native_sha256": "37d3026be21e93778be894bc24ec04229eacc0e59e5f4770d4df2f6b7855c874",
+    "candidate_sha256": "ce1f540de7d0d2ecbeb8ed191f44fd4e496604e098ade3f40c6989247db70ab4",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          304
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9944932023591829,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          756,
+          304,
+          4133,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.99735123452754,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          304,
+          756,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9818080142925605,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4133,
+          304,
+          4724,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler",
+        "xyxy": [
+          0,
+          3663,
+          4724,
+          3965
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9891338451597579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3965,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8812409133830883,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_segmentlengthmap_SD11A.png",
+    "native_sha256": "ba1c9e1c6475d4c962a0260cb08cfd34efa1047d07d44563e8c7981f04c43acc",
+    "candidate_sha256": "d6dc4d7573d6b9268ab21cc8a64bc555b2645a32b00a66c85717b2289905280d",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          304
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9938980444012259,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          756,
+          304,
+          4133,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9973865377551471,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          304,
+          756,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9818080142925605,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4133,
+          304,
+          4724,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler",
+        "xyxy": [
+          0,
+          3663,
+          4724,
+          3965
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9891338451597579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3965,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8802742017277732,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_scancircle_SD11A.png",
+    "native_sha256": "18178a819be1cd196c2bca29ea43d24dbca57e6908199944fa2f191be765b01e",
+    "candidate_sha256": "82c0b574c9d3d3679303d509cd53657502137fb007b365e56541dcf4de3bb31a",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          455
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9930141591706588,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          610,
+          455,
+          4279,
+          4103
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9841369297378573,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          455,
+          610,
+          4103
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9855335587378723,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          455,
+          4724,
+          4103
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4103,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9922036091993562,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_intensityP21_SD11A.png",
+    "native_sha256": "6e84e4a02f71c095dcca3455251bd5d1d557073c179a7effebdab20faf55a6da",
+    "candidate_sha256": "17d1c42b41e339b16e2617fd5841a6006ad318d2da12df098ca982f1d0b49ab7",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          304
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9917249833676737,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          756,
+          304,
+          4133,
+          3663
+        ],
+        "exception": "Q20_finite_circles",
+        "ssim_rgb": 0.9731089304972222,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          304,
+          756,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9818080142925605,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4133,
+          304,
+          4724,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler",
+        "xyxy": [
+          0,
+          3663,
+          4724,
+          3965
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9891338451597579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3965,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8280642116833882,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 4
+  },
+  {
+    "name": "FracPaQ2D_densityP20_SD11A.png",
+    "native_sha256": "7f14cc8abe7bc7f43b57ef1b6750dd08754c55220449e9a2947161dc8f508005",
+    "candidate_sha256": "b0730824d7a27c7a0366e639f7ac8ae86448f4ec9a9e615ee4a756c370048a67",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          304
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9921807899524312,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          756,
+          304,
+          4133,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9933357913347941,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          304,
+          756,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9818080142925605,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4133,
+          304,
+          4724,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler",
+        "xyxy": [
+          0,
+          3663,
+          4724,
+          3965
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9891338451597579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3965,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8228071022908808,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "FracPaQ2D_blocksizecentroidmap_SD11A.png",
+    "native_sha256": "5337269d2055c70fdff0875b1d8c23229390ea4e9cf3018288b4b51d72e0ddf6",
+    "candidate_sha256": "315ea79bf5a3e02395716ad426431cf26c95144767aee1d8b6768577c9d0a310",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          455
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.9941181049972224,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          610,
+          455,
+          4279,
+          4103
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.9945622933132396,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          455,
+          610,
+          4103
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.9855335587378723,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          455,
+          4724,
+          4103
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4103,
+          4724,
+          4724
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.9922036091993562,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 1
+  },
+  {
+    "name": "FracPaQ2D_blocksizeloglog_SD11A.png",
+    "native_sha256": "427fa419fa02bf392e33be2bd5d8bce95dc3d9264798036411a515552ffc0195",
+    "candidate_sha256": "b0fb097390803337d0ff594fee9e1a9e88833e0e32b4b487b87ff8237398b4f2",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.99197990504481,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          457,
+          445,
+          4279,
+          4113
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.6936835505444514,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          457,
+          4113
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.9718561984927785,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.9690523165769389,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 1
+  },
+  {
+    "name": "FracPaQ2D_blocksizehisto_SD11A.png",
+    "native_sha256": "c25974098cd41a2cb0e9e54516bb82d8b9486e78504d0f0a642d0687c2d228ee",
+    "candidate_sha256": "81d7845208911dc916e1081b9c3dd772dfcba9a0604836c2fdcdb0b7fc55e71d",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          445
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.99203619803667,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          493,
+          445,
+          4279,
+          4113
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.9192398638524071,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          445,
+          493,
+          4113
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.9950390113150057,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          445,
+          4724,
+          4113
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4113,
+          4724,
+          4724
+        ],
+        "exception": "Q14_blocks",
+        "ssim_rgb": 0.9681060692139051,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 1
+  },
+  {
+    "name": "FracPaQ2D_IYXnodes_traces_SD11A.png",
+    "native_sha256": "fc898bbe4741fc27ce806aaf13bccd1c292b05cdd87cce373ca3d561ee20618a",
+    "candidate_sha256": "630bc3543e38b79fe70d77fd6e52d8619e0cd38ae0f7b9385b207e386aea7f63",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          318
+        ],
+        "exception": "Q11_topology",
+        "ssim_rgb": 0.9223830503588353,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          683,
+          318,
+          4206,
+          3823
+        ],
+        "exception": "Q11_topology",
+        "ssim_rgb": 0.9678866035198151,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          318,
+          683,
+          3823
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9888493903489955,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4206,
+          318,
+          4724,
+          3823
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9999055477873092,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          3823,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9918812726873485,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 3
+  },
+  {
+    "name": "FracPaQ2D_XYnodes_traces_heat_SD11A.png",
+    "native_sha256": "8e94dfd66247ec6d6f555dd9863a94c93406bb66994350da8d35e582b32a5c59",
+    "candidate_sha256": "4baf2168a4a3d1d836f002802d81b92d97bb142e5911b304c937c3886e2e0aa3",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          304
+        ],
+        "exception": "Q11_topology",
+        "ssim_rgb": 0.942417917028035,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          756,
+          304,
+          4133,
+          3663
+        ],
+        "exception": "Q11_topology",
+        "ssim_rgb": 0.9534320747138568,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          304,
+          756,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9818080142925605,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4133,
+          304,
+          4724,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler",
+        "xyxy": [
+          0,
+          3663,
+          4724,
+          3965
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9891338451597579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3965,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8440207591887211,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 3
+  },
+  {
+    "name": "FracPaQ2D_Inodes_traces_heat_SD11A.png",
+    "native_sha256": "d9b91c92bbfe1a046e3c1ff00542d7984ec0f4000dbe150bea359eb8245bea84",
+    "candidate_sha256": "fea92d2f499b5ac76bfde03ec351276283e6c368496f6c7d975d2294285a35f8",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          304
+        ],
+        "exception": "Q11_topology",
+        "ssim_rgb": 0.9615972579312123,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          756,
+          304,
+          4133,
+          3663
+        ],
+        "exception": "Q11_topology",
+        "ssim_rgb": 0.9625620297282594,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          304,
+          756,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9818080142925605,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4133,
+          304,
+          4724,
+          3663
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler",
+        "xyxy": [
+          0,
+          3663,
+          4724,
+          3965
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9891338451597579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "colourbar_container",
+        "xyxy": [
+          0,
+          3965,
+          4724,
+          4724
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.847201672379191,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 3
+  },
+  {
+    "name": "FracPaQ2D_IYXtriangle_SD11A.png",
+    "native_sha256": "cf5e5f4292606be4dd95fc367ff86cb2c410135ed88f4d3734f8a5ce34722f68",
+    "candidate_sha256": "e907bf0126d193e1200002156089274aaa6f6b60ebecbdafd09090c413d05077",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "ternary_plot_title_and_annotations",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          4724
+        ],
+        "exception": "Q11_topology",
+        "ssim_rgb": 0.9821501453953814,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": null,
+    "comparable_region_count": 0
+  },
+  {
+    "name": "FracPaQ2D_cracktensor_SD11A.png",
+    "native_sha256": "2f364a7a93c917851cc5fc26b6dcc95c7565b74d0680c837f3bf73864183fd92",
+    "candidate_sha256": "d4fd10c0b033cb09c1d960df42fdd08d70644964410eaa2d4c8cc3ad174b6d5d",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "polar_plot_and_rulers",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          4300
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9800224414563486,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "legend_container",
+        "xyxy": [
+          0,
+          4300,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 2
+  },
+  {
+    "name": "FracPaQ2Dwavelet_a32_SD11A.png",
+    "native_sha256": "ea1d3074a3a502fbef33cbf5da5fd505ebe5b386d52bea1d8f22e2a9485e2622",
+    "candidate_sha256": "a0fc41801cbd60df5130de9069aa9407fb990cdc13eb6c560113ce494b96ff1d",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "binary_panel",
+        "xyxy": [
+          0,
+          0,
+          1870,
+          2362
+        ],
+        "exception": "Q12_production_raster",
+        "ssim_rgb": 0.9088921157788971,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "binary_colourbar",
+        "xyxy": [
+          1870,
+          0,
+          2362,
+          2362
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.8496837063989943,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "coefficient_panel",
+        "xyxy": [
+          2362,
+          0,
+          3945,
+          2362
+        ],
+        "exception": "Q12_production_raster",
+        "ssim_rgb": 0.9731955322540985,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "coefficient_colourbar",
+        "xyxy": [
+          3945,
+          0,
+          4724,
+          2362
+        ],
+        "exception": "user_colourbar_geometry",
+        "ssim_rgb": 0.9072971776318305,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "rose_panel",
+        "xyxy": [
+          0,
+          2362,
+          2362,
+          4724
+        ],
+        "exception": "Q12_production_raster",
+        "ssim_rgb": 0.9251867251037184,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "histogram_panel",
+        "xyxy": [
+          2362,
+          2362,
+          4724,
+          4724
+        ],
+        "exception": "Q12_production_raster",
+        "ssim_rgb": 0.9153986081876592,
+        "threshold": 0.98,
+        "passed": null
+      }
+    ],
+    "comparable_regions_pass": null,
+    "comparable_region_count": 0
+  },
+  {
+    "name": "guiFracPaQ2D_segmentlengthalonggraph_SD11A.png",
+    "native_sha256": "5f69c3deba312f46d6820428be70c60835404ff66ea12e1ba16785567e358e05",
+    "candidate_sha256": "4bf3d42a44945816b591b7e348b62b265fd8501db66d854b5747b13bb1b8d304",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.98853373838139,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          610,
+          350,
+          4279,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9986598493622424,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          610,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9821520106920284,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9860999607027675,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "guiFracPaQ2D_segmentanglealonggraph_SD11A.png",
+    "native_sha256": "be2ddd7dd0b5c379247d2323e06135182ba8ad02668d58cc548f598f0e98a188",
+    "candidate_sha256": "f59f018333f1ab97eff8a9a6ffc8664aba7ba91ea4456ecf3df9997ccac14c57",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9880291273452593,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          463,
+          350,
+          4279,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9975021778081746,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          463,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9885700972142518,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9860999607027675,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "guiFracPaQ2D_graphtracemap_SD11A.png",
+    "native_sha256": "0eea7752381c199ea5c74242ac6c9c4e26cb96da487abbdb1d5118613d13df8c",
+    "candidate_sha256": "74fdfc796062482e37f580f072d5f77c5bd923bbb26aa2af2f303070e8db9526",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          318
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9931592830198802,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          683,
+          318,
+          4206,
+          3823
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9833125371625745,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          318,
+          683,
+          3823
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9888047131506686,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4206,
+          318,
+          4724,
+          3823
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9998511038076169,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          3823,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9882226203312232,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "guiFracPaQ2D_intensityalonggraph_SD11A.png",
+    "native_sha256": "cf50c95d06f444491f12adbb0bbe6455b4d3b3db5eb96b403bfdc9cc9ebcfe32",
+    "candidate_sha256": "225616b5bf5790a5d091f18c4a8cfd6ec7c3ab3d15c5ef99827e9fd707f435de",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9725078526128182,
+        "threshold": 0.98,
+        "passed": false
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          610,
+          350,
+          4279,
+          4208
+        ],
+        "exception": "Q20_finite_circles",
+        "ssim_rgb": 0.9978438489059593,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          610,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9831853193509579,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9861902346975994,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": false,
+    "comparable_region_count": 4
+  },
+  {
+    "name": "guiFracPaQ2D_densityalonggraph_SD11A.png",
+    "native_sha256": "1ccc1774b5d52ec999569a862b729ff97fff79bec93d42827cad951b6c5e4f47",
+    "candidate_sha256": "c51781a77d1b9db4e697625a7ddd270588e6a6ffa1640ac6e33453247a568414",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9721135627703378,
+        "threshold": 0.98,
+        "passed": false
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          421,
+          350,
+          4279,
+          4208
+        ],
+        "exception": "Q20_finite_circles",
+        "ssim_rgb": 0.9603422877301134,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          421,
+          4208
+        ],
+        "exception": "Q20_finite_circles",
+        "ssim_rgb": 0.9494222077543975,
+        "threshold": 0.98,
+        "passed": null
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9999228762185889,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9861902346975994,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": false,
+    "comparable_region_count": 3
+  },
+  {
+    "name": "guiFracPaQ2D_segmentlengthfromgraph_SD11A.png",
+    "native_sha256": "f5160023c40b4478806e5661fe138035a1a6a4d3bd7eb721d4eb3125132d5e09",
+    "candidate_sha256": "fc309ad3f21a4614148ad55f33649b3bb1aa550ffa62255316cc799f6c214246",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9877841433474653,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          457,
+          350,
+          4279,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9951169990421104,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          457,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9884511166998973,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9856133889439335,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  },
+  {
+    "name": "guiFracPaQ2D_segmentanglefromgraph_SD11A.png",
+    "native_sha256": "6d4359d32104597eaf623ff20b58a1cf2710b8220222a5bb7179f7c418843a11",
+    "candidate_sha256": "902c515b3517321569bd8e1c9f3528729f5f6731b30157da4213923ba574b4d6",
+    "definitions_sha256": "3925e9b46145458039f2d74ef09286e41fc6a383571ef899154c83c7b4114fe8",
+    "regions": [
+      {
+        "name": "title",
+        "xyxy": [
+          0,
+          0,
+          4724,
+          350
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9880291273452593,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "plot",
+        "xyxy": [
+          463,
+          350,
+          4279,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9954898335997019,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "left_ruler",
+        "xyxy": [
+          0,
+          350,
+          463,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9885700972142518,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "right_ruler",
+        "xyxy": [
+          4279,
+          350,
+          4724,
+          4208
+        ],
+        "exception": null,
+        "ssim_rgb": 1.0,
+        "threshold": 0.98,
+        "passed": true
+      },
+      {
+        "name": "x_ruler_and_footer",
+        "xyxy": [
+          0,
+          4208,
+          4724,
+          4724
+        ],
+        "exception": null,
+        "ssim_rgb": 0.9855584545318057,
+        "threshold": 0.98,
+        "passed": true
+      }
+    ],
+    "comparable_regions_pass": true,
+    "comparable_region_count": 5
+  }
+]

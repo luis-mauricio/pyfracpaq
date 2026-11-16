@@ -1,0 +1,90 @@
+{
+  "source": "tests/reference/sprint16/benchmarks/map1_prepared.txt",
+  "source_sha256": "183476e558ead2baa0804b2e5ebaca278828a41eef9cbd7bae029379becfec41",
+  "qt_platform": "offscreen",
+  "heartbeat_interval_seconds": 0.02,
+  "heartbeat_samples": 9,
+  "maximum_heartbeat_gap_seconds": 0.3582614589831792,
+  "elapsed_seconds": 0.5671437919954769,
+  "exports": [
+    {
+      "basename": "FracPaQ2D_tracemap",
+      "seconds": 0.3289603329903912
+    }
+  ],
+  "messages": [
+    {
+      "seconds": 0.007070958992699161,
+      "message": "Input changed. Click Preview."
+    },
+    {
+      "seconds": 0.03144129199790768,
+      "message": "Input changed. Click Preview."
+    },
+    {
+      "seconds": 0.03273966701817699,
+      "message": "Reading node file..."
+    },
+    {
+      "seconds": 0.10710191700491123,
+      "message": "Reading node file..."
+    },
+    {
+      "seconds": 0.10756762500386685,
+      "message": "Collecting fracture trace data..."
+    },
+    {
+      "seconds": 0.1212307499954477,
+      "message": "Ready. Click Run to generate maps and graphs."
+    },
+    {
+      "seconds": 0.13700012501794845,
+      "message": "Running..."
+    },
+    {
+      "seconds": 0.1865680839982815,
+      "message": "Running Traces, segments..."
+    },
+    {
+      "seconds": 0.18680024999775924,
+      "message": "Running Traces, by length..."
+    },
+    {
+      "seconds": 0.1869766250019893,
+      "message": "Running Segments, by length..."
+    },
+    {
+      "seconds": 0.18712983399746008,
+      "message": "Running Segments, by strike..."
+    },
+    {
+      "seconds": 0.18731054200907238,
+      "message": "Running Histogram of lengths..."
+    },
+    {
+      "seconds": 0.19581025000661612,
+      "message": "Running Histogram of angles..."
+    },
+    {
+      "seconds": 0.19922174999373965,
+      "message": "Running Rose diagram (equal area)..."
+    },
+    {
+      "seconds": 0.1994270840077661,
+      "message": "Calculations completed."
+    },
+    {
+      "seconds": 0.21422620900557376,
+      "message": "Saving PNG: FracPaQ2D_tracemap..."
+    },
+    {
+      "seconds": 0.5667462089913897,
+      "message": "Closing after the current operation..."
+    }
+  ],
+  "peak_rss_bytes": 308936704,
+  "exit_during_export": true,
+  "main_window_deleted": true,
+  "unrelated_window_preserved": true,
+  "scope": "Actual prepared real input, production worker/render/export, no mocks. macOS RSS bytes; Qt offscreen. Each PNG still blocks for its measured duration; event loop resumes between outputs."
+}

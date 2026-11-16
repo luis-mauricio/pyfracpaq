@@ -1,0 +1,13 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "PyFracPaQ: testes offline",
+      "type": "process",
+      "command": "${command:python.interpreterPath}",
+      "args": ["-m", "pytest", "-q"],
+      "options": {"cwd": "${workspaceFolder}", "env": {"QT_QPA_PLATFORM": "offscreen"}},
+      "problemMatcher": []
+    }
+  ]
+}

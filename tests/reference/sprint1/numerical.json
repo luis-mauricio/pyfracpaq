@@ -1,0 +1,727 @@
+{
+  "schema_version": 1,
+  "scope": "Python versus analytical oracles; MATLAB execution unavailable.",
+  "environment": {
+    "python": "3.13.18",
+    "os": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+    "numpy": "2.5.4"
+  },
+  "code_sha256": {
+    "pyfracpaq/__init__.py": "b62d057491a4e1bb3dd456e486331158e2d3f2781c1b7f76248153b25b13c2ca",
+    "pyfracpaq/domain/__init__.py": "994040f608488a3ac5d5252c9e9d76884a434096420117af196685bb6f0bef07",
+    "pyfracpaq/domain/construction.py": "a99fd8cda19aeb2df54186bd1c96d720e1a71fc6cfc4f53ea03e831949c3826e",
+    "pyfracpaq/domain/models.py": "095cd344ee463d3e06818f19713a824937e0a16dddd8de09630dea4de67979aa",
+    "pyfracpaq/geometry/__init__.py": "f0d9d7e24de665399606a4e5f7085c56ee54550f45fb272f3222320215de6fea",
+    "pyfracpaq/geometry/intersections.py": "0de7e3f38af61225c01bcea4ff9b8306f60858191592f198782175e72a204dcb",
+    "pyfracpaq/geometry/primitives.py": "de660b040baa1df2ceb74f1fd20e2e2d10ef7ed813ed5e6dc4beebe4896bc3fb",
+    "pyfracpaq/io/__init__.py": "834f3abe34a659ff646749ddc5c7c0e177f1063e2e9daf00315609505b065c5e",
+    "pyfracpaq/io/nodes.py": "d02b1fde03827989324169135d6ad0655ff37eb06b38d2252eea79639e0037be"
+  },
+  "original_manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7",
+  "analytical": [
+    {
+      "id": "horizontal",
+      "input": {
+        "file": "tests/fixtures/nodes/horizontal.txt",
+        "scale": null
+      },
+      "input_sha256": "3d828256e53fbd2a5f72a84770eab4d47b026ade41ef10d95f3593178f75689f",
+      "measured": {
+        "traces": 1,
+        "segments": 1,
+        "nodes": 2,
+        "segment_lengths": [
+          4.0
+        ],
+        "raw_angles_degrees": [
+          90.0
+        ],
+        "segment_midpoints": [
+          [
+            2.0,
+            0.0
+          ]
+        ],
+        "trace_lengths": [
+          4.0
+        ],
+        "trace_midpoints": [
+          [
+            2.0,
+            0.0
+          ]
+        ],
+        "euclidean_lengths": [
+          4.0
+        ],
+        "bounds_xyxy": [
+          0.0,
+          0.0,
+          4.0,
+          0.0
+        ],
+        "area": 0.0,
+        "diagonal": 4.0,
+        "length_unit": "pixels",
+        "diagnostics": []
+      },
+      "max_absolute_errors": {
+        "segment_lengths": 0.0,
+        "raw_angles_degrees": 0.0,
+        "trace_length": 0.0,
+        "trace_halfway_point": 0.0,
+        "bounds_xyxy": 0.0,
+        "segment_midpoints": 0.0
+      },
+      "status": "passed"
+    },
+    {
+      "id": "vertical",
+      "input": {
+        "file": "tests/fixtures/nodes/vertical.txt",
+        "scale": null
+      },
+      "input_sha256": "0dbb56d79eb705e9a9501779132ce792ef1087d0a96bc88873c7ba92235756c6",
+      "measured": {
+        "traces": 1,
+        "segments": 1,
+        "nodes": 2,
+        "segment_lengths": [
+          3.0
+        ],
+        "raw_angles_degrees": [
+          0.0
+        ],
+        "segment_midpoints": [
+          [
+            0.0,
+            1.5
+          ]
+        ],
+        "trace_lengths": [
+          3.0
+        ],
+        "trace_midpoints": [
+          [
+            0.0,
+            1.5
+          ]
+        ],
+        "euclidean_lengths": [
+          3.0
+        ],
+        "bounds_xyxy": [
+          0.0,
+          0.0,
+          0.0,
+          3.0
+        ],
+        "area": 0.0,
+        "diagonal": 3.0,
+        "length_unit": "pixels",
+        "diagnostics": []
+      },
+      "max_absolute_errors": {
+        "segment_lengths": 0.0,
+        "raw_angles_degrees": 0.0,
+        "trace_length": 0.0,
+        "trace_halfway_point": 0.0,
+        "bounds_xyxy": 0.0,
+        "segment_midpoints": 0.0
+      },
+      "status": "passed"
+    },
+    {
+      "id": "oblique",
+      "input": {
+        "file": "tests/fixtures/nodes/oblique.txt",
+        "scale": null
+      },
+      "input_sha256": "47ffdd2e0498b393e483ac599c159acd0c8d2677ad4f83bb40b4904a34a53567",
+      "measured": {
+        "traces": 1,
+        "segments": 1,
+        "nodes": 2,
+        "segment_lengths": [
+          5.0
+        ],
+        "raw_angles_degrees": [
+          36.86989764584402
+        ],
+        "segment_midpoints": [
+          [
+            1.5,
+            2.0
+          ]
+        ],
+        "trace_lengths": [
+          5.0
+        ],
+        "trace_midpoints": [
+          [
+            1.5,
+            2.0
+          ]
+        ],
+        "euclidean_lengths": [
+          5.0
+        ],
+        "bounds_xyxy": [
+          0.0,
+          0.0,
+          3.0,
+          4.0
+        ],
+        "area": 12.0,
+        "diagonal": 5.0,
+        "length_unit": "pixels",
+        "diagnostics": []
+      },
+      "max_absolute_errors": {
+        "segment_lengths": 0.0,
+        "raw_angles_degrees": 0.0,
+        "trace_length": 0.0,
+        "trace_halfway_point": 0.0,
+        "bounds_xyxy": 0.0,
+        "segment_midpoints": 0.0
+      },
+      "status": "passed"
+    },
+    {
+      "id": "polyline",
+      "input": {
+        "file": "tests/fixtures/nodes/polyline.txt",
+        "scale": null
+      },
+      "input_sha256": "fb25ac4547b8fd2287ff59f9c97e6357677522e65eac00c96ce63cb8fbc184e9",
+      "measured": {
+        "traces": 1,
+        "segments": 2,
+        "nodes": 3,
+        "segment_lengths": [
+          3.0,
+          4.0
+        ],
+        "raw_angles_degrees": [
+          90.0,
+          0.0
+        ],
+        "segment_midpoints": [
+          [
+            2.5,
+            2.0
+          ],
+          [
+            4.0,
+            4.0
+          ]
+        ],
+        "trace_lengths": [
+          7.0
+        ],
+        "trace_midpoints": [
+          [
+            4.0,
+            2.5
+          ]
+        ],
+        "euclidean_lengths": [
+          5.0
+        ],
+        "bounds_xyxy": [
+          1.0,
+          2.0,
+          4.0,
+          6.0
+        ],
+        "area": 12.0,
+        "diagonal": 5.0,
+        "length_unit": "pixels",
+        "diagnostics": []
+      },
+      "max_absolute_errors": {
+        "segment_lengths": 0.0,
+        "raw_angles_degrees": 0.0,
+        "trace_length": 0.0,
+        "trace_halfway_point": 0.0,
+        "bounds_xyxy": 0.0,
+        "segment_midpoints": 0.0
+      },
+      "status": "passed"
+    },
+    {
+      "id": "negative",
+      "input": {
+        "file": "tests/fixtures/nodes/negative.txt",
+        "scale": null
+      },
+      "input_sha256": "c62fbf184b2480fbed67732defd80f8489f34e0fcc5c4470dc3b21902bb98ee6",
+      "measured": {
+        "traces": 1,
+        "segments": 2,
+        "nodes": 3,
+        "segment_lengths": [
+          3.0,
+          4.0
+        ],
+        "raw_angles_degrees": [
+          90.0,
+          0.0
+        ],
+        "segment_midpoints": [
+          [
+            -7.5,
+            -8.0
+          ],
+          [
+            -6.0,
+            -6.0
+          ]
+        ],
+        "trace_lengths": [
+          7.0
+        ],
+        "trace_midpoints": [
+          [
+            -6.0,
+            -7.5
+          ]
+        ],
+        "euclidean_lengths": [
+          5.0
+        ],
+        "bounds_xyxy": [
+          -9.0,
+          -8.0,
+          -6.0,
+          -4.0
+        ],
+        "area": 12.0,
+        "diagonal": 5.0,
+        "length_unit": "pixels",
+        "diagnostics": []
+      },
+      "max_absolute_errors": {
+        "segment_lengths": 0.0,
+        "raw_angles_degrees": 0.0,
+        "trace_length": 0.0,
+        "trace_halfway_point": 0.0,
+        "bounds_xyxy": 0.0,
+        "segment_midpoints": 0.0
+      },
+      "status": "passed"
+    },
+    {
+      "id": "duplicate",
+      "input": {
+        "file": "tests/fixtures/nodes/duplicate.txt",
+        "scale": null
+      },
+      "input_sha256": "dcfdcdd7d3d6cb1321adf7a826dc135d53db1e8372ddc996eae8ec6f3acb0fec",
+      "measured": {
+        "traces": 1,
+        "segments": 2,
+        "nodes": 3,
+        "segment_lengths": [
+          3.0,
+          4.0
+        ],
+        "raw_angles_degrees": [
+          90.0,
+          0.0
+        ],
+        "segment_midpoints": [
+          [
+            2.5,
+            2.0
+          ],
+          [
+            4.0,
+            4.0
+          ]
+        ],
+        "trace_lengths": [
+          7.0
+        ],
+        "trace_midpoints": [
+          [
+            4.0,
+            2.5
+          ]
+        ],
+        "euclidean_lengths": [
+          5.0
+        ],
+        "bounds_xyxy": [
+          1.0,
+          2.0,
+          4.0,
+          6.0
+        ],
+        "area": 12.0,
+        "diagonal": 5.0,
+        "length_unit": "pixels",
+        "diagnostics": [
+          {
+            "code": "consecutive_duplicate",
+            "trace_id": 0,
+            "source_line": 1,
+            "source_node_index": 1,
+            "retained_node_id": [
+              0,
+              0
+            ],
+            "message": "Consecutive duplicate node removed."
+          }
+        ]
+      },
+      "max_absolute_errors": {
+        "segment_lengths": 0.0,
+        "raw_angles_degrees": 0.0,
+        "trace_length": 0.0,
+        "trace_halfway_point": 0.0,
+        "bounds_xyxy": 0.0,
+        "segment_midpoints": 0.0
+      },
+      "status": "passed"
+    },
+    {
+      "id": "mixed",
+      "input": {
+        "file": "tests/fixtures/nodes/mixed.txt"
+      },
+      "input_sha256": "63b5d3d2d096b6831a58189a2ef36ef93a34f05ae9b86e396ed4e730abe8cf3a",
+      "measured": {
+        "traces": 2,
+        "segments": 3,
+        "nodes": 5,
+        "segment_lengths": [
+          4.0,
+          3.0,
+          4.0
+        ],
+        "raw_angles_degrees": [
+          90.0,
+          90.0,
+          0.0
+        ],
+        "segment_midpoints": [
+          [
+            2.0,
+            0.0
+          ],
+          [
+            2.5,
+            2.0
+          ],
+          [
+            4.0,
+            4.0
+          ]
+        ],
+        "trace_lengths": [
+          4.0,
+          7.0
+        ],
+        "trace_midpoints": [
+          [
+            2.0,
+            0.0
+          ],
+          [
+            4.0,
+            2.5
+          ]
+        ],
+        "euclidean_lengths": [
+          4.0,
+          5.0
+        ],
+        "bounds_xyxy": [
+          0.0,
+          0.0,
+          4.0,
+          6.0
+        ],
+        "area": 24.0,
+        "diagonal": 7.211102550927978,
+        "length_unit": "pixels",
+        "diagnostics": []
+      },
+      "max_absolute_errors": {
+        "trace_lengths": 0.0,
+        "bounds_xyxy": 0.0,
+        "area": 0.0
+      },
+      "status": "passed"
+    },
+    {
+      "id": "scaled",
+      "input": {
+        "file": "tests/fixtures/nodes/polyline.txt",
+        "scale": 2
+      },
+      "input_sha256": "fb25ac4547b8fd2287ff59f9c97e6357677522e65eac00c96ce63cb8fbc184e9",
+      "measured": {
+        "traces": 1,
+        "segments": 2,
+        "nodes": 3,
+        "segment_lengths": [
+          1.5,
+          2.0
+        ],
+        "raw_angles_degrees": [
+          90.0,
+          0.0
+        ],
+        "segment_midpoints": [
+          [
+            1.25,
+            1.0
+          ],
+          [
+            2.0,
+            2.0
+          ]
+        ],
+        "trace_lengths": [
+          3.5
+        ],
+        "trace_midpoints": [
+          [
+            2.0,
+            1.25
+          ]
+        ],
+        "euclidean_lengths": [
+          2.5
+        ],
+        "bounds_xyxy": [
+          0.5,
+          1.0,
+          2.0,
+          3.0
+        ],
+        "area": 3.0,
+        "diagonal": 2.5,
+        "length_unit": "metres",
+        "diagnostics": []
+      },
+      "max_absolute_errors": {
+        "segment_lengths": 0.0,
+        "trace_length": 0.0,
+        "bounds_xyxy": 0.0,
+        "area": 0.0,
+        "trace_halfway_point": 0.0
+      },
+      "status": "passed"
+    }
+  ],
+  "real_examples": [
+    {
+      "source": "fracpaq-matlab/IYXtest1_converted.txt",
+      "source_sha256": "1f93eb29a91638709db293f168d15f839ce02a149603b327cec0f0ada433efff",
+      "original_status": "accepted",
+      "counts": {
+        "traces": 13,
+        "segments": 14,
+        "nodes": 27
+      },
+      "area": 7138.0,
+      "total_length": 365.0,
+      "duplicates_removed": 0
+    },
+    {
+      "source": "fracpaq-matlab/IYXtest2_converted.txt",
+      "source_sha256": "c25a8f966ca86aa10868d677b6a079737c3c102aab8485368700098e84d57382",
+      "original_status": "accepted",
+      "counts": {
+        "traces": 13,
+        "segments": 14,
+        "nodes": 27
+      },
+      "area": 7138.0,
+      "total_length": 365.00004961583466,
+      "duplicates_removed": 0
+    },
+    {
+      "source": "fracpaq-matlab/map1_edit_converted.txt",
+      "source_sha256": "e3754807afbe03da1a88d11c2808555c25ad22ef58ab03f55e22c0dc8234cf56",
+      "original_status": "rejected_degenerate_traces",
+      "issues": [
+        {
+          "line": 1589,
+          "column": null,
+          "code": "degenerate_trace",
+          "message": "A trace must contain a nonzero segment."
+        },
+        {
+          "line": 1595,
+          "column": null,
+          "code": "degenerate_trace",
+          "message": "A trace must contain a nonzero segment."
+        },
+        {
+          "line": 1604,
+          "column": null,
+          "code": "degenerate_trace",
+          "message": "A trace must contain a nonzero segment."
+        }
+      ],
+      "preparation": "Excluded lines replaced by empty lines in a temporary copy.",
+      "prepared_sha256": "d81d43dd7921daf2c1deb85c346078480e641112e1ef62686bff930784a9b7e3",
+      "excluded_lines": [
+        1589,
+        1595,
+        1604
+      ],
+      "counts": {
+        "traces": 2120,
+        "segments": 4356,
+        "nodes": 6476
+      },
+      "area": 31117.9478478,
+      "total_length": 11762.794956456297,
+      "duplicates_removed": 11
+    },
+    {
+      "source": "fracpaq-matlab/map7_edit_converted.txt",
+      "source_sha256": "61292474ed0b0a5adb20b3efd8402e7edb303139c65f50e61dd764d78a066bce",
+      "original_status": "rejected_degenerate_traces",
+      "issues": [
+        {
+          "line": 2496,
+          "column": null,
+          "code": "degenerate_trace",
+          "message": "A trace must contain a nonzero segment."
+        },
+        {
+          "line": 3242,
+          "column": null,
+          "code": "degenerate_trace",
+          "message": "A trace must contain a nonzero segment."
+        }
+      ],
+      "preparation": "Excluded lines replaced by empty lines in a temporary copy.",
+      "prepared_sha256": "406900cc53e9916c03b6041261cf05c5812aefee0781d7e3690d2a70039e6d0e",
+      "excluded_lines": [
+        2496,
+        3242
+      ],
+      "counts": {
+        "traces": 4090,
+        "segments": 10134,
+        "nodes": 14224
+      },
+      "area": 31117.9478478,
+      "total_length": 19782.260594878855,
+      "duplicates_removed": 15
+    },
+    {
+      "source": "fracpaq-matlab/Souter_Blue.txt",
+      "source_sha256": "33c60eac1bf2c9b11cb399ce6026af9ec9d4f6521156da9fdd2cae2baf6e376a",
+      "original_status": "accepted",
+      "counts": {
+        "traces": 2561,
+        "segments": 4075,
+        "nodes": 6636
+      },
+      "area": 31797828.552423444,
+      "total_length": 276404.0642136122,
+      "duplicates_removed": 0
+    }
+  ],
+  "intersections": [
+    {
+      "first": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "second": [
+        2,
+        -1,
+        2,
+        1
+      ],
+      "measured": {
+        "kind": "point",
+        "points": [
+          [
+            2.0,
+            0.0
+          ]
+        ],
+        "parameters_first": [
+          0.5
+        ],
+        "parameters_second": [
+          0.5
+        ],
+        "parallel": false,
+        "coincident": false
+      }
+    },
+    {
+      "first": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "second": [
+        2,
+        0,
+        6,
+        0
+      ],
+      "measured": {
+        "kind": "overlap",
+        "points": [
+          [
+            2.0,
+            0.0
+          ],
+          [
+            4.0,
+            0.0
+          ]
+        ],
+        "parameters_first": [
+          0.5,
+          1.0
+        ],
+        "parameters_second": [
+          0.0,
+          0.5
+        ],
+        "parallel": true,
+        "coincident": true
+      }
+    },
+    {
+      "first": [
+        0,
+        0,
+        4,
+        0
+      ],
+      "second": [
+        0,
+        1,
+        4,
+        1
+      ],
+      "measured": {
+        "kind": "none",
+        "points": [],
+        "parameters_first": [],
+        "parameters_second": [],
+        "parallel": true,
+        "coincident": false
+      }
+    }
+  ],
+  "matlab_comparison": "pending"
+}

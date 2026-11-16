@@ -1,0 +1,432 @@
+{
+  "scope": "Python deterministic Hough; no native MATLAB comparison.",
+  "cases": [
+    {
+      "case": "directional",
+      "input": "tests/fixtures/images/directional.tif",
+      "input_sha256": "c98781ec693721bded1f809e15bdb66cd48af4ba3be6b6cf61ce9645ac6f3020",
+      "metadata": {
+        "path": "tests/fixtures/images/directional.tif",
+        "format": "TIFF",
+        "mode": "L",
+        "width": 32,
+        "height": 32,
+        "bit_depth": 8,
+        "frames": 1
+      },
+      "accumulator_shape": [
+        89,
+        360
+      ],
+      "max_votes": 24,
+      "threshold": 8,
+      "peaks": 7,
+      "traces": 7,
+      "nodes": 14,
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 32.0,
+        "y_max": 32.0
+      },
+      "total_length": 91.0
+    },
+    {
+      "case": "rectangular",
+      "input": "tests/fixtures/images/rectangular.tif",
+      "input_sha256": "5dafc5d3bbcea5dbf4563eb0086271261ba59b490346bf3c06c699196230d6f0",
+      "metadata": {
+        "path": "tests/fixtures/images/rectangular.tif",
+        "format": "TIFF",
+        "mode": "L",
+        "width": 48,
+        "height": 24,
+        "bit_depth": 8,
+        "frames": 1
+      },
+      "accumulator_shape": [
+        107,
+        360
+      ],
+      "max_votes": 40,
+      "threshold": 14,
+      "peaks": 3,
+      "traces": 3,
+      "nodes": 6,
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 48.0,
+        "y_max": 24.0
+      },
+      "total_length": 83.0
+    },
+    {
+      "case": "Macduff",
+      "input": "fracpaq-matlab/MacduffBinary.tif",
+      "input_sha256": "3042478044a4266b90ee238886df55842316d7a21a15fdfe3419329c76cc03b2",
+      "metadata": {
+        "path": "fracpaq-matlab/MacduffBinary.tif",
+        "format": "TIFF",
+        "mode": "L",
+        "width": 256,
+        "height": 256,
+        "bit_depth": 8,
+        "frames": 1
+      },
+      "accumulator_shape": [
+        723,
+        360
+      ],
+      "max_votes": 126,
+      "threshold": 42,
+      "peaks": 355,
+      "traces": 1507,
+      "nodes": 3014,
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 256.0,
+        "y_max": 256.0
+      },
+      "total_length": 19500.811651687156
+    },
+    {
+      "case": "Orkney",
+      "input": "fracpaq-matlab/Orkney1aBinary.tif",
+      "input_sha256": "b1d9ee96581147b90f132ab5bcc3792df57cb8b8363126b9384f21d967db609d",
+      "metadata": {
+        "path": "fracpaq-matlab/Orkney1aBinary.tif",
+        "format": "TIFF",
+        "mode": "L",
+        "width": 512,
+        "height": 512,
+        "bit_depth": 8,
+        "frames": 1
+      },
+      "accumulator_shape": [
+        1447,
+        360
+      ],
+      "max_votes": 364,
+      "threshold": 121,
+      "peaks": 29,
+      "traces": 169,
+      "nodes": 338,
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 512.0,
+        "y_max": 512.0
+      },
+      "total_length": 4712.304132900683
+    }
+  ],
+  "rejected_originals": [
+    {
+      "input": "Macduff.tiff",
+      "message": "Selected image must be a single-frame, 8-bit grayscale JPEG/TIFF. Check console metadata; RGB, indexed and higher-depth images are not converted.",
+      "metadata": {
+        "path": "fracpaq-matlab/Macduff.tiff",
+        "format": "TIFF",
+        "mode": "RGBA",
+        "width": 256,
+        "height": 256,
+        "bit_depth": 32,
+        "frames": 1
+      }
+    },
+    {
+      "input": "Orkney1a.tiff",
+      "message": "Selected image must be a single-frame, 8-bit grayscale JPEG/TIFF. Check console metadata; RGB, indexed and higher-depth images are not converted.",
+      "metadata": {
+        "path": "fracpaq-matlab/Orkney1a.tiff",
+        "format": "TIFF",
+        "mode": "RGBA",
+        "width": 512,
+        "height": 512,
+        "bit_depth": 32,
+        "frames": 1
+      }
+    }
+  ],
+  "figures": [
+    {
+      "path": "FracPaQ2D_Houghstuff_directional.png",
+      "sha256": "967018a639ea3935b03eaec4e61d44dcec4f4ef0bc04120c3b5fe85f825d80b5",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_Houghstuff_directional.png",
+      "qa_sha256": "9df6af03339a638be398ebab76a6f0f34f059a557b882d3f4d476bb8d5f5ac80"
+    },
+    {
+      "path": "FracPaQ2D_Houghstuff_rectangular.png",
+      "sha256": "9ac412cf3364009057b00f8f157b1e33d0b3d23b98aea76b19b6f10697408f6b",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_Houghstuff_rectangular.png",
+      "qa_sha256": "7bc960f02e59c426d5c8aeebd7b00604f7f5fabfd190d87ae742dafc265b25ba"
+    },
+    {
+      "path": "FracPaQ2D_Houghstuff_Macduff.png",
+      "sha256": "0c143bb0a4748b2d702ce6e5205d4eb0c31f5977ef84612c3f02cecf4fe2acfb",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_Houghstuff_Macduff.png",
+      "qa_sha256": "27fdc0ee81fc41399bf0248af0ab64e8ad857e9e28eae459cea560575e31437b"
+    },
+    {
+      "path": "FracPaQ2D_Houghstuff_Orkney.png",
+      "sha256": "e7a94dbff7407e799a26a7d659996abb9f001486bf37baa12ae4babbbf513b66",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_Houghstuff_Orkney.png",
+      "qa_sha256": "55a459e027595ef52e3603cdcb8def050126f407daf8d1558c205681fc2fd01c"
+    },
+    {
+      "id": "MAP-01",
+      "path": "FracPaQ2D_tracemap_image.png",
+      "sha256": "3a8fec7f1973200e428113591832765656e88c6aaad83ac78fcd300a01373635",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracemap_image.png",
+      "qa_sha256": "119cd8e7fb3a6dfb0c368241ae59a12f068fd48c9abf093a1a51d048c3cebe53"
+    },
+    {
+      "id": "MAP-04",
+      "path": "FracPaQ2D_tracelengthmap_image.png",
+      "sha256": "dc82e55d2f1fea44d65dc2881671ba8be159917a5136a6237b2e0b8d62d42467",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracelengthmap_image.png",
+      "qa_sha256": "e8292fbe83fecf50609fb0112c763ad13f48b95b224a042a05643b3089600fe0"
+    },
+    {
+      "id": "MAP-05",
+      "path": "FracPaQ2D_segmentlengthmap_image.png",
+      "sha256": "5d56c1bac206160dcd7f1e1c5a3f78935027f89e5a19d464a8be32a819521bd3",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlengthmap_image.png",
+      "qa_sha256": "4cef19132f5dd062a943df0531132ac334ea3068d3e0979c1699254d80f33f50"
+    },
+    {
+      "id": "MAP-06",
+      "path": "FracPaQ2D_segmentstrikemap_image.png",
+      "sha256": "14fec83bcf035a3ae49cd9a63f6b886da515d0b87c37b526d25edb424070fa2a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentstrikemap_image.png",
+      "qa_sha256": "4a3f3597248cdc7d33eaf048739ea3496dec1476d50c5fa30b67af606b4410a7"
+    },
+    {
+      "id": "LEN-02",
+      "path": "FracPaQ2D_histotracelength_image.png",
+      "sha256": "069baa3a2834ae2746ac74434c0a502e0fe561f84fe209692242c761260e4a7a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_histotracelength_image.png",
+      "qa_sha256": "a9162308c577fb6224906d5a27e6ede5e17c0e7c823d0dde74b3f4e5c487668c"
+    },
+    {
+      "id": "LEN-02",
+      "path": "FracPaQ2D_histosegmentlength_image.png",
+      "sha256": "3790212802837c22af2839052d7b19ba78e10686cd46bd87465f83ddf2e5a619",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_histosegmentlength_image.png",
+      "qa_sha256": "62bb430ed3b25d2d9422c1565444d6dbcc19c835d3dce917486658ce7e05b466"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplottracelengthdensity_image.png",
+      "sha256": "f7852860bed85c83ebf1ed3ba73552d806c92216f95a121ca6839579c3bf9f8c",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplottracelengthdensity_image.png",
+      "qa_sha256": "ca2b9dcbdb7857931873f6bd7afd5587a3011b839704b7daf557d91b6908742b"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplottracelength_image.png",
+      "sha256": "6436a6cc3494c66c052d73f9a4f3dbec61e332fb6c476f65cf6cf02610896ea1",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplottracelength_image.png",
+      "qa_sha256": "44e00fb7348c51b09c5ba75e181d0dc4f1b260270e27b5c64320be1447df2614"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplotsegmentlengthdensity_image.png",
+      "sha256": "73b634a39446476c669a6a7ba3873772f76a85a6fed1d24d7b1649c6b459b34b",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplotsegmentlengthdensity_image.png",
+      "qa_sha256": "c5d2aeda7851ca600014c1e8f3d6ee15839a5872e4de3555d41e057b8f340d0e"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplotsegmentlength_image.png",
+      "sha256": "ed7079e4c7a39abe678e07acccdbd52d3d1909bbe14233fb7fb0df44d74085b5",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplotsegmentlength_image.png",
+      "qa_sha256": "723bab7edcbe40ffca26219ecb78b355b3753c9f96538694ce389f159ffb8d71"
+    },
+    {
+      "id": "LEN-06",
+      "path": "FracPaQ2D_crossplotsegmentlengthangle_image.png",
+      "sha256": "33257b5611cbeb4d345b80b67ae7641ddc57da87b4f25de98022e8b083055a6f",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_crossplotsegmentlengthangle_image.png",
+      "qa_sha256": "eabbe11e9113cc5b2a54005ec542e82489f3d314ca78130d96518058750302ba"
+    },
+    {
+      "id": "ANG-01",
+      "path": "FracPaQ2D_histoangle_image.png",
+      "sha256": "d9845a045e8fcfe6fae54367c9922dbf4e370d3214742c75ada309c4aa5f5d7a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_histoangle_image.png",
+      "qa_sha256": "505bf1b1a948d6262288b65c127f5f9f7ceb2dd046790f93853e01b0a6ff04eb"
+    },
+    {
+      "id": "ANG-02",
+      "path": "FracPaQ2D_roseangleEqArea_image.png",
+      "sha256": "5ffd40068872c7ae898bf76ca18780561b5350256fa9ef73657ae8739995a28b",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_roseangleEqArea_image.png",
+      "qa_sha256": "229deab25706884195ffa40fddf66fb373842059909a7d852157eaad37856995"
+    }
+  ],
+  "arrays_sha256": "91f6e92b2951abf82917a35b281a306fd9eb29f8cfb90cb365f4afd5473b61c9",
+  "parameters_sha256": "3f3630f61172be51c920717a655ff4626538e0a2bae6367c37b8ad1eef1ce552",
+  "date": "2026-11-14",
+  "python": "3.13.18",
+  "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2",
+  "matlab_comparison": "pending",
+  "txt": [
+    {
+      "path": "FracPaQ2DEZROSE_image.txt",
+      "sha256": "740afc0f5b5cc264a1b2797560a8e0ac936691f50f4a1e02d1b5a41a1c7b9fc7"
+    },
+    {
+      "path": "FracPaQ2Dsegmentangleslengths_image.txt",
+      "sha256": "98d8b491d74d7c6a9f1d556fc1781099f47f4d10432697de2823eb4641f3a66f"
+    },
+    {
+      "path": "FracPaQ2Dsegmentlengths_image.txt",
+      "sha256": "bf478444859ba2547a9ee408cf298fc1f1e94ff175ceb7513c8c7a9590ae0a8a"
+    },
+    {
+      "path": "FracPaQ2Dtracelengths_image.txt",
+      "sha256": "bf478444859ba2547a9ee408cf298fc1f1e94ff175ceb7513c8c7a9590ae0a8a"
+    }
+  ]
+}

@@ -1,0 +1,683 @@
+{
+  "figures": [
+    {
+      "id": "MAP-01",
+      "path": "FracPaQ2D_tracemap_audit.png",
+      "sha256": "6bc35fde10e1f0acfadb9b63f0bae8847895c4e111792b2462905317c682b8f0",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracemap_audit.png",
+      "qa_sha256": "fd8f65ec689499569f219af5136a4cfc8d8c5cac2787b5e374fe1b88faef79c3"
+    },
+    {
+      "id": "MAP-04",
+      "path": "FracPaQ2D_tracelengthmap_audit.png",
+      "sha256": "d4816b7d65845949ea88366122e7c8c4d76a96dd19a4d4d591dc0678a8613d8b",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracelengthmap_audit.png",
+      "qa_sha256": "29377a4499cc67a44a2025049ecb7fcc66e79c889f149122cc9fd261941e3156"
+    },
+    {
+      "id": "MAP-05",
+      "path": "FracPaQ2D_segmentlengthmap_audit.png",
+      "sha256": "572015b4f0be44e9ab4c6ca690b73641c5aaea1b088b4373a68690e31c619c74",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlengthmap_audit.png",
+      "qa_sha256": "ff028d51f5ebd9211d5da271fa4e0ca6da6f474d442dfd737153a7e39be3df7a"
+    },
+    {
+      "id": "MAP-06",
+      "path": "FracPaQ2D_segmentstrikemap_audit.png",
+      "sha256": "f7b63a486d3b09e9c5d32df7147e0158905ac14c6d32f034dc306dd5c32cbb93",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentstrikemap_audit.png",
+      "qa_sha256": "a0e247eafdf0672178a93a290ddcf0c141fed059eaf5f216d30b6de4d61480af"
+    },
+    {
+      "id": "LEN-02",
+      "path": "FracPaQ2D_histotracelength_audit.png",
+      "sha256": "817576cb6098af75f1a69e93fca933665693326e6dd3de08e5614cc7a8d28e35",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_histotracelength_audit.png",
+      "qa_sha256": "fcfb784604ad1eb2b35e1985d85a0322fad058385b92ec8f3dd31ac8005db5c7"
+    },
+    {
+      "id": "LEN-02",
+      "path": "FracPaQ2D_histosegmentlength_audit.png",
+      "sha256": "10da6b50d9b03d3fbd2f7c5ff023c736a3ecfda9d62ec1eaf25713e63b04df27",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_histosegmentlength_audit.png",
+      "qa_sha256": "eadfffb8f1479a6ca77965f1c583cd1591799284ae1c1f05230b71964f5cd3a3"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplottracelengthdensity_audit.png",
+      "sha256": "e0cf399f92c69778240c5272dc7f7b63221febd1ed7cd885ec0b0cad5b104290",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplottracelengthdensity_audit.png",
+      "qa_sha256": "4e70920edc8643cac13bde3388b3d6f92e109f992382d5f2588c180769e195dd"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplottracelength_audit.png",
+      "sha256": "7936824db089eb380e88940b8f19aed8e20c518f965eb89a3366982cde3e4697",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplottracelength_audit.png",
+      "qa_sha256": "a90993e51a9a30590d6a9c028dc255e38c255408b25beb0167f16fec0dffb2c6"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplotsegmentlengthdensity_audit.png",
+      "sha256": "b76b56104792fcbdd35e6d1513326fa06399de717cfdaa52b9fe1cee3e9be952",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplotsegmentlengthdensity_audit.png",
+      "qa_sha256": "7d85efc91005b3f8faeecabd9afe01327dda7e9b14b7ad2671c21f03f230ec4a"
+    },
+    {
+      "id": "LEN-03",
+      "path": "FracPaQ2D_loglogplotsegmentlength_audit.png",
+      "sha256": "6e7ffeaaa07eda66ae42de0caf573a8ad542614c678619c9a80acfe485103fae",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_loglogplotsegmentlength_audit.png",
+      "qa_sha256": "f72df1222476cf155cd89fffbe840f41690efc02ab093a21e4c98542bdf4687b"
+    },
+    {
+      "id": "LEN-06",
+      "path": "FracPaQ2D_crossplotsegmentlengthangle_audit.png",
+      "sha256": "7d534dc994ca5918d5a965d9e5a8acf2da070228c303647e36e5f06e8a68bb07",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_crossplotsegmentlengthangle_audit.png",
+      "qa_sha256": "d6512c69483e17560069e879331cb18cf47562afa33af202be28d3ddc5f2629f"
+    },
+    {
+      "id": "ANG-01",
+      "path": "FracPaQ2D_histoangle_audit.png",
+      "sha256": "1f4802ade8ae2ccff8eb5351cf087e276dca0d5037461a104cb00400e1a94487",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_histoangle_audit.png",
+      "qa_sha256": "02821dc8a2ab9c6da76a5f6ccb5e9bf7bc3a6eaaccad5f83ebead6404f5495c0"
+    },
+    {
+      "id": "ANG-02",
+      "path": "FracPaQ2D_roseangleEqArea_audit.png",
+      "sha256": "ff35a526539d196c29132fd02fa6b6eb78fae7ede404d10abf4a4b2dd21d17af",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_roseangleEqArea_audit.png",
+      "qa_sha256": "fafa687c8ce83f4a7be5f59f80f8f79f95089f7d8b10ebed0786cb8c0b7e9728"
+    }
+  ],
+  "comparisons": [
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_tracemap_audit.png",
+      "python_sha256": "6bc35fde10e1f0acfadb9b63f0bae8847895c4e111792b2462905317c682b8f0",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_tracemap_audit.png",
+      "matlab_sha256": "86cc809ae6b9c49854caf154fdf6a5f0a576efe1266e8582f065d12030c4a668",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9538340422630851,
+        "body": 0.9943740722212234,
+        "bottom": 0.9776513145916828
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_tracemap_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_tracelengthmap_audit.png",
+      "python_sha256": "d4816b7d65845949ea88366122e7c8c4d76a96dd19a4d4d591dc0678a8613d8b",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_tracelengthmap_audit.png",
+      "matlab_sha256": "953d255f81b94027df31c61c4a91a9c9c7ad2ca6970b4d7e930334f1f63c7b44",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9751373230040586,
+        "body": 0.9839031196399359,
+        "bottom": 0.8954254426724343
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_tracelengthmap_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_segmentlengthmap_audit.png",
+      "python_sha256": "572015b4f0be44e9ab4c6ca690b73641c5aaea1b088b4373a68690e31c619c74",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_segmentlengthmap_audit.png",
+      "matlab_sha256": "0e1824f663d710c477d6ab9ad1e00e867cf4893ff516ea2adf5ea4b2b3c8b50e",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9738929481464845,
+        "body": 0.9838292375017103,
+        "bottom": 0.8919969107582758
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_segmentlengthmap_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_segmentstrikemap_audit.png",
+      "python_sha256": "f7b63a486d3b09e9c5d32df7147e0158905ac14c6d32f034dc306dd5c32cbb93",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_segmentstrikemap_audit.png",
+      "matlab_sha256": "efb4ba2377df7dd7758c537703c4c27f74452a4af911a2e421a5f1f321995609",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9737353000039478,
+        "body": 0.9845007241722321,
+        "bottom": 0.8741086142620612
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_segmentstrikemap_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_histotracelength_audit.png",
+      "python_sha256": "817576cb6098af75f1a69e93fca933665693326e6dd3de08e5614cc7a8d28e35",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_histotracelength_audit.png",
+      "matlab_sha256": "eb3877d300644629d2c725ed13b25d924afdf4404427c49d7c9d98262517a16e",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9797224945402645,
+        "body": 0.983139339098806,
+        "bottom": 0.9676987143475801
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_histotracelength_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_histosegmentlength_audit.png",
+      "python_sha256": "10da6b50d9b03d3fbd2f7c5ff023c736a3ecfda9d62ec1eaf25713e63b04df27",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_histosegmentlength_audit.png",
+      "matlab_sha256": "0b36f377bbaee72aea3d98424b9606065fe36509acfb8dda275e812b87a00019",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9786739288644876,
+        "body": 0.9836802332973464,
+        "bottom": 0.9643965996408036
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_histosegmentlength_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_loglogplottracelengthdensity_audit.png",
+      "python_sha256": "e0cf399f92c69778240c5272dc7f7b63221febd1ed7cd885ec0b0cad5b104290",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_loglogplottracelengthdensity_audit.png",
+      "matlab_sha256": "bb3aef79e735d2c8a5096a2662f69ac650dd58f2fdd8066e7e210ab6d1a5e711",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9652858612028273,
+        "body": 0.9760179946819171,
+        "bottom": 0.9777760807430219
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_loglogplottracelengthdensity_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_loglogplottracelength_audit.png",
+      "python_sha256": "7936824db089eb380e88940b8f19aed8e20c518f965eb89a3366982cde3e4697",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_loglogplottracelength_audit.png",
+      "matlab_sha256": "a7271bc0da8b43aee22d1af29ae412c61c98b80bbb08c71b0e1526db519ecb9e",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9617731151573649,
+        "body": 0.9669408479183347,
+        "bottom": 0.9735914473566742
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_loglogplottracelength_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_loglogplotsegmentlengthdensity_audit.png",
+      "python_sha256": "b76b56104792fcbdd35e6d1513326fa06399de717cfdaa52b9fe1cee3e9be952",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_loglogplotsegmentlengthdensity_audit.png",
+      "matlab_sha256": "b7739818ac4a64421e06537c13c0074735132cac1c64c1cf582537f10a3b15a0",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9628196005541344,
+        "body": 0.9718383137390233,
+        "bottom": 0.9739564985415522
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_loglogplotsegmentlengthdensity_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_loglogplotsegmentlength_audit.png",
+      "python_sha256": "6e7ffeaaa07eda66ae42de0caf573a8ad542614c678619c9a80acfe485103fae",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_loglogplotsegmentlength_audit.png",
+      "matlab_sha256": "5c9dc40d9cced02dd569ba2417e23917283a433ca509b83efef0fdfaf69aecd0",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9570627222889985,
+        "body": 0.9590284052593473,
+        "bottom": 0.969654248011855
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_loglogplotsegmentlength_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_crossplotsegmentlengthangle_audit.png",
+      "python_sha256": "7d534dc994ca5918d5a965d9e5a8acf2da070228c303647e36e5f06e8a68bb07",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_crossplotsegmentlengthangle_audit.png",
+      "matlab_sha256": "d4b587e259ecf124f993058f6f3194d2780b2a13ebf51b95a5a626183af2e193",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9697376544265853,
+        "body": 0.9871352817116984,
+        "bottom": 0.9538790641922588
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_crossplotsegmentlengthangle_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_histoangle_audit.png",
+      "python_sha256": "1f4802ade8ae2ccff8eb5351cf087e276dca0d5037461a104cb00400e1a94487",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_histoangle_audit.png",
+      "matlab_sha256": "9c6e74b71d6864075b2007341ab57bc717d2ee717384318fc8ec18673710fe0a",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9760874712008576,
+        "body": 0.9848958222080496,
+        "bottom": 0.9508397188617655
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_histoangle_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    },
+    {
+      "python": "tests/reference/sprint16/candidate/FracPaQ2D_roseangleEqArea_audit.png",
+      "python_sha256": "ff35a526539d196c29132fd02fa6b6eb78fae7ede404d10abf4a4b2dd21d17af",
+      "matlab": "tests/reference/sprint16/native/FracPaQ2D_roseangleEqArea_audit.png",
+      "matlab_sha256": "1c8343aa6838b7c077578d4911779cde03ec363b3a003f5981d8f03ae54f94f4",
+      "regions_xyxy": {
+        "title": [
+          0,
+          0,
+          4724,
+          472
+        ],
+        "body": [
+          0,
+          472,
+          4724,
+          4015
+        ],
+        "bottom": [
+          0,
+          4015,
+          4724,
+          4724
+        ]
+      },
+      "ssim_rgb_data_range255": {
+        "title": 0.9524527561057804,
+        "body": 0.9532787955281826,
+        "bottom": 0.9433594656241061
+      },
+      "threshold": 0.98,
+      "exploratory_regions_pass": false,
+      "difference": "tests/reference/sprint16/candidate/diff-FracPaQ2D_roseangleEqArea_audit.png",
+      "acceptance": "Not homologated: semantic/data review and independent regions required."
+    }
+  ],
+  "files_comparison": [
+    {
+      "name": "FracPaQ2Dsegmentlengths_audit.txt",
+      "bytes_exact": true,
+      "sha256": "ef315c5922db8d8234e8670cf08dc3efa61b6a736b782cedab84148b381742f5",
+      "matlab_sha256": "ef315c5922db8d8234e8670cf08dc3efa61b6a736b782cedab84148b381742f5"
+    },
+    {
+      "name": "FracPaQ2Dtracelengths_audit.txt",
+      "bytes_exact": true,
+      "sha256": "f1962792585e10e9a5d292e801150ca660ab842be69f1fb15652aae668f41516",
+      "matlab_sha256": "f1962792585e10e9a5d292e801150ca660ab842be69f1fb15652aae668f41516"
+    },
+    {
+      "name": "FracPaQ2Dsegmentangleslengths_audit.txt",
+      "bytes_exact": true,
+      "sha256": "cd35d07d290bb63fa11a18225ca3b1dba16053617cdac9242b732df8a2d5275c",
+      "matlab_sha256": "cd35d07d290bb63fa11a18225ca3b1dba16053617cdac9242b732df8a2d5275c"
+    },
+    {
+      "name": "FracPaQ2DEZROSE_audit.txt",
+      "bytes_exact": true,
+      "sha256": "d04b7fa146f6e018ceef6999339129c64103d1ef5de96be6a5bb45ea8538214c",
+      "matlab_sha256": "d04b7fa146f6e018ceef6999339129c64103d1ef5de96be6a5bb45ea8538214c"
+    }
+  ],
+  "scope": "Same source input/flags. Quantitative exploratory images; no whole-family parity claim."
+}

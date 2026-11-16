@@ -1,0 +1,18 @@
+{
+  "source": "/Users/lm/developer/pyfracpaq/tests/reference/sprint16/final/native-extra/FracPaQ2D_Houghstuff_extra.png",
+  "source_sha256": "cf55b80896faec67a7a99aabd9a0786c0e698a245f20cee5c3527d0209daf54d",
+  "scope": "Raster viewport inferred from the uniform zero-height part of the native mesh, without moving or resampling either comparison image.",
+  "native_camera_pixel_model": {
+    "left": 645.36544404,
+    "top": 2685.93065641,
+    "span": 1517.66957043,
+    "stroke_width": 4.12494963
+  },
+  "production_projection": {
+    "scale": 0.999947,
+    "centre_phase_x": 0.2,
+    "centre_phase_y": -0.26545,
+    "stroke_quantum_pixels": 0.125
+  },
+  "independent_control": "native-graphics-details/mesh_probe_details.png; isolated mesh with no fracture observations."
+}

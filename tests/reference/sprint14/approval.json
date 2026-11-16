@@ -1,0 +1,7 @@
+{
+  "id": "Q-12",
+  "author": "user",
+  "date": "2026-11-14",
+  "statement": "Aprovo a Q-12.",
+  "scope": "Deterministic 1944x1944/72dpi raster with source margins/thicknesses; ny-by-nx rectangular arrays; integer angular divisor of180; stable first L/theta within rtol1e-12/atol1e-14 while retaining actual maximum WC."
+}

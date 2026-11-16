@@ -1,0 +1,779 @@
+{
+  "date": "2026-11-14",
+  "native_version": "MATLAB R2024b Update9",
+  "scripts": {
+    "scripts/capture_native_s16.m": "532867ab8974fd7f6693683b216f1f5bdff0f094ff13e8039ba4f793ad7daee2",
+    "scripts/capture_native_s16_details.m": "b3958901d976cc71a169a3a90dce40d851245c54f75dade602781b70f6a86151",
+    "scripts/capture_native_s16_exports.m": "2778ce2944bb988d343543bd2a173abfef1813a4ab35a6ad003722d884e4edc6"
+  },
+  "original_files_sha256_verified": 164,
+  "extra_original_folder_files_preserved": [
+    {
+      "path": "FracPaQ2D_histosegmentlength_Run1.png",
+      "sha256": "40432818e85ebdfb2599d0d1bea58f557cf5992af2872442385fbe7a1ebed908"
+    },
+    {
+      "path": "FracPaQ2D_histotracelength_Run1.png",
+      "sha256": "99d26d3653cfe46c4c012e6de5c5729c8ea823cc367629df7d49653fdd3eb96f"
+    },
+    {
+      "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+      "sha256": "f3c3d3e634a477f64c75c8f16c977d5f61ade54547996a2a76f6403a09f48266"
+    },
+    {
+      "path": "FracPaQ2D_tracelengthmap_Run1.png",
+      "sha256": "e94c17131fa2052be91e7fe3b7c44f830b5354f9d407f0503e0ea37686d557cf"
+    },
+    {
+      "path": "FracPaQ2D_tracemap_Run1.png",
+      "sha256": "781ac030cb77dabe45b557c0d59967455473ffdb68140f2339244af3d89db048"
+    },
+    {
+      "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+      "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7"
+    },
+    {
+      "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+      "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839"
+    },
+    {
+      "path": "FracPaQ2Dtracelengths_Run1.txt",
+      "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2DEZROSE_audit.txt",
+      "bytes": 84,
+      "sha256": "d04b7fa146f6e018ceef6999339129c64103d1ef5de96be6a5bb45ea8538214c"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_crossplotsegmentlengthangle_audit.png",
+      "bytes": 175795,
+      "sha256": "d4b587e259ecf124f993058f6f3194d2780b2a13ebf51b95a5a626183af2e193",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_crossplotsegmentlengthangle_censor.png",
+      "bytes": 181131,
+      "sha256": "fdc4230eb06ce2c6c8335fb855741cf4e1e544299c829fc73d0f912d0c329bfb",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_densityP20_audit.png",
+      "bytes": 186204,
+      "sha256": "8c692327967a5d2c82486e4fa79c050c7e554eac3e02451f185d4f2ad9c91209",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_histoangle_audit.png",
+      "bytes": 183791,
+      "sha256": "9c6e74b71d6864075b2007341ab57bc717d2ee717384318fc8ec18673710fe0a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_histosegmentlength_audit.png",
+      "bytes": 188828,
+      "sha256": "0b36f377bbaee72aea3d98424b9606065fe36509acfb8dda275e812b87a00019",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_histotracelength_audit.png",
+      "bytes": 190299,
+      "sha256": "eb3877d300644629d2c725ed13b25d924afdf4404427c49d7c9d98262517a16e",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_intensityP21_audit.png",
+      "bytes": 186281,
+      "sha256": "cf499c470d2f496e4ef8c9ee16392655dc0a77e648a6d54295af1cecf17e5223",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_loglogplotsegmentlength_audit.png",
+      "bytes": 193798,
+      "sha256": "5c9dc40d9cced02dd569ba2417e23917283a433ca509b83efef0fdfaf69aecd0",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_loglogplotsegmentlengthdensity_audit.png",
+      "bytes": 166714,
+      "sha256": "b7739818ac4a64421e06537c13c0074735132cac1c64c1cf582537f10a3b15a0",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_loglogplottracelength_audit.png",
+      "bytes": 182730,
+      "sha256": "a7271bc0da8b43aee22d1af29ae412c61c98b80bbb08c71b0e1526db519ecb9e",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_loglogplottracelengthdensity_audit.png",
+      "bytes": 158218,
+      "sha256": "bb3aef79e735d2c8a5096a2662f69ac650dd58f2fdd8066e7e210ab6d1a5e711",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_roseangleEqArea_audit.png",
+      "bytes": 471819,
+      "sha256": "1c8343aa6838b7c077578d4911779cde03ec363b3a003f5981d8f03ae54f94f4",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_scancircle_audit.png",
+      "bytes": 269287,
+      "sha256": "367f07bfab736b5ac7b8d3309e4eb2b18be83a3eadf3831fa3bd0fbb581fe8c0",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_segmentlengthmap_audit.png",
+      "bytes": 180898,
+      "sha256": "0e1824f663d710c477d6ab9ad1e00e867cf4893ff516ea2adf5ea4b2b3c8b50e",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_segmentstrikemap_audit.png",
+      "bytes": 187858,
+      "sha256": "efb4ba2377df7dd7758c537703c4c27f74452a4af911a2e421a5f1f321995609",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_tracelengthmap_audit.png",
+      "bytes": 179327,
+      "sha256": "953d255f81b94027df31c61c4a91a9c9c7ad2ca6970b4d7e930334f1f63c7b44",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2D_tracemap_audit.png",
+      "bytes": 183806,
+      "sha256": "86cc809ae6b9c49854caf154fdf6a5f0a576efe1266e8582f065d12030c4a668",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2Ddensity_audit.txt",
+      "bytes": 297,
+      "sha256": "5cfb879568f6cc22f7c0bcfc865d5c859cba04a349f183a97b2d599f7d9e9e4e"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2Dintensity_audit.txt",
+      "bytes": 297,
+      "sha256": "ba6a22cedfd1eb0ac2e7aff0744f11d49c14edb31d779d07c783e20c62ac94fa"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentangleslengths_audit.txt",
+      "bytes": 84,
+      "sha256": "cd35d07d290bb63fa11a18225ca3b1dba16053617cdac9242b732df8a2d5275c"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentangleslengths_censor.txt",
+      "bytes": 42,
+      "sha256": "f1666bf88371015778f86792b4766af46d8a9a6e514a23e1b6ee6e16799e3d04"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentlengths_audit.txt",
+      "bytes": 42,
+      "sha256": "ef315c5922db8d8234e8670cf08dc3efa61b6a736b782cedab84148b381742f5"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentlengths_censor.txt",
+      "bytes": 21,
+      "sha256": "e3c7eeb60f70f4ff246085559b9c78ca4aa325a928407c8ea020612ca0271e51"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2Dtracelengths_audit.txt",
+      "bytes": 35,
+      "sha256": "f1962792585e10e9a5d292e801150ca660ab842be69f1fb15652aae668f41516"
+    },
+    {
+      "path": "tests/reference/sprint16/native/FracPaQ2Dtracelengths_censor.txt",
+      "bytes": 21,
+      "sha256": "e3c7eeb60f70f4ff246085559b9c78ca4aa325a928407c8ea020612ca0271e51"
+    },
+    {
+      "path": "tests/reference/sprint16/native/angle_arrays.mat",
+      "bytes": 37761377,
+      "sha256": "9d48239fc2c04337366b54267769b7cc530bc78792a4db142e38c365c9aae042"
+    },
+    {
+      "path": "tests/reference/sprint16/native/angular_conventions.mat",
+      "bytes": 497,
+      "sha256": "6bda26034444cce794d64ae700c0206ba4e17ae50001d86ac757b4394ddfb100"
+    },
+    {
+      "path": "tests/reference/sprint16/native/circular_arrays.mat",
+      "bytes": 5511,
+      "sha256": "b2dd651e2ab184f096bd87a9ef2013fa99fa7438dbc33f3568afa34348d3230a"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/FracPaQ2D_Houghstuff_audit.png",
+      "bytes": 819557,
+      "sha256": "ee232e0db54591ba8e2b0295abb101e451bdc982581defa9567987f1a66a977d",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/audit_nodes.txt",
+      "bytes": 88,
+      "sha256": "b601922dbedcce31707293468030dfaa82ebf46a87f28334e3f9c1ba0b6949d1"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_angles.mat",
+      "bytes": 22088,
+      "sha256": "bef2a972193a78a70dd087ff58d464d0c534ce17c9823aabe317f3bced9c6808"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_angles.png",
+      "bytes": 47183,
+      "sha256": "bedc86c8a1d31df51b8423a1a23d55dc76fbe5a58f1b33288f9ef156bd69b560",
+      "size": [
+        600,
+        450
+      ],
+      "dpi": [
+        99.9998,
+        99.9998
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_fluid.mat",
+      "bytes": 22084,
+      "sha256": "77caed3d645def8bbdf5586089b40544d0db5023abda5279f33810f575dc4d41"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_fluid.png",
+      "bytes": 49508,
+      "sha256": "29754a2aae3bd2c78b4e33adeb6549632ce104027a4d44fccdc751d70f0d60a8",
+      "size": [
+        600,
+        450
+      ],
+      "dpi": [
+        99.9998,
+        99.9998
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_graphs.mat",
+      "bytes": 22074,
+      "sha256": "367478675c0a699d1850ed232641908b2de19ab5172c66f14d2b96927f3e17ca"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_graphs.png",
+      "bytes": 47948,
+      "sha256": "55d56c867c936020d8fe632a287482bbe57500e1ea81336fcf21d99e0bc1ecf4",
+      "size": [
+        600,
+        450
+      ],
+      "dpi": [
+        99.9998,
+        99.9998
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_initial.mat",
+      "bytes": 21769,
+      "sha256": "509073feb9325d9734540ecddf5d6b92f844f882523488178386763467e35321"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_initial.png",
+      "bytes": 29826,
+      "sha256": "ed3d693575c7b3a7cd2587e987fd75db40ee89e7cf7b8cd326fbfc804d2fb043",
+      "size": [
+        600,
+        450
+      ],
+      "dpi": [
+        99.9998,
+        99.9998
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_lengths.mat",
+      "bytes": 22095,
+      "sha256": "ace84d911f2195a3b048f4c458d75811cad7ab3c20184482533d746457023944"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_lengths.png",
+      "bytes": 47101,
+      "sha256": "52dee6cb25d45d1a6127eba9f30d3c24ced252f2d7e3a1d2d0d072dc75896baf",
+      "size": [
+        600,
+        450
+      ],
+      "dpi": [
+        99.9998,
+        99.9998
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_maps.mat",
+      "bytes": 22091,
+      "sha256": "60975326d4f78a102e22d68b185e3fc8f84ca003c17918a7256be0bf1da991b8"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_maps.png",
+      "bytes": 54189,
+      "sha256": "63040b9dcf68ea8bd56d851cc085cd59806f4cf0197a547951cb5fd1b33f6c81",
+      "size": [
+        600,
+        450
+      ],
+      "dpi": [
+        99.9998,
+        99.9998
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_preview.mat",
+      "bytes": 22087,
+      "sha256": "4e26f71b1ec7b9ff5d9c4a487888fc06c72eba2a28de7ac588f51d989e4e1d4a"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_preview.png",
+      "bytes": 54211,
+      "sha256": "133898b74caf044a528a7a841c5a8f7459e6c8f26adc22c37e0cacf6cfc762be",
+      "size": [
+        600,
+        450
+      ],
+      "dpi": [
+        99.9998,
+        99.9998
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_wavelets.mat",
+      "bytes": 22078,
+      "sha256": "75570a424358b40d51a360779aa74dbac3c689cdbe66ba67d12ebf56af0d4f5a"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/gui_wavelets.png",
+      "bytes": 48954,
+      "sha256": "9ce5dbb71bba23e8a7c357a495b9c6593212f6a19b9850e43f4cdc6cbf294cde",
+      "size": [
+        600,
+        450
+      ],
+      "dpi": [
+        99.9998,
+        99.9998
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/hough_real.mat",
+      "bytes": 315884,
+      "sha256": "c87a53acc9b50db17efc64cd89f84127a0a0504f2f09f10cfe2fb4c699e95238"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/image_reader.mat",
+      "bytes": 814,
+      "sha256": "b82a6a402be7d2fa20a4d8a77247db42e16434e94b67b46eb3d298671a97f432"
+    },
+    {
+      "path": "tests/reference/sprint16/native/details/native_calls.json",
+      "bytes": 56,
+      "sha256": "c8280f86cbcd8dfe15c677ca6fbe541799b04fea19c32505a324652af18fccf6"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2D_IYXnodes_traces_audit.png",
+      "bytes": 174065,
+      "sha256": "8a0b486f5f758d4f033bfc693ce0b8432da3c1b6f00bed6c3cbfc3fe33364828",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2D_IYXtriangle_audit.png",
+      "bytes": 290900,
+      "sha256": "1bc63e3429f71d8e735682a3c2cceb4588ab93513ad059ba46f10d7b672c743e",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2D_Inodes_traces_heat_audit.png",
+      "bytes": 164997,
+      "sha256": "5dd2fe86a460af069abbb1ee09ad0734c465e90b7f47961685812f236f954505",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2D_XYnodes_traces_heat_audit.png",
+      "bytes": 178822,
+      "sha256": "027ac5aceb98403fa68f10c42b7c62786c2e58b5296b300cf027ca2af16b4d96",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2D_segmentlengthsFittingExponential_audit.png",
+      "bytes": 291129,
+      "sha256": "fdc4470d4abe56805ae3ae1c8492d27bd2af953e1514eca4d7110a0f88f3515f",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2D_segmentlengthsFittingLogNormal_audit.png",
+      "bytes": 352159,
+      "sha256": "a506ddd224fd29b288f7d20dc2d9451017a6cc758190474eeae6271e2509d4ef",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2D_segmentlengthsFittingPowerLaw_audit.png",
+      "bytes": 321623,
+      "sha256": "d2802b001bab843b897745169288d918ff77f46c0d869e978a9f990418051685",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2D_tracelengthsFittingExponential_audit.png",
+      "bytes": 271854,
+      "sha256": "b282368715c3faca68f5a21f894f2a90f476ef2a312aae13d473f415a958be58",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2D_tracelengthsFittingLogNormal_audit.png",
+      "bytes": 370551,
+      "sha256": "e0c62bb1fb9a6bf32da0595031ad37b2555ba5a7cd5f0a80b00c0d15b715371f",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2D_tracelengthsFittingPowerLaw_audit.png",
+      "bytes": 358445,
+      "sha256": "14bb99290887fff49afc6f72763f5764b5ecfafb10c8a32b96d70877da860413",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2D_tracemap_multicolour_audit.png",
+      "bytes": 172863,
+      "sha256": "739b21f0053f674bc390aa08286ec8db040606f79bc76e47c18c9471be56beef",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2Dconnectivity_audit.txt",
+      "bytes": 12,
+      "sha256": "679f0e4a71d9b73afd50b58d0dffa3376eedf1ceac22c5c069b31e766b648708"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2Dsegmentangleslengths_audit.txt",
+      "bytes": 840,
+      "sha256": "d39a92dd8c9d748c67f3e0e57c22b88809125935fc615399364bd8b7b3a1a754"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2Dsegmentlengths_audit.txt",
+      "bytes": 420,
+      "sha256": "7d136bfda03dd42cde3bcd9b42921eaef8b44be03c3121baadd567fcf2a8c12e"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/FracPaQ2Dtracelengths_audit.txt",
+      "bytes": 357,
+      "sha256": "9a6b6850605d4d0e9861cf0d63a01d8b04910a1f954b0fa3ecb88385fcb1adec"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/all_outputs_input.txt",
+      "bytes": 2216,
+      "sha256": "93cf5c0773737943e6954ef0a9bc57e75311b895c9f7fdf012351ea9ccc3e1cd"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/multicolour.svg",
+      "bytes": 174,
+      "sha256": "04fb0037735b79565c002181e6b223dc6347e8b26f24b7c88defbf6ae1a716d0"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/multicolour_colourFF0000_converted.txt",
+      "bytes": 51,
+      "sha256": "2473618af4820c9bceca63bb43de81654a0fde0095ef5ac4aafae04beeef2a59"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/multicolour_input.mat",
+      "bytes": 710,
+      "sha256": "3db7b29e09c182255b594466795499b2fbee48f45f3b1520e9c2c05d09f2df43"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/native_calls.json",
+      "bytes": 165,
+      "sha256": "6eabdd1029e8b827e683d37b73cf4b40bb51385affee2aa13a80f5db2c430a45"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/simple.svg",
+      "bytes": 177,
+      "sha256": "be6a0ff5bc3d022315794f43c6b116b4ed9eeb9b989e499fe4b4de1ad99c4407"
+    },
+    {
+      "path": "tests/reference/sprint16/native/exports/simple_converted.txt",
+      "bytes": 51,
+      "sha256": "2473618af4820c9bceca63bb43de81654a0fde0095ef5ac4aafae04beeef2a59"
+    },
+    {
+      "path": "tests/reference/sprint16/native/geometry_arrays.mat",
+      "bytes": 881,
+      "sha256": "812f60376d497f346fa1fcd8d73934aea0e0ae576426a67857799cffc77f2714"
+    },
+    {
+      "path": "tests/reference/sprint16/native/gui_initial.png",
+      "bytes": 29826,
+      "sha256": "47ac9f0a7ee63ba889b947b1d986d5bd4769d60d19f3572031a0b9bdea9f0fb3",
+      "size": [
+        600,
+        450
+      ],
+      "dpi": [
+        99.9998,
+        99.9998
+      ],
+      "mode": "RGB"
+    },
+    {
+      "path": "tests/reference/sprint16/native/hough_arrays.mat",
+      "bytes": 11954,
+      "sha256": "4a95b295aaf08c4fc3e4ddf4e5b5cdfb05f8091de91fe2b48db940e56bd4ddd8"
+    },
+    {
+      "path": "tests/reference/sprint16/native/length_arrays.mat",
+      "bytes": 28429,
+      "sha256": "d85d705454c0e9e7765b6b7253d9f06e3815674c23540e953cb86d07de7c48ec"
+    },
+    {
+      "path": "tests/reference/sprint16/native/maps_arrays.mat",
+      "bytes": 21571,
+      "sha256": "8cd482d86fd3a3a6b60428a9175942d8ea2f293e80ed10951b7c72011ea80f38"
+    },
+    {
+      "path": "tests/reference/sprint16/native/native_calls.json",
+      "bytes": 366,
+      "sha256": "2e2f37dd3241332f23daf3b247ba5ea74f9f7c439c420442dddb3271051289cf"
+    }
+  ],
+  "scope": "Actual calls to the supplied sources/toolbox. GUI images are print renders at100dpi, not OS screenshots. The first absolute-path GUI call fails (Q04); the separate relative-path session succeeds. Capture availability does not certify SSIM, platform support or accepted scientific changes."
+}

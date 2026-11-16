@@ -1,0 +1,1508 @@
+{
+  "schema_version": 1,
+  "license": "MIT (LICENSE na raiz)",
+  "origin": "Criado neste projeto; equações conferidas nos fontes. Campos MATLAB nulos são referências ainda indisponíveis.",
+  "cases": [
+    {
+      "id": "horizontal",
+      "family": "geometry",
+      "input": {
+        "file": "tests/fixtures/nodes/horizontal.txt",
+        "scale": null
+      },
+      "expected": {
+        "traces": 1,
+        "segments": 1,
+        "nodes": 2,
+        "segment_lengths": [
+          4
+        ],
+        "raw_angles_degrees": [
+          90
+        ],
+        "trace_length": 4,
+        "trace_halfway_point": [
+          2,
+          0
+        ],
+        "bounds_xyxy": [
+          0,
+          0,
+          4,
+          0
+        ],
+        "segment_midpoints": [
+          [
+            2.0,
+            0.0
+          ]
+        ]
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "vertical",
+      "family": "geometry",
+      "input": {
+        "file": "tests/fixtures/nodes/vertical.txt",
+        "scale": null
+      },
+      "expected": {
+        "traces": 1,
+        "segments": 1,
+        "nodes": 2,
+        "segment_lengths": [
+          3
+        ],
+        "raw_angles_degrees": [
+          0
+        ],
+        "trace_length": 3,
+        "trace_halfway_point": [
+          0,
+          1.5
+        ],
+        "bounds_xyxy": [
+          0,
+          0,
+          0,
+          3
+        ],
+        "segment_midpoints": [
+          [
+            0.0,
+            1.5
+          ]
+        ]
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "oblique",
+      "family": "geometry",
+      "input": {
+        "file": "tests/fixtures/nodes/oblique.txt",
+        "scale": null
+      },
+      "expected": {
+        "traces": 1,
+        "segments": 1,
+        "nodes": 2,
+        "segment_lengths": [
+          5
+        ],
+        "raw_angles_degrees": [
+          36.86989764584402
+        ],
+        "trace_length": 5,
+        "trace_halfway_point": [
+          1.5,
+          2
+        ],
+        "bounds_xyxy": [
+          0,
+          0,
+          3,
+          4
+        ],
+        "segment_midpoints": [
+          [
+            1.5,
+            2.0
+          ]
+        ]
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "polyline",
+      "family": "geometry",
+      "input": {
+        "file": "tests/fixtures/nodes/polyline.txt",
+        "scale": null
+      },
+      "expected": {
+        "traces": 1,
+        "segments": 2,
+        "nodes": 3,
+        "segment_lengths": [
+          3,
+          4
+        ],
+        "raw_angles_degrees": [
+          90,
+          0
+        ],
+        "trace_length": 7,
+        "trace_halfway_point": [
+          4,
+          2.5
+        ],
+        "bounds_xyxy": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "segment_midpoints": [
+          [
+            2.5,
+            2.0
+          ],
+          [
+            4.0,
+            4.0
+          ]
+        ]
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "negative",
+      "family": "geometry",
+      "input": {
+        "file": "tests/fixtures/nodes/negative.txt",
+        "scale": null
+      },
+      "expected": {
+        "traces": 1,
+        "segments": 2,
+        "nodes": 3,
+        "segment_lengths": [
+          3,
+          4
+        ],
+        "raw_angles_degrees": [
+          90,
+          0
+        ],
+        "trace_length": 7,
+        "trace_halfway_point": [
+          -6,
+          -7.5
+        ],
+        "bounds_xyxy": [
+          -9,
+          -8,
+          -6,
+          -4
+        ],
+        "segment_midpoints": [
+          [
+            -7.5,
+            -8.0
+          ],
+          [
+            -6.0,
+            -6.0
+          ]
+        ]
+      },
+      "issues": [
+        "Q-08"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "duplicate",
+      "family": "geometry",
+      "input": {
+        "file": "tests/fixtures/nodes/duplicate.txt",
+        "scale": null
+      },
+      "expected": {
+        "traces": 1,
+        "segments": 2,
+        "nodes": 3,
+        "segment_lengths": [
+          3,
+          4
+        ],
+        "raw_angles_degrees": [
+          90,
+          0
+        ],
+        "trace_length": 7,
+        "trace_halfway_point": [
+          4,
+          2.5
+        ],
+        "bounds_xyxy": [
+          1,
+          2,
+          4,
+          6
+        ],
+        "segment_midpoints": [
+          [
+            2.5,
+            2.0
+          ],
+          [
+            4.0,
+            4.0
+          ]
+        ]
+      },
+      "issues": [
+        "Q-07"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "mixed",
+      "family": "geometry",
+      "input": {
+        "file": "tests/fixtures/nodes/mixed.txt"
+      },
+      "expected": {
+        "traces": 2,
+        "segments": 3,
+        "nodes": 5,
+        "trace_lengths": [
+          4,
+          7
+        ],
+        "bounds_xyxy": [
+          0,
+          0,
+          4,
+          6
+        ],
+        "area": 24
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "scaled",
+      "family": "geometry",
+      "input": {
+        "file": "tests/fixtures/nodes/polyline.txt",
+        "scale": 2
+      },
+      "expected": {
+        "segment_lengths": [
+          1.5,
+          2
+        ],
+        "trace_length": 3.5,
+        "bounds_xyxy": [
+          0.5,
+          1,
+          2,
+          3
+        ],
+        "area": 3,
+        "trace_halfway_point": [
+          2,
+          1.25
+        ],
+        "units": "metres"
+      },
+      "issues": [
+        "Q-21"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "empty",
+      "family": "invalid_input",
+      "input": {
+        "file": "tests/fixtures/nodes/empty.txt"
+      },
+      "expected": {
+        "valid": false,
+        "partial_import": false
+      },
+      "issues": [
+        "Q-02",
+        "Q-07"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "incomplete",
+      "family": "invalid_input",
+      "input": {
+        "file": "tests/fixtures/nodes/incomplete.txt"
+      },
+      "expected": {
+        "valid": false,
+        "partial_import": false
+      },
+      "issues": [
+        "Q-02",
+        "Q-07"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "degenerate",
+      "family": "invalid_input",
+      "input": {
+        "file": "tests/fixtures/nodes/degenerate.txt"
+      },
+      "expected": {
+        "valid": false,
+        "partial_import": false
+      },
+      "issues": [
+        "Q-02",
+        "Q-07"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "nonfinite",
+      "family": "invalid_input",
+      "input": {
+        "file": "tests/fixtures/nodes/nonfinite.txt"
+      },
+      "expected": {
+        "valid": false,
+        "partial_import": false
+      },
+      "issues": [
+        "Q-02",
+        "Q-07"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "comma",
+      "family": "invalid_input",
+      "input": {
+        "file": "tests/fixtures/nodes/comma.txt"
+      },
+      "expected": {
+        "valid": false,
+        "partial_import": false
+      },
+      "issues": [
+        "Q-02",
+        "Q-07"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "histogram_centres",
+      "family": "histograms",
+      "input": {
+        "samples": [
+          0,
+          1,
+          2,
+          2,
+          3,
+          4
+        ],
+        "centres": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": {
+        "counts": [
+          2,
+          2,
+          2
+        ],
+        "percent": [
+          33.333333333333336,
+          33.333333333333336,
+          33.333333333333336
+        ],
+        "note": "Centros explícitos; caudas nos bins externos, não bordas NumPy."
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "histogram_ties",
+      "family": "histograms",
+      "input": {
+        "samples": [
+          1.5,
+          2.5
+        ],
+        "centres": [
+          1,
+          2,
+          3
+        ]
+      },
+      "expected": {
+        "tie_rule": "Confirmar no MATLAB antes de congelar contagens de empates.",
+        "matlab_counts": null
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "matlab_round",
+      "family": "angles",
+      "input": {
+        "values": [
+          -1.5,
+          -0.5,
+          0.5,
+          1.5
+        ]
+      },
+      "expected": {
+        "rounded": [
+          -2,
+          -1,
+          1,
+          2
+        ]
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "angles_flip_00",
+      "family": "angles",
+      "input": {
+        "raw": [
+          30
+        ],
+        "north": 10,
+        "flip_x": false,
+        "flip_y": false
+      },
+      "expected": {
+        "sorted_axial_directions": [
+          20,
+          200
+        ]
+      },
+      "issues": [
+        "Q-10"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "angles_flip_10",
+      "family": "angles",
+      "input": {
+        "raw": [
+          30
+        ],
+        "north": 10,
+        "flip_x": true,
+        "flip_y": false
+      },
+      "expected": {
+        "sorted_axial_directions": [
+          160,
+          340
+        ]
+      },
+      "issues": [
+        "Q-10"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "angles_flip_01",
+      "family": "angles",
+      "input": {
+        "raw": [
+          30
+        ],
+        "north": 10,
+        "flip_x": false,
+        "flip_y": true
+      },
+      "expected": {
+        "sorted_axial_directions": [
+          160,
+          340
+        ]
+      },
+      "issues": [
+        "Q-10"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "angles_flip_11",
+      "family": "angles",
+      "input": {
+        "raw": [
+          30
+        ],
+        "north": 10,
+        "flip_x": true,
+        "flip_y": true
+      },
+      "expected": {
+        "sorted_axial_directions": [
+          20,
+          200
+        ]
+      },
+      "issues": [
+        "Q-10"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_horizontal_0",
+      "family": "circles",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            -2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 2,
+        "endpoints_inside": 0,
+        "p21_geometric": 0.5,
+        "p20_geometric": 0.0,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_vertical_0",
+      "family": "circles",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            0,
+            -2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 2,
+        "endpoints_inside": 0,
+        "p21_geometric": 0.5,
+        "p20_geometric": 0.0,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_oblique_0",
+      "family": "circles",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            -2,
+            -2
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 2,
+        "endpoints_inside": 0,
+        "p21_geometric": 0.5,
+        "p20_geometric": 0.0,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_internal_0",
+      "family": "circles",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            -0.5,
+            0
+          ],
+          [
+            0.5,
+            0
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 0,
+        "endpoints_inside": 2,
+        "p21_geometric": 0.0,
+        "p20_geometric": 0.3183098861837907,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_one_inside_0",
+      "family": "circles",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 1,
+        "endpoints_inside": 1,
+        "p21_geometric": 0.25,
+        "p20_geometric": 0.15915494309189535,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_outside_0",
+      "family": "circles",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 0,
+        "endpoints_inside": 0,
+        "p21_geometric": 0.0,
+        "p20_geometric": 0.0,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_horizontal_7",
+      "family": "circles",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            5,
+            -11
+          ],
+          [
+            9,
+            -11
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 2,
+        "endpoints_inside": 0,
+        "p21_geometric": 0.5,
+        "p20_geometric": 0.0,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_vertical_7",
+      "family": "circles",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            7,
+            -13
+          ],
+          [
+            7,
+            -9
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 2,
+        "endpoints_inside": 0,
+        "p21_geometric": 0.5,
+        "p20_geometric": 0.0,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_oblique_7",
+      "family": "circles",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            5,
+            -13
+          ],
+          [
+            9,
+            -9
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 2,
+        "endpoints_inside": 0,
+        "p21_geometric": 0.5,
+        "p20_geometric": 0.0,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_internal_7",
+      "family": "circles",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            6.5,
+            -11
+          ],
+          [
+            7.5,
+            -11
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 0,
+        "endpoints_inside": 2,
+        "p21_geometric": 0.0,
+        "p20_geometric": 0.3183098861837907,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_one_inside_7",
+      "family": "circles",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            7,
+            -11
+          ],
+          [
+            9,
+            -11
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 1,
+        "endpoints_inside": 1,
+        "p21_geometric": 0.25,
+        "p20_geometric": 0.15915494309189535,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_outside_7",
+      "family": "circles",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            9,
+            -9
+          ],
+          [
+            10,
+            -8
+          ]
+        ]
+      },
+      "expected": {
+        "boundary_intersections": 0,
+        "endpoints_inside": 0,
+        "p21_geometric": 0.0,
+        "p20_geometric": 0.0,
+        "matlab_result": null
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "circle_tangent",
+      "family": "circles",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            -2,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      "expected": {
+        "unique_boundary_points": 1,
+        "endpoints_inside": 0,
+        "estimator_tangent_policy": "Pendente Q-20; não contar como secante automaticamente."
+      },
+      "issues": [
+        "Q-20"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "isolated",
+      "family": "topology",
+      "input": {
+        "traces": [
+          [
+            [
+              -1,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        ],
+        "domain": [
+          -3,
+          -3,
+          3,
+          3
+        ],
+        "tolerance": 0
+      },
+      "expected": {
+        "geometric_node_counts_before_border_cleanup": {
+          "I": 2,
+          "Y": 0,
+          "X": 0
+        },
+        "border_policy": "Domínio explícito: todos os endpoints são interiores.",
+        "matlab_counts": null
+      },
+      "issues": [
+        "Q-11"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "cross",
+      "family": "topology",
+      "input": {
+        "traces": [
+          [
+            [
+              -2,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              -2
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        ],
+        "domain": [
+          -3,
+          -3,
+          3,
+          3
+        ],
+        "tolerance": 0
+      },
+      "expected": {
+        "geometric_node_counts_before_border_cleanup": {
+          "I": 4,
+          "Y": 0,
+          "X": 1
+        },
+        "border_policy": "Domínio explícito: todos os endpoints são interiores.",
+        "matlab_counts": null
+      },
+      "issues": [
+        "Q-11"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "tee",
+      "family": "topology",
+      "input": {
+        "traces": [
+          [
+            [
+              -2,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        ],
+        "domain": [
+          -3,
+          -3,
+          3,
+          3
+        ],
+        "tolerance": 0
+      },
+      "expected": {
+        "geometric_node_counts_before_border_cleanup": {
+          "I": 3,
+          "Y": 1,
+          "X": 0
+        },
+        "border_policy": "Domínio explícito: todos os endpoints são interiores.",
+        "matlab_counts": null
+      },
+      "issues": [
+        "Q-11"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "no_crossing",
+      "family": "topology",
+      "input": {
+        "traces": [
+          [
+            [
+              -2,
+              -1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          [
+            [
+              -2,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        ],
+        "domain": [
+          -3,
+          -3,
+          3,
+          3
+        ],
+        "tolerance": 0
+      },
+      "expected": {
+        "geometric_node_counts_before_border_cleanup": {
+          "I": 4,
+          "Y": 0,
+          "X": 0
+        },
+        "border_policy": "Domínio explícito: todos os endpoints são interiores.",
+        "matlab_counts": null
+      },
+      "issues": [
+        "Q-11"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "undershoot",
+      "family": "topology",
+      "input": {
+        "traces": [
+          [
+            [
+              -2,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0.1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        ],
+        "tolerance": 0.2
+      },
+      "expected": {
+        "endpoint_distance_to_horizontal": 0.1,
+        "exact_intersections": 0,
+        "snap_classification": null
+      },
+      "issues": [
+        "Q-11"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "overshoot",
+      "family": "topology",
+      "input": {
+        "traces": [
+          [
+            [
+              -2,
+              0
+            ],
+            [
+              2,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              -0.1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        ],
+        "tolerance": 0.2
+      },
+      "expected": {
+        "endpoint_distance_to_horizontal": 0.1,
+        "exact_intersections": 1,
+        "snap_classification": null
+      },
+      "issues": [
+        "Q-11"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "directional_tensor",
+      "family": "tensors",
+      "input": {
+        "lengths": [
+          2
+        ],
+        "pole_degrees": [
+          0
+        ],
+        "area": 4,
+        "aperture": 0.001,
+        "lambda": 1
+      },
+      "expected": {
+        "F0": 1,
+        "F2": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "F4_xxxx": 1,
+        "F8_xxxxxxxx": 1,
+        "P": [
+          [
+            5e-10,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        "K": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            4.166666666666667e-11
+          ]
+        ],
+        "double_aperture_K_ratio": 8,
+        "lambda_zero_K": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "isotropic_tensor",
+      "family": "tensors",
+      "input": {
+        "lengths": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "pole_degrees": [
+          0.0,
+          22.5,
+          45.0,
+          67.5,
+          90.0,
+          112.5,
+          135.0,
+          157.5
+        ],
+        "area": 8
+      },
+      "expected": {
+        "F0": 1,
+        "F2": [
+          [
+            0.5,
+            0
+          ],
+          [
+            0,
+            0.5
+          ]
+        ],
+        "F4_xxxx": 0.375,
+        "F4_xxyy": 0.125,
+        "F8_xxxxxxxx": 0.2734375
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "scaled_apertures",
+      "family": "tensors",
+      "input": {
+        "lengths": [
+          1,
+          4
+        ],
+        "a": 0.001,
+        "b": 0.5
+      },
+      "expected": {
+        "apertures": [
+          0.001,
+          0.002
+        ]
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "morlet_kernel",
+      "family": "wavelets",
+      "input": {
+        "x": [
+          -1,
+          0,
+          1
+        ],
+        "y": [
+          -1,
+          0,
+          1
+        ],
+        "A": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "C": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "k": [
+          0,
+          0
+        ]
+      },
+      "expected": {
+        "centre_real_imag": [
+          1,
+          0
+        ],
+        "at_1_0_real": 0.6065306597126334,
+        "at_1_1_real": 0.36787944117144233
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "mexicanhat_kernel",
+      "family": "wavelets",
+      "input": {
+        "x": [
+          -1,
+          0,
+          1
+        ],
+        "y": [
+          -1,
+          0,
+          1
+        ],
+        "A": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "C": [
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "k": [
+          0,
+          0
+        ]
+      },
+      "expected": {
+        "centre_real_imag": [
+          2,
+          0
+        ],
+        "at_1_0_real": 0.6065306597126334,
+        "at_1_1_real": 0
+      },
+      "issues": [],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "rectangular_cwt",
+      "family": "wavelets",
+      "input": {
+        "file": "tests/fixtures/images/rectangular.tif",
+        "a": [
+          2,
+          4
+        ],
+        "L": [
+          2,
+          4
+        ],
+        "theta_increment": 20,
+        "kernels": [
+          "Morlet",
+          "Mexican Hat"
+        ]
+      },
+      "expected": {
+        "image_shape_yx": [
+          24,
+          48
+        ],
+        "input_L_reciprocals": [
+          0.5,
+          0.25
+        ],
+        "normalised_coefficients_matlab": null,
+        "optima_matlab": null
+      },
+      "issues": [
+        "Q-12"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    },
+    {
+      "id": "bad_wavelet_step",
+      "family": "invalid_input",
+      "input": {
+        "theta_increment": 181
+      },
+      "expected": {
+        "policy": "Pendente Q-12; não promover amostragem alterada a padrão."
+      },
+      "issues": [
+        "Q-12"
+      ],
+      "oracle": "Analítico; não executado em MATLAB."
+    }
+  ]
+}

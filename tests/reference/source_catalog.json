@@ -1,0 +1,1482 @@
+[
+  {
+    "path": "fracpaq-matlab/FracPaQ2D_imagePreprocess.m",
+    "sha256": "4330652bbdcaf85a6af57c3bcac7b38622db5fa6cb92f28cee55d2d7111486f7",
+    "decoding": "utf-8",
+    "lines": 75,
+    "functions": [],
+    "local_call_candidates": [],
+    "export_statements": [
+      "imwrite((~imgEx1inv).*255, 'FracPaQ2D_Example1_processed.tif') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/FracPaQ2Dwave_2_Morlet.m",
+    "sha256": "032c487bd7e6885a41829d92be4ea654aad2a08604bccd94dea892ac490a6254",
+    "decoding": "utf-8",
+    "lines": 196,
+    "functions": [],
+    "local_call_candidates": [
+      "morletCWT",
+      "morletCWTself",
+      "roseEqualArea"
+    ],
+    "export_statements": [
+      "fprintf(fidMean, '%g\\n', thetaopt_4_mean(i)) ;",
+      "print('-djpeg', '-r300', fnPrint) ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/KStestLogNorm.m",
+    "sha256": "7e7e9a371193d39835419c3b9c3f2cfdf91215ada7192bd2bf66ac81ab2930d3",
+    "decoding": "utf-8",
+    "lines": 76,
+    "functions": [
+      "function [HpercentLN,PpercentLN]=KStestLogNorm(z4,n,mu,sigma)"
+    ],
+    "local_call_candidates": [
+      "KStestLogNorm"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/KStestPower.m",
+    "sha256": "c33fb934ef76b4aa7f219ca20509c380cad4e1a29dab4d4d0102ded308c17b19",
+    "decoding": "utf-8",
+    "lines": 77,
+    "functions": [
+      "function [HpercentPL,PpercentPL]=KStestPower(z,n,xmin,alpha)"
+    ],
+    "local_call_candidates": [
+      "KStestPower"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/KStestexp.m",
+    "sha256": "fdb8ab0e2411382124bae117e41b7e5a464d437af7f1cd57080cac07fcef95a1",
+    "decoding": "utf-8",
+    "lines": 76,
+    "functions": [
+      "function [Hpercentexp,Ppercentexp]=KStestexp(z2,n,lambda,xmin2)"
+    ],
+    "local_call_candidates": [
+      "KStestexp"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/Move2FracPaq.m",
+    "sha256": "705877ff173f4fe2f1a249e0e7d848bf1ca0fb21167ffe68c4c4e6caf2160898",
+    "decoding": "utf-8",
+    "lines": 100,
+    "functions": [],
+    "local_call_candidates": [],
+    "export_statements": [
+      "fprintf(outf, '%1.4f\\t', coord(F,1:2*num_coord(F)));",
+      "fprintf(outf, '\\n');"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/PlotExp.m",
+    "sha256": "ef5c4237f5440724492f526c93229e001ac1b4d051c3e7527932f535a962c415",
+    "decoding": "utf-8",
+    "lines": 65,
+    "functions": [
+      "function [c2,cn2]=PlotExp(x,y,z2,lambda,xmin2,sCol)"
+    ],
+    "local_call_candidates": [
+      "PlotExp"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/PlotLogNorm.m",
+    "sha256": "273e1669760582f146b644bdb234b2c69a1d5f2d46abf6a8452d42c18ffc76f3",
+    "decoding": "utf-8",
+    "lines": 68,
+    "functions": [
+      "function [c3,cn3]=PlotLogNorm(x,y,z4,mu,sigma,xmin3,sCol)"
+    ],
+    "local_call_candidates": [
+      "PlotLogNorm"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/PlotPowerLaw.m",
+    "sha256": "075b19537aaf3baea3c1dc6c3a0786774f5240ebd9863f62b88d5d9ef14f9906",
+    "decoding": "utf-8",
+    "lines": 76,
+    "functions": [
+      "function [c,cn]=PlotPowerLaw(x,y,z,xmin,alpha,sCol)"
+    ],
+    "local_call_candidates": [
+      "PlotPowerLaw"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/arc.m",
+    "sha256": "82b03a092201a4a90508b4b1e3b92e9ce2c91ce9a3595ef4695406871d22f35c",
+    "decoding": "utf-8",
+    "lines": 18,
+    "functions": [
+      "function arc(r, az1, az2)"
+    ],
+    "local_call_candidates": [
+      "arc"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/arc2.m",
+    "sha256": "f137bec138125b23142ad2835fb2471fd6da5622b6c0c48ea611e504870dccd4",
+    "decoding": "utf-8",
+    "lines": 19,
+    "functions": [
+      "function arc2(r, az1, az2)"
+    ],
+    "local_call_candidates": [
+      "arc2"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/blocksize.m",
+    "sha256": "33782072d7b184783e58971975dceb56700f7ecc233803a0cbed4a9f01f11fef",
+    "decoding": "utf-8",
+    "lines": 36,
+    "functions": [],
+    "local_call_candidates": [],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/centax2.m",
+    "sha256": "48ea6da8a79469e6b5c6ba23b4d9426cb7d2bfd73411655c8f3fe3fae1e4cacc",
+    "decoding": "utf-8",
+    "lines": 134,
+    "functions": [
+      "function centax2(ax,orig);"
+    ],
+    "local_call_candidates": [
+      "centax2"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/circStat.m",
+    "sha256": "11e27eaa4e9b9c436c4354d505d9b1e0b8e73ad2c99217908dabccfcaf7db7ed",
+    "decoding": "utf-8",
+    "lines": 44,
+    "functions": [
+      "function [ cMean, cStddev, cRes ] = circStat(vAngles)"
+    ],
+    "local_call_candidates": [
+      "circStat"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/cmocean.m",
+    "sha256": "ce23d8bad220cb72247adb86f19ad78c47867eca22bcbcc1a4e43e306d6266a3",
+    "decoding": "utf-8",
+    "lines": 5430,
+    "functions": [
+      "function cmap = cmocean(ColormapName,varargin)",
+      "function RGB = cmoceanRawRGB(cmapName)"
+    ],
+    "local_call_candidates": [
+      "cmocean"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/convertSVG2txt.m",
+    "sha256": "10833726175855b2decf6dc8613bae5bffdf61c5d90c2b6f9f4c8d8613268f65",
+    "decoding": "utf-8",
+    "lines": 197,
+    "functions": [
+      "function rc = convertSVG2txt(fName)"
+    ],
+    "local_call_candidates": [
+      "convertSVG2txt",
+      "readtext"
+    ],
+    "export_statements": [
+      "fprintf(fID, '%12.4f\\t', nPolyPoints(j)) ;",
+      "fprintf(fID, '\\n') ;",
+      "fprintf(fID, '%12.4f\\t%12.4f\\t%12.4f\\t%12.4f\\n', x1, y1, x2, y2) ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/convertSVG2txt_colour.m",
+    "sha256": "ee7c1d4ed5588e3c9db871140bdfc803ad39ccb8599827b557ef4c39bd87fac7",
+    "decoding": "utf-8",
+    "lines": 301,
+    "functions": [
+      "function rc = convertSVG2txt_colour(fName)"
+    ],
+    "local_call_candidates": [
+      "convertSVG2txt_colour",
+      "readtext"
+    ],
+    "export_statements": [
+      "fprintf(fID(iColourFile), '%12.8f\\t', nPolyPoints(j)) ;",
+      "fprintf(fID(iColourFile), '\\r\\n') ;",
+      "fprintf(fID(iColourFile), '%12.8f\\t%12.8f\\t%12.8f\\t%12.8f\\r\\n', x1, y1, x2, y2) ;",
+      "fprintf(fID(iColourFile), '%12.8f\\t%12.8f\\t%12.8f\\t%12.8f', x1, y1, x2, y2) ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/convertSVG2txt_colour2.m",
+    "sha256": "81bba108a9a3710f77209688b63613f435127e14f67ecf8d9388689705f2697a",
+    "decoding": "utf-8",
+    "lines": 385,
+    "functions": [
+      "function rc = convertSVG2txt_colour2(fName)"
+    ],
+    "local_call_candidates": [
+      "convertSVG2txt_colour2",
+      "readtext"
+    ],
+    "export_statements": [
+      "fprintf(fID(iColourFile), '%12.8f\\t', nPathPoints(j)) ;",
+      "fprintf(fID(iColourFile), '\\r\\n') ;",
+      "fprintf(fID(iColourFile), '%12.8f\\t', nPolyPoints(j)) ;",
+      "fprintf(fID(iColourFile), '\\r\\n') ;",
+      "fprintf(fID(iColourFile), '%12.8f\\t%12.8f\\t%12.8f\\t%12.8f\\r\\n', x1, y1, x2, y2) ;",
+      "fprintf(fID(iColourFile), '%12.8f\\t%12.8f\\t%12.8f\\t%12.8f', x1, y1, x2, y2) ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/distancePointEdge.m",
+    "sha256": "093f8be91b4f2933b666fe302347a75fbcf7e1cb65555ddfd260041db17c7198",
+    "decoding": "utf-8",
+    "lines": 84,
+    "functions": [
+      "function [dist, pos] = distancePointEdge(point, edge)"
+    ],
+    "local_call_candidates": [
+      "distancePointEdge"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/distancePoints.m",
+    "sha256": "2c5be12bbc97f80d30ef04c0216d749e2f85306bbccbaf99a271a097cfad55ab",
+    "decoding": "utf-8",
+    "lines": 128,
+    "functions": [
+      "function dist = distancePoints(p1, p2, varargin)"
+    ],
+    "local_call_candidates": [
+      "distancePoints"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/doubleAngles.m",
+    "sha256": "233d30a7cd6c60a56e3d1cb93cc60eca5ecb754b99677b0a6902f38684ba8f74",
+    "decoding": "utf-8",
+    "lines": 36,
+    "functions": [
+      "function angles2 = doubleAngles(angles, corr)"
+    ],
+    "local_call_candidates": [
+      "doubleAngles"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/fittingExponential.m",
+    "sha256": "0d585c329b51f440258499035e3ff0ca906f05a36be060370381fa07a140bef3",
+    "decoding": "utf-8",
+    "lines": 134,
+    "functions": [
+      "function [lambda,xmin2,y,z2,Hpercentexp,Ppercentexp]=fittingExponential(x,uc,lc,sCol)"
+    ],
+    "local_call_candidates": [
+      "KStestexp",
+      "PlotExp",
+      "fittingExponential"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/fittingLognormal.m",
+    "sha256": "31db9215334ef38b5e6d44e7b8b8ddb712abdad66387c74735f5e45bdcb8ec4a",
+    "decoding": "latin-1",
+    "lines": 144,
+    "functions": [
+      "function [mu,sigma,xmin3,y,z4,HpercentLN,PpercentLN]=fittingLognormal(x,uc,lc,sCol)"
+    ],
+    "local_call_candidates": [
+      "KStestLogNorm",
+      "PlotLogNorm",
+      "fittingLognormal"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/fittingPL.m",
+    "sha256": "27b234e5b72da3da0c9a0905b2f28297672ca48bb4f6fa8732988bffdff9958e",
+    "decoding": "utf-8",
+    "lines": 154,
+    "functions": [
+      "function [alpha,xmin,y,z,HpercentPL,PpercentPL]=fittingPL(x,uc,lc,sCol,finite)"
+    ],
+    "local_call_candidates": [
+      "KStestPower",
+      "PlotPowerLaw",
+      "fittingPL"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/getConnectivity.m",
+    "sha256": "a26701cc06cba16bc3d096857ca17cdebc8923c815124918c57254c4d2e9448a",
+    "decoding": "utf-8",
+    "lines": 464,
+    "functions": [
+      "function [ nY, nX, nI ] = getConnectivity(traces, segments, xMin, yMin, xMax, yMax, ..."
+    ],
+    "local_call_candidates": [
+      "distancePointEdge",
+      "distancePoints",
+      "getConnectivity",
+      "guiPrint",
+      "lineSegmentIntersect"
+    ],
+    "export_statements": [
+      "guiPrint(f, 'FracPaQ2D_IYXnodes_traces') ;",
+      "guiPrint(f, 'FracPaQ2D_XYnodes_traces_heat') ;",
+      "guiPrint(f, 'FracPaQ2D_Inodes_traces_heat') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/getF16tensor.m",
+    "sha256": "ee7ab256605b229ab3168a2ab9b07d12c8793fdd29f246784b3b14765a79f0c0",
+    "decoding": "utf-8",
+    "lines": 95,
+    "functions": [
+      "function [F16, F16pol] = getF16tensor(lengths, angles, area)"
+    ],
+    "local_call_candidates": [
+      "getF16tensor"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/getF2tensor.m",
+    "sha256": "c92f8698322f4ed29233a0eab4de8bbe3f79b729909f6234170050a207e63075",
+    "decoding": "utf-8",
+    "lines": 39,
+    "functions": [
+      "function [F2, F2pol] = getF2tensor(lengths, angles, area)"
+    ],
+    "local_call_candidates": [
+      "getF2tensor"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/getF4tensor.m",
+    "sha256": "3bf2dbd13ce4e364ddf319a75dd901170e403559ce4b4e4e10a9d33be0eb376e",
+    "decoding": "utf-8",
+    "lines": 37,
+    "functions": [
+      "function [F4, F4pol] = getF4tensor(lengths, angles, area)"
+    ],
+    "local_call_candidates": [
+      "getF4tensor"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/getF8tensor.m",
+    "sha256": "6056f88bc59d9137ae7730bdda107e5ee8a79af9643bb475ca9f0366c61f6129",
+    "decoding": "utf-8",
+    "lines": 56,
+    "functions": [
+      "function [F8, F8pol] = getF8tensor(lengths, angles, area)"
+    ],
+    "local_call_candidates": [
+      "getF8tensor"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/getMapLimits.m",
+    "sha256": "08449f54f81358f461e12821914aff156b6ad0463ad75b6e8eb3c6bfae701f68",
+    "decoding": "utf-8",
+    "lines": 30,
+    "functions": [
+      "function [xMin, xMax, yMin, yMax] = getMapLimits(traces)"
+    ],
+    "local_call_candidates": [
+      "getMapLimits"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2D.m",
+    "sha256": "cf0f18306da896647f9588cfca84ad4c7e5eb987db921a7533349b3d5579eb68",
+    "decoding": "utf-8",
+    "lines": 2409,
+    "functions": [
+      "function varargout = guiFracPaQ2D(varargin)",
+      "function guiFracPaQ2D_OpeningFcn(hObject, eventdata, handles, varargin)",
+      "function varargout = guiFracPaQ2D_OutputFcn(hObject, eventdata, handles)",
+      "function checkbox_triangle_Callback(hObject, eventdata, handles)",
+      "function checkbox_permellipse_Callback(hObject, eventdata, handles)",
+      "function checkbox_intensitymap_Callback(hObject, eventdata, handles)",
+      "function checkbox_densitymap_Callback(hObject, eventdata, handles)",
+      "function checkbox_tracemap_Callback(hObject, eventdata, handles)",
+      "function checkbox_shownodes_Callback(hObject, eventdata, handles)",
+      "function checkbox_histolength_Callback(hObject, eventdata, handles)",
+      "function checkbox_logloglength_Callback(hObject, eventdata, handles)",
+      "function checkbox_mle_Callback(hObject, eventdata, handles)",
+      "function checkbox_histoangle_Callback(hObject, eventdata, handles)",
+      "function checkbox_rose_Callback(hObject, eventdata, handles)",
+      "function checkbox_crossplot_Callback(hObject, eventdata, handles)",
+      "function checkbox_showcircles_Callback(hObject, eventdata, handles)",
+      "function checkbox_censor_Callback(hObject, eventdata, handles)",
+      "function edit_houghpeaks_Callback(hObject, eventdata, handles)",
+      "function edit_houghpeaks_CreateFcn(hObject, eventdata, handles)",
+      "function edit_houghthreshold_Callback(hObject, eventdata, handles)",
+      "function edit_houghthreshold_CreateFcn(hObject, eventdata, handles)",
+      "function edit_fillgap_Callback(hObject, eventdata, handles)",
+      "function edit_fillgap_CreateFcn(hObject, eventdata, handles)",
+      "function edit_minlength_Callback(hObject, eventdata, handles)",
+      "function edit_minlength_CreateFcn(hObject, eventdata, handles)",
+      "function edit_degfromnorth_Callback(hObject, eventdata, handles)",
+      "function edit_degfromnorth_CreateFcn(hObject, eventdata, handles)",
+      "function edit_scaling_Callback(hObject, eventdata, handles)",
+      "function edit_scaling_CreateFcn(hObject, eventdata, handles)",
+      "function edit_numscancircles_Callback(hObject, eventdata, handles)",
+      "function edit_numscancircles_CreateFcn(hObject, eventdata, handles)",
+      "function edit_lambda_Callback(hObject, eventdata, handles)",
+      "function edit_lambda_CreateFcn(hObject, eventdata, handles)",
+      "function pushbutton_exit_Callback(hObject, eventdata, handles)",
+      "function edit_filename_Callback(hObject, eventdata, handles)",
+      "function edit_filename_CreateFcn(hObject, eventdata, handles)",
+      "function pushbutton_selectgraphendpoints_Callback(hObject, eventdata, handles)",
+      "function pushbutton_browse_Callback(hObject, eventdata, handles)",
+      "function pushbutton_preview_Callback(hObject, eventdata, handles)",
+      "function pushbutton_run_Callback(hObject, eventdata, handles)",
+      "function radiobutton_image_Callback(hObject, eventdata, handles)",
+      "function radiobutton_node_Callback(hObject, eventdata, handles)",
+      "function figure_main_CreateFcn(hObject, eventdata, handles)",
+      "function popupmenu_histolengthbins_Callback(hObject, eventdata, handles)",
+      "function popupmenu_histolengthbins_CreateFcn(hObject, eventdata, handles)",
+      "function popupmenu_histoanglebins_Callback(hObject, eventdata, handles)",
+      "function popupmenu_histoanglebins_CreateFcn(hObject, eventdata, handles)",
+      "function popupmenu_rosebins_Callback(hObject, eventdata, handles)",
+      "function popupmenu_rosebins_CreateFcn(hObject, eventdata, handles)",
+      "function pushbutton_flipy_Callback(hObject, eventdata, handles)",
+      "function pushbutton_flipx_Callback(hObject, eventdata, handles)",
+      "function checkbox_cracktensor_Callback(hObject, eventdata, handles)",
+      "function checkbox_roselengthweighted_Callback(hObject, eventdata, handles)",
+      "function edit_apertureexponent_Callback(hObject, eventdata, handles)",
+      "function edit_apertureexponent_CreateFcn(hObject, eventdata, handles)",
+      "function edit_aperturefactor_Callback(hObject, eventdata, handles)",
+      "function edit_aperturefactor_CreateFcn(hObject, eventdata, handles)",
+      "function edit_fixedaperture_Callback(hObject, eventdata, handles)",
+      "function edit_fixedaperture_CreateFcn(hObject, eventdata, handles)",
+      "function checkbox_showrosemean_Callback(hObject, eventdata, handles)",
+      "function checkbox_blocksize_Callback(hObject, eventdata, handles)",
+      "function edit_lc_Callback(hObject, eventdata, handles)",
+      "function edit_lc_CreateFcn(hObject, eventdata, handles)",
+      "function edit_uc_Callback(hObject, eventdata, handles)",
+      "function edit_uc_CreateFcn(hObject, eventdata, handles)",
+      "function checkbox_rosecolour_Callback(hObject, eventdata, handles)",
+      "function checkbox_seglenvariogram_Callback(hObject, eventdata, handles)",
+      "function pbMapsTab_Callback(hObject, eventdata, handles)",
+      "function pbLengthsTab_Callback(hObject, eventdata, handles)",
+      "function pbAnglesTab_Callback(hObject, eventdata, handles)",
+      "function pbFluidTab_Callback(hObject, eventdata, handles)",
+      "function pbWaveletsTab_Callback(hObject, eventdata, handles)",
+      "function checkbox_tracemaplength_Callback(hObject, eventdata, handles)",
+      "function checkbox_segmentmaplength_Callback(hObject, eventdata, handles)",
+      "function checkbox_segmentmapstrike_Callback(hObject, eventdata, handles)",
+      "function edit_sigma1_Callback(hObject, eventdata, handles)",
+      "function edit_sigma1_CreateFcn(hObject, eventdata, handles)",
+      "function checkbox_dilationtendency_Callback(hObject, eventdata, handles)",
+      "function checkbox_sliptendency_Callback(hObject, eventdata, handles)",
+      "function edit_sigma2_Callback(hObject, eventdata, handles)",
+      "function edit_sigma2_CreateFcn(hObject, eventdata, handles)",
+      "function edit_thetasigma1_Callback(hObject, eventdata, handles)",
+      "function edit_thetasigma1_CreateFcn(hObject, eventdata, handles)",
+      "function edit_aString_Callback(hObject, eventdata, handles)",
+      "function edit_aString_CreateFcn(hObject, eventdata, handles)",
+      "function edit_LString_Callback(hObject, eventdata, handles)",
+      "function edit_LString_CreateFcn(hObject, eventdata, handles)",
+      "function edit_DegString_Callback(hObject, eventdata, handles)",
+      "function edit_DegString_CreateFcn(hObject, eventdata, handles)",
+      "function radiobutton_Morlet_Callback(hObject, eventdata, handles)",
+      "function radiobutton_Mexican_Callback(hObject, eventdata, handles)",
+      "function checkbox_wavelet_Callback(hObject, eventdata, handles)",
+      "function pbGraphsTab_Callback(hObject, eventdata, handles)",
+      "function checkbox_segmentlengthgraphalong_Callback(hObject, eventdata, handles)",
+      "function checkbox_segmentstrikegraphalong_Callback(hObject, eventdata, handles)",
+      "function checkbox_intensitygraphalong_Callback(hObject, eventdata, handles)",
+      "function checkbox_densitygraphalong_Callback(hObject, eventdata, handles)",
+      "function checkbox_tracelengthgraphalong_Callback(hObject, eventdata, handles)",
+      "function checkbox_tracelengthgraphfrom_Callback(hObject, eventdata, handles)",
+      "function checkbox_segmentlengthgraphfrom_Callback(hObject, eventdata, handles)",
+      "function checkbox_segmentanglegraphfrom_Callback(hObject, eventdata, handles)",
+      "function edit_numblocksmap_Callback(hObject, eventdata, handles)",
+      "function edit_numblocksmap_CreateFcn(hObject, eventdata, handles)",
+      "function edit_numscancirclesgraph_Callback(hObject, eventdata, handles)",
+      "function edit_numscancirclesgraph_CreateFcn(hObject, eventdata, handles)",
+      "function edit_FilenameTag_Callback(hObject, eventdata, handles)",
+      "function edit_FilenameTag_CreateFcn(hObject, eventdata, handles)",
+      "function edit_numpixelsItoY_Callback(hObject, eventdata, handles)",
+      "function edit_numpixelsItoY_CreateFcn(hObject, eventdata, handles)",
+      "function checkbox_fracsuscep_Callback(hObject, eventdata, handles)",
+      "function checkbox_CSF_Callback(hObject, eventdata, handles)",
+      "function edit_C0_Callback(hObject, eventdata, handles)",
+      "function edit_C0_CreateFcn(hObject, eventdata, handles)",
+      "function edit_Pf_Callback(hObject, eventdata, handles)",
+      "function edit_Pf_CreateFcn(hObject, eventdata, handles)",
+      "function edit_mu_Callback(hObject, eventdata, handles)",
+      "function edit_mu_CreateFcn(hObject, eventdata, handles)"
+    ],
+    "local_call_candidates": [
+      "convertSVG2txt_colour2",
+      "guiFracPaQ2D",
+      "guiFracPaQ2Dangle",
+      "guiFracPaQ2Dgraphs",
+      "guiFracPaQ2Dimage",
+      "guiFracPaQ2Dlength",
+      "guiFracPaQ2Dlist",
+      "guiFracPaQ2Dpattern",
+      "guiFracPaQ2Dtensor",
+      "guiFracPaQ2Dtracemap",
+      "guiFracPaQ2Dwavelet",
+      "hexRGB"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dangle.m",
+    "sha256": "9d5408c9dfdef4864018357514bf92ba1b9c2b27c3b79560d3671b3fcfe2bd26",
+    "decoding": "utf-8",
+    "lines": 143,
+    "functions": [
+      "function guiFracPaQ2Dangle(traces, northCorrection, nHistoBins, nRoseBins, ..."
+    ],
+    "local_call_candidates": [
+      "doubleAngles",
+      "guiFracPaQ2Dangle",
+      "guiFracPaQ2Dcracktensor",
+      "guiPrint",
+      "reverseAxis",
+      "roseEqualArea",
+      "roseEqualAreaColour",
+      "roseLinear"
+    ],
+    "export_statements": [
+      "fprintf(fidRose, '%6.2f\\n', sorted_traceAngles2(i)) ;",
+      "guiPrint(f, 'FracPaQ2D_roseangleEqArea') ;",
+      "guiPrint(f, 'FracPaQ2D_roseangleLinear') ;",
+      "guiPrint(f, 'FracPaQ2D_histoangle') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dcracktensor.m",
+    "sha256": "6a04d288b0629acd8855da1c203d3368ccea5dc002706fefe79f69ce6a4bfd90",
+    "decoding": "utf-8",
+    "lines": 81,
+    "functions": [
+      "function guiFracPaQ2Dcracktensor(traces, northCorrection, flag_revY, flag_revX)"
+    ],
+    "local_call_candidates": [
+      "getF2tensor",
+      "getF4tensor",
+      "getF8tensor",
+      "getMapLimits",
+      "guiFracPaQ2Dcracktensor",
+      "guiPrint",
+      "reverseAxis"
+    ],
+    "export_statements": [
+      "guiPrint(f, 'FracPaQ2D_cracktensor') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dgraphs.m",
+    "sha256": "bdfd880b0f4285319cea6ef5643ba25529f0de89ea30b6af17c6aa2d07658837",
+    "decoding": "utf-8",
+    "lines": 466,
+    "functions": [
+      "function guiFracPaQ2Dgraphs(traces, numPixelsPerMetre, ..."
+    ],
+    "local_call_candidates": [
+      "getMapLimits",
+      "guiFracPaQ2Dgraphs",
+      "guiPrint",
+      "lineSegmentIntersect"
+    ],
+    "export_statements": [
+      "guiPrint(f, 'guiFracPaQ2D_tracelengthalonggraph') ;",
+      "guiPrint(f, 'guiFracPaQ2D_segmentlengthalonggraph') ;",
+      "guiPrint(f, 'guiFracPaQ2D_segmentanglealonggraph') ;",
+      "guiPrint(f, 'guiFracPaQ2D_graphtracemap') ;",
+      "guiPrint(f, 'guiFracPaQ2D_intensityalonggraph') ;",
+      "guiPrint(f, 'guiFracPaQ2D_densityalonggraph') ;",
+      "guiPrint(f, 'guiFracPaQ2D_tracelengthfromgraph') ;",
+      "guiPrint(f, 'guiFracPaQ2D_segmentlengthfromgraph') ;",
+      "guiPrint(f, 'guiFracPaQ2D_segmentanglefromgraph') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dimage.m",
+    "sha256": "1e32868b02903498fc253b9fba3e9397f44442e82e20a7e3fb38bd83c42b1427",
+    "decoding": "utf-8",
+    "lines": 273,
+    "functions": [
+      "function [ traces, xMin, yMin, xMax, yMax ] = guiFracPaQ2Dimage(sFile, numPixelsPerMetre, nPeaks, dThreshold, dGap, dMin, ax)"
+    ],
+    "local_call_candidates": [
+      "guiFracPaQ2Dimage",
+      "guiPrint"
+    ],
+    "export_statements": [
+      "guiPrint(f, 'FracPaQ2D_Houghstuff') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dlength.m",
+    "sha256": "17e6bb3220e622ad4c78e27376a0f106e0258d4cb99e014bdd805bdf3849161d",
+    "decoding": "utf-8",
+    "lines": 599,
+    "functions": [
+      "function guiFracPaQ2Dlength(traces, nPixelsPerMetre, northCorrection, ..."
+    ],
+    "local_call_candidates": [
+      "doubleAngles",
+      "fittingExponential",
+      "fittingLognormal",
+      "fittingPL",
+      "getMapLimits",
+      "guiFracPaQ2Dlength",
+      "guiPrint",
+      "reverseAxis",
+      "variogram"
+    ],
+    "export_statements": [
+      "fprintf(fidLength, '%6.2f\\n', sorted_traceSegmentLengths(i)) ;",
+      "fprintf(fidLength, '%6.2f\\n', sorted_traceLengths(i)) ;",
+      "fprintf(fidLength, '%6.2f\\t%6.2f\\n', traceSegmentAngles(i), traceSegmentLengths(i)) ;",
+      "guiPrint(f, 'FracPaQ2D_histotracelength') ;",
+      "guiPrint(f, 'FracPaQ2D_histosegmentlength') ;",
+      "guiPrint(f, 'FracPaQ2D_loglogplottracelengthdensity') ;",
+      "guiPrint(f, 'FracPaQ2D_loglogplottracelength') ;",
+      "guiPrint(f, 'FracPaQ2D_loglogplotsegmentlengthdensity') ;",
+      "guiPrint(f, 'FracPaQ2D_loglogplotsegmentlength') ;",
+      "guiPrint(f, 'FracPaQ2D_crossplotsegmentlengthangle') ;",
+      "guiPrint(gcf, 'FracPaQ2D_tracelengthsFittingPowerLaw') ;",
+      "guiPrint(gcf, 'FracPaQ2D_tracelengthsFittingExponential') ;",
+      "guiPrint(gcf, 'FracPaQ2D_tracelengthsFittingLogNormal') ;",
+      "guiPrint(gcf, 'FracPaQ2D_segmentlengthsFittingPowerLaw') ;",
+      "guiPrint(gcf, 'FracPaQ2D_segmentlengthsFittingExponential') ;",
+      "guiPrint(gcf, 'FracPaQ2D_segmentlengthsFittingLogNormal') ;",
+      "print(fig, 'FracPaQ2D_blocksize.bmp', '-dbmp256', ['-r', num2str(resolution)]) ;",
+      "guiPrint(gcf, 'FracPaQ2D_blocksizecentroidmap') ;",
+      "guiPrint(gcf, 'FracPaQ2D_blocksizeloglog') ;",
+      "guiPrint(gcf, 'FracPaQ2D_blocksizehisto') ;",
+      "guiPrint(f, 'FracPaQ2D_segmentlength_variogram') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dlist.m",
+    "sha256": "8e9b4ef42c97de3eb931d6ed45bebb6c8811bbf51a84c0eedee7c1e5ee87a794",
+    "decoding": "utf-8",
+    "lines": 239,
+    "functions": [
+      "function [ traces, xMin, yMin, xMax, yMax ] = guiFracPaQ2Dlist(fnList, numPixelsPerMetre, ax, sColour)"
+    ],
+    "local_call_candidates": [
+      "guiFracPaQ2Dlist",
+      "readtext"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dpattern.m",
+    "sha256": "1025efa999545f07abfbc91346d25ed806730bf942645f2de9bbbda8dac123ff",
+    "decoding": "utf-8",
+    "lines": 463,
+    "functions": [
+      "function guiFracPaQ2Dpattern(traces, numPixelsPerMetre, ..."
+    ],
+    "local_call_candidates": [
+      "getConnectivity",
+      "getMapLimits",
+      "guiFracPaQ2Dpattern",
+      "guiPrint",
+      "triplot",
+      "tripts"
+    ],
+    "export_statements": [
+      "guiPrint(f, 'FracPaQ2D_scancircle') ;",
+      "guiPrint(f, 'FracPaQ2D_IYXtriangle') ;",
+      "fprintf(fidConn, '%s %i\\n', 'I', cI) ;",
+      "fprintf(fidConn, '%s %i\\n', 'X', cX) ;",
+      "fprintf(fidConn, '%s %i\\n', 'Y', cY) ;",
+      "guiPrint(f, 'FracPaQ2D_intensityP21') ;",
+      "guiPrint(f, 'FracPaQ2D_densityP20') ;",
+      "fprintf(fidIntensity, '%8.1f %8.1f %14.8f\\n', xCentreCircle, yCentreCircle, I(j, i)) ;",
+      "fprintf(fidDensity, '%8.1f %8.1f %14.8f\\n', xCentreCircle, yCentreCircle, D(j, i)) ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dtabbed.m",
+    "sha256": "f3d81e923abeb4fdd6324e0ccb2285e7721f865bcf3dd7155db982b42f0000bf",
+    "decoding": "utf-8",
+    "lines": 1499,
+    "functions": [
+      "function varargout = guiFracPaQ2Dtabbed(varargin)",
+      "function guiFracPaQ2Dtabbed_OpeningFcn(hObject, eventdata, handles, varargin)",
+      "function varargout = guiFracPaQ2Dtabbed_OutputFcn(hObject, eventdata, handles)",
+      "function checkbox_triangle_Callback(hObject, eventdata, handles)",
+      "function checkbox_permellipse_Callback(hObject, eventdata, handles)",
+      "function checkbox_intensitymap_Callback(hObject, eventdata, handles)",
+      "function checkbox_densitymap_Callback(hObject, eventdata, handles)",
+      "function checkbox_tracemap_Callback(hObject, eventdata, handles)",
+      "function checkbox_shownodes_Callback(hObject, eventdata, handles)",
+      "function checkbox_histolength_Callback(hObject, eventdata, handles)",
+      "function checkbox_logloglength_Callback(hObject, eventdata, handles)",
+      "function checkbox_mle_Callback(hObject, eventdata, handles)",
+      "function checkbox_histoangle_Callback(hObject, eventdata, handles)",
+      "function checkbox_rose_Callback(hObject, eventdata, handles)",
+      "function checkbox_crossplot_Callback(hObject, eventdata, handles)",
+      "function checkbox_showcircles_Callback(hObject, eventdata, handles)",
+      "function checkbox_censor_Callback(hObject, eventdata, handles)",
+      "function edit_houghpeaks_Callback(hObject, eventdata, handles)",
+      "function edit_houghpeaks_CreateFcn(hObject, eventdata, handles)",
+      "function edit_houghthreshold_Callback(hObject, eventdata, handles)",
+      "function edit_houghthreshold_CreateFcn(hObject, eventdata, handles)",
+      "function edit_fillgap_Callback(hObject, eventdata, handles)",
+      "function edit_fillgap_CreateFcn(hObject, eventdata, handles)",
+      "function edit_minlength_Callback(hObject, eventdata, handles)",
+      "function edit_minlength_CreateFcn(hObject, eventdata, handles)",
+      "function edit_degfromnorth_Callback(hObject, eventdata, handles)",
+      "function edit_degfromnorth_CreateFcn(hObject, eventdata, handles)",
+      "function edit_scaling_Callback(hObject, eventdata, handles)",
+      "function edit_scaling_CreateFcn(hObject, eventdata, handles)",
+      "function edit_numscancircles_Callback(hObject, eventdata, handles)",
+      "function edit_numscancircles_CreateFcn(hObject, eventdata, handles)",
+      "function edit_lambda_Callback(hObject, eventdata, handles)",
+      "function edit_lambda_CreateFcn(hObject, eventdata, handles)",
+      "function pushbutton_exit_Callback(hObject, eventdata, handles)",
+      "function edit_filename_Callback(hObject, eventdata, handles)",
+      "function edit_filename_CreateFcn(hObject, eventdata, handles)",
+      "function pushbutton_browse_Callback(hObject, eventdata, handles)",
+      "function pushbutton_preview_Callback(hObject, eventdata, handles)",
+      "function pushbutton_run_Callback(hObject, eventdata, handles)",
+      "function radiobutton_image_Callback(hObject, eventdata, handles)",
+      "function radiobutton_node_Callback(hObject, eventdata, handles)",
+      "function figure_main_CreateFcn(hObject, eventdata, handles)",
+      "function popupmenu_histolengthbins_Callback(hObject, eventdata, handles)",
+      "function popupmenu_histolengthbins_CreateFcn(hObject, eventdata, handles)",
+      "function popupmenu_histoanglebins_Callback(hObject, eventdata, handles)",
+      "function popupmenu_histoanglebins_CreateFcn(hObject, eventdata, handles)",
+      "function popupmenu_rosebins_Callback(hObject, eventdata, handles)",
+      "function popupmenu_rosebins_CreateFcn(hObject, eventdata, handles)",
+      "function pushbutton_flipy_Callback(hObject, eventdata, handles)",
+      "function pushbutton_flipx_Callback(hObject, eventdata, handles)",
+      "function popupmenu8_Callback(hObject, eventdata, handles)",
+      "function popupmenu8_CreateFcn(hObject, eventdata, handles)",
+      "function popupmenu7_Callback(hObject, eventdata, handles)",
+      "function popupmenu7_CreateFcn(hObject, eventdata, handles)",
+      "function checkbox21_Callback(hObject, eventdata, handles)",
+      "function edit12_Callback(hObject, eventdata, handles)",
+      "function edit12_CreateFcn(hObject, eventdata, handles)",
+      "function checkbox20_Callback(hObject, eventdata, handles)",
+      "function checkbox19_Callback(hObject, eventdata, handles)",
+      "function checkbox_cracktensor_Callback(hObject, eventdata, handles)",
+      "function checkbox_roselengthweighted_Callback(hObject, eventdata, handles)",
+      "function edit_apertureexponent_Callback(hObject, eventdata, handles)",
+      "function edit_apertureexponent_CreateFcn(hObject, eventdata, handles)",
+      "function edit_aperturefactor_Callback(hObject, eventdata, handles)",
+      "function edit_aperturefactor_CreateFcn(hObject, eventdata, handles)",
+      "function edit_fixedaperture_Callback(hObject, eventdata, handles)",
+      "function edit_fixedaperture_CreateFcn(hObject, eventdata, handles)",
+      "function pushbutton_wavelet_Callback(hObject, eventdata, handles)",
+      "function checkbox_showrosemean_Callback(hObject, eventdata, handles)",
+      "function checkbox_blocksize_Callback(hObject, eventdata, handles)",
+      "function edit_lc_Callback(hObject, eventdata, handles)",
+      "function edit_lc_CreateFcn(hObject, eventdata, handles)",
+      "function edit_uc_Callback(hObject, eventdata, handles)",
+      "function edit_uc_CreateFcn(hObject, eventdata, handles)",
+      "function pushbutton_Wavelet_Callback(hObject, eventdata, handles)",
+      "function checkbox_rosecolour_Callback(hObject, eventdata, handles)",
+      "function checkbox_seglenvariogram_Callback(hObject, eventdata, handles)"
+    ],
+    "local_call_candidates": [
+      "convertSVG2txt_colour",
+      "guiFracPaQ2Dangle",
+      "guiFracPaQ2Dimage",
+      "guiFracPaQ2Dlength",
+      "guiFracPaQ2Dlist",
+      "guiFracPaQ2Dpattern",
+      "guiFracPaQ2Dtabbed",
+      "guiFracPaQ2Dtensor",
+      "guiFracPaQ2Dtracemap",
+      "hexRGB"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dtensor.m",
+    "sha256": "c2893333ccc7e9b4f2c0b506c07ebbea6004a1b42c8c14a6a661ba794b01b9e9",
+    "decoding": "utf-8",
+    "lines": 122,
+    "functions": [
+      "function guiFracPaQ2Dtensor(traces, northCorrection, nLambda, ..."
+    ],
+    "local_call_candidates": [
+      "getF2tensor",
+      "getMapLimits",
+      "guiFracPaQ2Dtensor",
+      "guiPrint",
+      "reverseAxis"
+    ],
+    "export_statements": [
+      "guiPrint(f, 'FracPaQ2D_permeability_polar') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dtracemap.m",
+    "sha256": "4a9104120ffa67c9bcacfb364b567dbf4f5c7f497c1ddba94aa3e1767e4a18ff",
+    "decoding": "utf-8",
+    "lines": 659,
+    "functions": [
+      "function guiFracPaQ2Dtracemap(traces, nPixelsPerMetre, nNorth, ..."
+    ],
+    "local_call_candidates": [
+      "cmocean",
+      "doubleAngles",
+      "getMapLimits",
+      "guiFracPaQ2Dtracemap",
+      "guiPrint",
+      "plotMohr2D",
+      "reverseAxis",
+      "roseEqualAreaColourTendency"
+    ],
+    "export_statements": [
+      "guiPrint(f, 'FracPaQ2D_tracemap') ;",
+      "guiPrint(f, 'FracPaQ2D_tracemap_multicolour') ;",
+      "guiPrint(f, 'FracPaQ2D_tracelengthmap') ;",
+      "guiPrint(f, 'FracPaQ2D_segmentlengthmap') ;",
+      "guiPrint(f, 'FracPaQ2D_segmentstrikemap') ;",
+      "guiPrint(f, 'FracPaQ2D_Mohrplot') ;",
+      "guiPrint(f, 'FracPaQ2D_sliptendencymap') ;",
+      "guiPrint(f, 'FracPaQ2D_sliptendencyrose') ;",
+      "fprintf(fidSeg, '%4i\\t%8.4f\\t%8.4f\\t%8.4f\\t%8.4f\\t%3.1f\\n', ...",
+      "guiPrint(f, 'FracPaQ2D_dilationtendencymap') ;",
+      "guiPrint(f, 'FracPaQ2D_dilationtendencyrose') ;",
+      "guiPrint(f, 'FracPaQ2D_fracsuscepmap') ;",
+      "guiPrint(f, 'FracPaQ2D_fracsusceprose') ;",
+      "guiPrint(f, 'FracPaQ2D_CSFmap') ;",
+      "guiPrint(f, 'FracPaQ2D_CSFrose') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dwavelet.m",
+    "sha256": "9757e667686aad863b2f2ee1efce29e72fe0492ccb6bf759655d37dcaa1f7b27",
+    "decoding": "utf-8",
+    "lines": 232,
+    "functions": [
+      "function guiFracPaQ2Dwavelet(traces, a, L, deltaTheta, fMorlet, sColour, flag_revX, flag_revY)"
+    ],
+    "local_call_candidates": [
+      "cmocean",
+      "guiFracPaQ2Dwavelet",
+      "guiPrint",
+      "mexicanhatCWT",
+      "mexicanhatCWTself",
+      "morletCWT",
+      "morletCWTself",
+      "reverseAxis",
+      "roseEqualArea"
+    ],
+    "export_statements": [
+      "print(fwave, 'FracPaQ2D_wavelet_traces.png', '-dpng', '-r72') ;",
+      "guiPrint(f, fnPrint) ;",
+      "fprintf(fidMean, '%g\\n', thetaopt2_deg(i)) ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dwavelet2.m",
+    "sha256": "3f8c02b5aa8917fe627344c459cd985449b8d4c191e1fad9e73569a2f3e2d3c6",
+    "decoding": "utf-8",
+    "lines": 190,
+    "functions": [
+      "function guiFracPaQ2Dwavelet2(a, L, deltaTheta, fMorlet, sColour)"
+    ],
+    "local_call_candidates": [
+      "cmocean",
+      "guiFracPaQ2Dwavelet2",
+      "guiPrint",
+      "mexicanhatCWT",
+      "mexicanhatCWTself",
+      "morletCWT",
+      "morletCWTself",
+      "roseEqualArea"
+    ],
+    "export_statements": [
+      "guiPrint(f, fnPrint) ;",
+      "fprintf(fidMean, '%g\\n', thetaopt2_deg(i)) ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiFracPaQ2Dwavelet3.m",
+    "sha256": "6160fb80d5126969451818f94840503df1e08b704ee531e2105d5f532ab3a53a",
+    "decoding": "utf-8",
+    "lines": 193,
+    "functions": [
+      "function guiFracPaQ2Dwavelet3(a, L, deltaTheta, fMorlet, sColour)"
+    ],
+    "local_call_candidates": [
+      "cmocean",
+      "guiFracPaQ2Dwavelet3",
+      "guiPrint",
+      "mexicanhatCWT",
+      "mexicanhatCWTself",
+      "morletCWT",
+      "morletCWTself",
+      "roseEqualArea"
+    ],
+    "export_statements": [
+      "guiPrint(f, 'FracPaQ2Dwavelet_tracemap') ;",
+      "guiPrint(f, fnPrint) ;",
+      "guiPrint(f, fnPrint) ;",
+      "guiPrint(f, fnPrint) ;",
+      "fprintf(fidMean, '%g\\n', thetaopt_4_mean(i)) ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiPrint.m",
+    "sha256": "f3879b745193839b0ce52139661bf9c5323442826a807eb86fa520dd857a64c0",
+    "decoding": "utf-8",
+    "lines": 46,
+    "functions": [
+      "function guiPrint(fig, fn)"
+    ],
+    "local_call_candidates": [
+      "guiPrint"
+    ],
+    "export_statements": [
+      "function guiPrint(fig, fn)",
+      "print(fig, '-dpng', '-r600', fn1) ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/guiWaveletDialog.m",
+    "sha256": "b73d7a3c6b59ffdaa0a200d4116fe25f12ea039287c8a00cec64d71eec0d3ab4",
+    "decoding": "utf-8",
+    "lines": 222,
+    "functions": [
+      "function varargout = guiWaveletDialog(varargin)",
+      "function guiWaveletDialog_OpeningFcn(hObject, eventdata, handles, varargin)",
+      "function varargout = guiWaveletDialog_OutputFcn(hObject, eventdata, handles)",
+      "function pb_Run_Callback(hObject, eventdata, handles)",
+      "function pb_Cancel_Callback(hObject, eventdata, handles)",
+      "function edit_aString_Callback(hObject, eventdata, handles)",
+      "function edit_aString_CreateFcn(hObject, eventdata, handles)",
+      "function edit_DegString_Callback(hObject, eventdata, handles)",
+      "function edit_DegString_CreateFcn(hObject, eventdata, handles)",
+      "function edit_LString_Callback(hObject, eventdata, handles)",
+      "function edit_LString_CreateFcn(hObject, eventdata, handles)",
+      "function radiobutton_Morlet_Callback(hObject, eventdata, handles)",
+      "function radiobutton_Mexican_Callback(hObject, eventdata, handles)"
+    ],
+    "local_call_candidates": [
+      "guiFracPaQ2Dwavelet2",
+      "guiWaveletDialog"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/guiWaveletTest.m",
+    "sha256": "de4724c167282770e46b554e5b8d35d81dbdc0b2e02bcbcf5ac5a70f042ad3b2",
+    "decoding": "utf-8",
+    "lines": 4,
+    "functions": [],
+    "local_call_candidates": [
+      "guiFracPaQ2Dwavelet"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/hexRGB.m",
+    "sha256": "6f7dc0b5417f3cd9ced46340ab625bb0e44ac4b8958a87b297ddd25fd094e5db",
+    "decoding": "utf-8",
+    "lines": 30,
+    "functions": [
+      "function [ rgb ] = hexRGB(sHex)"
+    ],
+    "local_call_candidates": [
+      "hexRGB"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/lineSegmentIntersect.m",
+    "sha256": "9a872a048cac4635586dd50b639dc9ec6dfe12b0a0397bb8c485b4a20ea926e3",
+    "decoding": "utf-8",
+    "lines": 126,
+    "functions": [
+      "function out = lineSegmentIntersect(XY1,XY2)"
+    ],
+    "local_call_candidates": [
+      "lineSegmentIntersect"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/logplots.m",
+    "sha256": "4b4daeb7088bd6eae6ad659d7f3254aedfaff625885d2e079269031ba69506c1",
+    "decoding": "utf-8",
+    "lines": 88,
+    "functions": [],
+    "local_call_candidates": [],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/mexicanhat.m",
+    "sha256": "db921fae1ebb0590b7766f68213fe1e35c3c7af0ac18cf37a7d17592bdf36710",
+    "decoding": "utf-8",
+    "lines": 57,
+    "functions": [
+      "function [ mx ] = mexicanhat(x, y, A, C)"
+    ],
+    "local_call_candidates": [
+      "mexicanhat"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/mexicanhatCWT.m",
+    "sha256": "b57afbef41de7e36ce76e2779957028532930bd760d621ba879d450e0615d195",
+    "decoding": "utf-8",
+    "lines": 117,
+    "functions": [
+      "function [WC, eta] = mexicanhatCWT(f, x, y, a, theta, L)"
+    ],
+    "local_call_candidates": [
+      "mexicanhat",
+      "mexicanhatCWT"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/mexicanhatCWTself.m",
+    "sha256": "f0082c95b98162961c5ab6e9fd8452b50f4b97e4a92b9746fa06d9498c23bba3",
+    "decoding": "utf-8",
+    "lines": 103,
+    "functions": [
+      "function [WC, eta] = mexicanhatCWTself(x, y, a, theta, L)"
+    ],
+    "local_call_candidates": [
+      "mexicanhat",
+      "mexicanhatCWTself"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/morlet.m",
+    "sha256": "df880d2f37fa1bf623ff0ce2c89472209cf47904b277cacf55c54da46bb43251",
+    "decoding": "utf-8",
+    "lines": 58,
+    "functions": [
+      "function [ mx ] = morlet(x, y, k, A, C)"
+    ],
+    "local_call_candidates": [
+      "morlet"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/morletCWT.m",
+    "sha256": "169386e3e8bf04e84388485eeb9c996a94b47f8506b0b5787d02f3153ff0beb9",
+    "decoding": "utf-8",
+    "lines": 114,
+    "functions": [
+      "function [WC, eta] = morletCWT(f, x, y, a, theta, L)"
+    ],
+    "local_call_candidates": [
+      "morlet",
+      "morletCWT"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/morletCWTself.m",
+    "sha256": "ebe64a3870856da8845977e665e39898368ac76dd79dd1b44d07015e4f40412d",
+    "decoding": "utf-8",
+    "lines": 108,
+    "functions": [
+      "function [WC, eta] = morletCWTself(x, y, a, theta, L)"
+    ],
+    "local_call_candidates": [
+      "morlet",
+      "morletCWTself"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/newCM.m",
+    "sha256": "e70320618ba34bb7bee8ad5acbf438b8f041355fe36eba16121f45706f1b136d",
+    "decoding": "utf-8",
+    "lines": 28,
+    "functions": [
+      "function [newMap] = newCM(minC, maxC)"
+    ],
+    "local_call_candidates": [
+      "cmocean",
+      "newCM"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/plotCrackTensor.m",
+    "sha256": "248659ebd2dd73b62616ec71422bdc697d5c9a93d0104ad8b02b487dcaaa6d86",
+    "decoding": "utf-8",
+    "lines": 194,
+    "functions": [],
+    "local_call_candidates": [
+      "guiPrint",
+      "roseEqualArea"
+    ],
+    "export_statements": [
+      "guiPrint(f, 'FracPaQ2D_cracktensor') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/plotEllipse.m",
+    "sha256": "b530329f326b0069a248fb2fd332f67dde4e159fa7ba4b206f60824c1a2782b0",
+    "decoding": "utf-8",
+    "lines": 39,
+    "functions": [
+      "function plotEllipse(ax1, ax2, angleN, sColour)"
+    ],
+    "local_call_candidates": [
+      "plotEllipse"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/plotMohr.m",
+    "sha256": "72a29d7aa7236b532bb01d257c7bc8f922e99c396d5c3306bc4eb8e668f1a4a1",
+    "decoding": "utf-8",
+    "lines": 27,
+    "functions": [
+      "function plotMohr2D(s1, s2, pf)"
+    ],
+    "local_call_candidates": [
+      "plotMohr2D"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/plotMohr2D.m",
+    "sha256": "ec2e4fe727fea1db64973c5f45a2da7987f91cd87d4bbcc69adfd71dd1f465ee",
+    "decoding": "utf-8",
+    "lines": 62,
+    "functions": [
+      "function plotMohr2D(s1, s2, pf, C0, mu, sn, tau)"
+    ],
+    "local_call_candidates": [
+      "plotMohr2D"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/plotSouterMap.m",
+    "sha256": "f5cf73810c27392171f6ea822fbe34fbdb834e4926b64379e877c913134678d8",
+    "decoding": "utf-8",
+    "lines": 51,
+    "functions": [],
+    "local_call_candidates": [
+      "guiFracPaQ2Dlist",
+      "guiPrint"
+    ],
+    "export_statements": [
+      "guiPrint(f, 'Souter_tracemap') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/probePlane.m",
+    "sha256": "c859836b17485233f7526dd2408390b0226b1e9cbf6f92e72e0c8a0c183819db",
+    "decoding": "utf-8",
+    "lines": 164,
+    "functions": [
+      "function [ m, m_ij, mq ] = probePlane(x, xMin, yMin, xMax, yMax, traces, nq)"
+    ],
+    "local_call_candidates": [
+      "lineSegmentIntersect",
+      "probePlane"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/readTraces.m",
+    "sha256": "cc2e3040f45c59482761094d811d02aea26a04182b34f629b81a06478a3cfa2c",
+    "decoding": "utf-8",
+    "lines": 226,
+    "functions": [
+      "function [ traces, xMin, yMin, xMax, yMax ] = readTraces(fnList)"
+    ],
+    "local_call_candidates": [
+      "readTraces",
+      "readtext"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/readtext.m",
+    "sha256": "532285e927092df2ef220218ff344bc977527302fe700632f4bdec100d1ed5bb",
+    "decoding": "utf-8",
+    "lines": 448,
+    "functions": [
+      "function      [data, result]= readtext(text, delimiter, comment, quotes, options)",
+      "function x= s2n(s, lenS)",
+      "function emptywaitbar(varargin)"
+    ],
+    "local_call_candidates": [
+      "readtext"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/reverseAxis.m",
+    "sha256": "d1d6564c8ac1129176afa365112e45ae6316d042d994a9c8917465edd0b4b2f1",
+    "decoding": "utf-8",
+    "lines": 33,
+    "functions": [
+      "function anglesRev = reverseAxis(angles)"
+    ],
+    "local_call_candidates": [
+      "reverseAxis"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/roseEqualArea.m",
+    "sha256": "1bc028b173df9a6b582fd55bb6a7e403cca19132a4bab12ad2fd587604a1a761",
+    "decoding": "utf-8",
+    "lines": 178,
+    "functions": [
+      "function roseEqualArea(roseAngles, delta, azimuth, roseLengths, fRosemean, sColour)"
+    ],
+    "local_call_candidates": [
+      "circStat",
+      "roseEqualArea"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/roseEqualArea2.m",
+    "sha256": "a8b622baa545a22f3b030d1e06f7b2bd633778556b090a72d1a70e032371f1a6",
+    "decoding": "utf-8",
+    "lines": 149,
+    "functions": [
+      "function roseEqualArea2(roseAngles, delta, azimuth, roseLengths, sColour)"
+    ],
+    "local_call_candidates": [
+      "circStat",
+      "roseEqualArea2"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/roseEqualAreaColour.m",
+    "sha256": "c9d610bc3ecee8134f16727fc8136cfeeb043a1ccfe461a22ca1f4fc1ad74faf",
+    "decoding": "utf-8",
+    "lines": 195,
+    "functions": [
+      "function roseEqualAreaColour(roseAngles, delta, azimuth, roseLengths, fRosemean, sColour)"
+    ],
+    "local_call_candidates": [
+      "circStat",
+      "cmocean",
+      "roseEqualAreaColour"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/roseEqualAreaColourTendency.m",
+    "sha256": "865ca3654efc747ef96d7a32a4582d0512284aefc436c80999500f8c3ee31085",
+    "decoding": "utf-8",
+    "lines": 269,
+    "functions": [
+      "function roseEqualAreaColourTendency(roseAngles, delta, azimuth, roseLengths, ..."
+    ],
+    "local_call_candidates": [
+      "roseEqualAreaColourTendency"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/roseLinear.m",
+    "sha256": "3f176f1f1972f7238f1052ed8c488ec18a4426c0ac74a88d8ab6fa817882acc1",
+    "decoding": "utf-8",
+    "lines": 93,
+    "functions": [
+      "function roseLinear(roseAngles, delta, azimuth, roseLengths, sColour)"
+    ],
+    "local_call_candidates": [
+      "roseLinear"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/rosePlot.m",
+    "sha256": "0449c5a8f17da7d6a646e28d2efda3fd9ac451407688bd48824fb9add1f6db30",
+    "decoding": "utf-8",
+    "lines": 125,
+    "functions": [
+      "function rosePlot(roseAngles, nb, typ, fscale)"
+    ],
+    "local_call_candidates": [
+      "arc2",
+      "rosePlot"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/testCM.m",
+    "sha256": "6ca4b44ecec16856370edae4af955e2353334054f13cc8aae218fb10de7b2562",
+    "decoding": "utf-8",
+    "lines": 31,
+    "functions": [
+      "function newCM(minC, maxC)"
+    ],
+    "local_call_candidates": [
+      "newCM"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/testImage.m",
+    "sha256": "5c09485f6182885234dbaa47f49ffde1deb541a76813e7842bb115698a75b030",
+    "decoding": "utf-8",
+    "lines": 48,
+    "functions": [],
+    "local_call_candidates": [],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/testWavelet.m",
+    "sha256": "f556f2ba2d43f7cd603b73968f3999c107928157c0af0fae75726338c0070ba8",
+    "decoding": "utf-8",
+    "lines": 17,
+    "functions": [],
+    "local_call_candidates": [
+      "guiFracPaQ2Dwavelet2"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/testmaps.m",
+    "sha256": "1e0fcc943f800d739bdad0e03dc4b1f2a422724962f4fb600cf0332f038f6ee6",
+    "decoding": "utf-8",
+    "lines": 164,
+    "functions": [
+      "function testmaps(traces, nPixelsPerMetre, xMin, yMin, xMax, yMax, flag_shownodes, flag_revY, flag_revX, sColour)"
+    ],
+    "local_call_candidates": [
+      "guiPrint",
+      "testmaps"
+    ],
+    "export_statements": [
+      "guiPrint(f, 'FracPaQ2D_tracelengthmap') ;",
+      "guiPrint(f, 'FracPaQ2D_segmentlengthmap') ;",
+      "guiPrint(f, 'FracPaQ2D_segmentstrikemap') ;"
+    ]
+  },
+  {
+    "path": "fracpaq-matlab/trilines.m",
+    "sha256": "ec4356a53debb2a3f4051fd174505b74e92f02843e9a676573eec566594a2558",
+    "decoding": "utf-8",
+    "lines": 31,
+    "functions": [
+      "function trilines(X)"
+    ],
+    "local_call_candidates": [
+      "trilines"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/triplot.m",
+    "sha256": "b690ca65e0f88343f4ed01dd48688962caf7ef3020fe1ebaee09ca3bda422279",
+    "decoding": "utf-8",
+    "lines": 53,
+    "functions": [
+      "function triplot"
+    ],
+    "local_call_candidates": [],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/tripts.m",
+    "sha256": "11db7d2ea1a4441e4015ce302ccc397cc55ef11574a3ed66e31f1f94a15439a4",
+    "decoding": "utf-8",
+    "lines": 59,
+    "functions": [
+      "function tripts(X, sLabel, fPlot, sColour)"
+    ],
+    "local_call_candidates": [
+      "tripts"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/tritest.m",
+    "sha256": "3d414c4b032b0d5cc4b87a55d50ac2f091fc441feb407a40e52b7786c35916b4",
+    "decoding": "utf-8",
+    "lines": 10,
+    "functions": [],
+    "local_call_candidates": [
+      "triplot",
+      "tripts"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/variogram.m",
+    "sha256": "ba6cc81cb21f2db33dbb93fee71444ad219d60bb2a0a37ee94cb36b015d9d812",
+    "decoding": "latin-1",
+    "lines": 407,
+    "functions": [
+      "function S = variogram(x,y,varargin)",
+      "function iid = distmat(X,dmax)",
+      "function iid = distmatsub1d(i)",
+      "function iid = distmatsub2d(i)  %#ok<DEFNU>",
+      "function iid = distmatsub(i)",
+      "function X = parseargs(X,varargin)"
+    ],
+    "local_call_candidates": [
+      "variogram"
+    ],
+    "export_statements": []
+  },
+  {
+    "path": "fracpaq-matlab/waveletDialog.m",
+    "sha256": "aa08c5952aa24cd120091e7d4b1c8df15bdb4626fa28b714d53107c69657882b",
+    "decoding": "utf-8",
+    "lines": 54,
+    "functions": [
+      "function [ choice ] = waveletDialog",
+      "function popup_callback(popup,event)"
+    ],
+    "local_call_candidates": [],
+    "export_statements": []
+  }
+]

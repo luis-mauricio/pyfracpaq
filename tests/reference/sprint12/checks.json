@@ -1,0 +1,121 @@
+{
+  "date": "2026-11-14",
+  "status": "Sprints 12/13 complete and active in default Run; Q-14 and Q-20 Graphs P20 extension explicitly approved by the user.",
+  "pytest": {
+    "tests": 628,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "seconds": 53.01,
+    "baseline_previous_tests": 622,
+    "new_tests": 6,
+    "junit": "pytest-s1213.xml",
+    "junit_sha256": "3c5d4295d47c96bb4ec1e89d654b7e2a3d9c1ab842163311121016530b9ed1ef",
+    "command": "QT_QPA_PLATFORM=offscreen MPLCONFIGDIR=/tmp/pyfracpaq-matplotlib python -m pytest -q --junitxml=/tmp/pyfracpaq-s1213-approved-junit.xml",
+    "cwd": "/tmp/pyfracpaq-s1213-approved-ebk2hiwp",
+    "isolation": "Full current project copy without environments/build/caches; original folder reconstructed using exactly 164 manifest files. Strict source_manifest verifier unchanged. Existing eight user outputs remain untouched in working original folder."
+  },
+  "native_integrity": {
+    "manifest_files": 164,
+    "sha256_all_match": true,
+    "preexisting_user_files_preserved": [
+      {
+        "path": "FracPaQ2D_histosegmentlength_Run1.png",
+        "sha256": "40432818e85ebdfb2599d0d1bea58f557cf5992af2872442385fbe7a1ebed908"
+      },
+      {
+        "path": "FracPaQ2D_histotracelength_Run1.png",
+        "sha256": "99d26d3653cfe46c4c012e6de5c5729c8ea823cc367629df7d49653fdd3eb96f"
+      },
+      {
+        "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+        "sha256": "f3c3d3e634a477f64c75c8f16c977d5f61ade54547996a2a76f6403a09f48266"
+      },
+      {
+        "path": "FracPaQ2D_tracelengthmap_Run1.png",
+        "sha256": "e94c17131fa2052be91e7fe3b7c44f830b5354f9d407f0503e0ea37686d557cf"
+      },
+      {
+        "path": "FracPaQ2D_tracemap_Run1.png",
+        "sha256": "781ac030cb77dabe45b557c0d59967455473ffdb68140f2339244af3d89db048"
+      },
+      {
+        "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+        "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7"
+      },
+      {
+        "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+        "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839"
+      },
+      {
+        "path": "FracPaQ2Dtracelengths_Run1.txt",
+        "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874"
+      }
+    ]
+  },
+  "package": {
+    "wheel": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "784bd85b6ea6cad6998b731148c0e79a163465daf9c7e7ec8c99d28eeb432a4f",
+    "bytes": 289318,
+    "build": "pip wheel --no-deps --no-build-isolation --no-cache-dir .",
+    "smoke": {
+      "package_import": "/tmp/pyfracpaq-s1213-approved-installed-yt5_f6xa/pyfracpaq/__init__.py",
+      "wheel": "/tmp/pyfracpaq-s1213-approved-wheel/pyfracpaq-0.0.0-py3-none-any.whl",
+      "gui_resources_loaded": true,
+      "default_registry_selections": [
+        "LEN-13",
+        "LEN-15",
+        "GRA-03",
+        "GRA-04",
+        "GRA-05",
+        "GRA-06",
+        "GRA-07",
+        "GRA-10",
+        "GRA-11",
+        "GRA-12"
+      ],
+      "pngs": 13,
+      "lengths_txts": 3,
+      "visible_bmp": 1,
+      "block_areas": [
+        1444,
+        1444
+      ],
+      "p20_formula": "m/(2*pi*r^2)",
+      "native_runtime_required": false,
+      "approval": "Aprovo ambos Q-14 e Extensão Q-20."
+    }
+  },
+  "code_sha256": {
+    "pyfracpaq/analysis/blocks.py": "0e4e86361afae58091c2b90c5f79a9ad2f95423f2dac77c5974f8ba48c5271ce",
+    "pyfracpaq/analysis/variogram.py": "c13c42ebf9c097735b79e1d9a9169d139bcf4b54fd82fc94907ca3e527fbb7e5",
+    "pyfracpaq/analysis/profiles.py": "2e65174358d59ae79061688b4647fbeeac7e085e86ed830f77e3ed9c6915ebc3",
+    "pyfracpaq/analysis/lengths.py": "b927c3216ae1192b682674cd6dc6e0294c54f2e720a6fe6957dcfb3df176747e",
+    "pyfracpaq/analysis/registry.py": "48773718a571167d59bd49f5a39e215f45824fa02e06690bb3b9589dd4b55b6a",
+    "pyfracpaq/domain/execution.py": "4a1c65f5bc740b1fb3b7326c1abe547b24815b887c1d3a1b8169a49ecccb8053",
+    "pyfracpaq/geometry/profiles.py": "36a14b8008fb36f064af862421cd427356c3ede3195aef67e5c514d9a90550a5",
+    "pyfracpaq/geometry/__init__.py": "8075b128c5f7edccf01a11dfaf779b58ca1652ed7f101cb8186cb53ded9fdbb7",
+    "pyfracpaq/gui/profile_selection.py": "58b8df0f89f2407bf0057aaa20eb8968e642ee78cdb0f57bc3af3e54f8826748",
+    "pyfracpaq/gui/main_window.py": "c1c6cc2070950d69c63cd9eb0fc480573645acdd992fff7a90c62fcd5a2bc2cd",
+    "pyfracpaq/io/block_raster.py": "57522ba6d3964b0fa7a07cf53c619f1b64152e90837a3d9235ef7b1395f8bf43",
+    "pyfracpaq/plots/blocks.py": "2e262a006b570376209f248feec82148831ba01385bd4210b78c21e3a359de46",
+    "pyfracpaq/plots/variogram.py": "1594db3cea2d6387ab6dc16245c50698328f62c8ee6c208cebfa787e03898ac6",
+    "pyfracpaq/plots/profiles.py": "10fec163084e2835499dd4cb97e5bca96b3039a2bf18511ea341097c834e6dfc"
+  },
+  "native_comparisons": "native_comparison.json",
+  "candidate_exports": "candidate/validation.json",
+  "visual_review": "Four block/variogram and nine Graphs families inspected from exported QA images; names/markers/labels/styles and actual native plots/arrays compared. No pixel identity or cross-platform certification claimed.",
+  "open_decisions": [],
+  "prd_unchecked": [],
+  "approval": {
+    "author": "user",
+    "date": "2026-11-14",
+    "statement": "Aprovo ambos Q-14 e Extensão Q-20.",
+    "decisions": [
+      "Q-14",
+      "Q-20 Graphs P20 normalization extension"
+    ],
+    "scope": "Enclosed white 8-connected blocks, fixed unscaled raster and calibrated areas/centres; Graphs P20=m/(2*pi*r^2), retaining the previously approved finite counts."
+  },
+  "default_run_integration": "Real Qt runs: blocks unscaled/scaled10; P21 only/P20 only/both emit the same one map + two profiles; combined Lengths/Graphs share caches and emit thirteen PNGs, three TXT and one fixed-name BMP."
+}

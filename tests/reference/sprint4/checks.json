@@ -1,0 +1,42 @@
+{
+  "scope": "Sprint 4 Python implementation and exports; native MATLAB comparison remains pending.",
+  "tests": {
+    "tests": 252,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "pytest_command": "QT_QPA_PLATFORM=offscreen MPLCONFIGDIR=/tmp/pyfracpaq-matplotlib .venv/bin/python -m pytest -q --junitxml=/tmp/pyfracpaq-sprint4-tests.xml",
+  "pytest_xml_sha256": "4676609546dc1d0e7b0528fc63bce4a4a41c1443175caa4c858989551b425fec",
+  "post_documentation_checks": {
+    "tests/reference/test_contract.py": {
+      "tests": 14,
+      "failures": 0
+    }
+  },
+  "dependency_check": "No broken requirements found.",
+  "dependency_warning": "314 installed Matplotlib Qt backend deprecation warnings: AA_UseHighDpiPixmaps.",
+  "package": {
+    "filename": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "06b73c5a89cc7327017019783462df7d3b51fbeb68891e76b4fba66476166e4d",
+    "zip_import_outside_root": true,
+    "figures_rendered": 7,
+    "length_txt_generated": 3
+  },
+  "artifacts": {
+    "png": 21,
+    "length_txt": 9,
+    "hashes_verified": true,
+    "size": [
+      4724,
+      4724
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  "source_manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7",
+  "source_files_unchanged": 164,
+  "matlab_comparison": "pending"
+}

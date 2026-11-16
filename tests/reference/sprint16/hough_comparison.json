@@ -1,0 +1,127 @@
+[
+  {
+    "case": "directional",
+    "input": "tests/fixtures/images/directional.tif",
+    "input_sha256": "c98781ec693721bded1f809e15bdb66cd48af4ba3be6b6cf61ce9645ac6f3020",
+    "reference": "tests/reference/sprint16/native/hough_arrays.mat",
+    "reference_sha256": "4a95b295aaf08c4fc3e4ddf4e5b5cdfb05f8091de91fe2b48db940e56bd4ddd8",
+    "parameters": {
+      "peaks": 1000,
+      "threshold": 0.33,
+      "fill_gap": 5.0,
+      "min_length": 3.0
+    },
+    "seconds": 0.008513541019055992,
+    "peaks": 7,
+    "segments": 7,
+    "exact_checks": {
+      "binary": true,
+      "accumulator": true,
+      "theta": true,
+      "rho": true,
+      "endpoints": true,
+      "peaks": true,
+      "threshold": true
+    }
+  },
+  {
+    "case": "rectangular",
+    "input": "tests/fixtures/images/rectangular.tif",
+    "input_sha256": "5dafc5d3bbcea5dbf4563eb0086271261ba59b490346bf3c06c699196230d6f0",
+    "reference": "tests/reference/sprint16/native/hough_arrays.mat",
+    "reference_sha256": "4a95b295aaf08c4fc3e4ddf4e5b5cdfb05f8091de91fe2b48db940e56bd4ddd8",
+    "parameters": {
+      "peaks": 1000,
+      "threshold": 0.33,
+      "fill_gap": 5.0,
+      "min_length": 3.0
+    },
+    "seconds": 0.0041000829951372,
+    "peaks": 3,
+    "segments": 3,
+    "exact_checks": {
+      "binary": true,
+      "accumulator": true,
+      "theta": true,
+      "rho": true,
+      "endpoints": true,
+      "peaks": true,
+      "threshold": true
+    }
+  },
+  {
+    "case": "tensor_network",
+    "input": "tests/fixtures/images/tensor_network.tif",
+    "input_sha256": "583c94c350773223146935b880d762515818e7abab585d31ff156c91d8715bf3",
+    "reference": "tests/reference/sprint16/native/hough_arrays.mat",
+    "reference_sha256": "4a95b295aaf08c4fc3e4ddf4e5b5cdfb05f8091de91fe2b48db940e56bd4ddd8",
+    "parameters": {
+      "peaks": 1000,
+      "threshold": 0.33,
+      "fill_gap": 5.0,
+      "min_length": 3.0
+    },
+    "seconds": 0.006064667017199099,
+    "peaks": 9,
+    "segments": 9,
+    "exact_checks": {
+      "binary": true,
+      "accumulator": true,
+      "theta": true,
+      "rho": true,
+      "endpoints": true,
+      "peaks": true,
+      "threshold": true
+    }
+  },
+  {
+    "case": "MacduffBinary",
+    "input": "fracpaq-matlab/MacduffBinary.tif",
+    "input_sha256": "3042478044a4266b90ee238886df55842316d7a21a15fdfe3419329c76cc03b2",
+    "reference": "tests/reference/sprint16/native/details/hough_real.mat",
+    "reference_sha256": "c87a53acc9b50db17efc64cd89f84127a0a0504f2f09f10cfe2fb4c699e95238",
+    "parameters": {
+      "peaks": 1000,
+      "threshold": 0.33,
+      "fill_gap": 5.0,
+      "min_length": 3.0
+    },
+    "seconds": 0.04097499998169951,
+    "peaks": 334,
+    "segments": 1403,
+    "exact_checks": {
+      "binary": true,
+      "accumulator": true,
+      "theta": true,
+      "rho": true,
+      "endpoints": true,
+      "peaks": true,
+      "threshold": true
+    }
+  },
+  {
+    "case": "Orkney1aBinary",
+    "input": "fracpaq-matlab/Orkney1aBinary.tif",
+    "input_sha256": "b1d9ee96581147b90f132ab5bcc3792df57cb8b8363126b9384f21d967db609d",
+    "reference": "tests/reference/sprint16/native/details/hough_real.mat",
+    "reference_sha256": "c87a53acc9b50db17efc64cd89f84127a0a0504f2f09f10cfe2fb4c699e95238",
+    "parameters": {
+      "peaks": 1000,
+      "threshold": 0.33,
+      "fill_gap": 5.0,
+      "min_length": 3.0
+    },
+    "seconds": 0.028948624996701255,
+    "peaks": 28,
+    "segments": 163,
+    "exact_checks": {
+      "binary": true,
+      "accumulator": true,
+      "theta": true,
+      "rho": true,
+      "endpoints": true,
+      "peaks": true,
+      "threshold": true
+    }
+  }
+]

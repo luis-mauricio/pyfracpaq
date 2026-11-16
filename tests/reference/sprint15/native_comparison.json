@@ -1,0 +1,12 @@
+{
+  "grayscale": 0,
+  "median": 0,
+  "difference": 0,
+  "edges": 0,
+  "closed": 0,
+  "processed": 0,
+  "tensor16_error": 4.163336342344337e-17,
+  "tensor16_polar_error": 2.6756374893466273e-13,
+  "probe_mq_error": 0.0,
+  "pivot_palette_error": 3.3306690738754696e-16
+}

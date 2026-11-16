@@ -1,0 +1,213 @@
+{
+  "source": "fracpaq-matlab/guiWaveletDialog.fig",
+  "source_sha256": "178487fd76b4bddf9babaef4a2b68d400ac397f60855d0c26361972a8786c687",
+  "objects": [
+    {
+      "tag": "figure1",
+      "type": "figure",
+      "parent": null,
+      "Units": "characters",
+      "Position": [
+        181.0,
+        110.46666666666667,
+        45.66666666666666,
+        18.066666666666663
+      ]
+    },
+    {
+      "tag": "edit_aString",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "Units": "characters",
+      "String": "2 4 8 16",
+      "Style": "edit",
+      "Position": [
+        28.833333333333332,
+        13.466666666666667,
+        15.499999999999996,
+        2.0666666666666664
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "text2",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "Units": "characters",
+      "String": "List of a-values (integers)",
+      "Style": "text",
+      "Position": [
+        1.4285714285714284,
+        13.133333333333333,
+        27.285714285714285,
+        2.0666666666666664
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "text3",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "Units": "characters",
+      "String": "Angular increment (degrees)",
+      "Style": "text",
+      "Position": [
+        1.5,
+        8.6,
+        31.83333333333333,
+        2.0
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "uipanel1",
+      "type": "uipanel",
+      "parent": "figure1",
+      "Units": "characters",
+      "Title": "Wavelet type",
+      "Position": [
+        0.8333333333333333,
+        2.3333333333333335,
+        24.166666666666664,
+        5.866666666666665
+      ],
+      "FontSize": 13
+    },
+    {
+      "tag": "radiobutton_Morlet",
+      "type": "uicontrol",
+      "parent": "uipanel1",
+      "Units": "characters",
+      "String": "Morlet",
+      "Style": "radiobutton",
+      "Value": 1,
+      "Position": [
+        2.0,
+        2.7333333333333334,
+        15.5,
+        1.5333333333333332
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "radiobutton_Mexican",
+      "type": "uicontrol",
+      "parent": "uipanel1",
+      "Units": "characters",
+      "String": "Mexican Hat",
+      "Style": "radiobutton",
+      "Position": [
+        2.0,
+        0.8666666666666667,
+        20.166666666666664,
+        1.5333333333333332
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "text4",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "Units": "characters",
+      "String": "Wavelet Analysis with FracPaQ",
+      "Style": "text",
+      "Position": [
+        1.0,
+        16.066666666666666,
+        43.285714285714285,
+        1.533333333333335
+      ],
+      "FontSize": 16
+    },
+    {
+      "tag": "text5",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "Units": "characters",
+      "String": "List of L-values (integers)",
+      "Style": "text",
+      "Position": [
+        1.4285714285714284,
+        10.866666666666667,
+        27.285714285714285,
+        2.0666666666666664
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "edit_LString",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "Units": "characters",
+      "String": "2 4 8 16",
+      "Style": "edit",
+      "Position": [
+        28.833333333333332,
+        11.2,
+        15.499999999999996,
+        2.0666666666666664
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "edit_DegString",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "Units": "characters",
+      "String": "20",
+      "Style": "edit",
+      "Position": [
+        37.83333333333333,
+        8.933333333333334,
+        6.500000000000007,
+        2.0666666666666664
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "pb_Run",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "Units": "characters",
+      "String": "Run",
+      "Style": "pushbutton",
+      "Position": [
+        27.166666666666664,
+        4.933333333333334,
+        17.333333333333336,
+        3.0
+      ],
+      "FontSize": 13
+    },
+    {
+      "tag": "pb_Cancel",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "Units": "characters",
+      "String": "Cancel",
+      "Style": "pushbutton",
+      "Position": [
+        27.166666666666664,
+        2.0666666666666664,
+        17.333333333333336,
+        3.0
+      ],
+      "FontSize": 13
+    },
+    {
+      "tag": "text_Message",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "Units": "characters",
+      "String": "Ready",
+      "Style": "text",
+      "Position": [
+        1.0,
+        0.4666666666666667,
+        43.285714285714285,
+        1.4
+      ],
+      "FontSize": 12
+    }
+  ]
+}

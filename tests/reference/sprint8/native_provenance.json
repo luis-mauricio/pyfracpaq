@@ -1,0 +1,132 @@
+{
+  "date": "2026-11-14",
+  "native_version": "24.2.0.3212159 (R2024b) Update 9",
+  "toolbox": "Installed Statistics and Machine Learning Toolbox; separate release number not captured",
+  "source_manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7",
+  "source_files_unchanged": 164,
+  "extra_original_folder_files_preserved": [
+    {
+      "path": "FracPaQ2D_histosegmentlength_Run1.png",
+      "sha256": "40432818e85ebdfb2599d0d1bea58f557cf5992af2872442385fbe7a1ebed908",
+      "bytes": 193946
+    },
+    {
+      "path": "FracPaQ2D_histotracelength_Run1.png",
+      "sha256": "99d26d3653cfe46c4c012e6de5c5729c8ea823cc367629df7d49653fdd3eb96f",
+      "bytes": 181809
+    },
+    {
+      "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+      "sha256": "f3c3d3e634a477f64c75c8f16c977d5f61ade54547996a2a76f6403a09f48266",
+      "bytes": 1207790
+    },
+    {
+      "path": "FracPaQ2D_tracelengthmap_Run1.png",
+      "sha256": "e94c17131fa2052be91e7fe3b7c44f830b5354f9d407f0503e0ea37686d557cf",
+      "bytes": 1198619
+    },
+    {
+      "path": "FracPaQ2D_tracemap_Run1.png",
+      "sha256": "781ac030cb77dabe45b557c0d59967455473ffdb68140f2339244af3d89db048",
+      "bytes": 1613778
+    },
+    {
+      "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+      "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7",
+      "bytes": 15064
+    },
+    {
+      "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+      "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839",
+      "bytes": 7532
+    },
+    {
+      "path": "FracPaQ2Dtracelengths_Run1.txt",
+      "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874",
+      "bytes": 3120
+    }
+  ],
+  "capture_scope": "Separate MATLAB batch, invisible figures; original .m files unmodified. Full GUI visual parity not claimed.",
+  "native_rng": {
+    "algorithm": "twister",
+    "seed": 77
+  },
+  "shared_inputs_rng": {
+    "algorithm": "NumPy PCG64",
+    "seed": 20261114,
+    "draws_per_model": 2500
+  },
+  "capture_scripts": [
+    {
+      "path": "scripts/capture_native_s89.m",
+      "sha256": "9b98b06b641017a7512c70dd416f68d89d5eb6d086e72fabf74368b4f2961231"
+    },
+    {
+      "path": "scripts/capture_native_ks_hist.m",
+      "sha256": "38f763a73307c51ce814876c13030014353f5024cb1bb1c215e7d978e1a0f57d"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "tests/reference/sprint8/native/exponential_cuts0.png",
+      "sha256": "5b6db1e7c3758f71f86622af40947be4795673a0b83b24cc284094874460aa01",
+      "bytes": 42487
+    },
+    {
+      "path": "tests/reference/sprint8/native/exponential_cuts1.png",
+      "sha256": "97003bacd26fca3ead4aa705a28e10674e2f7534c7400f3b2923ed0d5a65b186",
+      "bytes": 42093
+    },
+    {
+      "path": "tests/reference/sprint8/native/ks_threshold.json",
+      "sha256": "4a44b5f7978f76f48e1b5417ce09a9a3541c1f4271310f9bd159044aacb5bd4d",
+      "bytes": 188
+    },
+    {
+      "path": "tests/reference/sprint8/native/lognormal_cuts0.png",
+      "sha256": "43aaa0be39edd8101085e8d54c243135cdc06fe84267f2e5293585fc8d6d5c77",
+      "bytes": 57272
+    },
+    {
+      "path": "tests/reference/sprint8/native/lognormal_cuts1.png",
+      "sha256": "3776b1ec446f59a1cd5fdceadca9a1996b93099a1164b8c8e4efe29f27e765d6",
+      "bytes": 57314
+    },
+    {
+      "path": "tests/reference/sprint8/native/native_fits.json",
+      "sha256": "0fe86fbd345cd98d0532dd363b0d21540ed6e38f487954986d64f17985db61d7",
+      "bytes": 805
+    },
+    {
+      "path": "tests/reference/sprint8/native/power_law_cuts0.png",
+      "sha256": "bc97f0ee61d60638f0e09bf5354ae68b846bfec6990d19faa6dd77ce624fa0e8",
+      "bytes": 48619
+    },
+    {
+      "path": "tests/reference/sprint8/native/power_law_cuts1.png",
+      "sha256": "185ee88698cbff2c390e0a61bc8b85edb655ddbdb1523da43497848a2b76e081",
+      "bytes": 48746
+    },
+    {
+      "path": "tests/reference/sprint8/native_ks_comparison.json",
+      "sha256": "91de91ad897b7b50313d013915f6bc7806a77e5ad3727419d16fda2f23b73686",
+      "bytes": 484
+    },
+    {
+      "path": "tests/reference/sprint8/native_ks_hist.json",
+      "sha256": "2bea8f1fc4d6c28748a168610249fe1d6baea78c3c0c581157b973496791daaf",
+      "bytes": 461
+    },
+    {
+      "path": "tests/reference/sprint8/shared_ks_inputs.mat",
+      "sha256": "92ad41703eb7211119c5fc149f49bb9233914d0efc545f1dc4c1a5743f45c375",
+      "bytes": 460904
+    },
+    {
+      "path": "tests/reference/sprint8/shared_ks_outputs.mat",
+      "sha256": "ab07f3e0316f7f6b2ce7a42531b12b2f9f0325a892c83b56529c1b3788664ca7",
+      "bytes": 10412
+    }
+  ],
+  "figure_role": "Native fitting inspection at 150 dpi; not GUI export golden"
+}

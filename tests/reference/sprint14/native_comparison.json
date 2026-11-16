@@ -1,0 +1,20 @@
+{
+  "morlet": {
+    "coefficients": 6.661338147750939e-16,
+    "eta": 7.105427357601002e-15,
+    "self": 1.3322676295501878e-15,
+    "self_eta": 2.842170943040401e-14,
+    "gui_map_error": 2.220446049250313e-16,
+    "native_maximum": 0.687393328102545,
+    "changed_theta_entries": 0
+  },
+  "mexican": {
+    "coefficients": 8.881784197001252e-16,
+    "eta": 2.1316282072803006e-14,
+    "self": 4.440892098500626e-15,
+    "self_eta": 6.821210263296962e-13,
+    "gui_map_error": 2.220446049250313e-16,
+    "native_maximum": 0.7074470609123225,
+    "changed_theta_entries": 8
+  }
+}

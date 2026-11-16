@@ -1,0 +1,45 @@
+{
+  "scope": "Python Sprint 7; approved corrected geometry; native MATLAB parity remains pending.",
+  "date": "2026-11-14",
+  "tests": {
+    "tests": 376,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "new_cases_since_sprint6": 57,
+  "pytest_command": "MPLCONFIGDIR=/tmp/pyfracpaq-matplotlib .venv/bin/python -m pytest -q --junitxml=/tmp/pyfracpaq-sprint7-tests.xml",
+  "pytest_xml_sha256": "cf44a95c4471848d0939b962049a39361912d27d617e11dc7643b043730f8a79",
+  "dependency_check": "No broken requirements found.",
+  "dependency_warning": "574 installed Matplotlib Qt backend deprecation warnings: AA_UseHighDpiPixmaps.",
+  "package": {
+    "filename": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "1d44d13213a7246a37e067dee3f7c3bc9745f3decaa5352e794be8cabc9c3e05",
+    "zip_import_outside_root": true,
+    "verified": [
+      "core without Qt/Matplotlib imports",
+      "registry shared circular cache",
+      "3 PNG 4724x4724/600 dpi",
+      "2 coupled TXT with blank tag",
+      "frozen hot/style resources"
+    ]
+  },
+  "artifacts": {
+    "png": 9,
+    "txt": 6,
+    "qa": 9,
+    "hashes_verified": true,
+    "arrays_and_source_format_verified": true,
+    "size": [
+      4724,
+      4724
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  "original_source_files_unchanged": 164,
+  "source_manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7",
+  "matlab_comparison": "pending"
+}

@@ -1,0 +1,34 @@
+{
+  "source": "tests/reference/sprint16/final/inputs/multicolour/network.svg",
+  "source_sha256": "e41638e59eb0e8837535f5b58dabd4d55b25e1f3a5eaac0995241117be6dc35d",
+  "groups": [
+    {
+      "path": "tests/reference/sprint16/final/inputs/multicolour/group0.txt",
+      "rgb": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "sha256": "33bb9201f5f152c6d1ee32dc718cc30e3e7f5712555ff029d224b30f8fc6bef4"
+    },
+    {
+      "path": "tests/reference/sprint16/final/inputs/multicolour/group1.txt",
+      "rgb": [
+        0.0,
+        0.6666666666666666,
+        0.0
+      ],
+      "sha256": "19059653c057b915a819db03e596ab3924d7f64818f872b0672f3f10ba8485f8"
+    },
+    {
+      "path": "tests/reference/sprint16/final/inputs/multicolour/group2.txt",
+      "rgb": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "sha256": "c689867d3b2a43ee06fecf65f162a4119ee08b8b43e072b922d4d6850b048624"
+    }
+  ],
+  "scope": "Shared valid Q09 XML geometry for original TXT readers/rendering; not the defective native SVG converter."
+}

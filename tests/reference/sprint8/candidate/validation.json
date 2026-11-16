@@ -1,0 +1,188 @@
+{
+  "scope": "Approved Q-15 implementation, active in production Run; full visual homologation pending.",
+  "figures": [
+    {
+      "path": "FracPaQ2D_tracelengthsFittingPowerLaw_review.png",
+      "sha256": "85e043272d8e013710fe3b2ef582c7b2b408035aff38662d6105502f10351523",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracelengthsFittingPowerLaw_review.png",
+      "qa_sha256": "9d82044413f0685bad2b843ef11ab83e694e6f6cfd6980c350d2577dc10fb370"
+    },
+    {
+      "path": "FracPaQ2D_tracelengthsFittingExponential_review.png",
+      "sha256": "58fe0730dc6fc5987d39276568d1ca29c5a675ef9701a6d6cdf22345dc82bebf",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracelengthsFittingExponential_review.png",
+      "qa_sha256": "81d543d49c816c06f80050afae7b7647cfdff633923f75e8b62ac52678feb8f2"
+    },
+    {
+      "path": "FracPaQ2D_tracelengthsFittingLogNormal_review.png",
+      "sha256": "ec1b3523e3df57032f7e538d4b84414e0d14b8aef1482b80b33c297f15b08adc",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracelengthsFittingLogNormal_review.png",
+      "qa_sha256": "30fbddc4b102b30e02a991d6645063c20f114660178c6374f6ebcb64223207fd"
+    },
+    {
+      "path": "FracPaQ2D_segmentlengthsFittingPowerLaw_review.png",
+      "sha256": "4a092682aed08c8df3c5e8690e186d5c0a9ccc77a5db4784931ef206c3ea59c8",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlengthsFittingPowerLaw_review.png",
+      "qa_sha256": "76f1fdc2728dabb0f66fed90a9eb6951e2a7bf990970b53da15f59275b285a67"
+    },
+    {
+      "path": "FracPaQ2D_segmentlengthsFittingExponential_review.png",
+      "sha256": "7c1bd13266fae52404452ba8aead1b3c6131e10e536353fd33a4792abec224ad",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlengthsFittingExponential_review.png",
+      "qa_sha256": "b193b407d79b1a2038f46b44264e991a0b10ce366387dc7e57aff04eb485852c"
+    },
+    {
+      "path": "FracPaQ2D_segmentlengthsFittingLogNormal_review.png",
+      "sha256": "d2ee9785fe6a2ce3fa6569aeefd5bc1122e16d49fd3ec2e25a71f5ddbc4b628a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlengthsFittingLogNormal_review.png",
+      "qa_sha256": "f3e60c7866a99d7d843215f353de4277f8595421946742f25052647d9a847b4e"
+    }
+  ],
+  "records": [
+    {
+      "population": "trace",
+      "model": "power_law",
+      "xmin": 2.0,
+      "parameters": {
+        "alpha": 1.7778106756553365
+      },
+      "tail_size": 7,
+      "search_distance": 0.1459379474575328,
+      "alpha": 0.1,
+      "non_rejection_percent": 99.64,
+      "p_above_005_percent": 99.64
+    },
+    {
+      "population": "trace",
+      "model": "exponential",
+      "xmin": 1.0,
+      "parameters": {
+        "lambda": 0.10526315789473684
+      },
+      "tail_size": 8,
+      "search_distance": 0.10851432006934568,
+      "alpha": 0.05,
+      "non_rejection_percent": 97.8,
+      "p_above_005_percent": 97.8
+    },
+    {
+      "population": "trace",
+      "model": "lognormal",
+      "xmin": 1.0,
+      "parameters": {
+        "mu": 1.7314562005725185,
+        "sigma": 1.1236141500905636
+      },
+      "tail_size": 8,
+      "search_distance": 0.09882751526302586,
+      "alpha": 0.05,
+      "non_rejection_percent": 99.4,
+      "p_above_005_percent": 99.4
+    },
+    {
+      "population": "segment",
+      "model": "power_law",
+      "xmin": 2.0,
+      "parameters": {
+        "alpha": 1.7778106756553365
+      },
+      "tail_size": 7,
+      "search_distance": 0.1459379474575328,
+      "alpha": 0.1,
+      "non_rejection_percent": 99.44,
+      "p_above_005_percent": 99.44
+    },
+    {
+      "population": "segment",
+      "model": "exponential",
+      "xmin": 1.0,
+      "parameters": {
+        "lambda": 0.10526315789473684
+      },
+      "tail_size": 8,
+      "search_distance": 0.10851432006934568,
+      "alpha": 0.05,
+      "non_rejection_percent": 98.48,
+      "p_above_005_percent": 98.48
+    },
+    {
+      "population": "segment",
+      "model": "lognormal",
+      "xmin": 1.0,
+      "parameters": {
+        "mu": 1.7314562005725185,
+        "sigma": 1.1236141500905636
+      },
+      "tail_size": 8,
+      "search_distance": 0.09882751526302586,
+      "alpha": 0.05,
+      "non_rejection_percent": 99.44,
+      "p_above_005_percent": 99.44
+    }
+  ],
+  "arrays_sha256": "628a051b5e91dcabc8f0846a65fa306d42cd504aa44bb9fde3007ef6e63416df",
+  "parameters_sha256": "a29fd05d5d0a192a4931ed04eddfa52bc4ae968064997d82e396aaa8b1002516",
+  "q15_sha256": "66b7ff4170a57d625058691198a2b8ac331d90e7ef3288a907e7ad0e750f3493",
+  "txt": [
+    {
+      "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+      "sha256": "783bf1ac364473e438a78634432da50880a2f69e25944f870e9b40d0929cad6e"
+    },
+    {
+      "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+      "sha256": "32b629e30c857667b00ad6859ff69a212b095e90dc6543d4bcd58d50564eb2d1"
+    },
+    {
+      "path": "FracPaQ2Dtracelengths_Run1.txt",
+      "sha256": "32b629e30c857667b00ad6859ff69a212b095e90dc6543d4bcd58d50564eb2d1"
+    }
+  ]
+}

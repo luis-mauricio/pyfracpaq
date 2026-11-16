@@ -1,0 +1,154 @@
+{
+  "source": "fracpaq-matlab/cmocean.m",
+  "source_sha256": "ce23d8bad220cb72247adb86f19ad78c47867eca22bcbcc1a4e43e306d6266a3",
+  "names": {
+    "deep": "dee",
+    "matter": "mat",
+    "algae": "alg",
+    "dense": "den",
+    "balance": "bal",
+    "gray": "gra",
+    "oxy": "oxy",
+    "solar": "sol",
+    "phase": "pha",
+    "haline": "hal",
+    "speed": "spe",
+    "thermal": "the",
+    "turbid": "tur",
+    "delta": "del",
+    "curl": "cur",
+    "amp": "amp",
+    "tempo": "tem",
+    "ice": "ice"
+  },
+  "tables": {
+    "dee": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "fdf32caf0d59217e4b2f7ac90adeeb4326b25e3bfac8769263702d3164564d36"
+    },
+    "mat": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "a1a7f355c5d84c3eb7b4e91d7a0c631801ce7aa5d3162732bf6517812cb88f63"
+    },
+    "alg": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "91f6a56553681ca579e0f2c423cdafb97bb096ba6620b94806c8720d8ebac4a3"
+    },
+    "den": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "18d5ddf1a2a4f12fa2a7aca5cf17f7dc4e27662517117f26731b0709e0081b26"
+    },
+    "bal": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "d2fc7f6444a949e101fd4a400c2c654e1b2d95bab034c1fb029efd71a373ab84"
+    },
+    "gra": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "ae6794c075e0901ffca0392bd1d49d64153df2b78644ddf56e7d050f4f0d6152"
+    },
+    "oxy": {
+      "shape": [
+        320,
+        3
+      ],
+      "float64_le_sha256": "23c8bf6f76969abf6f33c780e23e1ccfb0c58c2fa20082735917e3c8caeede93"
+    },
+    "sol": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "8a85ad8fe78be8174259525bc60010f78e0472c727c2d6088e83920650077727"
+    },
+    "pha": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "15f271c9cf613e0dc58246f1bbf38b6c6cf8d4bfc8d4414d4b7c4393ed952fa2"
+    },
+    "hal": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "630cd7a02990929b3aed78c2b6f7173b07b94a1457b9b6b44dd5edbe04762944"
+    },
+    "spe": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "b4a319cb2545c745c922eeaf133d5c0b6f878aa69f577b7548240c813e3143e9"
+    },
+    "the": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "cb9bf83d3c09d0de626842d0fbd6f282d362f7b18dae77f24007042ef47e508b"
+    },
+    "tur": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "2eef1039c99d61d2c1c26b70c0550ca8910ff9f74b505ca2dcb3189a1a18d91c"
+    },
+    "del": {
+      "shape": [
+        512,
+        3
+      ],
+      "float64_le_sha256": "a445618e6e367b955b781f187ff749d54e049d0c90c19524530a4709fe34d5b2"
+    },
+    "cur": {
+      "shape": [
+        512,
+        3
+      ],
+      "float64_le_sha256": "9ddce2e3b43bae1fa84038af17eca913e1fe2b1c4243c9fd0f92595c80175beb"
+    },
+    "amp": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "7abbc2c51fe179fcd14b77803e433bc536c94aead1c2dd9f18c7190c5c931a49"
+    },
+    "tem": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "4049fcedd51a315b2cd3c286c69d548a9b54d908f08ce58b83c0ab0664540cbb"
+    },
+    "ice": {
+      "shape": [
+        256,
+        3
+      ],
+      "float64_le_sha256": "9aca71f1388734b44dcc3cda47b43d560c80c8a69291dfc10181460d72e53bfe"
+    }
+  },
+  "licences": "cmocean_LICENSE.txt",
+  "method": "Original decimal tokens to float64; no external cmocean dependency."
+}

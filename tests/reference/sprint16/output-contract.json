@@ -1,0 +1,398 @@
+{
+  "png_templates": 53,
+  "png_templates_executed": 53,
+  "missing_python_png": [],
+  "data_templates": {
+    "FracPaQ2Dsegmentlengths{tag}.txt": {
+      "native": [
+        {
+          "path": "tests/reference/sprint12/native/FracPaQ2Dsegmentlengths_native_variogram.txt",
+          "sha256": "17ab9d2956c0d497158fc57f7b3f56d43b14284b60486175680be30d9c672349"
+        },
+        {
+          "path": "tests/reference/sprint12/native/nested/FracPaQ2Dsegmentlengths_native_nested.txt",
+          "sha256": "6e206ef34516ddbe33bd936a81da7ac53e0329f04c352c6c52f82ebccbb52fa4"
+        },
+        {
+          "path": "tests/reference/sprint12/native/oblique/FracPaQ2Dsegmentlengths_native_oblique.txt",
+          "sha256": "9a410cdfadbf9d1190e76652226948dfe72a2bfa0ce91df8f579f5ba20733888"
+        },
+        {
+          "path": "tests/reference/sprint12/native/scaled/FracPaQ2Dsegmentlengths_native_scaled.txt",
+          "sha256": "8029ebba7d8a272333c83a2ef9db9cfe0ce1d1f8443635419b0b130c962dbb3c"
+        },
+        {
+          "path": "tests/reference/sprint12/native/separate/FracPaQ2Dsegmentlengths_native_separate.txt",
+          "sha256": "404b00b6aa90ca83755d5ea7999006689a977a5eb4811943b8f987e92c6ef2bb"
+        },
+        {
+          "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentlengths_audit.txt",
+          "sha256": "ef315c5922db8d8234e8670cf08dc3efa61b6a736b782cedab84148b381742f5"
+        },
+        {
+          "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentlengths_censor.txt",
+          "sha256": "e3c7eeb60f70f4ff246085559b9c78ca4aa325a928407c8ea020612ca0271e51"
+        },
+        {
+          "path": "tests/reference/sprint16/native/exports/FracPaQ2Dsegmentlengths_audit.txt",
+          "sha256": "7d136bfda03dd42cde3bcd9b42921eaef8b44be03c3121baadd567fcf2a8c12e"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dsegmentlengths_audit_all.txt",
+          "sha256": "7d136bfda03dd42cde3bcd9b42921eaef8b44be03c3121baadd567fcf2a8c12e"
+        },
+        {
+          "path": "tests/reference/sprint5/FracPaQ2Dsegmentlengths_SVG.txt",
+          "sha256": "f447e1f74253d0203776bea9eb20ee1393ae4645f6ea1ccc1ef372d17dc270f7"
+        },
+        {
+          "path": "tests/reference/sprint5/FracPaQ2Dsegmentlengths_red.txt",
+          "sha256": "23302a554ac481bc657e6013b51cc4b9ef7fcd99a5af24976973e5658ab52781"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "FracPaQ2Dtracelengths{tag}.txt": {
+      "native": [
+        {
+          "path": "tests/reference/sprint12/native/FracPaQ2Dtracelengths_native_variogram.txt",
+          "sha256": "c270245b29e1125b0e7149a374b0f1fddf7054199efd67a1f32a0f0501dbc212"
+        },
+        {
+          "path": "tests/reference/sprint12/native/nested/FracPaQ2Dtracelengths_native_nested.txt",
+          "sha256": "df4958750f43d5cab4e816fc919f633f3d9a8a63376e43dc841c23c8e9c0b0f6"
+        },
+        {
+          "path": "tests/reference/sprint12/native/oblique/FracPaQ2Dtracelengths_native_oblique.txt",
+          "sha256": "d6562255731e5c426c41697086d620082458984c6f8597030f94f7e0105e9ff0"
+        },
+        {
+          "path": "tests/reference/sprint12/native/scaled/FracPaQ2Dtracelengths_native_scaled.txt",
+          "sha256": "876892a5e1e4012c6e23d6616887f7eed325b53a693c7b2b73a33b38382298f9"
+        },
+        {
+          "path": "tests/reference/sprint12/native/separate/FracPaQ2Dtracelengths_native_separate.txt",
+          "sha256": "8a3683824066e8134827973b30505c2edd2a72922fa000ad3fd3ce517d49d470"
+        },
+        {
+          "path": "tests/reference/sprint16/native/FracPaQ2Dtracelengths_audit.txt",
+          "sha256": "f1962792585e10e9a5d292e801150ca660ab842be69f1fb15652aae668f41516"
+        },
+        {
+          "path": "tests/reference/sprint16/native/FracPaQ2Dtracelengths_censor.txt",
+          "sha256": "e3c7eeb60f70f4ff246085559b9c78ca4aa325a928407c8ea020612ca0271e51"
+        },
+        {
+          "path": "tests/reference/sprint16/native/exports/FracPaQ2Dtracelengths_audit.txt",
+          "sha256": "9a6b6850605d4d0e9861cf0d63a01d8b04910a1f954b0fa3ecb88385fcb1adec"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dtracelengths_audit_all.txt",
+          "sha256": "9a6b6850605d4d0e9861cf0d63a01d8b04910a1f954b0fa3ecb88385fcb1adec"
+        },
+        {
+          "path": "tests/reference/sprint5/FracPaQ2Dtracelengths_SVG.txt",
+          "sha256": "95c39eed8d52ed727c8bc15d27443510ec82cf42edda107332e265d6e8a1f590"
+        },
+        {
+          "path": "tests/reference/sprint5/FracPaQ2Dtracelengths_red.txt",
+          "sha256": "23302a554ac481bc657e6013b51cc4b9ef7fcd99a5af24976973e5658ab52781"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "FracPaQ2Dsegmentangleslengths{tag}.txt": {
+      "native": [
+        {
+          "path": "tests/reference/sprint12/native/FracPaQ2Dsegmentangleslengths_native_variogram.txt",
+          "sha256": "9ac63fd911a4f0f6a7af2957954bb3e4e05c97beda61de640fd8ab08c60966ab"
+        },
+        {
+          "path": "tests/reference/sprint12/native/nested/FracPaQ2Dsegmentangleslengths_native_nested.txt",
+          "sha256": "5927c0033cbb4562c891b497ccbed18ff1c7f379d34e7b6a6f1878e3fa50129d"
+        },
+        {
+          "path": "tests/reference/sprint12/native/oblique/FracPaQ2Dsegmentangleslengths_native_oblique.txt",
+          "sha256": "99657405c721e8be92ca6f044634c85b9f23cf2ffe895c8f8257f348db045456"
+        },
+        {
+          "path": "tests/reference/sprint12/native/scaled/FracPaQ2Dsegmentangleslengths_native_scaled.txt",
+          "sha256": "e80b6a24474d8265e1a5ccfba3d3064ae03fe9f0df612227b35fcd633d5af046"
+        },
+        {
+          "path": "tests/reference/sprint12/native/separate/FracPaQ2Dsegmentangleslengths_native_separate.txt",
+          "sha256": "a3dc683d7309f39c8fd6d0865a46bf431ac40d718f8ebad877ca91c13844efc0"
+        },
+        {
+          "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentangleslengths_audit.txt",
+          "sha256": "cd35d07d290bb63fa11a18225ca3b1dba16053617cdac9242b732df8a2d5275c"
+        },
+        {
+          "path": "tests/reference/sprint16/native/FracPaQ2Dsegmentangleslengths_censor.txt",
+          "sha256": "f1666bf88371015778f86792b4766af46d8a9a6e514a23e1b6ee6e16799e3d04"
+        },
+        {
+          "path": "tests/reference/sprint16/native/exports/FracPaQ2Dsegmentangleslengths_audit.txt",
+          "sha256": "d39a92dd8c9d748c67f3e0e57c22b88809125935fc615399364bd8b7b3a1a754"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dsegmentangleslengths_audit_all.txt",
+          "sha256": "d39a92dd8c9d748c67f3e0e57c22b88809125935fc615399364bd8b7b3a1a754"
+        },
+        {
+          "path": "tests/reference/sprint5/FracPaQ2Dsegmentangleslengths_SVG.txt",
+          "sha256": "eaebdf267a249b293b345992094207408aac3b103b7e89c80036c01f0f525760"
+        },
+        {
+          "path": "tests/reference/sprint5/FracPaQ2Dsegmentangleslengths_red.txt",
+          "sha256": "0f71017b15f1bfa5a98ac2934ac263b3116681a2badad84b8143ec2315f17d97"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "FracPaQ2DEZROSE{tag}.txt": {
+      "native": [
+        {
+          "path": "tests/reference/sprint16/native/FracPaQ2DEZROSE_audit.txt",
+          "sha256": "d04b7fa146f6e018ceef6999339129c64103d1ef5de96be6a5bb45ea8538214c"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/all-outputs/FracPaQ2DEZROSE_audit_all.txt",
+          "sha256": "15c514536ab388c64a588aa5bd9688147c1a597afffda514746c41c89f2bd42a"
+        },
+        {
+          "path": "tests/reference/sprint5/FracPaQ2DEZROSE_SVG.txt",
+          "sha256": "423ad576d129f0de3694718e2d2458d4c4b86c6955e0b3d8758bca66025f0140"
+        },
+        {
+          "path": "tests/reference/sprint5/FracPaQ2DEZROSE_red.txt",
+          "sha256": "55f78f260e4f99fc2e51dcfb2df9b7e208e12a113246213b18b599f4917f4403"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "FracPaQ2Dintensity{tag}.txt": {
+      "native": [
+        {
+          "path": "tests/reference/sprint16/native/FracPaQ2Dintensity_audit.txt",
+          "sha256": "ba6a22cedfd1eb0ac2e7aff0744f11d49c14edb31d779d07c783e20c62ac94fa"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dintensity_audit_all.txt",
+          "sha256": "619f4a35b2788b672d039f697e21f18c6524911eba135314a6fb7decfd5a80f6"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "FracPaQ2Ddensity{tag}.txt": {
+      "native": [
+        {
+          "path": "tests/reference/sprint16/native/FracPaQ2Ddensity_audit.txt",
+          "sha256": "5cfb879568f6cc22f7c0bcfc865d5c859cba04a349f183a97b2d599f7d9e9e4e"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/all-outputs/FracPaQ2Ddensity_audit_all.txt",
+          "sha256": "73aea1a157f2cedefdc6c6b15f8243120dd4037f61382be69339c2d343036906"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "FracPaQ2Dconnectivity{tag}.txt": {
+      "native": [
+        {
+          "path": "tests/reference/sprint16/native/exports/FracPaQ2Dconnectivity_audit.txt",
+          "sha256": "679f0e4a71d9b73afd50b58d0dffa3376eedf1ceac22c5c069b31e766b648708"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dconnectivity_audit_all.txt",
+          "sha256": "a9b57df6a495744f126f006c8d5f40bdf967605754e521c0c29c715fc2ed1739"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "FracPaQ2Dsegmentdata{tag}.txt": {
+      "native": [
+        {
+          "path": "tests/reference/sprint11/native/FracPaQ2Dsegmentdata_native_slip.txt",
+          "sha256": "6f3b20a6a1482a189e7517624b1939d02b01b14cb0e88b14e975edcc037dee09"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dsegmentdata_audit_all.txt",
+          "sha256": "f326680cf998ecbfad494ad83e57a91bd892a47fbe285f1314f7e227d6cc510f"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "FracPaQ2Dwavelet_theta_a{a}{tag}.txt": {
+      "native": [
+        {
+          "path": "tests/reference/sprint14/native/details_mexican/FracPaQ2Dwavelet_theta_a2.txt",
+          "sha256": "150d0150c96fe7b8abd15292f4f13cde3443d26514d5c7c0f9d761be2cbd43fc"
+        },
+        {
+          "path": "tests/reference/sprint14/native/details_morlet/FracPaQ2Dwavelet_theta_a2.txt",
+          "sha256": "4e65238a04e1ce64f2d3944fe53f439b83748ca8bb0ac7c14a2df502dcfd28bc"
+        },
+        {
+          "path": "tests/reference/sprint14/native/mexican/FracPaQ2Dwavelet_theta_a2.txt",
+          "sha256": "150d0150c96fe7b8abd15292f4f13cde3443d26514d5c7c0f9d761be2cbd43fc"
+        },
+        {
+          "path": "tests/reference/sprint14/native/morlet/FracPaQ2Dwavelet_theta_a2.txt",
+          "sha256": "4e65238a04e1ce64f2d3944fe53f439b83748ca8bb0ac7c14a2df502dcfd28bc"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/all-outputs/FracPaQ2Dwavelet_theta_a32_audit_all.txt",
+          "sha256": "eeed1a96e298967b636ec06d6a5237861e8a64ff5bfcd0fda19d60d64b502194"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "nome_converted.txt": {
+      "native": [
+        {
+          "path": "tests/reference/sprint16/native/exports/multicolour_colourFF0000_converted.txt",
+          "sha256": "2473618af4820c9bceca63bb43de81654a0fde0095ef5ac4aafae04beeef2a59"
+        },
+        {
+          "path": "tests/reference/sprint16/native/exports/simple_converted.txt",
+          "sha256": "2473618af4820c9bceca63bb43de81654a0fde0095ef5ac4aafae04beeef2a59"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint5/inputs/multicolour_colour0000FF_converted.txt",
+          "sha256": "e938ef21096780bdff6335b0722a78b5f7caba69385e2083f0aee8cd8d4d66a7"
+        },
+        {
+          "path": "tests/reference/sprint5/inputs/multicolour_colourFF0000_converted.txt",
+          "sha256": "2ed55ed6a1765ec54e1bf8b1c3604c7673f2473b58d067b3c522cd39c17b6dda"
+        },
+        {
+          "path": "tests/reference/sprint5/inputs/simple_converted.txt",
+          "sha256": "556766e6eefecfcd80bd2a1e4355902642c44fff7ce37a42b6ccbb508368ed45"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "nome_colourHHHHHH_converted.txt": {
+      "native": [
+        {
+          "path": "tests/reference/sprint16/native/exports/multicolour_colourFF0000_converted.txt",
+          "sha256": "2473618af4820c9bceca63bb43de81654a0fde0095ef5ac4aafae04beeef2a59"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint5/inputs/multicolour_colour0000FF_converted.txt",
+          "sha256": "e938ef21096780bdff6335b0722a78b5f7caba69385e2083f0aee8cd8d4d66a7"
+        },
+        {
+          "path": "tests/reference/sprint5/inputs/multicolour_colourFF0000_converted.txt",
+          "sha256": "2ed55ed6a1765ec54e1bf8b1c3604c7673f2473b58d067b3c522cd39c17b6dda"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "FracPaQ2D_blocksize.bmp": {
+      "native": [
+        {
+          "path": "tests/reference/sprint12/native/nested/FracPaQ2D_blocksize.bmp",
+          "sha256": "70dfffc87603078a94f098c93f1c5de889c2a441aad824bb0f0cadf985e3e97d"
+        },
+        {
+          "path": "tests/reference/sprint12/native/oblique/FracPaQ2D_blocksize.bmp",
+          "sha256": "e307afec3cdd2d040773ac25940adfb05a2f9e048a9eb142127f674d30376c1e"
+        },
+        {
+          "path": "tests/reference/sprint12/native/scaled/FracPaQ2D_blocksize.bmp",
+          "sha256": "f8043338778c84d5420522aed7fe439ac9996a31d71ed5eceb7ab8d5efa4b14e"
+        },
+        {
+          "path": "tests/reference/sprint12/native/separate/FracPaQ2D_blocksize.bmp",
+          "sha256": "c6a771981c6bf82e6fd2a2fce186b9b083b713fddbc7f87405329dd2fc4d19f2"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_blocksize.bmp",
+          "sha256": "20495fbd28a0b2da77b0bd8ae978d58fcb61a7d5cadc744d37ce66bd83ea9da7"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "FracPaQ2D_wavelet_traces.png": {
+      "native": [
+        {
+          "path": "tests/reference/sprint14/native/details_mexican/FracPaQ2D_wavelet_traces.png",
+          "sha256": "1754a2a401f57c0205e2bd927377ce311dcdff0c924b8c3c569cb2a25b00a4c3"
+        },
+        {
+          "path": "tests/reference/sprint14/native/details_morlet/FracPaQ2D_wavelet_traces.png",
+          "sha256": "8bc9acee630c23993bc000296543e6606ded99ea98317b095e3db8dc51b4abf0"
+        },
+        {
+          "path": "tests/reference/sprint14/native/mexican/FracPaQ2D_wavelet_traces.png",
+          "sha256": "bbfd0f50b6345667cb5e6a9410c948f89ad5ded3d0f7ad576d746efcd92519b0"
+        },
+        {
+          "path": "tests/reference/sprint14/native/morlet/FracPaQ2D_wavelet_traces.png",
+          "sha256": "7418b50169583535f843c4e9b28e3e1d85acd438855036eb58ac3745e48024da"
+        },
+        {
+          "path": "tests/reference/sprint14/native/rectangular/FracPaQ2D_wavelet_traces.png",
+          "sha256": "6acaca2a834eac86e1be4fc73425c50445d64e9b0611c62deb65b33b8bd7d3c9"
+        },
+        {
+          "path": "tests/reference/sprint14/native/step270/FracPaQ2D_wavelet_traces.png",
+          "sha256": "7ae0ca892f73b81b13d03ea33b1769e5d8acccaf8f83805bfa4ab3e18a0f5d78"
+        },
+        {
+          "path": "tests/reference/sprint14/native/step40/FracPaQ2D_wavelet_traces.png",
+          "sha256": "7ae0ca892f73b81b13d03ea33b1769e5d8acccaf8f83805bfa4ab3e18a0f5d78"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/all-outputs/FracPaQ2D_wavelet_traces.png",
+          "sha256": "53c9c3a699f87ce061950fe434e67b5d9079129aefa70ee6beffa6f91cb76f9c"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    },
+    "FracPaQ2D_Example1_processed.tif": {
+      "native": [
+        {
+          "path": "tests/reference/sprint15/native/FracPaQ2D_Example1_processed.tif",
+          "sha256": "3f4ea0ceffba82001949d3bfb76db5c217d0f6ffa715de098b0a8db49aa0955f"
+        }
+      ],
+      "python": [
+        {
+          "path": "tests/reference/sprint16/auxiliary/FracPaQ2D_Example1_processed.tif",
+          "sha256": "f4c8f0217c053d40b2aec6fa316dd52dff29ca3342f6a79658d06c0680202617"
+        }
+      ],
+      "status": "Captura disponível; homologação numérica/visual por contexto permanece independente."
+    }
+  },
+  "scope": "Names/triggers covered by real production outputs plus shared exporter tests. No equality of scientific corrections or pixel acceptance inferred from name matches."
+}

@@ -1,0 +1,72 @@
+{
+  "default": {
+    "distance_max_error": 2.220446049250313e-16,
+    "gamma_max_error": 0.0,
+    "pair_count": 6,
+    "counts_max_error": 0.0
+  },
+  "gamma": {
+    "distance_max_error": 0.0,
+    "gamma_max_error": 4.440892098500626e-16,
+    "pair_count": 10,
+    "counts_max_error": 0.0
+  },
+  "cloud1": {
+    "distance_max_error": 0.0,
+    "gamma_max_error": 0.0,
+    "pair_count": 10
+  },
+  "cloud2": {
+    "distance_max_error": 0.0,
+    "gamma_max_error": 0.0,
+    "pair_count": 10
+  },
+  "anisotropic": {
+    "distance_max_error": 0.0,
+    "gamma_max_error": 0.0,
+    "pair_count": 10,
+    "counts_max_error": 0.0
+  },
+  "anisotropic40": {
+    "distance_max_error": 0.0,
+    "gamma_max_error": 0.0,
+    "pair_count": 10,
+    "counts_max_error": 0.0
+  },
+  "n999": {
+    "gamma_max_error": 2.220446049250313e-16,
+    "counts_max_error": 0.0,
+    "pair_count": 1997,
+    "includes_self": true
+  },
+  "n1000": {
+    "gamma_max_error": 0.0,
+    "counts_max_error": 0.0,
+    "pair_count": 999,
+    "includes_self": false
+  },
+  "raster_separate": {
+    "pixel_areas_max_error": 0.0,
+    "pixel_centroids_max_error": 0.0,
+    "threshold_error": 0.0,
+    "scope": "Identical native input bitmap; does not assert renderer equality."
+  },
+  "raster_nested": {
+    "pixel_areas_max_error": 0.0,
+    "pixel_centroids_max_error": 0.0,
+    "threshold_error": 0.0,
+    "scope": "Identical native input bitmap; does not assert renderer equality."
+  },
+  "raster_oblique": {
+    "pixel_areas_max_error": 0.0,
+    "pixel_centroids_max_error": 0.0,
+    "threshold_error": 0.0,
+    "scope": "Identical native input bitmap; does not assert renderer equality."
+  },
+  "raster_scaled": {
+    "pixel_areas_max_error": 0.0,
+    "pixel_centroids_max_error": 0.0,
+    "threshold_error": 0.0,
+    "scope": "Identical native input bitmap; does not assert renderer equality."
+  }
+}

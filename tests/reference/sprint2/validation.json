@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "scope": "Sprint 2 infrastructure and actual TXT preview; MATLAB parity is pending.",
+  "python": "3.13.18",
+  "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+  "tests": {
+    "tests": 167,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "pytest_command": ".venv/bin/python -m pytest -q --junitxml=/private/tmp/pyfracpaq-sprint2-tests.xml",
+  "pytest_xml_sha256": "4644dc140fc9b79d321720054f5ad4bf25704c9c092ec87af55513eb0bd5e98d",
+  "dependency_check": "No broken requirements found.",
+  "dependency_warning": "8 deprecation warnings from the installed Matplotlib Qt toolbar (AA_UseHighDpiPixmaps). No dependency was upgraded.",
+  "original_source_verification": {
+    "files": 164,
+    "status": "unchanged",
+    "manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7"
+  },
+  "package_verification": {
+    "wheel": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "fdacb5441f050345629f4a2a040b76a2bfa954cdd44a50c9f6143be52c8e92f3",
+    "zip_import_outside_root": true,
+    "resource_objects": 142
+  },
+  "captures": [
+    {
+      "percent": 100,
+      "manifest": "tests/reference/sprint2/dpi-100/manifest.json",
+      "sha256": "aa5ab54593e61883eba051ab3b6295d4b7228fc547ff73dc0f40cea00d5c6bdb",
+      "states": 8,
+      "text_fit_violations": 0,
+      "max_macro_deviation_pixels": 0
+    },
+    {
+      "percent": 125,
+      "manifest": "tests/reference/sprint2/dpi-125/manifest.json",
+      "sha256": "6335bd25806968ad45b3b0f92d6e07adfdedc9a20bec9dd6c5265ee76f363c9c",
+      "states": 8,
+      "text_fit_violations": 0,
+      "max_macro_deviation_pixels": 0
+    },
+    {
+      "percent": 150,
+      "manifest": "tests/reference/sprint2/dpi-150/manifest.json",
+      "sha256": "9cd563df95a2a1dc62c3a384cdda9f22d846b378309e9bf41c568476567eab89",
+      "states": 8,
+      "text_fit_violations": 0,
+      "max_macro_deviation_pixels": 0
+    },
+    {
+      "percent": 200,
+      "manifest": "tests/reference/sprint2/dpi-200/manifest.json",
+      "sha256": "3b66558aec7a9ab8c590e6a758f3f5b73d12df40d7f4815b7f86dd27592c9f87",
+      "states": 8,
+      "text_fit_violations": 0,
+      "max_macro_deviation_pixels": 0
+    }
+  ],
+  "png_export": {
+    "dpi": 600,
+    "size_cm": [
+      20,
+      20
+    ],
+    "observed_raster_size": [
+      4724,
+      4724
+    ],
+    "matlab_size_confirmation": "pending",
+    "atomic_write_and_size_restoration": "tested"
+  },
+  "code_sha256": {
+    "pyfracpaq/__init__.py": "b62d057491a4e1bb3dd456e486331158e2d3f2781c1b7f76248153b25b13c2ca",
+    "pyfracpaq/__main__.py": "8676a429c316292a45dfb6573fcba189cd13aeec716bf028b391505812dadc84",
+    "pyfracpaq/analysis/__init__.py": "55734bf037fefd36cd4253fc2d02b0c626c76442c50659d454ba08ee4a3dae3d",
+    "pyfracpaq/analysis/registry.py": "c6c09440075d1f08d7e021664240849ba01994baa04153157f2121d0d99c379c",
+    "pyfracpaq/app.py": "3bfaea9bc4271cd07c876db21de1d0491b0abdfff2be20bb75bfe215411a3a90",
+    "pyfracpaq/domain/__init__.py": "994040f608488a3ac5d5252c9e9d76884a434096420117af196685bb6f0bef07",
+    "pyfracpaq/domain/construction.py": "a99fd8cda19aeb2df54186bd1c96d720e1a71fc6cfc4f53ea03e831949c3826e",
+    "pyfracpaq/domain/execution.py": "8384319b1b03aa412b0f1748901ad56cbb3ea4b7b5ded3b611b67198e6286be5",
+    "pyfracpaq/domain/models.py": "095cd344ee463d3e06818f19713a824937e0a16dddd8de09630dea4de67979aa",
+    "pyfracpaq/geometry/__init__.py": "f0d9d7e24de665399606a4e5f7085c56ee54550f45fb272f3222320215de6fea",
+    "pyfracpaq/geometry/intersections.py": "0de7e3f38af61225c01bcea4ff9b8306f60858191592f198782175e72a204dcb",
+    "pyfracpaq/geometry/primitives.py": "de660b040baa1df2ceb74f1fd20e2e2d10ef7ed813ed5e6dc4beebe4896bc3fb",
+    "pyfracpaq/gui/__init__.py": "56cbb40e51b5a4468d919bbed3f78c71c14960f1d21d94de03159b659be3a06e",
+    "pyfracpaq/gui/controls.py": "37e88f49f98e6a26cc88fe33a9fa764d53c3a31c5a93a4e296c07b0c2bfd33cf",
+    "pyfracpaq/gui/figures.py": "f1ed591028dc64ffa118f6babeecca0ea58b304bb05ababec0cabc94c3802338",
+    "pyfracpaq/gui/layout.py": "a37f95345fe519c1431c29bdce4698f315c27e514950ae0940bfa618ac21890d",
+    "pyfracpaq/gui/main_window.py": "43e5a1ed4c33616cc51091350f60d804cf50da96bf995bc3d1b809dd195c5166",
+    "pyfracpaq/io/__init__.py": "834f3abe34a659ff646749ddc5c7c0e177f1063e2e9daf00315609505b065c5e",
+    "pyfracpaq/io/figures.py": "7892794e3eb9995c868a5c998f47319c33653d900a6b39238fb04b3e09f3306b",
+    "pyfracpaq/io/nodes.py": "d02b1fde03827989324169135d6ad0655ff37eb06b38d2252eea79639e0037be",
+    "pyfracpaq/plots/__init__.py": "e12692927bdd3594f9e63b7bb0f9435e21e820f93343bc66a71ea22020f0ceb6",
+    "pyfracpaq/plots/preview.py": "3f7c900830973db958f63b28b4a5fb4cdac50cd7e3088e964a08eef4a1c2811f",
+    "pyfracpaq/plots/results.py": "ca7bec00ffe01de430024dd10c06c7dd336bf912927a406a639ce5f47daa4346",
+    "pyfracpaq/resources/__init__.py": "8fb6bc0d227db7199f2854177e50f92d9734c1c465be0865c84f7007533c221d",
+    "pyfracpaq/workers/__init__.py": "01e15e9232e8dcb336b4d28f0914ee215ec529fe7d12a2b4be63013e21c983bc",
+    "pyfracpaq/workers/jobs.py": "60673791483c8ae2617d4dcfcc7de88b5d32daf06c83dc6aae7a7887346db14e"
+  },
+  "resource_sha256": {
+    "pyfracpaq/resources/FracPaQicon.jpeg": "f29ab6ff8eb4c52b8571c46292a243ece2d14dc746266241f811962867c0ed7b",
+    "pyfracpaq/resources/FracPaQlogo.jpeg": "9f78a9a62e46e9d8476df7ea444192075e9b78a7edb329f533c0af3e0e286c08",
+    "pyfracpaq/resources/__init__.py": "8fb6bc0d227db7199f2854177e50f92d9734c1c465be0865c84f7007533c221d",
+    "pyfracpaq/resources/base.qss": "5b15f0fcd5ad10317d441dd7413f77f2773dd88774af88a6216b6b3bfcd0116a",
+    "pyfracpaq/resources/provenance.json": "538eb205d268fe2aae05aa2509f95d37eaa4d3e2fbf180a0b9db93486c422ef9",
+    "pyfracpaq/resources/ui_spec.json": "2bd9cd094677685e8131ad4b18a07ada1b8eac78b2149f378fb0a09062523fc2"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "path": "wavelet_dialog.json",
+  "source": "fracpaq-matlab/guiWaveletDialog.fig",
+  "sha256": "c91785cea97ba1d40c777d05469c4775c1a4ad525aef54333619d086804c0e26",
+  "license": "MIT; FracPaQ Contributors, David Healy and Roberto Rizzo; sanitized saved FIG layout/defaults.",
+  "source_sha256": "178487fd76b4bddf9babaef4a2b68d400ac397f60855d0c26361972a8786c687",
+  "role": "Sanitized saved FIG properties; derived JSON, not a byte-identical copy of the FIG."
+}

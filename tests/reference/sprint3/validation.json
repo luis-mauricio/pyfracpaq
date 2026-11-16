@@ -1,0 +1,238 @@
+{
+  "scope": "Python Agg exports; source/manual audit only; MATLAB unavailable.",
+  "matlab_comparison": "pending",
+  "numpy": "2.5.4",
+  "matplotlib": "3.11.2",
+  "font": "Arial",
+  "figures": [
+    {
+      "case": "base",
+      "id": "MAP-01",
+      "path": "FracPaQ2D_tracemap_Run1.png",
+      "sha256": "b0cfb07e64439740a5879d939dfa71da5fa08ff1c9663f43d68942e36421346c",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracemap_Run1.png",
+      "qa_sha256": "5da583a56ee3762b00b5c4381a4eb277cac28019184404881409442b8300c400"
+    },
+    {
+      "case": "base",
+      "id": "MAP-04",
+      "path": "FracPaQ2D_tracelengthmap_Run1.png",
+      "sha256": "3e442d7be7376c075418fd58c26d14bfe598f63e851517fba4a6e1ae14c048b7",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_tracelengthmap_Run1.png",
+      "qa_sha256": "2c0ab214bbd3770f6612a97d287edb6ccbc998d74718afe0640fdff77ea55376"
+    },
+    {
+      "case": "base",
+      "id": "MAP-05",
+      "path": "FracPaQ2D_segmentlengthmap_Run1.png",
+      "sha256": "47c87dffa8c34a842e71fd5533da13d5c4aedf76e11645992f5d9a1cd563da95",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentlengthmap_Run1.png",
+      "qa_sha256": "c01fb2e667556754c8e3433af81dc9a75b5a9df0f61a0f286fe6273fe6926323"
+    },
+    {
+      "case": "base",
+      "id": "MAP-06",
+      "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+      "sha256": "276c1f0c7106b3bcd007441ec660ce2cceb1b3351623a95b5319f59bad9530d6",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentstrikemap_Run1.png",
+      "qa_sha256": "85589052123146259a5848d32f56c4f68b75aa8d20fb449404131a6da2e91349"
+    },
+    {
+      "case": "base",
+      "id": "ANG-01",
+      "path": "FracPaQ2D_histoangle_Run1.png",
+      "sha256": "710f923e861e1561d999e91fc9f8b1438d828ea5e14ea6183fa8bfbdb97855ad",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_histoangle_Run1.png",
+      "qa_sha256": "1962dee9e78bbc09b25bbe18ffa98830663c8b4c6af750441929ae8c883cc74f"
+    },
+    {
+      "case": "base",
+      "id": "ANG-02",
+      "path": "FracPaQ2D_roseangleEqArea_Run1.png",
+      "sha256": "f4208d007b01f1eed85021aed8c4c33be954c2b9a2671d436745aa6a07b7fac5",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_roseangleEqArea_Run1.png",
+      "qa_sha256": "ce130e2508bab360096914ce9a4b33871e99556dd5cddafc3e633d4391881e4c"
+    },
+    {
+      "case": "weighted",
+      "id": "ANG-02",
+      "path": "FracPaQ2D_roseangleEqArea_weighted.png",
+      "sha256": "f5f39365343f4396604e114ad44ec4fa201ae18dbd757b77b1b2e6618e18d280",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_roseangleEqArea_weighted.png",
+      "qa_sha256": "9172a093d50062daa6680471ef5aaf504857c3fa93d31421197e931cfd5aa3eb"
+    },
+    {
+      "case": "strike_colour",
+      "id": "ANG-02",
+      "path": "FracPaQ2D_roseangleEqArea_strike_colour.png",
+      "sha256": "d6a9f96a3ae2b1a51ea68328ccc40753f228a37dce7675bc8909f47294eb6a6a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_roseangleEqArea_strike_colour.png",
+      "qa_sha256": "90591b7018c5532832671d27be70e4f615dd4b49d2ec5ad5a6facaedfc918a1e"
+    },
+    {
+      "case": "north_flips_metres",
+      "id": "MAP-06",
+      "path": "FracPaQ2D_segmentstrikemap_north_flips_metres.png",
+      "sha256": "34591c7fc1859d18efd99e6e029c40780edef562c0e3fd543d8222c24663ba01",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_segmentstrikemap_north_flips_metres.png",
+      "qa_sha256": "fee8b28b3fd6d5a705304b9536b4a1209f72c1048d2ae0e7b81ec9d22e26c704"
+    },
+    {
+      "case": "north_flips_metres",
+      "id": "ANG-01",
+      "path": "FracPaQ2D_histoangle_north_flips_metres.png",
+      "sha256": "b4670b91b395ac508e9ddbf24cc5f333d97cdaf719a68c897850515cb54aef52",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_histoangle_north_flips_metres.png",
+      "qa_sha256": "94ad641cf9c2cb53c7236e1ede728ab373567c4e2c114873385e28ddcbbbee68"
+    },
+    {
+      "case": "north_flips_metres",
+      "id": "ANG-02",
+      "path": "FracPaQ2D_roseangleEqArea_north_flips_metres.png",
+      "sha256": "9dbbcb1add27cca37f47efa9f429fcfc325e5f7c4746d49ad679ab402c0bc146",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_roseangleEqArea_north_flips_metres.png",
+      "qa_sha256": "4a1fbda7a8cc03879fad9d6dbd31dd131bdab1aa735b334262fa25eaeedf6113"
+    }
+  ],
+  "txt": [
+    {
+      "path": "FracPaQ2DEZROSE_Run1.txt",
+      "sha256": "f999f6978ad511d823b509f6ff99bb0d021278bc803c163c51fa914c3e3fa020",
+      "lines": 12
+    },
+    {
+      "path": "FracPaQ2DEZROSE_north_flips_metres.txt",
+      "sha256": "12d7f6b4126d7f19fafec488bb4cee3e9561df5d947f1a722be3e52970d6fcfe",
+      "lines": 12
+    },
+    {
+      "path": "FracPaQ2DEZROSE_strike_colour.txt",
+      "sha256": "f999f6978ad511d823b509f6ff99bb0d021278bc803c163c51fa914c3e3fa020",
+      "lines": 12
+    },
+    {
+      "path": "FracPaQ2DEZROSE_weighted.txt",
+      "sha256": "f999f6978ad511d823b509f6ff99bb0d021278bc803c163c51fa914c3e3fa020",
+      "lines": 12
+    }
+  ],
+  "statistics": {
+    "base": {
+      "mean": 157.5,
+      "standard_deviation": 70.83842845339277,
+      "resultant": 0.23570226039551587,
+      "mean_defined": true
+    },
+    "weighted": {
+      "mean": 157.5,
+      "standard_deviation": 70.83842845339277,
+      "resultant": 0.23570226039551587,
+      "mean_defined": true
+    },
+    "strike_colour": {
+      "mean": 157.5,
+      "standard_deviation": 70.83842845339277,
+      "resultant": 0.23570226039551587,
+      "mean_defined": true
+    },
+    "north_flips_metres": {
+      "mean": 147.5,
+      "standard_deviation": 70.83842845339277,
+      "resultant": 0.2357022603955159,
+      "mean_defined": true
+    }
+  },
+  "arrays_sha256": "066b3a9d7a2ed7c302e28cb60e048a0f73edd03a231295bd1ba81251929ba515",
+  "parameters_sha256": "9cc4db0ea2c60dbf94600c5477ee2feef5ec8e003c93b8e3aede959b456bd329",
+  "source_unchanged": true,
+  "python": "3.13.18",
+  "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O"
+}

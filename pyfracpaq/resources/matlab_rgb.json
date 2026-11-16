@@ -1,0 +1,10 @@
+{
+  "levels": 256,
+  "method": "Nominal piecewise hot ramp; bone=(7*gray+fliplr(hot))/8.",
+  "scope": "Independent equation reconstruction, not captured MATLAB RGB.",
+  "native_comparison": "pending",
+  "sources": [
+    "https://www.mathworks.com/help/matlab/ref/hot.html",
+    "https://www.mathworks.com/help/matlab/ref/bone.html"
+  ]
+}

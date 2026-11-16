@@ -1,0 +1,23 @@
+{
+  "power_law": {
+    "D_max_error": 0.0,
+    "p_max_error": 2.220446049250313e-16,
+    "decisions_exact": true,
+    "simulations": 2500,
+    "alpha": 0.1
+  },
+  "exponential": {
+    "D_max_error": 0.0,
+    "p_max_error": 2.220446049250313e-16,
+    "decisions_exact": true,
+    "simulations": 2500,
+    "alpha": 0.05
+  },
+  "lognormal": {
+    "D_max_error": 0.0,
+    "p_max_error": 2.220446049250313e-16,
+    "decisions_exact": true,
+    "simulations": 2500,
+    "alpha": 0.05
+  }
+}

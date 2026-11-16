@@ -1,0 +1,990 @@
+{
+  "schema_version": 1,
+  "scope": "Implementações verificadas em Python; não declara paridade MATLAB.",
+  "items": {
+    "IN-01": {
+      "python": "pyfracpaq/io/nodes.py:read_txt",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-02": {
+      "python": "pyfracpaq/domain/models.py; domain/construction.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-03": {
+      "python": "pyfracpaq/domain/construction.py:_build_trace; io/nodes.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-04": {
+      "python": "pyfracpaq/domain/construction.py; models.py:Dataset.with_scale",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-03": {
+      "python": "io/text.py",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-04": {
+      "python": "geometry; io/colours.py",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-07": {
+      "python": "pyfracpaq/domain/; pyfracpaq/io/nodes.py",
+      "status": "Estado: Normalização, identidade e construção completas nos três leitores; correção de distância confirmada por captura real e testes analíticos.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-08": {
+      "python": "pyfracpaq/geometry/primitives.py:Bounds; analysis/lengths.py; plots/lengths.py",
+      "status": "Estado: Correção técnica de amplitudes/limites integrada/testada. Caso nativo negativo específico permanece indisponível; não se confunde derivação estática com execução MATLAB.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-01": {
+      "python": "pyfracpaq/gui/layout.py; gui/controls.py; gui/style.py; gui/main_window.py; resources/ui_spec.json; resources/base.qss",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-02": {
+      "python": "pyfracpaq/gui/layout.py; gui/controls.py; gui/style.py; gui/main_window.py; resources/ui_spec.json; resources/base.qss",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-03": {
+      "python": "pyfracpaq/gui/main_window.py:capture_input",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-04": {
+      "python": "pyfracpaq/gui/main_window.py:browse",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-05": {
+      "python": "pyfracpaq/gui/main_window.py:_filename_changed; gui/controls.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-06": {
+      "python": "pyfracpaq/gui/main_window.py:preview; workers/jobs.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-07": {
+      "python": "pyfracpaq/plots/preview.py; gui/layout.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-08": {
+      "python": "pyfracpaq/gui/main_window.py:_accept_preview",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-09": {
+      "python": "pyfracpaq/gui/main_window.py:_flip_changed",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-10": {
+      "python": "pyfracpaq/gui/layout.py; gui/controls.py; gui/style.py; gui/main_window.py; resources/ui_spec.json; resources/base.qss",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-11": {
+      "python": "pyfracpaq/gui/main_window.py:_sync_state",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-12": {
+      "python": "pyfracpaq/analysis/registry.py; domain/execution.py; workers/jobs.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-13": {
+      "python": "pyfracpaq/gui/main_window.py:closeEvent",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-14": {
+      "python": "pyfracpaq/gui/main_window.py:_status; workers/jobs.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-15": {
+      "python": "pyfracpaq/gui/main_window.py:_error; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-16": {
+      "python": "pyfracpaq/io/figures.py; domain/execution.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-17": {
+      "python": "pyfracpaq/gui/figures.py; gui/main_window.py:present_figure",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-18": {
+      "python": "pyfracpaq/gui/main_window.py; workers/jobs.py; io/figures.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "UI-19": {
+      "python": "pyfracpaq/gui/controls.py:dependencies; gui/main_window.py:_dependencies_changed",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/gui/test_main_window.py; tests/gui/test_reference_layout.py; tests/gui/test_entrypoints.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "EXP-01": {
+      "python": "pyfracpaq/io/figures.py:export_png",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_execution_contract.py; tests/numerical/test_lengths.py; tests/numerical/test_svg.py; tests/numerical/test_blocks.py; tests/numerical/test_wavelets.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "EXP-02": {
+      "python": "pyfracpaq/io/figures.py:validate_tag; export_png",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_execution_contract.py; tests/numerical/test_lengths.py; tests/numerical/test_svg.py; tests/numerical/test_blocks.py; tests/numerical/test_wavelets.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "EXP-03": {
+      "python": "pyfracpaq/domain/execution.py:RunContext; io/figures.py; io/block_raster.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_execution_contract.py; tests/numerical/test_lengths.py; tests/numerical/test_svg.py; tests/numerical/test_blocks.py; tests/numerical/test_wavelets.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-01": {
+      "python": "pyfracpaq/analysis/registry.py",
+      "status": "Estado: Correção técnica integrada às30 rotas; testes de validação contextual e Run concluídos. A reprodução nativa específica deste erro continua indisponível.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-02": {
+      "python": "pyfracpaq/gui/controls.py; analysis/registry.py",
+      "status": "Estado: Validações integradas/testadas; decisões científicas individualizadas abaixo. Nenhum método novo foi aprovado por esta revisão técnica.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-04": {
+      "python": "pyfracpaq/io/svg.py; io/images.py; gui/main_window.py",
+      "status": "Estado: Correção de paths dos três leitores testada; Browse/Cancel e caminho com espaços/acentos também verificados no desktop macOS na S16. Diferença técnica deliberada.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-18": {
+      "python": "pyfracpaq/io/figures.py",
+      "status": "Estado: Auditoria das rotas e exportadores concluída: PNG/TXT/BMP indicados corretamente, sem promessa de TIFF nos resultados da GUI. TIFF restrito à ferramenta explícita de preparação.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-21": {
+      "python": "pyfracpaq/gui/main_window.py",
+      "status": "Estado: Invalidação integrada para TXT/SVG/Hough, escala e perfil; resultados obsoletos impedidos de publicar. Testes de revisão/stamp e seis abas concluídos.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-01": {
+      "python": "pyfracpaq/analysis/maps.py; plots/maps.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-02": {
+      "python": "pyfracpaq/analysis/maps.py; plots/maps.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-04": {
+      "python": "pyfracpaq/analysis/maps.py; plots/maps.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-05": {
+      "python": "pyfracpaq/analysis/maps.py; plots/maps.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-06": {
+      "python": "pyfracpaq/analysis/maps.py; plots/maps.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "ANG-01": {
+      "python": "pyfracpaq/analysis/angles.py; analysis/compatibility.py; plots/angles.py; io/angles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/visual/test_sprint3_figures.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "ANG-02": {
+      "python": "pyfracpaq/analysis/angles.py; analysis/compatibility.py; plots/angles.py; io/angles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/visual/test_sprint3_figures.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "ANG-03": {
+      "python": "pyfracpaq/analysis/angles.py; analysis/compatibility.py; plots/angles.py; io/angles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/visual/test_sprint3_figures.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "ANG-04": {
+      "python": "pyfracpaq/analysis/angles.py; analysis/compatibility.py; plots/angles.py; io/angles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/visual/test_sprint3_figures.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "ANG-05": {
+      "python": "pyfracpaq/analysis/angles.py; analysis/compatibility.py; plots/angles.py; io/angles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/visual/test_sprint3_figures.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "ANG-06": {
+      "python": "pyfracpaq/analysis/angles.py; analysis/compatibility.py; plots/angles.py; io/angles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/visual/test_sprint3_figures.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "ANG-07": {
+      "python": "pyfracpaq/analysis/angles.py; analysis/compatibility.py; plots/angles.py; io/angles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/visual/test_sprint3_figures.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "ANG-08": {
+      "python": "pyfracpaq/analysis/angles.py; analysis/compatibility.py; plots/angles.py; io/angles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/visual/test_sprint3_figures.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "ANG-09": {
+      "python": "pyfracpaq/analysis/angles.py; analysis/compatibility.py; plots/angles.py; io/angles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/visual/test_sprint3_figures.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-08": {
+      "python": "analysis/palettes.py; plots/auxiliary.py:apply_cmocean",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-10": {
+      "python": "pyfracpaq/analysis/compatibility.py; io/angles.py; docs/decisions/0004-maps-and-angles.md; analysis/lengths.py; io/lengths.py",
+      "status": "Estado: Convenções preservadas e comparadas com execução nativa. Unificação não implementada nem requisito para reproduzir o fonte; limites de norte e avisos documentados.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-17": {
+      "python": "docs/decisions/0013-fracture-stability-and-mohr.md; pyfracpaq/analysis/stability.py; plots/stability.py",
+      "status": "Estado: correção científica aprovada, implementada, testada e ativa no Run padrão. Comprimentos preservam a convenção legada aceita. Comparações de dados, paletas, arquivos e calibração visual registradas; homologação visual integral permanece na auditoria final.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-01": {
+      "python": "pyfracpaq/analysis/lengths.py; plots/lengths.py; io/lengths.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-02": {
+      "python": "pyfracpaq/analysis/lengths.py; plots/lengths.py; io/lengths.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-03": {
+      "python": "pyfracpaq/analysis/lengths.py; plots/lengths.py; io/lengths.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-04": {
+      "python": "pyfracpaq/analysis/lengths.py; plots/lengths.py; io/lengths.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-05": {
+      "python": "pyfracpaq/analysis/lengths.py; plots/lengths.py; io/lengths.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-06": {
+      "python": "pyfracpaq/analysis/lengths.py; plots/lengths.py; io/lengths.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-16": {
+      "python": "pyfracpaq/analysis/lengths.py; plots/lengths.py; io/lengths.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "EXP-04": {
+      "python": "pyfracpaq/io/lengths.py; io/angles.py; io/circular.py; pyfracpaq/io/connectivity.py; pyfracpaq/io/stability.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_execution_contract.py; tests/numerical/test_lengths.py; tests/numerical/test_svg.py; tests/numerical/test_blocks.py; tests/numerical/test_wavelets.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-03": {
+      "python": "pyfracpaq/analysis/registry.py; analysis/lengths.py",
+      "status": "Estado: Cross-plot isolado integrado e testado. A função Lengths original foi executada na S16; o defeito do despacho do callback permanece evidência estática, sem alegar reprodução nativa desse callback.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-05": {
+      "python": "pyfracpaq/analysis/lengths.py:select_lengths; docs/decisions/0005-lengths-and-censoring.md",
+      "status": "Estado: Correção científica aprovada e ativa; população e associação alinhadas testadas. Não há identidade declarada com a censura defeituosa original.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-05": {
+      "python": "pyfracpaq/io/svg.py; io/colours.py; io/nodes.py; gui/main_window.py; plots/maps.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-06": {
+      "python": "pyfracpaq/io/svg.py; io/colours.py; io/nodes.py; gui/main_window.py; plots/maps.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-07": {
+      "python": "pyfracpaq/io/svg.py; io/colours.py; io/nodes.py; gui/main_window.py; plots/maps.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-08": {
+      "python": "pyfracpaq/io/svg.py; io/colours.py; io/nodes.py; gui/main_window.py; plots/maps.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-09": {
+      "python": "pyfracpaq/io/svg.py; io/colours.py; io/nodes.py; gui/main_window.py; plots/maps.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-10": {
+      "python": "pyfracpaq/io/svg.py; io/colours.py; io/nodes.py; gui/main_window.py; plots/maps.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-11": {
+      "python": "pyfracpaq/io/svg.py; io/colours.py; io/nodes.py; gui/main_window.py; plots/maps.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-12": {
+      "python": "pyfracpaq/io/images.py; analysis/hough.py; plots/hough.py; gui/main_window.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-13": {
+      "python": "pyfracpaq/io/images.py; analysis/hough.py; plots/hough.py; gui/main_window.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-14": {
+      "python": "pyfracpaq/io/images.py; analysis/hough.py; plots/hough.py; gui/main_window.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-15": {
+      "python": "pyfracpaq/io/images.py; analysis/hough.py; plots/hough.py; gui/main_window.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-16": {
+      "python": "pyfracpaq/io/images.py; analysis/hough.py; plots/hough.py; gui/main_window.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-17": {
+      "python": "pyfracpaq/io/images.py; analysis/hough.py; plots/hough.py; gui/main_window.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "IN-18": {
+      "python": "pyfracpaq/io/images.py; analysis/hough.py; plots/hough.py; gui/main_window.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_nodes.py; tests/numerical/test_svg.py; tests/numerical/test_hough.py; tests/numerical/test_sprint16_hough.py; tests/gui/test_main_window.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-03": {
+      "python": "pyfracpaq/plots/maps.py:render_multicolour; render_map",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-06": {
+      "python": "pyfracpaq/domain/construction.py; models.py; io/images.py",
+      "status": "Estado: Campos geométricos completos e Hough nativo testados. As famílias posteriores também têm testes Run com origem em imagem; homologação visual global continua aberta.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-09": {
+      "python": "pyfracpaq/io/svg.py; docs/decisions/0006-svg-and-colours.md",
+      "status": "Estado: Subconjunto XML e integridade de escrita/limpeza concluídos e testados; captura nativa confirma saída inválida do parser textual no fixture. O port preserva os elementos aceitos sem aproximar curvas ou transformações.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-19": {
+      "python": "scripts/validate_sprint56.py; docs/decisions/0006-svg-and-colours.md",
+      "status": "Estado: Destinação concluída; limitações dos exemplos/experimentos documentadas, sem simular recursos científicos ausentes.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-07": {
+      "python": "pyfracpaq/geometry/circles.py; analysis/circular.py; plots/circular.py; io/circular.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-08": {
+      "python": "pyfracpaq/geometry/circles.py; analysis/circular.py; plots/circular.py; io/circular.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-09": {
+      "python": "pyfracpaq/geometry/circles.py; analysis/circular.py; plots/circular.py; io/circular.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-10": {
+      "python": "pyfracpaq/geometry/circles.py; analysis/circular.py; plots/circular.py; io/circular.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-18": {
+      "python": "pyfracpaq/geometry/circles.py; analysis/circular.py; plots/circular.py; io/circular.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-20": {
+      "python": "pyfracpaq/geometry/circles.py; analysis/profiles.py",
+      "status": "Estado: Contagem finita Maps/Graphs e normalização P20 aprovadas e ativas. S16 acrescenta chamada Maps original real e TXT/capturas; resultados defeituosos permanecem preservados, sem declarar identidade com o método corrigido.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-07": {
+      "python": "pyfracpaq/analysis/mle.py:fit_tail; analysis/lengths.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-08": {
+      "python": "pyfracpaq/analysis/mle.py:fit_tail",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-09": {
+      "python": "pyfracpaq/analysis/mle.py:fit_tail",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-10": {
+      "python": "pyfracpaq/analysis/mle.py:cut_sample; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-11": {
+      "python": "pyfracpaq/analysis/ks.py; analysis/mle.py:evaluate_fit",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-12": {
+      "python": "pyfracpaq/plots/mle.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-01": {
+      "python": "pyfracpaq/analysis/connectivity.py:classify_connectivity",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-02": {
+      "python": "pyfracpaq/analysis/connectivity.py:_NearSegments",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-03": {
+      "python": "pyfracpaq/analysis/connectivity.py:classify_connectivity",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-04": {
+      "python": "pyfracpaq/plots/connectivity.py:ternary_coordinates",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-05": {
+      "python": "pyfracpaq/plots/connectivity.py:render_connectivity",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-06": {
+      "python": "pyfracpaq/analysis/connectivity.py:node_histogram; plots/connectivity.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-07": {
+      "python": "pyfracpaq/io/connectivity.py; analysis/connectivity.py:compute_connectivity",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-15": {
+      "python": "docs/decisions/0010-mle-and-statistical-assessment.md",
+      "status": "Estado: correção científica aprovada, implementada e ativa na GUI padrão; testes e referência nativa documentados. Homologação visual integral continua pendente, sem declaração de identidade com os resultados defeituosos do legado.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-11": {
+      "python": "docs/decisions/0011-connectivity-iyx.md",
+      "status": "Estado: correção científica aprovada, implementada e ativa na GUI padrão; testes e referência nativa documentados. Homologação visual integral continua pendente, sem declaração de identidade com os resultados defeituosos do legado.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-10": {
+      "python": "plots/auxiliary.py; plots/connectivity.py",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-08": {
+      "python": "pyfracpaq/analysis/tensors.py; analysis/angles.py; plots/tensors.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-09": {
+      "python": "pyfracpaq/analysis/tensors.py:permeability_tensor; plots/tensors.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-10": {
+      "python": "pyfracpaq/analysis/tensors.py:compute_permeability; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-11": {
+      "python": "pyfracpaq/analysis/tensors.py:compute_permeability; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-12": {
+      "python": "pyfracpaq/analysis/tensors.py:permeability_tensor; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "FLO-13": {
+      "python": "pyfracpaq/analysis/tensors.py; plots/tensors.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_connectivity.py; tests/numerical/test_tensors.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-11": {
+      "python": "pyfracpaq/analysis/stability.py; plots/stability.py; io/stability.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-12": {
+      "python": "pyfracpaq/analysis/stability.py; plots/stability.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-13": {
+      "python": "pyfracpaq/analysis/stability.py; plots/stability.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-14": {
+      "python": "pyfracpaq/analysis/stability.py; plots/stability.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-15": {
+      "python": "pyfracpaq/analysis/stability.py:parameters_from_config; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-16": {
+      "python": "pyfracpaq/analysis/stability.py:mohr_circle; plots/stability.py:render_mohr",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "MAP-17": {
+      "python": "pyfracpaq/analysis/stability.py; plots/stability.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_angles.py; tests/numerical/test_circular.py; tests/numerical/test_stability.py; tests/visual/test_sprint3_figures.py; tests/visual/test_sprint7_figures.py; tests/gui/test_sprint1011_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-13": {
+      "python": "pyfracpaq/analysis/blocks.py; io/block_raster.py; plots/blocks.py; analysis/lengths.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-14": {
+      "python": "pyfracpaq/analysis/blocks.py; io/block_raster.py; plots/blocks.py; analysis/lengths.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "LEN-15": {
+      "python": "pyfracpaq/analysis/variogram.py; analysis/lengths.py; plots/variogram.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_lengths.py; tests/numerical/test_mle.py; tests/numerical/test_blocks.py; tests/numerical/test_variogram.py; tests/visual/test_sprint4_figures.py; tests/gui/test_sprint89_run.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-05": {
+      "python": "analysis/variogram.py; plots/variogram.py",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-01": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-02": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-03": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-04": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-05": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-06": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-07": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-08": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-09": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-10": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-11": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-12": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "GRA-13": {
+      "python": "pyfracpaq/geometry/profiles.py; analysis/profiles.py; gui/profile_selection.py; plots/profiles.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_profiles.py; tests/visual/test_sprint1213_figures.py; tests/gui/test_sprint1213_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-13": {
+      "python": "pyfracpaq/geometry/profiles.py; gui/profile_selection.py; analysis/registry.py",
+      "status": "Estado: implementado e testado no Run, com eventos do canvas, cancelamento, invalidação e snapshot imutável.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-14": {
+      "python": "pyfracpaq/analysis/blocks.py; io/block_raster.py",
+      "status": "Estado: Q-14 aprovada e integrada ao Run padrão; Block size graphs gera as três figuras, BMP visível e três TXT de Lengths. Referências nativas preservadas e diferenças de raster/população/calibração declaradas.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-01": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-02": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-03": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-04": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-05": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-06": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-07": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-08": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-09": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-10": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-11": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "WAV-12": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py; plots/wavelets.py; analysis/registry.py",
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "fixture": "tests/numerical/test_wavelets.py; tests/visual/test_wavelet_figures.py; tests/gui/test_sprint1415_run.py; tests/reference/sprint16/all-outputs/validation.json",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-01": {
+      "python": "analysis/preprocess.py; tools; plots/preprocess.py",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-02": {
+      "python": "io/move.py; tools",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-06": {
+      "python": "analysis/auxiliary.py:crack_tensor16",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-07": {
+      "python": "analysis/roses.py; plots/roses.py",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-09": {
+      "python": "docs/parity/legacy.md",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-11": {
+      "python": "analysis/auxiliary.py:probe_plane",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-12": {
+      "python": "gui/wavelet_dialog.py; resources/wavelet_dialog.json; tools",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-13": {
+      "python": "docs/parity/legacy.md; gui/wavelet_dialog.py",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-14": {
+      "python": "docs/parity/legacy.md",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-15": {
+      "python": "docs/parity/legacy.md",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-16": {
+      "python": "examples/provenance.json; examples/README.md",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-17": {
+      "python": "docs/user-guide.md",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-18": {
+      "python": "README.md; THIRD_PARTY_NOTICES.md; LICENSE",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "AUX-19": {
+      "python": "docs/parity/legacy.md",
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "fixture": "tests/numerical/test_auxiliary.py; tests/gui/test_sprint1415_run.py; tests/reference/test_sprint1415_reference.py; docs/parity/legacy.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-12": {
+      "python": "pyfracpaq/analysis/wavelets.py; io/wavelets.py",
+      "status": "Estado: implementado e ativo no Run padrão, com referências nativas preservadas e diferenças aprovadas explícitas. Dois casos completos1944×1944, Qt e barras responsivas verificados; homologação integral fica na Sprint16.",
+      "fixture": "docs/parity/divergences.md",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "EXP-05": {
+      "python": "docs/parity/legacy.md; docs/user-guide.md",
+      "status": "Destinação auditada: legado/extensão fora da GUI2.8; nenhuma saída obrigatória omitida por isso.",
+      "fixture": "tests/numerical/test_execution_contract.py; tests/numerical/test_lengths.py; tests/numerical/test_svg.py; tests/numerical/test_blocks.py; tests/numerical/test_wavelets.py",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "EXP-06": {
+      "python": "docs/parity/legacy.md; docs/user-guide.md",
+      "status": "Destinação auditada: legado/extensão fora da GUI2.8; nenhuma saída obrigatória omitida por isso.",
+      "fixture": "tests/numerical/test_execution_contract.py; tests/numerical/test_lengths.py; tests/numerical/test_svg.py; tests/numerical/test_blocks.py; tests/numerical/test_wavelets.py",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    },
+    "Q-16": {
+      "python": "docs/parity/legacy.md",
+      "fixture": "docs/parity/divergences.md",
+      "status": "Estado: Integridade de exportação implementada/testada; limitação de atomicidade por arquivo explicitada na documentação.",
+      "audit": "tests/reference/sprint16/functional-matrix.json"
+    }
+  }
+}

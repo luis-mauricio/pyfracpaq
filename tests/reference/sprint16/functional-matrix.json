@@ -1,0 +1,2850 @@
+{
+  "ids": 164,
+  "gui_ids": 118,
+  "export_ids": 6,
+  "aux_ids": 19,
+  "questions": 21,
+  "method": "Source/control mapping review + complete regression suite + all30 production compute/render routes. Grouped test evidence is shared, not a claim of one independent test per functional ID.",
+  "items": [
+    {
+      "id": "UI-01",
+      "controls": [
+        "figure_main"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-02",
+      "controls": [
+        "text19",
+        "axes_icon",
+        "axes_logo",
+        "text4"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-03",
+      "controls": [
+        "edit_filename"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-04",
+      "controls": [
+        "pushbutton_browse"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-05",
+      "controls": [
+        "radiobutton_image",
+        "radiobutton_node"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-06",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-07",
+      "controls": [
+        "axes_tracemap"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-08",
+      "controls": [
+        "label_stats"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-09",
+      "controls": [
+        "pushbutton_flipx",
+        "pushbutton_flipy"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-10",
+      "controls": [
+        "pbMapsTab",
+        "pbLengthsTab",
+        "pbAnglesTab",
+        "pbFluidTab",
+        "pbWaveletsTab",
+        "pbGraphsTab"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-11",
+      "controls": [
+        "pushbutton_run"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-12",
+      "controls": [
+        "pushbutton_run"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-13",
+      "controls": [
+        "pushbutton_exit"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-14",
+      "controls": [
+        "text_message"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-15",
+      "controls": [
+        "text_message"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-16",
+      "controls": [
+        "edit_FilenameTag"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-17",
+      "controls": [
+        "axes_tracemap"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-18",
+      "controls": [
+        "text_message"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "UI-19",
+      "controls": [
+        "uibgTabMaps"
+      ],
+      "evidence": [
+        "tests/gui/test_main_window.py",
+        "tests/gui/test_reference_layout.py",
+        "tests/gui/test_entrypoints.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-01",
+      "controls": [
+        "radiobutton_node",
+        "edit_filename"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-02",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-03",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-04",
+      "controls": [
+        "edit_scaling"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-05",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-06",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-07",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-08",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-09",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-10",
+      "controls": [
+        "axes_tracemap"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-11",
+      "controls": [
+        "edit_filename"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-12",
+      "controls": [
+        "radiobutton_image"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-13",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-14",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-15",
+      "controls": [
+        "edit_houghpeaks",
+        "edit_houghthreshold",
+        "edit_fillgap",
+        "edit_minlength"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-16",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-17",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "IN-18",
+      "controls": [
+        "pushbutton_preview"
+      ],
+      "evidence": [
+        "tests/numerical/test_nodes.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_hough.py",
+        "tests/numerical/test_sprint16_hough.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-01",
+      "controls": [
+        "checkbox_tracemap"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-02",
+      "controls": [
+        "checkbox_shownodes"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-03",
+      "controls": [
+        "checkbox_tracemap"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-04",
+      "controls": [
+        "checkbox_tracemaplength"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-05",
+      "controls": [
+        "checkbox_segmentmaplength"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-06",
+      "controls": [
+        "checkbox_segmentmapstrike"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-07",
+      "controls": [
+        "checkbox_intensitymap"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-08",
+      "controls": [
+        "checkbox_densitymap"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-09",
+      "controls": [
+        "checkbox_showcircles",
+        "edit_numscancircles"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-10",
+      "controls": [
+        "checkbox_intensitymap"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-11",
+      "controls": [
+        "checkbox_sliptendency"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-12",
+      "controls": [
+        "checkbox_dilationtendency"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-13",
+      "controls": [
+        "checkbox_fracsuscep"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-14",
+      "controls": [
+        "checkbox_CSF"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-15",
+      "controls": [
+        "edit_sigma1",
+        "edit_sigma2",
+        "edit_thetasigma1",
+        "edit_C0",
+        "edit_Pf",
+        "edit_mu"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-16",
+      "controls": [
+        "checkbox_sliptendency"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-17",
+      "controls": [
+        "checkbox_sliptendency"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "MAP-18",
+      "controls": [
+        "checkbox_intensitymap",
+        "checkbox_densitymap"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/numerical/test_circular.py",
+        "tests/numerical/test_stability.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/visual/test_sprint7_figures.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-01",
+      "controls": [
+        "checkbox_histolength"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-02",
+      "controls": [
+        "checkbox_histolength",
+        "popupmenu_histolengthbins"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-03",
+      "controls": [
+        "checkbox_logloglength"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-04",
+      "controls": [
+        "checkbox_logloglength"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-05",
+      "controls": [
+        "checkbox_censor"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-06",
+      "controls": [
+        "checkbox_crossplot"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-07",
+      "controls": [
+        "checkbox_mle"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-08",
+      "controls": [
+        "checkbox_mle"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-09",
+      "controls": [
+        "checkbox_mle"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-10",
+      "controls": [
+        "edit_lc",
+        "edit_uc"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-11",
+      "controls": [
+        "checkbox_mle"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-12",
+      "controls": [
+        "checkbox_mle"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-13",
+      "controls": [
+        "checkbox_blocksize"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-14",
+      "controls": [
+        "checkbox_blocksize"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-15",
+      "controls": [
+        "checkbox_seglenvariogram"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "LEN-16",
+      "controls": [
+        "checkbox_histolength"
+      ],
+      "evidence": [
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_mle.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_variogram.py",
+        "tests/visual/test_sprint4_figures.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "ANG-01",
+      "controls": [
+        "checkbox_histoangle",
+        "popupmenu_histoanglebins"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "ANG-02",
+      "controls": [
+        "checkbox_rose"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "ANG-03",
+      "controls": [
+        "popupmenu_rosebins"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "ANG-04",
+      "controls": [
+        "checkbox_roselengthweighted"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "ANG-05",
+      "controls": [
+        "checkbox_showrosemean"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "ANG-06",
+      "controls": [
+        "checkbox_rosecolour"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "ANG-07",
+      "controls": [
+        "edit_degfromnorth"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "ANG-08",
+      "controls": [
+        "pushbutton_flipx",
+        "pushbutton_flipy"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "ANG-09",
+      "controls": [
+        "checkbox_rose"
+      ],
+      "evidence": [
+        "tests/numerical/test_angles.py",
+        "tests/visual/test_sprint3_figures.py",
+        "tests/gui/test_main_window.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-01",
+      "controls": [
+        "checkbox_triangle"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-02",
+      "controls": [
+        "edit_numpixelsItoY"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-03",
+      "controls": [
+        "checkbox_triangle"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-04",
+      "controls": [
+        "checkbox_triangle"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-05",
+      "controls": [
+        "checkbox_triangle"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-06",
+      "controls": [
+        "edit_numblocksmap"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-07",
+      "controls": [
+        "checkbox_triangle"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-08",
+      "controls": [
+        "checkbox_cracktensor"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-09",
+      "controls": [
+        "checkbox_permellipse"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-10",
+      "controls": [
+        "radiobutton_fixedaperture",
+        "edit_fixedaperture"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-11",
+      "controls": [
+        "radiobutton_scaledaperture",
+        "edit_aperturefactor",
+        "edit_apertureexponent"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-12",
+      "controls": [
+        "edit_lambda"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "FLO-13",
+      "controls": [
+        "checkbox_permellipse"
+      ],
+      "evidence": [
+        "tests/numerical/test_connectivity.py",
+        "tests/numerical/test_tensors.py",
+        "tests/gui/test_sprint89_run.py",
+        "tests/gui/test_sprint1011_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-01",
+      "controls": [
+        "checkbox_wavelet"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-02",
+      "controls": [
+        "radiobutton_Morlet",
+        "radiobutton_Mexican"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-03",
+      "controls": [
+        "edit_aString"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-04",
+      "controls": [
+        "edit_LString"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-05",
+      "controls": [
+        "edit_DegString"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-06",
+      "controls": [
+        "checkbox_wavelet"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-07",
+      "controls": [
+        "checkbox_wavelet"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-08",
+      "controls": [
+        "checkbox_wavelet"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-09",
+      "controls": [
+        "checkbox_wavelet"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-10",
+      "controls": [
+        "checkbox_wavelet"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-11",
+      "controls": [
+        "checkbox_wavelet"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "WAV-12",
+      "controls": [
+        "pushbutton_flipx",
+        "pushbutton_flipy"
+      ],
+      "evidence": [
+        "tests/numerical/test_wavelets.py",
+        "tests/visual/test_wavelet_figures.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-01",
+      "controls": [
+        "pushbutton_selectgraphendpoints"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-02",
+      "controls": [
+        "pushbutton_selectgraphendpoints"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-03",
+      "controls": [
+        "checkbox_tracelengthgraphalong"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-04",
+      "controls": [
+        "checkbox_segmentlengthgraphalong"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-05",
+      "controls": [
+        "checkbox_segmentstrikegraphalong"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-06",
+      "controls": [
+        "checkbox_intensitygraphalong"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-07",
+      "controls": [
+        "checkbox_densitygraphalong"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-08",
+      "controls": [
+        "edit_numscancirclesgraph"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-09",
+      "controls": [
+        "pushbutton_selectgraphendpoints"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-10",
+      "controls": [
+        "checkbox_tracelengthgraphfrom"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-11",
+      "controls": [
+        "checkbox_segmentlengthgraphfrom"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-12",
+      "controls": [
+        "checkbox_segmentanglegraphfrom"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "GRA-13",
+      "controls": [
+        "pushbutton_run"
+      ],
+      "evidence": [
+        "tests/numerical/test_profiles.py",
+        "tests/visual/test_sprint1213_figures.py",
+        "tests/gui/test_sprint1213_run.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-01",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Correção técnica integrada às30 rotas; testes de validação contextual e Run concluídos. A reprodução nativa específica deste erro continua indisponível.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-02",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Validações integradas/testadas; decisões científicas individualizadas abaixo. Nenhum método novo foi aprovado por esta revisão técnica.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-03",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Cross-plot isolado integrado e testado. A função Lengths original foi executada na S16; o defeito do despacho do callback permanece evidência estática, sem alegar reprodução nativa desse callback.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-04",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Correção de paths dos três leitores testada; Browse/Cancel e caminho com espaços/acentos também verificados no desktop macOS na S16. Diferença técnica deliberada.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-05",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Correção científica aprovada e ativa; população e associação alinhadas testadas. Não há identidade declarada com a censura defeituosa original.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-06",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Campos geométricos completos e Hough nativo testados. As famílias posteriores também têm testes Run com origem em imagem; homologação visual global continua aberta.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-07",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Normalização, identidade e construção completas nos três leitores; correção de distância confirmada por captura real e testes analíticos.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-08",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Correção técnica de amplitudes/limites integrada/testada. Caso nativo negativo específico permanece indisponível; não se confunde derivação estática com execução MATLAB.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-09",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Subconjunto XML e integridade de escrita/limpeza concluídos e testados; captura nativa confirma saída inválida do parser textual no fixture. O port preserva os elementos aceitos sem aproximar curvas ou transformações.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-10",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Convenções preservadas e comparadas com execução nativa. Unificação não implementada nem requisito para reproduzir o fonte; limites de norte e avisos documentados.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-11",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: correção científica aprovada, implementada e ativa na GUI padrão; testes e referência nativa documentados. Homologação visual integral continua pendente, sem declaração de identidade com os resultados defeituosos do legado.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-12",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: implementado e ativo no Run padrão, com referências nativas preservadas e diferenças aprovadas explícitas. Dois casos completos1944×1944, Qt e barras responsivas verificados; homologação integral fica na Sprint16.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-13",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: implementado e testado no Run, com eventos do canvas, cancelamento, invalidação e snapshot imutável.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-14",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Q-14 aprovada e integrada ao Run padrão; Block size graphs gera as três figuras, BMP visível e três TXT de Lengths. Referências nativas preservadas e diferenças de raster/população/calibração declaradas.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-15",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: correção científica aprovada, implementada e ativa na GUI padrão; testes e referência nativa documentados. Homologação visual integral continua pendente, sem declaração de identidade com os resultados defeituosos do legado.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-16",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Integridade de exportação implementada/testada; limitação de atomicidade por arquivo explicitada na documentação.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-17",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: correção científica aprovada, implementada, testada e ativa no Run padrão. Comprimentos preservam a convenção legada aceita. Comparações de dados, paletas, arquivos e calibração visual registradas; homologação visual integral permanece na auditoria final.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-18",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Auditoria das rotas e exportadores concluída: PNG/TXT/BMP indicados corretamente, sem promessa de TIFF nos resultados da GUI. TIFF restrito à ferramenta explícita de preparação.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-19",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Destinação concluída; limitações dos exemplos/experimentos documentadas, sem simular recursos científicos ausentes.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-20",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Contagem finita Maps/Graphs e normalização P20 aprovadas e ativas. S16 acrescenta chamada Maps original real e TXT/capturas; resultados defeituosos permanecem preservados, sem declarar identidade com o método corrigido.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "Q-21",
+      "controls": [],
+      "evidence": [
+        "docs/parity/divergences.md"
+      ],
+      "status": "Estado: Invalidação integrada para TXT/SVG/Hough, escala e perfil; resultados obsoletos impedidos de publicar. Testes de revisão/stamp e seis abas concluídos.",
+      "functional": "decision reviewed",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "EXP-01",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_execution_contract.py",
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_wavelets.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "EXP-02",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_execution_contract.py",
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_wavelets.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "EXP-03",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_execution_contract.py",
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_wavelets.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "EXP-04",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_execution_contract.py",
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_wavelets.py",
+        "tests/reference/sprint16/all-outputs/validation.json"
+      ],
+      "status": "S16: implementação/integração auditadas; 30 rotas disponíveis. Paridade numérica, visual e de arquivos avaliadas separadamente; sem homologação visual geral.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "EXP-05",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_execution_contract.py",
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_wavelets.py"
+      ],
+      "status": "Destinação auditada: legado/extensão fora da GUI2.8; nenhuma saída obrigatória omitida por isso.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "EXP-06",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_execution_contract.py",
+        "tests/numerical/test_lengths.py",
+        "tests/numerical/test_svg.py",
+        "tests/numerical/test_blocks.py",
+        "tests/numerical/test_wavelets.py"
+      ],
+      "status": "Destinação auditada: legado/extensão fora da GUI2.8; nenhuma saída obrigatória omitida por isso.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-01",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-02",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-03",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-04",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-05",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-06",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-07",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-08",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-09",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-10",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-11",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-12",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-13",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-14",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-15",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-16",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-17",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-18",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    },
+    {
+      "id": "AUX-19",
+      "controls": [],
+      "evidence": [
+        "tests/numerical/test_auxiliary.py",
+        "tests/gui/test_sprint1415_run.py",
+        "tests/reference/test_sprint1415_reference.py",
+        "docs/parity/legacy.md"
+      ],
+      "status": "Destinação auditada na S16; biblioteca/ferramenta ou legado explicitamente classificado, sem novos controles GUI.",
+      "functional": "audited",
+      "numeric": "See family reports and accepted Q differences",
+      "visual": "Not homologated across all contexts",
+      "files": "See output-contract.json; schema/order/atomicity regression suite"
+    }
+  ]
+}

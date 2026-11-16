@@ -1,0 +1,428 @@
+{
+  "scope": "Analytic cases vs static predicate translation; not native MATLAB results.",
+  "approval": {
+    "date": "2026-11-14",
+    "user": "Corrigir a contagem geométrica",
+    "decision": "Finite closed segment: distinct circle points per segment; tangent=1, boundary endpoints included in n, strict interior m."
+  },
+  "source": "fracpaq-matlab/guiFracPaQ2Dpattern.m",
+  "source_sha256": "1025efa999545f07abfbc91346d25ed806730bf942645f2de9bbbda8dac123ff",
+  "cases": [
+    {
+      "id": "circle_horizontal_0",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            -2,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 0,
+        "m": 0,
+        "P21": 0.0,
+        "P20": 0.0
+      },
+      "corrected": {
+        "n": 2,
+        "m": 0,
+        "P21": 0.5,
+        "P20": 0.0
+      }
+    },
+    {
+      "id": "circle_vertical_0",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            0,
+            -2
+          ],
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 0,
+        "m": 0,
+        "P21": 0.0,
+        "P20": 0.0
+      },
+      "corrected": {
+        "n": 2,
+        "m": 0,
+        "P21": 0.5,
+        "P20": 0.0
+      }
+    },
+    {
+      "id": "circle_oblique_0",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            -2,
+            -2
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 2,
+        "m": 0,
+        "P21": 0.5,
+        "P20": 0.0
+      },
+      "corrected": {
+        "n": 2,
+        "m": 0,
+        "P21": 0.5,
+        "P20": 0.0
+      }
+    },
+    {
+      "id": "circle_internal_0",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            -0.5,
+            0
+          ],
+          [
+            0.5,
+            0
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 0,
+        "m": 2,
+        "P21": 0.0,
+        "P20": 0.3183098861837907
+      },
+      "corrected": {
+        "n": 0,
+        "m": 2,
+        "P21": 0.0,
+        "P20": 0.3183098861837907
+      }
+    },
+    {
+      "id": "circle_one_inside_0",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 1,
+        "m": 1,
+        "P21": 0.25,
+        "P20": 0.15915494309189535
+      },
+      "corrected": {
+        "n": 1,
+        "m": 1,
+        "P21": 0.25,
+        "P20": 0.15915494309189535
+      }
+    },
+    {
+      "id": "circle_outside_0",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 0,
+        "m": 0,
+        "P21": 0.0,
+        "P20": 0.0
+      },
+      "corrected": {
+        "n": 0,
+        "m": 0,
+        "P21": 0.0,
+        "P20": 0.0
+      }
+    },
+    {
+      "id": "circle_horizontal_7",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            5,
+            -11
+          ],
+          [
+            9,
+            -11
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 0,
+        "m": 0,
+        "P21": 0.0,
+        "P20": 0.0
+      },
+      "corrected": {
+        "n": 2,
+        "m": 0,
+        "P21": 0.5,
+        "P20": 0.0
+      }
+    },
+    {
+      "id": "circle_vertical_7",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            7,
+            -13
+          ],
+          [
+            7,
+            -9
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 0,
+        "m": 0,
+        "P21": 0.0,
+        "P20": 0.0
+      },
+      "corrected": {
+        "n": 2,
+        "m": 0,
+        "P21": 0.5,
+        "P20": 0.0
+      }
+    },
+    {
+      "id": "circle_oblique_7",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            5,
+            -13
+          ],
+          [
+            9,
+            -9
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 2,
+        "m": 0,
+        "P21": 0.5,
+        "P20": 0.0
+      },
+      "corrected": {
+        "n": 2,
+        "m": 0,
+        "P21": 0.5,
+        "P20": 0.0
+      }
+    },
+    {
+      "id": "circle_internal_7",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            6.5,
+            -11
+          ],
+          [
+            7.5,
+            -11
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 0,
+        "m": 2,
+        "P21": 0.0,
+        "P20": 0.3183098861837907
+      },
+      "corrected": {
+        "n": 0,
+        "m": 2,
+        "P21": 0.0,
+        "P20": 0.3183098861837907
+      }
+    },
+    {
+      "id": "circle_one_inside_7",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            7,
+            -11
+          ],
+          [
+            9,
+            -11
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 1,
+        "m": 1,
+        "P21": 0.25,
+        "P20": 0.15915494309189535
+      },
+      "corrected": {
+        "n": 1,
+        "m": 1,
+        "P21": 0.25,
+        "P20": 0.15915494309189535
+      }
+    },
+    {
+      "id": "circle_outside_7",
+      "input": {
+        "centre": [
+          7,
+          -11
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            9,
+            -9
+          ],
+          [
+            10,
+            -8
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 0,
+        "m": 0,
+        "P21": 0.0,
+        "P20": 0.0
+      },
+      "corrected": {
+        "n": 0,
+        "m": 0,
+        "P21": 0.0,
+        "P20": 0.0
+      }
+    },
+    {
+      "id": "circle_tangent",
+      "input": {
+        "centre": [
+          0,
+          0
+        ],
+        "radius": 1,
+        "segment": [
+          [
+            -2,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      },
+      "legacy_static": {
+        "n": 0,
+        "m": 0,
+        "P21": 0.0,
+        "P20": 0.0
+      },
+      "corrected": {
+        "n": 1,
+        "m": 0,
+        "P21": 0.25,
+        "P20": 0.0
+      }
+    }
+  ]
+}

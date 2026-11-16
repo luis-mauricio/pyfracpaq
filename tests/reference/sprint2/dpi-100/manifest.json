@@ -1,0 +1,188 @@
+{
+  "scope": "Qt offscreen captures; not MATLAB reference or visual parity approval.",
+  "platform": "offscreen",
+  "qt_scale_factor": "1",
+  "device_pixel_ratio": 1.0,
+  "logical_size": [
+    1366,
+    768
+  ],
+  "font": "Arial",
+  "input": "tests/fixtures/nodes/mixed.txt",
+  "input_sha256": "63b5d3d2d096b6831a58189a2ef36ef93a34f05ae9b86e396ed4e730abe8cf3a",
+  "captures": [
+    {
+      "state": "initial",
+      "path": "initial.png",
+      "sha256": "9b1b571d07bf15d3ec195af9da0229d6af2b821f388115b46745f479196a7801",
+      "raster_size": [
+        1366,
+        768
+      ]
+    },
+    {
+      "state": "preview",
+      "path": "preview.png",
+      "sha256": "883247bf11e220ab0f13c78c69af60b6fac21e8904e7454549db93b6afdeb572",
+      "raster_size": [
+        1366,
+        768
+      ]
+    },
+    {
+      "state": "maps",
+      "path": "maps.png",
+      "sha256": "883247bf11e220ab0f13c78c69af60b6fac21e8904e7454549db93b6afdeb572",
+      "raster_size": [
+        1366,
+        768
+      ]
+    },
+    {
+      "state": "lengths",
+      "path": "lengths.png",
+      "sha256": "99ba7ab530f2c4b74cd175303bcc2ea5dbd22a388c45d23b9b33b7ddec2c80ed",
+      "raster_size": [
+        1366,
+        768
+      ]
+    },
+    {
+      "state": "angles",
+      "path": "angles.png",
+      "sha256": "70413a913ef8dc6c9df231d66afbe9b1743cc3d866367ccad38584c1049c33db",
+      "raster_size": [
+        1366,
+        768
+      ]
+    },
+    {
+      "state": "fluid",
+      "path": "fluid.png",
+      "sha256": "bdc831ff50d363fd6899fd3b6fa084b6e87784bce89c8c88e46d4295b454c3bc",
+      "raster_size": [
+        1366,
+        768
+      ]
+    },
+    {
+      "state": "wavelets",
+      "path": "wavelets.png",
+      "sha256": "201db29a119254385e89a7ac0bc1cf1122eaf7adf8929104a0d3ac6fd4d8732b",
+      "raster_size": [
+        1366,
+        768
+      ]
+    },
+    {
+      "state": "graphs",
+      "path": "graphs.png",
+      "sha256": "8438e4da01738b31aee781e0d9ecd94f7e78cdf01c9ca1a45437d50ea4970e71",
+      "raster_size": [
+        1366,
+        768
+      ]
+    }
+  ],
+  "text_fit_violations": [],
+  "focus_check": {
+    "control": "edit_FilenameTag",
+    "has_focus": true
+  },
+  "macro_geometry": {
+    "axes_logo": [
+      1094,
+      656,
+      239,
+      61
+    ],
+    "axes_icon": [
+      807,
+      7,
+      46,
+      53
+    ],
+    "uibgTabMaps": [
+      860,
+      78,
+      500,
+      496
+    ],
+    "uipanel1": [
+      11,
+      11,
+      220,
+      463
+    ],
+    "uibuttongroup7": [
+      11,
+      480,
+      221,
+      244
+    ],
+    "uibgTabButtons": [
+      863,
+      1,
+      490,
+      70
+    ],
+    "text19": [
+      240,
+      5,
+      561,
+      48
+    ],
+    "text4": [
+      926,
+      626,
+      405,
+      24
+    ],
+    "text_message": [
+      9,
+      732,
+      848,
+      25
+    ],
+    "text55": [
+      864,
+      584,
+      159,
+      26
+    ],
+    "edit_FilenameTag": [
+      1032,
+      583,
+      72,
+      25
+    ],
+    "pushbutton_run": [
+      865,
+      654,
+      95,
+      61
+    ],
+    "pushbutton_exit": [
+      973,
+      654,
+      95,
+      61
+    ]
+  },
+  "macro_position_deviation_pixels": {
+    "axes_logo": 0,
+    "axes_icon": 0,
+    "uibgTabMaps": 0,
+    "uipanel1": 0,
+    "uibuttongroup7": 0,
+    "uibgTabButtons": 0,
+    "text19": 0,
+    "text4": 0,
+    "text_message": 0,
+    "text55": 0,
+    "edit_FilenameTag": 0,
+    "pushbutton_run": 0,
+    "pushbutton_exit": 0
+  },
+  "reference_limit": "Macro rectangles follow FIG normalized positions with integer rounding. Nested forms reflow and are not claimed to meet MATLAB pixel parity."
+}

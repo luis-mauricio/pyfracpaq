@@ -1,0 +1,19 @@
+{
+  "origin": "Project-authored analytical raster, created for Sprints 10/11.",
+  "license": "MIT (LICENSE at project root)",
+  "generator": "scripts/sprint1011_reference.py:network_image",
+  "path": "tests/fixtures/images/tensor_network.tif",
+  "sha256": "583c94c350773223146935b880d762515818e7abab585d31ff156c91d8715bf3",
+  "shape_yx": [
+    48,
+    64
+  ],
+  "dtype": "uint8",
+  "mode": "L",
+  "black_pixels_zero_based": [
+    "row 12, columns 5..58",
+    "row 34, columns 5..58",
+    "column 44, rows 4..43"
+  ],
+  "role": "Nonzero trace-envelope area after Hough, unlike single-row fixtures."
+}

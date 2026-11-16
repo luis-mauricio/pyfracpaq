@@ -1,0 +1,11 @@
+# Resolvido em CPython 3.13.18 / macOS arm64; ver docs/decisions/0001-environment.md.
+-r requirements.txt
+
+iniconfig==2.3.1
+pluggy==1.7.0
+pygments==2.21.0
+pypdf==7.1.0
+pytest==9.2.0
+pytest-qt==4.5.0
+setuptools==84.2.1
+typing-extensions==4.16.0

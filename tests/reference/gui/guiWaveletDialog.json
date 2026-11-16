@@ -1,0 +1,697 @@
+{
+  "schema_version": 1,
+  "source": "fracpaq-matlab/guiWaveletDialog.fig",
+  "source_sha256": "178487fd76b4bddf9babaef4a2b68d400ac397f60855d0c26361972a8786c687",
+  "coordinate_convention": "MATLAB: bottom-left; normalized to parent. Figure rectangles compose parent rectangles, without native panel insets.",
+  "missing_properties": "Não salvas: dependem dos defaults MATLAB. Não inferir valores como se estivessem no FIG.",
+  "object_counts": {
+    "figure": 1,
+    "uicontrol": 12,
+    "uipanel": 1
+  },
+  "objects": [
+    {
+      "tag": "figure1",
+      "type": "figure",
+      "parent": null,
+      "saved_properties": {
+        "PaperUnits": "inches",
+        "Units": "characters",
+        "Position": [
+          181.0,
+          110.46666666666667,
+          45.66666666666666,
+          18.066666666666663
+        ],
+        "Visible": "on",
+        "Color": [
+          0.94,
+          0.94,
+          0.94
+        ],
+        "FileName": "/Users/gmi522/Dropbox/FracPaQ/version Next/guiWaveletDialog.fig",
+        "IntegerHandle": "off",
+        "MenuBar": "none",
+        "Name": "FracPaQ2D - Wavelets",
+        "NumberTitle": "off",
+        "Tag": "figure1",
+        "Resize": "off",
+        "PaperPosition": [
+          0.25,
+          2.5,
+          8.0,
+          6.0
+        ],
+        "PaperSize": [
+          8.5,
+          11.0
+        ],
+        "PaperSizeMode": "auto",
+        "PaperType": "usletter",
+        "PaperTypeMode": "auto",
+        "PaperUnitsMode": "auto",
+        "ScreenPixelsPerInchMode": "manual",
+        "HandleVisibility": "callback",
+        "ApplicationData": {
+          "GUIDEOptions": {
+            "active_h": [],
+            "taginfo": {
+              "figure": 2,
+              "text": 7,
+              "pushbutton": 3,
+              "edit": 4,
+              "uipanel": 2,
+              "radiobutton": 3
+            },
+            "override": 0,
+            "release": [],
+            "resize": "none",
+            "accessibility": "callback",
+            "mfile": 1,
+            "callbacks": 1,
+            "singleton": 1,
+            "syscolorfig": 1,
+            "blocking": 0,
+            "lastSavedFile": "/Users/gmi522/Dropbox/FracPaQ/version Next/guiWaveletDialog.m",
+            "lastFilename": "/Users/gmi522/Dropbox/FracPaQ/version Next/guiWaveletDialog.fig"
+          },
+          "lastValidTag": "figure1"
+        }
+      },
+      "normalized_figure_rect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "opening_normalized_figure_rect": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "tag": "edit_aString",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "HorizontalAlignment": "center",
+        "String": "2 4 8 16",
+        "Style": "edit",
+        "Position": [
+          28.833333333333332,
+          13.466666666666667,
+          15.499999999999996,
+          2.0666666666666664
+        ],
+        "Callback": {
+          "matlabroot": "/Applications/MATLAB_R2016a.app",
+          "separator": "/",
+          "sentinel": "@",
+          "function_handle": {
+            "function": "sf%0@(hObject,eventdata)guiWaveletDialog('edit_aString_Callback',hObject,eventdata,guidata(hObject))",
+            "type": "anonymous",
+            "file": [],
+            "workspace": [
+              [
+                "MCOS",
+                "function_handle_workspace",
+                [
+                  3707764736,
+                  2,
+                  1,
+                  1,
+                  1,
+                  1
+                ]
+              ]
+            ],
+            "within_file_path": "__empty_context_function"
+          }
+        },
+        "Children": [],
+        "CreateFcn": {
+          "matlabroot": "/Applications/MATLAB_R2016a.app",
+          "separator": "/",
+          "sentinel": "@",
+          "function_handle": {
+            "function": "sf%0@(hObject,eventdata)guiWaveletDialog('edit_aString_CreateFcn',hObject,eventdata,guidata(hObject))",
+            "type": "anonymous",
+            "file": [],
+            "workspace": [
+              [
+                "MCOS",
+                "function_handle_workspace",
+                [
+                  3707764736,
+                  2,
+                  1,
+                  1,
+                  2,
+                  1
+                ]
+              ]
+            ],
+            "within_file_path": "__empty_context_function"
+          }
+        },
+        "Tag": "edit_aString",
+        "ApplicationData": {
+          "lastValidTag": "edit_aString"
+        },
+        "FontSize": 12
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "text2",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "HorizontalAlignment": "left",
+        "String": "List of a-values (integers)",
+        "Style": "text",
+        "Position": [
+          1.4285714285714284,
+          13.133333333333333,
+          27.285714285714285,
+          2.0666666666666664
+        ],
+        "Children": [],
+        "CreateFcn": [],
+        "Tag": "text2",
+        "ApplicationData": {
+          "lastValidTag": "text2"
+        },
+        "FontSize": 12
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "text3",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "HorizontalAlignment": "left",
+        "String": "Angular increment (degrees)",
+        "Style": "text",
+        "Position": [
+          1.5,
+          8.6,
+          31.83333333333333,
+          2.0
+        ],
+        "Children": [],
+        "ButtonDownFcn": [],
+        "CreateFcn": [],
+        "DeleteFcn": [],
+        "Tag": "text3",
+        "ApplicationData": {
+          "lastValidTag": "text3"
+        },
+        "FontSize": 12
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "uipanel1",
+      "type": "uipanel",
+      "parent": "figure1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "BorderType": "beveledin",
+        "Title": "Wavelet type",
+        "Position": [
+          0.8333333333333333,
+          2.3333333333333335,
+          24.166666666666664,
+          5.866666666666665
+        ],
+        "Tag": "uipanel1",
+        "ApplicationData": {
+          "lastValidTag": "uipanel1"
+        },
+        "FontSize": 13
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "radiobutton_Morlet",
+      "type": "uicontrol",
+      "parent": "uipanel1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "String": "Morlet",
+        "Style": "radiobutton",
+        "Value": 1,
+        "Position": [
+          2.0,
+          2.7333333333333334,
+          15.5,
+          1.5333333333333332
+        ],
+        "Callback": {
+          "matlabroot": "/Applications/MATLAB_R2016a.app",
+          "separator": "/",
+          "sentinel": "@",
+          "function_handle": {
+            "function": "sf%0@(hObject,eventdata)guiWaveletDialog('radiobutton_Morlet_Callback',hObject,eventdata,guidata(hObject))",
+            "type": "anonymous",
+            "file": [],
+            "workspace": [
+              [
+                "MCOS",
+                "function_handle_workspace",
+                [
+                  3707764736,
+                  2,
+                  1,
+                  1,
+                  3,
+                  1
+                ]
+              ]
+            ],
+            "within_file_path": "__empty_context_function"
+          }
+        },
+        "Children": [],
+        "Tag": "radiobutton_Morlet",
+        "ApplicationData": {
+          "lastValidTag": "radiobutton_Morlet"
+        },
+        "FontSize": 12
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "radiobutton_Mexican",
+      "type": "uicontrol",
+      "parent": "uipanel1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "String": "Mexican Hat",
+        "Style": "radiobutton",
+        "Position": [
+          2.0,
+          0.8666666666666667,
+          20.166666666666664,
+          1.5333333333333332
+        ],
+        "Callback": {
+          "matlabroot": "/Applications/MATLAB_R2016a.app",
+          "separator": "/",
+          "sentinel": "@",
+          "function_handle": {
+            "function": "sf%0@(hObject,eventdata)guiWaveletDialog('radiobutton_Mexican_Callback',hObject,eventdata,guidata(hObject))",
+            "type": "anonymous",
+            "file": [],
+            "workspace": [
+              [
+                "MCOS",
+                "function_handle_workspace",
+                [
+                  3707764736,
+                  2,
+                  1,
+                  1,
+                  4,
+                  1
+                ]
+              ]
+            ],
+            "within_file_path": "__empty_context_function"
+          }
+        },
+        "Children": [],
+        "Tag": "radiobutton_Mexican",
+        "ApplicationData": {
+          "lastValidTag": "radiobutton_Mexican"
+        },
+        "FontSize": 12
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "text4",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "HorizontalAlignment": "center",
+        "String": "Wavelet Analysis with FracPaQ",
+        "Style": "text",
+        "Position": [
+          1.0,
+          16.066666666666666,
+          43.285714285714285,
+          1.533333333333335
+        ],
+        "Children": [],
+        "Tag": "text4",
+        "ApplicationData": {
+          "lastValidTag": "text4"
+        },
+        "FontSize": 16,
+        "FontWeight": "bold"
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "text5",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "HorizontalAlignment": "left",
+        "String": "List of L-values (integers)",
+        "Style": "text",
+        "Position": [
+          1.4285714285714284,
+          10.866666666666667,
+          27.285714285714285,
+          2.0666666666666664
+        ],
+        "Children": [],
+        "ButtonDownFcn": [],
+        "CreateFcn": [],
+        "DeleteFcn": [],
+        "Tag": "text5",
+        "ApplicationData": {
+          "lastValidTag": "text5"
+        },
+        "FontSize": 12
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "edit_LString",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "HorizontalAlignment": "center",
+        "String": "2 4 8 16",
+        "Style": "edit",
+        "Position": [
+          28.833333333333332,
+          11.2,
+          15.499999999999996,
+          2.0666666666666664
+        ],
+        "Callback": {
+          "matlabroot": "/Applications/MATLAB_R2016a.app",
+          "separator": "/",
+          "sentinel": "@",
+          "function_handle": {
+            "function": "sf%0@(hObject,eventdata)guiWaveletDialog('edit_LString_Callback',hObject,eventdata,guidata(hObject))",
+            "type": "anonymous",
+            "file": [],
+            "workspace": [
+              [
+                "MCOS",
+                "function_handle_workspace",
+                [
+                  3707764736,
+                  2,
+                  1,
+                  1,
+                  5,
+                  1
+                ]
+              ]
+            ],
+            "within_file_path": "__empty_context_function"
+          }
+        },
+        "Children": [],
+        "ButtonDownFcn": [],
+        "CreateFcn": {
+          "matlabroot": "/Applications/MATLAB_R2016a.app",
+          "separator": "/",
+          "sentinel": "@",
+          "function_handle": {
+            "function": "sf%0@(hObject,eventdata)guiWaveletDialog('edit_LString_CreateFcn',hObject,eventdata,guidata(hObject))",
+            "type": "anonymous",
+            "file": [],
+            "workspace": [
+              [
+                "MCOS",
+                "function_handle_workspace",
+                [
+                  3707764736,
+                  2,
+                  1,
+                  1,
+                  6,
+                  1
+                ]
+              ]
+            ],
+            "within_file_path": "__empty_context_function"
+          }
+        },
+        "DeleteFcn": [],
+        "Tag": "edit_LString",
+        "KeyPressFcn": [],
+        "ApplicationData": {
+          "lastValidTag": "edit_LString"
+        },
+        "FontSize": 12
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "edit_DegString",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "HorizontalAlignment": "center",
+        "String": "20",
+        "Style": "edit",
+        "Position": [
+          37.83333333333333,
+          8.933333333333334,
+          6.500000000000007,
+          2.0666666666666664
+        ],
+        "Callback": {
+          "matlabroot": "/Applications/MATLAB_R2016a.app",
+          "separator": "/",
+          "sentinel": "@",
+          "function_handle": {
+            "function": "sf%0@(hObject,eventdata)guiWaveletDialog('edit_DegString_Callback',hObject,eventdata,guidata(hObject))",
+            "type": "anonymous",
+            "file": [],
+            "workspace": [
+              [
+                "MCOS",
+                "function_handle_workspace",
+                [
+                  3707764736,
+                  2,
+                  1,
+                  1,
+                  7,
+                  1
+                ]
+              ]
+            ],
+            "within_file_path": "__empty_context_function"
+          }
+        },
+        "Children": [],
+        "ButtonDownFcn": [],
+        "CreateFcn": {
+          "matlabroot": "/Applications/MATLAB_R2016a.app",
+          "separator": "/",
+          "sentinel": "@",
+          "function_handle": {
+            "function": "sf%0@(hObject,eventdata)guiWaveletDialog('edit_DegString_CreateFcn',hObject,eventdata,guidata(hObject))",
+            "type": "anonymous",
+            "file": [],
+            "workspace": [
+              [
+                "MCOS",
+                "function_handle_workspace",
+                [
+                  3707764736,
+                  2,
+                  1,
+                  1,
+                  8,
+                  1
+                ]
+              ]
+            ],
+            "within_file_path": "__empty_context_function"
+          }
+        },
+        "DeleteFcn": [],
+        "Tag": "edit_DegString",
+        "KeyPressFcn": [],
+        "ApplicationData": {
+          "lastValidTag": "edit_DegString"
+        },
+        "FontSize": 12
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "pb_Run",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "String": "Run",
+        "Style": "pushbutton",
+        "Position": [
+          27.166666666666664,
+          4.933333333333334,
+          17.333333333333336,
+          3.0
+        ],
+        "Callback": {
+          "matlabroot": "/Applications/MATLAB_R2016a.app",
+          "separator": "/",
+          "sentinel": "@",
+          "function_handle": {
+            "function": "sf%0@(hObject,eventdata)guiWaveletDialog('pb_Run_Callback',hObject,eventdata,guidata(hObject))",
+            "type": "anonymous",
+            "file": [],
+            "workspace": [
+              [
+                "MCOS",
+                "function_handle_workspace",
+                [
+                  3707764736,
+                  2,
+                  1,
+                  1,
+                  9,
+                  1
+                ]
+              ]
+            ],
+            "within_file_path": "__empty_context_function"
+          }
+        },
+        "Children": [],
+        "CreateFcn": [],
+        "Tag": "pb_Run",
+        "ApplicationData": {
+          "lastValidTag": "pb_Run"
+        },
+        "FontSize": 13
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "pb_Cancel",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "String": "Cancel",
+        "Style": "pushbutton",
+        "Position": [
+          27.166666666666664,
+          2.0666666666666664,
+          17.333333333333336,
+          3.0
+        ],
+        "Callback": {
+          "matlabroot": "/Applications/MATLAB_R2016a.app",
+          "separator": "/",
+          "sentinel": "@",
+          "function_handle": {
+            "function": "sf%0@(hObject,eventdata)guiWaveletDialog('pb_Cancel_Callback',hObject,eventdata,guidata(hObject))",
+            "type": "anonymous",
+            "file": [],
+            "workspace": [
+              [
+                "MCOS",
+                "function_handle_workspace",
+                [
+                  3707764736,
+                  2,
+                  1,
+                  1,
+                  10,
+                  1
+                ]
+              ]
+            ],
+            "within_file_path": "__empty_context_function"
+          }
+        },
+        "Children": [],
+        "ButtonDownFcn": [],
+        "CreateFcn": [],
+        "DeleteFcn": [],
+        "Tag": "pb_Cancel",
+        "KeyPressFcn": [],
+        "ApplicationData": {
+          "lastValidTag": "pb_Cancel"
+        },
+        "FontSize": 13
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    },
+    {
+      "tag": "text_Message",
+      "type": "uicontrol",
+      "parent": "figure1",
+      "saved_properties": {
+        "FontUnits": "points",
+        "Units": "characters",
+        "HorizontalAlignment": "left",
+        "String": "Ready",
+        "Style": "text",
+        "Position": [
+          1.0,
+          0.4666666666666667,
+          43.285714285714285,
+          1.4
+        ],
+        "Children": [],
+        "Tag": "text_Message",
+        "ApplicationData": {
+          "lastValidTag": "text_Message"
+        },
+        "FontSize": 12
+      },
+      "normalized_figure_rect": null,
+      "opening_normalized_figure_rect": null
+    }
+  ]
+}

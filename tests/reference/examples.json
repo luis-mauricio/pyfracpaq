@@ -1,0 +1,143 @@
+[
+  {
+    "path": "fracpaq-matlab/IYXtest1_converted.txt",
+    "sha256": "1f93eb29a91638709db293f168d15f839ce02a149603b327cec0f0ada433efff",
+    "records": 13,
+    "delimiter": "TAB",
+    "coordinate_columns_min_max": [
+      4,
+      6
+    ],
+    "valid_numeric_pairs": true,
+    "tab_delimited_numeric_pairs": true,
+    "degenerate_trace_lines": [],
+    "direct_gui_txt": true,
+    "license": "MIT, fracpaq-matlab/LICENSE; atribuição aos FracPaQ Contributors, sem autoria de campo adicional presumida."
+  },
+  {
+    "path": "fracpaq-matlab/IYXtest2_converted.txt",
+    "sha256": "c25a8f966ca86aa10868d677b6a079737c3c102aab8485368700098e84d57382",
+    "records": 13,
+    "delimiter": "TAB",
+    "coordinate_columns_min_max": [
+      4,
+      6
+    ],
+    "valid_numeric_pairs": true,
+    "tab_delimited_numeric_pairs": true,
+    "degenerate_trace_lines": [],
+    "direct_gui_txt": true,
+    "license": "MIT, fracpaq-matlab/LICENSE; atribuição aos FracPaQ Contributors, sem autoria de campo adicional presumida."
+  },
+  {
+    "path": "fracpaq-matlab/map1_edit_converted.txt",
+    "sha256": "e3754807afbe03da1a88d11c2808555c25ad22ef58ab03f55e22c0dc8234cf56",
+    "records": 2123,
+    "delimiter": "TAB",
+    "coordinate_columns_min_max": [
+      4,
+      62
+    ],
+    "valid_numeric_pairs": true,
+    "tab_delimited_numeric_pairs": true,
+    "degenerate_trace_lines": [
+      1589,
+      1595,
+      1604
+    ],
+    "direct_gui_txt": false,
+    "license": "MIT, fracpaq-matlab/LICENSE; atribuição aos FracPaQ Contributors, sem autoria de campo adicional presumida."
+  },
+  {
+    "path": "fracpaq-matlab/map7_edit_converted.txt",
+    "sha256": "61292474ed0b0a5adb20b3efd8402e7edb303139c65f50e61dd764d78a066bce",
+    "records": 4092,
+    "delimiter": "TAB",
+    "coordinate_columns_min_max": [
+      4,
+      76
+    ],
+    "valid_numeric_pairs": true,
+    "tab_delimited_numeric_pairs": true,
+    "degenerate_trace_lines": [
+      2496,
+      3242
+    ],
+    "direct_gui_txt": false,
+    "license": "MIT, fracpaq-matlab/LICENSE; atribuição aos FracPaQ Contributors, sem autoria de campo adicional presumida."
+  },
+  {
+    "path": "fracpaq-matlab/Souter_Blue.txt",
+    "sha256": "33c60eac1bf2c9b11cb399ce6026af9ec9d4f6521156da9fdd2cae2baf6e376a",
+    "records": 2561,
+    "delimiter": "TAB",
+    "coordinate_columns_min_max": [
+      4,
+      36
+    ],
+    "valid_numeric_pairs": true,
+    "tab_delimited_numeric_pairs": true,
+    "degenerate_trace_lines": [],
+    "direct_gui_txt": true,
+    "license": "MIT, fracpaq-matlab/LICENSE; atribuição aos FracPaQ Contributors, sem autoria de campo adicional presumida."
+  },
+  {
+    "path": "fracpaq-matlab/souter_all_colour24378D.txt",
+    "sha256": "053b8169ef227693272ae1c39bbb52908155e2ff797488d054b88b28f9d24216",
+    "records": 2561,
+    "delimiter": "comma",
+    "coordinate_columns_min_max": [
+      4,
+      36
+    ],
+    "valid_numeric_pairs": true,
+    "tab_delimited_numeric_pairs": false,
+    "degenerate_trace_lines": [],
+    "direct_gui_txt": false,
+    "license": "MIT, fracpaq-matlab/LICENSE; atribuição aos FracPaQ Contributors, sem autoria de campo adicional presumida."
+  },
+  {
+    "path": "fracpaq-matlab/Macduff.tiff",
+    "sha256": "f518b2cfc3ede9347c91d8d321c109841bd700146f6ae84f0f1536a8baca3c0c",
+    "mode": "RGBA",
+    "size": [
+      256,
+      256
+    ],
+    "direct_gui_8bit_grayscale": false,
+    "license": "MIT, fracpaq-matlab/LICENSE; imagem fornecida no pacote."
+  },
+  {
+    "path": "fracpaq-matlab/MacduffBinary.tif",
+    "sha256": "3042478044a4266b90ee238886df55842316d7a21a15fdfe3419329c76cc03b2",
+    "mode": "L",
+    "size": [
+      256,
+      256
+    ],
+    "direct_gui_8bit_grayscale": true,
+    "license": "MIT, fracpaq-matlab/LICENSE; imagem fornecida no pacote."
+  },
+  {
+    "path": "fracpaq-matlab/Orkney1a.tiff",
+    "sha256": "7a6a1fb5df188f6aa95f197253f8d083dc363b45f8fa89c35b19bb3761bc2f41",
+    "mode": "RGBA",
+    "size": [
+      512,
+      512
+    ],
+    "direct_gui_8bit_grayscale": false,
+    "license": "MIT, fracpaq-matlab/LICENSE; imagem fornecida no pacote."
+  },
+  {
+    "path": "fracpaq-matlab/Orkney1aBinary.tif",
+    "sha256": "b1d9ee96581147b90f132ab5bcc3792df57cb8b8363126b9384f21d967db609d",
+    "mode": "L",
+    "size": [
+      512,
+      512
+    ],
+    "direct_gui_8bit_grayscale": true,
+    "license": "MIT, fracpaq-matlab/LICENSE; imagem fornecida no pacote."
+  }
+]

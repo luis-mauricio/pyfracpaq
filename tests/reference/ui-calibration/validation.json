@@ -1,0 +1,105 @@
+{
+  "date": "2026-11-14",
+  "scope": "Python UI fidelity correction; supplied manual/FIG references, native MATLAB parity pending.",
+  "current_captures": 40,
+  "captures": [
+    {
+      "directory": "dpi-100",
+      "logical_size": [
+        1250,
+        739
+      ],
+      "dpr": 1.0,
+      "captures": 8,
+      "text_fit_violations": 0,
+      "navigation_deviation_pixels": 0,
+      "manifest_sha256": "4727e2e317565dcc2b632f7c67bee5e73479b788da6161fdaaae417102a094c0"
+    },
+    {
+      "directory": "dpi-125",
+      "logical_size": [
+        1250,
+        739
+      ],
+      "dpr": 1.25,
+      "captures": 8,
+      "text_fit_violations": 0,
+      "navigation_deviation_pixels": 0,
+      "manifest_sha256": "8f719f0e1cb14a9188374170cb16d4a314c28b1eb389932eabb5456ac29f8662"
+    },
+    {
+      "directory": "dpi-150",
+      "logical_size": [
+        1250,
+        739
+      ],
+      "dpr": 1.5,
+      "captures": 8,
+      "text_fit_violations": 0,
+      "navigation_deviation_pixels": 0,
+      "manifest_sha256": "4bc81cb9641abea6f3b603679fec9e92045507a36d3971c14637f16c0d1d2ae7"
+    },
+    {
+      "directory": "dpi-200",
+      "logical_size": [
+        1250,
+        739
+      ],
+      "dpr": 2.0,
+      "captures": 8,
+      "text_fit_violations": 0,
+      "navigation_deviation_pixels": 0,
+      "manifest_sha256": "da7d6188b435fd87c52dfb839af03bb008b56750b30dd52d2483f1d9a1a6f485"
+    },
+    {
+      "directory": "minimum",
+      "logical_size": [
+        1000,
+        591
+      ],
+      "dpr": 1.0,
+      "captures": 8,
+      "text_fit_violations": 0,
+      "navigation_deviation_pixels": 0,
+      "manifest_sha256": "8735576cf090adc3bf63ed68d38c8d5dd03a936910aafb53ed0a079b3ce1356a"
+    }
+  ],
+  "before_python_captures": [
+    {
+      "path": "before-initial.png",
+      "sha256": "9b1b571d07bf15d3ec195af9da0229d6af2b821f388115b46745f479196a7801",
+      "scope": "Python UI before this correction; not MATLAB."
+    },
+    {
+      "path": "before-maps.png",
+      "sha256": "5e9bbe8635809f72c3753f99036a10fa9149c3f98d0306f2ec32050fc5f7304a",
+      "scope": "Python UI before this correction; not MATLAB."
+    }
+  ],
+  "reference_client_size": [
+    1250,
+    739
+  ],
+  "minimum_board_size": [
+    1000,
+    591
+  ],
+  "source": "tests/reference/gui/guiFracPaQ2D.json",
+  "source_sha256": "e9321e36905c4a7de743f8a099950c86f48ad5425031f252aaa9b48c1df0114f",
+  "ui_spec_sha256": "31fdfc5561303550564029b33d3416962f719f846685d328b0ef314a6a3933cb",
+  "original_files_unchanged": 164,
+  "tests": {
+    "tests": 384,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "new_tests": 8,
+  "pytest_xml_sha256": "b7ec6b0a7ecc5c6cc49869643da2dc114a31017cd9b57824da4cfb9b5d3ebf21",
+  "package": {
+    "filename": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "ec76d320957445ba6b2b39d18e82a4cca438dead1a3cf90683524feb27d4475c",
+    "gui_smoke_outside_root": true
+  },
+  "matlab_comparison": "pending"
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "name": "simple_converted.txt",
+    "native": "tests/reference/sprint16/native/exports/simple_converted.txt",
+    "native_sha256": "2473618af4820c9bceca63bb43de81654a0fde0095ef5ac4aafae04beeef2a59",
+    "python": "tests/reference/sprint5/inputs/simple_converted.txt",
+    "python_sha256": "556766e6eefecfcd80bd2a1e4355902642c44fff7ce37a42b6ccbb508368ed45",
+    "byte_equal": false,
+    "native_contains_nan": true,
+    "python_contains_nan": false,
+    "decision": "Q09 technical integrity correction under PRD: preserve all supported XML geometry, reject unsupported constructs, no global cleanup. Source results preserved as failures of valid geometry, not goldens to imitate."
+  },
+  {
+    "name": "multicolour_colourFF0000_converted.txt",
+    "native": "tests/reference/sprint16/native/exports/multicolour_colourFF0000_converted.txt",
+    "native_sha256": "2473618af4820c9bceca63bb43de81654a0fde0095ef5ac4aafae04beeef2a59",
+    "python": "tests/reference/sprint5/inputs/multicolour_colourFF0000_converted.txt",
+    "python_sha256": "2ed55ed6a1765ec54e1bf8b1c3604c7673f2473b58d067b3c522cd39c17b6dda",
+    "byte_equal": false,
+    "native_contains_nan": true,
+    "python_contains_nan": false,
+    "decision": "Q09 technical integrity correction under PRD: preserve all supported XML geometry, reject unsupported constructs, no global cleanup. Source results preserved as failures of valid geometry, not goldens to imitate."
+  }
+]

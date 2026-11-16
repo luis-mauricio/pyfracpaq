@@ -1,0 +1,97 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S16-04 — revisão dos sete casos</title><style>
+body{font:16px/1.5 system-ui,sans-serif;color:#172033;background:#f1f3f6;margin:0;padding:24px}main{max-width:1700px;margin:auto}
+section,header{background:white;border-radius:10px;padding:22px;margin:0 0 24px}h1,h2{line-height:1.2}a{color:#1459a5}nav a{display:inline-block;margin-right:18px}
+.controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:18px 0}button{padding:8px 12px;cursor:pointer}label{display:flex;align-items:center;gap:8px}
+.panes{display:flex;gap:18px}figure{margin:0;flex:1;min-width:0}figcaption{font-weight:700;margin:0 0 8px}.viewport{overflow:auto;border:1px solid #cbd1db;background:white;max-height:75vh}
+img{display:block;width:100%;max-width:none;height:auto}.single figure:nth-child(2){display:none}.single figure:first-child{flex-basis:100%}output{min-width:48px}
+@media(max-width:850px){body{padding:10px}.panes{flex-direction:column}}
+</style><main><header><h1>Revisão dos sete casos</h1><p>Os PNGs originais não foram alterados. Use o zoom ou a alternância para inspecionar os mesmos recortes, nas mesmas coordenadas.</p>
+<p>As notas SSIM pertencem às faixas completas da auditoria; não foram recalculadas nos recortes centrais. O valor de referência é 0,98.</p>
+<p><strong>Atenção ao P20:</strong> a faixa auditada contém parte do tick <code>0,08</code> do eixo Y, cuja escala muda com Q20. Esse trecho não pertence ao título. Em Graphs, também podem aparecer marcadores próximos ao topo.</p>
+<nav><a href="#case-1">1. Dilatação</a><a href="#case-2">2. Suscetibilidade de fraturas</a><a href="#case-3">3. CSF</a><a href="#case-4">4. Graphs — intensidade P21</a><a href="#case-5">5. Graphs — densidade P20</a><a href="#case-6">6. Hough — vista lateral ρ</a><a href="#case-7">7. Hough — vista lateral θ</a></nav></header><section id="case-1" data-stem="01-dilatacao">
+<h2>1. Dilatação</h2><p>SSIM da região original: <strong>0.979338</strong> · referência: 0,980000</p>
+<div class="controls"><button data-mode="pair">Lado a lado</button><button data-mode="blink">Alternar MATLAB/Python</button>
+<button data-mode="matlab">Só MATLAB</button><button data-mode="python">Só Python</button>
+<button class="actual">Pixels originais (1:1)</button><button class="fit">Ajustar à tela</button>
+<label>Zoom <input type="range" min="25" max="200" value="100" step="25" class="zoom"><output>100%</output></label>
+<label><input type="checkbox" class="full"> Faixa original completa</label></div>
+<div class="panes"><figure><figcaption>MATLAB</figcaption><div class="viewport"><img class="native" src="01-dilatacao-matlab.png" alt="Dilatação: MATLAB"></div></figure>
+<figure><figcaption>Python</figcaption><div class="viewport"><img class="candidate" src="01-dilatacao-python.png" alt="Dilatação: Python"></div></figure></div>
+<p><a href="../../../../../tests/reference/sprint16/sd11a/native/FracPaQ2D_dilationtendencymap_SD11A.png">PNG MATLAB completo</a> · <a href="../../../../../tests/reference/sprint16/final/python/FracPaQ2D_dilationtendencymap_SD11A.png">PNG Python completo</a> · <a href="01-dilatacao-comparacao.png">Prancha comparativa</a></p>
+</section><section id="case-2" data-stem="02-suscetibilidade">
+<h2>2. Suscetibilidade de fraturas</h2><p>SSIM da região original: <strong>0.979891</strong> · referência: 0,980000</p>
+<div class="controls"><button data-mode="pair">Lado a lado</button><button data-mode="blink">Alternar MATLAB/Python</button>
+<button data-mode="matlab">Só MATLAB</button><button data-mode="python">Só Python</button>
+<button class="actual">Pixels originais (1:1)</button><button class="fit">Ajustar à tela</button>
+<label>Zoom <input type="range" min="25" max="200" value="100" step="25" class="zoom"><output>100%</output></label>
+<label><input type="checkbox" class="full"> Faixa original completa</label></div>
+<div class="panes"><figure><figcaption>MATLAB</figcaption><div class="viewport"><img class="native" src="02-suscetibilidade-matlab.png" alt="Suscetibilidade de fraturas: MATLAB"></div></figure>
+<figure><figcaption>Python</figcaption><div class="viewport"><img class="candidate" src="02-suscetibilidade-python.png" alt="Suscetibilidade de fraturas: Python"></div></figure></div>
+<p><a href="../../../../../tests/reference/sprint16/sd11a/native/FracPaQ2D_fracsuscepmap_SD11A.png">PNG MATLAB completo</a> · <a href="../../../../../tests/reference/sprint16/final/python/FracPaQ2D_fracsuscepmap_SD11A.png">PNG Python completo</a> · <a href="02-suscetibilidade-comparacao.png">Prancha comparativa</a></p>
+</section><section id="case-3" data-stem="03-csf">
+<h2>3. CSF</h2><p>SSIM da região original: <strong>0.976113</strong> · referência: 0,980000</p>
+<div class="controls"><button data-mode="pair">Lado a lado</button><button data-mode="blink">Alternar MATLAB/Python</button>
+<button data-mode="matlab">Só MATLAB</button><button data-mode="python">Só Python</button>
+<button class="actual">Pixels originais (1:1)</button><button class="fit">Ajustar à tela</button>
+<label>Zoom <input type="range" min="25" max="200" value="100" step="25" class="zoom"><output>100%</output></label>
+<label><input type="checkbox" class="full"> Faixa original completa</label></div>
+<div class="panes"><figure><figcaption>MATLAB</figcaption><div class="viewport"><img class="native" src="03-csf-matlab.png" alt="CSF: MATLAB"></div></figure>
+<figure><figcaption>Python</figcaption><div class="viewport"><img class="candidate" src="03-csf-python.png" alt="CSF: Python"></div></figure></div>
+<p><a href="../../../../../tests/reference/sprint16/sd11a/native/FracPaQ2D_CSFmap_SD11A.png">PNG MATLAB completo</a> · <a href="../../../../../tests/reference/sprint16/final/python/FracPaQ2D_CSFmap_SD11A.png">PNG Python completo</a> · <a href="03-csf-comparacao.png">Prancha comparativa</a></p>
+</section><section id="case-4" data-stem="04-p21">
+<h2>4. Graphs — intensidade P21</h2><p>SSIM da região original: <strong>0.972508</strong> · referência: 0,980000</p>
+<div class="controls"><button data-mode="pair">Lado a lado</button><button data-mode="blink">Alternar MATLAB/Python</button>
+<button data-mode="matlab">Só MATLAB</button><button data-mode="python">Só Python</button>
+<button class="actual">Pixels originais (1:1)</button><button class="fit">Ajustar à tela</button>
+<label>Zoom <input type="range" min="25" max="200" value="100" step="25" class="zoom"><output>100%</output></label>
+<label><input type="checkbox" class="full"> Faixa original completa</label></div>
+<div class="panes"><figure><figcaption>MATLAB</figcaption><div class="viewport"><img class="native" src="04-p21-matlab.png" alt="Graphs — intensidade P21: MATLAB"></div></figure>
+<figure><figcaption>Python</figcaption><div class="viewport"><img class="candidate" src="04-p21-python.png" alt="Graphs — intensidade P21: Python"></div></figure></div>
+<p><a href="../../../../../tests/reference/sprint16/sd11a/native/guiFracPaQ2D_intensityalonggraph_SD11A.png">PNG MATLAB completo</a> · <a href="../../../../../tests/reference/sprint16/final/python/guiFracPaQ2D_intensityalonggraph_SD11A.png">PNG Python completo</a> · <a href="04-p21-comparacao.png">Prancha comparativa</a></p>
+</section><section id="case-5" data-stem="05-p20">
+<h2>5. Graphs — densidade P20</h2><p>SSIM da região original: <strong>0.972114</strong> · referência: 0,980000</p>
+<div class="controls"><button data-mode="pair">Lado a lado</button><button data-mode="blink">Alternar MATLAB/Python</button>
+<button data-mode="matlab">Só MATLAB</button><button data-mode="python">Só Python</button>
+<button class="actual">Pixels originais (1:1)</button><button class="fit">Ajustar à tela</button>
+<label>Zoom <input type="range" min="25" max="200" value="100" step="25" class="zoom"><output>100%</output></label>
+<label><input type="checkbox" class="full"> Faixa original completa</label></div>
+<div class="panes"><figure><figcaption>MATLAB</figcaption><div class="viewport"><img class="native" src="05-p20-matlab.png" alt="Graphs — densidade P20: MATLAB"></div></figure>
+<figure><figcaption>Python</figcaption><div class="viewport"><img class="candidate" src="05-p20-python.png" alt="Graphs — densidade P20: Python"></div></figure></div>
+<p><a href="../../../../../tests/reference/sprint16/sd11a/native/guiFracPaQ2D_densityalonggraph_SD11A.png">PNG MATLAB completo</a> · <a href="../../../../../tests/reference/sprint16/final/python/guiFracPaQ2D_densityalonggraph_SD11A.png">PNG Python completo</a> · <a href="05-p20-comparacao.png">Prancha comparativa</a></p>
+</section><section id="case-6" data-stem="06-hough-rho">
+<h2>6. Hough — vista lateral ρ</h2><p>SSIM da região original: <strong>0.955917</strong> · referência: 0,980000</p>
+<div class="controls"><button data-mode="pair">Lado a lado</button><button data-mode="blink">Alternar MATLAB/Python</button>
+<button data-mode="matlab">Só MATLAB</button><button data-mode="python">Só Python</button>
+<button class="actual">Pixels originais (1:1)</button><button class="fit">Ajustar à tela</button>
+<label>Zoom <input type="range" min="25" max="200" value="100" step="25" class="zoom"><output>100%</output></label>
+<label><input type="checkbox" class="full"> Faixa original completa</label></div>
+<div class="panes"><figure><figcaption>MATLAB</figcaption><div class="viewport"><img class="native" src="06-hough-rho-matlab.png" alt="Hough — vista lateral ρ: MATLAB"></div></figure>
+<figure><figcaption>Python</figcaption><div class="viewport"><img class="candidate" src="06-hough-rho-python.png" alt="Hough — vista lateral ρ: Python"></div></figure></div>
+<p><a href="../../../../../tests/reference/sprint16/final/native-extra/FracPaQ2D_Houghstuff_extra.png">PNG MATLAB completo</a> · <a href="../../../../../tests/reference/sprint16/final/python-extra/FracPaQ2D_Houghstuff_extra.png">PNG Python completo</a> · <a href="06-hough-rho-comparacao.png">Prancha comparativa</a></p>
+</section><section id="case-7" data-stem="07-hough-theta">
+<h2>7. Hough — vista lateral θ</h2><p>SSIM da região original: <strong>0.937944</strong> · referência: 0,980000</p>
+<div class="controls"><button data-mode="pair">Lado a lado</button><button data-mode="blink">Alternar MATLAB/Python</button>
+<button data-mode="matlab">Só MATLAB</button><button data-mode="python">Só Python</button>
+<button class="actual">Pixels originais (1:1)</button><button class="fit">Ajustar à tela</button>
+<label>Zoom <input type="range" min="25" max="200" value="100" step="25" class="zoom"><output>100%</output></label>
+<label><input type="checkbox" class="full"> Faixa original completa</label></div>
+<div class="panes"><figure><figcaption>MATLAB</figcaption><div class="viewport"><img class="native" src="07-hough-theta-matlab.png" alt="Hough — vista lateral θ: MATLAB"></div></figure>
+<figure><figcaption>Python</figcaption><div class="viewport"><img class="candidate" src="07-hough-theta-python.png" alt="Hough — vista lateral θ: Python"></div></figure></div>
+<p><a href="../../../../../tests/reference/sprint16/final/native-extra/FracPaQ2D_Houghstuff_extra.png">PNG MATLAB completo</a> · <a href="../../../../../tests/reference/sprint16/final/python-extra/FracPaQ2D_Houghstuff_extra.png">PNG Python completo</a> · <a href="07-hough-theta-comparacao.png">Prancha comparativa</a></p>
+</section></main><script>
+document.querySelectorAll('section').forEach(section=>{
+ const panes=section.querySelector('.panes'),figs=section.querySelectorAll('figure'),views=section.querySelectorAll('.viewport');
+ const native=section.querySelector('.native'),candidate=section.querySelector('.candidate');let timer=null,mode='pair',blink=false,sync=false;
+ const source=kind=>section.dataset.stem+(section.querySelector('.full').checked?'-faixa-':'-')+kind+'.png';
+ const paint=()=>{native.src=source(mode==='python'||mode==='blink'&&blink?'python':'matlab');candidate.src=source('python');
+  figs[0].querySelector('figcaption').textContent=mode==='python'||mode==='blink'&&blink?'Python':'MATLAB';panes.classList.toggle('single',mode!=='pair');};
+ section.querySelectorAll('[data-mode]').forEach(button=>button.onclick=()=>{clearInterval(timer);mode=button.dataset.mode;blink=false;paint();
+  if(mode==='blink')timer=setInterval(()=>{blink=!blink;paint()},800);});
+ section.querySelector('.full').onchange=paint;
+ [native,candidate].forEach(im=>im.addEventListener('load',()=>{if(section.querySelector('output').textContent==='1:1')im.style.width=im.naturalWidth+'px';}));
+ section.querySelector('.actual').onclick=()=>{[native,candidate].forEach(im=>im.style.width=im.naturalWidth+'px');section.querySelector('output').textContent='1:1';};
+ section.querySelector('.fit').onclick=()=>{[native,candidate].forEach(im=>im.style.width='100%');section.querySelector('.zoom').value=100;section.querySelector('output').textContent='100%';};
+ section.querySelector('.zoom').oninput=e=>{section.querySelector('output').textContent=e.target.value+'%';[native,candidate].forEach(im=>im.style.width=e.target.value+'%');};
+ views.forEach((view,i)=>view.addEventListener('scroll',()=>{if(sync)return;sync=true;views[1-i].scrollLeft=view.scrollLeft;views[1-i].scrollTop=view.scrollTop;requestAnimationFrame(()=>sync=false);}));
+});</script></html>

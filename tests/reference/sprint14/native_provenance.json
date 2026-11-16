@@ -1,0 +1,141 @@
+{
+  "native_version": "MATLAB R2024b Update9",
+  "date": "2026-11-14",
+  "scripts": {
+    "scripts/capture_native_s1415.m": "e02eaa4e90b1d00eaeb7c65280ca145b8b56fa21d01b8ab21dd2100f354f408c",
+    "scripts/capture_native_s1415_details.m": "392b0fca3d8452fa7548556de398746c3a6b9ef312718d03dae555deedc10b21"
+  },
+  "original_files_sha256_verified": 164,
+  "extra_original_folder_files_preserved": [
+    {
+      "path": "FracPaQ2D_histosegmentlength_Run1.png",
+      "sha256": "40432818e85ebdfb2599d0d1bea58f557cf5992af2872442385fbe7a1ebed908"
+    },
+    {
+      "path": "FracPaQ2D_histotracelength_Run1.png",
+      "sha256": "99d26d3653cfe46c4c012e6de5c5729c8ea823cc367629df7d49653fdd3eb96f"
+    },
+    {
+      "path": "FracPaQ2D_segmentstrikemap_Run1.png",
+      "sha256": "f3c3d3e634a477f64c75c8f16c977d5f61ade54547996a2a76f6403a09f48266"
+    },
+    {
+      "path": "FracPaQ2D_tracelengthmap_Run1.png",
+      "sha256": "e94c17131fa2052be91e7fe3b7c44f830b5354f9d407f0503e0ea37686d557cf"
+    },
+    {
+      "path": "FracPaQ2D_tracemap_Run1.png",
+      "sha256": "781ac030cb77dabe45b557c0d59967455473ffdb68140f2339244af3d89db048"
+    },
+    {
+      "path": "FracPaQ2Dsegmentangleslengths_Run1.txt",
+      "sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7"
+    },
+    {
+      "path": "FracPaQ2Dsegmentlengths_Run1.txt",
+      "sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839"
+    },
+    {
+      "path": "FracPaQ2Dtracelengths_Run1.txt",
+      "sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "tests/reference/sprint14/native/cwt_arrays.mat",
+      "sha256": "497458c448a09d64f0f7bce97255611cb9dc9f69703a9ad6b47353542b26e1fb",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/details_mexican/FracPaQ2D_wavelet_traces.png",
+      "sha256": "1754a2a401f57c0205e2bd927377ce311dcdff0c924b8c3c569cb2a25b00a4c3",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/details_mexican/FracPaQ2Dwavelet_a2_details.png",
+      "sha256": "ec94a8f1624c0717200321d3d0e1f2d4faae9be1034b8d39ec7f13b333029e46",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/details_mexican/FracPaQ2Dwavelet_theta_a2.txt",
+      "sha256": "150d0150c96fe7b8abd15292f4f13cde3443d26514d5c7c0f9d761be2cbd43fc",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/details_morlet/FracPaQ2D_wavelet_traces.png",
+      "sha256": "8bc9acee630c23993bc000296543e6606ded99ea98317b095e3db8dc51b4abf0",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/details_morlet/FracPaQ2Dwavelet_a2_details.png",
+      "sha256": "9c2897fdb73c4f64403b4c258854af6d5d3d8a5f62a0c499c6d162681141ee9a",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/details_morlet/FracPaQ2Dwavelet_theta_a2.txt",
+      "sha256": "4e65238a04e1ce64f2d3944fe53f439b83748ca8bb0ac7c14a2df502dcfd28bc",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/gui_arrays.mat",
+      "sha256": "fc36d0f47b2e545ca706923948e86941cc74faf9855b1e324f7c07b236f227ed",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/mexican/FracPaQ2D_wavelet_traces.png",
+      "sha256": "bbfd0f50b6345667cb5e6a9410c948f89ad5ded3d0f7ad576d746efcd92519b0",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/mexican/FracPaQ2Dwavelet_a2_native_mexican.png",
+      "sha256": "31cd47040af4d23ca400b4b0647bca0ae2bd071b386423de6204a348cd5a412e",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/mexican/FracPaQ2Dwavelet_theta_a2.txt",
+      "sha256": "150d0150c96fe7b8abd15292f4f13cde3443d26514d5c7c0f9d761be2cbd43fc",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/morlet/FracPaQ2D_wavelet_traces.png",
+      "sha256": "7418b50169583535f843c4e9b28e3e1d85acd438855036eb58ac3745e48024da",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/morlet/FracPaQ2Dwavelet_a2_native_morlet.png",
+      "sha256": "91cbbd02ff75737dd15e511c61665bb3df503853164dea262a9bcc0d129daebf",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/morlet/FracPaQ2Dwavelet_theta_a2.txt",
+      "sha256": "4e65238a04e1ce64f2d3944fe53f439b83748ca8bb0ac7c14a2df502dcfd28bc",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/native_calls.json",
+      "sha256": "c1fd42b999bc6c5c54bcb0727ba27b6e5ef6992b335ae5f7ab939570f624dd6c",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/native_integrated_raster.png",
+      "sha256": "8fc39921bca679b89a003ae21ff72dc93eba9915cae0c7c327ec7ebd20209c89",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/rectangular/FracPaQ2D_wavelet_traces.png",
+      "sha256": "6acaca2a834eac86e1be4fc73425c50445d64e9b0611c62deb65b33b8bd7d3c9",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/step270/FracPaQ2D_wavelet_traces.png",
+      "sha256": "7ae0ca892f73b81b13d03ea33b1769e5d8acccaf8f83805bfa4ab3e18a0f5d78",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    },
+    {
+      "path": "tests/reference/sprint14/native/step40/FracPaQ2D_wavelet_traces.png",
+      "sha256": "7ae0ca892f73b81b13d03ea33b1769e5d8acccaf8f83805bfa4ab3e18a0f5d78",
+      "role": "Genuine MATLAB calls or supplied-script execution; provenance in capture scripts."
+    }
+  ],
+  "limitations": "Native wavelet2 square panels/arrays plus original integrated raster-only stage. Full integrated FFT not attributed to MATLAB; Python full runs are separate production evidence. Legacy cmocean pivot parser ignores requested levels; reference pivot palette has256 levels."
+}

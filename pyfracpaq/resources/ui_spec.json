@@ -1,0 +1,2196 @@
+{
+  "source": "fracpaq-matlab/guiFracPaQ2D.fig",
+  "source_sha256": "5963c82475aba99a08b0b4a381a7f3fe49db0cdf189bf2be1753a2fa54546388",
+  "objects": [
+    {
+      "tag": "figure_main",
+      "parent": null,
+      "type": "figure",
+      "Position": [
+        181.0,
+        36.60000000000003,
+        247.42857142857144,
+        49.26666666666667
+      ]
+    },
+    {
+      "tag": "axes_icon",
+      "parent": "figure_main",
+      "type": "axes",
+      "Position": [
+        0.5910181250352036,
+        0.9213358393269667,
+        0.03377393664129891,
+        0.06941632912024542
+      ],
+      "FontSize": 11
+    },
+    {
+      "tag": "axes_tracemap",
+      "parent": "figure_main",
+      "type": "axes",
+      "Position": [
+        0.1957050610063665,
+        0.0976821933661703,
+        0.430009390100494,
+        0.820411702643372
+      ],
+      "FontSize": 14
+    },
+    {
+      "tag": "axes_logo",
+      "parent": "figure_main",
+      "type": "axes",
+      "Position": [
+        0.8005391266111315,
+        0.06732229872862247,
+        0.17473696672222694,
+        0.0790230421826659
+      ],
+      "FontSize": 11
+    },
+    {
+      "tag": "text19",
+      "parent": "figure_main",
+      "type": "uicontrol",
+      "String": "Fracture Pattern Quantification",
+      "Style": "text",
+      "Position": [
+        0.17547236479451592,
+        0.9301775839890408,
+        0.4105646836504888,
+        0.06310872216375163
+      ],
+      "FontSize": 30,
+      "HorizontalAlignment": "center",
+      "FontWeight": "bold"
+    },
+    {
+      "tag": "uipanel1",
+      "parent": "figure_main",
+      "type": "uipanel",
+      "Title": "Input",
+      "Position": [
+        0.008129993735653247,
+        0.3823401660569003,
+        0.16124487575712265,
+        0.6028897074792434
+      ],
+      "FontSize": 16,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "text3",
+      "parent": "uipanel1",
+      "type": "uicontrol",
+      "String": "Filename",
+      "Style": "text",
+      "Position": [
+        0.04661016949152543,
+        0.8585773530300969,
+        0.3135593220338983,
+        0.07120914480304608
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "uibuttongroup1",
+      "parent": "uipanel1",
+      "type": "uitools.uibuttongroup",
+      "Title": "Input file type",
+      "Position": [
+        0.03389830508474577,
+        0.6653604467534603,
+        0.4618644067796609,
+        0.1913745766581859
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "radiobutton_node",
+      "parent": "uibuttongroup1",
+      "type": "uicontrol",
+      "String": "Node file",
+      "Style": "radiobutton",
+      "Value": 1,
+      "Position": [
+        0.1198214105886795,
+        0.13118823644913558,
+        0.8447863807213783,
+        0.3305012732893743
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "radiobutton_image",
+      "parent": "uibuttongroup1",
+      "type": "uicontrol",
+      "String": "Image file",
+      "Style": "radiobutton",
+      "Value": 0,
+      "Position": [
+        0.1198214105886795,
+        0.5047983714719068,
+        0.8714638453757377,
+        0.3305012732893744
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "uibuttongroup5",
+      "parent": "uipanel1",
+      "type": "uitools.uibuttongroup",
+      "Title": "Image file/Hough transform options",
+      "Position": [
+        0.03389830508474577,
+        0.28483657921218364,
+        0.9279661016949154,
+        0.35159515246503914
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "label_houghpeaks",
+      "parent": "uibuttongroup5",
+      "type": "uicontrol",
+      "String": "Number of Hough peaks",
+      "Style": "text",
+      "Position": [
+        0.050671290275334284,
+        0.6942314620974223,
+        0.7600693541300143,
+        0.17397895523293738
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "label_houghthreshold",
+      "parent": "uibuttongroup5",
+      "type": "uicontrol",
+      "String": "Hough threshold",
+      "Style": "text",
+      "Position": [
+        0.050671290275334284,
+        0.5051239020616207,
+        0.5531615855057326,
+        0.16641465283150547
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "label_fillgap",
+      "parent": "uibuttongroup5",
+      "type": "uicontrol",
+      "String": "Merge gaps less than",
+      "Style": "text",
+      "Position": [
+        0.050671290275334284,
+        0.295283416010558,
+        0.9374188700936843,
+        0.1664146528315053
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "label_minlength",
+      "parent": "uibuttongroup5",
+      "type": "uicontrol",
+      "String": "Discard lengths less than",
+      "Style": "text",
+      "Position": [
+        0.050671290275334284,
+        0.09665157238428959,
+        0.9458640851395729,
+        0.1664146528315054
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "edit_houghpeaks",
+      "parent": "uibuttongroup5",
+      "type": "uicontrol",
+      "String": "1000",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.7092591202586335,
+        0.7169243693017185,
+        0.25582822163400476,
+        0.16789995107632083
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "edit_houghthreshold",
+      "parent": "uibuttongroup5",
+      "type": "uicontrol",
+      "String": "0.33",
+      "Style": "edit",
+      "Enable": "off",
+      "Position": [
+        0.7092591202586335,
+        0.5126882044630533,
+        0.25582822163400476,
+        0.16789995107632083
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "edit_fillgap",
+      "parent": "uibuttongroup5",
+      "type": "uicontrol",
+      "String": "5",
+      "Style": "edit",
+      "Enable": "off",
+      "Position": [
+        0.7092591202586335,
+        0.3084520396243875,
+        0.25582822163400476,
+        0.16789995107632094
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "edit_minlength",
+      "parent": "uibuttongroup5",
+      "type": "uicontrol",
+      "String": "3",
+      "Style": "edit",
+      "Enable": "off",
+      "Position": [
+        0.7092591202586335,
+        0.10421587478572183,
+        0.25582822163400476,
+        0.16789995107632097
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "edit_filename",
+      "parent": "uipanel1",
+      "type": "uicontrol",
+      "String": "[no file selected]",
+      "Style": "edit",
+      "Enable": "off",
+      "Position": [
+        0.3050847457627119,
+        0.8808302107810484,
+        0.656779661016949,
+        0.053406858602284335
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "pushbutton_browse",
+      "parent": "uipanel1",
+      "type": "uicontrol",
+      "String": "Browse...",
+      "Style": "pushbutton",
+      "Position": [
+        0.5211864406779662,
+        0.6653604467534603,
+        0.44067796610169485,
+        0.16689643313213876
+      ],
+      "TooltipString": "Click here to browse for input files",
+      "FontSize": 13
+    },
+    {
+      "tag": "text13",
+      "parent": "uipanel1",
+      "type": "uicontrol",
+      "String": "Scaling (pixels/metre)",
+      "Style": "text",
+      "Position": [
+        0.06779661016949154,
+        0.20656862092720782,
+        0.5211864406779662,
+        0.05785743015247477
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "edit_scaling",
+      "parent": "uipanel1",
+      "type": "uicontrol",
+      "String": [],
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "on",
+      "Position": [
+        0.6273364061989619,
+        0.21156775129637514,
+        0.3277803989886161,
+        0.05674478726492724
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "pushbutton_flipy",
+      "parent": "uipanel1",
+      "type": "uicontrol",
+      "String": "Flip Y-axis",
+      "Style": "pushbutton",
+      "Enable": "off",
+      "Position": [
+        0.04312899986692316,
+        0.01405552596548484,
+        0.45716739858938554,
+        0.08180771519233647
+      ],
+      "FontSize": 13
+    },
+    {
+      "tag": "pushbutton_flipx",
+      "parent": "uipanel1",
+      "type": "uicontrol",
+      "String": "Flip X-axis",
+      "Style": "pushbutton",
+      "Enable": "off",
+      "Position": [
+        0.0423728813559322,
+        0.10013785987928332,
+        0.4576271186440678,
+        0.08233557367852189
+      ],
+      "FontSize": 13
+    },
+    {
+      "tag": "pushbutton_preview",
+      "parent": "uipanel1",
+      "type": "uicontrol",
+      "String": "Preview",
+      "Style": "pushbutton",
+      "Enable": "off",
+      "Position": [
+        0.5211864406779662,
+        0.015577000425666296,
+        0.44067796610169485,
+        0.1668964331321388
+      ],
+      "TooltipString": "Click here to view the selected input file",
+      "FontSize": 13
+    },
+    {
+      "tag": "uibuttongroup7",
+      "parent": "figure_main",
+      "type": "uitools.uibuttongroup",
+      "Title": "Statistics for selected file",
+      "Position": [
+        0.008129179922466489,
+        0.057397383852051814,
+        0.16142228703183462,
+        0.31822908835764063
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "label_stats",
+      "parent": "uibuttongroup7",
+      "type": "uicontrol",
+      "String": [],
+      "Style": "text",
+      "Enable": "on",
+      "Position": [
+        0.04237288135593219,
+        0.04783931362979163,
+        0.9194915254237286,
+        0.8741547308716471
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "text_message",
+      "parent": "figure_main",
+      "type": "uicontrol",
+      "String": "Ready.",
+      "Style": "text",
+      "Position": [
+        0.006387212796223671,
+        0.014429743229923117,
+        0.6207209526511914,
+        0.032225730466596526
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "uibgTabMaps",
+      "parent": "figure_main",
+      "type": "uitools.uibuttongroup",
+      "Title": "Maps",
+      "Position": [
+        0.6299076212471132,
+        0.25304465493910694,
+        0.3657621247113164,
+        0.645466847090663
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "checkbox_tracemap",
+      "parent": "uibgTabMaps",
+      "type": "uicontrol",
+      "String": "Traces, segments",
+      "Style": "checkbox",
+      "Value": 1,
+      "Position": [
+        0.02229923919181495,
+        0.9175157204176639,
+        0.3478681313923132,
+        0.07302430950575156
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_shownodes",
+      "parent": "uibgTabMaps",
+      "type": "uicontrol",
+      "String": "Show nodes",
+      "Style": "checkbox",
+      "Position": [
+        0.05992095821322539,
+        0.8631844191196025,
+        0.25867117462505346,
+        0.06691810344827587
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "uipanel5",
+      "parent": "uibgTabMaps",
+      "type": "uipanel",
+      "Title": "Fracture stability",
+      "Position": [
+        0.012658227848101274,
+        0.01939655172413793,
+        0.506329113924051,
+        0.8211206896551724
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "checkbox_sliptendency",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "Slip tendency",
+      "Style": "checkbox",
+      "Position": [
+        0.04716981132075472,
+        0.904891304347826,
+        0.8301886792452831,
+        0.07608695652173914
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_dilationtendency",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "Dilation tendency",
+      "Style": "checkbox",
+      "Position": [
+        0.04716981132075472,
+        0.8152173913043478,
+        0.8301886792452831,
+        0.07608695652173914
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "edit_sigma1",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "100.0",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.7264150943396227,
+        0.5434782608695652,
+        0.2012578616352202,
+        0.07608695652173914
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "label_sigma1",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "Sigma 1, MPa",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.059748427672955975,
+        0.5434782608695652,
+        0.5660377358490566,
+        0.0625
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "label_sigma2",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "Sigma 2, MPa",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.059748427672955975,
+        0.45108695652173914,
+        0.628930817610063,
+        0.0625
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "edit_sigma2",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "50.0",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.7264150943396227,
+        0.44565217391304346,
+        0.2012578616352202,
+        0.07608695652173914
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "label_thetasigma1",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "Angle of Sigma 1 from Y-axis",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.059748427672955975,
+        0.32065217391304346,
+        0.6603773584905661,
+        0.09510869565217389
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "edit_thetasigma1",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "0",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.7264150943396227,
+        0.34782608695652173,
+        0.2012578616352202,
+        0.07608695652173914
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "checkbox_fracsuscep",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "Fracture susceptibility",
+      "Style": "checkbox",
+      "Position": [
+        0.04716981132075472,
+        0.7255434782608695,
+        0.8301886792452831,
+        0.07608695652173914
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_CSF",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "Critically stressed fractures",
+      "Style": "checkbox",
+      "Position": [
+        0.04716981132075472,
+        0.6304347826086957,
+        0.8616352201257862,
+        0.07608695652173914
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "label_C0",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "Cohesion, MPa",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.059748427672955975,
+        0.25,
+        0.6603773584905661,
+        0.0625
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "edit_C0",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "0.0",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.7264150943396227,
+        0.25,
+        0.2012578616352202,
+        0.07608695652173914
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "edit_Pf",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "0.0",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.7264150943396227,
+        0.15217391304347827,
+        0.2012578616352202,
+        0.07608695652173914
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "label_mu",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "Friction coefficient",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.059748427672955975,
+        0.048913043478260865,
+        0.6603773584905661,
+        0.0625
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "label_Pf",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "Pore pressure, MPa",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.059748427672955975,
+        0.11956521739130435,
+        0.6603773584905661,
+        0.09510869565217392
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "edit_mu",
+      "parent": "uipanel5",
+      "type": "uicontrol",
+      "String": "0.6",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.7264150943396227,
+        0.04619565217391304,
+        0.2012578616352202,
+        0.07608695652173914
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "uipanel6",
+      "parent": "uibgTabMaps",
+      "type": "uipanel",
+      "Title": "Colour-coded maps",
+      "Position": [
+        0.5332278481012662,
+        0.7025862068965517,
+        0.42879746835443067,
+        0.2844827586206896
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "checkbox_tracemaplength",
+      "parent": "uipanel6",
+      "type": "uicontrol",
+      "String": "Traces, by length",
+      "Style": "checkbox",
+      "Position": [
+        0.02973977695167286,
+        0.6470588235294117,
+        0.9368029739776951,
+        0.3025210084033614
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_segmentmaplength",
+      "parent": "uipanel6",
+      "type": "uicontrol",
+      "String": "Segments, by length",
+      "Style": "checkbox",
+      "Position": [
+        0.02973977695167286,
+        0.3445378151260504,
+        0.9368029739776951,
+        0.30252100840336127
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_segmentmapstrike",
+      "parent": "uipanel6",
+      "type": "uicontrol",
+      "String": "Segments, by strike",
+      "Style": "checkbox",
+      "Value": 1,
+      "Position": [
+        0.03345724907063197,
+        0.05042016806722689,
+        0.9330855018587361,
+        0.3025210084033613
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "uipanel4",
+      "parent": "uibgTabMaps",
+      "type": "uipanel",
+      "Title": "Intensity & Density",
+      "Position": [
+        0.5332278481012662,
+        0.32112068965517243,
+        0.427215189873418,
+        0.37068965517241387
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "checkbox_intensitymap",
+      "parent": "uipanel4",
+      "type": "uicontrol",
+      "String": "Estimated Intensity, P21",
+      "Style": "checkbox",
+      "Position": [
+        0.029850746268656716,
+        0.7169811320754718,
+        0.9402985074626865,
+        0.22012578616352196
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_densitymap",
+      "parent": "uipanel4",
+      "type": "uicontrol",
+      "String": "Estimated Density, P20",
+      "Style": "checkbox",
+      "Position": [
+        0.029850746268656716,
+        0.4968553459119497,
+        0.9402985074626865,
+        0.22012578616352207
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_showcircles",
+      "parent": "uipanel4",
+      "type": "uicontrol",
+      "String": "Show scan circles",
+      "Style": "checkbox",
+      "Enable": "off",
+      "Position": [
+        0.08955223880597014,
+        0.2830188679245283,
+        0.7313432835820896,
+        0.22012578616352202
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "label_numscancircles",
+      "parent": "uipanel4",
+      "type": "uicontrol",
+      "String": "Number of scan circles",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.1044776119402985,
+        0.11949685534591195,
+        0.7761194029850746,
+        0.14465408805031446
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "edit_numscancircles",
+      "parent": "uipanel4",
+      "type": "uicontrol",
+      "String": "12",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.8116750398754806,
+        0.08900153874073605,
+        0.13102129389192396,
+        0.19861959149743288
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "uibgTabAngles",
+      "parent": "figure_main",
+      "type": "uitools.uibuttongroup",
+      "Title": "Angles & orientation distributions",
+      "Position": [
+        0.9998891304633786,
+        0.017734946354702512,
+        0.3657621247113163,
+        0.6454668470906632
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "checkbox_histoangle",
+      "parent": "uibgTabAngles",
+      "type": "uicontrol",
+      "String": "Histogram of angles",
+      "Style": "checkbox",
+      "Position": [
+        0.020089285714285726,
+        0.9144451188139087,
+        0.3861607142857145,
+        0.06779436227127622
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "popupmenu_histoanglebins",
+      "parent": "uibgTabAngles",
+      "type": "uicontrol",
+      "String": [
+        "10",
+        "20",
+        "30",
+        "50"
+      ],
+      "Style": "popupmenu",
+      "Value": 1,
+      "Enable": "off",
+      "Position": [
+        0.3236607142857143,
+        0.8441398542362888,
+        0.13392857142857145,
+        0.06779436227127633
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "right"
+    },
+    {
+      "tag": "checkbox_rose",
+      "parent": "uibgTabAngles",
+      "type": "uicontrol",
+      "String": "Rose diagram (equal area)",
+      "Style": "checkbox",
+      "Value": 1,
+      "Position": [
+        0.017857142857142877,
+        0.7487255665952331,
+        0.49776785714285765,
+        0.06779436227127644
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_roselengthweighted",
+      "parent": "uibgTabAngles",
+      "type": "uicontrol",
+      "String": "Length weighted?",
+      "Style": "checkbox",
+      "Position": [
+        0.06026785714285718,
+        0.685953008936644,
+        0.34821428571428603,
+        0.06779436227127633
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_showrosemean",
+      "parent": "uibgTabAngles",
+      "type": "uicontrol",
+      "String": "Show mean vector?",
+      "Style": "checkbox",
+      "Position": [
+        0.06026785714285718,
+        0.6206695489717111,
+        0.3816964285714287,
+        0.06779436227127644
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_rosecolour",
+      "parent": "uibgTabAngles",
+      "type": "uicontrol",
+      "String": "Colour by strike?",
+      "Style": "checkbox",
+      "Value": 1,
+      "Position": [
+        0.06026785714285718,
+        0.557896991313122,
+        0.33482142857142894,
+        0.06277255765858925
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "popupmenu_rosebins",
+      "parent": "uibgTabAngles",
+      "type": "uicontrol",
+      "String": [
+        "5",
+        "10",
+        "20",
+        "30"
+      ],
+      "Style": "popupmenu",
+      "Value": 1,
+      "Position": [
+        0.3236607142857143,
+        0.47252631289744074,
+        0.13392857142857145,
+        0.08034887380299427
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "right"
+    },
+    {
+      "tag": "edit_degfromnorth",
+      "parent": "uibgTabAngles",
+      "type": "uicontrol",
+      "String": "0",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "on",
+      "Position": [
+        0.37946428571428603,
+        0.39719924370713366,
+        0.0803571428571429,
+        0.06528345996493273
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "label_degfromnorth",
+      "parent": "uibgTabAngles",
+      "type": "uicontrol",
+      "String": [
+        "Rotate Y-axis ",
+        "from N (°)"
+      ],
+      "Style": "text",
+      "Position": [
+        0.06026785714285718,
+        0.3595357091119802,
+        0.2790178571428573,
+        0.09792518994739918
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "text_histoanglebins",
+      "parent": "uibgTabAngles",
+      "type": "uicontrol",
+      "String": "Number of bins",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.05803571428571435,
+        0.8366071473172582,
+        0.24553571428571447,
+        0.06779436227127611
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "text_rosebins",
+      "parent": "uibgTabAngles",
+      "type": "uicontrol",
+      "String": "Bin size (°)",
+      "Style": "text",
+      "Enable": "on",
+      "Position": [
+        0.06026785714285718,
+        0.48005901981647137,
+        0.1808035714285716,
+        0.06528345996493279
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "uibgTabLengths",
+      "parent": "figure_main",
+      "type": "uitools.uibuttongroup",
+      "Title": "Lengths & sizes",
+      "Position": [
+        1.0007020484556253,
+        0.5011209033536501,
+        0.3657621247113165,
+        0.645466847090663
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "checkbox_censor",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "Censor lengths at map edges",
+      "Style": "checkbox",
+      "Value": 0,
+      "Position": [
+        0.01783939135345199,
+        0.9121945908287156,
+        0.5351817406035596,
+        0.06028568990496708
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "checkbox_histolength",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "Histogram of lengths",
+      "Style": "checkbox",
+      "Value": 1,
+      "Position": [
+        0.015609467434270491,
+        0.8267898634633453,
+        0.3902366858567621,
+        0.06028568990496708
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "popupmenu_histolengthbins",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": [
+        "10",
+        "20",
+        "30",
+        "50"
+      ],
+      "Style": "popupmenu",
+      "Value": 1,
+      "Position": [
+        0.32110904436213555,
+        0.7464089435900557,
+        0.1315655112317083,
+        0.07033330488912837
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "right"
+    },
+    {
+      "tag": "checkbox_logloglength",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "Log-log lengths",
+      "Style": "checkbox",
+      "Value": 0,
+      "Position": [
+        0.01783939135345199,
+        0.6358851787642822,
+        0.3054995769278652,
+        0.06028568990496708
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_mle",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "MLE analysis",
+      "Style": "checkbox",
+      "Enable": "off",
+      "Position": [
+        0.05797802189871895,
+        0.5630399701291136,
+        0.27651056597850576,
+        0.06028568990496741
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "edit_lc",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "0",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.35901775098822114,
+        0.4977304727320656,
+        0.09588672852480457,
+        0.06530949739704794
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "edit_uc",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "0",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.35901775098822114,
+        0.42237336035085654,
+        0.09588672852480457,
+        0.06530949739704783
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "checkbox_seglenvariogram",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "Variogram of segment lengths",
+      "Style": "checkbox",
+      "Position": [
+        0.01783939135345199,
+        0.3193853067632042,
+        0.5128825014117446,
+        0.06279759365100757
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "label_uc",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "Upper cut-off, %",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.09365680460562291,
+        0.41483764911273563,
+        0.25867117462505373,
+        0.06279759365100751
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "checkbox_crossplot",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "Cross-plot lengths v angles ",
+      "Style": "checkbox",
+      "Position": [
+        0.48835333830074823,
+        0.6308613712722015,
+        0.47497379478565904,
+        0.06530949739704783
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "checkbox_blocksize",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "Block size graphs",
+      "Style": "checkbox",
+      "Position": [
+        0.48835333830074823,
+        0.5630399701291136,
+        0.34786813139231376,
+        0.06028568990496741
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "text_histolengthbins",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "Number of bins",
+      "Style": "text",
+      "Enable": "on",
+      "Position": [
+        0.055748097979537455,
+        0.7489208473360959,
+        0.24529163110996471,
+        0.06028568990496719
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "label_lc",
+      "parent": "uibgTabLengths",
+      "type": "uicontrol",
+      "String": "Lower cut-off, %",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.09365680460562291,
+        0.48517095400186416,
+        0.25867117462505373,
+        0.06279759365100757
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "uibgTabFluid",
+      "parent": "figure_main",
+      "type": "uitools.uibuttongroup",
+      "Title": "Fluid flow",
+      "Position": [
+        1.3700923787528876,
+        0.4504007494535234,
+        0.3657621247113163,
+        0.6454668470906633
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "uibuttongroup_apertures",
+      "parent": "uibgTabFluid",
+      "type": "uitools.uibuttongroup",
+      "Title": "Apertures & lengths",
+      "Position": [
+        0.026607538802660757,
+        0.1917991570519607,
+        0.52549889135255,
+        0.43305845307643487
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "label_apertureexponent",
+      "parent": "uibuttongroup_apertures",
+      "type": "uicontrol",
+      "String": "Exponent, b",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.12820512820512822,
+        0.08206136319040687,
+        0.36752136752136766,
+        0.14071329990480613
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "radiobutton_fixedaperture",
+      "parent": "uibuttongroup_apertures",
+      "type": "uicontrol",
+      "String": "Fixed aperture ",
+      "Style": "radiobutton",
+      "Value": 1,
+      "Enable": "off",
+      "Position": [
+        0.05419071784733941,
+        0.7925189946036298,
+        0.6322250415522929,
+        0.1328880013583552
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "edit_fixedaperture",
+      "parent": "uibuttongroup_apertures",
+      "type": "uicontrol",
+      "String": "1e-3",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.7393162393162394,
+        0.6481218590300448,
+        0.18376068376068377,
+        0.1662975362511343
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "radiobutton_scaledaperture",
+      "parent": "uibuttongroup_apertures",
+      "type": "uicontrol",
+      "String": "Scaled apertures, A = a.L^b",
+      "Style": "radiobutton",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.0512820512820513,
+        0.4530327902121686,
+        0.9786324786324785,
+        0.13431724081822405
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "edit_aperturefactor",
+      "parent": "uibuttongroup_apertures",
+      "type": "uicontrol",
+      "String": "1e-3",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.7412267917095797,
+        0.28191499389135355,
+        0.18456765669071373,
+        0.16629753625113453
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "edit_apertureexponent",
+      "parent": "uibuttongroup_apertures",
+      "type": "uicontrol",
+      "String": "1",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.7412267917095797,
+        0.10179221896473774,
+        0.188117034703997,
+        0.16629753625113453
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "label_aperturefactor",
+      "parent": "uibuttongroup_apertures",
+      "type": "uicontrol",
+      "String": "Factor, a",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.12820512820512822,
+        0.28033919487445186,
+        0.34615384615384626,
+        0.14071329990480602
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "label_fixedaperture",
+      "parent": "uibuttongroup_apertures",
+      "type": "uicontrol",
+      "String": "Aperture",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.12777760847818664,
+        0.6398650433864801,
+        0.34074028927516453,
+        0.14081777295851072
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "checkbox_triangle",
+      "parent": "uibgTabFluid",
+      "type": "uicontrol",
+      "String": "I-Y-X connectivity",
+      "Style": "checkbox",
+      "Value": 0,
+      "Position": [
+        0.017839391353451955,
+        0.9045074722192843,
+        0.33448858787722435,
+        0.08544079760628298
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "edit_numblocksmap",
+      "parent": "uibgTabFluid",
+      "type": "uicontrol",
+      "String": "12",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.4700665188470067,
+        0.8553156173211182,
+        0.11308203991130816,
+        0.0658451449122065
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "checkbox_permellipse",
+      "parent": "uibgTabFluid",
+      "type": "uicontrol",
+      "String": "Permeability plot (polar)",
+      "Style": "checkbox",
+      "Value": 0,
+      "Position": [
+        0.022172949002217293,
+        0.7008327773347877,
+        0.3769401330376941,
+        0.08610518950057766
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "edit_lambda",
+      "parent": "uibgTabFluid",
+      "type": "uicontrol",
+      "String": "1",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "on",
+      "Position": [
+        0.3148558758314856,
+        0.6375201379961276,
+        0.09756097560975618,
+        0.06584514491220661
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "label_lambda",
+      "parent": "uibgTabFluid",
+      "type": "uicontrol",
+      "String": "Lambda factor",
+      "Style": "text",
+      "Position": [
+        0.06430155210643015,
+        0.6324551268490349,
+        0.23725055432372502,
+        0.06331263933866016
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "uibuttongroup12",
+      "parent": "uibgTabFluid",
+      "type": "uitools.uibuttongroup",
+      "Title": "Crack tensor",
+      "Position": [
+        0.5997737601460637,
+        0.8266055685194379,
+        0.37685714234167256,
+        0.1608297366706506
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "checkbox_cracktensor",
+      "parent": "uibuttongroup12",
+      "type": "uicontrol",
+      "String": "Crack tensor plot",
+      "Style": "checkbox",
+      "Position": [
+        0.05389221556886228,
+        0.3026195804379279,
+        0.8742514970059881,
+        0.626854845192851
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "label_numblocksmap",
+      "parent": "uibgTabFluid",
+      "type": "uicontrol",
+      "String": "Number of blocks in maps",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.05099778270509979,
+        0.8477181006004789,
+        0.4190687361419069,
+        0.06584514491220639
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "label_numpixelsItoY",
+      "parent": "uibgTabFluid",
+      "type": "uicontrol",
+      "String": "Distance to count I as Y",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.05099778270509979,
+        0.7768079445411796,
+        0.4190687361419069,
+        0.06584514491220639
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "edit_numpixelsItoY",
+      "parent": "uibgTabFluid",
+      "type": "uicontrol",
+      "String": "0",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.4700665188470067,
+        0.7793404501147261,
+        0.11308203991130816,
+        0.0658451449122065
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "uibgTabButtons",
+      "parent": "figure_main",
+      "type": "uitools.uibuttongroup",
+      "Title": [],
+      "Position": [
+        0.6316372799756463,
+        0.9070411621155869,
+        0.3584968345807721,
+        0.09140952391967272
+      ],
+      "FontSize": 8,
+      "BorderType": "none"
+    },
+    {
+      "tag": "pbMapsTab",
+      "parent": "uibgTabButtons",
+      "type": "uicontrol",
+      "String": "Maps",
+      "Style": "pushbutton",
+      "Enable": "off",
+      "Position": [
+        0.0,
+        0.13469917881682586,
+        0.15855562641567517,
+        0.740845483492542
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "pbLengthsTab",
+      "parent": "uibgTabButtons",
+      "type": "uicontrol",
+      "String": "Lengths",
+      "Style": "pushbutton",
+      "Enable": "off",
+      "Position": [
+        0.1676159479251423,
+        0.13469917881682586,
+        0.15855562641567525,
+        0.740845483492542
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "pbAnglesTab",
+      "parent": "uibgTabButtons",
+      "type": "uicontrol",
+      "String": "Angles",
+      "Style": "pushbutton",
+      "Enable": "off",
+      "Position": [
+        0.3352318958502846,
+        0.13469917881682586,
+        0.15855562641567517,
+        0.740845483492542
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "pbFluidTab",
+      "parent": "uibgTabButtons",
+      "type": "uicontrol",
+      "String": "Fluid flow",
+      "Style": "pushbutton",
+      "Enable": "off",
+      "Position": [
+        0.5028478437754268,
+        0.13469917881682586,
+        0.15855562641567522,
+        0.740845483492542
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "pbWaveletsTab",
+      "parent": "uibgTabButtons",
+      "type": "uicontrol",
+      "String": "Wavelets",
+      "Style": "pushbutton",
+      "Enable": "off",
+      "Position": [
+        0.6704637917005692,
+        0.13469917881682586,
+        0.15855562641567522,
+        0.740845483492542
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "pbGraphsTab",
+      "parent": "uibgTabButtons",
+      "type": "uicontrol",
+      "String": "Graphs",
+      "Style": "pushbutton",
+      "Enable": "off",
+      "Position": [
+        0.8380797396257115,
+        0.13469917881682586,
+        0.1585556264156751,
+        0.740845483492542
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "pushbutton_run",
+      "parent": "figure_main",
+      "type": "uicontrol",
+      "String": "Run",
+      "Style": "pushbutton",
+      "Enable": "off",
+      "Position": [
+        0.6332631159601398,
+        0.06886230719112968,
+        0.0699109473332119,
+        0.079015012201751
+      ],
+      "TooltipString": "Click here to run the selected options",
+      "FontSize": 13
+    },
+    {
+      "tag": "pushbutton_exit",
+      "parent": "figure_main",
+      "type": "uicontrol",
+      "String": "Exit",
+      "Style": "pushbutton",
+      "Position": [
+        0.7121161612080646,
+        0.06886230719112968,
+        0.06991094733321179,
+        0.079015012201751
+      ],
+      "TooltipString": "Click here to end the program",
+      "FontSize": 13
+    },
+    {
+      "tag": "text4",
+      "parent": "figure_main",
+      "type": "uicontrol",
+      "String": "               Version 2.8, March 2021   E-mail: info@fracpaq.com",
+      "Style": "text",
+      "Position": [
+        0.6779736055337053,
+        0.15407457525184162,
+        0.2967150671700267,
+        0.03098627929480441
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "uibgTabWavelets",
+      "parent": "figure_main",
+      "type": "uitools.uibuttongroup",
+      "Title": "2D Wavelet Analysis",
+      "Position": [
+        1.737066974595843,
+        0.006974081398979634,
+        0.3657621247113163,
+        0.645466847090663
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "checkbox_wavelet",
+      "parent": "uibgTabWavelets",
+      "type": "uicontrol",
+      "String": "Run wavelet analysis (NB: this can take time...)",
+      "Style": "checkbox",
+      "Value": 0,
+      "Position": [
+        0.02007650847084963,
+        0.9069704849429943,
+        0.8075217851608406,
+        0.06777468357188421
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "edit_aString",
+      "parent": "uibgTabWavelets",
+      "type": "uicontrol",
+      "String": "2 4 8 16",
+      "Style": "edit",
+      "Enable": "off",
+      "Position": [
+        0.49298981911752987,
+        0.816604240180482,
+        0.2230723163427734,
+        0.06777468357188432
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "label_aString",
+      "parent": "uibgTabWavelets",
+      "type": "uicontrol",
+      "String": "List of a-values (integers)",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.02007650847084963,
+        0.8115838932492316,
+        0.4059916157438481,
+        0.06777468357188399
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "label_DegString",
+      "parent": "uibgTabWavelets",
+      "type": "uicontrol",
+      "String": [
+        "Angular increment (°)",
+        "(larger number = faster, coarser; ",
+        "smaller number = slower, finer)"
+      ],
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.02007650847084963,
+        0.5555461997554467,
+        0.5576807908569343,
+        0.14810023447189502
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "uipanel7",
+      "parent": "uibgTabWavelets",
+      "type": "uipanel",
+      "Title": "Wavelet type",
+      "Position": [
+        0.02007650847084963,
+        0.3221000674522903,
+        0.3368391976775881,
+        0.2183850915094045
+      ],
+      "FontSize": 13,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "radiobutton_Morlet",
+      "parent": "uipanel7",
+      "type": "uicontrol",
+      "String": "Morlet",
+      "Style": "radiobutton",
+      "Value": 1,
+      "Enable": "off",
+      "Position": [
+        0.12751677852348994,
+        0.5731225296442687,
+        0.5369127516778522,
+        0.2865612648221344
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "radiobutton_Mexican",
+      "parent": "uipanel7",
+      "type": "uicontrol",
+      "String": "Mexican Hat",
+      "Style": "radiobutton",
+      "Enable": "off",
+      "Position": [
+        0.12751677852348994,
+        0.21492094861660077,
+        0.7785234899328859,
+        0.28656126482213434
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "label_LString",
+      "parent": "uibgTabWavelets",
+      "type": "uicontrol",
+      "String": "List of L-values (integers)",
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.02007650847084963,
+        0.7212176484867193,
+        0.4059916157438481,
+        0.0677746835718841
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "edit_LString",
+      "parent": "uibgTabWavelets",
+      "type": "uicontrol",
+      "String": "2 4 8 16",
+      "Style": "edit",
+      "Enable": "off",
+      "Position": [
+        0.49298981911752987,
+        0.7287481688835954,
+        0.2230723163427734,
+        0.0677746835718841
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "edit_DegString",
+      "parent": "uibgTabWavelets",
+      "type": "uicontrol",
+      "String": "20",
+      "Style": "edit",
+      "Enable": "off",
+      "Position": [
+        0.6424482710671882,
+        0.6408920975867084,
+        0.07361386439311524,
+        0.06777468357188399
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "uibgTabGraphs",
+      "parent": "figure_main",
+      "type": "uitools.uibuttongroup",
+      "Title": "Graphs",
+      "Position": [
+        1.7388315854155822,
+        0.5011209033536501,
+        0.36576212471131675,
+        0.645466847090663
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "uibuttongroup20",
+      "parent": "uibgTabGraphs",
+      "type": "uitools.uibuttongroup",
+      "Title": "Distance FROM the line",
+      "Position": [
+        0.5240321210076518,
+        0.6509566012405242,
+        0.44821470775548056,
+        0.3215236794931585
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "checkbox_tracelengthgraphfrom",
+      "parent": "uibuttongroup20",
+      "type": "uicontrol",
+      "String": "Trace length",
+      "Style": "checkbox",
+      "Position": [
+        0.035175879396984924,
+        0.7014859167539359,
+        0.7336683417085427,
+        0.26080886648543766
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_segmentlengthgraphfrom",
+      "parent": "uibuttongroup20",
+      "type": "uicontrol",
+      "String": "Segment length",
+      "Style": "checkbox",
+      "Position": [
+        0.035175879396984924,
+        0.413696822701039,
+        0.7336683417085427,
+        0.26080886648543766
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_segmentanglegraphfrom",
+      "parent": "uibuttongroup20",
+      "type": "uicontrol",
+      "String": "Segment angle",
+      "Style": "checkbox",
+      "Position": [
+        0.035175879396984924,
+        0.11691431945898931,
+        0.7336683417085427,
+        0.26080886648543766
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "uibuttongroup19",
+      "parent": "uibgTabGraphs",
+      "type": "uitools.uibuttongroup",
+      "Title": "Distance ALONG the line",
+      "Position": [
+        0.0199556541019956,
+        0.3654199471105434,
+        0.4789356984478944,
+        0.6075447442988926
+      ],
+      "FontSize": 12,
+      "BorderType": "beveledin"
+    },
+    {
+      "tag": "checkbox_tracelengthgraphalong",
+      "parent": "uibuttongroup19",
+      "type": "uicontrol",
+      "String": "Trace length",
+      "Style": "checkbox",
+      "Position": [
+        0.042295613027839636,
+        0.839068391227718,
+        0.686128833562732,
+        0.12952290841920588
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_segmentlengthgraphalong",
+      "parent": "uibuttongroup19",
+      "type": "uicontrol",
+      "String": "Segment length",
+      "Style": "checkbox",
+      "Position": [
+        0.042295613027839636,
+        0.6961465612479045,
+        0.686128833562732,
+        0.1295229084192061
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_segmentstrikegraphalong",
+      "parent": "uibuttongroup19",
+      "type": "uicontrol",
+      "String": "Segment angle",
+      "Style": "checkbox",
+      "Position": [
+        0.042295613027839636,
+        0.5532247312680909,
+        0.686128833562732,
+        0.12952290841920588
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_intensitygraphalong",
+      "parent": "uibuttongroup19",
+      "type": "uicontrol",
+      "String": "Estimated intensity, P21",
+      "Style": "checkbox",
+      "Position": [
+        0.042295613027839636,
+        0.4103029012882774,
+        0.9070059238192276,
+        0.1295229084192061
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "checkbox_densitygraphalong",
+      "parent": "uibuttongroup19",
+      "type": "uicontrol",
+      "String": "Estimated density, P20",
+      "Style": "checkbox",
+      "Position": [
+        0.042295613027839636,
+        0.2673810713084638,
+        0.9493015368470675,
+        0.129522908419206
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "label_numscancirclesgraph",
+      "parent": "uibuttongroup19",
+      "type": "uicontrol",
+      "String": [
+        "Number of scan ",
+        "circles"
+      ],
+      "Style": "text",
+      "Enable": "off",
+      "Position": [
+        0.12149532710280372,
+        0.07651763603507127,
+        0.7710280373831774,
+        0.17554045913928112
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "edit_numscancirclesgraph",
+      "parent": "uibuttongroup19",
+      "type": "uicontrol",
+      "String": "12",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "off",
+      "Position": [
+        0.7476635514018691,
+        0.14403319724248712,
+        0.1728971962616822,
+        0.11702697275952076
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "center"
+    },
+    {
+      "tag": "pushbutton_selectgraphendpoints",
+      "parent": "uibgTabGraphs",
+      "type": "uicontrol",
+      "String": "Select end points",
+      "Style": "pushbutton",
+      "Position": [
+        0.5775502950680078,
+        0.5052661839701867,
+        0.3077295008470464,
+        0.13061899479409567
+      ],
+      "FontSize": 12
+    },
+    {
+      "tag": "text55",
+      "parent": "figure_main",
+      "type": "uicontrol",
+      "String": "Filename tag for this run",
+      "Style": "text",
+      "Position": [
+        0.6327944572748267,
+        0.2056833558863329,
+        0.11605080831408776,
+        0.033829499323410006
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    },
+    {
+      "tag": "edit_FilenameTag",
+      "parent": "figure_main",
+      "type": "uicontrol",
+      "String": "Run1",
+      "Style": "edit",
+      "Value": 0,
+      "Enable": "on",
+      "Position": [
+        0.7551963048498845,
+        0.2083897158322057,
+        0.052540415704387944,
+        0.0324763193504736
+      ],
+      "FontSize": 12,
+      "HorizontalAlignment": "left"
+    }
+  ],
+  "opening_values": {
+    "popupmenu_histolengthbins": 2,
+    "popupmenu_histoanglebins": 2,
+    "popupmenu_rosebins": 2
+  }
+}

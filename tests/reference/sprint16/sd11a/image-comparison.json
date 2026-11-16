@@ -1,0 +1,2688 @@
+[
+  {
+    "name": "FracPaQ2D_tracemap_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "be59e4ef845bacfd46c6bc83fc83d7ca9313b9631f253ac68529e493fee50bc5",
+    "native_sha256": "29c8658f80a8ce8ac103b7a40f1513aae0c0bc0361c9bab4b488633ff155bc52",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        456,
+        4279,
+        4103
+      ],
+      "text0_0": [
+        1102,
+        248,
+        3787,
+        464
+      ],
+      "text0_1": [
+        2280,
+        4233,
+        2610,
+        4327
+      ],
+      "text0_2": [
+        281,
+        2120,
+        376,
+        2439
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8504349280538793,
+      "panel0": 0.7797339344772892,
+      "text0_0": 0.8230022714276121,
+      "text0_1": 0.3634080640796323,
+      "text0_2": 0.4641432995850407
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_tracemap_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_tracelengthmap_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "9704716278b59fd671274d884b50aa6d278433f5bd7331628c6dbc47e79f9223",
+    "native_sha256": "37d3026be21e93778be894bc24ec04229eacc0e59e5f4770d4df2f6b7855c874",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        755,
+        304,
+        4135,
+        3665
+      ],
+      "text0_0": [
+        1900,
+        97,
+        2989,
+        312
+      ],
+      "text0_1": [
+        2280,
+        3794,
+        2610,
+        3888
+      ],
+      "text0_2": [
+        425,
+        1825,
+        520,
+        2143
+      ],
+      "colourbar1": [
+        755,
+        4086,
+        4135,
+        4210
+      ],
+      "text1_0": [
+        2078,
+        4340,
+        2811,
+        4434
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.943164969197869,
+      "panel0": 0.9578784773200425,
+      "text0_0": 0.8589800019082082,
+      "text0_1": 0.363381474917283,
+      "text0_2": 0.46677178590880547,
+      "colourbar1": 0.5411379851040893,
+      "text1_0": 0.5706513100071068
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_tracelengthmap_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_segmentlengthmap_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "fae8f110d0eb277d2f6a645defd833facd552411c1ea45ab04ea89b246d3b190",
+    "native_sha256": "ba1c9e1c6475d4c962a0260cb08cfd34efa1047d07d44563e8c7981f04c43acc",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        755,
+        304,
+        4135,
+        3665
+      ],
+      "text0_0": [
+        1801,
+        96,
+        3089,
+        312
+      ],
+      "text0_1": [
+        2280,
+        3794,
+        2610,
+        3888
+      ],
+      "text0_2": [
+        425,
+        1825,
+        520,
+        2143
+      ],
+      "colourbar1": [
+        755,
+        4086,
+        4135,
+        4210
+      ],
+      "text1_0": [
+        2018,
+        4340,
+        2872,
+        4435
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9425696887598581,
+      "panel0": 0.957661039265257,
+      "text0_0": 0.8522527388447813,
+      "text0_1": 0.363381474917283,
+      "text0_2": 0.46677178590880547,
+      "colourbar1": 0.5477444779286109,
+      "text1_0": 0.5561227901768463
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_segmentlengthmap_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_segmentstrikemap_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "8e3642e0ad5dcc4488a5bdca9122e69d253329b0ec5365b369087e58c7d4a1c3",
+    "native_sha256": "9d7232672ee704886a952ab9d26c800eef7b93b81802220944afa5ae1bcc87a6",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        755,
+        304,
+        4135,
+        3665
+      ],
+      "text0_0": [
+        1816,
+        96,
+        3074,
+        312
+      ],
+      "text0_1": [
+        2280,
+        3794,
+        2610,
+        3888
+      ],
+      "text0_2": [
+        425,
+        1825,
+        520,
+        2143
+      ],
+      "colourbar1": [
+        755,
+        4086,
+        4135,
+        4210
+      ],
+      "text1_0": [
+        1987,
+        4340,
+        2903,
+        4435
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9423702880209751,
+      "panel0": 0.9611963305327292,
+      "text0_0": 0.8463449561257582,
+      "text0_1": 0.363381474917283,
+      "text0_2": 0.46677178590880547,
+      "colourbar1": 0.5114860754416134,
+      "text1_0": 0.5558878200436277
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_segmentstrikemap_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_scancircle_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "ebd526b6997848a24eb81f9182cc5f6fa716f5f5e113b36e2bf55cfb1adca845",
+    "native_sha256": "18178a819be1cd196c2bca29ea43d24dbca57e6908199944fa2f191be765b01e",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        668,
+        4019,
+        4057
+      ],
+      "text0_0": [
+        1599,
+        460,
+        3030,
+        676
+      ],
+      "text0_1": [
+        2150,
+        4186,
+        2480,
+        4281
+      ],
+      "text0_2": [
+        281,
+        2203,
+        376,
+        2521
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8279983502395548,
+      "panel0": 0.7280560008966236,
+      "text0_0": 0.6439958428631086,
+      "text0_1": 0.4784236412875513,
+      "text0_2": 0.4670124587849747
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_scancircle_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_intensityP21_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "533436e4a6806a77397d285e5a8fd4c8a2ca114fd4307994768cd58f00bbe3b1",
+    "native_sha256": "6e84e4a02f71c095dcca3455251bd5d1d557073c179a7effebdab20faf55a6da",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        839,
+        659,
+        3886,
+        3688
+      ],
+      "text0_0": [
+        1522,
+        451,
+        3203,
+        667
+      ],
+      "text0_1": [
+        2197,
+        3818,
+        2527,
+        3912
+      ],
+      "text0_2": [
+        509,
+        2014,
+        604,
+        2332
+      ],
+      "colourbar1": [
+        839,
+        4109,
+        3886,
+        4233
+      ],
+      "text1_0": [
+        1693,
+        4363,
+        3032,
+        4474
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8526666887968751,
+      "panel0": 0.7974867516503541,
+      "text0_0": 0.5029071477488328,
+      "text0_1": 0.4385558895088428,
+      "text0_2": 0.572080767403818,
+      "colourbar1": 0.38030131443970355,
+      "text1_0": 0.656349180566285
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_intensityP21_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_densityP20_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "2fcc03f69bbd39eb4ebe54f5a6bf8d145390e348d8efe109ca213814273ba0b5",
+    "native_sha256": "7f14cc8abe7bc7f43b57ef1b6750dd08754c55220449e9a2947161dc8f508005",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        839,
+        659,
+        3886,
+        3688
+      ],
+      "text0_0": [
+        1545,
+        451,
+        3179,
+        667
+      ],
+      "text0_1": [
+        2197,
+        3818,
+        2527,
+        3912
+      ],
+      "text0_2": [
+        509,
+        2014,
+        604,
+        2332
+      ],
+      "colourbar1": [
+        839,
+        4109,
+        3886,
+        4233
+      ],
+      "text1_0": [
+        1709,
+        4363,
+        3015,
+        4475
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8589223608580858,
+      "panel0": 0.8140589363165968,
+      "text0_0": 0.5150167864393119,
+      "text0_1": 0.4385558895088428,
+      "text0_2": 0.572080767403818,
+      "colourbar1": 0.43053603996135403,
+      "text1_0": 0.6514529509290551
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_densityP20_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_Mohrplot_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "26318e66ae301bf965dcdbacf85bc029377934d4bd2c00053787c7d63836e31d",
+    "native_sha256": "5d5b3300953db9a33855186cf267903b54649238a08a340789883ccb77198223",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        1444,
+        4279,
+        3115
+      ],
+      "text0_0": [
+        1762,
+        1234,
+        3127,
+        1452
+      ],
+      "text0_1": [
+        2072,
+        3244,
+        2818,
+        3339
+      ],
+      "text0_2": [
+        373,
+        1930,
+        468,
+        2629
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9795165033137275,
+      "panel0": 0.9685724726200601,
+      "text0_0": 0.705822186937636,
+      "text0_1": 0.3585123881665578,
+      "text0_2": 0.4591460792516841
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_Mohrplot_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_sliptendencymap_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "a57c610ee3ab45195cafe5852ab4f5d3647e48fd60d2180bbb13d98aef1fedab",
+    "native_sha256": "85c668d3d3379b413f3834dce2f57e19ecc3d939f3d7f66fec5c959abdaea4cb",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        731,
+        281,
+        4159,
+        3688
+      ],
+      "text0_0": [
+        1148,
+        68,
+        3741,
+        289
+      ],
+      "text0_1": [
+        2280,
+        3818,
+        2610,
+        3912
+      ],
+      "text0_2": [
+        401,
+        1825,
+        497,
+        2143
+      ],
+      "colourbar1": [
+        731,
+        4109,
+        4159,
+        4233
+      ],
+      "text1_0": [
+        1973,
+        4363,
+        2916,
+        4458
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8560670546426031,
+      "panel0": 0.8212355509562211,
+      "text0_0": 0.679759379934466,
+      "text0_1": 0.3974027114527419,
+      "text0_2": 0.4108437744459265,
+      "colourbar1": 0.43016931463336067,
+      "text1_0": 0.5608503351374441
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_sliptendencymap_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_sliptendencyrose_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "8e2bb8cbb70080e554509040d3076c1912409e2aaec0665cbeda9f114ee98f75",
+    "native_sha256": "d75c9ac390d34fae67ab4983a0d9e499f2fa1093158b3120a328e9a2705614a6",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        723,
+        316,
+        4167,
+        3759
+      ],
+      "text0_0": [
+        1374,
+        70,
+        3516,
+        286
+      ],
+      "colourbar1": [
+        723,
+        3961,
+        4167,
+        4085
+      ],
+      "text1_0": [
+        1909,
+        4215,
+        2981,
+        4310
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9679679223097497,
+      "panel0": 0.9710671810003211,
+      "text0_0": 0.746567836307277,
+      "colourbar1": 0.9132855505098476,
+      "text1_0": 0.47054826937292943
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_sliptendencyrose_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_dilationtendencymap_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "71b1be993a1cf0d5a28dfe2fe70a37878c333b16d9a197a11afa11939417319a",
+    "native_sha256": "15b31cee88955a9b8838732ddadeb6144ce1aab9b18903a710ca21f828c06557",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        731,
+        281,
+        4159,
+        3688
+      ],
+      "text0_0": [
+        1321,
+        68,
+        3568,
+        289
+      ],
+      "text0_1": [
+        2280,
+        3818,
+        2610,
+        3912
+      ],
+      "text0_2": [
+        401,
+        1825,
+        497,
+        2143
+      ],
+      "colourbar1": [
+        731,
+        4109,
+        4159,
+        4233
+      ],
+      "text1_0": [
+        2119,
+        4363,
+        2771,
+        4458
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8718292841972027,
+      "panel0": 0.8480933978696311,
+      "text0_0": 0.6819628843091952,
+      "text0_1": 0.3974027114527419,
+      "text0_2": 0.4108437744459265,
+      "colourbar1": 0.43016931463336067,
+      "text1_0": 0.5567071659250402
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_dilationtendencymap_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_dilationtendencyrose_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "d217d30ebc585eb7479340465dffafd358d0252d910404deaeac40862d0f7fd6",
+    "native_sha256": "31e88a490611a0b255044c219ecdbacc340034e75f6d2014e9775074a66dca16",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        723,
+        316,
+        4167,
+        3759
+      ],
+      "text0_0": [
+        1370,
+        70,
+        3519,
+        286
+      ],
+      "colourbar1": [
+        723,
+        3961,
+        4167,
+        4085
+      ],
+      "text1_0": [
+        2051,
+        4215,
+        2838,
+        4310
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9695191559942952,
+      "panel0": 0.9719177678988452,
+      "text0_0": 0.770287183329004,
+      "colourbar1": 0.9132855505098476,
+      "text1_0": 0.48142220782006356
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_dilationtendencyrose_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_fracsuscepmap_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "19a577b98ba5ff8444181393d5f35348872826f0f6cf6228f5072f1448b7f409",
+    "native_sha256": "965aef9720e9c97691ced27c456c1feec53c6c55ee94d34df12c2055ed954fe2",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        731,
+        281,
+        4159,
+        3688
+      ],
+      "text0_0": [
+        1288,
+        68,
+        3601,
+        289
+      ],
+      "text0_1": [
+        2280,
+        3818,
+        2610,
+        3912
+      ],
+      "text0_2": [
+        401,
+        1825,
+        497,
+        2143
+      ],
+      "colourbar1": [
+        731,
+        4109,
+        4159,
+        4233
+      ],
+      "text1_0": [
+        1820,
+        4363,
+        3070,
+        4458
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8545180355416132,
+      "panel0": 0.8178986229180728,
+      "text0_0": 0.6778961344076103,
+      "text0_1": 0.3974027114527419,
+      "text0_2": 0.4108437744459265,
+      "colourbar1": 0.4440934868385873,
+      "text1_0": 0.5674220044163372
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_fracsuscepmap_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_fracsusceprose_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "e6f6a2a5ffcff9b58d0c16a75b3f76c6eec1c0c12d9d444df7fb829f92c3d58a",
+    "native_sha256": "7a97f0d7d0878e55943e50a4226a42e6722582d6082bf9a47f76795c6fec052d",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        723,
+        316,
+        4167,
+        3759
+      ],
+      "text0_0": [
+        1378,
+        68,
+        3511,
+        286
+      ],
+      "colourbar1": [
+        723,
+        3961,
+        4167,
+        4085
+      ],
+      "text1_0": [
+        1820,
+        4215,
+        3070,
+        4310
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9688863048854343,
+      "panel0": 0.9720030933973011,
+      "text0_0": 0.7620427585496987,
+      "colourbar1": 0.9142967379674939,
+      "text1_0": 0.4601754155348115
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_fracsusceprose_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_CSFmap_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "33964ab0914e52f97a06fbe0ab40fb41d755524afad660d61ca483db56dcc14d",
+    "native_sha256": "7c244a88f04f56b63210ae73457ae7b26cc290358b2520b8b9d5e80a0b52dfd2",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        731,
+        281,
+        4159,
+        3688
+      ],
+      "text0_0": [
+        1173,
+        52,
+        3716,
+        289
+      ],
+      "text0_1": [
+        2280,
+        3818,
+        2610,
+        3912
+      ],
+      "text0_2": [
+        401,
+        1825,
+        497,
+        2143
+      ],
+      "colourbar1": [
+        731,
+        4109,
+        4159,
+        4233
+      ],
+      "text1_0": [
+        1711,
+        4364,
+        3179,
+        4459
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8508685365421983,
+      "panel0": 0.8106093425482462,
+      "text0_0": 0.7154900504054841,
+      "text0_1": 0.3974027114527419,
+      "text0_2": 0.4108437744459265,
+      "colourbar1": 0.4772342916969026,
+      "text1_0": 0.5766075062491348
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_CSFmap_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_CSFrose_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "6ed60843029f32cf177fccfb4482a445f7aeb5d884b39e7ec70cce04bfdec315",
+    "native_sha256": "555b1827ba1c2fd4e67ac9b3a7487f67e1bd015ffdff4fe692f75a41b90bd3b8",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        723,
+        316,
+        4167,
+        3759
+      ],
+      "text0_0": [
+        1324,
+        71,
+        3565,
+        286
+      ],
+      "colourbar1": [
+        723,
+        3961,
+        4167,
+        4085
+      ],
+      "text1_0": [
+        1711,
+        4215,
+        3179,
+        4310
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9671017804348104,
+      "panel0": 0.973320265645503,
+      "text0_0": 0.6257889724294499,
+      "colourbar1": 0.9190103399812702,
+      "text1_0": 0.46126534951848813
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_CSFrose_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_histotracelength_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "8995be83f473b1e5e2579718de36697d4f3fc9977080dce53e6b3ff29ea54ec1",
+    "native_sha256": "0a456b60c4d19c82bb08962c1cc812f6ad6455362f4f2ac32f229f2afbe261fe",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text0_0": [
+        1982,
+        238,
+        2907,
+        454
+      ],
+      "text0_1": [
+        2078,
+        4243,
+        2811,
+        4338
+      ],
+      "text0_2": [
+        327,
+        2075,
+        422,
+        2484
+      ],
+      "panel1": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text1_0": [
+        4422,
+        2018,
+        4518,
+        2541
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9738762842386824,
+      "panel0": 0.9780816142556891,
+      "text0_0": 0.8700677297592625,
+      "text0_1": 0.3692804184720235,
+      "text0_2": 0.48264295994943957,
+      "panel1": 0.9780816142556891,
+      "text1_0": 0.45213100766106473
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_histotracelength_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_histosegmentlength_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "216f706bc627b95f0f84618957c452a63bd79028d63db1f78fe1bbbb82651b9a",
+    "native_sha256": "73974c474270d9deedf7873fd2441c503ba2134783687e4813331aaf737ad14d",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text0_0": [
+        1883,
+        238,
+        3007,
+        454
+      ],
+      "text0_1": [
+        2018,
+        4243,
+        2872,
+        4338
+      ],
+      "text0_2": [
+        327,
+        2075,
+        422,
+        2484
+      ],
+      "panel1": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text1_0": [
+        4422,
+        2018,
+        4518,
+        2541
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9714607731956693,
+      "panel0": 0.9771192182920695,
+      "text0_0": 0.8734770997534332,
+      "text0_1": 0.344493928063807,
+      "text0_2": 0.48264295994943957,
+      "panel1": 0.9771192182920695,
+      "text1_0": 0.45213100766106473
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_histosegmentlength_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_loglogplottracelengthdensity_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "a11e9b0cd082f923783cda960b84806bd78bd6a91c3372c2252e6f4a54af5267",
+    "native_sha256": "88a230a0c2fb0d695107945877b90a24a1d983ad4f02189d8decb2695a2f4ac0",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text0_0": [
+        1490,
+        238,
+        3399,
+        454
+      ],
+      "text0_1": [
+        2078,
+        4259,
+        2811,
+        4354
+      ],
+      "text0_2": [
+        302,
+        1981,
+        397,
+        2578
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9327191426898586,
+      "panel0": 0.9063156557840107,
+      "text0_0": 0.8304043661533814,
+      "text0_1": 0.36272615098540956,
+      "text0_2": 0.41738029066991555
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_loglogplottracelengthdensity_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_loglogplottracelength_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "1e547d29eb08d68847c53b29b20767fd1dae5af440ba881baf69e5fcc2c69fce",
+    "native_sha256": "477cf0012e26f4ccc84b3b5e4cb09092dc1576cb3708984b7f4544531077740d",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text0_0": [
+        1408,
+        238,
+        3481,
+        454
+      ],
+      "text0_1": [
+        2078,
+        4259,
+        2811,
+        4354
+      ],
+      "text0_2": [
+        301,
+        1770,
+        397,
+        2790
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9228061087688645,
+      "panel0": 0.8923939658108179,
+      "text0_0": 0.8243745593726497,
+      "text0_1": 0.36272615098540956,
+      "text0_2": 0.38823073132314745
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_loglogplottracelength_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "4be0045c4f681642a84e0675a6269252a5e00442ddc3bf9e0cc4386ef39121d2",
+    "native_sha256": "6ecbbdba836753d2e954e8c2d649d5bc81fab01f9e92c884616d4818c51d81c3",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text0_0": [
+        1386,
+        238,
+        3504,
+        454
+      ],
+      "text0_1": [
+        2018,
+        4259,
+        2872,
+        4354
+      ],
+      "text0_2": [
+        302,
+        1981,
+        397,
+        2578
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9371074826262712,
+      "panel0": 0.9143900799169898,
+      "text0_0": 0.829432772360303,
+      "text0_1": 0.3415765121932432,
+      "text0_2": 0.41738029066991555
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_loglogplotsegmentlengthdensity_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_loglogplotsegmentlength_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "d6ff69766df88c6b6d56d9eb2bb895572c0630e99c5beef8a5d7cb62bd5db74a",
+    "native_sha256": "d91dbd1fb68fa9ccf0100c17d9dfc71ddf12fdeb3712a77cd344cc12526d7f9e",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text0_0": [
+        1304,
+        238,
+        3586,
+        454
+      ],
+      "text0_1": [
+        2018,
+        4259,
+        2872,
+        4354
+      ],
+      "text0_2": [
+        301,
+        1770,
+        397,
+        2790
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.916525421102309,
+      "panel0": 0.8838435553233063,
+      "text0_0": 0.8208308924197335,
+      "text0_1": 0.3415765121932432,
+      "text0_2": 0.38823073132314745
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_loglogplotsegmentlength_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "7e08855c7c55280598c881d5d6296dff558d9b29fa92f9fe589401cbd4acda21",
+    "native_sha256": "17894f3250fefb193bc558474b0550aea3d2cb481d75d3e9e373f6006fea553b",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        1502,
+        144,
+        3388,
+        359
+      ],
+      "text0_1": [
+        2181,
+        4354,
+        2709,
+        4449
+      ],
+      "text0_2": [
+        301,
+        2109,
+        397,
+        2450
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8429534429452477,
+      "panel0": 0.7670198622663141,
+      "text0_0": 0.8487764739537592,
+      "text0_1": 0.36327015027351517,
+      "text0_2": 0.4880379159181773
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_tracelengthsFittingPowerLaw_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "6fb99b2ff0f3e4736e17be49a66974af5bec6ea06234aa1be9bf8833644dc5cd",
+    "native_sha256": "b3457ca63c2da98e32459e8d309f739d8009a39b76b6fd231fe392047d74a8ee",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        1482,
+        144,
+        3408,
+        359
+      ],
+      "text0_1": [
+        2181,
+        4338,
+        2709,
+        4432
+      ],
+      "text0_2": [
+        301,
+        2109,
+        397,
+        2450
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8674171484314014,
+      "panel0": 0.8092621081035619,
+      "text0_0": 0.8417745744079959,
+      "text0_1": 0.35851190947946315,
+      "text0_2": 0.4880379159181773
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_tracelengthsFittingExponential_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "5e928bf56fde3d93da2b6e2135dc4a201c1c9baa15e47d82d3125856d6b98d83",
+    "native_sha256": "92488e951358bfe2a639cb130821ef145a4b3e3d68eaeaf52e385c299ea898ad",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        1505,
+        144,
+        3385,
+        359
+      ],
+      "text0_1": [
+        2181,
+        4354,
+        2709,
+        4449
+      ],
+      "text0_2": [
+        349,
+        2109,
+        445,
+        2450
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8818246905279575,
+      "panel0": 0.8307516765706148,
+      "text0_0": 0.8440987912356644,
+      "text0_1": 0.36327015027351517,
+      "text0_2": 0.49234779542639046
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_tracelengthsFittingLogNormal_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "f6c12dbcb52a101cd1a9ced79abe6074aa13bf1cc3fd1673a3286f2d19141a54",
+    "native_sha256": "858621c28221d29ad0dfa608120bbd5274462b8cc22704bf2d5ae9e66f458b8b",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        1423,
+        144,
+        3467,
+        359
+      ],
+      "text0_1": [
+        2181,
+        4354,
+        2709,
+        4449
+      ],
+      "text0_2": [
+        301,
+        2109,
+        397,
+        2450
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8542326085181516,
+      "panel0": 0.785529329543636,
+      "text0_0": 0.8372335489996509,
+      "text0_1": 0.36327015027351517,
+      "text0_2": 0.4880379159181773
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_segmentlengthsFittingPowerLaw_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "e710c3f7e0d14d33a87ba1e9b817b42216b1322b46b6064543092ffd34a8d205",
+    "native_sha256": "129f832a5e262ecbded898ef62ffc80b98fa8b1cb40c5ea8c7a8d290ee7bfbc7",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        1403,
+        144,
+        3487,
+        359
+      ],
+      "text0_1": [
+        2181,
+        4338,
+        2709,
+        4432
+      ],
+      "text0_2": [
+        301,
+        2109,
+        397,
+        2450
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.862749710811961,
+      "panel0": 0.8029869638318313,
+      "text0_0": 0.8396536515803025,
+      "text0_1": 0.35851190947946315,
+      "text0_2": 0.4880379159181773
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_segmentlengthsFittingExponential_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "528a8f69971155df25ce2d29c3fa2fc157caf047cf3b2e8e36bba52c1aaae4e1",
+    "native_sha256": "e901f51ee125f2efed1d5ccbe3e88a1ba9d1e2a5b0e72c2b9a419bdf2b677c8e",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        1426,
+        144,
+        3464,
+        359
+      ],
+      "text0_1": [
+        2181,
+        4354,
+        2709,
+        4449
+      ],
+      "text0_2": [
+        349,
+        2109,
+        445,
+        2450
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.898420534348786,
+      "panel0": 0.8570330524592945,
+      "text0_0": 0.8418137224980532,
+      "text0_1": 0.36327015027351517,
+      "text0_2": 0.49234779542639046
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_segmentlengthsFittingLogNormal_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_crossplotsegmentlengthangle_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "65a5a234c632b750a89ced00de51286cc0ae4693b243497a2a10a21bf8f3be05",
+    "native_sha256": "23f6649061fba1d83117ffbe66ee83750b8495519e170a66abda3dca91bd461e",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text0_0": [
+        1435,
+        238,
+        3454,
+        454
+      ],
+      "text0_1": [
+        1875,
+        4243,
+        3014,
+        4338
+      ],
+      "text0_2": [
+        327,
+        1743,
+        422,
+        2816
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9498656749803228,
+      "panel0": 0.9420213836783405,
+      "text0_0": 0.858992485352696,
+      "text0_1": 0.3581323983334543,
+      "text0_2": 0.4297340342567324
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_crossplotsegmentlengthangle_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_blocksizecentroidmap_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "2487d846a19d50c14cde31da83131b98d08508dfca265372d81c17a888903d91",
+    "native_sha256": "5337269d2055c70fdff0875b1d8c23229390ea4e9cf3018288b4b51d72e0ddf6",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        456,
+        4279,
+        4103
+      ],
+      "text0_0": [
+        1959,
+        248,
+        2930,
+        464
+      ],
+      "text0_1": [
+        2280,
+        4233,
+        2610,
+        4327
+      ],
+      "text0_2": [
+        281,
+        2120,
+        376,
+        2439
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9745362812957877,
+      "panel0": 0.9815634764120461,
+      "text0_0": 0.8896355965535867,
+      "text0_1": 0.3634080640796323,
+      "text0_2": 0.4641432995850407
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_blocksizecentroidmap_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_blocksizeloglog_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "3b27882eed8330aa6817cbf284621f33fecd53ea02d277262dca00f58266865b",
+    "native_sha256": "427fa419fa02bf392e33be2bd5d8bce95dc3d9264798036411a515552ffc0195",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text0_0": [
+        1890,
+        238,
+        3000,
+        454
+      ],
+      "text0_1": [
+        1976,
+        4259,
+        2914,
+        4371
+      ],
+      "text0_2": [
+        301,
+        1871,
+        397,
+        2689
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.7868509561636654,
+      "panel0": 0.6685240058438787,
+      "text0_0": 0.870282525676806,
+      "text0_1": 0.4913069520448225,
+      "text0_2": 0.3879573846636791
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_blocksizeloglog_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_blocksizehisto_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "553a929f221b23cbf806f3f5e607951e11c88d35cfce8f02d522fed9d8fe9fa6",
+    "native_sha256": "c25974098cd41a2cb0e9e54516bb82d8b9486e78504d0f0a642d0687c2d228ee",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text0_0": [
+        1890,
+        238,
+        3000,
+        454
+      ],
+      "text0_1": [
+        1976,
+        4243,
+        2914,
+        4355
+      ],
+      "text0_2": [
+        372,
+        2018,
+        468,
+        2541
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.944195901521739,
+      "panel0": 0.9297927939324082,
+      "text0_0": 0.8716615879288486,
+      "text0_1": 0.4518994280556278,
+      "text0_2": 0.4645863923302205
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_blocksizehisto_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_segmentlength_variogram_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "21a0e80d8474b0df5436a6d938badc0fb4d3e8afcde3296b02a8879d5b88b4dc",
+    "native_sha256": "74d98d77f4f06836ab4b2209fe418d7017a232123a92825624333cacf9f9eb64",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        1921,
+        144,
+        2969,
+        359
+      ],
+      "text0_1": [
+        2284,
+        4338,
+        2605,
+        4432
+      ],
+      "text0_2": [
+        280,
+        2184,
+        376,
+        2375
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9452992369183367,
+      "panel0": 0.9324869668957337,
+      "text0_0": 0.887360227829821,
+      "text0_1": 0.34703450258505825,
+      "text0_2": 0.5569245142409458
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_segmentlength_variogram_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_histoangle_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "fd1499b2b631c4ad2cd8400f8735fd6a6e0a9f7ce9e6e6d2e6a6b9de971db441",
+    "native_sha256": "d1fe13d6d8486b7db89b5428364242a5b7b59f745cfa542c41c6917e40869c1d",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text0_0": [
+        1773,
+        238,
+        3117,
+        454
+      ],
+      "text0_1": [
+        1875,
+        4243,
+        3014,
+        4338
+      ],
+      "text0_2": [
+        327,
+        2075,
+        422,
+        2484
+      ],
+      "panel1": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text1_0": [
+        4491,
+        2018,
+        4587,
+        2541
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.972726308232076,
+      "panel0": 0.9823625059620701,
+      "text0_0": 0.8677989466723767,
+      "text0_1": 0.3581323983334543,
+      "text0_2": 0.48264295994943957,
+      "panel1": 0.9823625059620701,
+      "text1_0": 0.541167364901752
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_histoangle_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_roseangleEqArea_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "c16c6df22a78b2fac8e63323de418c6fa06156f6e5a04352a222c7b908ef66d3",
+    "native_sha256": "29be85f10b32d014b56e83a92c1e1ad11dba50cc39089881409039722209d964",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        717,
+        304,
+        4173,
+        3759
+      ],
+      "text0_0": [
+        1629,
+        96,
+        3260,
+        312
+      ],
+      "colourbar1": [
+        717,
+        3961,
+        4173,
+        4085
+      ],
+      "text1_0": [
+        1987,
+        4215,
+        2903,
+        4310
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9550748888811129,
+      "panel0": 0.9454247247058206,
+      "text0_0": 0.7499742314609592,
+      "colourbar1": 0.8773863888671952,
+      "text1_0": 0.4774796652411826
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_roseangleEqArea_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_IYXnodes_traces_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "951734f7d37a33ee994db8c5099af8e75cbef911fc47910b106a52aa960a5666",
+    "native_sha256": "fc898bbe4741fc27ce806aaf13bccd1c292b05cdd87cce373ca3d561ee20618a",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        839,
+        659,
+        3886,
+        3688
+      ],
+      "text0_0": [
+        1733,
+        428,
+        2992,
+        646
+      ],
+      "text0_1": [
+        2197,
+        3818,
+        2527,
+        3912
+      ],
+      "text0_2": [
+        509,
+        2014,
+        604,
+        2332
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8137968096095288,
+      "panel0": 0.6580319041013077,
+      "text0_0": 0.578083458047198,
+      "text0_1": 0.4647443325304776,
+      "text0_2": 0.5229702471224139
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_IYXnodes_traces_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_XYnodes_traces_heat_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "06cb5450ffd8b6fbf3d86e3f6fe884289902aa40c3ab9ae4be8aecf0a9546473",
+    "native_sha256": "8e94dfd66247ec6d6f555dd9863a94c93406bb66994350da8d35e582b32a5c59",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        839,
+        659,
+        3886,
+        3688
+      ],
+      "text0_0": [
+        1760,
+        451,
+        2965,
+        667
+      ],
+      "text0_1": [
+        2197,
+        3818,
+        2527,
+        3912
+      ],
+      "text0_2": [
+        509,
+        2014,
+        604,
+        2332
+      ],
+      "colourbar1": [
+        839,
+        4109,
+        3886,
+        4233
+      ],
+      "text1_0": [
+        1915,
+        4363,
+        2810,
+        4458
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9111796686506141,
+      "panel0": 0.9109393859391339,
+      "text0_0": 0.7529111531600816,
+      "text0_1": 0.4385558895088428,
+      "text0_2": 0.572080767403818,
+      "colourbar1": 0.4406038295983545,
+      "text1_0": 0.598389364951772
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_XYnodes_traces_heat_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_Inodes_traces_heat_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "6394832991ee71591cb968ca819d06f2abe709eaca9334cb1672d23ebddb5255",
+    "native_sha256": "d9b91c92bbfe1a046e3c1ff00542d7984ec0f4000dbe150bea359eb8245bea84",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        839,
+        659,
+        3886,
+        3688
+      ],
+      "text0_0": [
+        1994,
+        451,
+        2730,
+        667
+      ],
+      "text0_1": [
+        2197,
+        3818,
+        2527,
+        3912
+      ],
+      "text0_2": [
+        509,
+        2014,
+        604,
+        2332
+      ],
+      "colourbar1": [
+        839,
+        4109,
+        3886,
+        4233
+      ],
+      "text1_0": [
+        2010,
+        4363,
+        2714,
+        4458
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8717931615541263,
+      "panel0": 0.8387364808756614,
+      "text0_0": 0.6071743693294864,
+      "text0_1": 0.4385558895088428,
+      "text0_2": 0.572080767403818,
+      "colourbar1": 0.4406038295983545,
+      "text1_0": 0.595842197113218
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_Inodes_traces_heat_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_IYXtriangle_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "a2ac513113f5448a55c0355df050303d19e9303cb49d2eae805babcdad481902",
+    "native_sha256": "cf5e5f4292606be4dd95fc367ff86cb2c410135ed88f4d3734f8a5ce34722f68",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        563,
+        839,
+        4161,
+        3980
+      ],
+      "text0_0": [
+        1873,
+        531,
+        2852,
+        847
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9579586924195405,
+      "panel0": 0.927421536837902,
+      "text0_0": 0.6363749885840809
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_IYXtriangle_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_cracktensor_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "a83da7ec13dd15d340c11153376834f4c88bb953671023cca4e6f75583042955",
+    "native_sha256": "2f364a7a93c917851cc5fc26b6dcc95c7565b74d0680c837f3bf73864183fd92",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        687,
+        375,
+        4202,
+        3889
+      ],
+      "text0_0": [
+        1947,
+        37,
+        2943,
+        138
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9419518875901328,
+      "panel0": 0.9124234805486261,
+      "text0_0": 0.5981498527088631
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_cracktensor_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2D_permeability_polar_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "43b6bd82c930fb3763c8a6a8035c86be6bf7705d335c31569aa7b6f39e1db9ba",
+    "native_sha256": "2acb1fcdb14d2f800cfd272bf15915c3573524fe65483a03d45eeb385833d52f",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        446,
+        4279,
+        4113
+      ],
+      "text0_0": [
+        1833,
+        19,
+        3056,
+        141
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9679142106725704,
+      "panel0": 0.9575883408427259,
+      "text0_0": 0.6075263307112078
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2D_permeability_polar_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "FracPaQ2Dwavelet_a32_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "71c4992d70de3feb89c7e8396d60c7493b293efd13fec8bc82cfe237bec3ee2d",
+    "native_sha256": "ea1d3074a3a502fbef33cbf5da5fd505ebe5b386d52bea1d8f22e2a9485e2622",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        469,
+        517,
+        1704,
+        1751
+      ],
+      "text0_0": [
+        818,
+        304,
+        1356,
+        502
+      ],
+      "text0_1": [
+        922,
+        1881,
+        1252,
+        1975
+      ],
+      "text0_2": [
+        139,
+        975,
+        234,
+        1293
+      ],
+      "colourbar1": [
+        1906,
+        517,
+        1995,
+        1751
+      ],
+      "panel2": [
+        2831,
+        517,
+        4066,
+        1751
+      ],
+      "text2_0": [
+        3158,
+        304,
+        3739,
+        502
+      ],
+      "text2_1": [
+        3284,
+        1881,
+        3614,
+        1975
+      ],
+      "text2_2": [
+        2501,
+        975,
+        2597,
+        1293
+      ],
+      "colourbar3": [
+        4268,
+        517,
+        4358,
+        1751
+      ],
+      "panel4": [
+        374,
+        2737,
+        1988,
+        4350
+      ],
+      "text4_0": [
+        479,
+        2530,
+        1883,
+        2720
+      ],
+      "panel5": [
+        2949,
+        2784,
+        4421,
+        4255
+      ],
+      "text5_0": [
+        3279,
+        2571,
+        4091,
+        2769
+      ],
+      "text5_1": [
+        3557,
+        4385,
+        3813,
+        4488
+      ],
+      "text5_2": [
+        2754,
+        3192,
+        2853,
+        3848
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.824467608305623,
+      "panel0": 0.5603006336078851,
+      "text0_0": 0.5933656503742043,
+      "text0_1": 0.4484378868879415,
+      "text0_2": 0.5924388346277041,
+      "colourbar1": 0.7725114923434999,
+      "panel2": 0.8155211125477865,
+      "text2_0": 0.6168728645565094,
+      "text2_1": 0.402328369121186,
+      "text2_2": 0.5070276367302905,
+      "colourbar3": 0.5695505964921684,
+      "panel4": 0.7391750799762625,
+      "text4_0": 0.6990564136332559,
+      "panel5": 0.7274293943103678,
+      "text5_0": 0.6479881570423702,
+      "text5_1": 0.5787027161934123,
+      "text5_2": 0.1692184648449957
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/FracPaQ2Dwavelet_a32_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "guiFracPaQ2D_tracelengthalonggraph_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "3d632e6101ae61297457b93e743993478f8deba1e2a99b601c2227980d18caee",
+    "native_sha256": "65067bd47b4cb914ea2f44987249e747c8eb881e8496c384077450ed41bc16d3",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        2140,
+        230,
+        2750,
+        332
+      ],
+      "text0_1": [
+        1728,
+        4338,
+        3162,
+        4433
+      ],
+      "text0_2": [
+        281,
+        1914,
+        376,
+        2646
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9384892364013999,
+      "panel0": 0.9333064309745591,
+      "text0_0": 0.38153669519735794,
+      "text0_1": 0.35469992838186065,
+      "text0_2": 0.47093596832468315
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/guiFracPaQ2D_tracelengthalonggraph_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "guiFracPaQ2D_segmentlengthalonggraph_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "868ac57112b05060a0234966278a4621b2497796ac422b92aedbe88e8354d8dd",
+    "native_sha256": "5f69c3deba312f46d6820428be70c60835404ff66ea12e1ba16785567e358e05",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        2066,
+        229,
+        2824,
+        332
+      ],
+      "text0_1": [
+        1728,
+        4338,
+        3162,
+        4433
+      ],
+      "text0_2": [
+        326,
+        1853,
+        422,
+        2706
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9389599749137577,
+      "panel0": 0.93317923224491,
+      "text0_0": 0.36864230369070433,
+      "text0_1": 0.35469992838186065,
+      "text0_2": 0.4224805373215192
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/guiFracPaQ2D_segmentlengthalonggraph_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "guiFracPaQ2D_segmentanglealonggraph_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "e5c398aa5fc33081df6ded380d692a7a4ff03e8507ea95f9049031ebcfe9d1bc",
+    "native_sha256": "be2ddd7dd0b5c379247d2323e06135182ba8ad02668d58cc548f598f0e98a188",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        2084,
+        229,
+        2806,
+        332
+      ],
+      "text0_1": [
+        1728,
+        4338,
+        3162,
+        4433
+      ],
+      "text0_2": [
+        326,
+        1821,
+        422,
+        2739
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9567701748705358,
+      "panel0": 0.9592194280698824,
+      "text0_0": 0.3714626542706168,
+      "text0_1": 0.35469992838186065,
+      "text0_2": 0.4430676654142716
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/guiFracPaQ2D_segmentanglealonggraph_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "guiFracPaQ2D_graphtracemap_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "00fd2db2442c3aba26ca4862d184d417c7031ea50ed9d5da7e7cd1f699c4d0ac",
+    "native_sha256": "0eea7752381c199ea5c74242ac6c9c4e26cb96da487abbdb1d5118613d13df8c",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        745,
+        309,
+        4144,
+        3688
+      ],
+      "text0_0": [
+        1729,
+        187,
+        3160,
+        289
+      ],
+      "text0_1": [
+        2280,
+        3818,
+        2610,
+        3912
+      ],
+      "text0_2": [
+        416,
+        1839,
+        511,
+        2158
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.875112500481769,
+      "panel0": 0.8195691844719111,
+      "text0_0": 0.3715961716340302,
+      "text0_1": 0.4367202191472368,
+      "text0_2": 0.5249036472310638
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/guiFracPaQ2D_graphtracemap_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "guiFracPaQ2D_intensityalonggraph_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "064be9ab58508fb93a2203fb9cf3f6f783cbf0c1162a1d881bf20164108a308b",
+    "native_sha256": "cf50c95d06f444491f12adbb0bbe6455b4d3b3db5eb96b403bfdc9cc9ebcfe32",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        1712,
+        211,
+        3177,
+        332
+      ],
+      "text0_1": [
+        1728,
+        4338,
+        3162,
+        4433
+      ],
+      "text0_2": [
+        241,
+        1945,
+        353,
+        2614
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9546207515161708,
+      "panel0": 0.9605699272478717,
+      "text0_0": 0.41639090751953667,
+      "text0_1": 0.35469992838186065,
+      "text0_2": 0.5225229167158083
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/guiFracPaQ2D_intensityalonggraph_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "guiFracPaQ2D_densityalonggraph_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "c2b70ee5a6072a47722295bfa173c13aaa6f34691ffdde8de6ea681394e8cdce",
+    "native_sha256": "1ccc1774b5d52ec999569a862b729ff97fff79bec93d42827cad951b6c5e4f47",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        1740,
+        210,
+        3149,
+        332
+      ],
+      "text0_1": [
+        1728,
+        4338,
+        3162,
+        4433
+      ],
+      "text0_2": [
+        194,
+        1961,
+        307,
+        2598
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.940380409263359,
+      "panel0": 0.9403317978321765,
+      "text0_0": 0.4139421176880724,
+      "text0_1": 0.35469992838186065,
+      "text0_2": 0.6513660316550283
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/guiFracPaQ2D_densityalonggraph_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "guiFracPaQ2D_tracelengthfromgraph_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "0c1ebae80883da0938ac338523a4fc5ecf7c840376b25d4512f86575d2fce97c",
+    "native_sha256": "03b25d44fadb0cc879b2871d0e7cb40a125377017444bbe3b16d55a0d233a59a",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        2140,
+        230,
+        2750,
+        332
+      ],
+      "text0_1": [
+        1716,
+        4338,
+        3174,
+        4432
+      ],
+      "text0_2": [
+        281,
+        1914,
+        376,
+        2646
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9520066237229227,
+      "panel0": 0.9503279219768542,
+      "text0_0": 0.38204197839148124,
+      "text0_1": 0.3432156089652043,
+      "text0_2": 0.47093596832468315
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/guiFracPaQ2D_tracelengthfromgraph_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "guiFracPaQ2D_segmentlengthfromgraph_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "4854a02954665de9e9712e3160564bbbcb0f5aa1c7a179ecc5871f1b23f72339",
+    "native_sha256": "f5160023c40b4478806e5661fe138035a1a6a4d3bd7eb721d4eb3125132d5e09",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        2066,
+        229,
+        2824,
+        332
+      ],
+      "text0_1": [
+        1716,
+        4338,
+        3174,
+        4432
+      ],
+      "text0_2": [
+        326,
+        1853,
+        422,
+        2706
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.8778448659660035,
+      "panel0": 0.8373992290337665,
+      "text0_0": 0.36864230369070433,
+      "text0_1": 0.3432156089652043,
+      "text0_2": 0.4224805373215192
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/guiFracPaQ2D_segmentlengthfromgraph_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  },
+  {
+    "name": "guiFracPaQ2D_segmentanglefromgraph_SD11A.png",
+    "status": "Compared; not homologated",
+    "python_sha256": "d959833f0e1956e086e97ffaa78c4b0323ab2993ea6b55b96280bdf61d3ac375",
+    "native_sha256": "6d4359d32104597eaf623ff20b58a1cf2710b8220222a5bb7179f7c418843a11",
+    "regions_xyxy": {
+      "full_canvas": [
+        0,
+        0,
+        4724,
+        4724
+      ],
+      "panel0": [
+        611,
+        351,
+        4279,
+        4208
+      ],
+      "text0_0": [
+        2084,
+        229,
+        2806,
+        332
+      ],
+      "text0_1": [
+        1716,
+        4338,
+        3174,
+        4432
+      ],
+      "text0_2": [
+        326,
+        1821,
+        422,
+        2739
+      ]
+    },
+    "ssim_rgb_data_range255": {
+      "full_canvas": 0.9297012239869017,
+      "panel0": 0.9175287429090034,
+      "text0_0": 0.3714626542706168,
+      "text0_1": 0.3432156089652043,
+      "text0_2": 0.4430676654142716
+    },
+    "threshold": 0.98,
+    "difference": "tests/reference/sprint16/sd11a/differences/guiFracPaQ2D_segmentanglefromgraph_SD11A.png",
+    "scope": "Diagnostic ROIs can overlap and are Python-anchored; not the independent semantic region partition required for final acceptance. Approved Q changes remain separate."
+  }
+]

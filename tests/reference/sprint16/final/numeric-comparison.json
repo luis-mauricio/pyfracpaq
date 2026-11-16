@@ -1,0 +1,1361 @@
+{
+  "comparisons": [
+    {
+      "name": "geometry.node_coordinates",
+      "python_shape": [
+        1521,
+        2
+      ],
+      "native_shape": [
+        1521,
+        2
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "geometry.segment_coordinates",
+      "python_shape": [
+        1076,
+        4
+      ],
+      "native_shape": [
+        1076,
+        4
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "geometry.segment_lengths",
+      "python_shape": [
+        1076
+      ],
+      "native_shape": [
+        1076
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "geometry.raw_angles",
+      "python_shape": [
+        1076
+      ],
+      "native_shape": [
+        1076
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 3.6e-10,
+      "approved_difference": null
+    },
+    {
+      "name": "geometry.trace_lengths",
+      "python_shape": [
+        445
+      ],
+      "native_shape": [
+        445
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "geometry.segment_midpoints",
+      "python_shape": [
+        1076,
+        2
+      ],
+      "native_shape": [
+        1076,
+        2
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.4210854715202004e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "geometry.trace_midpoints",
+      "python_shape": [
+        445,
+        2
+      ],
+      "native_shape": [
+        445,
+        2
+      ],
+      "same_finite_mask": true,
+      "passed": false,
+      "maximum_absolute_error": 45.90000000000009,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "geometry.start_lengths",
+      "python_shape": [
+        1076
+      ],
+      "native_shape": [
+        1076
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "geometry.end_lengths",
+      "python_shape": [
+        1076
+      ],
+      "native_shape": [
+        1076
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "trace_histogram_centres",
+      "python_shape": [
+        21
+      ],
+      "native_shape": [
+        21
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 8.881784197001252e-16,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "trace_histogram_frequencies",
+      "python_shape": [
+        21
+      ],
+      "native_shape": [
+        21
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 0,
+      "atol": 0,
+      "approved_difference": null
+    },
+    {
+      "name": "trace_complementary_centres",
+      "python_shape": [
+        2050
+      ],
+      "native_shape": [
+        2050
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "trace_complementary_frequencies",
+      "python_shape": [
+        2050
+      ],
+      "native_shape": [
+        2050
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 0,
+      "atol": 0,
+      "approved_difference": null
+    },
+    {
+      "name": "trace_complementary_complementary",
+      "python_shape": [
+        2050
+      ],
+      "native_shape": [
+        2050
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 0,
+      "atol": 0,
+      "approved_difference": null
+    },
+    {
+      "name": "segment_histogram_centres",
+      "python_shape": [
+        21
+      ],
+      "native_shape": [
+        21
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "segment_histogram_frequencies",
+      "python_shape": [
+        21
+      ],
+      "native_shape": [
+        21
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 0,
+      "atol": 0,
+      "approved_difference": null
+    },
+    {
+      "name": "segment_complementary_centres",
+      "python_shape": [
+        313
+      ],
+      "native_shape": [
+        313
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "segment_complementary_frequencies",
+      "python_shape": [
+        313
+      ],
+      "native_shape": [
+        313
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 0,
+      "atol": 0,
+      "approved_difference": null
+    },
+    {
+      "name": "segment_complementary_complementary",
+      "python_shape": [
+        313
+      ],
+      "native_shape": [
+        313
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 0,
+      "atol": 0,
+      "approved_difference": null
+    },
+    {
+      "name": "angles.angles",
+      "python_shape": [
+        2152
+      ],
+      "native_shape": [
+        2152
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 0,
+      "atol": 0,
+      "approved_difference": null
+    },
+    {
+      "name": "angles.centres",
+      "python_shape": [
+        21
+      ],
+      "native_shape": [
+        21
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 0,
+      "atol": 0,
+      "approved_difference": null
+    },
+    {
+      "name": "angles.frequencies",
+      "python_shape": [
+        21
+      ],
+      "native_shape": [
+        21
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 0,
+      "atol": 0,
+      "approved_difference": null
+    },
+    {
+      "name": "tensor.F2",
+      "python_shape": [
+        2,
+        2
+      ],
+      "native_shape": [
+        2,
+        2
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.887379141862766e-15,
+      "rtol": 1e-08,
+      "atol": 1.2345645446156467e-12,
+      "approved_difference": null
+    },
+    {
+      "name": "tensor.polar2",
+      "python_shape": [
+        361
+      ],
+      "native_shape": [
+        361
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 3.3306690738754696e-15,
+      "rtol": 1e-08,
+      "atol": 1.2345645446156467e-12,
+      "approved_difference": null
+    },
+    {
+      "name": "tensor.F4",
+      "python_shape": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "native_shape": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "rtol": 1e-08,
+      "atol": 1.2345645446156467e-12,
+      "approved_difference": null
+    },
+    {
+      "name": "tensor.polar4",
+      "python_shape": [
+        361
+      ],
+      "native_shape": [
+        361
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.887379141862766e-15,
+      "rtol": 1e-08,
+      "atol": 1.2345645446156467e-12,
+      "approved_difference": null
+    },
+    {
+      "name": "tensor.F8",
+      "python_shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "native_shape": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1102230246251565e-16,
+      "rtol": 1e-08,
+      "atol": 1.2345645446156467e-12,
+      "approved_difference": null
+    },
+    {
+      "name": "tensor.polar8",
+      "python_shape": [
+        361
+      ],
+      "native_shape": [
+        361
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.6645352591003757e-15,
+      "rtol": 1e-08,
+      "atol": 1.2345645446156467e-12,
+      "approved_difference": null
+    },
+    {
+      "name": "permeability.p",
+      "python_shape": [
+        2,
+        2
+      ],
+      "native_shape": [
+        2,
+        2
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 8.077935669463161e-28,
+      "rtol": 1e-08,
+      "atol": 8.73838680677294e-24,
+      "approved_difference": null
+    },
+    {
+      "name": "permeability.k",
+      "python_shape": [
+        2,
+        2
+      ],
+      "native_shape": [
+        2,
+        2
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 3.0292258760486853e-28,
+      "rtol": 1e-08,
+      "atol": 7.281989005644118e-25,
+      "approved_difference": null
+    },
+    {
+      "name": "permeability.polar",
+      "python_shape": [
+        361
+      ],
+      "native_shape": [
+        361
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.0097419586828951e-27,
+      "rtol": 1e-08,
+      "atol": 1.0063782529085573e-24,
+      "approved_difference": null
+    },
+    {
+      "name": "circular.intensity",
+      "python_shape": [
+        12,
+        12
+      ],
+      "native_shape": [
+        12,
+        12
+      ],
+      "same_finite_mask": true,
+      "passed": false,
+      "maximum_absolute_error": 0.006609610475317426,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": "Q20 finite segment/circle intersections"
+    },
+    {
+      "name": "circular.grid_x",
+      "python_shape": [
+        12
+      ],
+      "native_shape": [
+        12
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "circular.grid_y",
+      "python_shape": [
+        12
+      ],
+      "native_shape": [
+        12
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "circular.density",
+      "python_shape": [
+        12,
+        12
+      ],
+      "native_shape": [
+        12,
+        12
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "circular.grid_x",
+      "python_shape": [
+        12
+      ],
+      "native_shape": [
+        12
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "circular.grid_y",
+      "python_shape": [
+        12
+      ],
+      "native_shape": [
+        12
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure0.graphs_along_distances",
+      "python_shape": [
+        34
+      ],
+      "native_shape": [
+        34
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure0.graphs_along_trace_lengths",
+      "python_shape": [
+        34
+      ],
+      "native_shape": [
+        34
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure1.graphs_along_distances",
+      "python_shape": [
+        34
+      ],
+      "native_shape": [
+        34
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure1.graphs_along_segment_lengths",
+      "python_shape": [
+        34
+      ],
+      "native_shape": [
+        34
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure2.graphs_along_distances",
+      "python_shape": [
+        34
+      ],
+      "native_shape": [
+        34
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure2.graphs_along_raw_angles",
+      "python_shape": [
+        34
+      ],
+      "native_shape": [
+        34
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure4.graphs_circles_distances",
+      "python_shape": [
+        12
+      ],
+      "native_shape": [
+        12
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure4.graphs_circles_intensity",
+      "python_shape": [
+        12
+      ],
+      "native_shape": [
+        12
+      ],
+      "same_finite_mask": true,
+      "passed": false,
+      "maximum_absolute_error": 0.012013815888271513,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": "Q20 finite counts/P20 normalisation"
+    },
+    {
+      "name": "graphs.figure5.graphs_circles_distances",
+      "python_shape": [
+        12
+      ],
+      "native_shape": [
+        12
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure5.graphs_circles_density",
+      "python_shape": [
+        12
+      ],
+      "native_shape": [
+        12
+      ],
+      "same_finite_mask": true,
+      "passed": false,
+      "maximum_absolute_error": 0.07934165689900588,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": "Q20 finite counts/P20 normalisation"
+    },
+    {
+      "name": "graphs.figure6.graphs_trace_distances",
+      "python_shape": [
+        445
+      ],
+      "native_shape": [
+        445
+      ],
+      "same_finite_mask": true,
+      "passed": false,
+      "maximum_absolute_error": 45.90000000000009,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure6.geometry_trace_lengths",
+      "python_shape": [
+        445
+      ],
+      "native_shape": [
+        445
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure7.graphs_segment_distances",
+      "python_shape": [
+        1076
+      ],
+      "native_shape": [
+        1076
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure7.geometry_segment_lengths",
+      "python_shape": [
+        1076
+      ],
+      "native_shape": [
+        1076
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure8.graphs_segment_distances",
+      "python_shape": [
+        1076
+      ],
+      "native_shape": [
+        1076
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "graphs.figure8.geometry_raw_angles",
+      "python_shape": [
+        1076
+      ],
+      "native_shape": [
+        1076
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "variogram.distance",
+      "python_shape": [
+        30
+      ],
+      "native_shape": [
+        30
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.2737367544323206e-13,
+      "rtol": 1e-08,
+      "atol": 1e-08,
+      "approved_difference": null
+    },
+    {
+      "name": "variogram.values",
+      "python_shape": [
+        30
+      ],
+      "native_shape": [
+        30
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.4551915228366852e-11,
+      "rtol": 1e-08,
+      "atol": 1e-08,
+      "approved_difference": null
+    },
+    {
+      "name": "mohr.normal",
+      "python_shape": [
+        361
+      ],
+      "native_shape": [
+        361
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mohr.shear",
+      "python_shape": [
+        361
+      ],
+      "native_shape": [
+        361
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.6645352591003757e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.power_law.observed.x",
+      "python_shape": [
+        445
+      ],
+      "native_shape": [
+        445
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.power_law.observed.y",
+      "python_shape": [
+        445
+      ],
+      "native_shape": [
+        445
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.power_law.estimated.x",
+      "python_shape": [
+        215
+      ],
+      "native_shape": [
+        215
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.power_law.estimated.y",
+      "python_shape": [
+        215
+      ],
+      "native_shape": [
+        215
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 6.661338147750939e-16,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.exponential.observed.x",
+      "python_shape": [
+        445
+      ],
+      "native_shape": [
+        445
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.exponential.observed.y",
+      "python_shape": [
+        445
+      ],
+      "native_shape": [
+        445
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.exponential.estimated.x",
+      "python_shape": [
+        28
+      ],
+      "native_shape": [
+        28
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.exponential.estimated.y",
+      "python_shape": [
+        28
+      ],
+      "native_shape": [
+        28
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.0816681711721685e-17,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.lognormal.observed.x",
+      "python_shape": [
+        445
+      ],
+      "native_shape": [
+        445
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.lognormal.observed.y",
+      "python_shape": [
+        445
+      ],
+      "native_shape": [
+        445
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.lognormal.estimated.x",
+      "python_shape": [
+        445
+      ],
+      "native_shape": [
+        445
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.1368683772161603e-13,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.trace.lognormal.estimated.y",
+      "python_shape": [
+        445
+      ],
+      "native_shape": [
+        445
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 1.3322676295501878e-15,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.segment.power_law.observed.x",
+      "python_shape": [
+        1075
+      ],
+      "native_shape": [
+        1075
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.segment.power_law.observed.y",
+      "python_shape": [
+        1075
+      ],
+      "native_shape": [
+        1075
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.segment.power_law.estimated.x",
+      "python_shape": [
+        176
+      ],
+      "native_shape": [
+        176
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.segment.power_law.estimated.y",
+      "python_shape": [
+        176
+      ],
+      "native_shape": [
+        176
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 3.885780586188048e-16,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.segment.exponential.observed.x",
+      "python_shape": [
+        1075
+      ],
+      "native_shape": [
+        1075
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.segment.exponential.observed.y",
+      "python_shape": [
+        1075
+      ],
+      "native_shape": [
+        1075
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.segment.exponential.estimated.x",
+      "python_shape": [
+        757
+      ],
+      "native_shape": [
+        757
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.segment.exponential.estimated.y",
+      "python_shape": [
+        757
+      ],
+      "native_shape": [
+        757
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 3.3306690738754696e-16,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.segment.lognormal.observed.x",
+      "python_shape": [
+        1075
+      ],
+      "native_shape": [
+        1075
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 2.842170943040401e-14,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.segment.lognormal.observed.y",
+      "python_shape": [
+        1075
+      ],
+      "native_shape": [
+        1075
+      ],
+      "same_finite_mask": true,
+      "passed": true,
+      "maximum_absolute_error": 0.0,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": null
+    },
+    {
+      "name": "mle.segment.lognormal.estimated.x",
+      "python_shape": [
+        1053
+      ],
+      "native_shape": [
+        1076
+      ],
+      "same_finite_mask": false,
+      "passed": false,
+      "maximum_absolute_error": null,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": "Q15 candidate-specific lognormal tail"
+    },
+    {
+      "name": "mle.segment.lognormal.estimated.y",
+      "python_shape": [
+        1053
+      ],
+      "native_shape": [
+        1076
+      ],
+      "same_finite_mask": false,
+      "passed": false,
+      "maximum_absolute_error": null,
+      "rtol": 1e-10,
+      "atol": 2e-09,
+      "approved_difference": "Q15 candidate-specific lognormal tail"
+    }
+  ],
+  "files": [
+    {
+      "name": "FracPaQ2Dsegmentlengths_SD11A.txt",
+      "bytes_exact": true,
+      "python_sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839",
+      "native_sha256": "3d608281a503f56b83db38fbca6f78b7bba0a97f1180faf9cd7416d3853f3839"
+    },
+    {
+      "name": "FracPaQ2Dtracelengths_SD11A.txt",
+      "bytes_exact": true,
+      "python_sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874",
+      "native_sha256": "d78bb82fcf937814011fd0de1e0eadef13430abd39a2dc70b80a2a988f7b0874"
+    },
+    {
+      "name": "FracPaQ2Dsegmentangleslengths_SD11A.txt",
+      "bytes_exact": true,
+      "python_sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7",
+      "native_sha256": "6c726a9656be5d7a1238a3441256428883ad451659dceab9f6f325256a25c2e7"
+    },
+    {
+      "name": "FracPaQ2DEZROSE_SD11A.txt",
+      "bytes_exact": true,
+      "python_sha256": "477882701cbb8077201f56c05499e9ba132e8812db3f6cdd998df0c856915ee6",
+      "native_sha256": "477882701cbb8077201f56c05499e9ba132e8812db3f6cdd998df0c856915ee6"
+    }
+  ],
+  "connectivity_Q11": {
+    "native": {
+      "I": 685,
+      "X": 82,
+      "Y": 155
+    },
+    "python": {
+      "I": 606,
+      "X": 90,
+      "Y": 224
+    },
+    "approved": true
+  },
+  "blocks_Q14": {
+    "native_count": 65,
+    "python_count": 67,
+    "approved_difference": "Q14 raster/exterior/calibration"
+  },
+  "trace_halfway_cases": [
+    {
+      "source_line": 389,
+      "nodes": [
+        [
+          1710.3,
+          806.6
+        ],
+        [
+          1699.4,
+          763.7
+        ],
+        [
+          1699.4,
+          737.7
+        ],
+        [
+          1696.4,
+          718.7
+        ],
+        [
+          1690.4,
+          702.7
+        ]
+      ],
+      "trace_length": 106.58646871601017,
+      "python_midpoint": [
+        1699.4,
+        754.6698428056986
+      ],
+      "native_midpoint": [
+        1699.4,
+        772.7301571943013
+      ]
+    },
+    {
+      "source_line": 397,
+      "nodes": [
+        [
+          1605.9,
+          667.7
+        ],
+        [
+          1605.9,
+          621.8
+        ]
+      ],
+      "trace_length": 45.90000000000009,
+      "python_midpoint": [
+        1605.9,
+        644.75
+      ],
+      "native_midpoint": [
+        1605.9,
+        690.6500000000001
+      ]
+    }
+  ],
+  "halfway_contract": "S01-04 already requires half the path; Python implementation unchanged. Native source incorrectly displaces upward on downward vertical segments.",
+  "scope": "Comparisons keep masks/shapes/order. Explicit scientific changes are not asserted identical. No generic equal_nan or relaxed tolerances. Remaining families retain raw arrays/plots for review."
+}

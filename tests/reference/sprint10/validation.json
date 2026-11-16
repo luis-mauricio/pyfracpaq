@@ -1,0 +1,1757 @@
+{
+  "scope": "Default Run tensors/permeability, genuine native arrays and visual references; full visual homologation remains pending.",
+  "figures": [
+    {
+      "id": "FLO-08",
+      "path": "FracPaQ2D_cracktensor_TXT.png",
+      "sha256": "4a42e44b8b7d637c1218c20d779e9665632cc41f79fda8ffc7a8b32bca582f96",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_cracktensor_TXT.png",
+      "qa_sha256": "37bcbb69ba3ae6eeb7e92fdef5397d7fc8a0781dc9752fa16e8c6f22d7755dd8"
+    },
+    {
+      "id": "FLO-09",
+      "path": "FracPaQ2D_permeability_polar_TXT.png",
+      "sha256": "ff74e35a8ce3bea7b092577d1ea7988d22a1ba701ac844f6e390affa582d2830",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_permeability_polar_TXT.png",
+      "qa_sha256": "9c68754988ee60b360049b2c37276947f7919e9b1ca5402c265c63ad62cc5081"
+    },
+    {
+      "id": "FLO-08",
+      "path": "FracPaQ2D_cracktensor_SVG.png",
+      "sha256": "4a42e44b8b7d637c1218c20d779e9665632cc41f79fda8ffc7a8b32bca582f96",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_cracktensor_SVG.png",
+      "qa_sha256": "37bcbb69ba3ae6eeb7e92fdef5397d7fc8a0781dc9752fa16e8c6f22d7755dd8"
+    },
+    {
+      "id": "FLO-09",
+      "path": "FracPaQ2D_permeability_polar_SVG.png",
+      "sha256": "14a05ecde524f5a7a4707c0cba684763ef29ae41e225c3c8d5f39a0b4418540a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_permeability_polar_SVG.png",
+      "qa_sha256": "0e7e66d1807295a25d3e4934724e348c86b04f8b653424db683cc11fd8e32064"
+    },
+    {
+      "id": "FLO-08",
+      "path": "FracPaQ2D_cracktensor_Hough.png",
+      "sha256": "059451f126aa14387d7983d67e75974e6daea239c04301e8d29eceb9112ae795",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_cracktensor_Hough.png",
+      "qa_sha256": "80ec278b835194ad684b4013ca0a67f08a1a780dc2dc8b38a4eacac5f5099cb1"
+    },
+    {
+      "id": "FLO-09",
+      "path": "FracPaQ2D_permeability_polar_Hough.png",
+      "sha256": "06dbec1640b23ef861a67b4bb8f0f4f6b9674a4590e9d54ab6f8ff851c0ab0bf",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_permeability_polar_Hough.png",
+      "qa_sha256": "15535ecd1dae79dfcc82dfd2e9ab95345dcafbf044b631be97d9e94158108b34"
+    },
+    {
+      "id": "FLO-08",
+      "path": "FracPaQ2D_cracktensor_native_style.png",
+      "sha256": "fc701255d5487a7c4ccdc4027fb28d02850e7d886d24315b2e5649e47614511a",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_cracktensor_native_style.png",
+      "qa_sha256": "dd9c771d85ca6f3f592d8500416407c5aa02973d17818e43f2489d22347c4d6a"
+    },
+    {
+      "id": "FLO-09",
+      "path": "FracPaQ2D_permeability_polar_native_style.png",
+      "sha256": "5274c6e00130d4da664e9bc64a47261f7420b263d379b0806356cb4b68c4ec76",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_permeability_polar_native_style.png",
+      "qa_sha256": "a1385f983d36040f0c63f5735ebf1d05a622373c5d90f224ff49852ae5ebffc2"
+    },
+    {
+      "id": "FLO-08",
+      "path": "FracPaQ2D_cracktensor_zero.png",
+      "sha256": "4a42e44b8b7d637c1218c20d779e9665632cc41f79fda8ffc7a8b32bca582f96",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_cracktensor_zero.png",
+      "qa_sha256": "37bcbb69ba3ae6eeb7e92fdef5397d7fc8a0781dc9752fa16e8c6f22d7755dd8"
+    },
+    {
+      "id": "FLO-09",
+      "path": "FracPaQ2D_permeability_polar_zero.png",
+      "sha256": "d2a7cd3b6d919deb9635f004726395b44a0c3731dfbbfc35310088c6f4d10ef6",
+      "size": [
+        4724,
+        4724
+      ],
+      "dpi": [
+        599.9988,
+        599.9988
+      ],
+      "qa": "qa-FracPaQ2D_permeability_polar_zero.png",
+      "qa_sha256": "cfcf4147dddf6b9ed95c8339c87b5061f08644b60a6fed2db4d70fe0635873fb"
+    }
+  ],
+  "cases": [
+    {
+      "tag": "TXT",
+      "input_mode": "txt",
+      "trace_envelope_area": 24.0,
+      "domain_area": 24.0,
+      "unit": "pixels^2",
+      "Kmin": 9.72222222222222e-12,
+      "Kmax": 1.7013888888888884e-11,
+      "parameters": {
+        "values": [
+          [
+            "radiobutton_node",
+            true
+          ],
+          [
+            "radiobutton_image",
+            false
+          ],
+          [
+            "edit_houghpeaks",
+            "1000"
+          ],
+          [
+            "edit_houghthreshold",
+            "0.33"
+          ],
+          [
+            "edit_fillgap",
+            "5"
+          ],
+          [
+            "edit_minlength",
+            "3"
+          ],
+          [
+            "edit_filename",
+            "[no file selected]"
+          ],
+          [
+            "edit_scaling",
+            ""
+          ],
+          [
+            "checkbox_tracemap",
+            true
+          ],
+          [
+            "checkbox_shownodes",
+            false
+          ],
+          [
+            "checkbox_sliptendency",
+            false
+          ],
+          [
+            "checkbox_dilationtendency",
+            false
+          ],
+          [
+            "edit_sigma1",
+            "100"
+          ],
+          [
+            "edit_sigma2",
+            "50"
+          ],
+          [
+            "edit_thetasigma1",
+            "30"
+          ],
+          [
+            "checkbox_fracsuscep",
+            false
+          ],
+          [
+            "checkbox_CSF",
+            false
+          ],
+          [
+            "edit_C0",
+            "2"
+          ],
+          [
+            "edit_Pf",
+            "10"
+          ],
+          [
+            "edit_mu",
+            ".6"
+          ],
+          [
+            "checkbox_tracemaplength",
+            false
+          ],
+          [
+            "checkbox_segmentmaplength",
+            false
+          ],
+          [
+            "checkbox_segmentmapstrike",
+            true
+          ],
+          [
+            "checkbox_intensitymap",
+            false
+          ],
+          [
+            "checkbox_densitymap",
+            false
+          ],
+          [
+            "checkbox_showcircles",
+            false
+          ],
+          [
+            "edit_numscancircles",
+            "12"
+          ],
+          [
+            "checkbox_histoangle",
+            false
+          ],
+          [
+            "popupmenu_histoanglebins",
+            "20"
+          ],
+          [
+            "checkbox_rose",
+            true
+          ],
+          [
+            "checkbox_roselengthweighted",
+            false
+          ],
+          [
+            "checkbox_showrosemean",
+            false
+          ],
+          [
+            "checkbox_rosecolour",
+            true
+          ],
+          [
+            "popupmenu_rosebins",
+            "10"
+          ],
+          [
+            "edit_degfromnorth",
+            "12.5"
+          ],
+          [
+            "checkbox_censor",
+            false
+          ],
+          [
+            "checkbox_histolength",
+            true
+          ],
+          [
+            "popupmenu_histolengthbins",
+            "20"
+          ],
+          [
+            "checkbox_logloglength",
+            false
+          ],
+          [
+            "checkbox_mle",
+            false
+          ],
+          [
+            "edit_lc",
+            "0"
+          ],
+          [
+            "edit_uc",
+            "0"
+          ],
+          [
+            "checkbox_seglenvariogram",
+            false
+          ],
+          [
+            "checkbox_crossplot",
+            false
+          ],
+          [
+            "checkbox_blocksize",
+            false
+          ],
+          [
+            "radiobutton_fixedaperture",
+            true
+          ],
+          [
+            "edit_fixedaperture",
+            ".001"
+          ],
+          [
+            "radiobutton_scaledaperture",
+            false
+          ],
+          [
+            "edit_aperturefactor",
+            ".01"
+          ],
+          [
+            "edit_apertureexponent",
+            ".75"
+          ],
+          [
+            "checkbox_triangle",
+            false
+          ],
+          [
+            "edit_numblocksmap",
+            "12"
+          ],
+          [
+            "checkbox_permellipse",
+            false
+          ],
+          [
+            "edit_lambda",
+            ".7"
+          ],
+          [
+            "checkbox_cracktensor",
+            false
+          ],
+          [
+            "edit_numpixelsItoY",
+            "0"
+          ],
+          [
+            "checkbox_wavelet",
+            false
+          ],
+          [
+            "edit_aString",
+            "2 4 8 16"
+          ],
+          [
+            "radiobutton_Morlet",
+            true
+          ],
+          [
+            "radiobutton_Mexican",
+            false
+          ],
+          [
+            "edit_LString",
+            "2 4 8 16"
+          ],
+          [
+            "edit_DegString",
+            "20"
+          ],
+          [
+            "checkbox_tracelengthgraphfrom",
+            false
+          ],
+          [
+            "checkbox_segmentlengthgraphfrom",
+            false
+          ],
+          [
+            "checkbox_segmentanglegraphfrom",
+            false
+          ],
+          [
+            "checkbox_tracelengthgraphalong",
+            false
+          ],
+          [
+            "checkbox_segmentlengthgraphalong",
+            false
+          ],
+          [
+            "checkbox_segmentstrikegraphalong",
+            false
+          ],
+          [
+            "checkbox_intensitygraphalong",
+            false
+          ],
+          [
+            "checkbox_densitygraphalong",
+            false
+          ],
+          [
+            "edit_numscancirclesgraph",
+            "12"
+          ],
+          [
+            "edit_FilenameTag",
+            "Run1"
+          ]
+        ],
+        "selected": [
+          "FLO-08",
+          "FLO-09"
+        ],
+        "tag": "TXT",
+        "flip_x": true,
+        "flip_y": false,
+        "input": {
+          "path": "directional.txt",
+          "kind": "node",
+          "pixels_per_metre": null,
+          "extraction": [],
+          "file_stamp": null
+        }
+      }
+    },
+    {
+      "tag": "SVG",
+      "input_mode": "svg",
+      "trace_envelope_area": 24.0,
+      "domain_area": 24.0,
+      "unit": "pixels^2",
+      "Kmin": 2.1998877636914814e-07,
+      "Kmax": 3.063561334691554e-07,
+      "parameters": {
+        "values": [
+          [
+            "radiobutton_node",
+            true
+          ],
+          [
+            "radiobutton_image",
+            false
+          ],
+          [
+            "edit_houghpeaks",
+            "1000"
+          ],
+          [
+            "edit_houghthreshold",
+            "0.33"
+          ],
+          [
+            "edit_fillgap",
+            "5"
+          ],
+          [
+            "edit_minlength",
+            "3"
+          ],
+          [
+            "edit_filename",
+            "[no file selected]"
+          ],
+          [
+            "edit_scaling",
+            ""
+          ],
+          [
+            "checkbox_tracemap",
+            true
+          ],
+          [
+            "checkbox_shownodes",
+            false
+          ],
+          [
+            "checkbox_sliptendency",
+            false
+          ],
+          [
+            "checkbox_dilationtendency",
+            false
+          ],
+          [
+            "edit_sigma1",
+            "100"
+          ],
+          [
+            "edit_sigma2",
+            "50"
+          ],
+          [
+            "edit_thetasigma1",
+            "30"
+          ],
+          [
+            "checkbox_fracsuscep",
+            false
+          ],
+          [
+            "checkbox_CSF",
+            false
+          ],
+          [
+            "edit_C0",
+            "2"
+          ],
+          [
+            "edit_Pf",
+            "10"
+          ],
+          [
+            "edit_mu",
+            ".6"
+          ],
+          [
+            "checkbox_tracemaplength",
+            false
+          ],
+          [
+            "checkbox_segmentmaplength",
+            false
+          ],
+          [
+            "checkbox_segmentmapstrike",
+            true
+          ],
+          [
+            "checkbox_intensitymap",
+            false
+          ],
+          [
+            "checkbox_densitymap",
+            false
+          ],
+          [
+            "checkbox_showcircles",
+            false
+          ],
+          [
+            "edit_numscancircles",
+            "12"
+          ],
+          [
+            "checkbox_histoangle",
+            false
+          ],
+          [
+            "popupmenu_histoanglebins",
+            "20"
+          ],
+          [
+            "checkbox_rose",
+            true
+          ],
+          [
+            "checkbox_roselengthweighted",
+            false
+          ],
+          [
+            "checkbox_showrosemean",
+            false
+          ],
+          [
+            "checkbox_rosecolour",
+            true
+          ],
+          [
+            "popupmenu_rosebins",
+            "10"
+          ],
+          [
+            "edit_degfromnorth",
+            "12.5"
+          ],
+          [
+            "checkbox_censor",
+            false
+          ],
+          [
+            "checkbox_histolength",
+            true
+          ],
+          [
+            "popupmenu_histolengthbins",
+            "20"
+          ],
+          [
+            "checkbox_logloglength",
+            false
+          ],
+          [
+            "checkbox_mle",
+            false
+          ],
+          [
+            "edit_lc",
+            "0"
+          ],
+          [
+            "edit_uc",
+            "0"
+          ],
+          [
+            "checkbox_seglenvariogram",
+            false
+          ],
+          [
+            "checkbox_crossplot",
+            false
+          ],
+          [
+            "checkbox_blocksize",
+            false
+          ],
+          [
+            "radiobutton_fixedaperture",
+            false
+          ],
+          [
+            "edit_fixedaperture",
+            ".001"
+          ],
+          [
+            "radiobutton_scaledaperture",
+            false
+          ],
+          [
+            "edit_aperturefactor",
+            ".01"
+          ],
+          [
+            "edit_apertureexponent",
+            ".75"
+          ],
+          [
+            "checkbox_triangle",
+            false
+          ],
+          [
+            "edit_numblocksmap",
+            "12"
+          ],
+          [
+            "checkbox_permellipse",
+            false
+          ],
+          [
+            "edit_lambda",
+            ".7"
+          ],
+          [
+            "checkbox_cracktensor",
+            false
+          ],
+          [
+            "edit_numpixelsItoY",
+            "0"
+          ],
+          [
+            "checkbox_wavelet",
+            false
+          ],
+          [
+            "edit_aString",
+            "2 4 8 16"
+          ],
+          [
+            "radiobutton_Morlet",
+            true
+          ],
+          [
+            "radiobutton_Mexican",
+            false
+          ],
+          [
+            "edit_LString",
+            "2 4 8 16"
+          ],
+          [
+            "edit_DegString",
+            "20"
+          ],
+          [
+            "checkbox_tracelengthgraphfrom",
+            false
+          ],
+          [
+            "checkbox_segmentlengthgraphfrom",
+            false
+          ],
+          [
+            "checkbox_segmentanglegraphfrom",
+            false
+          ],
+          [
+            "checkbox_tracelengthgraphalong",
+            false
+          ],
+          [
+            "checkbox_segmentlengthgraphalong",
+            false
+          ],
+          [
+            "checkbox_segmentstrikegraphalong",
+            false
+          ],
+          [
+            "checkbox_intensitygraphalong",
+            false
+          ],
+          [
+            "checkbox_densitygraphalong",
+            false
+          ],
+          [
+            "edit_numscancirclesgraph",
+            "12"
+          ],
+          [
+            "edit_FilenameTag",
+            "Run1"
+          ]
+        ],
+        "selected": [
+          "FLO-08",
+          "FLO-09"
+        ],
+        "tag": "SVG",
+        "flip_x": true,
+        "flip_y": false,
+        "input": {
+          "path": "directional.txt",
+          "kind": "node",
+          "pixels_per_metre": null,
+          "extraction": [],
+          "file_stamp": null
+        }
+      }
+    },
+    {
+      "tag": "Hough",
+      "input_mode": "image",
+      "trace_envelope_area": 516.75,
+      "domain_area": 768.0,
+      "unit": "metres^2",
+      "Kmin": 4.965499529591519e-12,
+      "Kmax": 1.0952198211658213e-11,
+      "parameters": {
+        "values": [
+          [
+            "radiobutton_node",
+            true
+          ],
+          [
+            "radiobutton_image",
+            false
+          ],
+          [
+            "edit_houghpeaks",
+            "1000"
+          ],
+          [
+            "edit_houghthreshold",
+            "0.33"
+          ],
+          [
+            "edit_fillgap",
+            "5"
+          ],
+          [
+            "edit_minlength",
+            "3"
+          ],
+          [
+            "edit_filename",
+            "[no file selected]"
+          ],
+          [
+            "edit_scaling",
+            ""
+          ],
+          [
+            "checkbox_tracemap",
+            true
+          ],
+          [
+            "checkbox_shownodes",
+            false
+          ],
+          [
+            "checkbox_sliptendency",
+            false
+          ],
+          [
+            "checkbox_dilationtendency",
+            false
+          ],
+          [
+            "edit_sigma1",
+            "100"
+          ],
+          [
+            "edit_sigma2",
+            "50"
+          ],
+          [
+            "edit_thetasigma1",
+            "30"
+          ],
+          [
+            "checkbox_fracsuscep",
+            false
+          ],
+          [
+            "checkbox_CSF",
+            false
+          ],
+          [
+            "edit_C0",
+            "2"
+          ],
+          [
+            "edit_Pf",
+            "10"
+          ],
+          [
+            "edit_mu",
+            ".6"
+          ],
+          [
+            "checkbox_tracemaplength",
+            false
+          ],
+          [
+            "checkbox_segmentmaplength",
+            false
+          ],
+          [
+            "checkbox_segmentmapstrike",
+            true
+          ],
+          [
+            "checkbox_intensitymap",
+            false
+          ],
+          [
+            "checkbox_densitymap",
+            false
+          ],
+          [
+            "checkbox_showcircles",
+            false
+          ],
+          [
+            "edit_numscancircles",
+            "12"
+          ],
+          [
+            "checkbox_histoangle",
+            false
+          ],
+          [
+            "popupmenu_histoanglebins",
+            "20"
+          ],
+          [
+            "checkbox_rose",
+            true
+          ],
+          [
+            "checkbox_roselengthweighted",
+            false
+          ],
+          [
+            "checkbox_showrosemean",
+            false
+          ],
+          [
+            "checkbox_rosecolour",
+            true
+          ],
+          [
+            "popupmenu_rosebins",
+            "10"
+          ],
+          [
+            "edit_degfromnorth",
+            "12.5"
+          ],
+          [
+            "checkbox_censor",
+            false
+          ],
+          [
+            "checkbox_histolength",
+            true
+          ],
+          [
+            "popupmenu_histolengthbins",
+            "20"
+          ],
+          [
+            "checkbox_logloglength",
+            false
+          ],
+          [
+            "checkbox_mle",
+            false
+          ],
+          [
+            "edit_lc",
+            "0"
+          ],
+          [
+            "edit_uc",
+            "0"
+          ],
+          [
+            "checkbox_seglenvariogram",
+            false
+          ],
+          [
+            "checkbox_crossplot",
+            false
+          ],
+          [
+            "checkbox_blocksize",
+            false
+          ],
+          [
+            "radiobutton_fixedaperture",
+            true
+          ],
+          [
+            "edit_fixedaperture",
+            ".001"
+          ],
+          [
+            "radiobutton_scaledaperture",
+            false
+          ],
+          [
+            "edit_aperturefactor",
+            ".01"
+          ],
+          [
+            "edit_apertureexponent",
+            ".75"
+          ],
+          [
+            "checkbox_triangle",
+            false
+          ],
+          [
+            "edit_numblocksmap",
+            "12"
+          ],
+          [
+            "checkbox_permellipse",
+            false
+          ],
+          [
+            "edit_lambda",
+            ".7"
+          ],
+          [
+            "checkbox_cracktensor",
+            false
+          ],
+          [
+            "edit_numpixelsItoY",
+            "0"
+          ],
+          [
+            "checkbox_wavelet",
+            false
+          ],
+          [
+            "edit_aString",
+            "2 4 8 16"
+          ],
+          [
+            "radiobutton_Morlet",
+            true
+          ],
+          [
+            "radiobutton_Mexican",
+            false
+          ],
+          [
+            "edit_LString",
+            "2 4 8 16"
+          ],
+          [
+            "edit_DegString",
+            "20"
+          ],
+          [
+            "checkbox_tracelengthgraphfrom",
+            false
+          ],
+          [
+            "checkbox_segmentlengthgraphfrom",
+            false
+          ],
+          [
+            "checkbox_segmentanglegraphfrom",
+            false
+          ],
+          [
+            "checkbox_tracelengthgraphalong",
+            false
+          ],
+          [
+            "checkbox_segmentlengthgraphalong",
+            false
+          ],
+          [
+            "checkbox_segmentstrikegraphalong",
+            false
+          ],
+          [
+            "checkbox_intensitygraphalong",
+            false
+          ],
+          [
+            "checkbox_densitygraphalong",
+            false
+          ],
+          [
+            "edit_numscancirclesgraph",
+            "12"
+          ],
+          [
+            "edit_FilenameTag",
+            "Run1"
+          ]
+        ],
+        "selected": [
+          "FLO-08",
+          "FLO-09"
+        ],
+        "tag": "Hough",
+        "flip_x": true,
+        "flip_y": false,
+        "input": {
+          "path": "directional.txt",
+          "kind": "node",
+          "pixels_per_metre": 2.0,
+          "extraction": [],
+          "file_stamp": null
+        }
+      }
+    },
+    {
+      "tag": "native_style",
+      "input_mode": "txt",
+      "trace_envelope_area": 39.043862749042006,
+      "domain_area": 39.043862749042006,
+      "unit": "pixels^2",
+      "Kmin": 5.3785661872083245e-11,
+      "Kmax": 5.378566187208326e-11,
+      "parameters": {
+        "values": [
+          [
+            "radiobutton_node",
+            true
+          ],
+          [
+            "radiobutton_image",
+            false
+          ],
+          [
+            "edit_houghpeaks",
+            "1000"
+          ],
+          [
+            "edit_houghthreshold",
+            "0.33"
+          ],
+          [
+            "edit_fillgap",
+            "5"
+          ],
+          [
+            "edit_minlength",
+            "3"
+          ],
+          [
+            "edit_filename",
+            "[no file selected]"
+          ],
+          [
+            "edit_scaling",
+            ""
+          ],
+          [
+            "checkbox_tracemap",
+            true
+          ],
+          [
+            "checkbox_shownodes",
+            false
+          ],
+          [
+            "checkbox_sliptendency",
+            false
+          ],
+          [
+            "checkbox_dilationtendency",
+            false
+          ],
+          [
+            "edit_sigma1",
+            "100"
+          ],
+          [
+            "edit_sigma2",
+            "50"
+          ],
+          [
+            "edit_thetasigma1",
+            "30"
+          ],
+          [
+            "checkbox_fracsuscep",
+            false
+          ],
+          [
+            "checkbox_CSF",
+            false
+          ],
+          [
+            "edit_C0",
+            "2"
+          ],
+          [
+            "edit_Pf",
+            "10"
+          ],
+          [
+            "edit_mu",
+            ".6"
+          ],
+          [
+            "checkbox_tracemaplength",
+            false
+          ],
+          [
+            "checkbox_segmentmaplength",
+            false
+          ],
+          [
+            "checkbox_segmentmapstrike",
+            true
+          ],
+          [
+            "checkbox_intensitymap",
+            false
+          ],
+          [
+            "checkbox_densitymap",
+            false
+          ],
+          [
+            "checkbox_showcircles",
+            false
+          ],
+          [
+            "edit_numscancircles",
+            "12"
+          ],
+          [
+            "checkbox_histoangle",
+            false
+          ],
+          [
+            "popupmenu_histoanglebins",
+            "20"
+          ],
+          [
+            "checkbox_rose",
+            true
+          ],
+          [
+            "checkbox_roselengthweighted",
+            false
+          ],
+          [
+            "checkbox_showrosemean",
+            false
+          ],
+          [
+            "checkbox_rosecolour",
+            true
+          ],
+          [
+            "popupmenu_rosebins",
+            "10"
+          ],
+          [
+            "edit_degfromnorth",
+            "12"
+          ],
+          [
+            "checkbox_censor",
+            false
+          ],
+          [
+            "checkbox_histolength",
+            true
+          ],
+          [
+            "popupmenu_histolengthbins",
+            "20"
+          ],
+          [
+            "checkbox_logloglength",
+            false
+          ],
+          [
+            "checkbox_mle",
+            false
+          ],
+          [
+            "edit_lc",
+            "0"
+          ],
+          [
+            "edit_uc",
+            "0"
+          ],
+          [
+            "checkbox_seglenvariogram",
+            false
+          ],
+          [
+            "checkbox_crossplot",
+            false
+          ],
+          [
+            "checkbox_blocksize",
+            false
+          ],
+          [
+            "radiobutton_fixedaperture",
+            true
+          ],
+          [
+            "edit_fixedaperture",
+            ".001"
+          ],
+          [
+            "radiobutton_scaledaperture",
+            false
+          ],
+          [
+            "edit_aperturefactor",
+            ".01"
+          ],
+          [
+            "edit_apertureexponent",
+            ".75"
+          ],
+          [
+            "checkbox_triangle",
+            false
+          ],
+          [
+            "edit_numblocksmap",
+            "12"
+          ],
+          [
+            "checkbox_permellipse",
+            false
+          ],
+          [
+            "edit_lambda",
+            ".7"
+          ],
+          [
+            "checkbox_cracktensor",
+            false
+          ],
+          [
+            "edit_numpixelsItoY",
+            "0"
+          ],
+          [
+            "checkbox_wavelet",
+            false
+          ],
+          [
+            "edit_aString",
+            "2 4 8 16"
+          ],
+          [
+            "radiobutton_Morlet",
+            true
+          ],
+          [
+            "radiobutton_Mexican",
+            false
+          ],
+          [
+            "edit_LString",
+            "2 4 8 16"
+          ],
+          [
+            "edit_DegString",
+            "20"
+          ],
+          [
+            "checkbox_tracelengthgraphfrom",
+            false
+          ],
+          [
+            "checkbox_segmentlengthgraphfrom",
+            false
+          ],
+          [
+            "checkbox_segmentanglegraphfrom",
+            false
+          ],
+          [
+            "checkbox_tracelengthgraphalong",
+            false
+          ],
+          [
+            "checkbox_segmentlengthgraphalong",
+            false
+          ],
+          [
+            "checkbox_segmentstrikegraphalong",
+            false
+          ],
+          [
+            "checkbox_intensitygraphalong",
+            false
+          ],
+          [
+            "checkbox_densitygraphalong",
+            false
+          ],
+          [
+            "edit_numscancirclesgraph",
+            "12"
+          ],
+          [
+            "edit_FilenameTag",
+            "Run1"
+          ]
+        ],
+        "selected": [
+          "FLO-08",
+          "FLO-09"
+        ],
+        "tag": "native_style",
+        "flip_x": true,
+        "flip_y": false,
+        "input": {
+          "path": "directional.txt",
+          "kind": "node",
+          "pixels_per_metre": null,
+          "extraction": [],
+          "file_stamp": null
+        }
+      }
+    },
+    {
+      "tag": "zero",
+      "input_mode": "txt",
+      "trace_envelope_area": 24.0,
+      "domain_area": 24.0,
+      "unit": "pixels^2",
+      "Kmin": 0.0,
+      "Kmax": 0.0,
+      "parameters": {
+        "values": [
+          [
+            "radiobutton_node",
+            true
+          ],
+          [
+            "radiobutton_image",
+            false
+          ],
+          [
+            "edit_houghpeaks",
+            "1000"
+          ],
+          [
+            "edit_houghthreshold",
+            "0.33"
+          ],
+          [
+            "edit_fillgap",
+            "5"
+          ],
+          [
+            "edit_minlength",
+            "3"
+          ],
+          [
+            "edit_filename",
+            "[no file selected]"
+          ],
+          [
+            "edit_scaling",
+            ""
+          ],
+          [
+            "checkbox_tracemap",
+            true
+          ],
+          [
+            "checkbox_shownodes",
+            false
+          ],
+          [
+            "checkbox_sliptendency",
+            false
+          ],
+          [
+            "checkbox_dilationtendency",
+            false
+          ],
+          [
+            "edit_sigma1",
+            "100"
+          ],
+          [
+            "edit_sigma2",
+            "50"
+          ],
+          [
+            "edit_thetasigma1",
+            "30"
+          ],
+          [
+            "checkbox_fracsuscep",
+            false
+          ],
+          [
+            "checkbox_CSF",
+            false
+          ],
+          [
+            "edit_C0",
+            "2"
+          ],
+          [
+            "edit_Pf",
+            "10"
+          ],
+          [
+            "edit_mu",
+            ".6"
+          ],
+          [
+            "checkbox_tracemaplength",
+            false
+          ],
+          [
+            "checkbox_segmentmaplength",
+            false
+          ],
+          [
+            "checkbox_segmentmapstrike",
+            true
+          ],
+          [
+            "checkbox_intensitymap",
+            false
+          ],
+          [
+            "checkbox_densitymap",
+            false
+          ],
+          [
+            "checkbox_showcircles",
+            false
+          ],
+          [
+            "edit_numscancircles",
+            "12"
+          ],
+          [
+            "checkbox_histoangle",
+            false
+          ],
+          [
+            "popupmenu_histoanglebins",
+            "20"
+          ],
+          [
+            "checkbox_rose",
+            true
+          ],
+          [
+            "checkbox_roselengthweighted",
+            false
+          ],
+          [
+            "checkbox_showrosemean",
+            false
+          ],
+          [
+            "checkbox_rosecolour",
+            true
+          ],
+          [
+            "popupmenu_rosebins",
+            "10"
+          ],
+          [
+            "edit_degfromnorth",
+            "12.5"
+          ],
+          [
+            "checkbox_censor",
+            false
+          ],
+          [
+            "checkbox_histolength",
+            true
+          ],
+          [
+            "popupmenu_histolengthbins",
+            "20"
+          ],
+          [
+            "checkbox_logloglength",
+            false
+          ],
+          [
+            "checkbox_mle",
+            false
+          ],
+          [
+            "edit_lc",
+            "0"
+          ],
+          [
+            "edit_uc",
+            "0"
+          ],
+          [
+            "checkbox_seglenvariogram",
+            false
+          ],
+          [
+            "checkbox_crossplot",
+            false
+          ],
+          [
+            "checkbox_blocksize",
+            false
+          ],
+          [
+            "radiobutton_fixedaperture",
+            true
+          ],
+          [
+            "edit_fixedaperture",
+            "0"
+          ],
+          [
+            "radiobutton_scaledaperture",
+            false
+          ],
+          [
+            "edit_aperturefactor",
+            ".01"
+          ],
+          [
+            "edit_apertureexponent",
+            ".75"
+          ],
+          [
+            "checkbox_triangle",
+            false
+          ],
+          [
+            "edit_numblocksmap",
+            "12"
+          ],
+          [
+            "checkbox_permellipse",
+            false
+          ],
+          [
+            "edit_lambda",
+            "0"
+          ],
+          [
+            "checkbox_cracktensor",
+            false
+          ],
+          [
+            "edit_numpixelsItoY",
+            "0"
+          ],
+          [
+            "checkbox_wavelet",
+            false
+          ],
+          [
+            "edit_aString",
+            "2 4 8 16"
+          ],
+          [
+            "radiobutton_Morlet",
+            true
+          ],
+          [
+            "radiobutton_Mexican",
+            false
+          ],
+          [
+            "edit_LString",
+            "2 4 8 16"
+          ],
+          [
+            "edit_DegString",
+            "20"
+          ],
+          [
+            "checkbox_tracelengthgraphfrom",
+            false
+          ],
+          [
+            "checkbox_segmentlengthgraphfrom",
+            false
+          ],
+          [
+            "checkbox_segmentanglegraphfrom",
+            false
+          ],
+          [
+            "checkbox_tracelengthgraphalong",
+            false
+          ],
+          [
+            "checkbox_segmentlengthgraphalong",
+            false
+          ],
+          [
+            "checkbox_segmentstrikegraphalong",
+            false
+          ],
+          [
+            "checkbox_intensitygraphalong",
+            false
+          ],
+          [
+            "checkbox_densitygraphalong",
+            false
+          ],
+          [
+            "edit_numscancirclesgraph",
+            "12"
+          ],
+          [
+            "edit_FilenameTag",
+            "Run1"
+          ]
+        ],
+        "selected": [
+          "FLO-08",
+          "FLO-09"
+        ],
+        "tag": "zero",
+        "flip_x": true,
+        "flip_y": false,
+        "input": {
+          "path": "directional.txt",
+          "kind": "node",
+          "pixels_per_metre": null,
+          "extraction": [],
+          "file_stamp": null
+        }
+      }
+    }
+  ],
+  "arrays_sha256": "6760d8789911a6c5bd762fe605d9699829eb6a37a32e083dc257ff6f18c74fa7",
+  "parameters_sha256": "86aac279fa7216773d5da4bc0183815305e277226172d1be10871dcd674ca0dc",
+  "native_comparison_sha256": "882e154f565ac2d3e798ead5ebcd4a10adf18cb7d91b666ff0e700042ad4bb8c",
+  "txt": [
+    {
+      "path": "FracPaQ2DEZROSE_Hough.txt",
+      "sha256": "80a6731bb8967d1ddd60832297a2db4e923e9e41d5fb0b0bbe6a502cc8175362"
+    },
+    {
+      "path": "FracPaQ2DEZROSE_SVG.txt",
+      "sha256": "90b0ff8fae9d8b66a32a6558c538dd97977e81bd2f7e28da83c30298a3dc5b7b"
+    },
+    {
+      "path": "FracPaQ2DEZROSE_TXT.txt",
+      "sha256": "90b0ff8fae9d8b66a32a6558c538dd97977e81bd2f7e28da83c30298a3dc5b7b"
+    },
+    {
+      "path": "FracPaQ2DEZROSE_native_style.txt",
+      "sha256": "55b54b90c9772200e9cd1603e6441ad62c83929865aedfb85090bd3bfac3514b"
+    },
+    {
+      "path": "FracPaQ2DEZROSE_zero.txt",
+      "sha256": "90b0ff8fae9d8b66a32a6558c538dd97977e81bd2f7e28da83c30298a3dc5b7b"
+    }
+  ]
+}

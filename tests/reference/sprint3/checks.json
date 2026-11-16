@@ -1,0 +1,39 @@
+{
+  "scope": "Sprint 3 Python checks; native MATLAB parity remains pending.",
+  "tests": {
+    "tests": 208,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "pytest_command": "QT_QPA_PLATFORM=offscreen MPLCONFIGDIR=/tmp/pyfracpaq-matplotlib .venv/bin/python -m pytest -q --junitxml=/tmp/pyfracpaq-sprint3-tests.xml",
+  "pytest_xml_sha256": "701d51578f394420cfebff2d61ece37ab7f679ebc987e12ab9788ebff95291c5",
+  "dependency_check": "No broken requirements found.",
+  "dependency_warning": "104 Matplotlib Qt backend deprecation warnings: AA_UseHighDpiPixmaps.",
+  "package": {
+    "filename": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "cbc28db52e9a934927d90029ba61ffd4f37a66e56a63b0bfd095a470b3c2b5fb",
+    "zip_import_outside_root": true,
+    "verified_resources": [
+      "cmocean_rgb.npz",
+      "cmocean_manifest.json",
+      "fracpaq_matlab.mplstyle",
+      "cmocean_LICENSE.txt"
+    ]
+  },
+  "artifacts": {
+    "png": 11,
+    "ezrose_txt": 4,
+    "hashes_verified": true,
+    "raster_size": [
+      4724,
+      4724
+    ],
+    "dpi": [
+      599.9988,
+      599.9988
+    ]
+  },
+  "visual_review": "All 11 QA thumbnails inspected; documentary manual comparisons, not MATLAB goldens.",
+  "original_source_manifest_sha256": "95387fe0f9b9e86698b1050e2dd7f01fbf4bc10cf25abe0fffb9204c767c07d7"
+}

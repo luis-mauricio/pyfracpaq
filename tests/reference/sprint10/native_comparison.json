@@ -1,0 +1,42 @@
+{
+  "directional": {
+    "F2_max_error": 0.0,
+    "F4_max_error": 0.0,
+    "F8_max_error": 0.0,
+    "polar2_max_error": 4.440892098500626e-16,
+    "polar4_max_error": 7.771561172376096e-16,
+    "polar8_max_error": 1.1102230246251565e-15
+  },
+  "isotropic": {
+    "F2_max_error": 5.551115123125783e-17,
+    "F4_max_error": 2.7755575615628914e-17,
+    "F8_max_error": 1.3877787807814457e-17,
+    "polar2_max_error": 1.1102230246251565e-16,
+    "polar4_max_error": 1.6653345369377348e-16,
+    "polar8_max_error": 6.938893903907228e-16
+  },
+  "oblique": {
+    "F2_max_error": 3.191891195797325e-16,
+    "F4_max_error": 3.0531133177191805e-16,
+    "F8_max_error": 3.0531133177191805e-16,
+    "polar2_max_error": 8.881784197001252e-16,
+    "polar4_max_error": 8.881784197001252e-16,
+    "polar8_max_error": 1.970645868709653e-15
+  },
+  "fixed": {
+    "K_max_error": 1.6155871338926322e-27,
+    "polar_max_error": 1.2924697071141057e-26
+  },
+  "scaled": {
+    "K_max_error": 7.940933880509066e-23,
+    "polar_max_error": 2.117582368135751e-22
+  },
+  "zero_aperture": {
+    "K_max_error": 0.0,
+    "polar_max_error": 0.0
+  },
+  "zero_lambda": {
+    "K_max_error": 0.0,
+    "polar_max_error": 0.0
+  }
+}

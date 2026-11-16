@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <path stroke="#0000FF" fill="none" d="M 0 0 L 60 20 L 100 80"/>
+  <path stroke="#0000FF" fill="none" d="M 10 90 L 45 30 L 90 10"/>
+  <polyline stroke="#FF0000" fill="none" points="5,10 50,55 95,95"/>
+  <polyline stroke="#FF0000" fill="none" points="10,75 40,15 85,45"/>
+  <line stroke="#00AA00" x1="0" y1="50" x2="100" y2="40"/>
+  <line stroke="#00AA00" x1="20" y1="0" x2="70" y2="100"/>
+</svg>

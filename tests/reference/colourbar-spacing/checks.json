@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-14",
+  "scope": "Fixed distance to axis labels while preserving colourbar endpoint alignment.",
+  "tests": {
+    "tests": 433,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "new_spacing_cases": 8,
+  "colourbar_test_cases": 49,
+  "test_environment": "Isolated project copy containing exactly the frozen 164 reference files; workspace extras preserved.",
+  "pytest_xml_sha256": "637bf29c8e4ddbd238d87608f3945b2b55098bc20e8a7b434c145c03e8a5fd11",
+  "qt_resize_scales": [
+    1,
+    2
+  ],
+  "qt_maximize_and_small_window_verified": true,
+  "fixed_clearance_points": 25,
+  "maximum_clearance_error_points": 6.394884621840902e-14,
+  "maximum_endpoint_error_pixels": 5.684341886080802e-14,
+  "tolerance": 1e-08,
+  "resize_png": 35,
+  "png_600dpi": 7,
+  "scientific_txt_unchanged_from_previous_layout": true,
+  "original_files_unchanged": 164,
+  "additional_reference_files_preserved": 8,
+  "package": {
+    "filename": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "91fb97f2ad1b79efc5a4e03b144fa11aef4950aa507d9756644ffdbebe4ac7f8",
+    "zip_import_outside_root": true,
+    "verified": [
+      "fixed label distance in both orientations",
+      "equal plot/bar endpoints",
+      "small/large/restored window sizes",
+      "600-dpi export"
+    ]
+  }
+}

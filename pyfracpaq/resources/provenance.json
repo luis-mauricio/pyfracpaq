@@ -1,0 +1,14 @@
+[
+  {
+    "path": "FracPaQlogo.jpeg",
+    "source": "fracpaq-matlab/FracPaQlogo.jpeg",
+    "sha256": "9f78a9a62e46e9d8476df7ea444192075e9b78a7edb329f533c0af3e0e286c08",
+    "license": "MIT; FracPaQ Contributors, David Healy and Roberto Rizzo"
+  },
+  {
+    "path": "FracPaQicon.jpeg",
+    "source": "fracpaq-matlab/FracPaQicon.jpeg",
+    "sha256": "f29ab6ff8eb4c52b8571c46292a243ece2d14dc746266241f811962867c0ed7b",
+    "license": "MIT; FracPaQ Contributors, David Healy and Roberto Rizzo"
+  }
+]

@@ -1,0 +1,158 @@
+{
+  "values": {
+    "radiobutton_node": true,
+    "radiobutton_image": false,
+    "edit_houghpeaks": "1000",
+    "edit_houghthreshold": "0.33",
+    "edit_fillgap": "5",
+    "edit_minlength": "3",
+    "edit_filename": "[no file selected]",
+    "edit_scaling": "",
+    "checkbox_tracemap": true,
+    "checkbox_shownodes": false,
+    "checkbox_sliptendency": false,
+    "checkbox_dilationtendency": false,
+    "edit_sigma1": "100.0",
+    "edit_sigma2": "50.0",
+    "edit_thetasigma1": "0",
+    "checkbox_fracsuscep": false,
+    "checkbox_CSF": false,
+    "edit_C0": "0.0",
+    "edit_Pf": "0.0",
+    "edit_mu": "0.6",
+    "checkbox_tracemaplength": false,
+    "checkbox_segmentmaplength": false,
+    "checkbox_segmentmapstrike": true,
+    "checkbox_intensitymap": false,
+    "checkbox_densitymap": false,
+    "checkbox_showcircles": false,
+    "edit_numscancircles": "12",
+    "checkbox_histoangle": false,
+    "popupmenu_histoanglebins": "20",
+    "checkbox_rose": true,
+    "checkbox_roselengthweighted": false,
+    "checkbox_showrosemean": false,
+    "checkbox_rosecolour": true,
+    "popupmenu_rosebins": "10",
+    "edit_degfromnorth": "0",
+    "checkbox_censor": false,
+    "checkbox_histolength": true,
+    "popupmenu_histolengthbins": "20",
+    "checkbox_logloglength": false,
+    "checkbox_mle": false,
+    "edit_lc": "0",
+    "edit_uc": "0",
+    "checkbox_seglenvariogram": false,
+    "checkbox_crossplot": false,
+    "checkbox_blocksize": false,
+    "radiobutton_fixedaperture": true,
+    "edit_fixedaperture": "1e-3",
+    "radiobutton_scaledaperture": false,
+    "edit_aperturefactor": "1e-3",
+    "edit_apertureexponent": "1",
+    "checkbox_triangle": false,
+    "edit_numblocksmap": "3",
+    "checkbox_permellipse": false,
+    "edit_lambda": "1",
+    "checkbox_cracktensor": false,
+    "edit_numpixelsItoY": ".2",
+    "checkbox_wavelet": false,
+    "edit_aString": "2 4 8 16",
+    "radiobutton_Morlet": true,
+    "radiobutton_Mexican": false,
+    "edit_LString": "2 4 8 16",
+    "edit_DegString": "20",
+    "checkbox_tracelengthgraphfrom": false,
+    "checkbox_segmentlengthgraphfrom": false,
+    "checkbox_segmentanglegraphfrom": false,
+    "checkbox_tracelengthgraphalong": false,
+    "checkbox_segmentlengthgraphalong": false,
+    "checkbox_segmentstrikegraphalong": false,
+    "checkbox_intensitygraphalong": false,
+    "checkbox_densitygraphalong": false,
+    "edit_numscancirclesgraph": "12",
+    "edit_FilenameTag": "Run1"
+  },
+  "cases": [
+    {
+      "tag": "TXT",
+      "input_mode": "txt",
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 4.0,
+        "y_max": 6.0
+      },
+      "counts_I_Y_X": [
+        1,
+        0,
+        0
+      ],
+      "grid_shape": [
+        5,
+        3
+      ],
+      "common_colour_maximum": 1
+    },
+    {
+      "tag": "SVG",
+      "input_mode": "svg",
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 4.0,
+        "y_max": 6.0
+      },
+      "counts_I_Y_X": [
+        1,
+        0,
+        0
+      ],
+      "grid_shape": [
+        5,
+        3
+      ],
+      "common_colour_maximum": 1
+    },
+    {
+      "tag": "Hough",
+      "input_mode": "image",
+      "bounds": {
+        "x_min": 0.0,
+        "y_min": 0.0,
+        "x_max": 48.0,
+        "y_max": 24.0
+      },
+      "counts_I_Y_X": [
+        4,
+        0,
+        0
+      ],
+      "grid_shape": [
+        3,
+        6
+      ],
+      "common_colour_maximum": 1
+    },
+    {
+      "tag": "zero",
+      "input_mode": "txt",
+      "bounds": {
+        "x_min": -3.0,
+        "y_min": -3.0,
+        "x_max": 3.0,
+        "y_max": 3.0
+      },
+      "counts_I_Y_X": [
+        0,
+        0,
+        0
+      ],
+      "grid_shape": [
+        3,
+        3
+      ],
+      "common_colour_maximum": 0
+    }
+  ]
+}

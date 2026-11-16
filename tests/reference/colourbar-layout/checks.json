@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-14",
+  "scope": "Responsive colourbars, all six implemented families and shared vertical support.",
+  "tests": {
+    "tests": 425,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "new_tests": 41,
+  "test_environment": "Isolated project copy with exactly the frozen 164 reference files; workspace outputs preserved.",
+  "workspace_full_suite": {
+    "passed": 423,
+    "failed": 1,
+    "reason": "Strict reference inventory detects seven user-added output files; no baseline source file changed."
+  },
+  "pytest_xml_sha256": "3f9550c1b7d86dc502685a8b4e2c5d23c8d04077f798bcace04d2140f5c898ee",
+  "qt_resize_scales": [
+    1,
+    2
+  ],
+  "geometry_maximum_deviation_px": 0,
+  "geometry_tolerance_px": 1e-08,
+  "png_resize_cases": 21,
+  "png_600dpi": 7,
+  "source_originals_unchanged": 164,
+  "workspace_extra_files_preserved": 7,
+  "package": {
+    "filename": "pyfracpaq-0.0.0-py3-none-any.whl",
+    "sha256": "70f977ffed86d26fba9a1af959dd898fdfada4e13ce7131408001b2883407896",
+    "zip_import_outside_root": true,
+    "verified": [
+      "horizontal and vertical alignment",
+      "square/wide/tall resizing",
+      "common 600-dpi export",
+      "frozen palette/style resources"
+    ]
+  }
+}

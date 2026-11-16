@@ -1,0 +1,15 @@
+/* Frozen desktop theme: FIG neutral background, readable focus/disabled states.
+   Scientific figures use fracpaq_matlab.mplstyle, never QWidget backgrounds. */
+QWidget { color: #171717; background-color: #f0f0f0; }
+QGroupBox { border: 1px solid; border-top-color: #aaa; border-left-color: #aaa; border-bottom-color: white; border-right-color: white; margin-top: 6px; padding: 0; }
+QGroupBox::title { subcontrol-origin: margin; left: 4px; padding: 0 2px; }
+QGroupBox[referenceBorder="none"] { border: none; margin: 0; padding: 0; }
+QLineEdit, QComboBox { background: white; border: 1px solid #bdbdbd; padding: 1px 2px; }
+QLineEdit:focus, QComboBox:focus { border: 1px solid #3975ab; }
+QPushButton { border: 1px solid #c5c5c5; border-radius: 4px; padding: 0 2px; background: #fff; }
+QPushButton:pressed, QPushButton:checked { background: #dce6ef; border-color: #7195b7; }
+QPushButton:focus { border-color: #75ade4; }
+QPushButton:disabled, QLineEdit:disabled, QComboBox:disabled, QLabel:disabled, QCheckBox:disabled, QRadioButton:disabled { color: #858585; }
+QCheckBox, QRadioButton { spacing: 4px; }
+QScrollArea { border: none; }
+QToolTip { background: #ffffe5; color: #171717; border: 1px solid #b5b5b5; }

@@ -1,0 +1,14 @@
+{
+  "method": "Unmodified RGB output from installed MATLAB jet, not a named Matplotlib palette.",
+  "native_version": "24.2.0.3212159 (R2024b) Update 9",
+  "source": "tests/reference/sprint11/native/stability_arrays.mat",
+  "source_sha256": "00bc3d5e06ac5ba68f94c1b05b21267f38705a58fb316b9853c7f96b948723f7",
+  "capture_script": "scripts/capture_native_s1011.m",
+  "capture_script_sha256": "696f5e0c6b4aab98d819c0da0229a900cc961ea1d2aa3813dfde8766da95891f",
+  "levels": [
+    19,
+    100,
+    256
+  ],
+  "tables_sha256": "b70493b77f1de24338c6c62a5db456760d1263dd2e1e10e95e1f2614d58e468d"
+}

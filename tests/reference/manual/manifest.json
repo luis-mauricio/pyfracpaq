@@ -1,0 +1,1194 @@
+{
+  "source": "fracpaq-matlab/FracPaQ User Guide v2.8.pdf",
+  "source_sha256": "5b0d4fdf1d7eaced795ae5d4e116a86da0781eb52d31b6d98a2aedce768d703c",
+  "pages": 39,
+  "images": [
+    {
+      "path": "page-01-image-00.png",
+      "page": 1,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-02-image-00.png",
+      "page": 2,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-03-image-00.png",
+      "page": 3,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-04-image-00.png",
+      "page": 4,
+      "pdf_image_name": "Im3.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "45460a4646c2c7bf3072779f50825875706d99f9b8d3d275b20b59197e899bc2",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-04-image-01.png",
+      "page": 4,
+      "pdf_image_name": "Im2.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "333bc5caca0ddab05ff172c11a046fe325fbee68f381129fa7e693c0290ec5c9",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-04-image-02.png",
+      "page": 4,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-05-image-00.png",
+      "page": 5,
+      "pdf_image_name": "Im4.png",
+      "size": [
+        2724,
+        1746
+      ],
+      "sha256": "04095629e0b0ae79827e25966bfbc616178a978306201e331571f3590eb12b04",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-05-image-01.png",
+      "page": 5,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-06-image-00.png",
+      "page": 6,
+      "pdf_image_name": "Im5.png",
+      "size": [
+        2724,
+        1746
+      ],
+      "sha256": "1516e6c1c1d02426f2f8eaaaa26400974252597588ba2d215118bfa5fc1d69f3",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-06-image-01.png",
+      "page": 6,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-07-image-00.png",
+      "page": 7,
+      "pdf_image_name": "Im6.jpg",
+      "size": [
+        684,
+        684
+      ],
+      "sha256": "21e4bcf6cf59599803c57c44b74bd269f5255c45ffed07eaec9c5c4bb14e4e20",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-07-image-01.png",
+      "page": 7,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-08-image-00.png",
+      "page": 8,
+      "pdf_image_name": "Im7.png",
+      "size": [
+        752,
+        326
+      ],
+      "sha256": "0954d1aad42e60340284aad03a354515287a2f561b0d6bbda1724a66b41c5cc6",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-08-image-01.png",
+      "page": 8,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-09-image-00.png",
+      "page": 9,
+      "pdf_image_name": "Im8.png",
+      "size": [
+        1535,
+        1076
+      ],
+      "sha256": "ce50fef78fda4a92fb05db6e90934d3b18f4b83e6c44cffd505aae2964a1ec1f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-09-image-01.png",
+      "page": 9,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-10-image-00.png",
+      "page": 10,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-11-image-00.png",
+      "page": 11,
+      "pdf_image_name": "Im2.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "333bc5caca0ddab05ff172c11a046fe325fbee68f381129fa7e693c0290ec5c9",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-11-image-01.png",
+      "page": 11,
+      "pdf_image_name": "Im9.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "336bc553602d267879ac63cd02194746308d9723aae03dc0ff6cb83b7b365beb",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-11-image-02.png",
+      "page": 11,
+      "pdf_image_name": "Im11.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "e853dc20328679241f0f74fa4515692ffdc3475a72712a75efc874940d57aee2",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-11-image-03.png",
+      "page": 11,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-11-image-04.png",
+      "page": 11,
+      "pdf_image_name": "Im10.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "fb8e9a9d8f0f3def4ada2f74e995703f0fe03bb955c8c266dfa4010f57873363",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-12-image-00.png",
+      "page": 12,
+      "pdf_image_name": "Im12.png",
+      "size": [
+        1553,
+        1013
+      ],
+      "sha256": "da683cfc00cfb70c9bf70a4af2efdb1691dd15cb31cb4240b9e6236ce02bf310",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-12-image-01.png",
+      "page": 12,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-13-image-02.png",
+      "page": 13,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-14-image-02.png",
+      "page": 14,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-15-image-02.png",
+      "page": 15,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-16-image-02.png",
+      "page": 16,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-17-image-00.png",
+      "page": 17,
+      "pdf_image_name": "Im23.png",
+      "size": [
+        2362,
+        2362
+      ],
+      "sha256": "444dc3316a54f915dad391841674853998d3902a16385013bd3a6544ce3acb86",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-17-image-01.png",
+      "page": 17,
+      "pdf_image_name": "Im22.png",
+      "size": [
+        2362,
+        2362
+      ],
+      "sha256": "fa5a3129eab116de01cfda03ea81746e5e002d68444d3e4701c7caa1274bc910",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-17-image-02.png",
+      "page": 17,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-17-image-03.png",
+      "page": 17,
+      "pdf_image_name": "Im21.png",
+      "size": [
+        2362,
+        2362
+      ],
+      "sha256": "6d9c97c396df11efccd5903ed6fdac7af8766a08285781a9fd01de5da8f31db0",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-18-image-00.png",
+      "page": 18,
+      "pdf_image_name": "Im24.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "4c40f44fd0cf1ffd1f124cee130909bec142b055de00bf6f383aaf3c22319f0a",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-18-image-01.png",
+      "page": 18,
+      "pdf_image_name": "Im25.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "d0e31b20f924f7af06402c8bbee3747c9a1be8f5b503a5b41087bae35ee32e17",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-18-image-02.png",
+      "page": 18,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-19-image-00.png",
+      "page": 19,
+      "pdf_image_name": "Im28.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "9004a12064f0ac9c090bb52af073f398cd2ed8a3477a4ee06a5ae9d7304dbfb1",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-19-image-01.png",
+      "page": 19,
+      "pdf_image_name": "Im26.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "1a569ed647dbd14a67ec7e426beb383315e4b8b0ac01c0ba675855c44af39e11",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-19-image-02.png",
+      "page": 19,
+      "pdf_image_name": "Im27.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "1e2ece677569e60482a9a0ae82d5bfa61380a63d6a1a32d45e009ed8209b75eb",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-19-image-03.png",
+      "page": 19,
+      "pdf_image_name": "Im29.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "4f0274e8d29c3afcba30778858b203f371238ba688d802cc99aa06b527b2dbbe",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-19-image-04.png",
+      "page": 19,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-20-image-00.png",
+      "page": 20,
+      "pdf_image_name": "Im32.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "1b647b444aa7bb77ad32037681ba266388fdf4ff0ef18c92dffd71945425963d",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-20-image-01.png",
+      "page": 20,
+      "pdf_image_name": "Im34.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "59239448cb674d33d16be1d61f27c1aa27bb78ae192495894d71a94c57c5511b",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-20-image-02.png",
+      "page": 20,
+      "pdf_image_name": "Im33.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "4dd8192c2638ee85a3e34e368bb4a5ff6a3533a9a4d43d5a50caf08d884b091b",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-20-image-03.png",
+      "page": 20,
+      "pdf_image_name": "Im35.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "3a001855ae4e5699975973aeaed5abaf061a16042559c8aae070be595279a519",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-20-image-04.png",
+      "page": 20,
+      "pdf_image_name": "Im30.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "a64612be7ac60d5beff3bea836412c80cfc26033c967cdedb6913eee950a2bf0",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-20-image-05.png",
+      "page": 20,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-20-image-06.png",
+      "page": 20,
+      "pdf_image_name": "Im31.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "387e5cf5bd55a472371e31300d4b68b9c6a4d25ca128dc4d5074701be5b5de78",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-21-image-00.png",
+      "page": 21,
+      "pdf_image_name": "Im37.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "1c1b1a6e0b6da3799fa2ab2e49ad54b0d11e7e7d88fd4e3bc414d7c17accdd44",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-21-image-01.png",
+      "page": 21,
+      "pdf_image_name": "Im38.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "b0b7a2e5040e5574603394139a2a60d5160bc901c7166778807823b54daba5ed",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-21-image-02.png",
+      "page": 21,
+      "pdf_image_name": "Im36.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "a4f19f6b665d9c110670aba79d3f9f2161b4c7b86eb6c49559220f87f952eb9c",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-21-image-03.png",
+      "page": 21,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-22-image-00.png",
+      "page": 22,
+      "pdf_image_name": "Im39.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "e0b27b57829a495285b4b6eb7ededd7727256a5422650e625a2658a5db169746",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-22-image-01.png",
+      "page": 22,
+      "pdf_image_name": "Im40.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "963a2cdf2b0a2888a80ec837c274562f4a026fdbb91ca9f3604d5c9a6c2ba122",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-22-image-02.png",
+      "page": 22,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-22-image-03.png",
+      "page": 22,
+      "pdf_image_name": "Im41.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "f49cbf5d45752e055edd1958fe272625fb01b11d429d50c052e2498709fb4976",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-23-image-00.png",
+      "page": 23,
+      "pdf_image_name": "Im42.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "c32318874bf1622a41bb3b51a32c9bf3fe4ef27872d0bfa4500ef9309a4ebf4d",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-23-image-01.png",
+      "page": 23,
+      "pdf_image_name": "Im43.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "67c85d93886bd037cee5613fadf550cf101c5ce38296238e93bad1ce2d877b47",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-23-image-02.png",
+      "page": 23,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-24-image-00.png",
+      "page": 24,
+      "pdf_image_name": "Im45.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "012de6da28fcef09434334872801c395563e7bc2bad3af0379fd1302ee802d6f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-24-image-01.png",
+      "page": 24,
+      "pdf_image_name": "Im44.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "cf330e6b871461b14ba3f2637cfe3ee027ee82ab617ebd8724c316438b674698",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-24-image-02.png",
+      "page": 24,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-25-image-00.png",
+      "page": 25,
+      "pdf_image_name": "Im48.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "7b39625f77b60c99d33879eaaddcd28fb9989337714efed434ee9da22dba9043",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-25-image-01.png",
+      "page": 25,
+      "pdf_image_name": "Im50.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "c8ccce3ee810c5e6510d785355156648f95e83b51b8107c7ca3dde62d04cbd2c",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-25-image-02.png",
+      "page": 25,
+      "pdf_image_name": "Im49.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "9d1e089534188b238e4ed4a22da849b4085b1b9f16a273a7c68e34388d599a41",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-25-image-03.png",
+      "page": 25,
+      "pdf_image_name": "Im46.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "938ee985d4284f43a47c2f8e36c398cb3cedf3ae184d4c0467ee129689161419",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-25-image-04.png",
+      "page": 25,
+      "pdf_image_name": "Im47.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "137149e0b9072bab8d96fc93216b18d7e8dc7fa638794c483127aa2cc3d1c919",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-25-image-05.png",
+      "page": 25,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-26-image-00.png",
+      "page": 26,
+      "pdf_image_name": "Im51.png",
+      "size": [
+        603,
+        204
+      ],
+      "sha256": "d8eeb4114e85b416d03029cf7d14558b3a2e9bbf621d29a7ef03ee5976498184",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-26-image-01.png",
+      "page": 26,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-27-image-00.png",
+      "page": 27,
+      "pdf_image_name": "Im52.png",
+      "size": [
+        545,
+        331
+      ],
+      "sha256": "1ad763d075f4657632dcedbef695077c751c88019893c9f038d996e577b7f54d",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-27-image-01.png",
+      "page": 27,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-28-image-02.png",
+      "page": 28,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-29-image-00.png",
+      "page": 29,
+      "pdf_image_name": "Im55.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "efde6140a57a65d2f6aefd950dba25805fe2aa89aee0e79c0daa441010e9d240",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-29-image-01.png",
+      "page": 29,
+      "pdf_image_name": "Im56.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "6c1b00c8474d8b44b69f1078c467eb4998e416865f0bdad9a39fee14a3e03f68",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-29-image-02.png",
+      "page": 29,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-30-image-00.png",
+      "page": 30,
+      "pdf_image_name": "Im57.png",
+      "size": [
+        1881,
+        940
+      ],
+      "sha256": "3adaef0b0d4c54e512b2187fc7ee2b7879e250752d7fa330b3bff62636aea7ff",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-30-image-01.png",
+      "page": 30,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-31-image-00.png",
+      "page": 31,
+      "pdf_image_name": "Im58.png",
+      "size": [
+        2700,
+        2700
+      ],
+      "sha256": "68c04b8ddd27bdcbbcf567d74a91b3dbdf13eae40461132c1d8518ab177beb4b",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-31-image-01.png",
+      "page": 31,
+      "pdf_image_name": "Im59.png",
+      "size": [
+        2700,
+        2700
+      ],
+      "sha256": "f140ff8010f830a0b1775cbb52af5d379f7f3dc4285c5fbadb2c5c63c8b0042e",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-31-image-02.png",
+      "page": 31,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-32-image-00.png",
+      "page": 32,
+      "pdf_image_name": "Im61.png",
+      "size": [
+        3600,
+        1800
+      ],
+      "sha256": "c7816e437dbffcb8ef8cdcd81e09acbad25a3e57e01372bb942fd223a4c90f00",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-32-image-01.png",
+      "page": 32,
+      "pdf_image_name": "Im60.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "d5e339c8daf8bb0536c9459939f60e46b5be99d63344d30f30093a8fcdcebd80",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-32-image-02.png",
+      "page": 32,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-33-image-00.png",
+      "page": 33,
+      "pdf_image_name": "Im69.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "645fde4256b7a6d71f16f9aeecba6278b7872e6cb4c1281f68e183cd77cbe87a",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-33-image-01.png",
+      "page": 33,
+      "pdf_image_name": "Im63.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "de1b9e3f63829e6fb275c2b5d100e1e40c920b5b8aab95146b3571612aa75c16",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-33-image-02.png",
+      "page": 33,
+      "pdf_image_name": "Im70.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "2fb29e76996b4374cba59b3f7535f1ddbe404cdf6bce5eb9674d8ad2307c51e2",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-33-image-03.png",
+      "page": 33,
+      "pdf_image_name": "Im67.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "6cbde7787917ec85b98aa2f514376e7f7865009c7c9537064027ee69db667438",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-33-image-04.png",
+      "page": 33,
+      "pdf_image_name": "Im64.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "a6f3aea2936279058e7aaf34a98d7b854b18223d041be51ac4c02c693d337bd8",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-33-image-05.png",
+      "page": 33,
+      "pdf_image_name": "Im62.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "6bd62605509148230b857e20e80d358d428389c7abf4f08faedd0d098974b98c",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-33-image-06.png",
+      "page": 33,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-33-image-07.png",
+      "page": 33,
+      "pdf_image_name": "Im65.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "6839f09f990adc7150748c550f53e6b7974e6e0d0a168d3e6eb5b79156940394",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-33-image-08.png",
+      "page": 33,
+      "pdf_image_name": "Im66.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "d4ff926235f5b102cc2519bf0822868e7f4d7be0b7342b63fd982a7bce57f882",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-33-image-09.png",
+      "page": 33,
+      "pdf_image_name": "Im68.png",
+      "size": [
+        1800,
+        1800
+      ],
+      "sha256": "59f923c04083f018dfc54492694fd53d1875fbad69e08486624fe2548f026261",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-34-image-00.png",
+      "page": 34,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-35-image-00.png",
+      "page": 35,
+      "pdf_image_name": "Im73.jpg",
+      "size": [
+        2633,
+        2175
+      ],
+      "sha256": "16ebea14cafb7ca682a04b0c480c1c1c0caf243d1bd22a26ad2d171a9a95f221",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-35-image-01.png",
+      "page": 35,
+      "pdf_image_name": "Im72.jpg",
+      "size": [
+        2633,
+        2175
+      ],
+      "sha256": "3e11de2cb2b2035a7d0e7ffc328da30e5983f60019a2b1b819ca3635077c1668",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-35-image-02.png",
+      "page": 35,
+      "pdf_image_name": "Im71.jpg",
+      "size": [
+        2612,
+        2158
+      ],
+      "sha256": "ba0be3c0a78eba21889d6af1f53bf953cbb5178e4389d6868c917fb996dd6935",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-35-image-03.png",
+      "page": 35,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-35-image-04.png",
+      "page": 35,
+      "pdf_image_name": "Im74.jpg",
+      "size": [
+        2612,
+        2158
+      ],
+      "sha256": "faf8b9d6b2dade84991389226fc3038935aec088336ab2c20c86ee83d00e9891",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-36-image-00.png",
+      "page": 36,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-37-image-00.png",
+      "page": 37,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-38-image-00.png",
+      "page": 38,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    },
+    {
+      "path": "page-39-image-00.png",
+      "page": 39,
+      "pdf_image_name": "Im1.png",
+      "size": [
+        957,
+        207
+      ],
+      "sha256": "67facb56aadfe204f10e9ce90ddff5be9ae78dd138e92bcfbe865a297c30d66f",
+      "role": "Apoio documental; parâmetros/ambiente originais não informados. Não é golden."
+    }
+  ],
+  "unextracted_images": [
+    {
+      "page": 13,
+      "image_index": 0,
+      "reason": "Requested image buffer size 89264704 exceeds limit 75000000."
+    },
+    {
+      "page": 13,
+      "image_index": 1,
+      "reason": "Requested image buffer size 89264704 exceeds limit 75000000."
+    },
+    {
+      "page": 14,
+      "image_index": 0,
+      "reason": "Requested image buffer size 89264704 exceeds limit 75000000."
+    },
+    {
+      "page": 14,
+      "image_index": 1,
+      "reason": "Requested image buffer size 89264704 exceeds limit 75000000."
+    },
+    {
+      "page": 15,
+      "image_index": 0,
+      "reason": "Requested image buffer size 89264704 exceeds limit 75000000."
+    },
+    {
+      "page": 15,
+      "image_index": 1,
+      "reason": "Requested image buffer size 89264704 exceeds limit 75000000."
+    },
+    {
+      "page": 16,
+      "image_index": 0,
+      "reason": "Requested image buffer size 89264704 exceeds limit 75000000."
+    },
+    {
+      "page": 16,
+      "image_index": 1,
+      "reason": "Requested image buffer size 89264704 exceeds limit 75000000."
+    },
+    {
+      "page": 28,
+      "image_index": 0,
+      "reason": "Requested image buffer size 89264704 exceeds limit 75000000."
+    },
+    {
+      "page": 28,
+      "image_index": 1,
+      "reason": "Requested image buffer size 89264704 exceeds limit 75000000."
+    }
+  ],
+  "page_rendering": "QtPdf, 144 dpi; páginas 4, 5 e imagens que excedem o limite de memória do extrator.",
+  "missing": "Capturas reais controladas da GUI 2.8 e PNG/arrays MATLAB."
+}
