@@ -107,6 +107,15 @@ API auxiliar do variograma: `from pyfracpaq.analysis.variogram import experiment
 
 requirements.txt instala apenas as bibliotecas de execução. Para testes e referências, instalar requirements-dev.txt no ambiente de desenvolvimento. O clone preserva tests/, scripts/ e os relatórios; o ZIP de uso os exclui por .gitattributes/export-ignore. Não apagar os arquivos dourados e aceites de tests/reference: eles mantêm a rastreabilidade científica. A descoberta de testes no VS Code fica desativada por padrão e pode ser habilitada localmente por quem desenvolve.
 
-A validação sem instalar o pacote utiliza scripts/prepare_source_archive.py e scripts/check_source_delivery.py. O primeiro cria somente um repositório Git temporário e exporta o candidato com os atributos; o segundo exige que o código venha da pasta fornecida e que não exista distribuição PyFracPaQ instalada, e exercita Preview/Run com conexões e DNS bloqueados no Python. Os fixtures de uso vêm de examples/; testes e MATLAB não entram na cópia validada.
+Source validation without installing the project uses scripts/prepare_source_archive.py and scripts/check_source_delivery.py. The former assembles a ZIP from an explicit list of application code, resources, examples, user documentation and licences without running Git. The latter requires source imports from the supplied folder and no installed PyFracPaQ distribution, then exercises Preview/Run with Python connections and DNS blocked. Runtime fixtures come from examples/; tests and MATLAB references are excluded from the validated copy.
 
 Os scripts build_local_release.py, check_local_delivery.py e validate_local_release.py têm origem na etapa anterior de empacotamento; wheels e instalação do projeto não são o fluxo de distribuição adotado. O checker de fontes reaproveita somente as verificações de janela/exportação do checker antigo, exigindo importação pela pasta e ausência de instalação do projeto.
+
+The public `prepare_source_archive.py` generator now writes to `dist/0.9.0rc1/public/`
+and checks licences and exclusions before making the candidate available. Publish
+only the files listed in `publication-manifest.json`; check the ZIP again with
+`check_distribution_licenses.py --archive PATH`. See the
+[scope and notices](licenses/README.md). `build_local_release.py` requires the
+explicit `--internal-reference-archive` option, writes to `dist/internal/` by
+default and names the archive `*-internal-reference.zip`. Older `*-source.zip`
+files remain internal evidence and must not be delivered.

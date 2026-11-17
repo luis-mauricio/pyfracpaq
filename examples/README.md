@@ -1,14 +1,14 @@
-# Exemplos locais válidos
+# Valid local examples
 
-Os exemplos sintéticos abaixo foram construídos pelo projeto, sob MIT. SD11A.txt é uma cópia sem alterações do exemplo da distribuição FracPaQ MATLAB 2.8, com os créditos MIT preservados. [Procedência/hashes](provenance.json). Não são resultados atribuídos ao MATLAB nem cópias de fotografias sem licença individual.
+The synthetic examples below were created by the project under MIT. SD11A.txt is an unchanged copy of the FracPaQ MATLAB 2.8 distribution's example, with its MIT credits preserved. See [provenance/hashes](provenance.json). They are not results attributed to MATLAB or copies of photographs without an individual licence.
 
-| Arquivo | Uso |
+| File | Usage |
 | --- | --- |
-| SD11A.txt | Exemplo principal do manual: 445 traços, 1076 segmentos e 1521 nós; sem escala física fornecida |
-| rectangles.txt | Duas fraturas fechadas de 40×40; blocos, variograma, Maps e perfis. O bloco rasterizado branco mede 1444 pixels² após a espessura da linha, não 1600 pixels² vetoriais |
-| profiles.txt | Traço dobrado e segmento vertical; linha sugerida (-5.5,0)→(5.5,0) para ALONG/FROM/círculos |
-| colours.svg | Polyline/line sem transformação, dois strokes hexadecimais; conversão ao lado do SVG e TXT por cor |
-| network.tif | Imagem grayscale uint8; Preview/Hough e análises subsequentes |
-| move_objects.dat | Dois objetos com cabeçalho de uma linha e último objeto sem linha vazia final; usar a ferramenta Move com --skip-header 1 |
+| SD11A.txt | Main manual example: 445 traces, 1076 segments and 1521 nodes; no physical scale supplied |
+| rectangles.txt | Two closed 40×40 fractures; blocks, variogram, Maps and profiles. The white rasterised block measures 1444 pixels² after line thickness, rather than 1600 pixels² of vector area |
+| profiles.txt | Bent trace and vertical segment; suggested line (-5.5,0)→(5.5,0) for ALONG/FROM/circles |
+| colours.svg | Untransformed polyline/line, two hexadecimal strokes; conversion alongside the SVG and one TXT per colour |
+| network.tif | Grayscale uint8 image; Preview/Hough and subsequent analyses |
+| move_objects.dat | Two objects with a one-line header and a final object without a trailing blank line; use the Move tool with --skip-header 1 |
 
-Ver [manual local](../docs/user-guide.md) para instalação, limites do SVG, preparação de fotografias, escala, wavelets e utilitários. Os exemplos originais completos permanecem em fracpaq-matlab; alguns requerem preparação antes de importar. Seus SVGs foram auditados na Sprint5 e nenhum arquivo original foi corrigido silenciosamente.
+See the [local manual](../docs/user-guide.md) for installation, SVG limits, photograph preparation, scale, wavelets and utilities. Complete original examples remain in fracpaq-matlab; some require preparation before import. Their SVGs were audited in Sprint 5, and no original file was silently corrected.

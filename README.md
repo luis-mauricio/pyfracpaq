@@ -93,4 +93,6 @@ For development, see `docs/development.md` and `requirements-dev.txt` in the ful
 
 Based on FracPaQ by David Healy and collaborators. Reference: [Healy et al. (2017), *FracPaQ: A MATLAB toolbox for the quantification of fracture patterns*](https://doi.org/10.1016/j.jsg.2016.12.003).
 
-[MIT licence](LICENSE) · [Third-party attributions and notices](THIRD_PARTY_NOTICES.md).
+[MIT licence](LICENSE) · [Third-party attributions and notices](THIRD_PARTY_NOTICES.md) · [Licence review and distribution scope](docs/licenses/README.md).
+
+PyFracPaQ is a Python port with its own modifications, independently maintained from the original FracPaQ project. The original copyright and permission notice are retained. Dependencies keep their own licences; Qt/PySide6 is installed separately and is not covered by the project's MIT licence.

@@ -27,7 +27,7 @@ from reference_common import ROOT, sha256, write_json
 def archives(directory, work):
     wheel = directory / f'pyfracpaq-{__version__}-py3-none-any.whl'
     sdist = directory / f'pyfracpaq-{__version__}.tar.gz'
-    source = directory / f'pyfracpaq-{__version__}-source.zip'
+    source = directory / f'pyfracpaq-{__version__}-internal-reference.zip'
     prefix = f'pyfracpaq-{__version__}/'
     with zipfile.ZipFile(wheel) as archive:
         assert archive.testzip() is None
@@ -146,7 +146,7 @@ def validate(directory, wheelhouse, evidence, archives_only=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--directory', type=Path, default=ROOT / 'dist' / __version__)
+    parser.add_argument('--directory', type=Path, default=ROOT / 'dist' / 'internal' / __version__)
     parser.add_argument('--wheelhouse', type=Path, default=ROOT / 'dist/wheelhouse-macos-arm64')
     parser.add_argument('--evidence', type=Path, default=ROOT / 'tests/reference/sprint16/delivery/point-4')
     parser.add_argument('--archives-only', action='store_true')

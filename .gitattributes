@@ -1,5 +1,5 @@
-# O clone preserva testes, evidencias e ferramentas de desenvolvimento.
-# Arquivos Git exportados para uso (Download ZIP/git archive) ficam enxutos.
+# The clone preserves tests, evidence and development tools.
+# Git source exports (Download ZIP/git archive) exclude development material.
 /tests export-ignore
 /scripts export-ignore
 /docs/parity export-ignore
@@ -14,3 +14,6 @@
 /.vscode/tasks.json export-ignore
 /.gitattributes export-ignore
 /.gitignore export-ignore
+/fracpaq-matlab export-ignore
+/dist export-ignore
+/build export-ignore

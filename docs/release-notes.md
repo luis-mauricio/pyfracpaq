@@ -1,31 +1,31 @@
 # PyFracPaQ 0.9.0rc1
 
-November 2026 · luismauricio@me.com. Pré-versão do port Python; **FracPaQ 2.8** identifica a referência MATLAB de David Healy e colaboradores.
+November 2026 · luismauricio@me.com. Prerelease of the Python port; **FracPaQ 2.8** identifies the MATLAB reference by David Healy and collaborators.
 
-O programa é executado diretamente pelo código, com Python 3.13 e as bibliotecas de requirements.txt. Miniforge pode gerenciar esse ambiente. As seis abas analíticas, importação TXT/SVG/imagem e ferramentas complementares estão disponíveis. A janela usa o logo PyFracPaQ, abre com largura útil total e mantém redimensionamento livre. Barras de cores acompanham o plot com distância fixa aos rótulos; marcadores usam quadrados/círculos geométricos normais.
+Run directly from source using Python 3.13 and the libraries in requirements.txt. Miniforge can manage that environment. The six analytical tabs, TXT/SVG/image import and complementary tools are available. The window uses the PyFracPaQ logo, opens at the full available width and remains freely resizable. Colour bars follow the plot with fixed clearance from axis labels; markers use standard geometric squares/circles.
 
-## Diferenças aceitas em relação à referência
+## Accepted differences from the reference
 
-As correções abaixo foram aprovadas pelo mantenedor; podem alterar resultados em relação ao comportamento do legado.
+The corrections below were approved by the maintainer and may change results relative to legacy behaviour.
 
-| Família | Comportamento adotado |
+| Family | Adopted behaviour |
 | --- | --- |
-| Censura — Q-05 | Extremidades nas bordas reais excluem o traço inteiro, mantendo comprimentos e ângulos alinhados. |
-| Conectividade — Q-11 | Proximidade entre ponta real e segmento finito; T exato é Y mesmo com tolerância zero. |
-| Wavelets — Q-12 | Rasterização determinística, dimensões retangulares e desempate de orientações conforme decisão aprovada. |
-| Blocos — Q-14 | Exclui componentes que tocam a borda e calibra áreas/centroides; mede regiões rasterizadas, não polígonos vetoriais. |
-| MLE — Q-15 | Cortes Lower/Upper coerentes e ajuste lognormal pela cauda, usando a mesma população na busca e no ajuste. |
-| Estabilidade — Q-17 | Normalização após correções angulares, cores Sf lineares e igualdade CSF consistente entre mapa e rosa. |
-| Maps/Graphs — Q-20 | Contagem em segmentos finitos e normalização P20 dos perfis como m/(2πr²). |
+| Censoring — Q-05 | Endpoints on actual boundaries exclude the entire trace, keeping lengths and angles aligned. |
+| Connectivity — Q-11 | Proximity between a real tip and a finite segment; an exact T is Y even at zero tolerance. |
+| Wavelets — Q-12 | Deterministic rasterisation, rectangular dimensions and orientation tie-breaking according to the approved decision. |
+| Blocks — Q-14 | Excludes components touching the border and calibrates areas/centroids; measures rasterised regions rather than vector polygons. |
+| MLE — Q-15 | Consistent Lower/Upper cuts and a tail-based lognormal fit, using the same population for the search and fitting. |
+| Stability — Q-17 | Normalisation after angular corrections, linear Sf colours and consistent CSF equality in the map and rose. |
+| Maps/Graphs — Q-20 | Counting on finite segments and P20 profile normalisation as m/(2πr²). |
 
-A geometria usa o centro do traço na metade do percurso e a diagonal pelas amplitudes do domínio. Convenções angulares brutas/corrigidas têm finalidades distintas. Os mapas de comprimento conservam a convenção aceita de índices de cor lineares e barra logarítmica.
+Geometry uses the trace centre halfway along its path and the diagonal from the domain extents. Raw/corrected angular conventions serve different purposes. Length maps retain the accepted convention of linear colour indices with a logarithmic colour bar.
 
-Foram aceitas pequenas diferenças visuais em cinco títulos e duas vistas Hough, sem autorização para mudar votos/picos/endpoints. Os 16 detalhes apresentados foram aprovados após a troca dos marcadores. Isso não declara identidade geral de pixels nem identidade com os resultados científicos corrigidos do legado.
+Small visual differences were accepted in five titles and two Hough views, without authorisation to change votes/peaks/endpoints. The 16 presented details were approved after replacing the markers. This does not declare general pixel identity or identity with corrected legacy scientific results.
 
-## Uso e limites
+## Usage and limits
 
-Prepare as dependências antes de executar. Não são necessários MATLAB, testes, relatórios ou instalação do pacote PyFracPaQ. O ZIP de uso é reduzido; o clone completo conserva o material de desenvolvimento. Windows/Linux permanecem para testes posteriores do mantenedor.
+Prepare dependencies before running. MATLAB, tests, reports and installation of the PyFracPaQ package are unnecessary. The usage ZIP is reduced; the full clone retains development material. Windows/Linux remain for the maintainer's later testing.
 
-As saídas usam o diretório corrente, e repetir uma tag substitui os mesmos nomes. A substituição é atômica por arquivo, sem transação conjunta para toda a análise. Há intermediários de nome fixo. Dados e precisões dos TXT mantêm os contratos documentados.
+Outputs use the current directory, and reusing a tag replaces the same names. Replacement is atomic per file, without a transaction covering the entire analysis. Some intermediates have fixed names. TXT data and precision retain their documented contracts.
 
-[Preparação](install.md) · [Manual](user-guide.md) · [Exemplos](../examples/README.md) · [Créditos](../THIRD_PARTY_NOTICES.md). O histórico detalhado de decisões e evidências permanece no repositório completo, em docs/decisions, docs/parity e tests/reference.
+[Preparation](install.md) · [Manual](user-guide.md) · [Examples](../examples/README.md) · [Credits](../THIRD_PARTY_NOTICES.md). The detailed history of decisions and evidence remains in the full repository, in docs/decisions, docs/parity and tests/reference.

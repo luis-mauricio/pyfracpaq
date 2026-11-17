@@ -1,69 +1,69 @@
-# Manual local do PyFracPaQ
+# PyFracPaQ local user guide
 
-O manual ilustrado contém o roteiro SD11A, os 30 recursos analíticos, figuras, teoria e fórmulas. Está disponível em **português brasileiro** ([PDF](manual/pyfracpaq-user-manual.pdf), [LaTeX](manual/pyfracpaq-user-manual.tex)) e **inglês** ([PDF](manual/pyfracpaq-user-manual-en.pdf), [LaTeX](manual/pyfracpaq-user-manual-en.tex)). As [instruções de compilação](manual/README.md) acompanham as duas versões. Este documento mantém a consulta rápida em português em Markdown.
+The illustrated manual covers the SD11A workflow, all 30 analytical features, figures, theory and formulae. It is available in **Brazilian Portuguese** ([PDF](manual/pyfracpaq-user-manual.pdf), [LaTeX](manual/pyfracpaq-user-manual.tex)) and **English** ([PDF](manual/pyfracpaq-user-manual-en.pdf), [LaTeX](manual/pyfracpaq-user-manual-en.tex)). [Compilation instructions](manual/README.md) accompany both versions. This Markdown document provides a quick reference in English.
 
-O port usa a interface FracPaQ 2.8 e funciona offline após preparar as bibliotecas. Versão **0.9.0rc1**, November 2026, contato luismauricio@me.com. Execute o código pela raiz no terminal ou VS Code, com Python 3.13 ou ambiente Miniforge; não é necessário instalar o pacote do projeto. [Preparação do ambiente](install.md), [notas e diferenças aceitas](release-notes.md), [créditos](../THIRD_PARTY_NOTICES.md) e [licença](../LICENSE). MATLAB e os testes não são necessários para usar o programa. Windows/Linux permanecem para testes posteriores do mantenedor.
+The port follows the FracPaQ 2.8 interface and works offline after its libraries are installed. Version **0.9.0rc1**, November 2026, contact luismauricio@me.com. Run from the project root in a terminal or VS Code using Python 3.13 or a Miniforge environment; installing the project package is unnecessary. See [environment preparation](install.md), [release notes and accepted differences](release-notes.md), [credits](../THIRD_PARTY_NOTICES.md) and the [licence](../LICENSE). MATLAB and tests are not required to use the application. Windows/Linux remain for the maintainer's later testing.
 
-## Instalar e iniciar
+## Install and start
 
-Na raiz do projeto, criar .venv com Python3.13 (ou usar um ambiente Miniforge Python3.13) e instalar as dependências de requirements.txt. Não é necessário instalar o pacote PyFracPaQ. O procedimento completo, dependências de desenvolvimento e comandos PowerShell estão no [README](../README.md). Iniciar com `.venv/bin/python run_gui.py` ou `.venv/bin/python -m pyfracpaq`. No VS Code, selecionar o interpretador de .venv. Não é necessário MATLAB durante a operação.
+At the project root, create a .venv with Python 3.13, or use a Miniforge Python 3.13 environment, and install the dependencies in requirements.txt. You do not need to install the PyFracPaQ package. The complete procedure, development dependencies and PowerShell commands are in the [README](../README.md). Start with `.venv/bin/python run_gui.py` or `.venv/bin/python -m pyfracpaq`. In VS Code, select the .venv interpreter. MATLAB is not required during operation.
 
-Escolher o arquivo, clicar Preview, conferir estatísticas, selecionar as saídas nas seis abas e clicar Run. A tag Run1 produz o sufixo _Run1. Os PNGs têm 20×20cm/600dpi; arquivos são gravados no diretório corrente de execução. Repetir tag substitui os mesmos arquivos. Os originais não devem ser usados como diretório de saída.
+Choose an input file, click Preview, check the statistics, select outputs across the six tabs and click Run. The Run1 tag produces the _Run1 suffix. PNGs are 20×20 cm at 600 dpi; files are written to the current working directory. Reusing a tag replaces the same files. Do not use the original reference directory for outputs.
 
-## Preparar entradas
+## Prepare inputs
 
-TXT exige um traço por linha, pares X/Y separados por TAB e ao menos dois nós distintos. Não usar cabeçalho, vírgulas ou comentário no TXT da GUI. O leitor genérico complementar é uma API separada. Escala vazia mantém pixels; pixels/metre positivo divide coordenadas e deriva áreas/unidades. Alterar entrada/escala/Hough exige nova prévia.
+TXT input requires one trace per line, TAB-separated X/Y pairs and at least two distinct nodes. Do not use headers, commas or comments in GUI TXT input. The complementary generic text reader is a separate API. A blank scale retains pixels; a positive pixels/metre value divides coordinates and derives areas/units. Changing the input, scale or Hough parameters requires a new preview.
 
-SVG aceita line, polyline e path M/L no subconjunto documentado, sem transformações, curvas ou CSS externo. Preparar as camadas no editor externo e usar stroke hexadecimal por atributo/style/grupo compatível. Não converter curvas para retas automaticamente. Os TXT convertidos ficam junto ao SVG; carregar um TXT de cor permite análise individual. Não há edição/digitalização de traços dentro da aplicação.
+SVG input accepts line, polyline and M/L path commands within the documented subset, without transformations, curves or external CSS. Prepare layers in an external editor and use hexadecimal stroke colours through compatible attributes, styles or groups. Curves are not automatically converted to straight lines. Converted TXT files are written alongside the SVG; loading one colour's TXT allows individual analysis. The application does not edit or digitise traces.
 
-Imagens da GUI devem ser JPG/JPEG/TIF/TIFF grayscale de oito bits. RGB/alpha não são convertidos silenciosamente. A ferramenta complementar preprocess prepara fotografias RGB; conferir seu resultado antes de importar. Preview apresenta os quatro painéis Hough; ajustar peaks, threshold, FillGap e MinLength antes de executar as análises. [Exemplos válidos](../examples/README.md).
+GUI images must be eight-bit grayscale JPG/JPEG/TIF/TIFF files. RGB/alpha inputs are not silently converted. The complementary preprocess tool prepares RGB photographs; check its output before importing. Preview displays the four Hough panels; adjust peaks, threshold, FillGap and MinLength before running analyses. See the [valid examples](../examples/README.md).
 
-## Escolher análises
+## Select analyses
 
-Maps produz traços/nós, mapas de comprimento/ângulo, P21/P20 e estabilidade/Mohr. Os mapas circulares usam pelo menos dois círculos no lado menor; qualquer estimativa grava ambos os TXT de centros/valores. A contagem geométrica finita é a correção Q-20 aprovada. Slip tendency também grava segmentdata com coordenadas/ângulo bruto.
+Maps produces traces/nodes, length/angle maps, P21/P20 and stability/Mohr figures. Circular maps use at least two circles along the shorter side; any estimate writes both centre/value TXT files. Finite geometric counting follows the approved Q-20 correction. Slip tendency also writes segmentdata with coordinates/raw angles.
 
-Lengths oferece histogramas, distribuições log-log, MLE, cross-plot, censura, blocos e variograma. MLE depende de Log-log; cortes Lower/Upper removem as caudas menores/maiores. A censura usa uma máscara coerente por traço. Blocos Q-14 usam componentes brancos fechados, resolução original e conversão de área, com BMP visível de nome fixo; não medem área vetorial. Variograma usa centros/comprimentos dos segmentos, 30 classes, sem ajuste teórico. A família grava os três TXT mesmo se somente blocos/variograma estiverem selecionados.
+Lengths offers histograms, log-log distributions, MLE, cross-plot, censoring, blocks and a variogram. MLE depends on Log-log; Lower/Upper cuts remove the smaller/larger tails. Censoring uses a consistent mask per trace. Q-14 blocks use enclosed white components, original resolution and area conversion, with a visible BMP of fixed name; they do not measure vector polygon area. The variogram uses segment centres/lengths and 30 bins, without fitting a theoretical model. The family writes its three TXT files even when only blocks or the variogram are selected.
 
-Angles produz histograma e rosa de área, com opções de ponderação/cor/média. Fluid flow tem I/Y/X, crack tensors 0/2/4/8 e permeabilidade com abertura fixa/escalada e λ. A conectividade e os ajustes estatísticos usam as correções Q-11/Q-15 aprovadas; estabilidade usa Q-17. Não se modelam vazão ou pressão 3D.
+Angles produces a histogram and an equal-area rose, with weighting/colour/mean options. Fluid flow provides I/Y/X, crack tensors 0/2/4/8 and permeability with fixed/scaled aperture and λ. Connectivity and statistical fits use approved corrections Q-11/Q-15; stability uses Q-17. Three-dimensional flow rate or pressure is not modelled.
 
-Graphs: Select end points captura dois cliques na prévia. Escape ou botão direito cancelam a tentativa. ALONG mede cada interseção com a linha finita, repetindo traços quando há vários segmentos; FROM usa distância perpendicular assinada à reta infinita. Norte não altera esses ângulos brutos. Selecionar P21 ou P20 gera mapa e ambos os perfis; P20=m/(2πr²), conforme extensão Q-20 aprovada. Alterar entrada/escala limpa a linha; flips preservam a seleção.
+Graphs: Select end points captures two clicks in the preview. Escape or right-click cancels the attempt. ALONG measures each intersection with the finite line, repeating traces when multiple segments intersect; FROM uses signed perpendicular distance to the infinite line. North does not alter these raw angles. Selecting P21 or P20 generates a map and both profiles; P20=m/(2πr²), following the approved Q-20 extension. Changing the input/scale clears the line; flips preserve the selection.
 
 ## Wavelets
 
-Marcar Run wavelet analysis e escolher Morlet ou Mexican Hat. Informar listas de inteiros positivos a/L, por exemplo `8 16` e `2 4`; o cálculo usa os recíprocos dos fatores L. O incremento angular deve ser inteiro divisor de180, por exemplo10,20,30,45,60 ou90. Expressões MATLAB como `2:2:8` não são executadas; escrever `2 4 6 8`.
+Select Run wavelet analysis and choose Morlet or Mexican Hat. Enter positive integer a/L lists, such as `8 16` and `2 4`; the calculation uses the reciprocals of the L factors. The angular increment must be an integer divisor of 180, such as 10, 20, 30, 45, 60 or 90. MATLAB expressions such as `2:2:8` are not executed; enter `2 4 6 8` instead.
 
-O raster de entrada é sempre 1944×1944, 27inches a72dpi, com margens da referência e traços longos (≥45% do maior) em4pontos, demais em1ponto. A escala física/norte não são adicionados às coordenadas do raster. Q-12 aprovada documenta as diferenças de raster/antialiasing e o desempate numérico de orientações isotrópicas. Uma orientação ótima em L=1 pode ser indeterminada fisicamente; o desempate está declarado nas evidências.
+The input raster is always 1944×1944, 27 inches at 72 dpi, with the reference margins and long traces (≥45% of the longest) drawn at 4 points, others at 1 point. Physical scale/north are not added to raster coordinates. Approved Q-12 documents raster/antialiasing differences and the numerical tie-break for isotropic orientations. An optimum orientation at L=1 may be physically indeterminate; the tie-break is declared in the evidence.
 
-Cada a gera um painel 2×2 com imagem, WC normalizado, rosa e histograma de log10 da frequência, mais FracPaQ2Dwavelet_theta_a{a}_{tag}.txt. O corte é fixo: WC estritamente maior que50% do máximo; não há slider. FracPaQ2D_wavelet_traces.png é um intermediário visível sem tag. As barras verticais acompanham a altura dos plots ao redimensionar/exportar e mantêm a folga física compartilhada.
+Each a produces a 2×2 panel with the image, normalised WC, rose and log10 frequency histogram, plus FracPaQ2Dwavelet_theta_a{a}_{tag}.txt. The threshold is fixed: WC strictly greater than 50% of the maximum; there is no slider. FracPaQ2D_wavelet_traces.png is a visible untagged intermediate. Vertical colour bars follow plot height during resizing/export and retain the shared physical clearance.
 
-Wavelets podem ser demoradas. Reduzir o número de escalas, fatores L e orientações diminui o trabalho. Há estimativa prévia e orçamento de memória específico de2GiB; entradas acima do limite são recusadas com mensagem antes da alocação maior. Coeficientes são processados por orientação/L, sem tensor global de todas as combinações. A aba principal não ganha botão Cancel; o diálogo auxiliar tem seu próprio Cancel.
+Wavelets can take time. Reducing the number of scales, L factors and orientations reduces the work. A prior estimate and a specific 2 GiB memory budget are provided; inputs exceeding the limit are rejected with a message before the larger allocation. Coefficients are processed per orientation/L, without a global tensor of every combination. The main tab has no Cancel button; the auxiliary dialogue has its own Cancel.
 
-## Ferramentas complementares
+## Complementary tools
 
-Executar da raiz após instalação; caminhos podem conter espaços quando passados entre aspas:
+Run from the root after preparing the environment; quote paths containing spaces:
 
 ```bash
-.venv/bin/python -m pyfracpaq.tools preprocess foto.jpg preparada.tif --panel etapas.png
-.venv/bin/python -m pyfracpaq.tools move examples/move_objects.dat nos.txt --x-column 1 --y-column 3 --skip-header 1
+.venv/bin/python -m pyfracpaq.tools preprocess photo.jpg prepared.tif --panel stages.png
+.venv/bin/python -m pyfracpaq.tools move examples/move_objects.dat nodes.txt --x-column 1 --y-column 3 --skip-header 1
 .venv/bin/python -m pyfracpaq.tools wavelet-dialog FracPaQ2D_wavelet_traces.png --output-directory . --tag Run1
 ```
 
-Preprocess exige entrada e saídas distintas: TIFF grayscale0/255 e painel das seis etapas. Reproduz conversão cinza, mediana20×20, diferença saturada, Sobel, fechamento e afinamento/inversão. O painel permite decidir se o preparo preserva as fraturas desejadas; não há segmentação por IA.
+Preprocess requires distinct input and output paths: a grayscale 0/255 TIFF and the six-stage panel. It reproduces grayscale conversion, 20×20 median filtering, saturated subtraction, Sobel, closing and thinning/inversion. The panel helps assess whether preprocessing preserves the intended fractures; no AI segmentation is used.
 
-Move usa colunas em base1, por padrão1/3, objetos separados por linhas vazias e cabeçalho explicitamente contado. Default é zero linhas de cabeçalho; a última fratura é preservada mesmo sem linha vazia final. Conversão inválida não substitui a saída existente. O TXT usa quatro casas decimais e TAB, como o script.
+Move uses one-based columns, defaulting to 1/3, blank-line-separated objects and an explicitly counted header. The default is zero header lines; the last fracture is preserved even without a final blank line. Invalid conversion does not replace an existing output. TXT uses four decimal places and TAB, as in the script.
 
-O diálogo wavelet separado reutiliza um raster L/RGB de oito bits, com os mesmos controles/defaults do FIG auxiliar. Run congela os parâmetros e processa em QThread; Cancel fecha somente o diálogo/solicita interrupção do trabalho próprio, aguardando uma etapa segura. Seus TXT preservam o nome auxiliar **sem tag**, enquanto os PNGs usam a tag fornecida pela ferramenta. Ele não substitui a aba principal nem altera a prévia de traços.
+The separate wavelet dialogue reuses an eight-bit L/RGB raster, with the same controls/defaults as the auxiliary FIG. Run freezes parameters and processes them in a QThread; Cancel closes only that dialogue or requests interruption of its own job, waiting for a safe stage. Its TXT files retain the auxiliary name **without a tag**, while PNGs use the tag supplied to the tool. It neither replaces the main tab nor changes the trace preview.
 
-## APIs e legado
+## APIs and legacy routines
 
-APIs complementares: readtext em `pyfracpaq.io.text`; tensor16 e probe_plane em `pyfracpaq.analysis.auxiliary`; rosas linear/histórica em `pyfracpaq.analysis.roses`; variograma avançado em `pyfracpaq.analysis.variogram`; paletas em `pyfracpaq.analysis.palettes`; desenho em `pyfracpaq.plots.auxiliary`. Não são seletores da GUI2.8. Os contratos técnicos e a destinação completa constam em docs/parity/legacy.md no repositório completo; não são necessários ao uso.
+Complementary APIs: readtext in `pyfracpaq.io.text`; tensor16 and probe_plane in `pyfracpaq.analysis.auxiliary`; linear/historical roses in `pyfracpaq.analysis.roses`; the advanced variogram in `pyfracpaq.analysis.variogram`; colour maps in `pyfracpaq.analysis.palettes`; drawing in `pyfracpaq.plots.auxiliary`. These are not GUI 2.8 selectors. Technical contracts and the complete disposition are in docs/parity/legacy.md in the full repository; they are unnecessary for ordinary use.
 
-Os scripts antigos podem ter formatos EPS/JPEG/TIFF, caminhos fixos e assinaturas incompatíveis. Ficam preservados como referências, sem execução automática. Não há salvamento de sessão nem relatório consolidado na GUI; seriam extensões futuras. index.html/assets/params.json são a página histórica, não um frontend web nem configuração da aplicação.
+Older scripts may have EPS/JPEG/TIFF formats, fixed paths and incompatible signatures. They are preserved as references and are not executed automatically. The GUI does not save sessions or produce a consolidated report; these would be future extensions. index.html/assets/params.json belong to the historical website, rather than a web frontend or application configuration.
 
-## Auditoria e encerramento —0.1.0rc1
+## Audit and close-out — 0.1.0rc1
 
-A GUI usa Helvetica da referência, com fallback explícito Arial/DejaVu Sans quando ausente. Plots usam Arial/fallback. Run mantém a interface ocupada até concluir também a apresentação dos PNGs, atendendo eventos entre arquivos. Exit interrompe a sequência após a figura em andamento; os arquivos já salvos permanecem. Cada figura admite o atalho padrão Close (Cmd+W no Mac/Ctrl+W em outras plataformas); fechar uma figura não fecha a janela principal. A ordenação dos endpoints Hough foi corrigida na S16, portanto os resultados antigos da S6 são históricos.
+The GUI uses the reference Helvetica font, with explicit Arial/DejaVu Sans fallback when unavailable. Plots use Arial/fallback. Run keeps the interface busy until PNG presentation also finishes, processing events between files. Exit interrupts the sequence after the current figure; files already saved remain. Each figure supports the standard Close shortcut (Cmd+W on Mac/Ctrl+W elsewhere); closing a figure does not close the main window. Hough endpoint ordering was corrected in S16, so older S6 results are historical.
 
-A censura Q05 foi aprovada explicitamente: excluir traço inteiro quando sua primeira/última extremidade toca qualquer borda real e aplicar a mesma máscara a IDs, comprimentos e ângulos. Dados corrigidos podem divergir do MATLAB defeituoso. A convenção angular Q10 foi preservada: norte é subtraído e arredondado; EZROSE é corrigido/duplicado, enquanto pares de comprimento e segmentdata guardam ângulos brutos.
+Q05 censoring was explicitly approved: exclude an entire trace when its first/last endpoint touches any actual boundary, and apply the same mask to IDs, lengths and angles. Corrected data can differ from defective MATLAB behaviour. Angular convention Q10 was retained: north is subtracted and rounded; EZROSE is corrected/duplicated, whereas length pairs and segmentdata retain raw angles.
 
-Para conferência dos arquivos, consultar o catálogo/manifestos da S16. Uma captura disponível não equivale a paridade: ainda há diferenças de layout/ticks/textos e famílias sem homologação completa por região. Não usar esse candidato como declaração de identidade científica/visual geral.
+For file checks, consult the S16 catalogue/manifests. An available capture does not establish parity: differences in layout/ticks/text and families without complete regional acceptance remain. Do not treat this candidate as a declaration of general scientific/visual identity.

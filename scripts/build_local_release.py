@@ -1,4 +1,4 @@
-"""Build a versioned local wheel, sdist and complete source snapshot without network.
+"""Build INTERNAL wheels, sdist and a MATLAB reference archive without network.
 
 The prior release stays intact. Installation/validation and publication are
 separate operations; this command alone never certifies or publishes a release.
@@ -110,7 +110,7 @@ def build(wheelhouse, output, build_date, snapshot_only=False):
     sdist = output / f'pyfracpaq-{__version__}.tar.gz'
     assert wheel.is_file() and sdist.is_file(), 'Build the wheel and sdist first.'
     paths, baseline = source_paths()
-    target = output / f'pyfracpaq-{__version__}-source.zip'
+    target = output / f'pyfracpaq-{__version__}-internal-reference.zip'
     with tempfile.NamedTemporaryFile(prefix='.pyfracpaq-release-', suffix='.zip', dir=output, delete=False) as f:
         temporary = Path(f.name)
     try:
@@ -131,7 +131,7 @@ def build(wheelhouse, output, build_date, snapshot_only=False):
                  for p in (wheel, sdist, target)]
     write_json(output / 'release-manifest.json', {
         'version': __version__, 'reference': 'FracPaQ MATLAB 2.8', 'date': build_date.isoformat(),
-        'status': 'Local prerelease artifacts; see point-4 evidence for validation. Not published.',
+        'status': 'INTERNAL ONLY. Includes original reference material; not a public release.',
         'platform': 'macOS arm64 / CPython3.13.18; Windows/Linux deferred by user',
         'artifacts': artifacts, 'dependencies': packages,
         'dependency_directory': os.path.relpath(wheelhouse, output),
@@ -151,9 +151,16 @@ def build(wheelhouse, output, build_date, snapshot_only=False):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--wheelhouse', type=Path, required=True)
-    parser.add_argument('--output-directory', type=Path, default=ROOT / 'dist' / __version__)
+    parser.add_argument('--output-directory', type=Path, default=ROOT / 'dist' / 'internal' / __version__)
+    parser.add_argument('--internal-reference-archive', action='store_true',
+                        help='Acknowledge that this legacy build includes original MATLAB reference files; do not publish.')
     parser.add_argument('--build-date', type=date.fromisoformat, default=date(2026, 11, 16))
     parser.add_argument('--snapshot-only', action='store_true',
                         help='Refresh the complete source ZIP after validation; preserve wheel/sdist.')
     args = parser.parse_args()
+    if not args.internal_reference_archive:
+        parser.error('Internal build only. For the public source ZIP use prepare_source_archive.py. '
+                     'To build private reference material explicitly pass --internal-reference-archive.')
+    if 'public' in args.output_directory.resolve().parts:
+        parser.error('Internal artifacts must not be written to a public delivery directory.')
     build(args.wheelhouse.resolve(), args.output_directory.resolve(), args.build_date, args.snapshot_only)
