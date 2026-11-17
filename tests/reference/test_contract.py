@@ -2,6 +2,7 @@
 
 import json
 import re
+import shutil
 from collections import Counter
 from pathlib import Path
 
@@ -129,16 +130,45 @@ def test_capture_catalog_keeps_missing_goldens_explicit():
             assert sha256(ROOT / capture['path']) == capture['sha256']
 
 
-def test_manual_images_preserve_provenance_and_hashes():
-    data = read_json(REFERENCE / 'manual/manifest.json')
+def check_manual_image_integrity(reference):
+    data = read_json(reference / 'manual/manifest.json')
+    policy = read_json(reference / 'image_distribution_policy.json')
+    assert policy['directory'] == 'tests/reference/manual'
+    local_only = {item['path']: item['sha256'] for item in policy['local_only_images']}
+    registered = {item['path']: item['sha256'] for item in data['images']}
+    assert local_only and local_only.items() <= registered.items()
     assert data['pages'] == 39
     assert data['source_sha256'] == sha256(ROOT / data['source'])
     assert len(data['images']) == 103
     for entry in data['images']:
-        assert sha256(REFERENCE / 'manual' / entry['path']) == entry['sha256']
+        path = reference / 'manual' / entry['path']
+        if entry['path'] in local_only and not path.exists():
+            continue
+        assert sha256(path) == entry['sha256']
         assert 'Não é golden' in entry['role']
     for page in {s['page'] for s in data['unextracted_images']}:
-        assert (REFERENCE / 'manual' / f'page-{page:02d}.png').is_file()
+        assert (reference / 'manual' / f'page-{page:02d}.png').is_file()
+
+
+def test_manual_images_preserve_provenance_and_hashes():
+    check_manual_image_integrity(REFERENCE)
+
+
+@pytest.mark.parametrize('missing_required', [False, True])
+def test_public_manual_copy_allows_only_the_registered_local_image_to_be_missing(
+        tmp_path, missing_required):
+    omitted = ['page-09-image-00.png']
+    if missing_required:
+        omitted.append('page-04-image-00.png')
+    shutil.copytree(REFERENCE / 'manual', tmp_path / 'manual',
+                    ignore=shutil.ignore_patterns(*omitted))
+    shutil.copyfile(REFERENCE / 'image_distribution_policy.json',
+                    tmp_path / 'image_distribution_policy.json')
+    if missing_required:
+        with pytest.raises(FileNotFoundError):
+            check_manual_image_integrity(tmp_path)
+    else:
+        check_manual_image_integrity(tmp_path)
 
 
 def test_dependency_notices_are_preserved():

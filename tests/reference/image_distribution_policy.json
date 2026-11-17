@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "scope": "Public distribution of legacy manual image references",
+  "directory": "tests/reference/manual",
+  "local_only_images": [
+    {
+      "path": "page-09-image-00.png",
+      "sha256": "ce50fef78fda4a92fb05db6e90934d3b18f4b83e6c44cffd505aae2964a1ec1f",
+      "reason": "Adobe Illustrator screenshot containing a rock photograph; applicable reproduction permissions have not been established.",
+      "treatment": "Retain an unchanged local documentary copy; exclude it from the public Git tree. Preserve its entry in the historical extraction manifest."
+    }
+  ],
+  "integrity": "A local-only image may be absent from a public checkout. If present locally, its hash must still match the historical manifest. Other reference images remain required.",
+  "history": "This policy does not rewrite existing repository history or remove files already tracked by Git. The maintainer must untrack the listed file and commit that removal."
+}
