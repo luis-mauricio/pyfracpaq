@@ -1,0 +1,1074 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-16",
+  "version": "0.9.0rc1",
+  "scope": "Public source ZIP. No dependency binaries, original MATLAB files or test/manual reference archive. Full Git clone and legacy private archives require their own scope review.",
+  "qt_dependency_versions": {
+    "pyside6": "6.12.0",
+    "pyside6-addons": "6.12.0",
+    "pyside6-essentials": "6.12.0",
+    "pyside6-pdf": "6.12.0.140",
+    "pyside6-webengine": "6.12.0.140",
+    "shiboken6": "6.12.0"
+  },
+  "notice_files": [
+    {
+      "path": "docs/licenses/qt/LGPL-3.0-only.txt",
+      "sha256": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+      "source": "https://github.com/pyside/pyside-setup/blob/f50facb83fc3dc5f3240c854668c7a6dd93871b2/LICENSES/LGPL-3.0-only.txt",
+      "tag": "v6.12.0",
+      "git_blob": "65c5ca88a67c30becee01c5a8816d964b03862f9",
+      "origin": "Supplement downloaded from official upstream, not present in the inspected dependency wheel."
+    },
+    {
+      "path": "docs/licenses/qt/GPL-3.0-only.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "source": "https://github.com/pyside/pyside-setup/blob/f50facb83fc3dc5f3240c854668c7a6dd93871b2/LICENSES/GPL-3.0-only.txt",
+      "tag": "v6.12.0",
+      "git_blob": "94a9ed024d3859793618152ea559a168bbcbb5e2",
+      "origin": "Supplement downloaded from official upstream, not present in the inspected dependency wheel."
+    },
+    {
+      "path": "docs/licenses/qt/GPL-2.0-only.txt",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "source": "https://github.com/pyside/pyside-setup/blob/f50facb83fc3dc5f3240c854668c7a6dd93871b2/LICENSES/GPL-2.0-only.txt",
+      "tag": "v6.12.0",
+      "git_blob": "d159169d1050894d3ea3b98e1c965c4058208fe1",
+      "origin": "Supplement downloaded from official upstream, not present in the inspected dependency wheel."
+    },
+    {
+      "path": "docs/licenses/qt/Qt-GPL-exception-1.0.txt",
+      "sha256": "40678d338ce53cd93f8b22b281a2ecbcaa3ee65ce60b25ffb0c462b0530846b2",
+      "source": "https://github.com/pyside/pyside-setup/blob/f50facb83fc3dc5f3240c854668c7a6dd93871b2/LICENSES/Qt-GPL-exception-1.0.txt",
+      "tag": "v6.12.0",
+      "git_blob": "d0322bf0e4e1d484d35cc6a1d96fa2b65b9d579b",
+      "origin": "Supplement downloaded from official upstream, not present in the inspected dependency wheel."
+    },
+    {
+      "path": "docs/licenses/fracpaq/LICENSE",
+      "sha256": "8b85a35a5413a8d6927a8966f19b67b0cfe7d4db14152de0280aa6245b1ba39c",
+      "source": "https://github.com/DaveHealy-github/FracPaQ/blob/591d41ac066956dea0b86e9e182bdd359cdf51ee/LICENSE",
+      "origin": "Verbatim license from supplied FracPaQ distribution."
+    },
+    {
+      "path": "docs/licenses/fracpaq/variogram-BSD-2-Clause.txt",
+      "sha256": "84bfe4e803ee31ad41df64d21f9ccf7e77b53e4d28f24432d275da861aa99e49",
+      "source": "https://addons.mathworks.com/downloads/e5/e55afa38-4a80-11e4-9553-005056977bd0/1.4.0/license.txt",
+      "origin": "Official publisher notice; not a claim of byte identity between supplied and upstream source versions."
+    },
+    {
+      "path": "docs/licenses/fracpaq/lineSegmentIntersect-BSD-2-Clause.txt",
+      "sha256": "b0ff87e3978c96d5c56d205c9a462bf5bb1354e45baaa071b55527f91e6dd441",
+      "source": "https://addons.mathworks.com/downloads/e5/e56facdd-4a80-11e4-9553-005056977bd0/1.1.0/license.txt",
+      "origin": "Official publisher notice; not a claim of byte identity between supplied and upstream source versions."
+    },
+    {
+      "path": "docs/licenses/fracpaq/readtext-BSD-2-Clause.txt",
+      "sha256": "288b25d57ebcb9a997d93c1d2342802705f54eb9f8cbe0ff9172e57b2ea376ac",
+      "source": "https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/10946/versions/1/download/zip",
+      "origin": "Verbatim license.txt from the official readtext archive whose readtext.m is byte-identical to the supplied reference."
+    },
+    {
+      "path": "docs/licenses/fracpaq/wavelets-and-ternary.txt",
+      "sha256": "21c2deb01883be854216f80f13989b7de78e57fe3f340df0d940944ae9fd3b0a",
+      "source": null,
+      "origin": "Author credits and full MIT permission from supplied M-file headers."
+    },
+    {
+      "path": "docs/licenses/fracpaq/matGeom-BSD-2-Clause.txt",
+      "sha256": "163e83508f7d288b7a0592d34d2dc0607892f6838d65a66e0d88cbc38833e60c",
+      "source": "https://github.com/mattools/matGeom/blob/97c600192b36c31eaf5b5401fda925c1ea21c0b9/LICENSE.txt",
+      "origin": "Official matGeom BSD-2-Clause notice at the same commit as the compared source; historical INRA copyrights are additionally retained in THIRD_PARTY_NOTICES.md."
+    },
+    {
+      "path": "docs/licenses/fracpaq/centax2-permission.txt",
+      "sha256": "9f228d3cece42c8396df4ab98ea962185873fc182738f85c7565920e18dcd359",
+      "source": null,
+      "origin": "Custom permission and author/copyright notices extracted from the supplied centax2.m header; not classified as MIT."
+    }
+  ],
+  "assets": [
+    {
+      "path": "pyfracpaq/resources/FracPaQicon.jpeg",
+      "sha256": "f29ab6ff8eb4c52b8571c46292a243ece2d14dc746266241f811962867c0ed7b",
+      "basis": "FracPaQ MIT distribution; copied assets/derived FIG controls; source hashes in resource provenance and UI manifests."
+    },
+    {
+      "path": "pyfracpaq/resources/FracPaQlogo.jpeg",
+      "sha256": "9f78a9a62e46e9d8476df7ea444192075e9b78a7edb329f533c0af3e0e286c08",
+      "basis": "FracPaQ MIT distribution; copied assets/derived FIG controls; source hashes in resource provenance and UI manifests."
+    },
+    {
+      "path": "pyfracpaq/resources/base.qss",
+      "sha256": "6d76acb5431902ad7e733703d47365f27c73b8521112be9a82aa26061758dc97",
+      "basis": "Project-authored styles/resource data; project MIT."
+    },
+    {
+      "path": "pyfracpaq/resources/cmocean_LICENSE.txt",
+      "sha256": "c94ec607647ca02c64753c6d3c98944c02090616d84e662faf08c51855788f43",
+      "basis": "cmocean MIT; full Thyng/Greene notices in cmocean_LICENSE.txt; extraction provenance in cmocean_manifest.json."
+    },
+    {
+      "path": "pyfracpaq/resources/cmocean_manifest.json",
+      "sha256": "ccabd1fe3d6a34ca850e62a2b797a48c98cfa669b7cf4fe7687437f4093cc1fb",
+      "basis": "cmocean MIT; full Thyng/Greene notices in cmocean_LICENSE.txt; extraction provenance in cmocean_manifest.json."
+    },
+    {
+      "path": "pyfracpaq/resources/cmocean_rgb.npz",
+      "sha256": "cf7cc4200282f9cb420d351874b019d9cc26f0b9db152326e2dc74b10756ac94",
+      "basis": "cmocean MIT; full Thyng/Greene notices in cmocean_LICENSE.txt; extraction provenance in cmocean_manifest.json."
+    },
+    {
+      "path": "pyfracpaq/resources/fracpaq_matlab.mplstyle",
+      "sha256": "25219e83a7b45dba40d2f19280a3d63442c6bd808383d7bd73afadd0f31d4748",
+      "basis": "Project-authored styles/resource data; project MIT."
+    },
+    {
+      "path": "pyfracpaq/resources/jet_rgb.json",
+      "sha256": "bcf5ae1270e337f3fc920138272c0e2f3dc7871849f9c1b4bb3159c266752507",
+      "basis": "Project-generated tables or elementary graphical outputs, with origin/hashes in the corresponding JSON; no MATLAB source/runtime or font files included."
+    },
+    {
+      "path": "pyfracpaq/resources/jet_rgb.npz",
+      "sha256": "b70493b77f1de24338c6c62a5db456760d1263dd2e1e10e95e1f2614d58e468d",
+      "basis": "Project-generated tables or elementary graphical outputs, with origin/hashes in the corresponding JSON; no MATLAB source/runtime or font files included."
+    },
+    {
+      "path": "pyfracpaq/resources/matlab_grids.json",
+      "sha256": "3dc3d4214d00ad185f4f7b6757d3b01af92a23a1704325fc8f1bd44bec7acc8c",
+      "basis": "Project-generated tables or elementary graphical outputs, with origin/hashes in the corresponding JSON; no MATLAB source/runtime or font files included."
+    },
+    {
+      "path": "pyfracpaq/resources/matlab_grids.npz",
+      "sha256": "3f58faad1dcf9c671386d2abcb9327fb35c6c3f8bae591207d0b15b865f5475e",
+      "basis": "Project-generated tables or elementary graphical outputs, with origin/hashes in the corresponding JSON; no MATLAB source/runtime or font files included."
+    },
+    {
+      "path": "pyfracpaq/resources/matlab_markers.json",
+      "sha256": "f48c8110298ff5c3e5599cf9ef10ca0bdfc1b70bf1887ea522f8fdcebae74acb",
+      "basis": "Project-generated tables or elementary graphical outputs, with origin/hashes in the corresponding JSON; no MATLAB source/runtime or font files included."
+    },
+    {
+      "path": "pyfracpaq/resources/matlab_markers.npz",
+      "sha256": "5e837ed8001add6f2ea67ea88a1611ebf63588117544caa5772094665779dc4a",
+      "basis": "Project-generated tables or elementary graphical outputs, with origin/hashes in the corresponding JSON; no MATLAB source/runtime or font files included."
+    },
+    {
+      "path": "pyfracpaq/resources/matlab_rgb.json",
+      "sha256": "23eaf1f501811991f7421831669d7e601b3e543e2ce293946e8e59c4420b4016",
+      "basis": "Project-generated tables or elementary graphical outputs, with origin/hashes in the corresponding JSON; no MATLAB source/runtime or font files included."
+    },
+    {
+      "path": "pyfracpaq/resources/matlab_rgb.npz",
+      "sha256": "d5afef09d7a2af9781acc912a2555a34de47c9bed563b2fb1125932c439d7a93",
+      "basis": "Project-generated tables or elementary graphical outputs, with origin/hashes in the corresponding JSON; no MATLAB source/runtime or font files included."
+    },
+    {
+      "path": "pyfracpaq/resources/provenance.json",
+      "sha256": "538eb205d268fe2aae05aa2509f95d37eaa4d3e2fbf180a0b9db93486c422ef9",
+      "basis": "FracPaQ MIT distribution; copied assets/derived FIG controls; source hashes in resource provenance and UI manifests."
+    },
+    {
+      "path": "pyfracpaq/resources/pyfracpaq-logo.png",
+      "sha256": "cf42388c3d3727cb5ab5631b0c4d62845b5556f8393f8377f4b74c8ad5fed7ac",
+      "basis": "Project artwork supplied by the maintainer for use and distribution with PyFracPaQ; project MIT."
+    },
+    {
+      "path": "pyfracpaq/resources/ui_spec.json",
+      "sha256": "31fdfc5561303550564029b33d3416962f719f846685d328b0ef314a6a3933cb",
+      "basis": "FracPaQ MIT distribution; copied assets/derived FIG controls; source hashes in resource provenance and UI manifests."
+    },
+    {
+      "path": "pyfracpaq/resources/wavelet_dialog.json",
+      "sha256": "c91785cea97ba1d40c777d05469c4775c1a4ad525aef54333619d086804c0e26",
+      "basis": "FracPaQ MIT distribution; copied assets/derived FIG controls; source hashes in resource provenance and UI manifests."
+    },
+    {
+      "path": "pyfracpaq/resources/wavelet_dialog_provenance.json",
+      "sha256": "003a5379e779332fd4753d9ecd12cf1e9b69ed3b3b01197d0bef49f1d75d39c0",
+      "basis": "FracPaQ MIT distribution; copied assets/derived FIG controls; source hashes in resource provenance and UI manifests."
+    },
+    {
+      "path": "examples/SD11A.txt",
+      "sha256": "96bafa56537444279a748c3f4b7a4300f7e73341a04d2ba4ff8cf1299ad74688",
+      "basis": "Unmodified FracPaQ SD11A, MIT distribution; source hash in examples/provenance.json."
+    },
+    {
+      "path": "examples/colours.svg",
+      "sha256": "bcb87e46a473e70217b7ab559753e90007d66091bd50028391563c2f9632b6b6",
+      "basis": "Project-authored analytical example, project MIT; examples/provenance.json."
+    },
+    {
+      "path": "examples/move_objects.dat",
+      "sha256": "3d2f8c4137ba0ff23d3259be591a011bc24a3a63cb7bbb72114f3e884974d33f",
+      "basis": "Project-authored analytical example, project MIT; examples/provenance.json."
+    },
+    {
+      "path": "examples/network.tif",
+      "sha256": "583c94c350773223146935b880d762515818e7abab585d31ff156c91d8715bf3",
+      "basis": "Project-authored analytical example, project MIT; examples/provenance.json."
+    },
+    {
+      "path": "examples/profiles.txt",
+      "sha256": "e3aff77b9b1ec1f217edb22a0b73714d9df8112bf65e68bf7d979be8823543b9",
+      "basis": "Project-authored analytical example, project MIT; examples/provenance.json."
+    },
+    {
+      "path": "examples/rectangles.txt",
+      "sha256": "18df2ae97e9198c4d2932a36fef5dfa51d80dbcea0d63512f453d299d79657d7",
+      "basis": "Project-authored analytical example, project MIT; examples/provenance.json."
+    },
+    {
+      "path": "docs/manual/assets/CSFmap.png",
+      "sha256": "715904a4ab5ba1984b7caead02b8af11788ee0e84ff83e9273c8a0e3d47928c1",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/Houghstuff.png",
+      "sha256": "c987eb15fd769fd47e9c9cf4ff78c827cb3ffeed0ca6d1f7bb6cd426efc46c34",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/IYXnodes_traces.png",
+      "sha256": "555d423ddf49ffdbafd39658bca3c2f64a0862586e4248c4d98b759ef5c9a73d",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/IYXtriangle.png",
+      "sha256": "a66a7e5d3db029c9d4f4f00cc699b2abf079c1475d19d8551bd26a3cdadd2321",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/Mohrplot.png",
+      "sha256": "008b2d43fde3e150fde2d2a2f5dccdd7f60e8b5ec091fa4c1cd6149040836355",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/XYnodes_traces_heat.png",
+      "sha256": "af88b935af4a613f6f298a925c17f25f6c784eab3065bd95e04effd633682a03",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/blocksizecentroidmap.png",
+      "sha256": "02955ae894d47cdf3ed4c7250437c4017076ca19f93bea1222b270001273e19b",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/blocksizehisto.png",
+      "sha256": "bbd12b74f99a7fed35019c88d97340c28701674a08f144110989530942a85d9a",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/cracktensor.png",
+      "sha256": "97036b190a5dbf2366f6d3cbcf7ecf29fa34515fd4d201d2caa9a33e5984dab5",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/crossplotsegmentlengthangle.png",
+      "sha256": "473ec06bda93b6cdb919f3a0b135337cf02dfc4098c142536a439a5cc8e86d75",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/densityP20.png",
+      "sha256": "c396c1abb68856d016ebbfa55ecba78c6f5960406fa1706993279f20e3f5fea9",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/densityalonggraph.png",
+      "sha256": "f32880c3ef7fb2bad830ab3ee7d6238b2dee9e21cfae8840160b8830b8ae6996",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/dilationtendencymap.png",
+      "sha256": "5ae6b6fa58ef78d38532b729aff4e1a6fa881aa9710208c6e2091c8dcf07279b",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/fracsuscepmap.png",
+      "sha256": "4982c5ffef9ea7303ae600ec0643918bf2de8aec444518abe65a7edc5349662b",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/graphtracemap.png",
+      "sha256": "7277bc4a8e6b4c328036ba20ad3e5dfe2b7a2e420ad29e3c5ceb062e85c2827f",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/histoangle.png",
+      "sha256": "9bedbb9c7a8ea3fb49862add4c73a5a8a2beae9639b260c22fea24866847c1a5",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/histosegmentlength.png",
+      "sha256": "4e71d3f9efd7f8b9c7954c3cd73e0f54e776e964bee7e51a0ff1a24bfc1fcae8",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/histotracelength.png",
+      "sha256": "bdfe54a137e9944bb2578dc3b142ecb30acf339eacd6acaad2bbd3a1cfd3a3bd",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/intensityP21.png",
+      "sha256": "e356f37089e787c2ddd6d13b684f19cb26b1e6896c0fb20078bd64b06d6012ce",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/intensityalonggraph.png",
+      "sha256": "b9d097c8d3f655f31f39606b3415105ede1e7cc5b46d812f020c4c1b70435d81",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/loglogplotsegmentlengthdensity.png",
+      "sha256": "48e0fe77b47992e231833113ba1ed93e5984dab2b77db3b1fa2c9515af07a7df",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/loglogplottracelength.png",
+      "sha256": "3598cec7a00c3fd443a34af5b3a30c6931cf4d53b9a75056a1cd35bd7426b411",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/logo.png",
+      "sha256": "cf42388c3d3727cb5ab5631b0c4d62845b5556f8393f8377f4b74c8ad5fed7ac",
+      "basis": "Project manual asset: maintainer-supplied logo or project preprocessing panel, recorded in extra_assets of figure-provenance.json."
+    },
+    {
+      "path": "docs/manual/assets/permeability_polar.png",
+      "sha256": "e513930849954ce5a09524d0af2fe1d280861466bbfe7365e75fa7f1b32731a5",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/preprocess.png",
+      "sha256": "17e6a9013fa6a39c1eae4f606e3263296eb598cf4e9a463b79a5c29220ee76b5",
+      "basis": "Project manual asset: maintainer-supplied logo or project preprocessing panel, recorded in extra_assets of figure-provenance.json."
+    },
+    {
+      "path": "docs/manual/assets/roseangleEqArea.png",
+      "sha256": "a78587fd74e620fa641cef557dfd569c38d74208060cb895872862ed64dd323c",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/scancircle.png",
+      "sha256": "4e3c5962a1462dc4eaa8ede834c932fb4307ddebef871aa6603a9091c023fa9f",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/segmentanglealonggraph.png",
+      "sha256": "22b6d623055e42fdb7bf661193f7c9e3248de75ddbad8d456f61829bcee38262",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/segmentanglefromgraph.png",
+      "sha256": "728ddad241ca62d79176da1b5d34f746a0b02f5344a94d8efe2e9b21c7315697",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/segmentlength_variogram.png",
+      "sha256": "f332b7d8a8dc319435d4738bb003fdc53737d852e1795f672f9d4fb57d919cf5",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/segmentlengthalonggraph.png",
+      "sha256": "10f2cd1283e3b90da5e4848f3d1ab67c7f86bda55dfd8e21d09bd6f5fbabda13",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/segmentlengthfromgraph.png",
+      "sha256": "4713da231d3cfe87d7de5e9fc7096b37674fad110ea2b233edf740b54a95a800",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/segmentlengthmap.png",
+      "sha256": "4e474d40553ebb563590583c08ce172042340ef9e2962e77c082ef3173b0c6a7",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/segmentstrikemap.png",
+      "sha256": "0bb21ade001df630eb0d38621e0295aa05e6d233dbdca549c6a3971e18c6de4d",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/sliptendencymap.png",
+      "sha256": "e44823afe35117b7fb3bb438d483b7b0806739c3618d6ac5203176deae9b72d4",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/sliptendencyrose.png",
+      "sha256": "9089810719d6699a19e18e6a7a1d50b33569ff3a931aceb42f4731a69497caea",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/tracelengthalonggraph.png",
+      "sha256": "c9434f50ef8a1b78d24b5e8d005cbffb649115fd6a933bd43a34dd0cd0c46d3e",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/tracelengthfromgraph.png",
+      "sha256": "e1351ad419fd11a19736ecd6691a85a78e582cf1e9ca96aafeadaf8e49fb74db",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/tracelengthmap.png",
+      "sha256": "9706ebfbd0666277ff434ed676f28093a93e1f8ff01090b7259fbfc17b2d2b89",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/tracelengthsFittingExponential.png",
+      "sha256": "17827a05efe466a711c813ceb1dbb414451e387e930fa07c2c6fd22275c1bf8a",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/tracelengthsFittingLogNormal.png",
+      "sha256": "8639f12b3db9628dcfe1925c1f30e6ae420009262eb0a35d1c9ddc78aeb20a08",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/tracelengthsFittingPowerLaw.png",
+      "sha256": "64dcd23b30374710ed33e6190f47a4528191b581144ecec0ecf1b06f753b76f9",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/tracemap.png",
+      "sha256": "a7647ae860f3b93c34429a7dd8f2feedc4b688d6547bfc3c1e1f85a57b4f4995",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/tracemap_multicolour.png",
+      "sha256": "aa9577a4e4be352dbb3c4453724d006649e8c4cf24dda11be7639f94a5d5cf62",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/ui-angles.png",
+      "sha256": "a1b75f65677ff8dca9b3af899976767e1d7e597715e07a7308eb71df32fe945d",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/ui-fluid.png",
+      "sha256": "d0bb3b2395a70516de6369f6e1c8ad2959b0050f04090ddb19be02bf0097799a",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/ui-graphs.png",
+      "sha256": "19f614f7339cd644c1d066602c4b2da0897c4894acc334d14fe90178d8721794",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/ui-lengths.png",
+      "sha256": "ef320ac52b413710e69b19bddb7fd256137c5112c4747be4f4396b8a533eece2",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/ui-maps.png",
+      "sha256": "6e069d907a9b2e973be0a1b1df0417b25c54df68d4fe9fc1a10c23c3b6945512",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/ui-preview.png",
+      "sha256": "ec3106ccb8f28d585719a809f404fa598b3d9a4e4818ef2c0f17386f1ac67e3f",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/ui-wavelets.png",
+      "sha256": "24877679d04f0386b54ab3e66952a5ea2318a04f12bbecece674fc0265e5415c",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/assets/wavelet_a32.png",
+      "sha256": "b334d088bf6790fd870eab8a1e15e81c88e2947d379197f5d22b86bf6dd33ca0",
+      "basis": "Project-generated scientific figure or GUI capture, as recorded in docs/manual/figure-provenance.json; example SD11A attributed to FracPaQ MIT."
+    },
+    {
+      "path": "docs/manual/pyfracpaq-user-manual-en.pdf",
+      "sha256": "4203a6d4b1751bb8a5ecf7e5bad3506f9c90b723ab088432734e94bdfc2c36ed",
+      "basis": "Project-authored PyFracPaQ user manual, project MIT; own scientific figures/interface captures and attributed FracPaQ SD11A example. Not the original MATLAB User Guide."
+    },
+    {
+      "path": "docs/manual/pyfracpaq-user-manual.pdf",
+      "sha256": "7276e9bfe8016491ce6590d213a9a39b578deea1e3a9202e27a932defeda4c2a",
+      "basis": "Project-authored PyFracPaQ user manual, project MIT; own scientific figures/interface captures and attributed FracPaQ SD11A example. Not the original MATLAB User Guide."
+    }
+  ],
+  "local_reference_evidence": [
+    {
+      "path": "fracpaq-matlab/distancePoints.m",
+      "sha256": "2c5be12bbc97f80d30ef04c0216d749e2f85306bbccbaf99a271a097cfad55ab",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/distancePointEdge.m",
+      "sha256": "093f8be91b4f2933b666fe302347a75fbcf7e1cb65555ddfd260041db17c7198",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/lineSegmentIntersect.m",
+      "sha256": "9a872a048cac4635586dd50b639dc9ec6dfe12b0a0397bb8c485b4a20ea926e3",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/variogram.m",
+      "sha256": "ba6cc81cb21f2db33dbb93fee71444ad219d60bb2a0a37ee94cb36b015d9d812",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/readtext.m",
+      "sha256": "532285e927092df2ef220218ff344bc977527302fe700632f4bdec100d1ed5bb",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/centax2.m",
+      "sha256": "48ea6da8a79469e6b5c6ba23b4d9426cb7d2bfd73411655c8f3fe3fae1e4cacc",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/morlet.m",
+      "sha256": "df880d2f37fa1bf623ff0ce2c89472209cf47904b277cacf55c54da46bb43251",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/morletCWT.m",
+      "sha256": "169386e3e8bf04e84388485eeb9c996a94b47f8506b0b5787d02f3153ff0beb9",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/morletCWTself.m",
+      "sha256": "ebe64a3870856da8845977e665e39898368ac76dd79dd1b44d07015e4f40412d",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/mexicanhat.m",
+      "sha256": "db921fae1ebb0590b7766f68213fe1e35c3c7af0ac18cf37a7d17592bdf36710",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/mexicanhatCWT.m",
+      "sha256": "b57afbef41de7e36ce76e2779957028532930bd760d621ba879d450e0615d195",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/mexicanhatCWTself.m",
+      "sha256": "f0082c95b98162961c5ab6e9fd8452b50f4b97e4a92b9746fa06d9498c23bba3",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/triplot.m",
+      "sha256": "b690ca65e0f88343f4ed01dd48688962caf7ef3020fe1ebaee09ca3bda422279",
+      "distribution": "Local reference only; excluded from public ZIP."
+    },
+    {
+      "path": "fracpaq-matlab/tripts.m",
+      "sha256": "11db7d2ea1a4441e4015ce302ccc397cc55ef11574a3ed66e31f1f94a15439a4",
+      "distribution": "Local reference only; excluded from public ZIP."
+    }
+  ],
+  "limits": [
+    "Official publisher notices supplement historical headers; no assertion of identical versions.",
+    "No redistribution of dependency binaries is certified by this source-only review.",
+    "Photographs/font rights in the full documentary test archive are not individually cleared by checking the runtime ZIP."
+  ],
+  "dependency_notice_files": [
+    {
+      "path": "docs/licenses/dependencies/contourpy/licenses/LICENSE",
+      "wheel_path": "contourpy-1.4.0.dist-info/licenses/LICENSE",
+      "sha256": "11401c428c7014a75728e8679f9c000aacf262015aaba65a760d41aa1130b3af",
+      "dependency": "contourpy",
+      "version": "1.4.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/cycler/LICENSE",
+      "wheel_path": "cycler-0.12.1.dist-info/LICENSE",
+      "sha256": "f1218143d766da3fea66f13396b7f15df46a83303f29bf96ba6e98eb4d42f408",
+      "dependency": "cycler",
+      "version": "0.12.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/defusedxml/LICENSE",
+      "wheel_path": "defusedxml-0.7.1.dist-info/LICENSE",
+      "sha256": "b80ce9da8c42a1f91079627fbbe2bf27210ae108a0ffe5f077d5b08e076c24c8",
+      "dependency": "defusedxml",
+      "version": "0.7.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/fonttools/licenses/LICENSE",
+      "wheel_path": "fonttools-4.68.0.dist-info/licenses/LICENSE",
+      "sha256": "6787208f83f659ccbc2223b2fde952ffa6f7e8aca62f1a8a2bf5bc51bb1b2383",
+      "dependency": "fonttools",
+      "version": "4.68.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/fonttools/licenses/LICENSE.external",
+      "wheel_path": "fonttools-4.68.0.dist-info/licenses/LICENSE.external",
+      "sha256": "94a83aaee0729a0f302d34acc4acecbd9d58366f262429075fe557e4a54b2e69",
+      "dependency": "fonttools",
+      "version": "4.68.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/imageio/licenses/LICENSE",
+      "wheel_path": "imageio-2.38.1.dist-info/licenses/LICENSE",
+      "sha256": "c453cf1368bb9e009e4d7e5334fc78511e665316a612ef54ee4fe1245678fe2c",
+      "dependency": "imageio",
+      "version": "2.38.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/iniconfig/licenses/LICENSE",
+      "wheel_path": "iniconfig-2.3.1.dist-info/licenses/LICENSE",
+      "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4",
+      "dependency": "iniconfig",
+      "version": "2.3.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/kiwisolver/licenses/LICENSE",
+      "wheel_path": "kiwisolver-1.5.1.dist-info/licenses/LICENSE",
+      "sha256": "529c40e5f67f2f88904657a9f7879ae2f8dc76bc9bfef9cb10d988b48804ed61",
+      "dependency": "kiwisolver",
+      "version": "1.5.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/lazy-loader/licenses/LICENSE.md",
+      "wheel_path": "lazy_loader-0.6.dist-info/licenses/LICENSE.md",
+      "sha256": "797b6937a4f976836efbbbb3ae333d7866ddc3eb3cb152972b2be348d3529372",
+      "dependency": "lazy-loader",
+      "version": "0.6",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/matplotlib/LICENSE",
+      "wheel_path": "matplotlib-3.11.2.dist-info/LICENSE",
+      "sha256": "822e8e528147569a41975592aee19c11992ab667ba50451cd929031d5fc74491",
+      "dependency": "matplotlib",
+      "version": "3.11.2",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/networkx/licenses/LICENSE.txt",
+      "wheel_path": "networkx-3.7.dist-info/licenses/LICENSE.txt",
+      "sha256": "6025f323ea29dc2f0ee0abd9523bf910186f55b0e148e6ebf646c55566278e2e",
+      "dependency": "networkx",
+      "version": "3.7",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/LICENSE.txt",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/LICENSE.txt",
+      "sha256": "649a589ab31076e79e9ce62ba24eae9959598124176640dbc95f87bd10f34fcf",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/_core/include/numpy/libdivide/LICENSE.txt",
+      "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/common/pythoncapi-compat/COPYING",
+      "sha256": "3f2c1ffa76383a55ae0aac01c9737cd70050dff63e1f026694fbe9d662573c98",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/_core/src/highway/LICENSE",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/highway/LICENSE",
+      "sha256": "e340270d4f64384569a91d546acb5b094d69ce47f0c015db77abb74dc6f815af",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/multiarray/dragon4_LICENSE.txt",
+      "sha256": "f7b14309e5f54e5022b26448eefd419988ada2aec01d3c1162d84a0ea8f21f2c",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/npysort/x86-simd-sort/LICENSE.md",
+      "sha256": "211e7d737d6179a08f791ebb0a99897ce7cd2457410c542876d125576edfe910",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/_core/src/umath/svml/LICENSE",
+      "sha256": "c17011467b4fe6e20fbfbeda4df09e58c2bca5480a063e55735a4000a379aad9",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/fft/pocketfft/LICENSE.md",
+      "sha256": "a85ca13fdf90160b64a0698215868c13b74d835ad0a4e2ba44713b8c5058a056",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/linalg/lapack_lite/LICENSE.txt",
+      "sha256": "a14cc25e10d40a3aa705b7de2fb764a6535d8ee9b2db4e1724900585457dfd55",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/ma/LICENSE",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/ma/LICENSE",
+      "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/random/LICENSE.md",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/random/LICENSE.md",
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/random/src/distributions/LICENSE.md",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/distributions/LICENSE.md",
+      "sha256": "469778be8f33d54e1bcaab28c281cc472916d2d273f835e55bc487d30503face",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/mt19937/LICENSE.md",
+      "sha256": "0e111337b25494a773106695f0e799f642b8567aaacca4f116a74a8177179156",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/pcg64/LICENSE.md",
+      "sha256": "e7d4f4fb20358f314210a892ae17351e04993813646f697ec387385ca2a36918",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/random/src/philox/LICENSE.md",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/philox/LICENSE.md",
+      "sha256": "6f5828a57223d4cc7f8ea505a2623e7b978b242752c1515e355f46ba2cec1800",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/sfc64/LICENSE.md",
+      "sha256": "9d4098846018319cd68e228ee6220361787f73bccbf00237a85e4fc9621b998f",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/numpy/licenses/numpy/random/src/splitmix64/LICENSE.md",
+      "wheel_path": "numpy-2.5.4.dist-info/licenses/numpy/random/src/splitmix64/LICENSE.md",
+      "sha256": "268b0ca06759d31ea3ca68dd35f20e877916e927b1c2a835e4592a3c4354b1f9",
+      "dependency": "numpy",
+      "version": "2.5.4",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/packaging/licenses/LICENSE",
+      "wheel_path": "packaging-26.3.dist-info/licenses/LICENSE",
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+      "dependency": "packaging",
+      "version": "26.3",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/packaging/licenses/LICENSE.APACHE",
+      "wheel_path": "packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "dependency": "packaging",
+      "version": "26.3",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/packaging/licenses/LICENSE.BSD",
+      "wheel_path": "packaging-26.3.dist-info/licenses/LICENSE.BSD",
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+      "dependency": "packaging",
+      "version": "26.3",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/pillow/licenses/LICENSE",
+      "wheel_path": "pillow-13.0.0.dist-info/licenses/LICENSE",
+      "sha256": "dda12a98c1979cf3d94df1cff45d27a4cb3f04a60c76f76902ac54cac03ec0ce",
+      "dependency": "pillow",
+      "version": "13.0.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/pluggy/licenses/LICENSE",
+      "wheel_path": "pluggy-1.7.0.dist-info/licenses/LICENSE",
+      "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606",
+      "dependency": "pluggy",
+      "version": "1.7.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/pygments/licenses/AUTHORS",
+      "wheel_path": "pygments-2.21.0.dist-info/licenses/AUTHORS",
+      "sha256": "71a83872ad82f57be692cf827e048e2cd51d45169cfa1ea3f28706d97a872c0f",
+      "dependency": "pygments",
+      "version": "2.21.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/pygments/licenses/LICENSE",
+      "wheel_path": "pygments-2.21.0.dist-info/licenses/LICENSE",
+      "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17",
+      "dependency": "pygments",
+      "version": "2.21.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/pyparsing/licenses/LICENSE",
+      "wheel_path": "pyparsing-3.3.3.dist-info/licenses/LICENSE",
+      "sha256": "a5425f9dc14ac74d4c5f0b679e941f2442e32cca7452a4418d5b1a49893ebe4e",
+      "dependency": "pyparsing",
+      "version": "3.3.3",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/pypdf/licenses/LICENSE",
+      "wheel_path": "pypdf-7.1.0.dist-info/licenses/LICENSE",
+      "sha256": "a97ac230e5f33ef10a5367a850eb01f91f1a0b064e34742c7794d2294557f524",
+      "dependency": "pypdf",
+      "version": "7.1.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/pytest/licenses/LICENSE",
+      "wheel_path": "pytest-9.2.0.dist-info/licenses/LICENSE",
+      "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b",
+      "dependency": "pytest",
+      "version": "9.2.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/pytest-qt/licenses/LICENSE",
+      "wheel_path": "pytest_qt-4.5.0.dist-info/licenses/LICENSE",
+      "sha256": "ddb94f90ceb2ebb3d88d5354fa635c1d7404d6624b15ed1954a14255f348f119",
+      "dependency": "pytest-qt",
+      "version": "4.5.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/python-dateutil/licenses/AUTHORS.md",
+      "wheel_path": "python_dateutil-4.0.0.dist-info/licenses/AUTHORS.md",
+      "sha256": "56004c45a95e9ee5582ea60f9a7ee42179c8594c7b9c245bbfb4a3445b4af640",
+      "dependency": "python-dateutil",
+      "version": "4.0.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/python-dateutil/licenses/LICENSE",
+      "wheel_path": "python_dateutil-4.0.0.dist-info/licenses/LICENSE",
+      "sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e",
+      "dependency": "python-dateutil",
+      "version": "4.0.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/scikit-image/LICENSE.txt",
+      "wheel_path": "scikit_image-0.26.0.dist-info/LICENSE.txt",
+      "sha256": "611d3207504dcb4a808df209d2e7c9b4f2e89fe690f84735c0d548160966b527",
+      "dependency": "scikit-image",
+      "version": "0.26.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/scipy/LICENSE.txt",
+      "wheel_path": "scipy-1.18.1.dist-info/LICENSE.txt",
+      "sha256": "09a1b9e19573045b0784a181cc4bef677039d4f2111631c747bf72b7f19017d4",
+      "dependency": "scipy",
+      "version": "1.18.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/licenses/LICENSE",
+      "wheel_path": "setuptools-84.2.1.dist-info/licenses/LICENSE",
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+      "wheel_path": "setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+      "sha256": "ade78d04982d69972d444a8e14a94f87a2334dd3855cc80348ea8e240aa0df2d",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+      "wheel_path": "setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE",
+      "wheel_path": "setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE",
+      "sha256": "458502e12d97bbf64438606a20044aa85eb05fb0a8a807bb35dbec253fd1fc04",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE",
+      "wheel_path": "setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE",
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE",
+      "wheel_path": "setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE",
+      "sha256": "9755a18519666e5f0f4cae3daad3d7012bcae48a600b31237d75e9fe134e6683",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE",
+      "wheel_path": "setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE",
+      "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE",
+      "wheel_path": "setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE",
+      "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE",
+      "wheel_path": "setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE",
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+      "wheel_path": "setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE.BSD",
+      "wheel_path": "setuptools/_vendor/packaging-26.3.dist-info/licenses/LICENSE.BSD",
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE",
+      "wheel_path": "setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE",
+      "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE",
+      "wheel_path": "setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE",
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt",
+      "wheel_path": "setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt",
+      "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/setuptools/vendored/setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE",
+      "wheel_path": "setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE",
+      "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d",
+      "dependency": "setuptools",
+      "version": "84.2.1",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/tifffile/licenses/LICENSE",
+      "wheel_path": "tifffile-2026.11.12.dist-info/licenses/LICENSE",
+      "sha256": "3cf196b1625812d2d119518294043e71017fe858355a58eb48e1e35b61213ce9",
+      "dependency": "tifffile",
+      "version": "2026.11.12",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/typing-extensions/licenses/LICENSE",
+      "wheel_path": "typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf",
+      "dependency": "typing-extensions",
+      "version": "4.16.0",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/tzdata/licenses/LICENSE",
+      "wheel_path": "tzdata-2026.6.dist-info/licenses/LICENSE",
+      "sha256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46",
+      "dependency": "tzdata",
+      "version": "2026.6",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    },
+    {
+      "path": "docs/licenses/dependencies/tzdata/licenses/licenses/LICENSE_APACHE",
+      "wheel_path": "tzdata-2026.6.dist-info/licenses/licenses/LICENSE_APACHE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "dependency": "tzdata",
+      "version": "2026.6",
+      "origin": "Copied from inspected wheel; original inventory in tests/reference/dependency_licenses.json."
+    }
+  ],
+  "legacy_manual_review": {
+    "source": "fracpaq-matlab/FracPaQ User Guide v2.8.pdf",
+    "sha256": "5b0d4fdf1d7eaced795ae5d4e116a86da0781eb52d31b6d98a2aedce768d703c",
+    "pages": 39,
+    "method": "Read-only text extraction over all pages and review of title/acknowledgements/bibliography. Does not certify individual rights of every photograph.",
+    "findings": "Page 37 acknowledges Erdem, Axensten, Thyng/Greene and Schwanghart as public domain contributions; preserve publisher BSD/MIT terms instead of treating that phrase as a license."
+  }
+}

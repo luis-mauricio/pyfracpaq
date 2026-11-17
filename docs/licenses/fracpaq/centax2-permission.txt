@@ -1,0 +1,12 @@
+Permission and attribution from the supplied centax2.m / CENTAXES header.
+This is a custom permission notice, not the MIT license.
+
+This M-file was written for my own personal use,
+and it has not been tested, nor is it supported
+by The MathWorks, Inc.  Please feel free to edit
+and distribute this file as you see fit.
+
+Written by John L. Galenski III - Dec. 12, 1995
+Copyright (c) by The MathWorks, Inc.
+All Rights Reserved
+LDM121295jlg

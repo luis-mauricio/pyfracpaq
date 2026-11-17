@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "review_date": "2026-11-16",
+  "scope": "Licenses of three previously questioned utilities; no runtime replacement, archive generation or publication.",
+  "matgeom": {
+    "license": "BSD-2-Clause",
+    "license_path": "docs/licenses/fracpaq/matGeom-BSD-2-Clause.txt",
+    "upstream_commit": "97c600192b36c31eaf5b5401fda925c1ea21c0b9",
+    "comparisons": [
+      {
+        "reference": "distancePointEdge.m",
+        "received_sha256": "093f8be91b4f2933b666fe302347a75fbcf7e1cb65555ddfd260041db17c7198",
+        "retrieved_upstream_sha256": "e5961fece6a3807765ec1387a00662b5a493ed97da1934f6f4baa95a011d0dd1",
+        "upstream_source": "https://github.com/mattools/matGeom/blob/97c600192b36c31eaf5b5401fda925c1ea21c0b9/matGeom/geom2d/distancePointEdge.m",
+        "comparison": "Non-comment lines, with whitespace and trailing semicolons removed; this is not a parser or a general proof of semantic equivalence.",
+        "compared_statement_lines": 13,
+        "same_statements": true,
+        "statements_sha256": "0ddf2ff90cfa5d76f6093fa6e2e9fd25622f76a7c9697a92177b905009732644"
+      },
+      {
+        "reference": "distancePoints.m",
+        "received_sha256": "2c5be12bbc97f80d30ef04c0216d749e2f85306bbccbaf99a271a097cfad55ab",
+        "retrieved_upstream_sha256": "07af7da37612e29e4df9b54f2d79f70ae143ad26eb978ee1cf0eb5e44f6e2591",
+        "upstream_source": "https://github.com/mattools/matGeom/blob/97c600192b36c31eaf5b5401fda925c1ea21c0b9/matGeom/geom2d/distancePoints.m",
+        "comparison": "Non-comment lines, with whitespace and trailing semicolons removed; this is not a parser or a general proof of semantic equivalence.",
+        "compared_statement_lines": 56,
+        "same_statements": true,
+        "statements_sha256": "1db0b21d7c2cf31bfd78a4df5be40d86f1c2df43e822546569c4f548a88c76fa"
+      }
+    ],
+    "decision": "Preserve full BSD notice plus historical David Legland/INRA copyrights. Keep existing Python distance/projection implementation; no scientific algorithm replacement required to address the missing notice."
+  },
+  "readtext": {
+    "license": "BSD-2-Clause",
+    "official_archive": "https://www.mathworks.com/matlabcentral/mlc-downloads/downloads/submissions/10946/versions/1/download/zip",
+    "archive_sha256": "04f43ed486c07a1392c0d1bf3d5ebcd63dfd0b8a327951bf4ce72bd5137dd734",
+    "source_sha256": "532285e927092df2ef220218ff344bc977527302fe700632f4bdec100d1ed5bb",
+    "received_source_byte_identical": true,
+    "archive_license_sha256": "288b25d57ebcb9a997d93c1d2342802705f54eb9f8cbe0ff9172e57b2ea376ac",
+    "previous_notice_same_after_whitespace_normalization": true,
+    "decision": "Replace the differently wrapped notice with the exact archive license; preserve source copyright 2006-2007 and license copyright 2009. Keep current Python parser."
+  },
+  "centax2": {
+    "license": "Custom permission in supplied header",
+    "source_sha256": "48ea6da8a79469e6b5c6ba23b4d9426cb7d2bfd73411655c8f3fe3fae1e4cacc",
+    "notice_path": "docs/licenses/fracpaq/centax2-permission.txt",
+    "implementation": "pyfracpaq/plots/auxiliary.py:centered_axes",
+    "official_api": "https://matplotlib.org/stable/api/spines_api.html#matplotlib.spines.Spine.set_position",
+    "decision": "Keep existing Matplotlib spines implementation. Preserve the original author/copyright and explicit permission to edit/distribute in a separate notice; do not describe it as MIT."
+  },
+  "runtime_implementations": [
+    {
+      "path": "pyfracpaq/geometry/primitives.py",
+      "sha256": "7dd3732ad9e0199d5480f3278cfd4e38a06d0f37739359e12838f5a86f56664f"
+    },
+    {
+      "path": "pyfracpaq/io/text.py",
+      "sha256": "b0a50c886dbc55bc60ed99b2bf7f914207474065131977d3e1c8f777aded0a04"
+    },
+    {
+      "path": "pyfracpaq/plots/auxiliary.py",
+      "sha256": "bbd66d1229876e4c57472747fe48977b3d92c41a9bf06b40f4ed878193f2e00d"
+    }
+  ],
+  "limits": "These comparisons and recorded grants resolve the identified provenance/notice questions for these three cases. They do not establish a clean-room implementation or certify unrelated dependencies.",
+  "validation": {
+    "command": ".venv/bin/python -m pytest tests/numerical/test_geometry.py tests/numerical/test_auxiliary.py::test_generic_reader_native_masks_quotes_and_line_endings tests/reference/test_distribution_licenses.py tests/reference/test_contract.py::test_dependency_notices_are_preserved -q",
+    "passed": 60,
+    "runtime_files_changed": false,
+    "git_diff_check": "passed",
+    "supplemental_notices_hashed": 11
+  }
+}
